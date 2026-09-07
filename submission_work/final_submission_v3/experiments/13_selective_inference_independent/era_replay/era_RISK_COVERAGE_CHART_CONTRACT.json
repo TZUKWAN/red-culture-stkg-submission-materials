@@ -1,0 +1,35 @@
+{
+  "analytical_question": "How much selective risk is removed as low-confidence predictions are routed to review, and at what coverage cost?",
+  "supported_takeaway": "The figure reports the empirical trade-off only; M2 is a held-out AI-gold proxy and M6 is a shared-signal frozen replay.",
+  "curve_mode": "constrained_selective",
+  "acceptance_rule": "score >= threshold AND hard_constraint_pass = 1",
+  "family": "Uncertainty & Benchmark",
+  "variant": "small-multiple risk-coverage line charts",
+  "data_sufficiency": {
+    "minimum_task_n_for_figure": 8,
+    "minimum_unique_scores_for_area": 4,
+    "scatter_or_temporal_claim": false,
+    "excluded_from_figure": [
+      "space_owner",
+      "time_owner"
+    ],
+    "exclusion_reason": "dedicated role-owner audit marks owner references evaluation-ineligible for primary comparison"
+  },
+  "renderer": "static Matplotlib PNG/PDF",
+  "palette_policy": "hard two-root cap plus neutrals",
+  "palette": {
+    "Classifier proxy": "#2F6B9A",
+    "Full V2 replay": "#C58A24"
+  },
+  "non_color_distinction": {
+    "Classifier proxy": "solid circle",
+    "Full V2 replay": "dashed square"
+  },
+  "x_axis": "Coverage, fixed full-test denominator",
+  "y_axis": "Selective risk among accepted predictions",
+  "output": [
+    "submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\era_replay\\era_risk_coverage_curves.png",
+    "submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\era_replay\\era_risk_coverage_curves.pdf"
+  ],
+  "qa_surface": "exported PNG at 240 dpi and PDF"
+}

@@ -1,0 +1,48 @@
+{
+  "manifest_id": "EXTERNAL_INPUTS_MANIFEST",
+  "created_at_utc": "2026-09-07T08:53:11.094289+00:00",
+  "master_seed": 20260907,
+  "description": "Phase 数据准备：从包外复制进 v3 的输入文件清单（只读引用，原名保留）",
+  "files": [
+    {
+      "file": "AI_GOLD_LABELS.csv",
+      "relative_path": "submission_work/final_submission_v3/data/external_inputs/AI_GOLD_LABELS.csv",
+      "source_path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\04_results\\AI_GOLD_LABELS.csv",
+      "size_bytes": 77541,
+      "sha256": "1190ed0d7a4ec16b34712293f47992d624788ba4734c2bfce4020d51de0a9c0f",
+      "source_sha256_match": true
+    },
+    {
+      "file": "llm_predictions.csv",
+      "relative_path": "submission_work/final_submission_v3/data/external_inputs/llm_predictions.csv",
+      "source_path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\04_results\\llm_predictions.csv",
+      "size_bytes": 312283,
+      "sha256": "86794e0f4315bddd9319bfe698c1eb0759eb0ad7dc7e2e3cb9dc54221064c13d",
+      "source_sha256_match": true
+    },
+    {
+      "file": "stkg_contract.py",
+      "relative_path": "submission_work/final_submission_v3/data/external_inputs/stkg_contract.py",
+      "source_path": "D:\\REDCULTUREDATA\\scripts\\stkg_contract.py",
+      "size_bytes": 56068,
+      "sha256": "ee390dc11cc3b42be8a8980f5c4921e41823624aa93f2a39eb9d147e8dc66236",
+      "source_sha256_match": true
+    },
+    {
+      "file": "stkg_v2_semantics.py",
+      "relative_path": "submission_work/final_submission_v3/data/external_inputs/stkg_v2_semantics.py",
+      "source_path": "D:\\REDCULTUREDATA\\scripts\\stkg_v2_semantics.py",
+      "size_bytes": 27968,
+      "sha256": "5aec400acf183ba4fd8ba83bcaaf5303f2c459b24f29b3393623a68cb9c3091c",
+      "source_sha256_match": true
+    },
+    {
+      "file": "stkg_normalization.py",
+      "relative_path": "submission_work/final_submission_v3/data/external_inputs/stkg_normalization.py",
+      "source_path": "D:\\REDCULTUREDATA\\scripts\\stkg_normalization.py",
+      "size_bytes": 9619,
+      "sha256": "95cf8d60daeaf95b710961673b5e1645f79f1461a9330e2791f566df1898aee8",
+      "source_sha256_match": true
+    }
+  ]
+}

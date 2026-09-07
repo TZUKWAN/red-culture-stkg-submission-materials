@@ -1,0 +1,133 @@
+{
+  "generated_at": "2026-07-30T11:06:01+00:00",
+  "result": "PASS",
+  "evidence_contract": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\00_workspace_audit\\EXPERIMENT_EVIDENCE_CONTRACT.md",
+  "protected_inputs": {
+    "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\04_results\\AI_GOLD_LABELS.csv": {
+      "sha256_before": "1190ed0d7a4ec16b34712293f47992d624788ba4734c2bfce4020d51de0a9c0f",
+      "sha256_after": "1190ed0d7a4ec16b34712293f47992d624788ba4734c2bfce4020d51de0a9c0f",
+      "unchanged": true
+    },
+    "D:\\REDCULTUREDATA\\releases\\red_culture_stkg_v2\\databases\\red_culture_stkg_final_v2.sqlite": {
+      "sha256_before": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+      "sha256_after": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+      "unchanged": true
+    },
+    "D:\\REDCULTUREDATA\\releases\\red_culture_stkg_v2\\databases\\red_culture_stkg_semantic_v2.sqlite": {
+      "sha256_before": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377",
+      "sha256_after": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377",
+      "unchanged": true
+    }
+  },
+  "database_quick_checks": {
+    "final": "ok",
+    "semantic": "ok"
+  },
+  "existing_artifact_audit": {
+    "saved_classifier_gold_overlap": {
+      "validation": 36,
+      "pending": 5
+    },
+    "saved_classifier_decision": "not used as the primary 203-row classifier test because only 36 gold entities are historical validation rows and 5 are historical pending predictions",
+    "cached_llm_rows": 1132,
+    "cached_llm_decision": "replayed only as cached_model_output/shared_gold_channel",
+    "legacy_baseline_estimate_rows": 18,
+    "legacy_NOT_RUN_rows": 5,
+    "legacy_decision": "excluded from actual-run metrics",
+    "role_owner_audit_path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\04_role_owner\\role_owner_audit.json",
+    "role_owner_audit_sha256": "b154d9a5db370145ff610224a8bece13dad5f95323f1c43c7c4222c24d103387",
+    "owner_applicability_decision": "time_owner and space_owner are shared-proxy diagnostics excluded from __CORE_ELIGIBLE_TASKS__"
+  },
+  "canaries": {
+    "gold_row_count_712": true,
+    "gold_unique_sample_ids_712": true,
+    "all_gold_samples_joined": true,
+    "test_denominator_equal_per_method": true,
+    "classifier_features_exclude_v2_label_key": true,
+    "classifier_features_exclude_ai_gold_key": true,
+    "entity_classifier_excludes_source_type_gold_channel": true,
+    "relation_classifier_excludes_predicate_target_channel": true,
+    "no_live_llm_calls": true,
+    "cached_llm_overlap_flagged": true,
+    "rule_overlap_flagged": true,
+    "full_replay_shared_system_signal_flagged": true,
+    "full_replay_not_primary_comparison_eligible": true,
+    "safe_correct_requires_constraint_gate": true,
+    "constraint_gate_source_recorded": true,
+    "owner_rows_marked_primary_ineligible": true,
+    "core_summary_excludes_owner_proxy": true,
+    "all_reference_summary_retained_for_audit": true,
+    "owner_metric_rows_marked_ineligible": true,
+    "role_owner_audit_dependency_pass": true,
+    "negative_canary_rejects_sample_misalignment": true,
+    "negative_canary_rejects_denominator_drift": true,
+    "negative_canary_rejects_direct_gold_source": true,
+    "not_run_scenarios_excluded_from_actual": true,
+    "protected_inputs_unchanged": true,
+    "final_db_quick_check": true,
+    "semantic_db_quick_check": true
+  },
+  "outputs": {
+    "split_manifest": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\02_baselines\\BASELINE_SPLIT_MANIFEST.csv",
+      "sha256": "ffed072501114d702e1b59baa735d5a32f74abf4efc45fe6460187f18d82ee7d",
+      "bytes": 77952,
+      "row_count": 712
+    },
+    "runs": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\02_baselines\\BASELINE_RUNS.csv",
+      "sha256": "d730f8686040faccf14f595baeb36e2806e18f36a9cb38a1f6020f9d7301192f",
+      "bytes": 410341,
+      "row_count": 1113
+    },
+    "metrics": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\02_baselines\\BASELINE_METRICS.csv",
+      "sha256": "379109010352a75948432524acffb5c12235a1cacb6046bf9a024eaf1a025214",
+      "bytes": 14608,
+      "row_count": 63
+    },
+    "actual_metrics": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\02_baselines\\ACTUAL_RUN_BASELINE_METRICS.csv",
+      "sha256": "fbddba259da9964f6670d16c476c2a38baa0a4ff7f5aefb136f98d3e9be67b82",
+      "bytes": 4622,
+      "row_count": 18
+    },
+    "replay_metrics": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\02_baselines\\REPLAY_AND_CACHED_BASELINE_METRICS.csv",
+      "sha256": "bc4f9a9d983b3666aabab4f76fa7b693edd241ecf44244d2ae85bb41d5321404",
+      "bytes": 7316,
+      "row_count": 27
+    },
+    "availability": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\02_baselines\\BASELINE_AVAILABILITY.csv",
+      "sha256": "84776137306f5d429722226ecfd123d80d6467974e292d9f10e371f512a370dd",
+      "bytes": 1755,
+      "row_count": 7
+    },
+    "summary": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\02_baselines\\baseline_experiment_summary.json",
+      "sha256": "80e984ee6ebc2961924e918578e55ae2c6c8a6eac84f933d3651aa424d04a758",
+      "bytes": 77107,
+      "row_count": null
+    }
+  },
+  "runtime": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "scikit_learn": "1.8.0",
+    "random_state": 20260730,
+    "split_seed": "paper-a-baseline-stratified-v1-20260730"
+  },
+  "not_available": [
+    {
+      "method_id": "M3_live_llm_only",
+      "reason": "No live LLM inference was authorized or executed in this run."
+    },
+    {
+      "method_id": "M5_no_global_closure",
+      "reason": "No frozen per-sample outputs or runnable pre-closure harness exist for this configuration."
+    }
+  ]
+}

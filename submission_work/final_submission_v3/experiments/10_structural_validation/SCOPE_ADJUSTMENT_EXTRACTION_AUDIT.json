@@ -1,0 +1,71 @@
+{
+  "audit_id": "SCOPE_ADJUSTMENT_EXTRACTION_AUDIT",
+  "created_at_utc": "2026-09-07T08:49:39.869388+00:00",
+  "experiment_id": "v3-10-structural-validation-scope-adjustments",
+  "database": "data/release_databases/red_culture_stkg_final_v2.sqlite",
+  "database_sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+  "database_open_mode": "read-only (file:...?mode=ro)",
+  "master_seed": 20260907,
+  "task_name": "scope_adjustment_ab_blinding",
+  "derived_seed": 11613091355876745079,
+  "seed_derivation": "int.from_bytes(SHA256('scope_adjustment_ab_blinding|20260907')[:8],'big')",
+  "total_adjustments": 208,
+  "dimension_distribution": {
+    "time_role_changed": 104,
+    "time_owner_changed": 103,
+    "space_role_changed": 120,
+    "space_owner_changed": 111,
+    "both_time_and_space_changed": 16,
+    "time_only": 88,
+    "space_only": 104
+  },
+  "time_role_transitions": {
+    "unknown -> event_occurrence": 60,
+    "unknown -> unknown": 52,
+    "context_time -> context_time": 48,
+    "biographical -> context_time": 25,
+    "event_occurrence -> relation_validity": 18,
+    "biographical -> biographical": 2,
+    "relation_validity -> relation_validity": 2,
+    "source_document_time -> relation_validity": 1
+  },
+  "space_role_transitions": {
+    "event_location -> context_location": 90,
+    "event_location -> event_location": 52,
+    "event_location -> relation_location": 21,
+    "context_location -> context_location": 20,
+    "unknown -> unknown": 15,
+    "relation_location -> unknown": 4,
+    "context_location -> unknown": 4,
+    "biographical_location -> relation_location": 1,
+    "relation_location -> relation_location": 1
+  },
+  "adjustment_reason_counts": {
+    "final_entity_type_scope_closure": 208
+  },
+  "method_version_counts": {
+    "red-culture-stkg-research-v2-base-3": 208
+  },
+  "consistency_check": {
+    "description": "research_scope_adjustments.final_* 与 research_assertions 当前值比对",
+    "mismatch_count": 0,
+    "mismatches": []
+  },
+  "outputs": {
+    "SCOPE_ADJUSTMENT_TASKS.jsonl": {
+      "rows": 208,
+      "sha256": "e153436157b85bb7413663796627bcedd9733764b5719a75ee2e887340cef84f"
+    },
+    "SCOPE_ADJUSTMENT_AB_MAPPING.csv": {
+      "rows": 208,
+      "sha256": "e7890f150c9d005233c90bd374a33baaa37a1e5220fbf74c59160c43980590c1"
+    }
+  },
+  "notes": [
+    "44/112 与 208 的关系（由 extract_relation_contract_replay.py 全库确定性重放核实，详见 STRUCTURAL_REPLAY_AUDIT.json）：",
+    "w/o Role-owner Closure 下全局非法时间 owner=44、非法空间 owner=112，与 v2 报告的 44/112 完全一致（可复现）。",
+    "44 条非法时间 owner 与 112 条非法空间 owner 对应的断言全部落在 208 条 scope_adjustments 内（时间 44/44、空间 112/112）；任一维度非法共 140 条，其中 16 条时间与空间同时非法（44+112-140=16，与 both_time_and_space_changed=16 自洽）。",
+    "208 条中其余 68 条无非法 owner，系其他闭包原因（unknown 角色重分类、context/relation 角色 owner 置空、身份融合后 owner 失效等）。",
+    "结论：44/112 是 208 条调整中‘owner 类型非法’子集的诊断计数，二者不是并列数字；44+112=156 ≠ 208 属正常，论文行文不应混用。"
+  ]
+}

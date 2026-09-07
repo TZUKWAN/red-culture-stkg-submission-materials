@@ -1,0 +1,44 @@
+{
+  "experiment_id": "v3_identity_pair_tasks",
+  "task_name": "identity_pair_tasks",
+  "master_seed": 20260907,
+  "derived_seed": 986176392,
+  "timestamp": "2026-09-07T17:04:30+08:00",
+  "final_db_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\release_databases\\red_culture_stkg_final_v2.sqlite",
+  "final_db_sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+  "semantic_db_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\release_databases\\red_culture_stkg_semantic_v2.sqlite",
+  "semantic_db_sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377",
+  "row_count": 600,
+  "positive_pairs": 300,
+  "positive_availability": 5770,
+  "hard_negative_pairs": 300,
+  "hard_negative_availability": {
+    "same_name_mixed_type": 4479,
+    "same_name_person": 180,
+    "similar_name_person": 11783016,
+    "event_vs_work_same_name": 63,
+    "org_vs_place_same_name": 88,
+    "alias_name_collision": 208
+  },
+  "hard_negative_quota": {
+    "same_name_mixed_type": 60,
+    "same_name_person": 50,
+    "similar_name_person": 50,
+    "event_vs_work_same_name": 40,
+    "org_vs_place_same_name": 60,
+    "alias_name_collision": 40
+  },
+  "blinding_note": "JSONL carries only names/aliases/independent relation context/time-space/evidence; canonical_entity_id, merge result and mapping status are restricted to IDENTITY_PAIR_METADATA.csv (scoring only)",
+  "output_files": {
+    "IDENTITY_PAIR_TASKS.jsonl": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\11_identity_validation\\IDENTITY_PAIR_TASKS.jsonl",
+      "sha256": "bcfaf7fc87df473d5a09533201ea68ca567222e8eefab660003ef4c60a99f419",
+      "rows": 600
+    },
+    "IDENTITY_PAIR_METADATA.csv": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\11_identity_validation\\IDENTITY_PAIR_METADATA.csv",
+      "sha256": "a484a6dca956f9f11cf0752ea68a87d32a0f82268dfb2180ac799a93b925d21d",
+      "rows": 600
+    }
+  }
+}

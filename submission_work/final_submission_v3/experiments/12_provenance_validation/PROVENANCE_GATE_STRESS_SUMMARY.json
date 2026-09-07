@@ -1,0 +1,61 @@
+{
+  "experiment_id": "v3-12-provenance-gate-fault-injection-stress-test",
+  "experiment_nature": "synthetic failure-injection stress test / fault injection / negative-control — 与真实语料实验严格区分；不构成真实数据上的性能声明",
+  "motivation": "全库确定性消融显示 w/o Provenance Gate 的 changed_vs_full=0：当前发布数据所有 strict_semantic 断言均带 provenance，该门在真实数据上无可观察增益，定位为「发布安全不变量」。本实验在内存中程序化删除部分 strict 断言的 provenance 引用（数据库全程只读），检验 gate 能否 100% 阻止故障断言滞留 strict layer。",
+  "base_seed": 20260907,
+  "seed_derivation": "sha256('{BASE_SEED}|provenance_gate_fault_injection|ratio=<r>')[:8] big-endian",
+  "baseline_tier_counts_replayed": {
+    "contextual": 268047,
+    "strict_semantic": 112158,
+    "unresolved": 43945
+  },
+  "baseline_tier_counts_expected": {
+    "strict_semantic": 112158,
+    "contextual": 268047,
+    "unresolved": 43945
+  },
+  "baseline_match": true,
+  "total_assertions_replayed": 424150,
+  "per_ratio": {
+    "1%": {
+      "ratio": 0.01,
+      "derived_seed": 7968508365372217299,
+      "strict_layer_size": 112158,
+      "injected_count": 1122,
+      "blocked_count": 1122,
+      "block_rate": 1.0,
+      "false_positive_count_control_group": 0,
+      "control_group_size_all_assertions": 423028,
+      "state_transition_of_injected": "strict_semantic -> contextual"
+    },
+    "5%": {
+      "ratio": 0.05,
+      "derived_seed": 17632477188448267785,
+      "strict_layer_size": 112158,
+      "injected_count": 5608,
+      "blocked_count": 5608,
+      "block_rate": 1.0,
+      "false_positive_count_control_group": 0,
+      "control_group_size_all_assertions": 418542,
+      "state_transition_of_injected": "strict_semantic -> contextual"
+    },
+    "20%": {
+      "ratio": 0.2,
+      "derived_seed": 9305852402910827002,
+      "strict_layer_size": 112158,
+      "injected_count": 22432,
+      "blocked_count": 22432,
+      "block_rate": 1.0,
+      "false_positive_count_control_group": 0,
+      "control_group_size_all_assertions": 401718,
+      "state_transition_of_injected": "strict_semantic -> contextual"
+    }
+  },
+  "verification_asserts": {
+    "baseline_tier_counts_match_release": true,
+    "control_group_zero_change_all_assertions": true,
+    "block_rate_100pct_all_ratios": true
+  },
+  "started_at_utc": "2026-09-07T09:16:00.430095+00:00",
+  "finished_at_utc": "2026-09-07T09:16:17.354933+00:00"
+}

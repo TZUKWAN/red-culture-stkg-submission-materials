@@ -1,0 +1,44 @@
+{
+  "experiment_id": "v3_provenance_support_sample",
+  "task_name": "provenance_support_sample",
+  "master_seed": 20260907,
+  "derived_seed": 1166769548,
+  "timestamp": "2026-09-07T17:02:09+08:00",
+  "final_db_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\release_databases\\red_culture_stkg_final_v2.sqlite",
+  "final_db_sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+  "semantic_db_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\release_databases\\red_culture_stkg_semantic_v2.sqlite",
+  "semantic_db_sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377",
+  "row_count": 1000,
+  "quotas": {
+    "strict_semantic": 400,
+    "contextual": 300,
+    "unresolved": 300
+  },
+  "strata_research_tier": {
+    "strict_semantic": 400,
+    "contextual": 300,
+    "unresolved": 300
+  },
+  "facts_with_real_evidence_available": {
+    "contextual": 60560,
+    "strict_semantic": 50161,
+    "unresolved": 13762
+  },
+  "stratum_shortfalls": {},
+  "sampled_rows_without_text": 0,
+  "source_text_resolution": "research_assertion_provenance.evidence_ids_json (fallback integrated_fact_members.evidence_ids_json via source_member_id) -> upstream red_culture_semantic_integration_v1.evidence_registry.evidence_text; structured statement text never used as evidence",
+  "upstream_db_read_only": true,
+  "blinding_note": "research_tier and other production attributes only in PROVENANCE_SUPPORT_METADATA.csv",
+  "output_files": {
+    "PROVENANCE_SUPPORT_SAMPLE.csv": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\12_provenance_validation\\PROVENANCE_SUPPORT_SAMPLE.csv",
+      "sha256": "60720e6b66288c79fb8ba37f0ba34a313e3fcb5ba973c2ab2596e24aab250121",
+      "rows": 1000
+    },
+    "PROVENANCE_SUPPORT_METADATA.csv": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\12_provenance_validation\\PROVENANCE_SUPPORT_METADATA.csv",
+      "sha256": "198d31cbe21249879f2d370307ca1b022ade8eb1ba8cc3afd8f99b54e47a134d",
+      "rows": 1000
+    }
+  }
+}

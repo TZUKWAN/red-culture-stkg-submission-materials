@@ -1,0 +1,16 @@
+﻿task_type,judge_removed,n_tasks,n_labeled_full_panel,n_unchanged_after_removal,stability
+entity_type,A,12,5,2,0.4
+entity_type,B,12,5,1,0.2
+entity_type,C,12,5,2,0.4
+relation_contract,A,12,7,2,0.2857142857142857
+relation_contract,B,12,7,3,0.42857142857142855
+relation_contract,C,12,7,2,0.2857142857142857
+scope_adjustment,A,12,7,3,0.42857142857142855
+scope_adjustment,B,12,7,2,0.2857142857142857
+scope_adjustment,C,12,7,4,0.5714285714285714
+identity_pair,A,12,11,5,0.45454545454545453
+identity_pair,B,12,11,5,0.45454545454545453
+identity_pair,C,12,11,5,0.45454545454545453
+provenance_support,A,12,4,0,0.0
+provenance_support,B,12,4,3,0.75
+provenance_support,C,12,4,1,0.25

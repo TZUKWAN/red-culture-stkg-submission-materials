@@ -1,3 +1,4 @@
 *.sqlite filter=lfs diff=lfs merge=lfs -text
 data/graph_export/*.csv filter=lfs diff=lfs merge=lfs -text
 data/source_data/master_data.csv filter=lfs diff=lfs merge=lfs -text
+submission_work/final_submission_v3/experiments/12_provenance_validation/PROVENANCE_GATE_STRESS_TEST.csv filter=lfs diff=lfs merge=lfs -text

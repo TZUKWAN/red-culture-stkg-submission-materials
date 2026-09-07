@@ -1,0 +1,26 @@
+{
+  "manifest_id": "SCOPE_ADJUSTMENT_EXTRACTION_AUDIT.manifest",
+  "experiment_id": "v3-10-structural-validation-scope-adjustments",
+  "created_at_utc": "2026-09-07T09:00:19.025098+00:00",
+  "target_file": "SCOPE_ADJUSTMENT_EXTRACTION_AUDIT.json",
+  "target_relative_path": "submission_work/final_submission_v3/experiments/10_structural_validation/SCOPE_ADJUSTMENT_EXTRACTION_AUDIT.json",
+  "target_sha256": "f4b4d6e4b50b330373590dc8db1a4eca2accb5ba64eb5e4baaafe07736b1cb9c",
+  "target_size_bytes": 3349,
+  "target_rows": -1,
+  "master_seed": 20260907,
+  "derived_seeds": {
+    "scope_adjustment_ab_blinding": 11613091355876745079
+  },
+  "code": "submission_work/final_submission_v3/code/independent_eval/extract_scope_adjustment_tasks.py",
+  "databases": {
+    "final": {
+      "path": "data/release_databases/red_culture_stkg_final_v2.sqlite",
+      "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7"
+    },
+    "semantic": {
+      "path": "data/release_databases/red_culture_stkg_semantic_v2.sqlite",
+      "sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377"
+    }
+  },
+  "database_open_mode": "read-only (file:...?mode=ro)"
+}

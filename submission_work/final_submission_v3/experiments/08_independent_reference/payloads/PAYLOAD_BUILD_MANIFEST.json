@@ -1,0 +1,130 @@
+{
+  "code_commit": "d418042b55c76a61579d8f4d2e6447039c38808f",
+  "database_sha256": "UNAVAILABLE",
+  "description": "IMCR 盲化 judge payload 构建清单（GOAL 7.1/7.3/21）",
+  "dry_run": false,
+  "experiment_id": "imcr_payload_build",
+  "model_ids": [],
+  "prompt_sha256": "3a9621811e3cd008c2a42d82408c8e9ddcc03528a25d593699360b2e5edf8a60",
+  "sample_manifest_sha256": "UNAVAILABLE",
+  "schema_sha256": "UNAVAILABLE",
+  "seed": 20260907,
+  "tasks": [
+    {
+      "ab_mapping_file": null,
+      "ab_mapping_sha256": null,
+      "allowed_labels": [
+        "Person",
+        "Event",
+        "Place",
+        "Organization",
+        "Institution",
+        "Concept",
+        "Document",
+        "Artifact",
+        "CreativeWork",
+        "Spirit",
+        "ValueFacet",
+        "AdministrativeRegion",
+        "CulturalSite",
+        "SocialGroup",
+        "Position",
+        "TimePeriod",
+        "OTHER"
+      ],
+      "input_file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\ENTITY_TYPE_SAMPLE.csv",
+      "input_sha256": "284fe8c4d7f37b0476a880fe8e52facd631b21630aa1c7bc5ead7e71b0c9ed82",
+      "n_with_evidence_excerpts": 0,
+      "payload_file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\payloads\\ENTITY_TYPE_PAYLOADS.jsonl",
+      "payload_sha256": "6ae6886ec73ac0b887b9879dc3698ee04dd436ab4da95c2223f6eafd09a7f587",
+      "prompt_sha256": "64eef488fd2caf62e9da5abdd2682353dc954f9a07dccaee316c93002accb37d",
+      "prompt_version": "imcr.v3.1",
+      "rows": 382,
+      "seed": 2026305877,
+      "task_type": "entity_type"
+    },
+    {
+      "ab_mapping_file": null,
+      "ab_mapping_sha256": null,
+      "allowed_labels": [
+        "valid",
+        "invalid",
+        "context_only",
+        "insufficient_evidence"
+      ],
+      "input_file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\RELATION_CONTRACT_SAMPLE.csv",
+      "input_sha256": "903f0354e97e4a0e33f1644874351936e311833e9271c5c8eb75020b301e5f87",
+      "n_with_evidence_excerpts": 3,
+      "payload_file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\payloads\\RELATION_CONTRACT_PAYLOADS.jsonl",
+      "payload_sha256": "4491e0e3d0d19eab583736eb9c7a0bea824098916d90d836630d661b1d814114",
+      "prompt_sha256": "616c8a529a666b2a67ac9f674275ec0a0982a3293cefdeef647b119ed5ed13a6",
+      "prompt_version": "imcr.v3.1",
+      "rows": 640,
+      "seed": 1720926945,
+      "task_type": "relation_contract"
+    },
+    {
+      "ab_mapping_file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\payloads\\SCOPE_ADJUSTMENT_PAYLOAD_AB_MAPPING.csv",
+      "ab_mapping_sha256": "63856b42abdc7fe386ff780f26a2e4f7da165c3c1e871b74d85ad39624eac2e7",
+      "allowed_labels": [
+        "A_BETTER",
+        "B_BETTER",
+        "EQUIVALENT",
+        "BOTH_WRONG",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "input_file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\10_structural_validation\\SCOPE_ADJUSTMENT_TASKS.jsonl",
+      "input_sha256": "e153436157b85bb7413663796627bcedd9733764b5719a75ee2e887340cef84f",
+      "n_with_evidence_excerpts": 0,
+      "payload_file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\payloads\\SCOPE_ADJUSTMENT_PAYLOADS.jsonl",
+      "payload_sha256": "bfbd98f887c34fc5af158fcb759dabc617858008150da2f5bb25e05bb1f89346",
+      "prompt_sha256": "189e580fd9779b2c228d8892a3d9eeeb748452486880ce7a01408210b06ae82f",
+      "prompt_version": "imcr.v3.1",
+      "rows": 208,
+      "seed": 1361302130,
+      "task_type": "scope_adjustment"
+    },
+    {
+      "ab_mapping_file": null,
+      "ab_mapping_sha256": null,
+      "allowed_labels": [
+        "same_entity",
+        "different_entity",
+        "insufficient_evidence"
+      ],
+      "input_file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\11_identity_validation\\IDENTITY_PAIR_TASKS.jsonl",
+      "input_sha256": "bcfaf7fc87df473d5a09533201ea68ca567222e8eefab660003ef4c60a99f419",
+      "n_with_evidence_excerpts": 0,
+      "payload_file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\payloads\\IDENTITY_PAIR_PAYLOADS.jsonl",
+      "payload_sha256": "c87d09a9456096249f3a7dd493130ae6d8997d27c43d970d38f2c15c3101b9af",
+      "prompt_sha256": "d8d89ccc2b3974c905bd35969cdedc8836267f1efeeb9a644cfd1afbef7be290",
+      "prompt_version": "imcr.v3.1",
+      "rows": 600,
+      "seed": 116018273,
+      "task_type": "identity_pair"
+    },
+    {
+      "ab_mapping_file": null,
+      "ab_mapping_sha256": null,
+      "allowed_labels": [
+        "fully_supported",
+        "partially_supported",
+        "unsupported",
+        "contradicted",
+        "insufficient_evidence"
+      ],
+      "input_file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\12_provenance_validation\\PROVENANCE_SUPPORT_SAMPLE.csv",
+      "input_sha256": "60720e6b66288c79fb8ba37f0ba34a313e3fcb5ba973c2ab2596e24aab250121",
+      "n_with_evidence_excerpts": 1000,
+      "payload_file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\payloads\\PROVENANCE_SUPPORT_PAYLOADS.jsonl",
+      "payload_sha256": "21bda3ba30e94607dc9b842adf72971d577032654a65c8559edcdb3100bb401d",
+      "prompt_sha256": "ea4243afd74242301a2eecfafe4e457f5be285eb7e1bbd1775c4b7f82e49e459",
+      "prompt_version": "imcr.v3.1",
+      "rows": 1000,
+      "seed": 965060011,
+      "task_type": "provenance_support"
+    }
+  ],
+  "timestamp": "2026-09-07T09:28:55.908559+00:00",
+  "total_rows": 2830
+}

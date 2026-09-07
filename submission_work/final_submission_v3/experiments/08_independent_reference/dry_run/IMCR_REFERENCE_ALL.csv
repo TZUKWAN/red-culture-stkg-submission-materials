@@ -1,0 +1,35 @@
+﻿task_type,task_id,imcr_label,imcr_label_decoded,consensus_tier,n_valid_votes,winning_votes,vote_distribution,judges,dry_run
+entity_type,ETV3-0001,TimePeriod,TimePeriod,weak_consensus,3,2,"{""TimePeriod"": 2, ""ValueFacet"": 1}",A;B;C,True
+entity_type,ETV3-0002,TimePeriod,TimePeriod,weak_consensus,3,2,"{""Spirit"": 1, ""TimePeriod"": 2}",A;B;C,True
+entity_type,ETV3-0003,Spirit,Spirit,weak_consensus,3,2,"{""Organization"": 1, ""Spirit"": 2}",A;B;C,True
+entity_type,ETV3-0010,Event,Event,weak_consensus,3,2,"{""Event"": 2, ""Place"": 1}",A;B;C,True
+entity_type,ETV3-0011,Position,Position,weak_consensus,3,2,"{""CulturalSite"": 1, ""Position"": 2}",A;B;C,True
+relation_contract,RC-C-0002,context_only,context_only,weak_consensus,3,2,"{""context_only"": 2, ""valid"": 1}",A;B;C,True
+relation_contract,RC-C-0003,context_only,context_only,weak_consensus,3,2,"{""context_only"": 2, ""invalid"": 1}",A;B;C,True
+relation_contract,RC-C-0004,valid,valid,weak_consensus,3,2,"{""context_only"": 1, ""valid"": 2}",A;B;C,True
+relation_contract,RC-C-0005,context_only,context_only,weak_consensus,3,2,"{""context_only"": 2, ""invalid"": 1}",A;B;C,True
+relation_contract,RC-S-0001,insufficient_evidence,insufficient_evidence,weak_consensus,3,2,"{""context_only"": 1, ""insufficient_evidence"": 2}",A;B;C,True
+relation_contract,RC-S-0002,valid,valid,weak_consensus,3,2,"{""invalid"": 1, ""valid"": 2}",A;B;C,True
+relation_contract,RC-S-0005,insufficient_evidence,insufficient_evidence,weak_consensus,3,2,"{""insufficient_evidence"": 2, ""invalid"": 1}",A;B;C,True
+scope_adjustment,SA-0001,A_BETTER,BEFORE_BETTER,weak_consensus,3,2,"{""A_BETTER"": 2, ""B_BETTER"": 1}",A;B;C,True
+scope_adjustment,SA-0004,A_BETTER,AFTER_BETTER,weak_consensus,3,2,"{""A_BETTER"": 2, ""EQUIVALENT"": 1}",A;B;C,True
+scope_adjustment,SA-0005,B_BETTER,AFTER_BETTER,weak_consensus,3,2,"{""B_BETTER"": 2, ""INSUFFICIENT_EVIDENCE"": 1}",A;B;C,True
+scope_adjustment,SA-0008,EQUIVALENT,EQUIVALENT,weak_consensus,3,2,"{""B_BETTER"": 1, ""EQUIVALENT"": 2}",A;B;C,True
+scope_adjustment,SA-0010,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,weak_consensus,3,2,"{""BOTH_WRONG"": 1, ""INSUFFICIENT_EVIDENCE"": 2}",A;B;C,True
+scope_adjustment,SA-0011,B_BETTER,BEFORE_BETTER,strong_consensus,3,3,"{""B_BETTER"": 3}",A;B;C,True
+scope_adjustment,SA-0012,EQUIVALENT,EQUIVALENT,weak_consensus,3,2,"{""EQUIVALENT"": 2, ""INSUFFICIENT_EVIDENCE"": 1}",A;B;C,True
+identity_pair,IDP3-0001,same_entity,same_entity,strong_consensus,3,3,"{""same_entity"": 3}",A;B;C,True
+identity_pair,IDP3-0002,same_entity,same_entity,weak_consensus,3,2,"{""insufficient_evidence"": 1, ""same_entity"": 2}",A;B;C,True
+identity_pair,IDP3-0003,insufficient_evidence,insufficient_evidence,weak_consensus,3,2,"{""different_entity"": 1, ""insufficient_evidence"": 2}",A;B;C,True
+identity_pair,IDP3-0004,different_entity,different_entity,weak_consensus,3,2,"{""different_entity"": 2, ""insufficient_evidence"": 1}",A;B;C,True
+identity_pair,IDP3-0005,insufficient_evidence,insufficient_evidence,weak_consensus,3,2,"{""different_entity"": 1, ""insufficient_evidence"": 2}",A;B;C,True
+identity_pair,IDP3-0006,different_entity,different_entity,weak_consensus,3,2,"{""different_entity"": 2, ""insufficient_evidence"": 1}",A;B;C,True
+identity_pair,IDP3-0007,same_entity,same_entity,strong_consensus,3,3,"{""same_entity"": 3}",A;B;C,True
+identity_pair,IDP3-0008,insufficient_evidence,insufficient_evidence,weak_consensus,3,2,"{""insufficient_evidence"": 2, ""same_entity"": 1}",A;B;C,True
+identity_pair,IDP3-0009,different_entity,different_entity,weak_consensus,3,2,"{""different_entity"": 2, ""insufficient_evidence"": 1}",A;B;C,True
+identity_pair,IDP3-0010,insufficient_evidence,insufficient_evidence,weak_consensus,3,2,"{""different_entity"": 1, ""insufficient_evidence"": 2}",A;B;C,True
+identity_pair,IDP3-0012,same_entity,same_entity,weak_consensus,3,2,"{""different_entity"": 1, ""same_entity"": 2}",A;B;C,True
+provenance_support,PRV3-0002,unsupported,unsupported,weak_consensus,3,2,"{""contradicted"": 1, ""unsupported"": 2}",A;B;C,True
+provenance_support,PRV3-0003,unsupported,unsupported,weak_consensus,3,2,"{""insufficient_evidence"": 1, ""unsupported"": 2}",A;B;C,True
+provenance_support,PRV3-0009,contradicted,contradicted,weak_consensus,3,2,"{""contradicted"": 2, ""unsupported"": 1}",A;B;C,True
+provenance_support,PRV3-0010,fully_supported,fully_supported,weak_consensus,3,2,"{""fully_supported"": 2, ""partially_supported"": 1}",A;B;C,True

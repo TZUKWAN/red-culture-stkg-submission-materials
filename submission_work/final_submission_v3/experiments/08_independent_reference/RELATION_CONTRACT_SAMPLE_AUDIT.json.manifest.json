@@ -1,0 +1,27 @@
+{
+  "manifest_id": "RELATION_CONTRACT_SAMPLE_AUDIT.manifest",
+  "experiment_id": "v3-08-independent-reference-relation-contract-sample",
+  "created_at_utc": "2026-09-07T09:00:19.025098+00:00",
+  "target_file": "RELATION_CONTRACT_SAMPLE_AUDIT.json",
+  "target_relative_path": "submission_work/final_submission_v3/experiments/08_independent_reference/RELATION_CONTRACT_SAMPLE_AUDIT.json",
+  "target_sha256": "df6e35d1a55d488e263503a81a3fc51d4b96ac11ab709b120f17e29d834da30a",
+  "target_size_bytes": 4974,
+  "target_rows": -1,
+  "master_seed": 20260907,
+  "derived_seeds": {
+    "relation_contract_changed_sample": 18325135014378549764,
+    "relation_contract_control_match": 1675502011650224711
+  },
+  "code": "submission_work/final_submission_v3/code/independent_eval/sample_relation_contract_sample.py",
+  "databases": {
+    "final": {
+      "path": "data/release_databases/red_culture_stkg_final_v2.sqlite",
+      "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7"
+    },
+    "semantic": {
+      "path": "data/release_databases/red_culture_stkg_semantic_v2.sqlite",
+      "sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377"
+    }
+  },
+  "database_open_mode": "read-only (file:...?mode=ro)"
+}

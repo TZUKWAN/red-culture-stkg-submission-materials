@@ -1,0 +1,4 @@
+﻿task_type,task_id,imcr_label,imcr_label_decoded,consensus_tier,n_valid_votes,winning_votes,vote_distribution,judges,dry_run
+scope_adjustment,SA-0011,B_BETTER,BEFORE_BETTER,strong_consensus,3,3,"{""B_BETTER"": 3}",A;B;C,True
+identity_pair,IDP3-0001,same_entity,same_entity,strong_consensus,3,3,"{""same_entity"": 3}",A;B;C,True
+identity_pair,IDP3-0007,same_entity,same_entity,strong_consensus,3,3,"{""same_entity"": 3}",A;B;C,True

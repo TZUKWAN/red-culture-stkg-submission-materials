@@ -1,0 +1,46 @@
+{
+  "manifest_id": "PROVENANCE_GATE_STRESS_MANIFEST",
+  "experiment_id": "v3-12-provenance-gate-fault-injection-stress-test",
+  "experiment_nature": "synthetic failure-injection stress test / fault injection / negative-control",
+  "created_at_utc": "2026-09-07T09:16:17.354933+00:00",
+  "script": "submission_work/final_submission_v3/code/independent_eval/run_provenance_gate_stress.py",
+  "base_seed": 20260907,
+  "derived_seeds": {
+    "1%": 7968508365372217299,
+    "5%": 17632477188448267785,
+    "20%": 9305852402910827002
+  },
+  "databases": {
+    "final": {
+      "path": "data/release_databases/red_culture_stkg_final_v2.sqlite",
+      "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7"
+    },
+    "semantic": {
+      "path": "data/release_databases/red_culture_stkg_semantic_v2.sqlite",
+      "sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377"
+    }
+  },
+  "database_sha256_reference": {
+    "final": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+    "semantic": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377"
+  },
+  "database_open_mode": "read-only (file:...?mode=ro; ATTACH 只读 URI); 故障注入仅在内存，绝不写回",
+  "outputs": {
+    "PROVENANCE_GATE_FAULT_INJECTION.csv": {
+      "sha256": "d2057218efa6c3fb06a4ebf1fa76beac037592f17c1b5475cdcc28e936dfa090",
+      "bytes": 2703126
+    },
+    "PROVENANCE_GATE_STRESS_TEST.csv": {
+      "sha256": "bd777ffd44dc2b2424957141905cbcbb204712261c17c0e26ed56eb41e34b4fb",
+      "bytes": 27472489
+    },
+    "PROVENANCE_GATE_STRESS_SUMMARY.json": {
+      "sha256": "c99a30c08bb2ad681e0ac1e6587a4f6138ee85d6b7e3f3e2edc0e80ae7a6143e",
+      "bytes": 2593
+    },
+    "PROVENANCE_GATE_STRESS_TEST.md": {
+      "sha256": "c8263850d1d8c561fbfbd0de9bdbabe7d3ff561193341f7c43835dd133991370",
+      "bytes": 3880
+    }
+  }
+}

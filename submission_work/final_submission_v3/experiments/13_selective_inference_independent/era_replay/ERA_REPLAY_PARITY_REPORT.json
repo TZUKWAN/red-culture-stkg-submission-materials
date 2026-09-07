@@ -1,0 +1,1269 @@
+{
+  "generated_at": "2026-09-07T09:30:41+00:00",
+  "verdict": "PASS",
+  "tolerance": 1e-09,
+  "v2_dir": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v2\\experiments\\03_selective_inference",
+  "v3_dir": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\era_replay",
+  "v3_prefix": "era_",
+  "files": {
+    "RISK_COVERAGE_POINTS.csv": {
+      "v2_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v2\\experiments\\03_selective_inference\\RISK_COVERAGE_POINTS.csv",
+      "v3_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\era_replay\\era_RISK_COVERAGE_POINTS.csv",
+      "verdict": "PASS",
+      "mismatches": [],
+      "per_curve": {
+        "M1_rule_only|entity_type|constrained_selective": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|entity_type|score_only_diagnostic": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|event_role|constrained_selective": {
+          "rows": 25,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|event_role|score_only_diagnostic": {
+          "rows": 25,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|relation_semantic|constrained_selective": {
+          "rows": 25,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|relation_semantic|score_only_diagnostic": {
+          "rows": 25,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|space_owner|constrained_selective": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|space_owner|score_only_diagnostic": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|space_role|constrained_selective": {
+          "rows": 28,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|space_role|score_only_diagnostic": {
+          "rows": 28,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|time_owner|constrained_selective": {
+          "rows": 28,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|time_owner|score_only_diagnostic": {
+          "rows": 28,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|time_role|constrained_selective": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|time_role|score_only_diagnostic": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|entity_type|constrained_selective": {
+          "rows": 62,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|entity_type|score_only_diagnostic": {
+          "rows": 66,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|event_role|constrained_selective": {
+          "rows": 42,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|event_role|score_only_diagnostic": {
+          "rows": 43,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|relation_semantic|constrained_selective": {
+          "rows": 55,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|relation_semantic|score_only_diagnostic": {
+          "rows": 66,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|space_owner|constrained_selective": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|space_owner|score_only_diagnostic": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|space_role|constrained_selective": {
+          "rows": 44,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|space_role|score_only_diagnostic": {
+          "rows": 44,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|time_owner|constrained_selective": {
+          "rows": 28,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|time_owner|score_only_diagnostic": {
+          "rows": 28,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|time_role|constrained_selective": {
+          "rows": 48,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|time_role|score_only_diagnostic": {
+          "rows": 48,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|entity_type|constrained_selective": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|entity_type|score_only_diagnostic": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|event_role|constrained_selective": {
+          "rows": 25,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|event_role|score_only_diagnostic": {
+          "rows": 25,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|relation_semantic|constrained_selective": {
+          "rows": 25,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|relation_semantic|score_only_diagnostic": {
+          "rows": 25,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|space_owner|constrained_selective": {
+          "rows": 26,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|space_owner|score_only_diagnostic": {
+          "rows": 26,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|space_role|constrained_selective": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|space_role|score_only_diagnostic": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|time_owner|constrained_selective": {
+          "rows": 25,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|time_owner|score_only_diagnostic": {
+          "rows": 25,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|time_role|constrained_selective": {
+          "rows": 25,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|time_role|score_only_diagnostic": {
+          "rows": 25,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|entity_type|constrained_selective": {
+          "rows": 28,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|entity_type|score_only_diagnostic": {
+          "rows": 28,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|event_role|constrained_selective": {
+          "rows": 28,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|event_role|score_only_diagnostic": {
+          "rows": 28,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|relation_semantic|constrained_selective": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|relation_semantic|score_only_diagnostic": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|space_owner|constrained_selective": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|space_owner|score_only_diagnostic": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|space_role|constrained_selective": {
+          "rows": 28,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|space_role|score_only_diagnostic": {
+          "rows": 28,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|time_owner|constrained_selective": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|time_owner|score_only_diagnostic": {
+          "rows": 27,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|time_role|constrained_selective": {
+          "rows": 29,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|time_role|score_only_diagnostic": {
+          "rows": 29,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        }
+      },
+      "columns": 31,
+      "rows": 1750,
+      "max_abs_diff": 0.0,
+      "curves": 56,
+      "curves_passing": 56
+    },
+    "RISK_COVERAGE_SUMMARY.csv": {
+      "v2_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v2\\experiments\\03_selective_inference\\RISK_COVERAGE_SUMMARY.csv",
+      "v3_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\era_replay\\era_RISK_COVERAGE_SUMMARY.csv",
+      "verdict": "PASS",
+      "mismatches": [],
+      "per_curve": {
+        "M1_rule_only|entity_type|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|entity_type|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|event_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|event_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|relation_semantic|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|relation_semantic|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|space_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|space_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|space_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|space_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|time_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|time_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|time_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|time_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|entity_type|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|entity_type|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|event_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|event_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|relation_semantic|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|relation_semantic|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|space_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|space_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|space_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|space_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|time_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|time_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|time_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|time_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|entity_type|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|entity_type|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|event_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|event_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|relation_semantic|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|relation_semantic|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|space_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|space_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|space_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|space_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|time_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|time_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|time_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_cached_llm_replay|time_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|entity_type|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|entity_type|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|event_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|event_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|relation_semantic|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|relation_semantic|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|space_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|space_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|space_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|space_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|time_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|time_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|time_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M3_live_llm_only|time_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|entity_type|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|entity_type|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|event_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|event_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|relation_semantic|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|relation_semantic|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|space_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|space_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|space_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|space_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|time_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|time_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|time_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M4_rule_plus_cached_llm|time_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|entity_type|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|entity_type|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|event_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|event_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|relation_semantic|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|relation_semantic|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|space_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|space_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|space_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|space_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|time_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|time_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|time_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M5_no_global_closure|time_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|entity_type|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|entity_type|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|event_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|event_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|relation_semantic|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|relation_semantic|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|space_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|space_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|space_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|space_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|time_owner|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|time_owner|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|time_role|constrained_selective": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|time_role|score_only_diagnostic": {
+          "rows": 1,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        }
+      },
+      "columns": 39,
+      "rows": 98,
+      "max_abs_diff": 0.0,
+      "curves": 98,
+      "curves_passing": 98
+    },
+    "RISK_COVERAGE_BOOTSTRAP.csv": {
+      "v2_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v2\\experiments\\03_selective_inference\\RISK_COVERAGE_BOOTSTRAP.csv",
+      "v3_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\era_replay\\era_RISK_COVERAGE_BOOTSTRAP.csv",
+      "verdict": "PASS",
+      "mismatches": [],
+      "per_curve": {
+        "M1_rule_only|space_role|constrained_selective": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M1_rule_only|space_role|score_only_diagnostic": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|entity_type|constrained_selective": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|entity_type|score_only_diagnostic": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|event_role|constrained_selective": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|event_role|score_only_diagnostic": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|relation_semantic|constrained_selective": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|relation_semantic|score_only_diagnostic": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|space_role|constrained_selective": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|space_role|score_only_diagnostic": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|time_role|constrained_selective": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M2_classifier_only|time_role|score_only_diagnostic": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|entity_type|constrained_selective": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|entity_type|score_only_diagnostic": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|event_role|constrained_selective": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|event_role|score_only_diagnostic": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|space_role|constrained_selective": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|space_role|score_only_diagnostic": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|time_role|constrained_selective": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        },
+        "M6_full_v2_replay|time_role|score_only_diagnostic": {
+          "rows": 2000,
+          "mismatched_cells": 0,
+          "max_abs_diff": 0.0,
+          "verdict": "PASS"
+        }
+      },
+      "columns": 8,
+      "rows": 40000,
+      "max_abs_diff": 0.0,
+      "curves": 20,
+      "curves_passing": 20
+    }
+  },
+  "per_curve_verdicts": {
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|entity_type|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|entity_type|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|event_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|event_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|relation_semantic|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|relation_semantic|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|space_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|space_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|time_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|time_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|time_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M1_rule_only|time_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|entity_type|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|entity_type|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|event_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|event_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|relation_semantic|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|relation_semantic|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|space_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|space_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|time_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|time_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|time_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M2_classifier_only|time_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|entity_type|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|entity_type|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|event_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|event_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|relation_semantic|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|relation_semantic|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|space_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|space_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|time_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|time_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|time_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M4_rule_plus_cached_llm|time_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|entity_type|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|entity_type|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|event_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|event_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|relation_semantic|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|relation_semantic|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|space_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|space_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|time_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|time_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|time_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_POINTS.csv::M6_full_v2_replay|time_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|entity_type|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|entity_type|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|event_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|event_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|relation_semantic|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|relation_semantic|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|space_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|space_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|time_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|time_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|time_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M1_rule_only|time_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|entity_type|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|entity_type|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|event_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|event_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|relation_semantic|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|relation_semantic|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|space_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|space_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|time_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|time_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|time_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M2_classifier_only|time_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|entity_type|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|entity_type|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|event_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|event_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|relation_semantic|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|relation_semantic|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|space_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|space_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|time_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|time_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|time_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_cached_llm_replay|time_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|entity_type|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|entity_type|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|event_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|event_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|relation_semantic|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|relation_semantic|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|space_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|space_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|time_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|time_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|time_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M3_live_llm_only|time_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|entity_type|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|entity_type|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|event_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|event_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|relation_semantic|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|relation_semantic|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|space_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|space_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|time_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|time_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|time_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M4_rule_plus_cached_llm|time_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|entity_type|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|entity_type|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|event_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|event_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|relation_semantic|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|relation_semantic|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|space_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|space_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|time_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|time_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|time_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M5_no_global_closure|time_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|entity_type|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|entity_type|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|event_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|event_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|relation_semantic|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|relation_semantic|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|space_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|space_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|time_owner|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|time_owner|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|time_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_SUMMARY.csv::M6_full_v2_replay|time_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M1_rule_only|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M1_rule_only|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M2_classifier_only|entity_type|constrained_selective": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M2_classifier_only|entity_type|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M2_classifier_only|event_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M2_classifier_only|event_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M2_classifier_only|relation_semantic|constrained_selective": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M2_classifier_only|relation_semantic|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M2_classifier_only|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M2_classifier_only|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M2_classifier_only|time_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M2_classifier_only|time_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M6_full_v2_replay|entity_type|constrained_selective": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M6_full_v2_replay|entity_type|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M6_full_v2_replay|event_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M6_full_v2_replay|event_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M6_full_v2_replay|space_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M6_full_v2_replay|space_role|score_only_diagnostic": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M6_full_v2_replay|time_role|constrained_selective": "PASS",
+    "RISK_COVERAGE_BOOTSTRAP.csv::M6_full_v2_replay|time_role|score_only_diagnostic": "PASS"
+  }
+}

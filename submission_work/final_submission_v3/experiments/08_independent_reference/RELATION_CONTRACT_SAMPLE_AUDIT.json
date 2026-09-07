@@ -1,0 +1,164 @@
+{
+  "audit_id": "RELATION_CONTRACT_SAMPLE_AUDIT",
+  "created_at_utc": "2026-09-07T08:59:07.713747+00:00",
+  "experiment_id": "v3-08-independent-reference-relation-contract-sample",
+  "master_seed": 20260907,
+  "derived_seeds": {
+    "relation_contract_changed_sample": 18325135014378549764,
+    "relation_contract_control_match": 1675502011650224711
+  },
+  "seed_derivation": "int.from_bytes(SHA256('<task>|20260907')[:8],'big')",
+  "inputs": {
+    "changed_set": "submission_work/final_submission_v3/experiments/10_structural_validation/RELATION_CONTRACT_CHANGED_SET.csv (3412 行)",
+    "control_pool": "现场确定性重放 Full vs w/o Relation Contract 状态相等且不在 3412 内的断言"
+  },
+  "databases": {
+    "final": {
+      "path": "data/release_databases/red_culture_stkg_final_v2.sqlite",
+      "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7"
+    },
+    "semantic": {
+      "path": "data/release_databases/red_culture_stkg_semantic_v2.sqlite",
+      "sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377"
+    }
+  },
+  "changed_set_strata": 377,
+  "changed_target": 320,
+  "changed_selected": 320,
+  "pairs_matched": 320,
+  "unmatched_changed": 0,
+  "match_level_counts": {
+    "L2": 151,
+    "L3": 21,
+    "L4": 130,
+    "L5": 18
+  },
+  "match_level_legend": {
+    "L1": "同 predicate+subject_type+object_type+stage_codes+risk_tier",
+    "L2": "去 risk_tier",
+    "L3": "去 stage_codes",
+    "L4": "去 object_type",
+    "L5": "仅同 predicate"
+  },
+  "changed_stratum_allocation_top10": [
+    [
+      [
+        "participated_in",
+        "Person",
+        "Organization",
+        "no_stage",
+        "A"
+      ],
+      50
+    ],
+    [
+      [
+        "occurred_at",
+        "Organization",
+        "Place",
+        "no_stage",
+        "A"
+      ],
+      34
+    ],
+    [
+      [
+        "active_at",
+        "Person",
+        "Institution",
+        "no_stage",
+        "A"
+      ],
+      28
+    ],
+    [
+      [
+        "mentioned_in",
+        "CreativeWork",
+        "Organization",
+        "no_stage",
+        "A"
+      ],
+      27
+    ],
+    [
+      [
+        "held_position_in",
+        "Person",
+        "Position",
+        "no_stage",
+        "A"
+      ],
+      12
+    ],
+    [
+      [
+        "participated_in",
+        "Person",
+        "Organization",
+        "war_of_resistance",
+        "A"
+      ],
+      9
+    ],
+    [
+      [
+        "occurred_at",
+        "Event",
+        "Institution",
+        "no_stage",
+        "A"
+      ],
+      9
+    ],
+    [
+      [
+        "participated_in",
+        "Person",
+        "Institution",
+        "no_stage",
+        "A"
+      ],
+      8
+    ],
+    [
+      [
+        "occurred_at",
+        "Organization",
+        "AdministrativeRegion",
+        "no_stage",
+        "A"
+      ],
+      7
+    ],
+    [
+      [
+        "mentioned_in",
+        "CreativeWork",
+        "Event",
+        "no_stage",
+        "A"
+      ],
+      7
+    ]
+  ],
+  "changed_stratum_allocation_repr": {
+    "allocations": 107,
+    "strata_covered_pct": 28.38
+  },
+  "reference_subset_148_verification": {
+    "source_file": "submission_work/final_submission_v3/data/external_inputs/AI_GOLD_LABELS.csv（sha256 1190ed0d7a4ec16b34712293f47992d624788ba4734c2bfce4020d51de0a9c0f，712 行中 task_type=relation_semantic 为 148 行）",
+    "saturation_evidence": "submission_work/final_submission_v2/experiments/05_ablation/ABLATION_PREDICTIONS.csv 中 component=Relation Contract 的 relation_semantic 共 296 行：variant='Full relation contract' correct=148/148，variant='w/o Relation Contract' correct=148/148，二者完全相同 → 该子集对关系契约组件区分力为 0（饱和），正是本抽样（从 3412 条全库变化记录重抽）的动机。"
+  },
+  "outputs": {
+    "RELATION_CONTRACT_SAMPLE.csv": {
+      "rows": 640,
+      "sha256": "903f0354e97e4a0e33f1644874351936e311833e9271c5c8eb75020b301e5f87"
+    }
+  },
+  "notes": [
+    "changed 样本全部满足 full_tier=contextual、wo_tier=strict_semantic（去掉契约后进入严格语义层），即论文所述 3412 条新增类型违例；judge 任务为盲评关系语义/类型相容性，不暴露该来源。",
+    "对照与变化样本共享 stratum_key；match_level 标记放宽层级，L1 为完全同层匹配。",
+    "L1 匹配数为 0 是结构性必然：契约通过与否由 (predicate, subject_type, object_type) 决定，与某 changed 记录完全同型组合且其余准入条件也相同的记录必然也违反契约、同样进入 3412 变化集；仅存的对照是 route/validation/provenance 等其他条件不同而未变化者。因此匹配实际锚定在 predicate+subject_type（L4 为主），object_type 与 changed 记录系统性不同，judge 分析与统计建模须控制该设计特征。"
+  ]
+}

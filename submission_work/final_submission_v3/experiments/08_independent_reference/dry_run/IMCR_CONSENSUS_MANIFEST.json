@@ -1,0 +1,89 @@
+{
+  "code_commit": "d418042b55c76a61579d8f4d2e6447039c38808f",
+  "database_sha256": "UNAVAILABLE",
+  "description": "IMCR 共识参考集构建清单（GOAL 7.4/7.5/21）；DRY_RUN 演练输出，不得用于论文",
+  "dry_run": true,
+  "experiment_id": "imcr_consensus_build",
+  "model_ids": [
+    "dry-run-model-a",
+    "dry-run-model-b",
+    "dry-run-model-c"
+  ],
+  "n_reference_all": 34,
+  "n_reference_strong": 3,
+  "output_files": {
+    "IMCR_REFERENCE_ALL.csv": "ac0ff1140c1d6d712c9ffaeefd883096e09ea4aee5565a8d991d4105b30d50f1",
+    "IMCR_REFERENCE_STRONG.csv": "08c417abc0ac1b8ba43beb5138fa917daf21f7c7e00188c2cbe578a967582a14",
+    "JUDGE_PAIRWISE_AGREEMENT.csv": "1f2492cf250688b088d154ffbf97d52d459086fe6aa58fb6dc53d2401b39a6d1",
+    "JUDGE_RELIABILITY_SUMMARY.csv": "31f735333d8678548ffb6dcdeb006bc7c8ae5d49c8b8b7c19d5595fe924e530f",
+    "LEAVE_ONE_JUDGE_OUT.csv": "0a620a5fb624b0ac15e12d17b0b89dbb7ad17f32473217b4df9d9611f66adbc3"
+  },
+  "prompt_sha256": "UNAVAILABLE",
+  "raw_root": "experiments\\08_independent_reference\\dry_run\\raw_runs",
+  "sample_manifest_sha256": "UNAVAILABLE",
+  "schema_sha256": "UNAVAILABLE",
+  "seed": 20260907,
+  "tasks": [
+    {
+      "judges": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n_strong_consensus": 0,
+      "n_tasks": 12,
+      "n_unresolved": 7,
+      "n_weak_consensus": 5,
+      "task_type": "entity_type"
+    },
+    {
+      "judges": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n_strong_consensus": 0,
+      "n_tasks": 12,
+      "n_unresolved": 5,
+      "n_weak_consensus": 7,
+      "task_type": "relation_contract"
+    },
+    {
+      "judges": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n_strong_consensus": 1,
+      "n_tasks": 12,
+      "n_unresolved": 5,
+      "n_weak_consensus": 6,
+      "task_type": "scope_adjustment"
+    },
+    {
+      "judges": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n_strong_consensus": 2,
+      "n_tasks": 12,
+      "n_unresolved": 1,
+      "n_weak_consensus": 9,
+      "task_type": "identity_pair"
+    },
+    {
+      "judges": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n_strong_consensus": 0,
+      "n_tasks": 12,
+      "n_unresolved": 8,
+      "n_weak_consensus": 4,
+      "task_type": "provenance_support"
+    }
+  ],
+  "timestamp": "2026-09-07T09:30:36.138700+00:00"
+}

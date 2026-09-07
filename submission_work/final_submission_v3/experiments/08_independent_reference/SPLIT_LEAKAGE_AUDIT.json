@@ -1,0 +1,301 @@
+{
+  "experiment_id": "v3_split_leakage_audit",
+  "task_name": "split_leakage_audit",
+  "master_seed": 20260907,
+  "derived_seed": 1801544206,
+  "timestamp": "2026-09-07T17:06:44+08:00",
+  "final_db_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\release_databases\\red_culture_stkg_final_v2.sqlite",
+  "final_db_sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+  "semantic_db_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\release_databases\\red_culture_stkg_semantic_v2.sqlite",
+  "semantic_db_sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377",
+  "era_source_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\data\\external_inputs\\AI_GOLD_LABELS.csv",
+  "era_rows": 712,
+  "inputs": {
+    "entity_type_sample_rows": 382,
+    "identity_pair_rows": 600,
+    "provenance_sample_rows": 1000
+  },
+  "notes": [],
+  "checks": {
+    "entity_overlap_vs_era": {
+      "entity_type_sample": {
+        "n_a": 382,
+        "n_b": 203,
+        "n_overlap": 0,
+        "overlap_ids_sample": []
+      },
+      "identity_pairs_raw_ids": {
+        "n_a": 984,
+        "n_b": 203,
+        "n_overlap": 1,
+        "overlap_ids_sample": [
+          "IENT-04818bed6f0308e3894a37fc"
+        ]
+      },
+      "identity_pairs_canonical_mapped": {
+        "n_a": 642,
+        "n_b": 203,
+        "n_overlap": 1,
+        "overlap_ids_sample": [
+          "IENT-04818bed6f0308e3894a37fc"
+        ]
+      },
+      "provenance_endpoints": {
+        "n_a": 1664,
+        "n_b": 1075,
+        "n_overlap": 124,
+        "overlap_ids_sample": [
+          "IENT-09a248978106e20f9459f582",
+          "IENT-0d73b177ea970ae1d063fa3f",
+          "IENT-0f067ccd65a04dfff69d10eb",
+          "IENT-0ff37b0554d99e54044aced9",
+          "IENT-12d53a8236c1b6faafe8ebc0",
+          "IENT-15e7610d068f7c131b35bd68",
+          "IENT-19933893a69359f7cc8b7a6b",
+          "IENT-1b72a6c161c4646176d8bb24",
+          "IENT-1c5ad0446a836fc84835346d",
+          "IENT-1d97d5296e4ed9c5d28abb8e",
+          "IENT-2185fdd5fa45149b67f5aa62",
+          "IENT-220a12f9f9a52f39c1720d3d",
+          "IENT-2233089b9044265eb2036d52",
+          "IENT-22a19990b239b5b6f2e120d7",
+          "IENT-2378c60dcfa7719738c946dc",
+          "IENT-23dc46d842654fb499a0c698",
+          "IENT-2c64c38ac66f68538b01eda6",
+          "IENT-2f484321578be699ba1cf163",
+          "IENT-32512664d0fa0172ef8c55e9",
+          "IENT-328c1da3b2821d07dde236f7"
+        ]
+      }
+    },
+    "fact_overlap_vs_era": {
+      "provenance_sample_facts": {
+        "n_a": 1000,
+        "n_b": 482,
+        "n_overlap": 0,
+        "overlap_ids_sample": []
+      },
+      "identity_context_facts": {
+        "n_a": 2006,
+        "n_b": 482,
+        "n_overlap": 6,
+        "overlap_ids_sample": [
+          "IFACT-1140b7a2f14686e4bbc4709d",
+          "IFACT-1230d1741509a3f17ef4491e",
+          "IFACT-32f069825075b7c33561fdea",
+          "IFACT-348bcbaa0abfd61b518467b5",
+          "IFACT-3bc9e3136ecfd718b6fc770e",
+          "IFACT-92e65c437ca29704274dde23"
+        ]
+      }
+    },
+    "source_overlap_vs_era": {
+      "provenance_sample": {
+        "n_a": 3689,
+        "n_b": 1620,
+        "n_overlap": 4,
+        "overlap_ids_sample": [
+          "SRC-0d781b985aa6bb98ee7c770c",
+          "SRC-86e92ae85e5cf6c69dcafeb4",
+          "SRC-8bf08e3bff831e85bac02efc",
+          "SRC-ca16e8c9a77a23f068bfe60a"
+        ]
+      },
+      "identity_context": {
+        "n_a": 5874,
+        "n_b": 1620,
+        "n_overlap": 16,
+        "overlap_ids_sample": [
+          "CWORK-1f566f23a865cdd00349617f",
+          "IFACT-1140b7a2f14686e4bbc4709d|FACT-de3153e2daec2065be8c923f",
+          "IFACT-1230d1741509a3f17ef4491e|FACT-dba3bb82f235ca8141345d37",
+          "IFACT-32f069825075b7c33561fdea|FACT-faa7493cc1ed1bfe5bc411e8",
+          "IFACT-3bc9e3136ecfd718b6fc770e|FACT-93a465b235358d3925c6b823",
+          "IFACT-92e65c437ca29704274dde23|FACT-c8fcaa04d1e40d046264d4f5",
+          "KGREL-000002820",
+          "KGREL-000036345",
+          "KGREL-000071230",
+          "LEG-1fbf4fe1d9e6068562e38413",
+          "LEG-2c43e173c119ab2527a3bcfb",
+          "LEG-52e9d85ae1374ab1297bb12a",
+          "LEG-a4f15c026f072ee3efeafb42",
+          "LEG-c28a7f7494eb58ea55267496",
+          "cba70de2c8a87606d43c9b44",
+          "d1438260c8a8556fd9ad6017"
+        ]
+      }
+    },
+    "cluster_overlap_vs_era": {
+      "identity_pair_clusters": {
+        "n_a": 642,
+        "n_b": 203,
+        "n_overlap": 1,
+        "overlap_ids_sample": [
+          "IENT-04818bed6f0308e3894a37fc"
+        ]
+      },
+      "entity_type_sample_clusters": {
+        "n_a": 382,
+        "n_b": 203,
+        "n_overlap": 0,
+        "overlap_ids_sample": []
+      },
+      "provenance_endpoint_clusters": {
+        "n_a": 1664,
+        "n_b": 203,
+        "n_overlap": 1,
+        "overlap_ids_sample": [
+          "ITOPIC-92ed15bda88d14f42aff4432"
+        ]
+      }
+    },
+    "event_overlap_vs_era": {
+      "entity_type_sample_events": {
+        "n_a": 59,
+        "n_b": 274,
+        "n_overlap": 0,
+        "overlap_ids_sample": []
+      },
+      "identity_pair_events": {
+        "n_a": 54,
+        "n_b": 274,
+        "n_overlap": 2,
+        "overlap_ids_sample": [
+          "IENT-a3a4aac78b629bc3717b69de",
+          "IENT-c795d1945b4a2198aaf30227"
+        ]
+      },
+      "provenance_endpoint_events": {
+        "n_a": 230,
+        "n_b": 274,
+        "n_overlap": 27,
+        "overlap_ids_sample": [
+          "IENT-09a248978106e20f9459f582",
+          "IENT-1b72a6c161c4646176d8bb24",
+          "IENT-2185fdd5fa45149b67f5aa62",
+          "IENT-22a19990b239b5b6f2e120d7",
+          "IENT-32512664d0fa0172ef8c55e9",
+          "IENT-36ace22087da85dcc92768ea",
+          "IENT-3cb53c26fda81bbcfc1f11ee",
+          "IENT-45c346b5eb315cfafb64ac44",
+          "IENT-539443543b1bc56ac9e306fc",
+          "IENT-586a97c3a5fc62014677f0b3",
+          "IENT-6d8f289e9708d99f48395dac",
+          "IENT-708df80adb45be09dfa79ecf",
+          "IENT-7a253173c32456833f63732b",
+          "IENT-7b62f5048e58719c0254514b",
+          "IENT-7bbd2bd7ca08db9fb22db0ba",
+          "IENT-80983d466b13fadee0404889",
+          "IENT-8e85cd89a6398269c1e95f12",
+          "IENT-abc5b577575d77104d430c75",
+          "IENT-abeaf48352ed99dc14352c07",
+          "IENT-bef4e11cd05f0d0c25512371"
+        ]
+      }
+    },
+    "cross_sample_internal": {
+      "entity_type_vs_identity_entities": {
+        "n_a": 382,
+        "n_b": 984,
+        "n_overlap": 25,
+        "overlap_ids_sample": [
+          "IENT-02113881d2d869570829b4fb",
+          "IENT-05f38816c320c026e3759d8d",
+          "IENT-26b2757c323f14b2247b31b7",
+          "IENT-2809bcc5e6aebde3b5f74fd2",
+          "IENT-6771a344b8aae5835f7e3bfc",
+          "IENT-6e12b1507334b9b98065f427",
+          "IENT-7e5ffc775fbbe07a7edeb050",
+          "IENT-a000efc799fd5f12f96b4f2a",
+          "IENT-a955b1750ab004c75a27ec78",
+          "IENT-cb770598d4afe1a7ed747086",
+          "IENT-d4244a13f82da6c6cd05455d",
+          "IENT-ddcc947c5bddcf3fc67c5693",
+          "IENT-e5869a4ada64104568c73789",
+          "IENTREPAIR-b210e4c7a555b1780d604902",
+          "ITOPIC-0971ad472c12248b67027886",
+          "ITOPIC-16967ce3d1bdd1c309450820",
+          "ITOPIC-2cec865eee1813adbe0cd263",
+          "ITOPIC-2e6c73de47872314cddce9cf",
+          "ITOPIC-8142bcb826aca7bbe4c4d442",
+          "ITOPIC-82ca440f82e95cf92b905706"
+        ]
+      },
+      "entity_type_vs_provenance_entities": {
+        "n_a": 382,
+        "n_b": 1664,
+        "n_overlap": 12,
+        "overlap_ids_sample": [
+          "IENT-3ea69434991851c328b3a348",
+          "IENT-766430cfce5a8f57dac8f4bc",
+          "IENT-b1f94c4b38d2267cc0b049d5",
+          "IENT-b482dd7141a375d1ea8355be",
+          "IENT-b62404a6e0487d0462902ab3",
+          "IENT-c6d02537f9b76cc3118ad66d",
+          "IENT-e21795dc9439fff6229447ea",
+          "IENT-e7288d34f85feec93a620489",
+          "IENT-f0b990326fdd9523db2bfd1b",
+          "IENT-f133db5505848eb4454bc5ab",
+          "IENT-f3fd33ba44718106ae9d3445",
+          "ITOPIC-d905ceaea19ee32ef513517a"
+        ]
+      },
+      "identity_vs_provenance_facts": {
+        "n_a": 2006,
+        "n_b": 1000,
+        "n_overlap": 14,
+        "overlap_ids_sample": [
+          "IFACT-01a921e8b3327cfd76f6865b",
+          "IFACT-13422a2ca9e1636b37994180",
+          "IFACT-14bef7367a7b298b59e1fca3",
+          "IFACT-19ac199c1140658170e13b8f",
+          "IFACT-60b7c33d4cc51929f124fc9d",
+          "IFACT-828e740d4c681e46e82de361",
+          "IFACT-8802b6d1f1e0e4584281cbb5",
+          "IFACT-8c291387530a49341e46e092",
+          "IFACT-986e2135614e6ebd0f1d2fd9",
+          "IFACT-beefee85f2b86962f2f4cfda",
+          "IFACT-bf1517ef4396aa05c5025afa",
+          "IFACT-c0e9dc83d9398b0133264351",
+          "IFACT-c8380345a59c9c2a94f2dce8",
+          "IFACT-e9c15de246a67eef627b93d6"
+        ]
+      },
+      "identity_vs_provenance_clusters": {
+        "n_a": 642,
+        "n_b": 1664,
+        "n_overlap": 50,
+        "overlap_ids_sample": [
+          "IENT-05912e2818e3c683bd0a8b8c",
+          "IENT-0abe3a576e96297a9f63add9",
+          "IENT-1c543db463d1347aa0fd8986",
+          "IENT-2a648b98b4d09b4460399226",
+          "IENT-2c64c38ac66f68538b01eda6",
+          "IENT-4031af988f9a33389ce8d151",
+          "IENT-41d0a79a0255ce4662270498",
+          "IENT-4ed5697b92fb30e2659e4fb7",
+          "IENT-65d58a87c5abfbae333db76d",
+          "IENT-6a6692f6607eb329a576990d",
+          "IENT-6ac99b967ce60242f22341e5",
+          "IENT-71490c0727cb707a09ec0aef",
+          "IENT-7618f4f48624f6a0bd977a5e",
+          "IENT-76346bf6d741fbad3b8bd15a",
+          "IENT-791bfe0722eff6da9cf8bd67",
+          "IENT-8327d3a1577b179696fe5125",
+          "IENT-84063fe06bbb4dc53ee71d7a",
+          "IENT-8ef879bd9753bd3f5720e58e",
+          "IENT-908a6f4e27bc682b3adbdcda",
+          "IENT-92c8814c52a1e39023f089e1"
+        ]
+      }
+    },
+    "conclusions": {
+      "entity_overlap": "125 shared entity item(s); samples are drawn from the same published KG as ERA, so item-level coincidence is possible and must be disclosed; judge prompts remain blinded",
+      "fact_overlap": "6 shared fact item(s); samples are drawn from the same published KG as ERA, so item-level coincidence is possible and must be disclosed; judge prompts remain blinded",
+      "source_overlap": "20 shared source item(s); samples are drawn from the same published KG as ERA, so item-level coincidence is possible and must be disclosed; judge prompts remain blinded",
+      "cluster_overlap": "1 shared cluster item(s); samples are drawn from the same published KG as ERA, so item-level coincidence is possible and must be disclosed; judge prompts remain blinded",
+      "event_overlap": "29 shared event item(s); samples are drawn from the same published KG as ERA, so item-level coincidence is possible and must be disclosed; judge prompts remain blinded",
+      "overall": "New v3 samples and ERA are both drawn from the same released KG, so shared entities/sources are expected and disclosed above; independence is claimed at the label/judgement level (blinded judge inputs), not at the item level. No ERA item was used to construct sampling labels."
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "experiment_id": "v3_entity_type_sample",
+  "task_name": "entity_type_sample",
+  "master_seed": 20260907,
+  "derived_seed": 1348020344,
+  "timestamp": "2026-09-07T16:56:42+08:00",
+  "final_db_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\release_databases\\red_culture_stkg_final_v2.sqlite",
+  "final_db_sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+  "semantic_db_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\release_databases\\red_culture_stkg_semantic_v2.sqlite",
+  "semantic_db_sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377",
+  "row_count": 382,
+  "target_total": 400,
+  "strata_entity_type": {
+    "AdministrativeRegion": 10,
+    "Artifact": 10,
+    "Concept": 46,
+    "CreativeWork": 10,
+    "CulturalSite": 10,
+    "Document": 10,
+    "Event": 59,
+    "Institution": 10,
+    "Organization": 52,
+    "Person": 60,
+    "Place": 55,
+    "Position": 10,
+    "SocialGroup": 10,
+    "Spirit": 10,
+    "TimePeriod": 10,
+    "ValueFacet": 10
+  },
+  "stratum_shortfalls": {},
+  "priority_rule": "fallback_unresolved +3; unresolved_entity_type flag (rule/model conflict) +3; lexical_source_type_conflict +2; same-name-multi-type in canonical graph +2; same_name_multiple_source_types +1; min member confidence <0.8 +1; seeded random tiebreak",
+  "judge_visible_fields": [
+    "sample_id",
+    "entity_id",
+    "canonical_name",
+    "aliases_json",
+    "context_assertions",
+    "source_excerpt"
+  ],
+  "blinding_note": "production entity_type/confidence/risk flags only in sampling_metadata sidecar",
+  "output_files": {
+    "ENTITY_TYPE_SAMPLE.csv": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\ENTITY_TYPE_SAMPLE.csv",
+      "sha256": "284fe8c4d7f37b0476a880fe8e52facd631b21630aa1c7bc5ead7e71b0c9ed82",
+      "rows": 382
+    },
+    "ENTITY_TYPE_SAMPLE.sampling_metadata.csv": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\ENTITY_TYPE_SAMPLE.sampling_metadata.csv",
+      "sha256": "625f6c6c0ba3b1bd84de0457905b17cd676a03f9ba96be6647f556488f450c70",
+      "rows": 382
+    }
+  }
+}

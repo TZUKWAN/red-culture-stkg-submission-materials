@@ -1,0 +1,140 @@
+{
+  "audit_id": "STRUCTURAL_REPLAY_AUDIT",
+  "created_at_utc": "2026-09-07T08:53:33.432632+00:00",
+  "experiment_id": "v3-10-structural-validation-relation-contract-replay",
+  "databases": {
+    "final": {
+      "path": "data/release_databases/red_culture_stkg_final_v2.sqlite",
+      "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7"
+    },
+    "semantic": {
+      "path": "data/release_databases/red_culture_stkg_semantic_v2.sqlite",
+      "sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377"
+    }
+  },
+  "database_open_mode": "read-only (file:...?mode=ro; ATTACH 只读 URI)",
+  "replay_logic_source": "submission_work/final_submission_v2/code/experiment_pipelines/run_component_ablations.py:436-596 逐行对齐",
+  "closure_functions_source": "code/scripts/284_materialize_stkg_v2_research_base.py（依赖 data/external_inputs 下未改动复制件 stkg_contract.py / stkg_v2_semantics.py）",
+  "total_assertions_replayed": 424150,
+  "variant_stats": {
+    "Full framework": {
+      "tiers": {
+        "contextual": 268047,
+        "strict_semantic": 112158,
+        "unresolved": 43945
+      },
+      "strict_contract_violations": 0,
+      "invalid_time_owner_types": 0,
+      "invalid_space_owner_types": 0,
+      "changed_vs_full": 0
+    },
+    "w/o Identity Projection": {
+      "tiers": {
+        "contextual": 268047,
+        "strict_semantic": 112158,
+        "unresolved": 43945
+      },
+      "strict_contract_violations": 0,
+      "invalid_time_owner_types": 0,
+      "invalid_space_owner_types": 0,
+      "changed_vs_full": 24005
+    },
+    "w/o Relation Contract": {
+      "tiers": {
+        "contextual": 264635,
+        "strict_semantic": 115570,
+        "unresolved": 43945
+      },
+      "strict_contract_violations": 3412,
+      "invalid_time_owner_types": 0,
+      "invalid_space_owner_types": 0,
+      "changed_vs_full": 3412
+    },
+    "w/o Role-owner Closure": {
+      "tiers": {
+        "contextual": 268047,
+        "strict_semantic": 112158,
+        "unresolved": 43945
+      },
+      "strict_contract_violations": 0,
+      "invalid_time_owner_types": 44,
+      "invalid_space_owner_types": 112,
+      "changed_vs_full": 208
+    },
+    "w/o Global Closure": {
+      "tiers": {
+        "contextual": 264635,
+        "strict_semantic": 115570,
+        "unresolved": 43945
+      },
+      "strict_contract_violations": 3412,
+      "invalid_time_owner_types": 44,
+      "invalid_space_owner_types": 112,
+      "changed_vs_full": 27475
+    }
+  },
+  "cross_checks_vs_v2_summary": {
+    "w/o Relation Contract": {
+      "changed_vs_full": {
+        "v2_reported": 3412,
+        "v3_replayed": 3412,
+        "match": true
+      },
+      "strict_contract_violations": {
+        "v2_reported": 3412,
+        "v3_replayed": 3412,
+        "match": true
+      }
+    },
+    "w/o Role-owner Closure": {
+      "changed_vs_full": {
+        "v2_reported": 208,
+        "v3_replayed": 208,
+        "match": true
+      },
+      "invalid_time_owner_types": {
+        "v2_reported": 44,
+        "v3_replayed": 44,
+        "match": true
+      },
+      "invalid_space_owner_types": {
+        "v2_reported": 112,
+        "v3_replayed": 112,
+        "match": true
+      }
+    },
+    "w/o Identity Projection": {
+      "changed_vs_full": {
+        "v2_reported": 24005,
+        "v3_replayed": 24005,
+        "match": true
+      }
+    },
+    "w/o Global Closure": {
+      "changed_vs_full": {
+        "v2_reported": 27475,
+        "v3_replayed": 27475,
+        "match": true
+      }
+    }
+  },
+  "relation_contract_changed_rows": 3412,
+  "owner_validity_cross_scope_adjustments": {
+    "wo_role_owner_invalid_time_owner_count_global": 44,
+    "wo_role_owner_invalid_space_owner_count_global": 112,
+    "invalid_time_owner_in_scope_208": 44,
+    "invalid_space_owner_in_scope_208": 112,
+    "scope_208_with_any_invalid_owner": 140,
+    "scope_208_without_invalid_owner": 68
+  },
+  "outputs": {
+    "RELATION_CONTRACT_CHANGED_SET.csv": {
+      "rows": 3412,
+      "sha256": "e30a3975e66e80a9f986910407867687fd4f443fd860045b917fa76905b08f55"
+    }
+  },
+  "notes": [
+    "五个变体重放计数与 v2 汇总全部一致：True。w/o Relation Contract changed_vs_full=3412，strict_contract_violations=3412。",
+    "44/112 与 208 的关系：w/o Role-owner Closure 全局非法时间 owner=44、非法空间 owner=112（与 v2 报告 44/112 一致）；其中落在 208 条 scope_adjustments 内的：时间 44、空间 112、任一维度 140；208 中无非法 owner 的 68 条系其他闭包原因（如 unknown 角色重分类、context/relation 角色 owner 置空等）。"
+  ]
+}

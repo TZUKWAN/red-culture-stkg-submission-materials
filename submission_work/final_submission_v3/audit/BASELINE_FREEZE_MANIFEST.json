@@ -1,0 +1,481 @@
+{
+  "generated_at": "2026-09-07T16:32:49.883293+08:00",
+  "repository": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包",
+  "git": {
+    "commit": "d418042b55c76a61579d8f4d2e6447039c38808f",
+    "dirty": true,
+    "status_porcelain": [
+      "?? GOAL.md",
+      "?? submission_work/final_submission_v3/"
+    ]
+  },
+  "python": {
+    "version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\lauze\\AppData\\Roaming\\kimi-desktop\\daimon-share\\daimon\\runtime\\python\\.venv\\Scripts\\python.exe",
+    "packages": [
+      "Deprecated==1.3.1",
+      "Jinja2==3.1.6",
+      "Markdown==3.10.2",
+      "MarkupSafe==3.0.3",
+      "PyYAML==6.0.3",
+      "Pygments==2.20.0",
+      "agent-gw @ https://cdn.kimi.com/agentgw/pysdk/v0.2.6/agent_gw-0.2.6-py3-none-any.whl",
+      "annotated-doc==0.0.4",
+      "annotated-types==0.7.0",
+      "anyio==4.14.1",
+      "beautifulsoup4==4.14.3",
+      "certifi==2026.4.22",
+      "cffi==2.0.0",
+      "charset-normalizer==3.4.7",
+      "click==8.5.0",
+      "colorama==0.4.6",
+      "contourpy==1.3.3",
+      "cryptography==47.0.0",
+      "curl_cffi==0.16.2",
+      "cycler==0.12.1",
+      "duckdb==1.5.3",
+      "et_xmlfile==2.0.0",
+      "fastapi==0.139.0",
+      "fonttools==4.62.1",
+      "formulas==1.3.4",
+      "h11==0.16.0",
+      "httpcore==1.0.9",
+      "httpx==0.28.1",
+      "idna==3.13",
+      "iniconfig==2.3.0",
+      "joblib==1.5.3",
+      "kiwisolver==1.5.0",
+      "latex2mathml==3.81.0",
+      "lxml==6.1.0",
+      "markdown-it-py==4.2.0",
+      "matplotlib==3.10.9",
+      "mdurl==0.1.2",
+      "multitasking==0.0.13",
+      "narwhals==2.25.0",
+      "numpy-financial==1.0.0",
+      "numpy==2.4.4",
+      "olefile==0.47",
+      "openpyxl==3.1.5",
+      "packaging==26.2",
+      "pandas==3.0.2",
+      "pdf2image==1.17.0",
+      "pdfminer.six==20251230",
+      "pdfplumber==0.11.9",
+      "peewee==4.4.0",
+      "pikepdf==10.5.1",
+      "pillow==12.2.0",
+      "platformdirs==4.11.5",
+      "pluggy==1.6.0",
+      "protobuf==7.36.0",
+      "pycparser==3.0",
+      "pydantic==2.13.4",
+      "pydantic_core==2.46.4",
+      "pyparsing==3.3.2",
+      "pypdf==6.10.2",
+      "pypdfium2==5.7.1",
+      "pytest-asyncio==1.4.0",
+      "pytest==9.1.1",
+      "python-dateutil==2.9.0.post0",
+      "python-docx==1.2.0",
+      "python-multipart==0.0.32",
+      "python-pptx==1.0.2",
+      "pytz==2026.3.post1",
+      "regex==2026.7.19",
+      "reportlab==4.4.10",
+      "requests==2.33.1",
+      "ruamel.yaml==0.19.1",
+      "schedula==1.6.15",
+      "scikit-learn==1.9.0",
+      "scipy==1.18.1",
+      "seaborn==0.13.2",
+      "six==1.17.0",
+      "soupsieve==2.8.4",
+      "starlette==1.3.1",
+      "tabulate==0.10.0",
+      "threadpoolctl==3.6.0",
+      "tqdm==4.70.0",
+      "typing-inspection==0.4.2",
+      "typing_extensions==4.15.0",
+      "tzdata==2026.3",
+      "urllib3==2.6.3",
+      "uvicorn==0.50.0",
+      "websockets==17.1",
+      "wrapt==2.1.2",
+      "xlrd==2.0.2",
+      "xlsxwriter==3.2.9",
+      "yfinance==1.7.0"
+    ]
+  },
+  "seeds": [
+    {
+      "script": "code/scripts/260_train_evaluate_stkg_v2_entity_classifier.py",
+      "seeds": [
+        "20260714"
+      ],
+      "occurrences": [
+        {
+          "line": 242,
+          "seed": 20260714,
+          "snippet": "max_iter=40, tol=1e-4, class_weight=\"balanced\", random_state=20260714,"
+        }
+      ]
+    },
+    {
+      "script": "submission_work/final_submission_v2/code/experiment_pipelines/run_baseline_experiments.py",
+      "seeds": [
+        "20260730",
+        "paper-a-baseline-stratified-v1-20260730"
+      ],
+      "occurrences": [
+        {
+          "line": 57,
+          "seed": "paper-a-baseline-stratified-v1-20260730",
+          "snippet": "SPLIT_SEED = \"paper-a-baseline-stratified-v1-20260730\""
+        },
+        {
+          "line": 58,
+          "seed": 20260730,
+          "snippet": "RANDOM_STATE = 20260730"
+        }
+      ]
+    },
+    {
+      "script": "submission_work/final_submission_v2/code/experiment_pipelines/run_selective_inference.py",
+      "seeds": [
+        "20260730"
+      ],
+      "occurrences": [
+        {
+          "line": 59,
+          "seed": 20260730,
+          "snippet": "BOOTSTRAP_SEED = 20260730"
+        }
+      ]
+    }
+  ],
+  "lfs_check": {
+    "path": "data/release_databases/red_culture_stkg_final_v2.sqlite",
+    "size_bytes": 1187962880,
+    "header_hex": "53514c69746520666f726d6174203300",
+    "is_sqlite_format_3": true,
+    "is_lfs_pointer": false,
+    "verdict": "REAL_SQLITE_DATABASE"
+  },
+  "files": [
+    {
+      "path": "metadata/CURRENT_RELEASE.json",
+      "sha256": "7647f125dc88a3bcac0de9f1f742631f103fe704b0b5957e20174d17c5e0ce72",
+      "size_bytes": 2913,
+      "summary": {
+        "top_level_keys": [
+          "allowed_database_paths",
+          "canonical_final_database",
+          "canonical_graph",
+          "canonical_semantic_database",
+          "contract_version",
+          "forbidden_active_paths",
+          "release_version",
+          "required_source_databases",
+          "runtime"
+        ],
+        "scalar_fields": {
+          "contract_version": "redculture-current-release-1",
+          "release_version": "red-culture-stkg-v2-1"
+        }
+      }
+    },
+    {
+      "path": "metadata/release_manifest.json",
+      "sha256": "1c5831e0a99193f45ec61cf878778ff13a65329ddb9cb45032e1d457fadd068e",
+      "size_bytes": 28909,
+      "summary": {
+        "top_level_keys": [
+          "created_at",
+          "files",
+          "final_database",
+          "full_audit_sha256",
+          "graph",
+          "release_version",
+          "research_objective",
+          "semantic_database",
+          "source_v1_release_manifest",
+          "tests"
+        ],
+        "created_at": "2026-07-15T10:09:19+08:00",
+        "scalar_fields": {
+          "release_version": "red-culture-stkg-v2-1",
+          "research_objective": "长江流域红色文化如何演进",
+          "created_at": "2026-07-15T10:09:19+08:00",
+          "source_v1_release_manifest": "provenance/red_culture_stkg_v1_release_manifest.json",
+          "full_audit_sha256": "d325f0cc8b193a834b0c97bd1cb20e600a59910b7c9a275e00d8e3ba027c6a59"
+        },
+        "file_count": 146
+      }
+    },
+    {
+      "path": "data/release_databases/red_culture_stkg_final_v2.sqlite",
+      "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+      "size_bytes": 1187962880
+    },
+    {
+      "path": "data/release_databases/red_culture_stkg_semantic_v2.sqlite",
+      "sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377",
+      "size_bytes": 1094549504
+    },
+    {
+      "path": "data/release_databases/stkg_v2_creative_media_enrichment.sqlite",
+      "sha256": "fde1f05b01709520a334dd88a58de6e501f36d2d0a182675516098b122a1d13f",
+      "size_bytes": 1990656
+    },
+    {
+      "path": "data/source_data/master_data.csv",
+      "sha256": "6ce4f7f3341e3350dd69a37f1a058d54f4e767c1e48cccdc56ebfde92d7dc5f4",
+      "size_bytes": 147136380
+    },
+    {
+      "path": "data/graph_export/nodes.csv",
+      "sha256": "1155838b569955884fdff9c29ec57c1c2aa13a54df39948a7fdc6480073887d8",
+      "size_bytes": 854299588
+    },
+    {
+      "path": "data/graph_export/relationships.csv",
+      "sha256": "30c88bea6eb9ec29c5e2d092a74ab9c3ddc41f4a9355fac83ce82ea99bb0695b",
+      "size_bytes": 607668531
+    },
+    {
+      "path": "schema/competency_query_contract_v2.yaml",
+      "sha256": "0a8be723850c9a686228fd2816e923582c29742f516785906b6ca8ad612c1896",
+      "size_bytes": 4896
+    },
+    {
+      "path": "schema/competency_questions_v2.md",
+      "sha256": "90e39d23eef5de15e9fb9385eaa3eff6339fec984b542dce45d50dac6873c47e",
+      "size_bytes": 3426
+    },
+    {
+      "path": "schema/culture_form_mapping_v1.yaml",
+      "sha256": "3de51822e3d834105fd170fa82b26be96e94186d75c2e486ea24845a80c124fd",
+      "size_bytes": 6414
+    },
+    {
+      "path": "schema/event_role_mapping_v1.yaml",
+      "sha256": "9921dc47d44dbacba1c4bf5f8bdb2762f7e89ce1b7c3d554dc03958f9148385d",
+      "size_bytes": 4599
+    },
+    {
+      "path": "schema/evolution_rules_v1.yaml",
+      "sha256": "71347b85cb5b9eda1fcd772b2a67ada2d5dab1ad85ab8ff5ea1fda4dbfc5aa88",
+      "size_bytes": 2640
+    },
+    {
+      "path": "schema/stkg_schema_v1.yaml",
+      "sha256": "7827eaed75cde5d71461ab14b5c25a39dc4d982f3aaa017d09d2a005e086d48e",
+      "size_bytes": 5765
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/02_baselines/ACTUAL_RUN_BASELINE_METRICS.csv",
+      "sha256": "fbddba259da9964f6670d16c476c2a38baa0a4ff7f5aefb136f98d3e9be67b82",
+      "size_bytes": 4622
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/02_baselines/BASELINE_AVAILABILITY.csv",
+      "sha256": "84776137306f5d429722226ecfd123d80d6467974e292d9f10e371f512a370dd",
+      "size_bytes": 1755
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/02_baselines/baseline_experiment_audit.json",
+      "sha256": "df2ed7c7205bfb367f98194079eab6496a32774f04d835e0a6e233f33a27e519",
+      "size_bytes": 6250
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/02_baselines/baseline_experiment_summary.json",
+      "sha256": "80e984ee6ebc2961924e918578e55ae2c6c8a6eac84f933d3651aa424d04a758",
+      "size_bytes": 77107
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/02_baselines/BASELINE_METRICS.csv",
+      "sha256": "379109010352a75948432524acffb5c12235a1cacb6046bf9a024eaf1a025214",
+      "size_bytes": 14608
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/02_baselines/BASELINE_RUNS.csv",
+      "sha256": "d730f8686040faccf14f595baeb36e2806e18f36a9cb38a1f6020f9d7301192f",
+      "size_bytes": 410341
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/02_baselines/BASELINE_SPLIT_MANIFEST.csv",
+      "sha256": "ffed072501114d702e1b59baa735d5a32f74abf4efc45fe6460187f18d82ee7d",
+      "size_bytes": 77952
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/02_baselines/REPLAY_AND_CACHED_BASELINE_METRICS.csv",
+      "sha256": "bc4f9a9d983b3666aabab4f76fa7b693edd241ecf44244d2ae85bb41d5321404",
+      "size_bytes": 7316
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/03_selective_inference/risk_coverage_audit.json",
+      "sha256": "da513d468078d17addc3aa78fb912d485c426dbf2f2ada3fcb41402888001d88",
+      "size_bytes": 5139
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/03_selective_inference/RISK_COVERAGE_BOOTSTRAP.csv",
+      "sha256": "16891817561a549c5049ec95cd7e295b7a373695ae98006dd24fa6aab819d30e",
+      "size_bytes": 4186636
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/03_selective_inference/RISK_COVERAGE_CHART_CONTRACT.json",
+      "sha256": "8a551e19f4485f6d0bb33fdd7dd46697de18d52f2e64439202fa409dac63f5e7",
+      "size_bytes": 1599
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/03_selective_inference/RISK_COVERAGE_POINTS.csv",
+      "sha256": "72e89587d7da2ea0aa898c082f8e8d2b3d80562c7195be068d29874cf95c533c",
+      "size_bytes": 705489
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/03_selective_inference/RISK_COVERAGE_SUMMARY.csv",
+      "sha256": "c58df649a5846d3916e645458876f861026d376067107c6f10fa7ee238a46b90",
+      "size_bytes": 42565
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/03_selective_inference/risk_coverage_summary.json",
+      "sha256": "9bd21a1341efd715492d49c55df67a54aa19965cb6dade68ddee4ff777715b0f",
+      "size_bytes": 170244
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/05_ablation/ablation_experiment_audit.json",
+      "sha256": "2a3b8969ebb7eae8018804696c0b80a732103a1e5a1eac61bdfb9be0b8bb0c8c",
+      "size_bytes": 3862
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/05_ablation/ablation_experiment_summary.json",
+      "sha256": "5cd36916f149e24c4c99048d5c4965f9b5699366bbdc910703db8a3737d215e3",
+      "size_bytes": 16590
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/05_ablation/ABLATION_FIGURE_AUDIT.json",
+      "sha256": "b8132e0f50238f378b864446eacf1929d49a025a8309727444177bb95455d00f",
+      "size_bytes": 1427
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/05_ablation/ABLATION_FIGURE_DATA.csv",
+      "sha256": "518099abc1ee1a8aaef3ef5007b1e84d9b687df467b445e0135ec99173120f2d",
+      "size_bytes": 4698
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/05_ablation/ABLATION_PREDICTIONS.csv",
+      "sha256": "2d558ece6d700bd44c36e25b22c4bf6bf4ebcf3e549798d85dfb5c1e67718989",
+      "size_bytes": 526427
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/05_ablation/ABLATION_RUNS.csv",
+      "sha256": "68cc760db127b7fd2993306f8df5e13174981f3387dfa2e32767f56f972f56a0",
+      "size_bytes": 44470
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/05_ablation/FROZEN_EVALUATION_MANIFEST.json",
+      "sha256": "106ab8ba1a2ae80d863657d1960b05ad6209670f5dca8909581cb67f7fca2335",
+      "size_bytes": 1476
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/05_ablation/STRUCTURAL_CHANGED_EXAMPLES.csv",
+      "sha256": "a257c40511815ddb1712b579298277bb618cc6ba04a63b646cb3b61ed2e71e68",
+      "size_bytes": 354081
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/07_efficiency/EFFICIENCY_FIGURE_AUDIT.json",
+      "sha256": "4c1f97b496c7c100dd79116514481002be0ca0aab28faaf5560e3b7aed2d1da7",
+      "size_bytes": 1318
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/07_efficiency/EFFICIENCY_SAMPLE_MANIFEST.json",
+      "sha256": "0cf9a670a8b62825dcc7bd1ac1490d420de1b47eebfd7f1626b3b755ac12d715",
+      "size_bytes": 3592
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/07_efficiency/end_to_end_efficiency_audit.json",
+      "sha256": "8bc71a86a950b52a6891476bce78b121c5a5fe05aa95bcaa85f7a75e11704c39",
+      "size_bytes": 4068
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/07_efficiency/end_to_end_efficiency_summary.json",
+      "sha256": "8b7c8a8e02504eabe1815fccede34738062d9fb1f8760bdbd42e2936722205d3",
+      "size_bytes": 54506
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/07_efficiency/END_TO_END_FIGURE_DATA.csv",
+      "sha256": "1b971a8427c970fddb6e2291afbc28764feb689d2ac285fcded538f124d07e10",
+      "size_bytes": 1285
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/07_efficiency/END_TO_END_RUNS.csv",
+      "sha256": "de87b8e5c8a73e4147ab101a47818bf84f3c8630e733000cf3afe89fe8ecf28e",
+      "size_bytes": 82738
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/07_efficiency/END_TO_END_SUMMARY.csv",
+      "sha256": "f5816b4b8142e467553dfb3b28ee2b8a7dbd6e676fa0d35239c424867874ac63",
+      "size_bytes": 11268
+    },
+    {
+      "path": "submission_work/final_submission_v2/experiments/07_efficiency/SCALING_FITS.csv",
+      "sha256": "8400bdfac0e95adca87762a55037d6fa334103e3db280b282d2658e7771fff46",
+      "size_bytes": 2828
+    },
+    {
+      "path": "audit/stkg_v2_competency_queries.json",
+      "sha256": "997edfdf3b0f6aff51d858cd03c621fa478a6de7b5d8f200b15a3bdd778c1caf",
+      "size_bytes": 128549
+    },
+    {
+      "path": "audit/stkg_v2_creative_media.json",
+      "sha256": "664b1e5444b5d8f3944ec86630f5387d8d54f97d3c1967fb0103a527cd79a4a6",
+      "size_bytes": 2093
+    },
+    {
+      "path": "audit/stkg_v2_event_culture.json",
+      "sha256": "0f3a1ebb0fafb5878016def971b259815c840e681ab3d1746961c37db16d6caf",
+      "size_bytes": 2554
+    },
+    {
+      "path": "audit/stkg_v2_evolution.json",
+      "sha256": "1e6fa919d9523e988e982c96799fc3f3ae0dfac8ac99a5e9af80fb53f3c882c4",
+      "size_bytes": 2338
+    },
+    {
+      "path": "audit/stkg_v2_final_materialization.json",
+      "sha256": "5febab189781a0b41f0e50c34a136e16705fee0d831d231c5d076c35a5a68670",
+      "size_bytes": 1430
+    },
+    {
+      "path": "audit/stkg_v2_final_tests.log",
+      "sha256": "64b4aade7baff6f283a64d25ac72f6cc0d0351819b3309577adfc486a5fddde2",
+      "size_bytes": 276
+    },
+    {
+      "path": "audit/stkg_v2_full_audit.json",
+      "sha256": "d325f0cc8b193a834b0c97bd1cb20e600a59910b7c9a275e00d8e3ba027c6a59",
+      "size_bytes": 70449
+    },
+    {
+      "path": "audit/stkg_v2_graph_export.json",
+      "sha256": "b9212bac293a50b14ea6032881d7e78860d6445f849e583ea343f85621aa9351",
+      "size_bytes": 2584
+    },
+    {
+      "path": "audit/stkg_v2_neo4j_import.json",
+      "sha256": "9943bf9d509e9dcc09fa5aaf4a4a7e3d9e2611691e8871d503057326aea3612d",
+      "size_bytes": 13993
+    },
+    {
+      "path": "audit/stkg_v2_neo4j_verification.json",
+      "sha256": "07fd7f5ae8b4996c829b179c8bff59afdc61804b71fc4a7fd94c8c91bc71256a",
+      "size_bytes": 13491
+    },
+    {
+      "path": "audit/stkg_v2_research_base.json",
+      "sha256": "af8629136583183f5c8baf06623eb086a306d4ffcd55e47b8f53a458384a4cc4",
+      "size_bytes": 1826
+    }
+  ]
+}
