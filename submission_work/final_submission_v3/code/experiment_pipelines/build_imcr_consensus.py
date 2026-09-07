@@ -63,6 +63,11 @@ DEFAULT_PAYLOADS_DIR = defs.EXP08 / "payloads"
 REFERENCE_FIELDS = [
     "task_type",
     "task_id",
+    # run_selective_inference.py --reference imcr_* 消费的别名列（GOAL Phase 7）：
+    # sample_id == task_id，reference_label == 解码后标签（scope_adjustment 的
+    # A_BETTER/B_BETTER 解码回 BEFORE_BETTER/AFTER_BETTER，其余任务原样）。
+    "sample_id",
+    "reference_label",
     "imcr_label",
     "imcr_label_decoded",
     "consensus_tier",
@@ -70,6 +75,26 @@ REFERENCE_FIELDS = [
     "winning_votes",
     "vote_distribution",
     "judges",
+    "dry_run",
+]
+
+# GOAL 12.1：Qwen 家族盲 LLM 基线须对照不含 Qwen 票的参考集；judge 槽位 A 固定
+# 为 Qwen 家族（协议 §11），故 leave-Qwen-out = 剔除槽位 A 后按缩减面板规则重聚合。
+LOO_REFERENCE_JUDGE = "A"
+
+LOQ_FIELDS = [
+    "task_type",
+    "task_id",
+    "sample_id",
+    "reference_label",
+    "imcr_label",
+    "imcr_label_decoded",
+    "consensus_tier",
+    "n_valid_votes",
+    "winning_votes",
+    "vote_distribution",
+    "judges",
+    "judge_removed",
     "dry_run",
 ]
 
@@ -171,6 +196,7 @@ def run(raw_root: Path, out_dir: Path, payloads_dir: Path) -> dict[str, Any]:
     pairwise_rows: list[dict[str, Any]] = []
     reliability_rows: list[dict[str, Any]] = []
     loo_rows: list[dict[str, Any]] = []
+    loq_rows: list[dict[str, Any]] = []
     manifest_tasks: list[dict[str, Any]] = []
     all_model_ids: set[str] = set()
 
@@ -188,6 +214,42 @@ def run(raw_root: Path, out_dir: Path, payloads_dir: Path) -> dict[str, Any]:
         for m in meta.values():
             all_model_ids.update(mid for mid in m["model_ids"].values() if mid)
 
+        # leave-one-out 参考集（GOAL 12.1）：对面板内每个 judge 各生成一份剔除
+        # 该 judge 后按缩减面板规则重聚合的参考集，供与该 judge 同模型的盲 LLM
+        # 基线做独立性对照评价（如 B3=gpt-5.6-luna 用 LEAVE_B_OUT）。
+        for loo_judge in judges:
+            loq_results = consensus_mod.reduced_panel_labels(matrix, judges, loo_judge)
+            remaining = [j for j in judges if j != loo_judge]
+            for tid, res in zip(task_ids, loq_results):
+                if res.label is None:
+                    continue
+                decoded = (
+                    decode_ab_label(res.label, ab_mapping.get(tid))
+                    if task_type == "scope_adjustment"
+                    else res.label
+                )
+                loq_rows.append(
+                    {
+                        "task_type": task_type,
+                        "task_id": tid,
+                        "sample_id": tid,
+                        "reference_label": (decoded if decoded else (res.label or "")),
+                        "imcr_label": res.label,
+                        "imcr_label_decoded": decoded if decoded is not None else "",
+                        "consensus_tier": res.tier,
+                        "n_valid_votes": res.n_valid_votes,
+                        "winning_votes": res.winning_votes,
+                        "vote_distribution": json.dumps(
+                            {str(k): v for k, v in res.vote_distribution.items()},
+                            ensure_ascii=False,
+                            sort_keys=True,
+                        ),
+                        "judges": ";".join(remaining),
+                        "judge_removed": loo_judge,
+                        "dry_run": meta[tid]["dry_run"],
+                    }
+                )
+
         tier_counts: Counter[str] = Counter()
         for tid, res in zip(task_ids, results):
             tier_counts[res.tier] += 1
@@ -200,6 +262,8 @@ def run(raw_root: Path, out_dir: Path, payloads_dir: Path) -> dict[str, Any]:
                 {
                     "task_type": task_type,
                     "task_id": tid,
+                    "sample_id": tid,
+                    "reference_label": (decoded if decoded else (res.label or "")),
                     "imcr_label": res.label if res.label is not None else "",
                     "imcr_label_decoded": decoded if decoded is not None else "",
                     "consensus_tier": res.tier,
@@ -279,6 +343,21 @@ def run(raw_root: Path, out_dir: Path, payloads_dir: Path) -> dict[str, Any]:
     loo_path = out_dir / "LEAVE_ONE_JUDGE_OUT.csv"
     _write(strong_path, strong_rows, REFERENCE_FIELDS)
     _write(all_path, all_rows, REFERENCE_FIELDS)
+    # 对称的 leave-one-out 参考集：面板内每个 judge 各一份（GOAL §12.1 修订），
+    # 供与该 judge 同模型的盲 LLM 基线做独立性对照；另保留 QWEN_OUT 别名（= LEAVE_A）。
+    loq_paths: list[Path] = []
+    loq_counts: dict[str, int] = {}
+    for loo_judge in sorted({r["judge_removed"] for r in loq_rows}):
+        rows_j = [r for r in loq_rows if r["judge_removed"] == loo_judge]
+        path_j = out_dir / f"IMCR_REFERENCE_LEAVE_{loo_judge}_OUT.csv"
+        _write(path_j, rows_j, LOQ_FIELDS)
+        loq_paths.append(path_j)
+        loq_counts[path_j.name] = len(rows_j)
+        if loo_judge == LOO_REFERENCE_JUDGE:
+            alias_path = out_dir / "IMCR_REFERENCE_LEAVE_QWEN_OUT.csv"
+            _write(alias_path, rows_j, LOQ_FIELDS)
+            loq_paths.append(alias_path)
+            loq_counts[alias_path.name] = len(rows_j)
     _write(
         pair_path,
         pairwise_rows,
@@ -315,10 +394,12 @@ def run(raw_root: Path, out_dir: Path, payloads_dir: Path) -> dict[str, Any]:
             "tasks": manifest_tasks,
             "output_files": {
                 p.name: sha256_file(p)
-                for p in (strong_path, all_path, pair_path, rel_path, loo_path)
+                for p in (strong_path, all_path, pair_path, rel_path, loo_path, *loq_paths)
             },
             "n_reference_strong": len(strong_rows),
             "n_reference_all": len(all_rows),
+            "n_reference_leave_one_out": dict(loq_counts),
+            "loo_reference_judge": LOO_REFERENCE_JUDGE,
         },
     )
     manifest_path = write_manifest(manifest, out_dir / "IMCR_CONSENSUS_MANIFEST.json")
@@ -332,7 +413,14 @@ def run(raw_root: Path, out_dir: Path, payloads_dir: Path) -> dict[str, Any]:
         )
     print(f"  IMCR_REFERENCE_STRONG.csv rows={len(strong_rows)}")
     print(f"  IMCR_REFERENCE_ALL.csv    rows={len(all_rows)}")
-    return {"tasks": manifest_tasks, "n_strong": len(strong_rows), "n_all": len(all_rows)}
+    for name, n in loq_counts.items():
+        print(f"  {name} rows={n}")
+    return {
+        "tasks": manifest_tasks,
+        "n_strong": len(strong_rows),
+        "n_all": len(all_rows),
+        "n_loq": len(loq_rows),
+    }
 
 
 def main(argv: list[str] | None = None) -> int:

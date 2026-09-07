@@ -177,3 +177,26 @@ judge 通过环境变量槽位 `JUDGE_A` … `JUDGE_E` 配置，每个槽位三�
 - IMCR 及其全部派生结果标注为 **E 级（independent evaluation）**，与旧 ERA 体系结果（D 级 shared-reference diagnostic / C 级 cached model output）明确区分；论文表格必须保留该证据等级列（GOAL 第二节）。
 - **DRY_RUN 约定**：`run_judges.py --dry-run` 产生的一切文件只进 `experiments/08_independent_reference/dry_run/`，记录与 manifest 均带 `dry_run: true`，目录内附 `README_DRY_RUN.txt`；dry-run 数字**严禁**进入论文或正式报告，也不得与真实 judge 输出混放。
 - 本批已完成的 DRY_RUN 验证（每类 12 条 × 3 假 judge，仅验证链路，非实验结果）共识分布：entity_type strong 0 / weak 5 / unresolved 7；relation_contract 0/7/5；scope_adjustment 1/6/5；identity_pair 2/9/1；provenance_support 0/4/8。
+
+## 11. 面板确定（2026-09-07）
+
+- **Primary 面板 = Judge A（Qwen 家族）+ Judge B（GPT 家族）+ Judge C（MiniMax 家族）**，共 3 个 judge，直接适用 GOAL 7.4 的 3 模型档共识规则（3/3 → strong_consensus，2/3 → weak_consensus，其余 unresolved）。
+- **Judge D（nvidia/nemotron-3-ultra free 档）不进 primary 面板**。原因：2026-09-07 真实运行中该模型经 OpenRouter free 档持续返回 HTTP 429（每次调用已按 Retry-After/指数退避有界重试 4 次仍失败），事实上不可用；备选 Kimi key 不适用于公开 API，无法顶替。D 若未来恢复可用，只用于 leave-one-judge-out 稳定性分析，不改变 primary 共识。
+- 该决定不影响已落盘的 D 冒烟/尝试记录（保留于 raw_runs 供审计）；共识构建时 primary 面板仅读取 A/B/C 三个 jsonl。
+
+## 12. Judge A 槽位模型更换（2026-09-08）
+
+- **原因**：`Qwen3.5-122B-A10B` 渠道（218.197.140.7:3001）自 2026-09-07 13:25 UTC 起持续挂起（连接接受但 >5 分钟无任何 token，客户端各超时档位 60/300 秒及全部重试均失败；同网关 `Qwen3.5-35B-A3B`/`Qwen3.6-35B-A3B` 全程正常，可排除网关整体故障）。经用户确认，更换 Judge A 槽位模型。
+- **新面板**：**Judge A（Qwen 家族 `Qwen3.5-35B-A3B`）+ Judge B（GPT 家族 `gpt-5.6-luna`）+ Judge C（MiniMax 家族 `minimax/minimax-m3:free`)**。三家族构成不变，满足 GOAL 7.4 的 ≥3 judge、≥2 家族、Qwen 非唯一 judge 约束。
+- **模型隔离**：B3 盲 LLM 基线 = `Qwen3.6-35B-A3B`，与 Judge A 的 `Qwen3.5-35B-A3B` 为**不同模型实例**，面板内无任何槽位与 B3 同模型；§12.1 的 leave-Qwen-out 参考集仍是 B3 的主对照（Qwen 家族整体从参考中剔除），对 Primary 的同族共现以透明性附注披露。
+- **旧记录处置**：Qwen3.5-122B-A10B 的全部记录（entity_type 339 OK + 43 TRANSPORT_ERROR）整体归档至 `raw_runs/_archived_channel_122b/`，**不参与任何共识聚合、不与新模型记录混票**（一个 judge 槽位 = 一个模型实例）。归档目录不在任务目录下，`build_imcr_consensus` 的 per-task glob 不会读取。
+- **重跑范围**：Judge A 槽位五个任务型全部用新模型 fresh 运行（entity_type 亦全量重跑，不沿用 122B 的 339 条）。
+- Leave-one-judge-out 与 leave-Qwen-out 中的 "Qwen" 定义随之更新为 `Qwen3.5-35B-A3B`（槽位 A）。
+
+### §12.1 修订（2026-09-08，Judge A 第二次更换）
+
+- **原因**：第二任模型 `Qwen3.5-35B-A3B` 于 16:42–18:00 UTC 正常运行（约 107 OK）后，18:00 起渠道劣化、19:50 UTC 起彻底挂起（与 122B 同一失败模式：连接接受、无 token 输出；期间还与并行负载发生争抢，产生 26 条 TRANSPORT_ERROR）。
+- **新面板**：**Judge A（Qwen 家族 `Qwen3.6-35B-A3B`）+ Judge B（GPT 家族 `gpt-5.6-luna`）+ Judge C（MiniMax 家族 `minimax/minimax-m3:free`）**。该渠道在 B3 基线 2830 条连续调用中 0 传输错误、0 无效输出，为本网关实测稳定性与吞吐最佳的渠道（约 11.7 条/分 @4 workers）。三家族构成不变。
+- **B3 盲 LLM 基线相应调整**：B3 由 `Qwen3.6-35B-A3B`（已随 Judge A 占用该模型而作废，其 2830 条记录归档于 `experiments/09_independent_baselines/_archived/2026-09-07_b3_qwen3.6-35b/`，全部重跑）改为 **`gpt-5.6-luna`**。B3 与 Judge B 同模型，依 GOAL §12.1 的 leave-one-out 模式处理：**B3 的主对照参考集为 leave-B-out IMCR**（剔除 Judge B 票后按 2-judge 规则重聚合，即 `IMCR_REFERENCE_LEAVE_B_OUT.csv`）；leave-Qwen-out（`IMCR_REFERENCE_LEAVE_A_OUT.csv`）作为 Qwen 家族独立性对照保留。共识管线为面板内每个 judge 输出对称的 leave-one-out 参考文件。
+- **归档**：两次被替换模型的 Judge A 记录均在 `raw_runs/_archived_judgeA_attempts/`（含逐批 README），不参与共识、不与新模型混票。
+- 本节历次修订均经用户确认后执行；后续若再遇渠道故障，按同一程序处理并记录。

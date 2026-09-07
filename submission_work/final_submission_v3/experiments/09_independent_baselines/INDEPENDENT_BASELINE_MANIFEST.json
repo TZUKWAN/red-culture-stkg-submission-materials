@@ -1,0 +1,313 @@
+{
+  "audit_result": "PASS",
+  "b3_stats": {
+    "calls_per_task": {
+      "entity_type": {
+        "MODEL_OUTPUT_INVALID": 0,
+        "OK": 137,
+        "TRANSPORT_ERROR": 0
+      }
+    },
+    "model_ids": [
+      "gpt-5.6-luna"
+    ]
+  },
+  "code_commit": "40b373422e2a11f757ab78519d59409a2f7adb90",
+  "database_sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+  "db_manifest": {
+    "final_db_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\release_databases\\red_culture_stkg_final_v2.sqlite",
+    "final_db_sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+    "semantic_db_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\release_databases\\red_culture_stkg_semantic_v2.sqlite",
+    "semantic_db_sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377"
+  },
+  "description": "IMCR 独立基线 B1–B12（B3 除外；B3 经 --append-runs 合并）预测行清单（audit/04_BASELINE_DESIGN.md §8）",
+  "experiment_id": "independent_baselines",
+  "grid_complete": true,
+  "inputs": {
+    "classifier_db": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\source_data\\stkg_v2_entity_classifier.sqlite",
+    "classifier_model": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\source_data\\stkg_v2_entity_classifier.joblib",
+    "entity_type_metadata": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\ENTITY_TYPE_SAMPLE.sampling_metadata.csv",
+    "entity_type_sample": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\ENTITY_TYPE_SAMPLE.csv",
+    "identity_pair_metadata": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\11_identity_validation\\IDENTITY_PAIR_METADATA.csv",
+    "identity_pair_tasks": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\11_identity_validation\\IDENTITY_PAIR_TASKS.jsonl",
+    "provenance_metadata": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\12_provenance_validation\\PROVENANCE_SUPPORT_METADATA.csv",
+    "provenance_sample": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\12_provenance_validation\\PROVENANCE_SUPPORT_SAMPLE.csv",
+    "relation_contract_sample": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\RELATION_CONTRACT_SAMPLE.csv",
+    "scope_adjustment_tasks": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\10_structural_validation\\SCOPE_ADJUSTMENT_TASKS.jsonl"
+  },
+  "mapping_spec": {
+    "entity_type": "prediction=research_entities.entity_type; confidence=research_entities.confidence; gate=type_validation_status=='validated'",
+    "identity_pair": "prediction=research_entity_members co-membership: same canonical_entity_id -> same_entity else different_entity; confidence withheld; gate=1",
+    "provenance_support": "research_tier mapping: strict_semantic->fully_supported, contextual->partially_supported, unresolved->insufficient_evidence; unsupported/contradicted never predicted; confidence=research_assertions.confidence (frozen sidecar); gate=n_provenance_rows>0",
+    "relation_contract": "release_tier mapping: strict_semantic->valid, contextual->context_only, unresolved->insufficient_evidence; invalid never predicted; confidence=research_assertions.confidence; gate=semantic_status=='auto_accepted' AND risk_tier in {A,B}",
+    "scope_adjustment": "prediction=constant AFTER_BETTER (post-closure state is the system claim); confidence withheld (no graded confidence field); gate=1"
+  },
+  "mapping_spec_sha256": "319e561ae6175e92d238e77a34aaf33f03bd7d26aabde6e3a4c7024529dea81b",
+  "mapping_strategy_version": "imcr-baseline-mapping.v1",
+  "model_ids": [
+    "gpt-5.6-luna"
+  ],
+  "not_available_registry": [
+    {
+      "method_id": "B1_rule_only",
+      "n_not_available": 208,
+      "n_rows": 208,
+      "reason": "no rule component for scope_adjustment (design §3 N/A) x208",
+      "task_type": "scope_adjustment"
+    },
+    {
+      "method_id": "B1_rule_only",
+      "n_not_available": 600,
+      "n_rows": 600,
+      "reason": "no rule component for identity_pair (design §3 N/A) x600",
+      "task_type": "identity_pair"
+    },
+    {
+      "method_id": "B1_rule_only",
+      "n_not_available": 1000,
+      "n_rows": 1000,
+      "reason": "no rule component for provenance_support (design §3 N/A) x1000",
+      "task_type": "provenance_support"
+    },
+    {
+      "method_id": "B2_frozen_classifier",
+      "n_not_available": 640,
+      "n_rows": 640,
+      "reason": "method×task cell is N/A by design (§3): B2_frozen_classifier on relation_contract x640",
+      "task_type": "relation_contract"
+    },
+    {
+      "method_id": "B2_frozen_classifier",
+      "n_not_available": 208,
+      "n_rows": 208,
+      "reason": "method×task cell is N/A by design (§3): B2_frozen_classifier on scope_adjustment x208",
+      "task_type": "scope_adjustment"
+    },
+    {
+      "method_id": "B2_frozen_classifier",
+      "n_not_available": 600,
+      "n_rows": 600,
+      "reason": "method×task cell is N/A by design (§3): B2_frozen_classifier on identity_pair x600",
+      "task_type": "identity_pair"
+    },
+    {
+      "method_id": "B2_frozen_classifier",
+      "n_not_available": 1000,
+      "n_rows": 1000,
+      "reason": "method×task cell is N/A by design (§3): B2_frozen_classifier on provenance_support x1000",
+      "task_type": "provenance_support"
+    },
+    {
+      "method_id": "B4_rule_plus_classifier",
+      "n_not_available": 640,
+      "n_rows": 640,
+      "reason": "method×task cell is N/A by design (§3): B4_rule_plus_classifier on relation_contract x640",
+      "task_type": "relation_contract"
+    },
+    {
+      "method_id": "B4_rule_plus_classifier",
+      "n_not_available": 208,
+      "n_rows": 208,
+      "reason": "method×task cell is N/A by design (§3): B4_rule_plus_classifier on scope_adjustment x208",
+      "task_type": "scope_adjustment"
+    },
+    {
+      "method_id": "B4_rule_plus_classifier",
+      "n_not_available": 600,
+      "n_rows": 600,
+      "reason": "method×task cell is N/A by design (§3): B4_rule_plus_classifier on identity_pair x600",
+      "task_type": "identity_pair"
+    },
+    {
+      "method_id": "B4_rule_plus_classifier",
+      "n_not_available": 1000,
+      "n_rows": 1000,
+      "reason": "method×task cell is N/A by design (§3): B4_rule_plus_classifier on provenance_support x1000",
+      "task_type": "provenance_support"
+    },
+    {
+      "method_id": "B5_rule_plus_blind_llm",
+      "n_not_available": 208,
+      "n_rows": 208,
+      "reason": "method×task cell is N/A by design (§3): B5_rule_plus_blind_llm on scope_adjustment x208",
+      "task_type": "scope_adjustment"
+    },
+    {
+      "method_id": "B5_rule_plus_blind_llm",
+      "n_not_available": 600,
+      "n_rows": 600,
+      "reason": "method×task cell is N/A by design (§3): B5_rule_plus_blind_llm on identity_pair x600",
+      "task_type": "identity_pair"
+    },
+    {
+      "method_id": "B5_rule_plus_blind_llm",
+      "n_not_available": 1000,
+      "n_rows": 1000,
+      "reason": "method×task cell is N/A by design (§3): B5_rule_plus_blind_llm on provenance_support x1000",
+      "task_type": "provenance_support"
+    },
+    {
+      "method_id": "B7_classifier_margin",
+      "n_not_available": 640,
+      "n_rows": 640,
+      "reason": "method×task cell is N/A by design (§3): B7_classifier_margin on relation_contract x640",
+      "task_type": "relation_contract"
+    },
+    {
+      "method_id": "B7_classifier_margin",
+      "n_not_available": 208,
+      "n_rows": 208,
+      "reason": "method×task cell is N/A by design (§3): B7_classifier_margin on scope_adjustment x208",
+      "task_type": "scope_adjustment"
+    },
+    {
+      "method_id": "B7_classifier_margin",
+      "n_not_available": 600,
+      "n_rows": 600,
+      "reason": "method×task cell is N/A by design (§3): B7_classifier_margin on identity_pair x600",
+      "task_type": "identity_pair"
+    },
+    {
+      "method_id": "B7_classifier_margin",
+      "n_not_available": 1000,
+      "n_rows": 1000,
+      "reason": "method×task cell is N/A by design (§3): B7_classifier_margin on provenance_support x1000",
+      "task_type": "provenance_support"
+    },
+    {
+      "method_id": "B8_entropy_threshold",
+      "n_not_available": 640,
+      "n_rows": 640,
+      "reason": "method×task cell is N/A by design (§3): B8_entropy_threshold on relation_contract x640",
+      "task_type": "relation_contract"
+    },
+    {
+      "method_id": "B8_entropy_threshold",
+      "n_not_available": 208,
+      "n_rows": 208,
+      "reason": "method×task cell is N/A by design (§3): B8_entropy_threshold on scope_adjustment x208",
+      "task_type": "scope_adjustment"
+    },
+    {
+      "method_id": "B8_entropy_threshold",
+      "n_not_available": 600,
+      "n_rows": 600,
+      "reason": "method×task cell is N/A by design (§3): B8_entropy_threshold on identity_pair x600",
+      "task_type": "identity_pair"
+    },
+    {
+      "method_id": "B8_entropy_threshold",
+      "n_not_available": 1000,
+      "n_rows": 1000,
+      "reason": "method×task cell is N/A by design (§3): B8_entropy_threshold on provenance_support x1000",
+      "task_type": "provenance_support"
+    },
+    {
+      "method_id": "B9_rule_model_agreement",
+      "n_not_available": 640,
+      "n_rows": 640,
+      "reason": "agreement signal unavailable: rule or B3 blind LLM prediction missing x640",
+      "task_type": "relation_contract"
+    },
+    {
+      "method_id": "B9_rule_model_agreement",
+      "n_not_available": 208,
+      "n_rows": 208,
+      "reason": "method×task cell is N/A by design (§3): B9_rule_model_agreement on scope_adjustment x208",
+      "task_type": "scope_adjustment"
+    },
+    {
+      "method_id": "B9_rule_model_agreement",
+      "n_not_available": 600,
+      "n_rows": 600,
+      "reason": "method×task cell is N/A by design (§3): B9_rule_model_agreement on identity_pair x600",
+      "task_type": "identity_pair"
+    },
+    {
+      "method_id": "B9_rule_model_agreement",
+      "n_not_available": 1000,
+      "n_rows": 1000,
+      "reason": "method×task cell is N/A by design (§3): B9_rule_model_agreement on provenance_support x1000",
+      "task_type": "provenance_support"
+    },
+    {
+      "method_id": "B3_blind_llm",
+      "n_not_available": 0,
+      "n_rows": 0,
+      "reason": "fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs",
+      "task_type": "entity_type"
+    },
+    {
+      "method_id": "B3_blind_llm",
+      "n_not_available": 0,
+      "n_rows": 0,
+      "reason": "fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs",
+      "task_type": "relation_contract"
+    },
+    {
+      "method_id": "B3_blind_llm",
+      "n_not_available": 0,
+      "n_rows": 0,
+      "reason": "fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs",
+      "task_type": "scope_adjustment"
+    },
+    {
+      "method_id": "B3_blind_llm",
+      "n_not_available": 0,
+      "n_rows": 0,
+      "reason": "fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs",
+      "task_type": "identity_pair"
+    },
+    {
+      "method_id": "B3_blind_llm",
+      "n_not_available": 0,
+      "n_rows": 0,
+      "reason": "fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs",
+      "task_type": "provenance_support"
+    },
+    {
+      "method_id": "B6_classifier_conf_threshold",
+      "n_not_available": 0,
+      "n_rows": 0,
+      "reason": "B6 is the B2 confidence-threshold sweep (no separate rows by design)",
+      "task_type": "entity_type"
+    },
+    {
+      "method_id": "B6_classifier_conf_threshold",
+      "n_not_available": 0,
+      "n_rows": 0,
+      "reason": "B6 is the B2 confidence-threshold sweep (no separate rows by design)",
+      "task_type": "relation_contract"
+    },
+    {
+      "method_id": "B6_classifier_conf_threshold",
+      "n_not_available": 0,
+      "n_rows": 0,
+      "reason": "B6 is the B2 confidence-threshold sweep (no separate rows by design)",
+      "task_type": "scope_adjustment"
+    },
+    {
+      "method_id": "B6_classifier_conf_threshold",
+      "n_not_available": 0,
+      "n_rows": 0,
+      "reason": "B6 is the B2 confidence-threshold sweep (no separate rows by design)",
+      "task_type": "identity_pair"
+    },
+    {
+      "method_id": "B6_classifier_conf_threshold",
+      "n_not_available": 0,
+      "n_rows": 0,
+      "reason": "B6 is the B2 confidence-threshold sweep (no separate rows by design)",
+      "task_type": "provenance_support"
+    }
+  ],
+  "output_files": {
+    "BASELINE_AVAILABILITY_MATRIX.csv": "10932b79ccc0824100665b185123f4650676f2244932ff920bd961f1798fcfbb",
+    "IMCR_BASELINE_RUNS.csv": "498347e485660e76d1ee6ff4114750686a24bbddb4393967992fa6519a267382"
+  },
+  "prompt_sha256": "319e561ae6175e92d238e77a34aaf33f03bd7d26aabde6e3a4c7024529dea81b",
+  "sample_manifest_sha256": "UNAVAILABLE",
+  "schema_sha256": "UNAVAILABLE",
+  "seed": 20260907,
+  "timestamp": "2026-09-07T20:02:43.776154+00:00"
+}

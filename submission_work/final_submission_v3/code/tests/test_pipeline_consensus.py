@@ -92,6 +92,9 @@ def test_consensus_three_tiers(tmp_path):
     # P5：A 票无效，B/C 两票一致 → weak（无效票不参与多数决）
     assert all_rows["P5"]["consensus_tier"] == "weak_consensus"
     assert all_rows["P5"]["n_valid_votes"] == "2"
+    # run_selective_inference --reference 消费的别名列（GOAL Phase 7 契约）
+    assert strong_rows["P1"]["sample_id"] == "P1"
+    assert strong_rows["P1"]["reference_label"] == "same_entity"
 
 
 def test_ab_label_decoding(tmp_path):
@@ -110,6 +113,7 @@ def test_ab_label_decoding(tmp_path):
     rows = _read_csv(out_dir / "IMCR_REFERENCE_ALL.csv")
     assert rows[0]["imcr_label"] == "A_BETTER"           # 原始 a/b 语义保留
     assert rows[0]["imcr_label_decoded"] == "AFTER_BETTER"  # a 展示位对应 after
+    assert rows[0]["reference_label"] == "AFTER_BETTER"  # 别名列同样使用解码后语义
 
 
 def test_statistics_csvs_and_manifest(tmp_path):
@@ -130,6 +134,21 @@ def test_statistics_csvs_and_manifest(tmp_path):
 
     loo_rows = _read_csv(out_dir / "LEAVE_ONE_JUDGE_OUT.csv")
     assert {r["judge_removed"] for r in loo_rows} == {"A", "B", "C"}
+
+    # leave-one-out 参考集（GOAL §12.1 修订）：面板内每个 judge 各一份，
+    # 2/2 一致 → weak_consensus；不一致或票不足 → unresolved（不落盘）。
+    # QWEN_OUT 为 LEAVE_A_OUT 的别名文件。
+    loq_rows = {r["task_id"]: r for r in _read_csv(out_dir / "IMCR_REFERENCE_LEAVE_A_OUT.csv")}
+    assert set(loq_rows) == {"P1", "P5"}
+    assert all(r["consensus_tier"] == "weak_consensus" for r in loq_rows.values())
+    assert all(r["judge_removed"] == "A" and r["judges"] == "B;C" for r in loq_rows.values())
+    assert all(r["sample_id"] == r["task_id"] and r["reference_label"] == "same_entity"
+               for r in loq_rows.values())
+    assert loq_rows == {r["task_id"]: r for r in _read_csv(out_dir / "IMCR_REFERENCE_LEAVE_QWEN_OUT.csv")}
+    for removed, remaining in (("A", {"B", "C"}), ("B", {"A", "C"}), ("C", {"A", "B"})):
+        rows = _read_csv(out_dir / f"IMCR_REFERENCE_LEAVE_{removed}_OUT.csv")
+        assert all(r["judge_removed"] == removed for r in rows)
+        assert all(set(r["judges"].split(";")) == remaining for r in rows)
 
     manifest = json.load(open(out_dir / "IMCR_CONSENSUS_MANIFEST.json", encoding="utf-8"))
     assert manifest["experiment_id"] == "imcr_consensus_build"

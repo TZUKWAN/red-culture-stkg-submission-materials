@@ -31,6 +31,8 @@ import argparse
 import hashlib
 import json
 import sys
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any, Mapping, Sequence
 
@@ -184,6 +186,9 @@ def run(
     tasks: Sequence[str],
     temperature: float,
     top_p: float,
+    workers: int = 1,
+    timeout: float = 60.0,
+    max_transport_retries: int = 4,
 ) -> dict[str, Any]:
     configs = discover_judges(dry_run, judge_names)
     call_seed = derive_seed("imcr_judge_calls", MASTER_SEED)
@@ -217,29 +222,51 @@ def run(
                     cfg, dry_run=True, fake_responder=make_dry_run_responder(cfg.model)
                 )
             else:
-                client = JudgeClient(cfg)
+                client = JudgeClient(
+                    cfg, timeout=timeout, max_transport_retries=max_transport_retries
+                )
 
             counts = {"OK": 0, "MODEL_OUTPUT_INVALID": 0, "TRANSPORT_ERROR": 0, "SKIPPED": 0}
+            pending = [row for row in rows if row["task_id"] not in done]
+            counts["SKIPPED"] = len(rows) - len(pending)
+
+            def _judge_one(row: Mapping[str, Any]) -> dict[str, Any]:
+                record = client.judge(
+                    row["task_id"],
+                    row["allowed_labels"],
+                    prompt_version=row["prompt_version"],
+                    messages=build_messages(template, row["payload"]),
+                    temperature=temperature,
+                    top_p=top_p,
+                    seed=call_seed,
+                )
+                line = record.to_dict()
+                line["task_type"] = task_type
+                line["prompt_sha256"] = row["prompt_sha256"]
+                line["status"] = record.status
+                return line
+
+            # 写入串行化：worker 只负责调用，主线程逐条 append + flush，
+            # 进程中断时已落盘记录仍可被 --resume 识别（幂等）。
+            write_lock = threading.Lock()
             with open(raw_path, "a", encoding="utf-8") as fh:
-                for row in rows:
-                    task_id = row["task_id"]
-                    if task_id in done:
-                        counts["SKIPPED"] += 1
-                        continue
-                    record = client.judge(
-                        task_id,
-                        row["allowed_labels"],
-                        prompt_version=row["prompt_version"],
-                        messages=build_messages(template, row["payload"]),
-                        temperature=temperature,
-                        top_p=top_p,
-                        seed=call_seed,
-                    )
-                    line = record.to_dict()
-                    line["task_type"] = task_type
-                    line["prompt_sha256"] = row["prompt_sha256"]
-                    fh.write(json.dumps(line, ensure_ascii=False, sort_keys=True) + "\n")
-                    counts[record.status] = counts.get(record.status, 0) + 1
+                if workers <= 1:
+                    for row in pending:
+                        line = _judge_one(row)
+                        fh.write(json.dumps(line, ensure_ascii=False, sort_keys=True) + "\n")
+                        fh.flush()
+                        counts[line["status"]] = counts.get(line["status"], 0) + 1
+                else:
+                    with ThreadPoolExecutor(max_workers=workers) as pool:
+                        futures = [pool.submit(_judge_one, row) for row in pending]
+                        for fut in as_completed(futures):
+                            line = fut.result()
+                            with write_lock:
+                                fh.write(
+                                    json.dumps(line, ensure_ascii=False, sort_keys=True) + "\n"
+                                )
+                                fh.flush()
+                                counts[line["status"]] = counts.get(line["status"], 0) + 1
             key = f"{task_type}/{cfg.name}"
             summary["tasks"][key] = {"n_attempted": len(rows) - counts["SKIPPED"], **counts}
             print(f"[run_judges] {key}: {summary['tasks'][key]} -> {raw_path}")
@@ -268,10 +295,30 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--top-p", type=float, default=1.0)
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=1,
+        help="并发 worker 数（有界；默认 1 纯串行）。--resume 语义不变。",
+    )
+    parser.add_argument(
+        "--timeout",
+        type=float,
+        default=60.0,
+        help="单次 HTTP 调用超时秒数（慢通道可调大）。",
+    )
+    parser.add_argument(
+        "--max-transport-retries",
+        type=int,
+        default=4,
+        help="传输级（超时/网络/429/5xx）有界重试次数。",
+    )
     args = parser.parse_args(argv)
 
     if args.overwrite and args.resume:
         parser.error("--overwrite 与 --resume 不能同时使用")
+    if args.workers < 1:
+        parser.error("--workers 必须 >= 1")
 
     try:
         run(
@@ -285,6 +332,9 @@ def main(argv: list[str] | None = None) -> int:
             tasks=args.tasks,
             temperature=args.temperature,
             top_p=args.top_p,
+            workers=args.workers,
+            timeout=args.timeout,
+            max_transport_retries=args.max_transport_retries,
         )
     except JudgeClientError as exc:
         print(f"[run_judges] 配置错误：{exc}", file=sys.stderr)

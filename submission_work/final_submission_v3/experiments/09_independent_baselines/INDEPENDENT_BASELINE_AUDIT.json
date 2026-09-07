@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-09-08T04:02:41+08:00",
+  "checks": {
+    "grid_complete_method_x_task": true,
+    "no_not_available_row_carries_prediction": true,
+    "fixed_schema_columns_uniform": true,
+    "mapping_strategy_checksum_consistent": true
+  },
+  "result": "PASS",
+  "missing_grid_cells": [],
+  "n_bad_not_available_rows": 0,
+  "mapping_strategy_version": "imcr-baseline-mapping.v1",
+  "mapping_spec_sha256": "319e561ae6175e92d238e77a34aaf33f03bd7d26aabde6e3a4c7024529dea81b",
+  "n_runs_rows": 28300,
+  "n_available_rows": 12026,
+  "task_sample_counts": {
+    "entity_type": 382,
+    "relation_contract": 640,
+    "scope_adjustment": 208,
+    "identity_pair": 600,
+    "provenance_support": 1000
+  }
+}

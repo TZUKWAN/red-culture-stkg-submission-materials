@@ -35,6 +35,7 @@ __all__ = [
     "krippendorff_alpha_nominal",
     "cohens_kappa",
     "leave_one_judge_out",
+    "reduced_panel_labels",
     "reliability_summary",
     "write_pairwise_agreement_csv",
     "write_reliability_summary_csv",
@@ -263,6 +264,36 @@ def cohens_kappa(labels_a: Sequence[Label], labels_b: Sequence[Label]) -> float:
 # ---------------------------------------------------------------------------
 
 
+def reduced_panel_labels(
+    matrix: Sequence[Votes], judges: Sequence[str], judge_to_remove: str
+) -> list[ConsensusResult]:
+    """Re-aggregate a decision matrix with one judge removed.
+
+    Applies the GOAL 7.4 reduced-panel rules: 3 or 5 remaining judges use
+    ``consensus_label``; a reduced 2-judge panel uses 2/2 agree ->
+    weak_consensus, else unresolved (no strong tier is possible with two
+    judges).  Raises ``ValueError`` for unsupported panel shapes or when
+    ``judge_to_remove`` is absent.
+    """
+    if judge_to_remove not in judges:
+        raise ValueError(f"judge {judge_to_remove!r} not in panel {list(judges)}")
+    drop = judges.index(judge_to_remove)
+    reduced_matrix = [[v for k, v in enumerate(row) if k != drop] for row in matrix]
+    reduced_n = len(judges) - 1
+    if reduced_n in (3, 5):
+        return [consensus_label(r, reduced_n) for r in reduced_matrix]
+    if reduced_n == 2:
+        results: list[ConsensusResult] = []
+        for r in reduced_matrix:
+            valid = _valid_votes(r)
+            if len(valid) == 2 and valid[0] == valid[1]:
+                results.append(ConsensusResult(valid[0], WEAK_CONSENSUS, 2, 2, {valid[0]: 2}))
+            else:
+                results.append(ConsensusResult(None, UNRESOLVED, len(valid), 0, {}))
+        return results
+    raise ValueError("unsupported reduced panel size")  # pragma: no cover - defensive
+
+
 def leave_one_judge_out(
     matrix: Sequence[Votes], judges: Sequence[str]
 ) -> list[dict[str, Any]]:
@@ -277,26 +308,8 @@ def leave_one_judge_out(
     """
     full = aggregate_all(matrix, judges)
     rows: list[dict[str, Any]] = []
-    n_judges = len(judges)
-    for drop in range(n_judges):
-        reduced_matrix = [
-            [v for k, v in enumerate(row) if k != drop] for row in matrix
-        ]
-        reduced_n = n_judges - 1
-        if reduced_n in (3, 5):
-            reduced = [consensus_label(r, reduced_n) for r in reduced_matrix]
-        elif reduced_n == 2:
-            reduced = []
-            for r in reduced_matrix:
-                valid = _valid_votes(r)
-                if len(valid) == 2 and valid[0] == valid[1]:
-                    reduced.append(
-                        ConsensusResult(valid[0], WEAK_CONSENSUS, 2, 2, {valid[0]: 2})
-                    )
-                else:
-                    reduced.append(ConsensusResult(None, UNRESOLVED, len(valid), 0, {}))
-        else:  # pragma: no cover - defensive
-            raise ValueError("unsupported reduced panel size")
+    for drop in range(len(judges)):
+        reduced = reduced_panel_labels(matrix, judges, judges[drop])
 
         labeled = unchanged = 0
         for f, r in zip(full, reduced):

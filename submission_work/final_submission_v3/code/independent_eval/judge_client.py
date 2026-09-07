@@ -82,7 +82,29 @@ JUDGE_NAMES: tuple[str, ...] = ("A", "B", "C", "D", "E")
 
 
 class JudgeClientError(RuntimeError):
-    """Raised for configuration or transport-level client failures."""
+    """Raised for configuration or transport-level client failures.
+
+    ``status_code`` / ``retry_after`` are populated for HTTP failures so
+    callers can apply bounded backoff (429 / 5xx) without ever seeing the
+    Authorization header.
+    """
+
+    def __init__(
+        self,
+        message: str,
+        *,
+        status_code: int | None = None,
+        retry_after: float | None = None,
+    ) -> None:
+        super().__init__(message)
+        self.status_code = status_code
+        self.retry_after = retry_after
+
+
+#: HTTP status codes that justify a bounded transport retry (rate limits,
+#: transient server-side faults). 4xx client errors other than these fail
+#: immediately.
+RETRYABLE_HTTP_STATUSES: frozenset[int] = frozenset({408, 409, 425, 429, 500, 502, 503, 504})
 
 
 # ---------------------------------------------------------------------------
@@ -363,6 +385,10 @@ class JudgeClient:
         meaning at most 3 *additional* attempts after the first).
     timeout:
         HTTP timeout in seconds for real calls.
+    max_transport_retries:
+        Bounded cap on transport-level retries (429 / 5xx / network
+        errors); backoff honours the provider's Retry-After header and
+        otherwise grows exponentially.  Never a tight loop.
     """
 
     def __init__(
@@ -374,17 +400,27 @@ class JudgeClient:
         max_retries: int = 3,
         timeout: float = 60.0,
         sleep_between_retries: float = 0.0,
+        max_transport_retries: int = 4,
+        transport_backoff_base: float = 2.0,
+        transport_backoff_max: float = 120.0,
+        sleep_fn: Callable[[float], None] = time.sleep,
     ) -> None:
         if not dry_run and config is None:
             raise JudgeClientError("a JudgeConfig is required unless dry_run=True")
         if max_retries < 0:
             raise ValueError("max_retries must be >= 0")
+        if max_transport_retries < 0:
+            raise ValueError("max_transport_retries must be >= 0")
         self.config = config
         self.dry_run = dry_run
         self.fake_responder = fake_responder
         self.max_retries = max_retries
         self.timeout = timeout
         self.sleep_between_retries = sleep_between_retries
+        self.max_transport_retries = max_transport_retries
+        self.transport_backoff_base = transport_backoff_base
+        self.transport_backoff_max = transport_backoff_max
+        self.sleep_fn = sleep_fn
 
     # -- construction ------------------------------------------------------
 
@@ -458,8 +494,17 @@ class JudgeClient:
                 envelope = json.loads(resp.read().decode("utf-8"))
         except urllib.error.HTTPError as exc:
             # Never include the Authorization header in the error text.
+            retry_after: float | None = None
+            raw_ra = exc.headers.get("Retry-After") if exc.headers else None
+            if raw_ra:
+                try:
+                    retry_after = max(0.0, float(raw_ra))
+                except ValueError:
+                    retry_after = None
             raise JudgeClientError(
-                f"HTTP {exc.code} from provider {self._provider}"
+                f"HTTP {exc.code} from provider {self._provider}",
+                status_code=exc.code,
+                retry_after=retry_after,
             ) from None
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
             raise JudgeClientError(
@@ -473,6 +518,43 @@ class JudgeClient:
                 f"malformed completion envelope from {self._provider}: "
                 f"{type(exc).__name__}"
             ) from None
+
+    def _http_raw_with_backoff(
+        self,
+        messages: Sequence[Mapping[str, str]],
+        temperature: float,
+        top_p: float,
+        seed: int | None,
+    ) -> str:
+        """_http_raw with bounded transport retries and backoff.
+
+        Retries only retryable failures (HTTP 408/409/425/429/5xx, network
+        errors, timeouts, malformed envelopes).  The sleep before attempt
+        ``k`` (1-based retry index) is the provider's Retry-After when
+        given, else ``min(base * 2**(k-1), max)`` — never a tight loop.
+        Non-retryable HTTP errors (e.g. 401/403) fail immediately.
+        """
+        attempt = 0
+        while True:
+            try:
+                return self._http_raw(messages, temperature, top_p, seed)
+            except JudgeClientError as exc:
+                retryable = exc.status_code is None or (
+                    exc.status_code in RETRYABLE_HTTP_STATUSES
+                )
+                if not retryable or attempt >= self.max_transport_retries:
+                    raise
+                attempt += 1
+                delay = (
+                    exc.retry_after
+                    if exc.retry_after is not None
+                    else min(
+                        self.transport_backoff_base * (2 ** (attempt - 1)),
+                        self.transport_backoff_max,
+                    )
+                )
+                if delay > 0:
+                    self.sleep_fn(delay)
 
     # -- public API ----------------------------------------------------------
 
@@ -518,7 +600,7 @@ class JudgeClient:
                 raw = self._fake_raw(task_id, allowed_labels, retry_count)
             else:
                 try:
-                    raw = self._http_raw(messages, temperature, top_p, seed)
+                    raw = self._http_raw_with_backoff(messages, temperature, top_p, seed)
                 except JudgeClientError as exc:
                     return JudgeCallRecord(
                         task_id=task_id,
