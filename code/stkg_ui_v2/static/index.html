@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>长江流域红色文化演进时空知识图谱</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand-block">
+      <span class="brand-mark"></span>
+      <div><h1>长江流域红色文化演进时空知识图谱</h1><p id="connectionStatus">正在连接 V2 数据库</p></div>
+    </div>
+    <form id="searchForm" class="search-bar">
+      <input id="searchInput" type="search" maxlength="80" placeholder="检索人物、事件、地点、作品或精神" autocomplete="off">
+      <button class="command-button" type="submit"><img src="/vendor/icons/search.svg" alt="">检索</button>
+    </form>
+    <div class="header-actions">
+      <button id="overviewButton" class="icon-button" title="返回可信总览"><img src="/vendor/icons/home.svg" alt=""></button>
+      <button id="fitButton" class="icon-button" title="适应画布"><img src="/vendor/icons/maximize-2.svg" alt=""></button>
+    </div>
+  </header>
+
+  <section id="metricStrip" class="metric-strip"></section>
+
+  <main class="workspace">
+    <aside class="filter-panel">
+      <div class="panel-heading"><h2>研究筛选</h2><button id="resetButton" class="icon-button small" title="重置筛选"><img src="/vendor/icons/rotate-ccw.svg" alt=""></button></div>
+      <label>历史阶段<select id="stageSelect"><option value="">全部阶段</option></select></label>
+      <label>省域<select id="regionSelect"><option value="">全部省域</option></select></label>
+      <label>文化形态<select id="formSelect"><option value="">全部形态</option></select></label>
+      <label>作品媒介<select id="mediaSelect"><option value="">全部媒介</option></select></label>
+      <label>观察层级<select id="tierSelect"></select></label>
+      <button id="applyFilters" class="primary-button">应用筛选</button>
+      <div class="legend" aria-label="节点图例">
+        <h3>节点类型</h3>
+        <span><i class="event"></i>事件</span><span><i class="person"></i>人物</span>
+        <span><i class="place"></i>地点</span><span><i class="culture"></i>文化内容</span>
+        <span><i class="collective"></i>组织机构</span><span><i class="other"></i>其他实体</span>
+      </div>
+      <div id="searchResults" class="search-results" hidden></div>
+    </aside>
+
+    <section class="graph-panel">
+      <div class="graph-toolbar">
+        <div><strong id="viewTitle">可信演进总览</strong><span id="graphCount"></span></div>
+        <div class="tier-key"><span class="trusted">可信</span><span class="candidate">候选</span><span class="context">上下文</span></div>
+      </div>
+      <div id="graph"></div>
+      <div id="loading" class="loading" hidden>正在载入图谱</div>
+    </section>
+
+    <aside class="detail-panel">
+      <div class="panel-heading"><h2>实体详情</h2></div>
+      <div id="emptyDetail" class="empty-detail">请选择图中的实体</div>
+      <div id="entityDetail" hidden>
+        <div class="entity-title"><span id="entityType"></span><h2 id="entityName"></h2></div>
+        <dl id="entityFacts" class="fact-list"></dl>
+        <section><h3>时空状态</h3><div id="timeline" class="timeline"></div></section>
+        <section><h3>关联关系</h3><div id="relationList" class="relation-list"></div></section>
+      </div>
+    </aside>
+  </main>
+  <script src="/vendor/cytoscape.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

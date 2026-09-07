@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "build_version": "red-culture-stkg-evolution-v2-1",
+  "input": {
+    "path": "D:\\REDCULTUREDATA\\derived\\red_culture_stkg_event_culture_v2.sqlite",
+    "sha256": "97d6b2acec0e2a8eb959956b5b69b716aefd1554b756cf7a112b609f7ba0e28d",
+    "unchanged": true
+  },
+  "rules": {
+    "path": "D:\\REDCULTUREDATA\\stkg\\schema\\evolution_rules_v1.yaml",
+    "sha256": "71347b85cb5b9eda1fcd772b2a67ada2d5dab1ad85ab8ff5ea1fda4dbfc5aa88"
+  },
+  "output": {
+    "path": "D:\\REDCULTUREDATA\\derived\\red_culture_stkg_evolution_v2.sqlite",
+    "sha256": "9b4c3107a4dc6399ea754ff3af957a37bf4420236dd943101c525b93a7db03a8",
+    "size_bytes": 1185742848
+  },
+  "validation": {
+    "counts": {
+      "event_spatiotemporal_cells": 7067,
+      "trusted_event_cells": 201,
+      "asserted_event_cells": 709,
+      "context_event_cells": 6157,
+      "culture_states": 11532,
+      "trusted_culture_states": 958,
+      "contextual_culture_states": 10574,
+      "state_support_rows": 196547,
+      "state_event_rows": 13336,
+      "state_actor_rows": 689950,
+      "state_semantic_rows": 2235,
+      "first_observed_states": 6723,
+      "transition_types": 13,
+      "transition_rules": 10,
+      "transition_candidates": 159,
+      "published_transitions": 4,
+      "stage_region_metric_rows": 674
+    },
+    "checks": {
+      "quick_check": "ok",
+      "foreign_key_errors": 0,
+      "cells_without_support": 0,
+      "states_without_events": 0,
+      "states_without_support": 0,
+      "trusted_states_without_trusted_cell": 0,
+      "unsupported_transition_candidates": 0,
+      "sequence_or_cooccurrence_candidates": 0,
+      "published_ineligible_candidates": 0,
+      "published_nontrusted_states": 0,
+      "published_ambiguous_candidates": 0,
+      "published_transition_count_mismatches": 0,
+      "source_hash_unchanged": true
+    },
+    "pass": true
+  },
+  "limitations": [
+    "first observed in this dataset is not a claim of historical origin",
+    "sequence and cooccurrence never create evolution transitions",
+    "asserted candidate time and relation context remain visible but are excluded from published transitions",
+    "spatial spread remains a review candidate unless an explicit source region is present"
+  ],
+  "completed_at": "2026-07-15T09:37:23"
+}

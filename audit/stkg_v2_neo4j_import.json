@@ -1,0 +1,579 @@
+{
+  "status": "PASS",
+  "build_version": "red-culture-stkg-neo4j-import-v2-2",
+  "export_report": {
+    "path": "D:\\REDCULTUREDATA\\audit_reports\\stkg_v2_graph_export.json",
+    "sha256": "b9212bac293a50b14ea6032881d7e78860d6445f849e583ea343f85621aa9351"
+  },
+  "import_log": {
+    "path": "D:\\REDCULTUREDATA\\run_logs\\neo4j_stkg_v2_final_import.log",
+    "sha256": "ad8d5c23d52d1175e5f3dd83a22d1ab9d87b82f0301710bf5e516b0eea884e76"
+  },
+  "new_volume": "redculture-stkg-neo4j-v2-656fdc3a8f72-data",
+  "active_container": "redculture-stkg-neo4j-v2",
+  "rollback_container": "redculture-stkg-neo4j-v2-previous-20260715094323",
+  "reused_imported_volume": false,
+  "ports": {
+    "http": 7477,
+    "bolt": 7690
+  },
+  "candidate_verification": {
+    "pass": true,
+    "checks": {
+      "total_nodes": true,
+      "total_relationships": true,
+      "node_counts": true,
+      "relationship_counts": true,
+      "creative_media": true,
+      "required_indexes_online": true,
+      "unique_constraints": true
+    },
+    "node_counts": {
+      "Assertion": 424150,
+      "BasinSection": 3,
+      "CultureForm": 7,
+      "CultureState": 11532,
+      "Entity": 152979,
+      "EventCell": 7067,
+      "EvolutionTransition": 4,
+      "HistoricalStage": 8,
+      "SourceRecord": 466312,
+      "StudyRegion": 13,
+      "TransitionCandidate": 159,
+      "TransitionType": 13
+    },
+    "relationship_counts": {
+      "AT_PLACE": 105635,
+      "CANDIDATE_FROM_STATE": 159,
+      "CANDIDATE_HAS_TYPE": 159,
+      "CANDIDATE_SUPPORTED_BY": 159,
+      "CANDIDATE_TO_STATE": 159,
+      "DURING_STAGE": 102425,
+      "EVENT_RELATION": 499,
+      "EVENT_ROLE": 54033,
+      "HAS_CULTURE_FORM": 23861,
+      "HAS_SPATIOTEMPORAL_CELL": 7067,
+      "IN_BASIN_SECTION": 141152,
+      "IN_STUDY_REGION": 90147,
+      "OBJECT": 424150,
+      "SEMANTIC_RELATION": 380205,
+      "STATE_ACTOR": 689950,
+      "STATE_DURING": 11532,
+      "STATE_EVENT": 13336,
+      "STATE_HAS_FORM": 11532,
+      "STATE_IN_BASIN": 11532,
+      "STATE_IN_REGION": 11532,
+      "STATE_OF": 11532,
+      "STATE_SEMANTIC_MEMBER": 2235,
+      "STATE_VALUE_FACET": 532,
+      "SUBJECT_OF": 424150,
+      "SUPPORTED_BY": 466312,
+      "TRANSITION_FROM_STATE": 4,
+      "TRANSITION_HAS_TYPE": 4,
+      "TRANSITION_SUPPORTED_BY": 5,
+      "TRANSITION_TO_STATE": 4,
+      "WITHIN_BASIN": 13
+    },
+    "total_nodes": 1062247,
+    "total_relationships": 2984015,
+    "creative_media": {
+      "creative_work_nodes": 1019,
+      "media_populated": 1019,
+      "media_unknown": 57,
+      "media_qwen_v2": 6,
+      "non_creative_media_populated": 0
+    },
+    "indexes": [
+      {
+        "name": "assertion_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "basinsection_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "creative_work_media_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "cultureform_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "culturestate_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "entity_name_fulltext_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "entity_name_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "entity_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "entity_type_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "eventcell_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "evolutiontransition_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "historicalstage_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "index_343aff4e",
+        "state": "ONLINE"
+      },
+      {
+        "name": "index_f7700477",
+        "state": "ONLINE"
+      },
+      {
+        "name": "sourcerecord_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "state_form_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "state_region_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "state_stage_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "state_tier_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "studyregion_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "transitioncandidate_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "transitiontype_stable_id_v2",
+        "state": "ONLINE"
+      }
+    ],
+    "constraints": [
+      {
+        "name": "assertion_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "Assertion"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "basinsection_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "BasinSection"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "cultureform_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "CultureForm"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "culturestate_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "CultureState"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "entity_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "Entity"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "eventcell_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "EventCell"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "evolutiontransition_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "EvolutionTransition"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "historicalstage_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "HistoricalStage"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "sourcerecord_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "SourceRecord"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "studyregion_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "StudyRegion"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "transitioncandidate_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "TransitionCandidate"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "transitiontype_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "TransitionType"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      }
+    ]
+  },
+  "final_verification": {
+    "pass": true,
+    "checks": {
+      "total_nodes": true,
+      "total_relationships": true,
+      "node_counts": true,
+      "relationship_counts": true,
+      "creative_media": true,
+      "required_indexes_online": true,
+      "unique_constraints": true
+    },
+    "node_counts": {
+      "Assertion": 424150,
+      "BasinSection": 3,
+      "CultureForm": 7,
+      "CultureState": 11532,
+      "Entity": 152979,
+      "EventCell": 7067,
+      "EvolutionTransition": 4,
+      "HistoricalStage": 8,
+      "SourceRecord": 466312,
+      "StudyRegion": 13,
+      "TransitionCandidate": 159,
+      "TransitionType": 13
+    },
+    "relationship_counts": {
+      "AT_PLACE": 105635,
+      "CANDIDATE_FROM_STATE": 159,
+      "CANDIDATE_HAS_TYPE": 159,
+      "CANDIDATE_SUPPORTED_BY": 159,
+      "CANDIDATE_TO_STATE": 159,
+      "DURING_STAGE": 102425,
+      "EVENT_RELATION": 499,
+      "EVENT_ROLE": 54033,
+      "HAS_CULTURE_FORM": 23861,
+      "HAS_SPATIOTEMPORAL_CELL": 7067,
+      "IN_BASIN_SECTION": 141152,
+      "IN_STUDY_REGION": 90147,
+      "OBJECT": 424150,
+      "SEMANTIC_RELATION": 380205,
+      "STATE_ACTOR": 689950,
+      "STATE_DURING": 11532,
+      "STATE_EVENT": 13336,
+      "STATE_HAS_FORM": 11532,
+      "STATE_IN_BASIN": 11532,
+      "STATE_IN_REGION": 11532,
+      "STATE_OF": 11532,
+      "STATE_SEMANTIC_MEMBER": 2235,
+      "STATE_VALUE_FACET": 532,
+      "SUBJECT_OF": 424150,
+      "SUPPORTED_BY": 466312,
+      "TRANSITION_FROM_STATE": 4,
+      "TRANSITION_HAS_TYPE": 4,
+      "TRANSITION_SUPPORTED_BY": 5,
+      "TRANSITION_TO_STATE": 4,
+      "WITHIN_BASIN": 13
+    },
+    "total_nodes": 1062247,
+    "total_relationships": 2984015,
+    "creative_media": {
+      "creative_work_nodes": 1019,
+      "media_populated": 1019,
+      "media_unknown": 57,
+      "media_qwen_v2": 6,
+      "non_creative_media_populated": 0
+    },
+    "indexes": [
+      {
+        "name": "assertion_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "basinsection_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "creative_work_media_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "cultureform_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "culturestate_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "entity_name_fulltext_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "entity_name_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "entity_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "entity_type_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "eventcell_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "evolutiontransition_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "historicalstage_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "index_343aff4e",
+        "state": "ONLINE"
+      },
+      {
+        "name": "index_f7700477",
+        "state": "ONLINE"
+      },
+      {
+        "name": "sourcerecord_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "state_form_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "state_region_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "state_stage_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "state_tier_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "studyregion_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "transitioncandidate_stable_id_v2",
+        "state": "ONLINE"
+      },
+      {
+        "name": "transitiontype_stable_id_v2",
+        "state": "ONLINE"
+      }
+    ],
+    "constraints": [
+      {
+        "name": "assertion_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "Assertion"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "basinsection_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "BasinSection"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "cultureform_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "CultureForm"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "culturestate_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "CultureState"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "entity_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "Entity"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "eventcell_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "EventCell"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "evolutiontransition_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "EvolutionTransition"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "historicalstage_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "HistoricalStage"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "sourcerecord_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "SourceRecord"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "studyregion_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "StudyRegion"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "transitioncandidate_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "TransitionCandidate"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "transitiontype_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "TransitionType"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      }
+    ]
+  },
+  "completed_at": "2026-07-15T09:43:43+08:00"
+}

@@ -1,0 +1,797 @@
+[
+  {
+    "path": "README.md",
+    "size_bytes": 1509,
+    "sha256": "6BED66FCEB959F7D136180F5ECC5E1C1822FB3B6209C81343C8308761D59C690"
+  },
+  {
+    "path": "audit/stkg_v2_competency_queries.json",
+    "size_bytes": 128549,
+    "sha256": "997EDFDF3B0F6AFF51D858CD03C621FA478A6DE7B5D8F200B15A3BDD778C1CAF"
+  },
+  {
+    "path": "audit/stkg_v2_creative_media.json",
+    "size_bytes": 2093,
+    "sha256": "664B1E5444B5D8F3944EC86630F5387D8D54F97D3C1967FB0103A527CD79A4A6"
+  },
+  {
+    "path": "audit/stkg_v2_event_culture.json",
+    "size_bytes": 2554,
+    "sha256": "0F3A1EBB0FAFB5878016DEF971B259815C840E681AB3D1746961C37DB16D6CAF"
+  },
+  {
+    "path": "audit/stkg_v2_evolution.json",
+    "size_bytes": 2338,
+    "sha256": "1E6FA919D9523E988E982C96799FC3F3AE0DFAC8AC99A5E9AF80FB53F3C882C4"
+  },
+  {
+    "path": "audit/stkg_v2_final_materialization.json",
+    "size_bytes": 1430,
+    "sha256": "5FEBAB189781A0B41F0E50C34A136E16705FEE0D831D231C5D076C35A5A68670"
+  },
+  {
+    "path": "audit/stkg_v2_final_tests.log",
+    "size_bytes": 276,
+    "sha256": "64B4AADE7BAFF6F283A64D25AC72F6CC0D0351819B3309577ADFC486A5FDDDE2"
+  },
+  {
+    "path": "audit/stkg_v2_full_audit.json",
+    "size_bytes": 70449,
+    "sha256": "D325F0CC8B193A834B0C97BD1CB20E600A59910B7C9A275E00D8E3BA027C6A59"
+  },
+  {
+    "path": "audit/stkg_v2_full_audit.md",
+    "size_bytes": 1745,
+    "sha256": "9EF8F64E3AE8BD299CA0CF92156C380A28ED46D13A33D6C9B25CC376A7086E26"
+  },
+  {
+    "path": "audit/stkg_v2_graph_export.json",
+    "size_bytes": 2584,
+    "sha256": "B9212BAC293A50B14EA6032881D7E78860D6445F849E583EA343F85621AA9351"
+  },
+  {
+    "path": "audit/stkg_v2_neo4j_import.json",
+    "size_bytes": 13993,
+    "sha256": "9943BF9D509E9DCC09FA5AAF4A4A7E3D9E2611691E8871D503057326AEA3612D"
+  },
+  {
+    "path": "audit/stkg_v2_neo4j_verification.json",
+    "size_bytes": 13491,
+    "sha256": "07FD7F5AE8B4996C829B179C8BFF59AFDC61804B71FC4A7FD94C8C91BC71256A"
+  },
+  {
+    "path": "audit/stkg_v2_research_base.json",
+    "size_bytes": 1826,
+    "sha256": "AF8629136583183F5C8BAF06623EB086A306D4FFCD55E47B8F53A458384A4CC4"
+  },
+  {
+    "path": "code/scripts/255_initialize_stkg_v2_semantic_repair.py",
+    "size_bytes": 19926,
+    "sha256": "88FB3313E7C9CE1934ECF2074E792B18CA35185084551AD5887D943B2188613C"
+  },
+  {
+    "path": "code/scripts/256_label_and_fuse_stkg_v2_semantics.py",
+    "size_bytes": 25357,
+    "sha256": "4C4A5013F0D44DD8B63382B6305F0F1FF9DA93C95638DEA133115E9C8B1CB63E"
+  },
+  {
+    "path": "code/scripts/257_qwen_adjudicate_one_stkg_v2_task.py",
+    "size_bytes": 29755,
+    "sha256": "D69996622592BE6B560D34655B59431013A80C59738EF92C29E9F75E6A68F098"
+  },
+  {
+    "path": "code/scripts/258_qwen_stkg_v2_task_pool.py",
+    "size_bytes": 6631,
+    "sha256": "84A353F023319EDE6E7C450AB10F5543D634C480DF836BA67820A9CDE77C740D"
+  },
+  {
+    "path": "code/scripts/259_resolve_compatible_stkg_v2_subtypes.py",
+    "size_bytes": 14896,
+    "sha256": "E5D5A3C2AA6EBABD415767908D9B45284C2A6CF342B9E2393BB8BA81B9316A52"
+  },
+  {
+    "path": "code/scripts/260_train_evaluate_stkg_v2_entity_classifier.py",
+    "size_bytes": 17732,
+    "sha256": "7D0B6DBD925EE4B632B2E4A041BCC6D1C1B11FD86F4D8D428BB41CD867C50C4C"
+  },
+  {
+    "path": "code/scripts/261_prepare_stkg_v2_classifier_review.py",
+    "size_bytes": 4903,
+    "sha256": "EA349EE0BFAA9F297E1547BAF07FFD78E8755DE011B7FADDA30E6B3E72D8BF0D"
+  },
+  {
+    "path": "code/scripts/262_flag_stkg_v2_identity_ambiguity.py",
+    "size_bytes": 5593,
+    "sha256": "5D0F07035461D248A8DF73B5646ECB983EAF9734F5A164B5371F5A597990B7F2"
+  },
+  {
+    "path": "code/scripts/263_prepare_stkg_v2_model_second_review.py",
+    "size_bytes": 4500,
+    "sha256": "166D24B3ECD88BAB03DF33331BC263E6383D3CA050B6C1AB2E268A4474AB9A0C"
+  },
+  {
+    "path": "code/scripts/264_close_stkg_v2_classifier_same_type.py",
+    "size_bytes": 6420,
+    "sha256": "3B410B275821A783B4686BC28D27263713FB5404CCB132CB64F2F39DD6D7579A"
+  },
+  {
+    "path": "code/scripts/265_reopen_identity_conflicts_closed_by_type_review.py",
+    "size_bytes": 3298,
+    "sha256": "570662634010BE85508A00EDB7E5BA8ECAD4373C057AD96793CC9BD213B3207D"
+  },
+  {
+    "path": "code/scripts/266_add_stkg_v2_semantic_query_indexes.py",
+    "size_bytes": 2924,
+    "sha256": "1065198B7065413778C246BE81F3E40331EAFC6BB4763F1D09E37C5F4A6BB784"
+  },
+  {
+    "path": "code/scripts/267_materialize_stkg_v2_cultural_sites.py",
+    "size_bytes": 6988,
+    "sha256": "CA5317A5BD70DFF2F09B4D8F8503974050BA2E9E426661D330722E1FFBCB41ED"
+  },
+  {
+    "path": "code/scripts/268_materialize_stkg_v2_spatial_anchors.py",
+    "size_bytes": 15335,
+    "sha256": "FEC6209E39CA600F6D373B62C2EDF80F26B627962D240CFB09CCDE8A69A7CE05"
+  },
+  {
+    "path": "code/scripts/269_restore_stkg_v2_strict_place_descriptors.py",
+    "size_bytes": 7037,
+    "sha256": "E30F62D08C35DF55FD50CC1CD68E3DA15F8DC93F91C492413AAE9B8F08D5AADA"
+  },
+  {
+    "path": "code/scripts/270_resolve_stkg_v2_spatial_reference_entities.py",
+    "size_bytes": 11373,
+    "sha256": "ECD3973F5E65E8F2CAA76DB246D41EC1809637F2A4FBFA61374E907210A3A002"
+  },
+  {
+    "path": "code/scripts/271_sync_stkg_v2_entity_type_hierarchy.py",
+    "size_bytes": 4093,
+    "sha256": "B856BEB14A28D4F9D3241CC6E1DBF13A7F07FE0DFD1EB21B8C46796DE7A33C5F"
+  },
+  {
+    "path": "code/scripts/272_audit_stkg_v2_spatial_model_contraindications.py",
+    "size_bytes": 10073,
+    "sha256": "DFCD4181E9053C1870641D50C2A1A9799791D380CD95B289D7E59193D1B9F0E9"
+  },
+  {
+    "path": "code/scripts/273_resolve_stkg_v2_strict_same_name_consensus.py",
+    "size_bytes": 8572,
+    "sha256": "056C5E5003458D2C59BD7279917734032FE8DBD724F603B7B6B3EEF9023C62B9"
+  },
+  {
+    "path": "code/scripts/274_resolve_stkg_v2_strict_structure.py",
+    "size_bytes": 11149,
+    "sha256": "4B87C377295ED7AC0ACD330D94ABC07EFFB2517E0653ADDEABB777869E283DC0"
+  },
+  {
+    "path": "code/scripts/275_prepare_stkg_v2_name_cluster_reviews.py",
+    "size_bytes": 7915,
+    "sha256": "D7BBBF19A574C368B9987DD30F4D5758E93E9805DC35787885CC0EC8914846A6"
+  },
+  {
+    "path": "code/scripts/276_qwen_adjudicate_one_stkg_v2_name_cluster.py",
+    "size_bytes": 22643,
+    "sha256": "56118245384A414EBC59ED773047C7606A5DD0B92040D4A04CC6CE274CB249FE"
+  },
+  {
+    "path": "code/scripts/277_reset_stkg_v2_name_cluster_reviews_for_social_group.py",
+    "size_bytes": 4474,
+    "sha256": "31DEE16A26AB148F4B97807B66024DD5DCA7660D5B63734B8EA90054DB9F6E05"
+  },
+  {
+    "path": "code/scripts/278_remediate_stkg_v2_name_cluster_guard_violations.py",
+    "size_bytes": 10336,
+    "sha256": "05C15A8FEF76B1199A232D098F28D27D7EA4A478B03193EF27419324F94156CD"
+  },
+  {
+    "path": "code/scripts/279_close_stkg_v2_global_structure_constraints.py",
+    "size_bytes": 13903,
+    "sha256": "2708E8947E37A65B93C83E4C27C33A13CE1C00369222DF9E080BE8AEDA710AE1"
+  },
+  {
+    "path": "code/scripts/280_close_stkg_v2_relation_and_name_consensus.py",
+    "size_bytes": 17322,
+    "sha256": "9CC75764CF0770A32129296D9FA43B8194C7A179F21DA2800B409CE6B188F201"
+  },
+  {
+    "path": "code/scripts/281_close_stkg_v2_unresolved_semantics.py",
+    "size_bytes": 17319,
+    "sha256": "10CAD123781F462E58227029B86714FB67F72082745F071C2E0FF0C75E254A52"
+  },
+  {
+    "path": "code/scripts/282_close_stkg_v2_event_time_semantics.py",
+    "size_bytes": 16675,
+    "sha256": "6E5B6025A2F788C8EECADE2A91242FDADFD0D791625453757211449C0D85E2DF"
+  },
+  {
+    "path": "code/scripts/283_close_stkg_v2_canonical_identity_and_space.py",
+    "size_bytes": 26961,
+    "sha256": "DA59CE70E791D6FE4E41C77C6D487C9804FD7D42ABAFA0636AA2A28EE50535A2"
+  },
+  {
+    "path": "code/scripts/284_materialize_stkg_v2_research_base.py",
+    "size_bytes": 34508,
+    "sha256": "C04DFB82DADB996AC1FA62086C6EF670899C7FC89CCC3CB2ED429780973E165E"
+  },
+  {
+    "path": "code/scripts/285_build_stkg_v2_event_culture.py",
+    "size_bytes": 32532,
+    "sha256": "FA9421EA6230D36DBEC7896DCFBECEE60EC6663D4D00FD5CA2946B5FC06AF48A"
+  },
+  {
+    "path": "code/scripts/286_build_stkg_v2_evolution.py",
+    "size_bytes": 43966,
+    "sha256": "6799902DFF3E76662C32C2EC3460C2B8221574422444953EE68681BC094A77C7"
+  },
+  {
+    "path": "code/scripts/287_export_stkg_v2_neo4j.py",
+    "size_bytes": 35749,
+    "sha256": "CA86A096A9BC0D5282B50E6B26EFE8DFDF962361080C64F92D54051145619D57"
+  },
+  {
+    "path": "code/scripts/288_verify_stkg_v2_neo4j.py",
+    "size_bytes": 12168,
+    "sha256": "846F8C8BA48D0F5945A9DAAE9923B4794FB6ED3350A0576D4802C721FEB87EFB"
+  },
+  {
+    "path": "code/scripts/289_enrich_stkg_v2_creative_media.py",
+    "size_bytes": 21156,
+    "sha256": "3E69701950139657C8002E0583C96CCDBE434327E4423F9DF0001B67519E9FB2"
+  },
+  {
+    "path": "code/scripts/290_materialize_stkg_v2_final.py",
+    "size_bytes": 12379,
+    "sha256": "E90A974DB21BFD21CD91222104FE786B59A56AF79DBD7095351C4419CE131164"
+  },
+  {
+    "path": "code/scripts/291_import_stkg_v2_neo4j.py",
+    "size_bytes": 14614,
+    "sha256": "A2C55B58316DADB38E594C08346AFD4FE6CD8393FA544F5CFF9FCD3888C76396"
+  },
+  {
+    "path": "code/scripts/292_run_stkg_v2_competency_queries.py",
+    "size_bytes": 7627,
+    "sha256": "A2723C15904176ECC820592EC405F8E36A9D56D871B3FD125993BEB634439077"
+  },
+  {
+    "path": "code/scripts/293_audit_stkg_v2_full.py",
+    "size_bytes": 21044,
+    "sha256": "7282935352CBFBCAC9360AA7CA1FB666156339E5B775DB1ACCA8E2F3878E9E67"
+  },
+  {
+    "path": "code/scripts/294_publish_stkg_v2.py",
+    "size_bytes": 11979,
+    "sha256": "3FC95AB7D27DC9C2FA80162C6D1C39802DE3989E0528C432062D74647D05E703"
+  },
+  {
+    "path": "code/stkg_ui_v2/app.py",
+    "size_bytes": 12764,
+    "sha256": "30B2DFA1EE77144ECA049F9FA793F9ADF32E990D89965A01A6B5BA852380E4AC"
+  },
+  {
+    "path": "code/stkg_ui_v2/static/app.js",
+    "size_bytes": 9603,
+    "sha256": "E2922890BEAD84509DA435A5AA7A4B787140D7FB43C93A035BC143F970DAA755"
+  },
+  {
+    "path": "code/stkg_ui_v2/static/index.html",
+    "size_bytes": 3602,
+    "sha256": "E6D1B94809AE4C69A395817A57C435BB29EFF6E9B85B96CBA09E08057FD4B956"
+  },
+  {
+    "path": "code/stkg_ui_v2/static/styles.css",
+    "size_bytes": 7586,
+    "sha256": "1F4CFAF894944F4FAA8460918E10605D228F79B12A7850D5966EABCEF3836F7B"
+  },
+  {
+    "path": "code/stkg_ui_v2/static/vendor/CYTOSCAPE_LICENSE.txt",
+    "size_bytes": 1082,
+    "sha256": "EB319C6E6F233607F71E8E2F450391751883CFC0EEB3CA7EF574C13D1D9C2203"
+  },
+  {
+    "path": "code/stkg_ui_v2/static/vendor/cytoscape.min.js",
+    "size_bytes": 435328,
+    "sha256": "9C2A3BF2592E0B14A1F7BEC07C03A54F16DEDF32AF9CD0AF155C716AA6C87BC3"
+  },
+  {
+    "path": "code/stkg_ui_v2/static/vendor/LUCIDE_LICENSE.txt",
+    "size_bytes": 3208,
+    "sha256": "B495047BD93A9B06913511076F504DABA17D5BBEB3E0650F3BB53A4220329C57"
+  },
+  {
+    "path": "code/stkg_ui_v2/static/vendor/icons/home.svg",
+    "size_bytes": 458,
+    "sha256": "F6EE757DF9D8859B2031DD6165E40EA83EB560C2B726E124EB67282EC8DF9943"
+  },
+  {
+    "path": "code/stkg_ui_v2/static/vendor/icons/maximize-2.svg",
+    "size_bytes": 390,
+    "sha256": "01956982ABEBB3E1C481B7772C3152028E910CD43C1ACEF721AD4BB8FD0BC5E9"
+  },
+  {
+    "path": "code/stkg_ui_v2/static/vendor/icons/rotate-ccw.svg",
+    "size_bytes": 378,
+    "sha256": "B63AD4FD12E4FD7F3C457D96DFAEBCD20C51D2DDF881DAC60C4D68AED85FD9D8"
+  },
+  {
+    "path": "code/stkg_ui_v2/static/vendor/icons/search.svg",
+    "size_bytes": 352,
+    "sha256": "928A578D91FE334A388D4F4249C3A7BC16BF2CC00D96968CE14431C9F2DB62A2"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_canonical_identity_space.py",
+    "size_bytes": 1532,
+    "sha256": "9A0C5D69A4E71CF8FCFA452D45A33E36FF9956CB8F9649D4867CCF058D9944A8"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_classifier_review_queue.py",
+    "size_bytes": 4005,
+    "sha256": "D987EF219D49EAD76AC95B52314D1A2012BB596B6F0DEE204EBC3F94A799E9EB"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_classifier_same_type.py",
+    "size_bytes": 751,
+    "sha256": "18436B2B6D69E83465D3115A900577779085CCB77CDD51433809FC0E8083E2E5"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_competency_queries.py",
+    "size_bytes": 2108,
+    "sha256": "107EA927FF67D1249CAFBCAB131CE8D93EB89531306F9847FFE66B8DD0B8840E"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_creative_media.py",
+    "size_bytes": 3118,
+    "sha256": "ABB8E4230697A301A0A80E0EDEE4539D65845D6EAF1660474E539E3A53FB4E0D"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_cultural_site_materialization.py",
+    "size_bytes": 754,
+    "sha256": "67E73D96AFB4AD055BDC1B9A359BE11FB6DC8D19BADDD54818E21D4C8E1367C6"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_entity_classifier.py",
+    "size_bytes": 1298,
+    "sha256": "910405FA0F0D92A955E2390F5DA956A028A1B3A5DAE885C7916BAE31007FDCD3"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_entity_type_hierarchy_sync.py",
+    "size_bytes": 1072,
+    "sha256": "5D6A3CFE0C84C7DAF84A4370E0FE3E8623AA6ABE5BA7508780C6A6E640BE1BF2"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_event_culture.py",
+    "size_bytes": 1864,
+    "sha256": "79E1A86440C3D138440742776F9BBFC4BA6DB25C844696B181964A25D8FC69F9"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_event_time_semantic_closure.py",
+    "size_bytes": 4871,
+    "sha256": "871DF4C3381DC720088D24E0E1BC5257D2DEE76346BFC3A2A15241627ADE032F"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_evolution.py",
+    "size_bytes": 2116,
+    "sha256": "278C87A5ECDA298E71A82AD63535CD1212FD9AC973C8B56ECA05E9814155DC46"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_final_materialization.py",
+    "size_bytes": 2888,
+    "sha256": "753E276F9CA69EAAC8BB3736FEA8996449DA7786AAC57A8146050569FC3479BA"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_full_audit.py",
+    "size_bytes": 1276,
+    "sha256": "D03F81BE895BCB81B4AB8B9EFC64A9DFC24E1DE612B6EE70D27A50A6B88E144A"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_global_structure_closure.py",
+    "size_bytes": 3086,
+    "sha256": "9C62AD19751110F3C9EACBB266B977DE20A7AD1FDE67E30F26C3A6452BFD97EF"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_identity_ambiguity.py",
+    "size_bytes": 1436,
+    "sha256": "B279107422ECA1278574B87256D60D4FD1690355D9F4297253FE0A4A45A2AFA7"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_identity_conflict_status_repair.py",
+    "size_bytes": 1764,
+    "sha256": "0B77902BBABC96A739E1EBDA6F2EBA4C7927AC1063443AAA2CEF095D79CDDF6B"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_model_second_review_queue.py",
+    "size_bytes": 3194,
+    "sha256": "03169F1C992D4DF4306C71328522470434C6291F1B2EC772D5EAC778B02A934E"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_name_cluster_guard_remediation.py",
+    "size_bytes": 2398,
+    "sha256": "2398C9A8609B94E351E75293D6F4DC73A1B0757BF2A91BF3BEFA3FABDE27A9C0"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_name_cluster_reviews.py",
+    "size_bytes": 15262,
+    "sha256": "257083552DD7D7A383E1DD3B56CE1ED9D59034985DAE5072531D4C803ED11B67"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_neo4j_export.py",
+    "size_bytes": 2053,
+    "sha256": "29D4AC6C838EB6C8A661850C8BD0A933D4D0521B1E4C98428F42D4945FBE24E5"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_neo4j_import.py",
+    "size_bytes": 1924,
+    "sha256": "6E23B2D6F83AE201FBB5932E10F62B415750EB88F933112893769D9D7A390240"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_neo4j_verification.py",
+    "size_bytes": 2414,
+    "sha256": "14830D759CD4AE9D646BD1D7237990CCCCC87F8644344FA08DF63C1C8216065E"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_qwen_adjudication.py",
+    "size_bytes": 5862,
+    "sha256": "B0AA1C482114058F41776AF76C138F05962C701DBB0C65FE2EE688A7AB0094DB"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_qwen_pool.py",
+    "size_bytes": 4601,
+    "sha256": "6B6F87494B05A1CA000A5F64EADD896F8068BBB70FD55FB2200D3CC7AA352945"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_relation_name_consensus_closure.py",
+    "size_bytes": 3173,
+    "sha256": "07EBDBCAD044ECAFF8C3E21FF2B6DE3C89E870AD249BD57FEE6497C5CB588FF2"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_release_publish.py",
+    "size_bytes": 1117,
+    "sha256": "03AF496B85B7327E301CBE8FB89771BE4B563220F885498BFDD18926BD98E7B9"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_research_base.py",
+    "size_bytes": 3495,
+    "sha256": "B4A575F59926EFC7ECB5DB3536861498293535AD67385BBDA82A7058CB77BF24"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_semantic_initialization.py",
+    "size_bytes": 4624,
+    "sha256": "4E415C0CCBD16B3B8B63890CD832D22B370E16B760992A38897A9BC5FC5055F5"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_semantic_query_indexes.py",
+    "size_bytes": 1188,
+    "sha256": "27711EB8BC8DB12D887746B0D62D6B0A4449A2EDF281BAC2DD61A9FE3731A635"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_semantics.py",
+    "size_bytes": 11337,
+    "sha256": "CDDE9F85A528760D914867DB7375867208C713F38522B485378F4F12C696F44A"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_spatial_anchors.py",
+    "size_bytes": 5148,
+    "sha256": "436B136EF808CAAC087D8C4D330E16753C09195D61CFF99E6E673D401B1ECCDB"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_spatial_model_contraindications.py",
+    "size_bytes": 1919,
+    "sha256": "59389804926B27CCE2372DF9880191A7AF8BCCE06B4F2960F3334B7561981226"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_spatial_reference_entities.py",
+    "size_bytes": 2268,
+    "sha256": "CA7043B92083FB97D2A15ED9A9BA5535A03EA946C7C76A6A29A73E4900A72161"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_strict_place_descriptors.py",
+    "size_bytes": 2004,
+    "sha256": "2C7A74F479513F04A6DCE6E08DF4AF295A0A2AA5F76DFD15DBBCB0462E8F1B76"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_strict_same_name_consensus.py",
+    "size_bytes": 1775,
+    "sha256": "6D9D464659F8A6A3E64964461173FBB9D3B1B5AD63C4EC851B329F44735202FE"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_strict_structure_resolution.py",
+    "size_bytes": 3724,
+    "sha256": "FACFE8A4DDF0803860F4607481ED7E2B0DB3F53D369F22B071F3A80BA15DADD2"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_subtype_closure.py",
+    "size_bytes": 1975,
+    "sha256": "4145C1C91644FB6C813350868C6584117DEE3EC41CAA4E6CD9EC095A8722C9EC"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_ui.py",
+    "size_bytes": 2075,
+    "sha256": "E47B2FB66BF48DC80280989F22C0DAB7F51C4B481AB52D4FDB20684A389634C1"
+  },
+  {
+    "path": "code/tests/test_stkg_v2_unresolved_semantic_closure.py",
+    "size_bytes": 5424,
+    "sha256": "8B795EFA1849CCD5082FD2270778AFB48210BC7795B3F3089310EEC24F772E63"
+  },
+  {
+    "path": "data/graph_export/neo4j_import_args.txt",
+    "size_bytes": 228,
+    "sha256": "597DF005F10026A9935E6CAE7C44E13FC82BAED6426E5B8D3F19264893BE63EA"
+  },
+  {
+    "path": "data/graph_export/nodes.csv",
+    "size_bytes": 854299588,
+    "sha256": "1155838B569955884FDFF9C29EC57C1C2AA13A54DF39948A7FDC6480073887D8"
+  },
+  {
+    "path": "data/graph_export/relationships.csv",
+    "size_bytes": 607668531,
+    "sha256": "30C88BEA6EB9EC29C5E2D092A74AB9C3DDC41F4A9355FAC83CE82EA99BB0695B"
+  },
+  {
+    "path": "data/release_databases/red_culture_stkg_final_v2.sqlite",
+    "size_bytes": 1187962880,
+    "sha256": "A199D736B9EC436B3D5F244E874718604B6C84955A505F31F90A3E28C51A9EE7"
+  },
+  {
+    "path": "data/release_databases/red_culture_stkg_semantic_v2.sqlite",
+    "size_bytes": 1094549504,
+    "sha256": "FBFB6529335E1C838270C63EEE53C92A568C2B075354F7AD5F9D5815B88BB377"
+  },
+  {
+    "path": "data/release_databases/stkg_v2_creative_media_enrichment.sqlite",
+    "size_bytes": 1990656,
+    "sha256": "FDE1F05B01709520A334DD88A58DE6E501F36D2D0A182675516098B122A1D13F"
+  },
+  {
+    "path": "data/source_data/master_data.csv",
+    "size_bytes": 147136380,
+    "sha256": "6CE4F7F3341E3350DD69A37F1A058D54F4E767C1E48CCCDC56EBFDE92D7DC5F4"
+  },
+  {
+    "path": "data/source_data/stkg_v2_entity_classifier.joblib",
+    "size_bytes": 17492249,
+    "sha256": "81C16B3B37F79CB8F6FEC342178A9721FEBC716F6CA8CFDC1733A0670AEC26D6"
+  },
+  {
+    "path": "data/source_data/stkg_v2_entity_classifier.sqlite",
+    "size_bytes": 4112384,
+    "sha256": "0343BA31BA2404C1F1F8BA7EEF8CA9083D7670CFE06AF875BE67C7C4E7A80B7F"
+  },
+  {
+    "path": "documents/STKG_LITERATURE_ANALYSIS.md",
+    "size_bytes": 23911,
+    "sha256": "C44CC5D5F0010709CE9490A143FBAEBD9538F0F3B28D777A74B5A7F4E518995D"
+  },
+  {
+    "path": "documents/STKG_V2_DATA_DICTIONARY.md",
+    "size_bytes": 13203,
+    "sha256": "CF067EAE4C0CA36F029FE6FD422A107F15A67BAEA355999D938FA83C2CDEE6B9"
+  },
+  {
+    "path": "documents/STKG_V2_FINAL_RESEARCH_REPORT.md",
+    "size_bytes": 15464,
+    "sha256": "257D7DF6F0C0EBB2FD23BA594C2D7A9BD9F1C5B861B0A0EF70AD8FE1D3EB3032"
+  },
+  {
+    "path": "documents/STKG_V2_SEMANTIC_REPAIR_RESEARCH_PLAN.md",
+    "size_bytes": 17660,
+    "sha256": "FE799C4BB1C3F2A0E5FF9469DF51134AC50B1E6FE75437BA0DAE72E9FCE77DD2"
+  },
+  {
+    "path": "manuscript/20240820130736_NewsFile_39.pdf",
+    "size_bytes": 371812,
+    "sha256": "DA1576D7A5FE7D75A858E1E9E8926A582FCEB95EB6ADF83FF305CCE7A73F7D84"
+  },
+  {
+    "path": "manuscript/20240820130803_NewsFile_37.pdf",
+    "size_bytes": 193733,
+    "sha256": "1CAA14A3580E7B7D70A8BA5CFACEA02041899AA2900D587B376A0F1739893107"
+  },
+  {
+    "path": "manuscript/20240820130820_NewsFile_88.pdf",
+    "size_bytes": 245153,
+    "sha256": "FFEFD12046A59CFF698651FC8F1C73703B608BC3C86BCE35DA79CA2EE420EED1"
+  },
+  {
+    "path": "manuscript/20240820131146_NewsFile_17.pdf",
+    "size_bytes": 181455,
+    "sha256": "A2119F64CF3E09C50CAA2F19149465B75C4E12D058B390D7382344FCCCC23B19"
+  },
+  {
+    "path": "manuscript/20240820131214_NewsFile_68.pdf",
+    "size_bytes": 113208,
+    "sha256": "B448AF97E632066E5E5975EBEBE1D48FB6DD73C13C6E5403FA0B1472F5CFD29F"
+  },
+  {
+    "path": "manuscript/20241126104113_NewsFile_13.doc",
+    "size_bytes": 79872,
+    "sha256": "721DFADA3A066413BAA6DCA20BB08688CC9F7C90860396A0B3E9FEB541234240"
+  },
+  {
+    "path": "manuscript/数据分析与知识发现投稿指南.txt",
+    "size_bytes": 2567,
+    "sha256": "04A251538779F8348D3B70737EFBA26394DC1CCC3548A918395DF6A4B6E2B5D5"
+  },
+  {
+    "path": "manuscript/选择性预测与结构准入协同的时空知识图谱构建方法——以长江流域中共党史文献为例.docx",
+    "size_bytes": 1352045,
+    "sha256": "4387BD32C8C46EA9B94A22736A4D72EFC77052D1E7C9DC408AFEC863CD5AF2E2"
+  },
+  {
+    "path": "metadata/CURRENT_RELEASE.json",
+    "size_bytes": 2913,
+    "sha256": "7647F125DC88A3BCAC0DE9F1F742631F103FE704B0B5957E20174D17C5E0CE72"
+  },
+  {
+    "path": "metadata/README.md",
+    "size_bytes": 1821,
+    "sha256": "A329DED5A10B247F6718AB8CBCF0EBBF9EBBA9B5FE08C810A25A275A467097DB"
+  },
+  {
+    "path": "metadata/release_manifest.json",
+    "size_bytes": 28909,
+    "sha256": "1C5831E0A99193F45EC61CF878778FF13A65329DDB9CB45032E1D457FADD068E"
+  },
+  {
+    "path": "queries/cq_v2/cq01_stage_form_distribution.sql",
+    "size_bytes": 603,
+    "sha256": "140A2E3147FDC65C3693F0CBEB5D87F3E90295282D9CA5FEDE713F94BB901782"
+  },
+  {
+    "path": "queries/cq_v2/cq02_province_stage_forms.sql",
+    "size_bytes": 364,
+    "sha256": "6D890B977DA289E6727E3B753A14ACDB1A15B6200C803B81765F8E16F30BC80B"
+  },
+  {
+    "path": "queries/cq_v2/cq03_basin_stage_forms.sql",
+    "size_bytes": 534,
+    "sha256": "C17CFD9716674F99E19649DE720F627CC97EED82E2C74FAB3D4290676F32E3E8"
+  },
+  {
+    "path": "queries/cq_v2/cq04_observation_tier_balance.sql",
+    "size_bytes": 430,
+    "sha256": "C9E1D41A60A103AA9F4BD76274B23D403EAED28C1EC810B919EBBBFB4C59BB51"
+  },
+  {
+    "path": "queries/cq_v2/cq05_event_time_coverage.sql",
+    "size_bytes": 369,
+    "sha256": "E52CBEC5B78272F125E6132B9B33B6BFD97637160ACB7D3E60769150968E902F"
+  },
+  {
+    "path": "queries/cq_v2/cq06_trusted_event_hubs.sql",
+    "size_bytes": 912,
+    "sha256": "D79E1FB2835228C762DCD9EE1B84B7100F378A0D8EDBB2C696D0A934035579E7"
+  },
+  {
+    "path": "queries/cq_v2/cq07_person_event_timeline.sql",
+    "size_bytes": 387,
+    "sha256": "9149427CD1CA909E04E2785B0979EDEC2DD48CC8C83EDD53D0AC78653E43F645"
+  },
+  {
+    "path": "queries/cq_v2/cq08_organization_event_regions.sql",
+    "size_bytes": 466,
+    "sha256": "8575133D81B22D78D5930CF8D6F5710966665BEAA3D367B2E87EB91A451F520E"
+  },
+  {
+    "path": "queries/cq_v2/cq09_place_event_timeline.sql",
+    "size_bytes": 424,
+    "sha256": "F6D90340476026FD48723C7948074C1D9FC581C8C247FB8927F4D7FA513F33BC"
+  },
+  {
+    "path": "queries/cq_v2/cq10_culture_state_trajectory.sql",
+    "size_bytes": 434,
+    "sha256": "EB04D0B5DF25B172EA7F7B0D69705020085862FD310D06C3881042D08CB32F40"
+  },
+  {
+    "path": "queries/cq_v2/cq11_published_transitions.sql",
+    "size_bytes": 502,
+    "sha256": "57B56FEF68C83F405EA3A37168288BEF55BBD7D35AAFC67A3EB30583D3606472"
+  },
+  {
+    "path": "queries/cq_v2/cq12_transition_candidate_gates.sql",
+    "size_bytes": 385,
+    "sha256": "87CA78A6112D49E0257C2EF7377FF47B71ADF6B71CB3A35C0793F07D9219870C"
+  },
+  {
+    "path": "queries/cq_v2/cq13_event_materialization.sql",
+    "size_bytes": 948,
+    "sha256": "0C3FDD6922E6DA1737B92E21437B13FB946335DB08B68ED7B0BF35452EFCF3E6"
+  },
+  {
+    "path": "queries/cq_v2/cq14_spirit_value_facets.sql",
+    "size_bytes": 163,
+    "sha256": "C88788FEB896331821FE55A0C12D1EF416E0C85B09304D1A38919D7E88284E39"
+  },
+  {
+    "path": "queries/cq_v2/cq15_spirit_manifestations.sql",
+    "size_bytes": 693,
+    "sha256": "2E70EE3CBAD718FF084D47C0D9F75614B7295EEF86370D762718D21A53A0CB80"
+  },
+  {
+    "path": "queries/cq_v2/cq16_value_persistence.sql",
+    "size_bytes": 537,
+    "sha256": "E4EDC9A0E3D2C4C991F2C247F341987D4BBC9FEAEE2837580A105960086DC921"
+  },
+  {
+    "path": "queries/cq_v2/cq17_creative_media_composition.sql",
+    "size_bytes": 419,
+    "sha256": "D505EDEA760A576634759B890E57F58396629FDEEFF5860C598342F9C13FD8D7"
+  },
+  {
+    "path": "queries/cq_v2/cq18_creative_work_spacetime.sql",
+    "size_bytes": 435,
+    "sha256": "539077A0042E5C7C0A51662B3BCC9EF6E4E40C98E117D1B19E821AA66918C9E7"
+  },
+  {
+    "path": "queries/cq_v2/cq19_provenance_coverage.sql",
+    "size_bytes": 435,
+    "sha256": "E48CBC4B4AB0AC56116B17AA4ECDA34FF6B200DA9BBFDE8DDBB4DC04A49EF804"
+  },
+  {
+    "path": "queries/cq_v2/cq20_assertion_tiers.sql",
+    "size_bytes": 389,
+    "sha256": "74DD98A872DE21B43BC8FFBEF456E6F119FF6999EA1633F5EBC4F9E582F733B9"
+  },
+  {
+    "path": "queries/cq_v2/cq21_time_roles.sql",
+    "size_bytes": 353,
+    "sha256": "BDA29C13F85641701B6BE9E8776A972D662FCD62D1EDDBA1B1C944C048E9DBC8"
+  },
+  {
+    "path": "queries/cq_v2/cq22_space_roles.sql",
+    "size_bytes": 383,
+    "sha256": "96B1C98F8B25EC512B635A90EB7811F32C03300A98E6FF4EC6E7DD84235D2EBB"
+  },
+  {
+    "path": "queries/cq_v2/cq23_entity_type_quality.sql",
+    "size_bytes": 316,
+    "sha256": "EDB8FE22C93E25330B8F8D311B13120D844826D21BED271C3AE7C233CA1DA10D"
+  },
+  {
+    "path": "queries/cq_v2/cq24_identity_integration.sql",
+    "size_bytes": 273,
+    "sha256": "30A7F1CC2590589DCD6BE84E704B1A674E81038B28C76C0A16A54779B0499CF5"
+  },
+  {
+    "path": "queries/cq_v2/cq25_first_observed_states.sql",
+    "size_bytes": 358,
+    "sha256": "9CD2C1E61535F41DA6715855D1B7F0E8EC31AB8134D92105C0BD337033223F58"
+  },
+  {
+    "path": "queries/cq_v2/cq26_quality_boundaries.sql",
+    "size_bytes": 595,
+    "sha256": "5DE8C2D85500E9870EB4AD49F4FBD88C53834D294152ED5B524423F48C72B4B8"
+  },
+  {
+    "path": "schema/competency_query_contract_v2.yaml",
+    "size_bytes": 4896,
+    "sha256": "0A8BE723850C9A686228FD2816E923582C29742F516785906B6CA8AD612C1896"
+  },
+  {
+    "path": "schema/competency_questions_v2.md",
+    "size_bytes": 3426,
+    "sha256": "90E39D23EEF5DE15E9FB9385EAA3EFF6339FEC984B542DCE45D50DAC6873C47E"
+  },
+  {
+    "path": "schema/culture_form_mapping_v1.yaml",
+    "size_bytes": 6414,
+    "sha256": "3DE51822E3D834105FD170FA82B26BE96E94186D75C2E486EA24845A80C124FD"
+  },
+  {
+    "path": "schema/event_role_mapping_v1.yaml",
+    "size_bytes": 4599,
+    "sha256": "9921DC47D44DBACBA1C4BF5F8BDB2762F7E89CE1B7C3D554DC03958F9148385D"
+  },
+  {
+    "path": "schema/evolution_rules_v1.yaml",
+    "size_bytes": 2640,
+    "sha256": "71347B85CB5B9EDA1FCD772B2A67ADA2D5DAB1AD85AB8FF5EA1FDA4DBFC5AA88"
+  },
+  {
+    "path": "schema/stkg_schema_v1.yaml",
+    "size_bytes": 5765,
+    "sha256": "7827EAED75CDE5D71461AB14B5C25A39DC4D982F3AAA017D09D2A005E086D48E"
+  }
+]

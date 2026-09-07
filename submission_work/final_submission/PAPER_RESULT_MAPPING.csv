@@ -1,0 +1,44 @@
+# PAPER_RESULT_MAPPING.csv - 论文结果与代码/数据映射
+
+paper_section,paper_table,paper_figure,paper_claim,code_path,db_query,data_file,verifiability,evidence_type
+摘要,无,无,983册文献,无,无,UNVERIFIED,UNVERIFIED,论文报告值
+摘要,无,无,13个省级区域,无,"SELECT COUNT(*) FROM research_study_regions = 13",数据库验证,✅已验证,数据库查询
+摘要,无,无,302230页文本,无,无,UNVERIFIED,UNVERIFIED,论文报告值
+摘要,无,无,98762条文档关键词元数据,无,无,master_data.csv行数=98762,✅已验证,CSV行数
+摘要,无,无,282165条候选知识,无,无,UNVERIFIED,UNVERIFIED,论文报告值
+摘要,无,无,67791条本地证据记录,无,无,UNVERIFIED,UNVERIFIED,论文报告值
+摘要,无,无,17450条Qwen升级裁决,code/scripts/257_*.py和258_*.py,无,MODEL_DEPENDENCY_UNAVAILABLE,BLOCKED,模型依赖不可用
+摘要,无,无,152979个规范实体,无,"SELECT COUNT(*) FROM research_entities = 152979",数据库验证,✅已验证,数据库查询
+摘要,无,无,424150条知识陈述,无,"SELECT COUNT(*) FROM research_assertions = 424150",数据库验证,✅已验证,数据库查询
+摘要,无,无,466312条来源关联,无,"SELECT COUNT(*) FROM research_assertion_provenance = 466312",数据库验证,✅已验证,数据库查询
+摘要,无,无,112158条严格语义层,无,"SELECT COUNT(*) FROM research_assertions WHERE research_tier='strict_semantic' = 112158",数据库验证,✅已验证,数据库查询
+摘要,无,无,152条核心评价样本,无,无,N/A（评价集）,论文报告值
+摘要,无,无,覆盖率0.7632,无,无,评价脚本输出,UNVERIFIED,缓存模型输出
+摘要,无,无,接受样本一致率0.9914,无,无,评价脚本输出,UNVERIFIED,缓存模型输出
+摘要,无,无,选择性风险0.0086,无,无,评价脚本输出,UNVERIFIED,缓存模型输出
+4.3节,表5,图4,44条时间强角色违例,code/scripts/255_*.py可重跑,可从结构校验日志确认,UNVERIFIED,UNVERIFIED,需脚本重跑
+4.3节,表5,图4,112条空间强角色违例,同上,同上,UNVERIFIED,UNVERIFIED,需脚本重跑
+4.3节,表5,图4,208条时空作用域调整,同上,"SELECT COUNT(*) FROM research_scope_adjustments = 208",数据库验证,✅已验证,数据库查询
+4.3节,表5,图4,3412条关系契约违例(移除后),同上,UNVERIFIED,UNVERIFIED,消融实验值
+4.2节,表2 Panel A,图3,规则方法-覆盖率0.9934,无,无,UNVERIFIED,UNVERIFIED,论文报告值
+4.2节,表2 Panel A,图3,规则方法-一致率0.8742,无,无,UNVERIFIED,UNVERIFIED,论文报告值
+4.2节,表2 Panel A,图3,规则方法-风险0.1258,无,无,UNVERIFIED,UNVERIFIED,论文报告值
+4.2节,表2 Panel A,图3,本地分类器-验证准确率0.8713,code/scripts/260_*.py,classifier DB,模型文件存在,✅已验证,代码+模型
+4.2节,表2 Panel A,图3,Qwen-覆盖率0.9934,code/scripts/257_*.py,MODEL_DEPENDENCY_UNAVAILABLE,缓存结果,BLOCKED,模型依赖不可用
+4.2节,表2 Panel A,图3,一致性选择-覆盖率0.7632,无,无,UNVERIFIED,UNVERIFIED,论文报告值
+4.2节,表2 Panel A,图3,一致性选择-一致率0.9914,无,无,UNVERIFIED,UNVERIFIED,论文报告值
+4.2节,表2 Panel A,图3,一致性选择-风险0.0086,无,无,UNVERIFIED,UNVERIFIED,论文报告值
+4.2节,表2 Panel B,图3,完整方法-状态覆盖率1.0000,code/scripts/255-294,audit日志,171测试通过,✅已验证,代码+测试
+4.2节,表2 Panel B,图3,完整方法-最终输出一致率0.8618,同上,同上,UNVERIFIED,UNVERIFIED,评价集结果
+4.2节,表2 Panel B,图3,完整方法-安全输出率0.8355,同上,同上,UNVERIFIED,UNVERIFIED,评价集结果
+4.2节,表2 Panel B,图3,完整方法-Macro-F1 0.8700,同上,同上,UNVERIFIED,UNVERIFIED,评价集结果
+4.2节,表4,无,去类别门禁-覆盖率0.3596,无独立脚本,无,UNVERIFIED,UNVERIFIED,论文报告值
+4.2节,表4,无,去独立信号一致-覆盖率0.6502,无独立脚本,无,UNVERIFIED,UNVERIFIED,论文报告值
+4.2节,表4,无,去弃权-覆盖率1.0000,无独立脚本,无,UNVERIFIED,UNVERIFIED,论文报告值
+4.5节,表6(效率),图8,100%规模-热启动45.900s,无独立效率脚本,无,UNVERIFIED,UNVERIFIED,论文报告值
+4.5节,表6(效率),图8,100%规模-吞吐9240条/s,同上,同上,UNVERIFIED,UNVERIFIED,论文报告值
+4.5节,表6(效率),图8,100%规模-峰值RSS 1428MB,同上,同上,UNVERIFIED,UNVERIFIED,论文报告值
+4.4节,无,图7,来源关联466312条,无,"SELECT COUNT(*) FROM research_assertion_provenance = 466312",数据库验证,✅已验证,数据库查询
+4.4节,无,图7,来源隔离Accuracy差0.0714,无独立脚本,无,UNVERIFIED,UNVERIFIED,论文报告值
+审计,无,无,171个测试通过,code/tests/39个测试文件,audit/stkg_v2_final_tests.log,测试日志,✅已验证,测试日志
+审计,无,无,43项审计PASS,code/scripts/293_*.py,audit/stkg_v2_full_audit.json,审计报告,✅已验证,审计文件

@@ -1,0 +1,34 @@
+version: red-culture-evolution-rules-v1
+rules:
+  sequence_alone_never_creates_transition: true
+  cooccurrence_never_creates_transition: true
+  direct_transition_requires_shared_supporting_fact: true
+  spatial_spread_requires_explicit_spread_predicate: true
+  first_observed_is_not_historical_origin: true
+  candidate_and_published_transition_are_separate: true
+transition_types:
+  - emerged
+  - developed_into
+  - spread_to
+  - shifted_to
+  - diverged_into
+  - merged_into
+  - inherited_from
+  - transformed_into
+  - institutionalized_as
+  - memorialized_as
+  - adapted_as
+  - digitized_as
+  - reactivated_in
+direct_rules:
+  - {rule_id: EV-ORIGINATED-EMERGED, predicate: originated_from_event, from_endpoint: object, to_endpoint: subject, from_forms: [HistoricalPractice], to_forms: [SpiritValue], transition_type: emerged}
+  - {rule_id: EV-INHERITED, predicate: inherited_from, from_endpoint: object, to_endpoint: subject, from_forms: [SpiritValue], to_forms: [SpiritValue], transition_type: inherited_from}
+  - {rule_id: EV-ADAPTED, predicate: adapted_from, from_endpoint: object, to_endpoint: subject, from_forms: [CreativeNarrative], to_forms: [CreativeNarrative], transition_type: adapted_as}
+  - {rule_id: EV-COMMEMORATED, predicate: commemorates, from_endpoint: object, to_endpoint: subject, from_forms: [HistoricalPractice, SpiritValue], to_forms: [MemoryTransmission], transition_type: memorialized_as}
+  - {rule_id: EV-SYMBOLIZED, predicate: symbolized_by, from_endpoint: subject, to_endpoint: object, from_forms: [SpiritValue], to_forms: [MaterialCulture], transition_type: transformed_into}
+  - {rule_id: EV-REPRESENTED, predicate: represented_in, from_endpoint: subject, to_endpoint: object, from_forms: [SpiritValue], to_forms: [CreativeNarrative], transition_type: transformed_into}
+  - {rule_id: EV-TRANSMITTED-INSTITUTIONAL, predicate: transmitted_by, from_endpoint: subject, to_endpoint: object, from_forms: [SpiritValue], to_forms: [InstitutionalPractice], transition_type: institutionalized_as}
+spatial_spread_rules:
+  - {rule_id: EV-SPREAD-DISSEMINATES, predicate: disseminates, culture_subject_endpoint: object, culture_subject_types: [Spirit, ValueFacet], culture_form: SpiritValue, transition_type: spread_to}
+  - {rule_id: EV-SPREAD-DISSEMINATED-AT, predicate: disseminated_at, culture_subject_endpoint: subject, culture_subject_types: [Spirit, ValueFacet], culture_form: SpiritValue, transition_type: spread_to}
+  - {rule_id: EV-SPREAD-TRANSMITTED-BY, predicate: transmitted_by, culture_subject_endpoint: subject, culture_subject_types: [Spirit, ValueFacet], culture_form: SpiritValue, transition_type: spread_to}

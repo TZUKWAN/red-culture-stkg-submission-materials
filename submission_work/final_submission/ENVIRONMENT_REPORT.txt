@@ -1,0 +1,103 @@
+# ENVIRONMENT_REPORT.txt - 运行环境报告
+
+## 生成时间
+2026-09-05
+
+## 当前审计环境
+- 操作系统：Windows 10/11
+- Python：3.11.7 (Anaconda)
+- SQLite：3.x（Python标准库sqlite3模块）
+- 工作目录：G:\刘俊琦\长江学\红色文化\投稿材料_代码数据整理包
+
+## 论文中声明的运行环境
+- Python 3.x
+- SQLite
+- Qwen-3.5-122B-A10B（大语言模型，用于升级裁决）
+- 可选：Neo4j（图谱可视化）
+
+## 依赖包检查
+
+### 已安装
+- sqlite3（Python标准库）✅
+- csv（Python标准库）✅
+- json（Python标准库）✅
+- os（Python标准库）✅
+- joblib（分类器模型加载）✅
+- python-docx（DOCX处理，已安装1.2.0）✅
+
+### 未安装/未确认
+- scikit-learn（分类器训练，如需重跑）
+- Neo4j（图谱可视化，可选）
+- Qwen-3.5-122B-A10B（模型依赖，当前不可用）
+
+## 模型依赖状态
+
+### Qwen-3.5-122B-A10B
+- 状态：MODEL_DEPENDENCY_UNAVAILABLE
+- 原因：当前服务器无可用的Qwen-3.5-122B-A10B模型文件或API
+- 影响范围：
+  - 脚本257（单条Qwen裁决）
+  - 脚本258（Qwen任务池）
+  - 表2中Qwen基线行和规则—Qwen一致性选择行
+  - 17,450条Qwen裁决结果
+  - 基于Qwen的评价指标（覆盖率0.7632、一致率0.9914、风险0.0086）
+- 重跑可能性：需要Qwen-3.5-122B-A10B模型文件和足够显存（估计≥40GB VRAM for 122B-A10B MoE）
+- 标记：这些结果为缓存模型输出，非本次重新运行
+
+### 实体分类器
+- 状态：✅可用
+- 文件：data/source_data/stkg_v2_entity_classifier.joblib
+- 类型：一对其余弹性网络逻辑回归（scikit-learn）
+- 重跑可能性：可重跑（如安装scikit-learn）
+
+## 数据库完整性检查
+
+### red_culture_stkg_final_v2.sqlite
+- 文件大小：1,187,962,880 bytes（约1.1GB）
+- 表数量：43
+- quick_check：通过（基于审计报告PASS）
+- 外键约束：通过（基于审计报告PASS）
+- SHA-256：a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7
+
+### red_culture_stkg_semantic_v2.sqlite
+- 文件大小：1,094,549,504 bytes（约1GB）
+- SHA-256：fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377
+
+### stkg_v2_creative_media_enrichment.sqlite
+- 文件大小：1,990,656 bytes
+- SHA-256：fde1f05b01709520a334dd88a58de6e501f36d2d0a182675516098b122a1d13f
+
+## 可执行的验证命令
+
+### 1. 数据库数字复核（已执行✅）
+- 152,979 entities ✅
+- 424,150 assertions ✅
+- 466,312 provenance ✅
+- 112,158 strict_semantic ✅
+- 268,047 contextual ✅
+- 43,945 unresolved ✅
+- 28,065 event_frames ✅
+- 7,067 event_spatiotemporal_cells ✅
+- 11,532 culture_states ✅
+- 208 scope_adjustments ✅
+- 159 transition_candidates ✅
+- 4 published_transitions ✅
+- 1,019 creative_work_media ✅
+- 13 study_regions ✅
+- 8 historical_stages ✅
+- 3 basin_sections ✅
+- 88 relation_contract ✅
+- 532 culture_state_value_facets ✅
+
+### 2. 能力查询（26个，需在数据库上运行）
+位于 queries/cq_v2/ 目录
+
+### 3. 测试套件（39个测试文件）
+位于 code/tests/ 目录
+
+## 不可执行的验证
+
+1. Qwen模型推理：MODEL_DEPENDENCY_UNAVAILABLE
+2. 效率实验重跑：需要完整运行环境和原始数据流
+3. 选择性消融重跑：需要评价集和独立消融脚本
+4. 来源隔离实验重跑：需要评价集和独立实验脚本

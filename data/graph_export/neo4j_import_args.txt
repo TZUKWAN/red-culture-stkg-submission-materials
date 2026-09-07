@@ -1,0 +1,9 @@
+neo4j
+--id-type=string
+--nodes=/import/nodes.csv
+--relationships=/import/relationships.csv
+--bad-tolerance=0
+--skip-duplicate-nodes=false
+--skip-bad-relationships=false
+--ignore-extra-columns=false
+--trim-strings=false

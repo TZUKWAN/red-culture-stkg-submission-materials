@@ -1,0 +1,43 @@
+version: red-culture-form-mapping-v1
+culture_forms:
+  - {code: HistoricalPractice, label_zh: 历史实践}
+  - {code: InstitutionalPractice, label_zh: 制度与组织实践}
+  - {code: MaterialCulture, label_zh: 物质文化}
+  - {code: DocumentaryCulture, label_zh: 文献文化}
+  - {code: CreativeNarrative, label_zh: 文艺叙事}
+  - {code: SpiritValue, label_zh: 精神与价值}
+  - {code: MemoryTransmission, label_zh: 记忆与传播}
+rules:
+  every_assignment_requires_fact_support: true
+  raw_predicates_cannot_trigger_relation_rules: true
+  person_place_organization_are_not_automatic_carriers: true
+  event_is_subject_not_carrier: true
+  spirit_is_optional_not_mandatory: true
+direct_type_rules:
+  - {rule_id: TYPE-EVENT-HISTORICAL, entity_type: Event, culture_form: HistoricalPractice, culture_role: culture_subject, support_strength: typed_context}
+  - {rule_id: TYPE-ARTIFACT-MATERIAL, entity_type: Artifact, culture_form: MaterialCulture, culture_role: material_carrier, support_strength: typed_context}
+  - {rule_id: TYPE-DOCUMENT-DOCUMENTARY, entity_type: Document, culture_form: DocumentaryCulture, culture_role: documentary_carrier, support_strength: typed_context}
+  - {rule_id: TYPE-CREATIVE-NARRATIVE, entity_type: CreativeWork, culture_form: CreativeNarrative, culture_role: cultural_expression, support_strength: typed_context}
+  - {rule_id: TYPE-SPIRIT-VALUE, entity_type: Spirit, culture_form: SpiritValue, culture_role: semantic_subject, support_strength: typed_context}
+  - {rule_id: TYPE-FACET-VALUE, entity_type: ValueFacet, culture_form: SpiritValue, culture_role: value_dimension, support_strength: typed_context}
+relation_rules:
+  - {rule_id: REL-ORG-FORMULATED-INSTITUTIONAL, predicate: formulated, entity_endpoint: subject, entity_types: [Organization], culture_form: InstitutionalPractice, culture_role: institutional_actor, support_strength: controlled_explicit}
+  - {rule_id: REL-ORG-IMPLEMENTED-INSTITUTIONAL, predicate: implemented, entity_endpoint: subject, entity_types: [Organization], culture_form: InstitutionalPractice, culture_role: institutional_actor, support_strength: controlled_explicit}
+  - {rule_id: REL-ORG-ORGANIZED-INSTITUTIONAL, predicate: organized, entity_endpoint: subject, entity_types: [Organization], culture_form: InstitutionalPractice, culture_role: institutional_actor, support_strength: controlled_explicit}
+  - {rule_id: REL-EMBODIED-ORG-INSTITUTIONAL, predicate: embodied_by_organization, entity_endpoint: object, entity_types: [Organization, Institution], culture_form: InstitutionalPractice, culture_role: institutional_embodiment, support_strength: controlled_explicit}
+  - {rule_id: REL-TRANSMITTED-INST-INSTITUTIONAL, predicate: transmitted_by, entity_endpoint: object, entity_types: [Organization, Institution], culture_form: InstitutionalPractice, culture_role: institutional_carrier, support_strength: controlled_explicit}
+  - {rule_id: REL-DISSEMINATES-INST-INSTITUTIONAL, predicate: disseminates, entity_endpoint: subject, entity_types: [Organization, Institution], culture_form: InstitutionalPractice, culture_role: institutional_transmitter, support_strength: controlled_explicit}
+  - {rule_id: REL-COMMEMORATES-MEMORY, predicate: commemorates, entity_endpoint: subject, entity_types: [Artifact, CreativeWork, Document, Institution], culture_form: MemoryTransmission, culture_role: memorial_carrier, support_strength: controlled_explicit}
+  - {rule_id: REL-DISSEMINATES-MEMORY, predicate: disseminates, entity_endpoint: subject, entity_types: [CreativeWork, Document, Institution, Organization], culture_form: MemoryTransmission, culture_role: transmission_medium, support_strength: controlled_explicit}
+  - {rule_id: REL-TRANSMITTED-MEMORY, predicate: transmitted_by, entity_endpoint: object, entity_types: [Document, Institution, Organization], culture_form: MemoryTransmission, culture_role: transmission_medium, support_strength: controlled_explicit}
+  - {rule_id: REL-SYMBOLIZED-MATERIAL, predicate: symbolized_by, entity_endpoint: object, entity_types: [Artifact], culture_form: MaterialCulture, culture_role: explicit_material_carrier, support_strength: controlled_explicit}
+  - {rule_id: REL-DOCUMENTED-DOCUMENTARY, predicate: documented_in, entity_endpoint: object, entity_types: [Document], culture_form: DocumentaryCulture, culture_role: explicit_documentary_carrier, support_strength: controlled_explicit}
+  - {rule_id: REL-REPRESENTED-CREATIVE, predicate: represented_in, entity_endpoint: object, entity_types: [CreativeWork], culture_form: CreativeNarrative, culture_role: explicit_cultural_expression, support_strength: controlled_explicit}
+  - {rule_id: REL-EMBODIED-EVENT-HISTORICAL, predicate: embodied_in_event, entity_endpoint: object, entity_types: [Event], culture_form: HistoricalPractice, culture_role: spirit_manifestation_event, support_strength: controlled_explicit}
+  - {rule_id: REL-ORIGINATED-EVENT-HISTORICAL, predicate: originated_from_event, entity_endpoint: object, entity_types: [Event], culture_form: HistoricalPractice, culture_role: spirit_origin_event, support_strength: controlled_explicit}
+  - {rule_id: REL-HAS-FACET-SPIRIT, predicate: has_value_facet, entity_endpoint: subject, entity_types: [Spirit], culture_form: SpiritValue, culture_role: semantic_subject, support_strength: controlled_explicit}
+  - {rule_id: REL-HAS-FACET-VALUE, predicate: has_value_facet, entity_endpoint: object, entity_types: [ValueFacet], culture_form: SpiritValue, culture_role: value_dimension, support_strength: controlled_explicit}
+  - {rule_id: REL-DEPICTS-CREATIVE, predicate: depicts, entity_endpoint: subject, entity_types: [CreativeWork], culture_form: CreativeNarrative, culture_role: depicting_work, support_strength: controlled_explicit}
+  - {rule_id: REL-DOCUMENTS-DOCUMENTARY, predicate: documents, entity_endpoint: subject, entity_types: [Document], culture_form: DocumentaryCulture, culture_role: documenting_source, support_strength: controlled_explicit}
+  - {rule_id: REL-USED-IN-EVENT-MATERIAL, predicate: used_in_event, entity_endpoint: subject, entity_types: [Artifact], culture_form: MaterialCulture, culture_role: event_artifact, support_strength: controlled_explicit}
+  - {rule_id: REL-USED-ARTIFACT-MATERIAL, predicate: used_artifact, entity_endpoint: object, entity_types: [Artifact], culture_form: MaterialCulture, culture_role: used_material, support_strength: controlled_explicit}

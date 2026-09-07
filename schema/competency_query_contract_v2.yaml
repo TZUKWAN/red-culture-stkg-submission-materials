@@ -1,0 +1,31 @@
+version: stkg-competency-query-contract-v2-1
+database: derived/red_culture_stkg_final_v2.sqlite
+query_directory: stkg/queries/cq_v2
+report: audit_reports/stkg_v2_competency_queries.json
+queries:
+  CQ01: {file: cq01_stage_form_distribution.sql, required: [stage_order, stage_code, stage_label_zh, culture_form_code, culture_form_label_zh, observation_tier, state_count, entity_count, event_count, supporting_fact_count]}
+  CQ02: {file: cq02_province_stage_forms.sql, required: [stage_order, stage_code, province_name, culture_form_code, observation_tier, state_count, entity_count, event_count]}
+  CQ03: {file: cq03_basin_stage_forms.sql, required: [stage_order, stage_code, basin_section_name, culture_form_code, observation_tier, state_count, entity_count, event_count]}
+  CQ04: {file: cq04_observation_tier_balance.sql, required: [stage_order, stage_code, stage_label_zh, observation_tier, state_count, state_share]}
+  CQ05: {file: cq05_event_time_coverage.sql, required: [observed_time_status, frame_status, event_count, occurrence_time_fact_count, trusted_time_fact_count, event_location_fact_count]}
+  CQ06: {file: cq06_trusted_event_hubs.sql, required: [event_id, event_name, stage_code, stage_label_zh, province_name, controlled_role_count, person_count, organization_count, culture_object_count]}
+  CQ07: {file: cq07_person_event_timeline.sql, required: [person_id, person_name, event_id, event_name, role_code, stage_code, stage_label_zh, province_name, observation_tier, fact_id]}
+  CQ08: {file: cq08_organization_event_regions.sql, required: [organization_id, organization_name, organization_type, event_id, event_name, role_code, stage_code, province_name, observation_tier, fact_id]}
+  CQ09: {file: cq09_place_event_timeline.sql, required: [place_id, place_name, place_type, event_id, event_name, role_code, stage_code, province_name, observation_tier, fact_id]}
+  CQ10: {file: cq10_culture_state_trajectory.sql, required: [culture_subject_id, culture_subject_name, culture_subject_type, culture_form_code, stage_order, stage_label_zh, province_name, basin_section_name, observation_tier, supporting_fact_count, supporting_event_count]}
+  CQ11: {file: cq11_published_transitions.sql, required: [transition_id, transition_type, from_subject, from_stage, from_province, to_subject, to_stage, to_province, supporting_fact_count, confidence, review_status]}
+  CQ12: {file: cq12_transition_candidate_gates.sql, required: [publication_gate_reason, publication_eligible, candidate_count, distinct_state_pairs, distinct_supporting_facts]}
+  CQ13: {file: cq13_event_materialization.sql, required: [publication_status, candidate_or_transition_id, transition_type, source_subject, source_type, target_subject, target_type, stage_label_zh, province_name, supporting_fact_id]}
+  CQ14: {file: cq14_spirit_value_facets.sql, required: [spirit_id, spirit_name, value_facet_id, value_facet_name, relation_code, fact_id]}
+  CQ15: {file: cq15_spirit_manifestations.sql, required: [spirit_id, spirit_name, target_id, target_name, target_type, predicate, research_tier, fact_id]}
+  CQ16: {file: cq16_value_persistence.sql, required: [value_facet_id, value_facet_name, stage_count, region_count, first_observed_stage_order, last_observed_stage_order, state_count, supporting_fact_count]}
+  CQ17: {file: cq17_creative_media_composition.sql, required: [media_type, work_count, share, classification_method_count, unknown_count]}
+  CQ18: {file: cq18_creative_work_spacetime.sql, required: [work_id, work_name, media_type, stage_order, stage_label_zh, province_name, basin_section_name, observation_tier, supporting_fact_count]}
+  CQ19: {file: cq19_provenance_coverage.sql, required: [research_tier, assertion_count, provenance_count, assertions_without_provenance, average_sources_per_assertion]}
+  CQ20: {file: cq20_assertion_tiers.sql, required: [research_tier, semantic_status, assertion_count, source_member_count, time_known_count, space_known_count]}
+  CQ21: {file: cq21_time_roles.sql, required: [time_role, time_precision, assertion_count, normalized_time_count, owner_count]}
+  CQ22: {file: cq22_space_roles.sql, required: [space_role, assertion_count, anchor_count, province_count, city_count, county_count]}
+  CQ23: {file: cq23_entity_type_quality.sql, required: [entity_type, type_validation_status, entity_count, integrated_member_count, alias_entity_count]}
+  CQ24: {file: cq24_identity_integration.sql, required: [entity_id, canonical_name, entity_type, integrated_member_count, source_entity_count, aliases_json, type_validation_status]}
+  CQ25: {file: cq25_first_observed_states.sql, required: [culture_subject_id, culture_subject_name, culture_form_code, stage_order, stage_label_zh, province_name, observation_tier, observation_status, supporting_fact_count]}
+  CQ26: {file: cq26_quality_boundaries.sql, required: [boundary_dimension, boundary_value, assertion_count, source_member_count]}

@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "build_version": "red-culture-stkg-event-culture-v2-1",
+  "input": {
+    "path": "D:\\REDCULTUREDATA\\derived\\red_culture_stkg_research_v2.sqlite",
+    "sha256": "1a38fb9433b68cf42417ce164c16fc865fe9e7868096f3286b5471a25c2b7961",
+    "unchanged": true
+  },
+  "semantic_v2": {
+    "path": "D:\\REDCULTUREDATA\\derived\\red_culture_stkg_semantic_v2.sqlite",
+    "sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377",
+    "unchanged": true
+  },
+  "mappings": {
+    "event": "D:\\REDCULTUREDATA\\stkg\\schema\\event_role_mapping_v1.yaml",
+    "culture": "D:\\REDCULTUREDATA\\stkg\\schema\\culture_form_mapping_v1.yaml"
+  },
+  "output": {
+    "path": "D:\\REDCULTUREDATA\\derived\\red_culture_stkg_event_culture_v2.sqlite",
+    "sha256": "97d6b2acec0e2a8eb959956b5b69b716aefd1554b756cf7a112b609f7ba0e28d",
+    "size_bytes": 894685184
+  },
+  "validation": {
+    "counts": {
+      "event_role_mappings": 25,
+      "event_frames": 28065,
+      "event_assertion_links": 140830,
+      "controlled_event_roles": 54033,
+      "event_relations": 499,
+      "strict_backbone_frames": 16801,
+      "context_only_frames": 10960,
+      "isolated_frames": 304,
+      "events_with_observed_time": 696,
+      "events_with_trusted_time": 95,
+      "events_with_observed_place": 4918,
+      "culture_forms": 7,
+      "culture_form_rules": 26,
+      "culture_form_support_rows": 77829,
+      "entity_culture_form_assignments": 23861,
+      "assigned_culture_entities": 23581,
+      "spirit_value_links": 1386
+    },
+    "checks": {
+      "quick_check": "ok",
+      "foreign_key_errors": 0,
+      "event_frame_count_mismatch": 0,
+      "event_time_owner_errors": 0,
+      "model_time_status_errors": 0,
+      "source_consensus_status_errors": 0,
+      "event_place_owner_errors": 0,
+      "non_strict_event_roles": 0,
+      "non_strict_event_relations": 0,
+      "assignments_without_support": 0,
+      "controlled_support_outside_strict": 0,
+      "automatic_actor_or_place_carriers": 0,
+      "event_carrier_assignments": 0,
+      "source_hash_unchanged": true
+    },
+    "pass": true
+  },
+  "limitations": [
+    "event sequence alone never creates causality or evolution",
+    "event time and place require assertion-level ownership",
+    "person, place, organization, institution and cultural site are not automatic culture carriers",
+    "spirit is an optional analytical clue rather than a mandatory graph hub"
+  ],
+  "completed_at": "2026-07-15T09:35:52"
+}

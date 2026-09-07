@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "checks": {
+    "protected_sources_unchanged": true,
+    "ai_gold_rows_unchanged": true,
+    "ai_gold_hash_unchanged_during_run": true,
+    "all_actual_predictions_have_shared_overlap_label": true,
+    "all_actual_predictions_have_fixed_gold": true,
+    "full_structural_replay_matches_release": true,
+    "full_structural_fixed_point": true,
+    "full_structural_zero_contract_violations": true,
+    "full_structural_zero_owner_type_violations": true,
+    "full_structural_zero_missing_provenance": true,
+    "all_requested_components_executed": true,
+    "prediction_csv_nonempty": true,
+    "classifier_figure_reports_coverage_and_risk": true,
+    "role_owner_figure_reports_time_and_space": true,
+    "relation_gold_subset_is_explicitly_saturated": true,
+    "provenance_zero_effect_is_saturation_canary": true,
+    "structural_changed_examples_bounded": true,
+    "no_online_llm_inference_claim": true
+  },
+  "source_hashes_before": {
+    "semantic_v2": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377",
+    "final_v2": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+    "classifier_db": "0343ba31ba2404c1f1f8ba7eef8ca9083d7670cfe06af875be67c7c4e7a80b7f",
+    "classifier_model": "81c16b3b37f79cb8f6fec342178a9721febc716f6ca8cfdc1733a0670aec26d6",
+    "ai_gold": "1190ed0d7a4ec16b34712293f47992d624788ba4734c2bfce4020d51de0a9c0f",
+    "controlled_samples": "5c40780f840c0e787295f1dc1951b50b0df7898f7320030c3cc5c83c6c97bc3e"
+  },
+  "source_hashes_after": {
+    "semantic_v2": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377",
+    "final_v2": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+    "classifier_db": "0343ba31ba2404c1f1f8ba7eef8ca9083d7670cfe06af875be67c7c4e7a80b7f",
+    "classifier_model": "81c16b3b37f79cb8f6fec342178a9721febc716f6ca8cfdc1733a0670aec26d6",
+    "ai_gold": "1190ed0d7a4ec16b34712293f47992d624788ba4734c2bfce4020d51de0a9c0f",
+    "controlled_samples": "5c40780f840c0e787295f1dc1951b50b0df7898f7320030c3cc5c83c6c97bc3e"
+  },
+  "output_hashes": {
+    "ABLATION_PREDICTIONS.csv": "2d558ece6d700bd44c36e25b22c4bf6bf4ebcf3e549798d85dfb5c1e67718989",
+    "STRUCTURAL_CHANGED_EXAMPLES.csv": "a257c40511815ddb1712b579298277bb618cc6ba04a63b646cb3b61ed2e71e68",
+    "ABLATION_RUNS.csv": "68cc760db127b7fd2993306f8df5e13174981f3387dfa2e32767f56f972f56a0",
+    "ABLATION_FIGURE_DATA.csv": "518099abc1ee1a8aaef3ef5007b1e84d9b687df467b445e0135ec99173120f2d",
+    "FROZEN_EVALUATION_MANIFEST.json": "106ab8ba1a2ae80d863657d1960b05ad6209670f5dca8909581cb67f7fca2335",
+    "ablation_experiment_summary.json": "5cd36916f149e24c4c99048d5c4965f9b5699366bbdc910703db8a3737d215e3"
+  },
+  "truthfulness_notes": [
+    "AI ensemble reference shares source-type, lexical, contract, and/or historical model signals; report as proxy-reference consistency, not independent accuracy",
+    "structural results are deterministic replay, not independent accuracy and not online LLM inference",
+    "provenance-gate effect can be null on a post-gate release where every assertion already has lineage",
+    "global closure is a bundled removal and is not the sum of isolated component effects",
+    "the 148 relation-reference rows are contract-positive by construction and cannot identify contract-removal harm; the 3,412 full-ledger violations are the discriminating structural result",
+    "the role-owner AI-reference subset intersects zero of the 208 release scope adjustments; its paired score is non-discriminating, while the full-ledger replay exposes 44 time-owner and 112 space-owner errors"
+  ],
+  "debug_history": [
+    "initial canary rejected duplicate fact IDs shared by role and owner tasks; temporary selected_facts input was changed to stable de-duplication before the passing rerun"
+  ]
+}

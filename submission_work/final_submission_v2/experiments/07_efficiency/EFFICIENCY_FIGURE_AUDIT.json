@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checks": {
+    "source_summary_pass": true,
+    "png_exists_nonempty": true,
+    "pdf_exists_nonempty": true,
+    "png_large_enough": true,
+    "pdf_single_page": true,
+    "five_scale_points": true,
+    "warm_and_cold_distinct": true,
+    "chart_contract_exists": true
+  },
+  "source_hashes": {
+    "end_to_end_efficiency_summary.json": "8b7c8a8e02504eabe1815fccede34738062d9fb1f8760bdbd42e2936722205d3",
+    "END_TO_END_RUNS.csv": "de87b8e5c8a73e4147ab101a47818bf84f3c8630e733000cf3afe89fe8ecf28e",
+    "SCALING_FITS.csv": "8400bdfac0e95adca87762a55037d6fa334103e3db280b282d2658e7771fff46",
+    "EFFICIENCY_CHART_CONTRACT.md": "936ea40dbbd20b5cb807c781639239300730239cf6799ce44a3acb07d3687097"
+  },
+  "outputs": {
+    "fig_end_to_end_efficiency.png": {
+      "sha256": "338904306c0a3d5dd64b4142c5b41ef0a580e74c27682020b31a709cb00953ae",
+      "bytes": 345542,
+      "width": 2423,
+      "height": 1920
+    },
+    "fig_end_to_end_efficiency.pdf": {
+      "sha256": "8fb80d70fbdbb7a14625b30b2bdc60b614d2477b89a4e5d8a3fc8f2ff1de3d10",
+      "bytes": 82711,
+      "pages": 1
+    }
+  },
+  "visual_qa": "PASS: original-resolution PNG inspected; all four panels, IQR bars, stage labels, residuals, memory labels, legend, and footnote are readable with no clipping"
+}

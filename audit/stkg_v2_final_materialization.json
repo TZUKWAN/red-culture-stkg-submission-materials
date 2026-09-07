@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "build_version": "red-culture-stkg-final-v2-1",
+  "sources": {
+    "evolution_v2": {
+      "path": "D:\\REDCULTUREDATA\\derived\\red_culture_stkg_evolution_v2.sqlite",
+      "sha256": "9b4c3107a4dc6399ea754ff3af957a37bf4420236dd943101c525b93a7db03a8"
+    },
+    "creative_media_v2": {
+      "path": "D:\\REDCULTUREDATA\\derived\\stkg_v2_creative_media_enrichment.sqlite",
+      "sha256": "fde1f05b01709520a334dd88a58de6e501f36d2d0a182675516098b122a1d13f"
+    },
+    "creative_media_report": {
+      "path": "D:\\REDCULTUREDATA\\audit_reports\\stkg_v2_creative_media.json",
+      "sha256": "664b1e5444b5d8f3944ec86630f5387d8d54f97d3c1967fb0103a527cd79a4a6"
+    },
+    "unchanged": true
+  },
+  "output": {
+    "path": "D:\\REDCULTUREDATA\\derived\\red_culture_stkg_final_v2.sqlite",
+    "size_bytes": 1187962880,
+    "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7"
+  },
+  "checks": {
+    "quick_check": "ok",
+    "foreign_key_errors": 0,
+    "creative_work_count": 1019,
+    "media_row_count": 1019,
+    "creative_works_without_media": 0,
+    "media_on_non_creative_work": 0,
+    "blank_media": 0,
+    "unknown_media": 57,
+    "qwen_media": 6,
+    "state_value_facet_rows": 532,
+    "state_value_facet_states": 133,
+    "state_value_facet_values": 4,
+    "invalid_state_value_types": 0
+  },
+  "completed_at": "2026-07-15T09:38:10+08:00"
+}

@@ -1,0 +1,497 @@
+{
+  "status": "PASS",
+  "created_at_utc": "2026-07-30T10:20:53.974764+00:00",
+  "classifier_actual_run": {
+    "n": 203,
+    "model_version": "stkg-v2-local-entity-classifier-1",
+    "class_gates": {
+      "AdministrativeRegion": null,
+      "Artifact": null,
+      "Concept": {
+        "threshold": 0.95,
+        "support": 619,
+        "precision": 0.9806138933764136,
+        "wilson_lower_95": 0.9664227707894419
+      },
+      "CreativeWork": null,
+      "Document": {
+        "threshold": 0.9,
+        "support": 189,
+        "precision": 0.9894179894179894,
+        "wilson_lower_95": 0.9622432959265153
+      },
+      "Event": {
+        "threshold": 0.9,
+        "support": 3543,
+        "precision": 0.9889923793395428,
+        "wilson_lower_95": 0.984988318094461
+      },
+      "Institution": {
+        "threshold": 0.9,
+        "support": 305,
+        "precision": 0.9967213114754099,
+        "wilson_lower_95": 0.9816644384124683
+      },
+      "Organization": {
+        "threshold": 0.9,
+        "support": 3240,
+        "precision": 0.9935185185185185,
+        "wilson_lower_95": 0.9901113455137565
+      },
+      "Person": {
+        "threshold": 0.9,
+        "support": 5138,
+        "precision": 0.9900739587388089,
+        "wilson_lower_95": 0.9869735025620384
+      },
+      "Place": {
+        "threshold": 0.9,
+        "support": 3159,
+        "precision": 0.9882874327318771,
+        "wilson_lower_95": 0.9838981422708668
+      },
+      "Position": null,
+      "Spirit": null,
+      "TimePeriod": null,
+      "ValueFacet": {
+        "threshold": 0.9,
+        "support": 118,
+        "precision": 0.9915254237288136,
+        "wilson_lower_95": 0.9535532858788098
+      }
+    },
+    "global_gate": {
+      "threshold": 0.9,
+      "support": 16977,
+      "precision": 0.9882193555987513,
+      "wilson_lower_95": 0.986482266143261
+    },
+    "variants": {
+      "Full selective classifier": {
+        "total": 203,
+        "accepted": 72,
+        "correct": 68,
+        "errors": 4,
+        "coverage": 0.35467980295566504,
+        "selective_accuracy": 0.9444444444444444,
+        "selective_accuracy_ci95": [
+          0.863821350687076,
+          0.9846574628888694
+        ],
+        "safe_coverage": 0.33497536945812806,
+        "abstention_rate": 0.645320197044335,
+        "macro_f1_on_accepted": 0.6892857142857143
+      },
+      "w/o Class-specific Gate": {
+        "total": 203,
+        "accepted": 73,
+        "correct": 69,
+        "errors": 4,
+        "coverage": 0.35960591133004927,
+        "selective_accuracy": 0.9452054794520548,
+        "selective_accuracy_ci95": [
+          0.8656061656452405,
+          0.9848704761619633
+        ],
+        "safe_coverage": 0.3399014778325123,
+        "abstention_rate": 0.6403940886699507,
+        "macro_f1_on_accepted": 0.728125
+      },
+      "w/o Independent Signal Agreement": {
+        "total": 203,
+        "accepted": 132,
+        "correct": 121,
+        "errors": 11,
+        "coverage": 0.6502463054187192,
+        "selective_accuracy": 0.9166666666666666,
+        "selective_accuracy_ci95": [
+          0.8557858540356298,
+          0.9576652026096356
+        ],
+        "safe_coverage": 0.5960591133004927,
+        "abstention_rate": 0.3497536945812808,
+        "macro_f1_on_accepted": 0.8214508337229235
+      },
+      "w/o Abstention": {
+        "total": 203,
+        "accepted": 203,
+        "correct": 179,
+        "errors": 24,
+        "coverage": 1.0,
+        "selective_accuracy": 0.8817733990147784,
+        "selective_accuracy_ci95": [
+          0.8292106638680345,
+          0.9227620595428941
+        ],
+        "safe_coverage": 0.8817733990147784,
+        "abstention_rate": 0.0,
+        "macro_f1_on_accepted": 0.8118456931462035
+      }
+    },
+    "overlap_status": "shared_proxy_reference",
+    "interpretation": "AI ensemble reference shares source-type, lexical, contract, and/or historical model signals; report as proxy-reference consistency, not independent accuracy"
+  },
+  "relation_contract_actual_run": {
+    "n": 148,
+    "contract_rejected_samples": 0,
+    "discrimination_status": "saturated_shared_proxy_subset",
+    "variants": {
+      "Full relation contract": {
+        "total": 148,
+        "accepted": 148,
+        "correct": 148,
+        "errors": 0,
+        "coverage": 1.0,
+        "selective_accuracy": 1.0,
+        "selective_accuracy_ci95": [
+          0.9753831984210157,
+          1.0
+        ],
+        "safe_coverage": 1.0,
+        "abstention_rate": 0.0,
+        "macro_f1_on_accepted": 1.0
+      },
+      "w/o Relation Contract": {
+        "total": 148,
+        "accepted": 148,
+        "correct": 148,
+        "errors": 0,
+        "coverage": 1.0,
+        "selective_accuracy": 1.0,
+        "selective_accuracy_ci95": [
+          0.9753831984210157,
+          1.0
+        ],
+        "safe_coverage": 1.0,
+        "abstention_rate": 0.0,
+        "macro_f1_on_accepted": 1.0
+      }
+    },
+    "overlap_status": "shared_proxy_reference",
+    "interpretation": "AI ensemble reference shares source-type, lexical, contract, and/or historical model signals; report as proxy-reference consistency, not independent accuracy"
+  },
+  "role_owner_actual_run": {
+    "n": 260,
+    "unique_facts": 239,
+    "facts_intersecting_208_scope_adjustments": 0,
+    "discrimination_status": "no_adjusted_fact_in_ai_reference_subset",
+    "variants": {
+      "Full role-owner closure": {
+        "total": 260,
+        "accepted": 260,
+        "correct": 130,
+        "errors": 130,
+        "coverage": 1.0,
+        "selective_accuracy": 0.5,
+        "selective_accuracy_ci95": [
+          0.4376043769222226,
+          0.5623956230777774
+        ],
+        "safe_coverage": 0.5,
+        "abstention_rate": 0.0,
+        "macro_f1_on_accepted": 0.18586515108398743
+      },
+      "w/o Role-owner Closure": {
+        "total": 260,
+        "accepted": 260,
+        "correct": 130,
+        "errors": 130,
+        "coverage": 1.0,
+        "selective_accuracy": 0.5,
+        "selective_accuracy_ci95": [
+          0.4376043769222226,
+          0.5623956230777774
+        ],
+        "safe_coverage": 0.5,
+        "abstention_rate": 0.0,
+        "macro_f1_on_accepted": 0.18586515108398743
+      }
+    },
+    "per_task": {
+      "space_owner": {
+        "Full role-owner closure": {
+          "total": 15,
+          "accepted": 15,
+          "correct": 7,
+          "errors": 8,
+          "coverage": 1.0,
+          "selective_accuracy": 0.4666666666666667,
+          "selective_accuracy_ci95": [
+            0.2126667295193079,
+            0.7341386527226033
+          ],
+          "safe_coverage": 0.4666666666666667,
+          "abstention_rate": 0.0,
+          "macro_f1_on_accepted": 0.30434782608695654
+        },
+        "w/o Role-owner Closure": {
+          "total": 15,
+          "accepted": 15,
+          "correct": 7,
+          "errors": 8,
+          "coverage": 1.0,
+          "selective_accuracy": 0.4666666666666667,
+          "selective_accuracy_ci95": [
+            0.2126667295193079,
+            0.7341386527226033
+          ],
+          "safe_coverage": 0.4666666666666667,
+          "abstention_rate": 0.0,
+          "macro_f1_on_accepted": 0.30434782608695654
+        }
+      },
+      "space_role": {
+        "Full role-owner closure": {
+          "total": 102,
+          "accepted": 102,
+          "correct": 54,
+          "errors": 48,
+          "coverage": 1.0,
+          "selective_accuracy": 0.5294117647058824,
+          "selective_accuracy_ci95": [
+            0.42804448175070103,
+            0.629026706714737
+          ],
+          "safe_coverage": 0.5294117647058824,
+          "abstention_rate": 0.0,
+          "macro_f1_on_accepted": 0.18060765191297823
+        },
+        "w/o Role-owner Closure": {
+          "total": 102,
+          "accepted": 102,
+          "correct": 54,
+          "errors": 48,
+          "coverage": 1.0,
+          "selective_accuracy": 0.5294117647058824,
+          "selective_accuracy_ci95": [
+            0.42804448175070103,
+            0.629026706714737
+          ],
+          "safe_coverage": 0.5294117647058824,
+          "abstention_rate": 0.0,
+          "macro_f1_on_accepted": 0.18060765191297823
+        }
+      },
+      "time_owner": {
+        "Full role-owner closure": {
+          "total": 19,
+          "accepted": 19,
+          "correct": 4,
+          "errors": 15,
+          "coverage": 1.0,
+          "selective_accuracy": 0.21052631578947367,
+          "selective_accuracy_ci95": [
+            0.06052453770928974,
+            0.45565308189150555
+          ],
+          "safe_coverage": 0.21052631578947367,
+          "abstention_rate": 0.0,
+          "macro_f1_on_accepted": 0.125
+        },
+        "w/o Role-owner Closure": {
+          "total": 19,
+          "accepted": 19,
+          "correct": 4,
+          "errors": 15,
+          "coverage": 1.0,
+          "selective_accuracy": 0.21052631578947367,
+          "selective_accuracy_ci95": [
+            0.06052453770928974,
+            0.45565308189150555
+          ],
+          "safe_coverage": 0.21052631578947367,
+          "abstention_rate": 0.0,
+          "macro_f1_on_accepted": 0.125
+        }
+      },
+      "time_role": {
+        "Full role-owner closure": {
+          "total": 124,
+          "accepted": 124,
+          "correct": 65,
+          "errors": 59,
+          "coverage": 1.0,
+          "selective_accuracy": 0.5241935483870968,
+          "selective_accuracy_ci95": [
+            0.4326127777194922,
+            0.6145921258173577
+          ],
+          "safe_coverage": 0.5241935483870968,
+          "abstention_rate": 0.0,
+          "macro_f1_on_accepted": 0.16626481816355235
+        },
+        "w/o Role-owner Closure": {
+          "total": 124,
+          "accepted": 124,
+          "correct": 65,
+          "errors": 59,
+          "coverage": 1.0,
+          "selective_accuracy": 0.5241935483870968,
+          "selective_accuracy_ci95": [
+            0.4326127777194922,
+            0.6145921258173577
+          ],
+          "safe_coverage": 0.5241935483870968,
+          "abstention_rate": 0.0,
+          "macro_f1_on_accepted": 0.16626481816355235
+        }
+      }
+    },
+    "overlap_status": "shared_proxy_reference",
+    "interpretation": "AI ensemble reference shares source-type, lexical, contract, and/or historical model signals; report as proxy-reference consistency, not independent accuracy"
+  },
+  "structural_deterministic_replay": {
+    "Full framework": {
+      "total": 424150,
+      "tiers": {
+        "contextual": 268047,
+        "strict_semantic": 112158,
+        "unresolved": 43945
+      },
+      "strict_contract_violations": 0,
+      "invalid_time_owner_types": 0,
+      "invalid_space_owner_types": 0,
+      "admitted_without_provenance": 0,
+      "changed_vs_full": 0,
+      "release_state_matches": 424150,
+      "fixed_point_violations": 0,
+      "unique_endpoint_ids": 147698,
+      "state_sha256": "21501eed372911eeeab46624a8941f72ec984ea3b2fdf87a1a89988623f1bc7e"
+    },
+    "w/o Risk Routing": {
+      "total": 424150,
+      "tiers": {
+        "contextual": 309106,
+        "strict_semantic": 115044
+      },
+      "strict_contract_violations": 0,
+      "invalid_time_owner_types": 0,
+      "invalid_space_owner_types": 0,
+      "admitted_without_provenance": 0,
+      "changed_vs_full": 43945,
+      "release_state_matches": 380205,
+      "fixed_point_violations": 0,
+      "unique_endpoint_ids": 147698,
+      "state_sha256": "af012245a08739949b925aa0009c0d1295f3b7eb9f853e349a8f7e85320ac631"
+    },
+    "w/o Identity Projection": {
+      "total": 424150,
+      "tiers": {
+        "contextual": 268047,
+        "strict_semantic": 112158,
+        "unresolved": 43945
+      },
+      "strict_contract_violations": 0,
+      "invalid_time_owner_types": 0,
+      "invalid_space_owner_types": 0,
+      "admitted_without_provenance": 0,
+      "changed_vs_full": 24005,
+      "release_state_matches": 400145,
+      "fixed_point_violations": 0,
+      "unique_endpoint_ids": 148811,
+      "state_sha256": "3e8820c15ab4840b8b7ea7995661ab06ed956ff3ae930fb8eac017a3878e8bfe"
+    },
+    "w/o Relation Contract": {
+      "total": 424150,
+      "tiers": {
+        "contextual": 264635,
+        "strict_semantic": 115570,
+        "unresolved": 43945
+      },
+      "strict_contract_violations": 3412,
+      "invalid_time_owner_types": 0,
+      "invalid_space_owner_types": 0,
+      "admitted_without_provenance": 0,
+      "changed_vs_full": 3412,
+      "release_state_matches": 420738,
+      "fixed_point_violations": 0,
+      "unique_endpoint_ids": 147698,
+      "state_sha256": "17037d2ad986a51435077b370e7e44c4f12fe8c434f0bbf16b58648946093db6"
+    },
+    "w/o Role-owner Closure": {
+      "total": 424150,
+      "tiers": {
+        "contextual": 268047,
+        "strict_semantic": 112158,
+        "unresolved": 43945
+      },
+      "strict_contract_violations": 0,
+      "invalid_time_owner_types": 44,
+      "invalid_space_owner_types": 112,
+      "admitted_without_provenance": 0,
+      "changed_vs_full": 208,
+      "release_state_matches": 423942,
+      "fixed_point_violations": 0,
+      "unique_endpoint_ids": 147698,
+      "state_sha256": "d8f64ec69cfadfd6e6b6b66251de6d18cad2286bbeca7b78a47077f08b3bdf63"
+    },
+    "w/o Provenance Gate": {
+      "total": 424150,
+      "tiers": {
+        "contextual": 268047,
+        "strict_semantic": 112158,
+        "unresolved": 43945
+      },
+      "strict_contract_violations": 0,
+      "invalid_time_owner_types": 0,
+      "invalid_space_owner_types": 0,
+      "admitted_without_provenance": 0,
+      "changed_vs_full": 0,
+      "release_state_matches": 424150,
+      "fixed_point_violations": 0,
+      "unique_endpoint_ids": 147698,
+      "state_sha256": "21501eed372911eeeab46624a8941f72ec984ea3b2fdf87a1a89988623f1bc7e"
+    },
+    "w/o Global Closure": {
+      "total": 424150,
+      "tiers": {
+        "contextual": 264635,
+        "strict_semantic": 115570,
+        "unresolved": 43945
+      },
+      "strict_contract_violations": 3412,
+      "invalid_time_owner_types": 44,
+      "invalid_space_owner_types": 112,
+      "admitted_without_provenance": 0,
+      "changed_vs_full": 27475,
+      "release_state_matches": 396675,
+      "fixed_point_violations": 0,
+      "unique_endpoint_ids": 148811,
+      "state_sha256": "b7ae07ef4e52c1f969a7c5c6a63dade0ad84c605d3c2edd59383db4d089998db"
+    }
+  },
+  "risk_routing_replay": {
+    "Full framework": {
+      "deterministic_rule": 295097,
+      "local_classifier_or_rule": 85107,
+      "manual_review": 60,
+      "model_or_manual_review": 43886
+    },
+    "w/o Risk Routing": {
+      "single_model_route": 424150
+    }
+  },
+  "identity_projection_replay": {
+    "source_entities": 154150,
+    "projected_entities": 152979,
+    "identity_reductions": 1171,
+    "duplicate_name_type_groups_without_projection": 2287,
+    "duplicate_name_type_groups_with_projection": 1982,
+    "source_id_sequence_sha256": "3550ebdbe0231cd02ab7d763541a31c948b6d63c01d27a2dee02059e3cb7ba8e",
+    "projected_id_sequence_sha256": "b1f93fa6f5d789db1a39d739738f0ab968ced64c46b9173bd9e96f1ed5649c36",
+    "evidence_class": "deterministic_replay"
+  },
+  "supplemental": {
+    "provenance_only_repair_or_rewrite_assertions": 155968,
+    "model_task_ledger_count": 16090,
+    "note": "task ledger units are not assertion risk-tier units"
+  },
+  "outputs": {
+    "predictions_csv": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\05_ablation\\ABLATION_PREDICTIONS.csv",
+    "runs_csv": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\05_ablation\\ABLATION_RUNS.csv",
+    "changed_examples_csv": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\05_ablation\\STRUCTURAL_CHANGED_EXAMPLES.csv",
+    "figure_data_csv": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\05_ablation\\ABLATION_FIGURE_DATA.csv",
+    "manifest_json": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\05_ablation\\FROZEN_EVALUATION_MANIFEST.json",
+    "audit_json": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\05_ablation\\ablation_experiment_audit.json"
+  }
+}

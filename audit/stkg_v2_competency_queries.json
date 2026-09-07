@@ -1,0 +1,3576 @@
+{
+  "status": "PASS",
+  "build_version": "red-culture-stkg-v2-competency-queries-1",
+  "contract": {
+    "path": "D:\\REDCULTUREDATA\\stkg\\schema\\competency_query_contract_v2.yaml",
+    "sha256": "0a8be723850c9a686228fd2816e923582c29742f516785906b6ca8ad612c1896"
+  },
+  "database_before": {
+    "path": "D:\\REDCULTUREDATA\\derived\\red_culture_stkg_final_v2.sqlite",
+    "size_bytes": 1187962880,
+    "mtime_ns": 1784079460949783900,
+    "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+    "quick_check": "ok",
+    "foreign_key_errors": 0
+  },
+  "database_after": {
+    "size_bytes": 1187962880,
+    "mtime_ns": 1784079460949783900,
+    "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+    "unchanged": true
+  },
+  "query_count": 26,
+  "combined_rows_sha256": "2c9c4e547c6df497457269a7dfe3a7b05b98c5be90225bb4d9b5529565123d8e",
+  "queries": {
+    "CQ01": {
+      "columns": [
+        "stage_order",
+        "stage_code",
+        "stage_label_zh",
+        "culture_form_code",
+        "culture_form_label_zh",
+        "observation_tier",
+        "state_count",
+        "entity_count",
+        "event_count",
+        "supporting_fact_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "stage_order": 0,
+        "stage_code": 0,
+        "stage_label_zh": 0,
+        "culture_form_code": 0,
+        "culture_form_label_zh": 0,
+        "observation_tier": 0,
+        "state_count": 0,
+        "entity_count": 0,
+        "event_count": 0,
+        "supporting_fact_count": 0
+      },
+      "row_count": 95,
+      "rows_sha256": "0a43218fb6ed79fd6efdaaf26c938643f50f3f6d653b3525135a8f05d2f6c1df",
+      "preview": [
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "culture_form_code": "CreativeNarrative",
+          "culture_form_label_zh": "文艺叙事",
+          "observation_tier": "relation_context",
+          "state_count": 4,
+          "entity_count": 4,
+          "event_count": 4,
+          "supporting_fact_count": 27
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "culture_form_code": "CreativeNarrative",
+          "culture_form_label_zh": "文艺叙事",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 4,
+          "entity_count": 4,
+          "event_count": 4,
+          "supporting_fact_count": 53
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "culture_form_code": "DocumentaryCulture",
+          "culture_form_label_zh": "文献文化",
+          "observation_tier": "relation_context",
+          "state_count": 9,
+          "entity_count": 9,
+          "event_count": 8,
+          "supporting_fact_count": 44
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "culture_form_code": "DocumentaryCulture",
+          "culture_form_label_zh": "文献文化",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 4,
+          "entity_count": 4,
+          "event_count": 4,
+          "supporting_fact_count": 53
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "culture_form_code": "HistoricalPractice",
+          "culture_form_label_zh": "历史实践",
+          "observation_tier": "asserted_event_spacetime",
+          "state_count": 10,
+          "entity_count": 10,
+          "event_count": 10,
+          "supporting_fact_count": 35
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "culture_form_code": "HistoricalPractice",
+          "culture_form_label_zh": "历史实践",
+          "observation_tier": "relation_context",
+          "state_count": 169,
+          "entity_count": 169,
+          "event_count": 169,
+          "supporting_fact_count": 5256
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "culture_form_code": "HistoricalPractice",
+          "culture_form_label_zh": "历史实践",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 15,
+          "entity_count": 15,
+          "event_count": 15,
+          "supporting_fact_count": 925
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "culture_form_code": "InstitutionalPractice",
+          "culture_form_label_zh": "制度与组织实践",
+          "observation_tier": "asserted_event_spacetime",
+          "state_count": 3,
+          "entity_count": 3,
+          "event_count": 10,
+          "supporting_fact_count": 46
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "culture_form_code": "InstitutionalPractice",
+          "culture_form_label_zh": "制度与组织实践",
+          "observation_tier": "relation_context",
+          "state_count": 112,
+          "entity_count": 112,
+          "event_count": 46,
+          "supporting_fact_count": 375
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "culture_form_code": "InstitutionalPractice",
+          "culture_form_label_zh": "制度与组织实践",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 13,
+          "entity_count": 13,
+          "event_count": 11,
+          "supporting_fact_count": 96
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "culture_form_code": "MaterialCulture",
+          "culture_form_label_zh": "物质文化",
+          "observation_tier": "relation_context",
+          "state_count": 3,
+          "entity_count": 3,
+          "event_count": 3,
+          "supporting_fact_count": 9
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "culture_form_code": "MemoryTransmission",
+          "culture_form_label_zh": "记忆与传播",
+          "observation_tier": "relation_context",
+          "state_count": 10,
+          "entity_count": 10,
+          "event_count": 7,
+          "supporting_fact_count": 41
+        }
+      ],
+      "elapsed_seconds": 0.002933,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq01_stage_form_distribution.sql",
+      "file_sha256": "140a2e3147fdc65c3693f0cbeb5d87f3e90295282d9ca5fede713f94bb901782",
+      "required_columns": [
+        "stage_order",
+        "stage_code",
+        "stage_label_zh",
+        "culture_form_code",
+        "culture_form_label_zh",
+        "observation_tier",
+        "state_count",
+        "entity_count",
+        "event_count",
+        "supporting_fact_count"
+      ]
+    },
+    "CQ02": {
+      "columns": [
+        "stage_order",
+        "stage_code",
+        "province_name",
+        "culture_form_code",
+        "observation_tier",
+        "state_count",
+        "entity_count",
+        "event_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "stage_order": 0,
+        "stage_code": 0,
+        "province_name": 0,
+        "culture_form_code": 0,
+        "observation_tier": 0,
+        "state_count": 0,
+        "entity_count": 0,
+        "event_count": 0
+      },
+      "row_count": 674,
+      "rows_sha256": "7ccad94d812e22d3876741f031bb8e85f21aa794536dd9c0a9ede2af3cb357b8",
+      "preview": [
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "province_name": "四川省",
+          "culture_form_code": "CreativeNarrative",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 1,
+          "entity_count": 1,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "province_name": "四川省",
+          "culture_form_code": "DocumentaryCulture",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 1,
+          "entity_count": 1,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "province_name": "四川省",
+          "culture_form_code": "HistoricalPractice",
+          "observation_tier": "asserted_event_spacetime",
+          "state_count": 1,
+          "entity_count": 1,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "province_name": "四川省",
+          "culture_form_code": "HistoricalPractice",
+          "observation_tier": "relation_context",
+          "state_count": 24,
+          "entity_count": 24,
+          "event_count": 24
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "province_name": "四川省",
+          "culture_form_code": "HistoricalPractice",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 1,
+          "entity_count": 1,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "province_name": "四川省",
+          "culture_form_code": "InstitutionalPractice",
+          "observation_tier": "relation_context",
+          "state_count": 4,
+          "entity_count": 4,
+          "event_count": 2
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "province_name": "四川省",
+          "culture_form_code": "InstitutionalPractice",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 3,
+          "entity_count": 3,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "province_name": "云南省",
+          "culture_form_code": "CreativeNarrative",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 1,
+          "entity_count": 1,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "province_name": "云南省",
+          "culture_form_code": "DocumentaryCulture",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 1,
+          "entity_count": 1,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "province_name": "云南省",
+          "culture_form_code": "HistoricalPractice",
+          "observation_tier": "relation_context",
+          "state_count": 6,
+          "entity_count": 6,
+          "event_count": 6
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "province_name": "云南省",
+          "culture_form_code": "HistoricalPractice",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 1,
+          "entity_count": 1,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "province_name": "云南省",
+          "culture_form_code": "InstitutionalPractice",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 3,
+          "entity_count": 3,
+          "event_count": 1
+        }
+      ],
+      "elapsed_seconds": 0.008412,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq02_province_stage_forms.sql",
+      "file_sha256": "6d890b977da289e6727e3b753a14acdb1a15b6200c803b81765f8e16f30bc80b",
+      "required_columns": [
+        "stage_order",
+        "stage_code",
+        "province_name",
+        "culture_form_code",
+        "observation_tier",
+        "state_count",
+        "entity_count",
+        "event_count"
+      ]
+    },
+    "CQ03": {
+      "columns": [
+        "stage_order",
+        "stage_code",
+        "basin_section_name",
+        "culture_form_code",
+        "observation_tier",
+        "state_count",
+        "entity_count",
+        "event_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "stage_order": 0,
+        "stage_code": 0,
+        "basin_section_name": 0,
+        "culture_form_code": 0,
+        "observation_tier": 0,
+        "state_count": 0,
+        "entity_count": 0,
+        "event_count": 0
+      },
+      "row_count": 257,
+      "rows_sha256": "433054fb47357efc1bdd95c5f6ae12b8f7830a7bb595b39f3ed49c7d3ab3fe70",
+      "preview": [
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "basin_section_name": "上游",
+          "culture_form_code": "CreativeNarrative",
+          "observation_tier": "relation_context",
+          "state_count": 1,
+          "entity_count": 1,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "basin_section_name": "上游",
+          "culture_form_code": "CreativeNarrative",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 2,
+          "entity_count": 1,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "basin_section_name": "上游",
+          "culture_form_code": "DocumentaryCulture",
+          "observation_tier": "relation_context",
+          "state_count": 1,
+          "entity_count": 1,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "basin_section_name": "上游",
+          "culture_form_code": "DocumentaryCulture",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 2,
+          "entity_count": 1,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "basin_section_name": "上游",
+          "culture_form_code": "HistoricalPractice",
+          "observation_tier": "asserted_event_spacetime",
+          "state_count": 2,
+          "entity_count": 2,
+          "event_count": 2
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "basin_section_name": "上游",
+          "culture_form_code": "HistoricalPractice",
+          "observation_tier": "relation_context",
+          "state_count": 42,
+          "entity_count": 41,
+          "event_count": 41
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "basin_section_name": "上游",
+          "culture_form_code": "HistoricalPractice",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 3,
+          "entity_count": 2,
+          "event_count": 2
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "basin_section_name": "上游",
+          "culture_form_code": "InstitutionalPractice",
+          "observation_tier": "relation_context",
+          "state_count": 18,
+          "entity_count": 14,
+          "event_count": 5
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "basin_section_name": "上游",
+          "culture_form_code": "InstitutionalPractice",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 6,
+          "entity_count": 3,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "basin_section_name": "上游",
+          "culture_form_code": "MaterialCulture",
+          "observation_tier": "relation_context",
+          "state_count": 1,
+          "entity_count": 1,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "basin_section_name": "上游",
+          "culture_form_code": "MemoryTransmission",
+          "observation_tier": "relation_context",
+          "state_count": 2,
+          "entity_count": 2,
+          "event_count": 1
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "basin_section_name": "中游",
+          "culture_form_code": "CreativeNarrative",
+          "observation_tier": "relation_context",
+          "state_count": 2,
+          "entity_count": 1,
+          "event_count": 1
+        }
+      ],
+      "elapsed_seconds": 0.074046,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq03_basin_stage_forms.sql",
+      "file_sha256": "c17cfd9716674f99e19649de720f627cc97eed82e2c74fab3d4290676f32e3e8",
+      "required_columns": [
+        "stage_order",
+        "stage_code",
+        "basin_section_name",
+        "culture_form_code",
+        "observation_tier",
+        "state_count",
+        "entity_count",
+        "event_count"
+      ]
+    },
+    "CQ04": {
+      "columns": [
+        "stage_order",
+        "stage_code",
+        "stage_label_zh",
+        "observation_tier",
+        "state_count",
+        "state_share"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "stage_order": 0,
+        "stage_code": 0,
+        "stage_label_zh": 0,
+        "observation_tier": 0,
+        "state_count": 0,
+        "state_share": 0
+      },
+      "row_count": 20,
+      "rows_sha256": "0c0e6168f2fda8b511b67ab8423c8800a484f5f8e9e0e7aac773621a3589e26b",
+      "preview": [
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "observation_tier": "asserted_event_spacetime",
+          "state_count": 13,
+          "state_share": 0.036517
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "observation_tier": "relation_context",
+          "state_count": 307,
+          "state_share": 0.86236
+        },
+        {
+          "stage_order": 0,
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 36,
+          "state_share": 0.101124
+        },
+        {
+          "stage_order": 1,
+          "stage_code": "founding_and_great_revolution",
+          "stage_label_zh": "建党与大革命",
+          "observation_tier": "asserted_event_spacetime",
+          "state_count": 302,
+          "state_share": 0.181818
+        },
+        {
+          "stage_order": 1,
+          "stage_code": "founding_and_great_revolution",
+          "stage_label_zh": "建党与大革命",
+          "observation_tier": "relation_context",
+          "state_count": 1313,
+          "state_share": 0.790488
+        },
+        {
+          "stage_order": 1,
+          "stage_code": "founding_and_great_revolution",
+          "stage_label_zh": "建党与大革命",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 46,
+          "state_share": 0.027694
+        },
+        {
+          "stage_order": 2,
+          "stage_code": "agrarian_revolution",
+          "stage_label_zh": "土地革命战争",
+          "observation_tier": "asserted_event_spacetime",
+          "state_count": 340,
+          "state_share": 0.099532
+        },
+        {
+          "stage_order": 2,
+          "stage_code": "agrarian_revolution",
+          "stage_label_zh": "土地革命战争",
+          "observation_tier": "relation_context",
+          "state_count": 2722,
+          "state_share": 0.796838
+        },
+        {
+          "stage_order": 2,
+          "stage_code": "agrarian_revolution",
+          "stage_label_zh": "土地革命战争",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 354,
+          "state_share": 0.10363
+        },
+        {
+          "stage_order": 3,
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "observation_tier": "asserted_event_spacetime",
+          "state_count": 304,
+          "state_share": 0.124031
+        },
+        {
+          "stage_order": 3,
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "observation_tier": "relation_context",
+          "state_count": 1919,
+          "state_share": 0.782946
+        },
+        {
+          "stage_order": 3,
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "observation_tier": "trusted_event_spacetime",
+          "state_count": 228,
+          "state_share": 0.093023
+        }
+      ],
+      "elapsed_seconds": 0.052809,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq04_observation_tier_balance.sql",
+      "file_sha256": "c9e1d41a60a103aa9f4bd76274b23d403eaed28c1ec810b919ebbbfb4c59bb51",
+      "required_columns": [
+        "stage_order",
+        "stage_code",
+        "stage_label_zh",
+        "observation_tier",
+        "state_count",
+        "state_share"
+      ]
+    },
+    "CQ05": {
+      "columns": [
+        "observed_time_status",
+        "frame_status",
+        "event_count",
+        "occurrence_time_fact_count",
+        "trusted_time_fact_count",
+        "event_location_fact_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "observed_time_status": 0,
+        "frame_status": 0,
+        "event_count": 0,
+        "occurrence_time_fact_count": 0,
+        "trusted_time_fact_count": 0,
+        "event_location_fact_count": 0
+      },
+      "row_count": 7,
+      "rows_sha256": "40657ba69ddeeaa5d5c21350913270e82b42341644c4c1753ba9196996442324",
+      "preview": [
+        {
+          "observed_time_status": "asserted_candidate",
+          "frame_status": "context_only",
+          "event_count": 2,
+          "occurrence_time_fact_count": 2,
+          "trusted_time_fact_count": 0,
+          "event_location_fact_count": 2
+        },
+        {
+          "observed_time_status": "asserted_candidate",
+          "frame_status": "strict_backbone",
+          "event_count": 599,
+          "occurrence_time_fact_count": 639,
+          "trusted_time_fact_count": 0,
+          "event_location_fact_count": 948
+        },
+        {
+          "observed_time_status": "none",
+          "frame_status": "context_only",
+          "event_count": 10956,
+          "occurrence_time_fact_count": 0,
+          "trusted_time_fact_count": 0,
+          "event_location_fact_count": 831
+        },
+        {
+          "observed_time_status": "none",
+          "frame_status": "isolated",
+          "event_count": 304,
+          "occurrence_time_fact_count": 0,
+          "trusted_time_fact_count": 0,
+          "event_location_fact_count": 0
+        },
+        {
+          "observed_time_status": "none",
+          "frame_status": "strict_backbone",
+          "event_count": 16109,
+          "occurrence_time_fact_count": 0,
+          "trusted_time_fact_count": 0,
+          "event_location_fact_count": 4992
+        },
+        {
+          "observed_time_status": "trusted",
+          "frame_status": "context_only",
+          "event_count": 2,
+          "occurrence_time_fact_count": 2,
+          "trusted_time_fact_count": 2,
+          "event_location_fact_count": 0
+        },
+        {
+          "observed_time_status": "trusted",
+          "frame_status": "strict_backbone",
+          "event_count": 93,
+          "occurrence_time_fact_count": 267,
+          "trusted_time_fact_count": 267,
+          "event_location_fact_count": 900
+        }
+      ],
+      "elapsed_seconds": 0.015734,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq05_event_time_coverage.sql",
+      "file_sha256": "e52cbec5b78272f125e6132b9b33b6bfd97637160acb7d3e60769150968e902f",
+      "required_columns": [
+        "observed_time_status",
+        "frame_status",
+        "event_count",
+        "occurrence_time_fact_count",
+        "trusted_time_fact_count",
+        "event_location_fact_count"
+      ]
+    },
+    "CQ06": {
+      "columns": [
+        "event_id",
+        "event_name",
+        "stage_code",
+        "stage_label_zh",
+        "province_name",
+        "controlled_role_count",
+        "person_count",
+        "organization_count",
+        "culture_object_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "event_id": 0,
+        "event_name": 0,
+        "stage_code": 0,
+        "stage_label_zh": 0,
+        "province_name": 0,
+        "controlled_role_count": 0,
+        "person_count": 0,
+        "organization_count": 0,
+        "culture_object_count": 0
+      },
+      "row_count": 201,
+      "rows_sha256": "a61a5027cb7684467e2af6fdf8c95159cb547704ae17b01119cacc50b87019d8",
+      "preview": [
+        {
+          "event_id": "IENT-3c4d7ce58ed96cffe11028e4",
+          "event_name": "遵义会议",
+          "stage_code": "agrarian_revolution",
+          "stage_label_zh": "土地革命战争",
+          "province_name": "江西省",
+          "controlled_role_count": 268,
+          "person_count": 72,
+          "organization_count": 19,
+          "culture_object_count": 4
+        },
+        {
+          "event_id": "IENT-3c4d7ce58ed96cffe11028e4",
+          "event_name": "遵义会议",
+          "stage_code": "agrarian_revolution",
+          "stage_label_zh": "土地革命战争",
+          "province_name": "贵州省",
+          "controlled_role_count": 268,
+          "person_count": 72,
+          "organization_count": 19,
+          "culture_object_count": 4
+        },
+        {
+          "event_id": "IENT-3c4d7ce58ed96cffe11028e4",
+          "event_name": "遵义会议",
+          "stage_code": "agrarian_revolution",
+          "stage_label_zh": "土地革命战争",
+          "province_name": "四川省",
+          "controlled_role_count": 268,
+          "person_count": 72,
+          "organization_count": 19,
+          "culture_object_count": 4
+        },
+        {
+          "event_id": "IENT-05a32c88b198dd690e9fbc7d",
+          "event_name": "重庆谈判",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "江西省",
+          "controlled_role_count": 175,
+          "person_count": 56,
+          "organization_count": 10,
+          "culture_object_count": 3
+        },
+        {
+          "event_id": "IENT-05a32c88b198dd690e9fbc7d",
+          "event_name": "重庆谈判",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "重庆市",
+          "controlled_role_count": 175,
+          "person_count": 56,
+          "organization_count": 10,
+          "culture_object_count": 3
+        },
+        {
+          "event_id": "IENT-05a32c88b198dd690e9fbc7d",
+          "event_name": "重庆谈判",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "安徽省",
+          "controlled_role_count": 175,
+          "person_count": 56,
+          "organization_count": 10,
+          "culture_object_count": 3
+        },
+        {
+          "event_id": "IENT-05a32c88b198dd690e9fbc7d",
+          "event_name": "重庆谈判",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "湖南省",
+          "controlled_role_count": 175,
+          "person_count": 56,
+          "organization_count": 10,
+          "culture_object_count": 3
+        },
+        {
+          "event_id": "IENT-05a32c88b198dd690e9fbc7d",
+          "event_name": "重庆谈判",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "湖北省",
+          "controlled_role_count": 175,
+          "person_count": 56,
+          "organization_count": 10,
+          "culture_object_count": 3
+        },
+        {
+          "event_id": "IENT-05a32c88b198dd690e9fbc7d",
+          "event_name": "重庆谈判",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "上海市",
+          "controlled_role_count": 175,
+          "person_count": 56,
+          "organization_count": 10,
+          "culture_object_count": 3
+        },
+        {
+          "event_id": "IENT-2185fdd5fa45149b67f5aa62",
+          "event_name": "五四运动",
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "云南省",
+          "controlled_role_count": 213,
+          "person_count": 71,
+          "organization_count": 7,
+          "culture_object_count": 2
+        },
+        {
+          "event_id": "IENT-2185fdd5fa45149b67f5aa62",
+          "event_name": "五四运动",
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "湖北省",
+          "controlled_role_count": 213,
+          "person_count": 71,
+          "organization_count": 7,
+          "culture_object_count": 2
+        },
+        {
+          "event_id": "IENT-2185fdd5fa45149b67f5aa62",
+          "event_name": "五四运动",
+          "stage_code": "pre_1921",
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "四川省",
+          "controlled_role_count": 213,
+          "person_count": 71,
+          "organization_count": 7,
+          "culture_object_count": 2
+        }
+      ],
+      "elapsed_seconds": 0.018056,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq06_trusted_event_hubs.sql",
+      "file_sha256": "d79e1fb2835228c762dcd9ee1b84b7100f378a0d8edbb2c696d0a934035579e7",
+      "required_columns": [
+        "event_id",
+        "event_name",
+        "stage_code",
+        "stage_label_zh",
+        "province_name",
+        "controlled_role_count",
+        "person_count",
+        "organization_count",
+        "culture_object_count"
+      ]
+    },
+    "CQ07": {
+      "columns": [
+        "person_id",
+        "person_name",
+        "event_id",
+        "event_name",
+        "role_code",
+        "stage_code",
+        "stage_label_zh",
+        "province_name",
+        "observation_tier",
+        "fact_id"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "person_id": 0,
+        "person_name": 0,
+        "event_id": 0,
+        "event_name": 0,
+        "role_code": 0,
+        "stage_code": 0,
+        "stage_label_zh": 0,
+        "province_name": 0,
+        "observation_tier": 0,
+        "fact_id": 0
+      },
+      "row_count": 75429,
+      "rows_sha256": "962fce914a2f2ae6c915c741d0ba17528287b7d05372d8cab105fbaa36246401",
+      "preview": [
+        {
+          "person_id": "IENT-95203574110afa205a818638",
+          "person_name": "106政治委员",
+          "event_id": "IENT-092fb94171e8648af0275d2e",
+          "event_name": "黔东南剿匪",
+          "role_code": "participant",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "贵州省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-6041d62c2cc283f134b9fb76"
+        },
+        {
+          "person_id": "IENT-95203574110afa205a818638",
+          "person_name": "106政治委员",
+          "event_id": "IENT-092fb94171e8648af0275d2e",
+          "event_name": "黔东南剿匪",
+          "role_code": "participant",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "贵州省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-6d92ed39b240d56633fb5367"
+        },
+        {
+          "person_id": "IENT-95203574110afa205a818638",
+          "person_name": "106政治委员",
+          "event_id": "IENT-092fb94171e8648af0275d2e",
+          "event_name": "黔东南剿匪",
+          "role_code": "participant",
+          "stage_code": "liberation_war",
+          "stage_label_zh": "解放战争",
+          "province_name": "贵州省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-6041d62c2cc283f134b9fb76"
+        },
+        {
+          "person_id": "IENT-95203574110afa205a818638",
+          "person_name": "106政治委员",
+          "event_id": "IENT-092fb94171e8648af0275d2e",
+          "event_name": "黔东南剿匪",
+          "role_code": "participant",
+          "stage_code": "liberation_war",
+          "stage_label_zh": "解放战争",
+          "province_name": "贵州省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-6d92ed39b240d56633fb5367"
+        },
+        {
+          "person_id": "IENT-ed0fa2b639a35ba2f79eee45",
+          "person_name": "一排长(苏北人)",
+          "event_id": "IENT-4fd256002a41eef10b2f46a5",
+          "event_name": "反‘清乡’斗争",
+          "role_code": "organizer",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "云南省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-267b2568280cc4013ffa2ac7"
+        },
+        {
+          "person_id": "IENT-ed0fa2b639a35ba2f79eee45",
+          "person_name": "一排长(苏北人)",
+          "event_id": "IENT-4fd256002a41eef10b2f46a5",
+          "event_name": "反‘清乡’斗争",
+          "role_code": "organizer",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "云南省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-c106df5e407fc34a09b0f708"
+        },
+        {
+          "person_id": "IENT-ed0fa2b639a35ba2f79eee45",
+          "person_name": "一排长(苏北人)",
+          "event_id": "IENT-4fd256002a41eef10b2f46a5",
+          "event_name": "反‘清乡’斗争",
+          "role_code": "organizer",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "安徽省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-267b2568280cc4013ffa2ac7"
+        },
+        {
+          "person_id": "IENT-ed0fa2b639a35ba2f79eee45",
+          "person_name": "一排长(苏北人)",
+          "event_id": "IENT-4fd256002a41eef10b2f46a5",
+          "event_name": "反‘清乡’斗争",
+          "role_code": "organizer",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "安徽省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-c106df5e407fc34a09b0f708"
+        },
+        {
+          "person_id": "IENT-ed0fa2b639a35ba2f79eee45",
+          "person_name": "一排长(苏北人)",
+          "event_id": "IENT-4fd256002a41eef10b2f46a5",
+          "event_name": "反‘清乡’斗争",
+          "role_code": "organizer",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "江苏省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-267b2568280cc4013ffa2ac7"
+        },
+        {
+          "person_id": "IENT-ed0fa2b639a35ba2f79eee45",
+          "person_name": "一排长(苏北人)",
+          "event_id": "IENT-4fd256002a41eef10b2f46a5",
+          "event_name": "反‘清乡’斗争",
+          "role_code": "organizer",
+          "stage_code": "war_of_resistance",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "江苏省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-c106df5e407fc34a09b0f708"
+        },
+        {
+          "person_id": "IENT-c39cc5774acd7a0019a3d7d0",
+          "person_name": "丁一安",
+          "event_id": "IENT-d44a83980f59deaa8f245ad3",
+          "event_name": "九·五起义",
+          "role_code": "participant",
+          "stage_code": "liberation_war",
+          "stage_label_zh": "解放战争",
+          "province_name": "云南省",
+          "observation_tier": "asserted_event_spacetime",
+          "fact_id": "IFACT-ba48d9a07fb8bf9c0615bd95"
+        },
+        {
+          "person_id": "IENT-c39cc5774acd7a0019a3d7d0",
+          "person_name": "丁一安",
+          "event_id": "IENT-d44a83980f59deaa8f245ad3",
+          "event_name": "九·五起义",
+          "role_code": "participant",
+          "stage_code": "liberation_war",
+          "stage_label_zh": "解放战争",
+          "province_name": "云南省",
+          "observation_tier": "asserted_event_spacetime",
+          "fact_id": "IFACT-ce02b7c055024cf61570c924"
+        }
+      ],
+      "elapsed_seconds": 1.198252,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq07_person_event_timeline.sql",
+      "file_sha256": "9149427cd1ca909e04e2785b0979edec2dd48cc8c83edd53d0ac78653e43f645",
+      "required_columns": [
+        "person_id",
+        "person_name",
+        "event_id",
+        "event_name",
+        "role_code",
+        "stage_code",
+        "stage_label_zh",
+        "province_name",
+        "observation_tier",
+        "fact_id"
+      ]
+    },
+    "CQ08": {
+      "columns": [
+        "organization_id",
+        "organization_name",
+        "organization_type",
+        "event_id",
+        "event_name",
+        "role_code",
+        "stage_code",
+        "province_name",
+        "observation_tier",
+        "fact_id"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "organization_id": 0,
+        "organization_name": 0,
+        "organization_type": 0,
+        "event_id": 0,
+        "event_name": 0,
+        "role_code": 0,
+        "stage_code": 0,
+        "province_name": 0,
+        "observation_tier": 0,
+        "fact_id": 0
+      },
+      "row_count": 19581,
+      "rows_sha256": "7064d8648ff3269041ad462bda37cb45f3db07af55c3e2a9006475c32ecee894",
+      "preview": [
+        {
+          "organization_id": "IENT-c20a54f768428bb38a4c922c",
+          "organization_name": "141团",
+          "organization_type": "Organization",
+          "event_id": "IENT-273553c4d2f03559e8773b9c",
+          "event_name": "阳长突围战",
+          "role_code": "participant",
+          "stage_code": "socialist_revolution_and_construction",
+          "province_name": "贵州省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-d84ce195953b8fcb86461bb8"
+        },
+        {
+          "organization_id": "IENT-2e7a1b617612251d6cbe9429",
+          "organization_name": "186师",
+          "organization_type": "Organization",
+          "event_id": "IENT-092fb94171e8648af0275d2e",
+          "event_name": "黔东南剿匪",
+          "role_code": "executor",
+          "stage_code": "war_of_resistance",
+          "province_name": "贵州省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-f131318bbab61b98ae81c61a"
+        },
+        {
+          "organization_id": "IENT-2e7a1b617612251d6cbe9429",
+          "organization_name": "186师",
+          "organization_type": "Organization",
+          "event_id": "IENT-092fb94171e8648af0275d2e",
+          "event_name": "黔东南剿匪",
+          "role_code": "executor",
+          "stage_code": "liberation_war",
+          "province_name": "贵州省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-f131318bbab61b98ae81c61a"
+        },
+        {
+          "organization_id": "IENT-aaaedae7642b6e12053ab90c",
+          "organization_name": "2野5兵团49师",
+          "organization_type": "Organization",
+          "event_id": "IENT-2973eb511370006b587dc694",
+          "event_name": "天生关战斗",
+          "role_code": "leader",
+          "stage_code": "liberation_war",
+          "province_name": "云南省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-394ed09d41372261ea6ea3a5"
+        },
+        {
+          "organization_id": "IENT-aaaedae7642b6e12053ab90c",
+          "organization_name": "2野5兵团49师",
+          "organization_type": "Organization",
+          "event_id": "IENT-2973eb511370006b587dc694",
+          "event_name": "天生关战斗",
+          "role_code": "leader",
+          "stage_code": "liberation_war",
+          "province_name": "云南省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-5101dbabc22eb06d3e8adac6"
+        },
+        {
+          "organization_id": "IENT-aaaedae7642b6e12053ab90c",
+          "organization_name": "2野5兵团49师",
+          "organization_type": "Organization",
+          "event_id": "IENT-2973eb511370006b587dc694",
+          "event_name": "天生关战斗",
+          "role_code": "commander",
+          "stage_code": "liberation_war",
+          "province_name": "云南省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-929c8c6fa4cb7cbc958e70ce"
+        },
+        {
+          "organization_id": "IENT-aaaedae7642b6e12053ab90c",
+          "organization_name": "2野5兵团49师",
+          "organization_type": "Organization",
+          "event_id": "IENT-2973eb511370006b587dc694",
+          "event_name": "天生关战斗",
+          "role_code": "leader",
+          "stage_code": "socialist_revolution_and_construction",
+          "province_name": "云南省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-394ed09d41372261ea6ea3a5"
+        },
+        {
+          "organization_id": "IENT-aaaedae7642b6e12053ab90c",
+          "organization_name": "2野5兵团49师",
+          "organization_type": "Organization",
+          "event_id": "IENT-2973eb511370006b587dc694",
+          "event_name": "天生关战斗",
+          "role_code": "leader",
+          "stage_code": "socialist_revolution_and_construction",
+          "province_name": "云南省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-5101dbabc22eb06d3e8adac6"
+        },
+        {
+          "organization_id": "IENT-aaaedae7642b6e12053ab90c",
+          "organization_name": "2野5兵团49师",
+          "organization_type": "Organization",
+          "event_id": "IENT-2973eb511370006b587dc694",
+          "event_name": "天生关战斗",
+          "role_code": "commander",
+          "stage_code": "socialist_revolution_and_construction",
+          "province_name": "云南省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-929c8c6fa4cb7cbc958e70ce"
+        },
+        {
+          "organization_id": "IENT-b0a2a454b4b56d4deb0dc0ee",
+          "organization_name": "50军",
+          "organization_type": "Organization",
+          "event_id": "IENT-cb437e272fef05dd86115cdf",
+          "event_name": "鄂西战役",
+          "role_code": "participant",
+          "stage_code": "agrarian_revolution",
+          "province_name": "湖北省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-755c8e5ac06d94d0a1e14752"
+        },
+        {
+          "organization_id": "IENT-b0a2a454b4b56d4deb0dc0ee",
+          "organization_name": "50军",
+          "organization_type": "Organization",
+          "event_id": "IENT-cb437e272fef05dd86115cdf",
+          "event_name": "鄂西战役",
+          "role_code": "participant",
+          "stage_code": "war_of_resistance",
+          "province_name": "湖北省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-755c8e5ac06d94d0a1e14752"
+        },
+        {
+          "organization_id": "IENT-b0a2a454b4b56d4deb0dc0ee",
+          "organization_name": "50军",
+          "organization_type": "Organization",
+          "event_id": "IENT-cb437e272fef05dd86115cdf",
+          "event_name": "鄂西战役",
+          "role_code": "participant",
+          "stage_code": "liberation_war",
+          "province_name": "湖北省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-755c8e5ac06d94d0a1e14752"
+        }
+      ],
+      "elapsed_seconds": 0.324976,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq08_organization_event_regions.sql",
+      "file_sha256": "8575133d81b22d78d5930cf8d6f5710966665beaa3d367b2e87eb91a451f520e",
+      "required_columns": [
+        "organization_id",
+        "organization_name",
+        "organization_type",
+        "event_id",
+        "event_name",
+        "role_code",
+        "stage_code",
+        "province_name",
+        "observation_tier",
+        "fact_id"
+      ]
+    },
+    "CQ09": {
+      "columns": [
+        "place_id",
+        "place_name",
+        "place_type",
+        "event_id",
+        "event_name",
+        "role_code",
+        "stage_code",
+        "province_name",
+        "observation_tier",
+        "fact_id"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "place_id": 0,
+        "place_name": 0,
+        "place_type": 0,
+        "event_id": 0,
+        "event_name": 0,
+        "role_code": 0,
+        "stage_code": 0,
+        "province_name": 0,
+        "observation_tier": 0,
+        "fact_id": 0
+      },
+      "row_count": 21481,
+      "rows_sha256": "992e8bc4dea7af086d880179dab3237d97cc2547e164d4c458560fbd36df9641",
+      "preview": [
+        {
+          "place_id": "IENT-010c5f700bf810f17ba87dd5",
+          "place_name": "431电台",
+          "place_type": "Place",
+          "event_id": "IENT-7083ed9e71ebaa6c8bf73af7",
+          "event_name": "南京解放",
+          "role_code": "liberated_place",
+          "stage_code": "war_of_resistance",
+          "province_name": "江苏省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-eff8518cf4f54d143fcba32f"
+        },
+        {
+          "place_id": "IENT-010c5f700bf810f17ba87dd5",
+          "place_name": "431电台",
+          "place_type": "Place",
+          "event_id": "IENT-7083ed9e71ebaa6c8bf73af7",
+          "event_name": "南京解放",
+          "role_code": "liberated_place",
+          "stage_code": "liberation_war",
+          "province_name": "江苏省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-eff8518cf4f54d143fcba32f"
+        },
+        {
+          "place_id": "IENT-56c106d1e4bed39b7a455760",
+          "place_name": "丁堰",
+          "place_type": "Place",
+          "event_id": "IENT-1a08fa43132cd35d2147bb99",
+          "event_name": "苏中战役",
+          "role_code": "occurrence_place",
+          "stage_code": "agrarian_revolution",
+          "province_name": "江苏省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-dadf77934ccedc351eddba5c"
+        },
+        {
+          "place_id": "IENT-56c106d1e4bed39b7a455760",
+          "place_name": "丁堰",
+          "place_type": "Place",
+          "event_id": "IENT-87b234f83fc1b766b52cda9f",
+          "event_name": "战斗",
+          "role_code": "occurrence_place",
+          "stage_code": "war_of_resistance",
+          "province_name": "湖北省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-b3664d7fc703d7c7fc3f5716"
+        },
+        {
+          "place_id": "IENT-56c106d1e4bed39b7a455760",
+          "place_name": "丁堰",
+          "place_type": "Place",
+          "event_id": "IENT-1a08fa43132cd35d2147bb99",
+          "event_name": "苏中战役",
+          "role_code": "occurrence_place",
+          "stage_code": "war_of_resistance",
+          "province_name": "江苏省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-dadf77934ccedc351eddba5c"
+        },
+        {
+          "place_id": "IENT-56c106d1e4bed39b7a455760",
+          "place_name": "丁堰",
+          "place_type": "Place",
+          "event_id": "IENT-1a08fa43132cd35d2147bb99",
+          "event_name": "苏中战役",
+          "role_code": "occurrence_place",
+          "stage_code": "liberation_war",
+          "province_name": "江苏省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-dadf77934ccedc351eddba5c"
+        },
+        {
+          "place_id": "IENT-f19879abaf7d0362e2b917a3",
+          "place_name": "丁集区",
+          "place_type": "Place",
+          "event_id": "IENT-b493dd697d8149f769844af2",
+          "event_name": "解放战争时期",
+          "role_code": "occurrence_place",
+          "stage_code": "war_of_resistance",
+          "province_name": "安徽省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-576f4dae2255e1ecb6e8f4c7"
+        },
+        {
+          "place_id": "IENT-f19879abaf7d0362e2b917a3",
+          "place_name": "丁集区",
+          "place_type": "Place",
+          "event_id": "IENT-b493dd697d8149f769844af2",
+          "event_name": "解放战争时期",
+          "role_code": "occurrence_place",
+          "stage_code": "war_of_resistance",
+          "province_name": "江苏省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-576f4dae2255e1ecb6e8f4c7"
+        },
+        {
+          "place_id": "IENT-f19879abaf7d0362e2b917a3",
+          "place_name": "丁集区",
+          "place_type": "Place",
+          "event_id": "IENT-b493dd697d8149f769844af2",
+          "event_name": "解放战争时期",
+          "role_code": "occurrence_place",
+          "stage_code": "war_of_resistance",
+          "province_name": "安徽省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-85a136af6cc5593883573fef"
+        },
+        {
+          "place_id": "IENT-f19879abaf7d0362e2b917a3",
+          "place_name": "丁集区",
+          "place_type": "Place",
+          "event_id": "IENT-b493dd697d8149f769844af2",
+          "event_name": "解放战争时期",
+          "role_code": "occurrence_place",
+          "stage_code": "war_of_resistance",
+          "province_name": "江苏省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-85a136af6cc5593883573fef"
+        },
+        {
+          "place_id": "IENT-f19879abaf7d0362e2b917a3",
+          "place_name": "丁集区",
+          "place_type": "Place",
+          "event_id": "IENT-b493dd697d8149f769844af2",
+          "event_name": "解放战争时期",
+          "role_code": "occurrence_place",
+          "stage_code": "liberation_war",
+          "province_name": "安徽省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-576f4dae2255e1ecb6e8f4c7"
+        },
+        {
+          "place_id": "IENT-f19879abaf7d0362e2b917a3",
+          "place_name": "丁集区",
+          "place_type": "Place",
+          "event_id": "IENT-b493dd697d8149f769844af2",
+          "event_name": "解放战争时期",
+          "role_code": "occurrence_place",
+          "stage_code": "liberation_war",
+          "province_name": "江苏省",
+          "observation_tier": "relation_context",
+          "fact_id": "IFACT-576f4dae2255e1ecb6e8f4c7"
+        }
+      ],
+      "elapsed_seconds": 0.375314,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq09_place_event_timeline.sql",
+      "file_sha256": "f6d90340476026fd48723c7948074c1d9fc581c8c247fb8927f4d7fa513f33bc",
+      "required_columns": [
+        "place_id",
+        "place_name",
+        "place_type",
+        "event_id",
+        "event_name",
+        "role_code",
+        "stage_code",
+        "province_name",
+        "observation_tier",
+        "fact_id"
+      ]
+    },
+    "CQ10": {
+      "columns": [
+        "culture_subject_id",
+        "culture_subject_name",
+        "culture_subject_type",
+        "culture_form_code",
+        "stage_order",
+        "stage_label_zh",
+        "province_name",
+        "basin_section_name",
+        "observation_tier",
+        "supporting_fact_count",
+        "supporting_event_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "culture_subject_id": 0,
+        "culture_subject_name": 0,
+        "culture_subject_type": 0,
+        "culture_form_code": 0,
+        "stage_order": 0,
+        "stage_label_zh": 0,
+        "province_name": 0,
+        "basin_section_name": 0,
+        "observation_tier": 0,
+        "supporting_fact_count": 0,
+        "supporting_event_count": 0
+      },
+      "row_count": 11532,
+      "rows_sha256": "03f31d1b9c5f95b93c280043d420436c47384a139db0b234bc05770b965e719e",
+      "preview": [
+        {
+          "culture_subject_id": "IENT-ec9dc1820e883080ad3da3cb",
+          "culture_subject_name": "\"艳\"电",
+          "culture_subject_type": "Event",
+          "culture_form_code": "HistoricalPractice",
+          "stage_order": 4,
+          "stage_label_zh": "解放战争",
+          "province_name": "湖北省",
+          "basin_section_name": "中游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 2,
+          "supporting_event_count": 1
+        },
+        {
+          "culture_subject_id": "IENT-43d6e5c31e01b666533d3642",
+          "culture_subject_name": "'一二·一'惨案",
+          "culture_subject_type": "Event",
+          "culture_form_code": "HistoricalPractice",
+          "stage_order": 3,
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "云南省",
+          "basin_section_name": "上游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 23,
+          "supporting_event_count": 1
+        },
+        {
+          "culture_subject_id": "IENT-43d6e5c31e01b666533d3642",
+          "culture_subject_name": "'一二·一'惨案",
+          "culture_subject_type": "Event",
+          "culture_form_code": "HistoricalPractice",
+          "stage_order": 4,
+          "stage_label_zh": "解放战争",
+          "province_name": "云南省",
+          "basin_section_name": "上游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 23,
+          "supporting_event_count": 1
+        },
+        {
+          "culture_subject_id": "IENT-537ec31ae7772da7098f9a99",
+          "culture_subject_name": "'一二·一'爱国民主运动",
+          "culture_subject_type": "Event",
+          "culture_form_code": "HistoricalPractice",
+          "stage_order": 3,
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "云南省",
+          "basin_section_name": "上游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 3,
+          "supporting_event_count": 1
+        },
+        {
+          "culture_subject_id": "IENT-537ec31ae7772da7098f9a99",
+          "culture_subject_name": "'一二·一'爱国民主运动",
+          "culture_subject_type": "Event",
+          "culture_form_code": "HistoricalPractice",
+          "stage_order": 4,
+          "stage_label_zh": "解放战争",
+          "province_name": "云南省",
+          "basin_section_name": "上游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 3,
+          "supporting_event_count": 1
+        },
+        {
+          "culture_subject_id": "IENT-eca9e2bd4c1deb770e9f8e82",
+          "culture_subject_name": "'七君子'事件",
+          "culture_subject_type": "Event",
+          "culture_form_code": "HistoricalPractice",
+          "stage_order": 5,
+          "stage_label_zh": "社会主义革命和建设",
+          "province_name": "重庆市",
+          "basin_section_name": "上游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 10,
+          "supporting_event_count": 1
+        },
+        {
+          "culture_subject_id": "IENT-eca9e2bd4c1deb770e9f8e82",
+          "culture_subject_name": "'七君子'事件",
+          "culture_subject_type": "Event",
+          "culture_form_code": "HistoricalPractice",
+          "stage_order": 6,
+          "stage_label_zh": "改革开放和社会主义现代化建设",
+          "province_name": "重庆市",
+          "basin_section_name": "上游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 10,
+          "supporting_event_count": 1
+        },
+        {
+          "culture_subject_id": "IENT-f3d69c1d2908392eca5666ef",
+          "culture_subject_name": "'中秋起义'",
+          "culture_subject_type": "Event",
+          "culture_form_code": "HistoricalPractice",
+          "stage_order": 4,
+          "stage_label_zh": "解放战争",
+          "province_name": "四川省",
+          "basin_section_name": "上游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 2,
+          "supporting_event_count": 1
+        },
+        {
+          "culture_subject_id": "IENT-6854dd1b255afdf5d242c848",
+          "culture_subject_name": "'二七'运动",
+          "culture_subject_type": "Event",
+          "culture_form_code": "HistoricalPractice",
+          "stage_order": 1,
+          "stage_label_zh": "建党与大革命",
+          "province_name": "湖北省",
+          "basin_section_name": "中游",
+          "observation_tier": "asserted_event_spacetime",
+          "supporting_fact_count": 4,
+          "supporting_event_count": 1
+        },
+        {
+          "culture_subject_id": "IENT-893b83b9dca68bce9139020c",
+          "culture_subject_name": "'五反'运动",
+          "culture_subject_type": "Event",
+          "culture_form_code": "HistoricalPractice",
+          "stage_order": 4,
+          "stage_label_zh": "解放战争",
+          "province_name": "上海市",
+          "basin_section_name": "下游",
+          "observation_tier": "asserted_event_spacetime",
+          "supporting_fact_count": 8,
+          "supporting_event_count": 1
+        },
+        {
+          "culture_subject_id": "IENT-893b83b9dca68bce9139020c",
+          "culture_subject_name": "'五反'运动",
+          "culture_subject_type": "Event",
+          "culture_form_code": "HistoricalPractice",
+          "stage_order": 5,
+          "stage_label_zh": "社会主义革命和建设",
+          "province_name": "上海市",
+          "basin_section_name": "下游",
+          "observation_tier": "asserted_event_spacetime",
+          "supporting_fact_count": 8,
+          "supporting_event_count": 1
+        },
+        {
+          "culture_subject_id": "IENT-e00b6c52f28db2c53999b3f5",
+          "culture_subject_name": "'六一'大逮捕事件",
+          "culture_subject_type": "Event",
+          "culture_form_code": "HistoricalPractice",
+          "stage_order": 3,
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "重庆市",
+          "basin_section_name": "上游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 2,
+          "supporting_event_count": 1
+        }
+      ],
+      "elapsed_seconds": 0.196721,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq10_culture_state_trajectory.sql",
+      "file_sha256": "eb04d0b5df25b172ea7f7b0d69705020085862fd310d06c3881042d08cb32f40",
+      "required_columns": [
+        "culture_subject_id",
+        "culture_subject_name",
+        "culture_subject_type",
+        "culture_form_code",
+        "stage_order",
+        "stage_label_zh",
+        "province_name",
+        "basin_section_name",
+        "observation_tier",
+        "supporting_fact_count",
+        "supporting_event_count"
+      ]
+    },
+    "CQ11": {
+      "columns": [
+        "transition_id",
+        "transition_type",
+        "from_subject",
+        "from_stage",
+        "from_province",
+        "to_subject",
+        "to_stage",
+        "to_province",
+        "supporting_fact_count",
+        "confidence",
+        "review_status"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "transition_id": 0,
+        "transition_type": 0,
+        "from_subject": 0,
+        "from_stage": 0,
+        "from_province": 0,
+        "to_subject": 0,
+        "to_stage": 0,
+        "to_province": 0,
+        "supporting_fact_count": 0,
+        "confidence": 0,
+        "review_status": 0
+      },
+      "row_count": 4,
+      "rows_sha256": "67df22cc4ea9095f1daf88d46ef380cea0d87c0c2bc8fc45df2911d9d979c2c3",
+      "preview": [
+        {
+          "transition_id": "TRANS-ce230d0f973ea98c118ee9eb",
+          "transition_type": "memorialized_as",
+          "from_subject": "秋收起义",
+          "from_stage": "土地革命战争",
+          "from_province": "江西省",
+          "to_subject": "铜鼓纪念馆",
+          "to_stage": "土地革命战争",
+          "to_province": "江西省",
+          "supporting_fact_count": 1,
+          "confidence": 0.95,
+          "review_status": "published_structural_explicit"
+        },
+        {
+          "transition_id": "TRANS-ac018e34c62687dbcb193db5",
+          "transition_type": "memorialized_as",
+          "from_subject": "红军长征",
+          "from_stage": "土地革命战争",
+          "from_province": "云南省",
+          "to_subject": "嵩明红军长征纪念碑",
+          "to_stage": "土地革命战争",
+          "to_province": "云南省",
+          "supporting_fact_count": 1,
+          "confidence": 0.95,
+          "review_status": "published_structural_explicit"
+        },
+        {
+          "transition_id": "TRANS-7f3cb326fe1c121d4251ccfc",
+          "transition_type": "memorialized_as",
+          "from_subject": "红军长征",
+          "from_stage": "土地革命战争",
+          "from_province": "云南省",
+          "to_subject": "扎西红军纪念馆",
+          "to_stage": "土地革命战争",
+          "to_province": "云南省",
+          "supporting_fact_count": 1,
+          "confidence": 0.95,
+          "review_status": "published_structural_explicit"
+        },
+        {
+          "transition_id": "TRANS-ee408a5ebc2a56f39a1d2bdf",
+          "transition_type": "memorialized_as",
+          "from_subject": "苏南反顽战役",
+          "from_stage": "全民族抗日战争",
+          "from_province": "江苏省",
+          "to_subject": "苏南反顽战役阵亡将士纪念塔",
+          "to_stage": "全民族抗日战争",
+          "to_province": "江苏省",
+          "supporting_fact_count": 2,
+          "confidence": 0.95,
+          "review_status": "published_structural_explicit"
+        }
+      ],
+      "elapsed_seconds": 0.000474,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq11_published_transitions.sql",
+      "file_sha256": "57b56fef68c83f405ea3a37168288bef55bbd7d35aafc67a3eb30583d3606472",
+      "required_columns": [
+        "transition_id",
+        "transition_type",
+        "from_subject",
+        "from_stage",
+        "from_province",
+        "to_subject",
+        "to_stage",
+        "to_province",
+        "supporting_fact_count",
+        "confidence",
+        "review_status"
+      ]
+    },
+    "CQ12": {
+      "columns": [
+        "publication_gate_reason",
+        "publication_eligible",
+        "candidate_count",
+        "distinct_state_pairs",
+        "distinct_supporting_facts"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "publication_gate_reason": 0,
+        "publication_eligible": 0,
+        "candidate_count": 0,
+        "distinct_state_pairs": 0,
+        "distinct_supporting_facts": 0
+      },
+      "row_count": 4,
+      "rows_sha256": "7143026519c46c1537814e859d4e53392b8205ba6d8703f7b7f16b5bec4917b3",
+      "preview": [
+        {
+          "publication_gate_reason": "unique_explicit_spatiotemporal_match",
+          "publication_eligible": 1,
+          "candidate_count": 4,
+          "distinct_state_pairs": 4,
+          "distinct_supporting_facts": 4
+        },
+        {
+          "publication_gate_reason": "unique_trusted_state_pair",
+          "publication_eligible": 1,
+          "candidate_count": 1,
+          "distinct_state_pairs": 1,
+          "distinct_supporting_facts": 1
+        },
+        {
+          "publication_gate_reason": "nontrusted_state",
+          "publication_eligible": 0,
+          "candidate_count": 105,
+          "distinct_state_pairs": 65,
+          "distinct_supporting_facts": 21
+        },
+        {
+          "publication_gate_reason": "ambiguous_spatiotemporal_expansion",
+          "publication_eligible": 0,
+          "candidate_count": 49,
+          "distinct_state_pairs": 32,
+          "distinct_supporting_facts": 10
+        }
+      ],
+      "elapsed_seconds": 0.000744,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq12_transition_candidate_gates.sql",
+      "file_sha256": "87ca78a6112d49e0257c2ef7377ff47b71adf6b71cb3a35c0793f07d9219870c",
+      "required_columns": [
+        "publication_gate_reason",
+        "publication_eligible",
+        "candidate_count",
+        "distinct_state_pairs",
+        "distinct_supporting_facts"
+      ]
+    },
+    "CQ13": {
+      "columns": [
+        "publication_status",
+        "candidate_or_transition_id",
+        "transition_type",
+        "source_subject",
+        "source_type",
+        "target_subject",
+        "target_type",
+        "stage_label_zh",
+        "province_name",
+        "supporting_fact_id"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "publication_status": 0,
+        "candidate_or_transition_id": 0,
+        "transition_type": 0,
+        "source_subject": 0,
+        "source_type": 0,
+        "target_subject": 0,
+        "target_type": 0,
+        "stage_label_zh": 0,
+        "province_name": 0,
+        "supporting_fact_id": 0
+      },
+      "row_count": 145,
+      "rows_sha256": "51770477762e1c2d0b93942c604db20b5ecfd7dd4dd855560a64ad1434a48b90",
+      "preview": [
+        {
+          "publication_status": "published",
+          "candidate_or_transition_id": "TRANS-ce230d0f973ea98c118ee9eb",
+          "transition_type": "memorialized_as",
+          "source_subject": "秋收起义",
+          "source_type": "Event",
+          "target_subject": "铜鼓纪念馆",
+          "target_type": "Institution",
+          "stage_label_zh": "土地革命战争",
+          "province_name": "江西省",
+          "supporting_fact_id": "IFACT-8f1861ab05f9c940fcbf091c"
+        },
+        {
+          "publication_status": "published",
+          "candidate_or_transition_id": "TRANS-ac018e34c62687dbcb193db5",
+          "transition_type": "memorialized_as",
+          "source_subject": "红军长征",
+          "source_type": "Event",
+          "target_subject": "嵩明红军长征纪念碑",
+          "target_type": "Artifact",
+          "stage_label_zh": "土地革命战争",
+          "province_name": "云南省",
+          "supporting_fact_id": "IFACT-a916bd44cc57c7b588acbfa3"
+        },
+        {
+          "publication_status": "published",
+          "candidate_or_transition_id": "TRANS-7f3cb326fe1c121d4251ccfc",
+          "transition_type": "memorialized_as",
+          "source_subject": "红军长征",
+          "source_type": "Event",
+          "target_subject": "扎西红军纪念馆",
+          "target_type": "Institution",
+          "stage_label_zh": "土地革命战争",
+          "province_name": "云南省",
+          "supporting_fact_id": "IFACT-c575407082a8be4510971dce"
+        },
+        {
+          "publication_status": "published",
+          "candidate_or_transition_id": "TRANS-ee408a5ebc2a56f39a1d2bdf",
+          "transition_type": "memorialized_as",
+          "source_subject": "苏南反顽战役",
+          "source_type": "Event",
+          "target_subject": "苏南反顽战役阵亡将士纪念塔",
+          "target_type": "Artifact",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "江苏省",
+          "supporting_fact_id": "IFACT-204f14ae141c9608cc06f611"
+        },
+        {
+          "publication_status": "published",
+          "candidate_or_transition_id": "TRANS-ee408a5ebc2a56f39a1d2bdf",
+          "transition_type": "memorialized_as",
+          "source_subject": "苏南反顽战役",
+          "source_type": "Event",
+          "target_subject": "苏南反顽战役阵亡将士纪念塔",
+          "target_type": "Artifact",
+          "stage_label_zh": "全民族抗日战争",
+          "province_name": "江苏省",
+          "supporting_fact_id": "IFACT-18e20ffa2139b6a71adcab79"
+        },
+        {
+          "publication_status": "candidate",
+          "candidate_or_transition_id": "TRANS-CAND-38b003b6c133944a86817daa",
+          "transition_type": "memorialized_as",
+          "source_subject": "崇德乡农民武装暴动",
+          "source_type": "Event",
+          "target_subject": "向少怀墓碑",
+          "target_type": "Artifact",
+          "stage_label_zh": "土地革命战争",
+          "province_name": "重庆市",
+          "supporting_fact_id": "IFACT-2e72a8641bd885a063ab0879"
+        },
+        {
+          "publication_status": "candidate",
+          "candidate_or_transition_id": "TRANS-CAND-9c8c1620849bbde7854e69e2",
+          "transition_type": "memorialized_as",
+          "source_subject": "崇德乡农民武装暴动",
+          "source_type": "Event",
+          "target_subject": "向少怀墓碑",
+          "target_type": "Artifact",
+          "stage_label_zh": "建党与大革命",
+          "province_name": "重庆市",
+          "supporting_fact_id": "IFACT-2e72a8641bd885a063ab0879"
+        },
+        {
+          "publication_status": "candidate",
+          "candidate_or_transition_id": "TRANS-CAND-0d2f7565a08f8d320253c1ec",
+          "transition_type": "memorialized_as",
+          "source_subject": "扎西会议",
+          "source_type": "Event",
+          "target_subject": "鸡鸣三省红军纪念碑",
+          "target_type": "Artifact",
+          "stage_label_zh": "土地革命战争",
+          "province_name": "江苏省",
+          "supporting_fact_id": "IFACT-5f8a839bb1b31ed717be055b"
+        },
+        {
+          "publication_status": "candidate",
+          "candidate_or_transition_id": "TRANS-CAND-1ab898312f0d384634c64c46",
+          "transition_type": "memorialized_as",
+          "source_subject": "扎西会议",
+          "source_type": "Event",
+          "target_subject": "鸡鸣三省红军纪念碑",
+          "target_type": "Artifact",
+          "stage_label_zh": "土地革命战争",
+          "province_name": "云南省",
+          "supporting_fact_id": "IFACT-5f8a839bb1b31ed717be055b"
+        },
+        {
+          "publication_status": "candidate",
+          "candidate_or_transition_id": "TRANS-CAND-22c7047de7763504a538fe52",
+          "transition_type": "memorialized_as",
+          "source_subject": "扎西会议",
+          "source_type": "Event",
+          "target_subject": "鸡鸣三省红军纪念碑",
+          "target_type": "Artifact",
+          "stage_label_zh": "土地革命战争",
+          "province_name": "上海市",
+          "supporting_fact_id": "IFACT-35becf1a0e377b4e0c749faa"
+        },
+        {
+          "publication_status": "candidate",
+          "candidate_or_transition_id": "TRANS-CAND-36efc37c040242878fbacc43",
+          "transition_type": "memorialized_as",
+          "source_subject": "扎西会议",
+          "source_type": "Event",
+          "target_subject": "鸡鸣三省红军纪念碑",
+          "target_type": "Artifact",
+          "stage_label_zh": "土地革命战争",
+          "province_name": "贵州省",
+          "supporting_fact_id": "IFACT-35becf1a0e377b4e0c749faa"
+        },
+        {
+          "publication_status": "candidate",
+          "candidate_or_transition_id": "TRANS-CAND-6aab7df35d41daa4f36d84fa",
+          "transition_type": "memorialized_as",
+          "source_subject": "扎西会议",
+          "source_type": "Event",
+          "target_subject": "鸡鸣三省红军纪念碑",
+          "target_type": "Artifact",
+          "stage_label_zh": "土地革命战争",
+          "province_name": "四川省",
+          "supporting_fact_id": "IFACT-5f8a839bb1b31ed717be055b"
+        }
+      ],
+      "elapsed_seconds": 0.003839,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq13_event_materialization.sql",
+      "file_sha256": "0c3fdd6922e6da1737b92e21437b13fb946335db08b68ed7b0bf35452efcf3e6",
+      "required_columns": [
+        "publication_status",
+        "candidate_or_transition_id",
+        "transition_type",
+        "source_subject",
+        "source_type",
+        "target_subject",
+        "target_type",
+        "stage_label_zh",
+        "province_name",
+        "supporting_fact_id"
+      ]
+    },
+    "CQ14": {
+      "columns": [
+        "spirit_id",
+        "spirit_name",
+        "value_facet_id",
+        "value_facet_name",
+        "relation_code",
+        "fact_id"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "spirit_id": 0,
+        "spirit_name": 0,
+        "value_facet_id": 0,
+        "value_facet_name": 0,
+        "relation_code": 0,
+        "fact_id": 0
+      },
+      "row_count": 1386,
+      "rows_sha256": "82d66d84839b3eaf5ed23f7b9b31a52a3b0cd9ab7069c617c40827438ea2348d",
+      "preview": [
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "value_facet_id": "ITOPIC-700d67d6aac8d4cd3340ccf3",
+          "value_facet_name": "勇于登攀",
+          "relation_code": "has_value_facet",
+          "fact_id": "IFACT-05664bcb600756e99e0e9759"
+        },
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "value_facet_id": "ITOPIC-c8c71417eec9690b740e7f02",
+          "value_facet_name": "大力协同",
+          "relation_code": "has_value_facet",
+          "fact_id": "IFACT-485de5526da7700da7b3728e"
+        },
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "value_facet_id": "ITOPIC-edac191681e5bdbf73ce6430",
+          "value_facet_name": "无私奉献",
+          "relation_code": "has_value_facet",
+          "fact_id": "IFACT-95304eddfafe1f5940ef5bf6"
+        },
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "value_facet_id": "ITOPIC-02ed6842c504f48148e23e66",
+          "value_facet_name": "热爱祖国",
+          "relation_code": "has_value_facet",
+          "fact_id": "IFACT-3d6b5a581534ab320dbe6993"
+        },
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "value_facet_id": "ITOPIC-41f342eb70267a5d75df97dd",
+          "value_facet_name": "自力更生",
+          "relation_code": "has_value_facet",
+          "fact_id": "IFACT-bc19d2dd35eb3b72ee43459e"
+        },
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "value_facet_id": "ITOPIC-affc739b0434a33cd88b9889",
+          "value_facet_name": "艰苦奋斗",
+          "relation_code": "has_value_facet",
+          "fact_id": "IFACT-5c48ee03038fd12cdd839e63"
+        },
+        {
+          "spirit_id": "ITOPIC-b770b814caa54fc847c19c74",
+          "spirit_name": "\"两路\" 精神",
+          "value_facet_id": "ITOPIC-6d47a5505c1a6a9b0c35c875",
+          "value_facet_name": "一不怕苦",
+          "relation_code": "has_value_facet",
+          "fact_id": "IFACT-85a4730616d3d060df8ef26c"
+        },
+        {
+          "spirit_id": "ITOPIC-b770b814caa54fc847c19c74",
+          "spirit_name": "\"两路\" 精神",
+          "value_facet_id": "ITOPIC-93267bc2f577feb96ab5e124",
+          "value_facet_name": "不怕死",
+          "relation_code": "has_value_facet",
+          "fact_id": "IFACT-f2493a3836b7276d32e2a9cf"
+        },
+        {
+          "spirit_id": "ITOPIC-b770b814caa54fc847c19c74",
+          "spirit_name": "\"两路\" 精神",
+          "value_facet_id": "ITOPIC-74fb8de0351a13e42c27e58d",
+          "value_facet_name": "不怕苦",
+          "relation_code": "has_value_facet",
+          "fact_id": "IFACT-e4e0e6c1996af01c0555fc25"
+        },
+        {
+          "spirit_id": "ITOPIC-b770b814caa54fc847c19c74",
+          "spirit_name": "\"两路\" 精神",
+          "value_facet_id": "ITOPIC-b1f6c522f7d521a49b20bf9e",
+          "value_facet_name": "二不怕死",
+          "relation_code": "has_value_facet",
+          "fact_id": "IFACT-1e13c47dac2e089f69220bae"
+        },
+        {
+          "spirit_id": "ITOPIC-b770b814caa54fc847c19c74",
+          "spirit_name": "\"两路\" 精神",
+          "value_facet_id": "ITOPIC-4ffade3865809a3025ac017e",
+          "value_facet_name": "军民一家",
+          "relation_code": "has_value_facet",
+          "fact_id": "IFACT-322863890c94d037a6e763e3"
+        },
+        {
+          "spirit_id": "ITOPIC-b770b814caa54fc847c19c74",
+          "spirit_name": "\"两路\" 精神",
+          "value_facet_id": "ITOPIC-2c8d8db2fcad0541e2344a50",
+          "value_facet_name": "民族团结",
+          "relation_code": "has_value_facet",
+          "fact_id": "IFACT-a94d05a2d86d8b780f421f9c"
+        }
+      ],
+      "elapsed_seconds": 0.015833,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq14_spirit_value_facets.sql",
+      "file_sha256": "c88788feb896331821fe55a0c12d1ef416e0c85b09304d1a38919d7e88284e39",
+      "required_columns": [
+        "spirit_id",
+        "spirit_name",
+        "value_facet_id",
+        "value_facet_name",
+        "relation_code",
+        "fact_id"
+      ]
+    },
+    "CQ15": {
+      "columns": [
+        "spirit_id",
+        "spirit_name",
+        "target_id",
+        "target_name",
+        "target_type",
+        "predicate",
+        "research_tier",
+        "fact_id"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "spirit_id": 0,
+        "spirit_name": 0,
+        "target_id": 0,
+        "target_name": 0,
+        "target_type": 0,
+        "predicate": 0,
+        "research_tier": 0,
+        "fact_id": 0
+      },
+      "row_count": 4331,
+      "rows_sha256": "dea4aa80419fbd5e05654a82c49ad3620c2c39932d0e30b20ca0fad1658ec4fe",
+      "preview": [
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "target_id": "IENT-d24167cd34bc05e8b363a140",
+          "target_name": "四川省",
+          "target_type": "Place",
+          "predicate": "raw:体现于地域",
+          "research_tier": "contextual",
+          "fact_id": "IFACT-ee75cc4891561b3e74bc46f2"
+        },
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "target_id": "IENT-41343cd1b9cb8cfb896aa793",
+          "target_name": "青海省",
+          "target_type": "Place",
+          "predicate": "raw:体现于地域",
+          "research_tier": "contextual",
+          "fact_id": "IFACT-75388d54923a6b15581f66ac"
+        },
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "target_id": "ITOPIC-700d67d6aac8d4cd3340ccf3",
+          "target_name": "勇于登攀",
+          "target_type": "ValueFacet",
+          "predicate": "has_value_facet",
+          "research_tier": "strict_semantic",
+          "fact_id": "IFACT-05664bcb600756e99e0e9759"
+        },
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "target_id": "ITOPIC-c8c71417eec9690b740e7f02",
+          "target_name": "大力协同",
+          "target_type": "ValueFacet",
+          "predicate": "has_value_facet",
+          "research_tier": "strict_semantic",
+          "fact_id": "IFACT-485de5526da7700da7b3728e"
+        },
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "target_id": "ITOPIC-edac191681e5bdbf73ce6430",
+          "target_name": "无私奉献",
+          "target_type": "ValueFacet",
+          "predicate": "has_value_facet",
+          "research_tier": "strict_semantic",
+          "fact_id": "IFACT-95304eddfafe1f5940ef5bf6"
+        },
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "target_id": "ITOPIC-02ed6842c504f48148e23e66",
+          "target_name": "热爱祖国",
+          "target_type": "ValueFacet",
+          "predicate": "has_value_facet",
+          "research_tier": "strict_semantic",
+          "fact_id": "IFACT-3d6b5a581534ab320dbe6993"
+        },
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "target_id": "ITOPIC-41f342eb70267a5d75df97dd",
+          "target_name": "自力更生",
+          "target_type": "ValueFacet",
+          "predicate": "has_value_facet",
+          "research_tier": "strict_semantic",
+          "fact_id": "IFACT-bc19d2dd35eb3b72ee43459e"
+        },
+        {
+          "spirit_id": "ITOPIC-65f692e6a94f727993291b4e",
+          "spirit_name": "\"两弹一星\" 精神",
+          "target_id": "ITOPIC-affc739b0434a33cd88b9889",
+          "target_name": "艰苦奋斗",
+          "target_type": "ValueFacet",
+          "predicate": "has_value_facet",
+          "research_tier": "strict_semantic",
+          "fact_id": "IFACT-5c48ee03038fd12cdd839e63"
+        },
+        {
+          "spirit_id": "ITOPIC-b770b814caa54fc847c19c74",
+          "spirit_name": "\"两路\" 精神",
+          "target_id": "IENT-d24167cd34bc05e8b363a140",
+          "target_name": "四川省",
+          "target_type": "Place",
+          "predicate": "raw:体现于地域",
+          "research_tier": "contextual",
+          "fact_id": "IFACT-2d325107fc5ccb5d2ad91197"
+        },
+        {
+          "spirit_id": "ITOPIC-b770b814caa54fc847c19c74",
+          "spirit_name": "\"两路\" 精神",
+          "target_id": "ITOPIC-5cb67f7709c6fda685b0956c",
+          "target_name": "西藏自治区",
+          "target_type": "Place",
+          "predicate": "raw:体现于地域",
+          "research_tier": "contextual",
+          "fact_id": "IFACT-213da7b467d33f2e7891e806"
+        },
+        {
+          "spirit_id": "ITOPIC-b770b814caa54fc847c19c74",
+          "spirit_name": "\"两路\" 精神",
+          "target_id": "ITOPIC-5cb67f7709c6fda685b0956c",
+          "target_name": "西藏自治区",
+          "target_type": "Place",
+          "predicate": "raw:体现于地域",
+          "research_tier": "contextual",
+          "fact_id": "IFACT-68201ac6d78c2819d1b5a421"
+        },
+        {
+          "spirit_id": "ITOPIC-b770b814caa54fc847c19c74",
+          "spirit_name": "\"两路\" 精神",
+          "target_id": "IENT-41343cd1b9cb8cfb896aa793",
+          "target_name": "青海省",
+          "target_type": "Place",
+          "predicate": "raw:体现于地域",
+          "research_tier": "contextual",
+          "fact_id": "IFACT-08dc81f9f58794acdd5e6f01"
+        }
+      ],
+      "elapsed_seconds": 0.230161,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq15_spirit_manifestations.sql",
+      "file_sha256": "2e70ee3cbad718ff084d47c0d9f75614b7295eef86370d762718d21a53a0cb80",
+      "required_columns": [
+        "spirit_id",
+        "spirit_name",
+        "target_id",
+        "target_name",
+        "target_type",
+        "predicate",
+        "research_tier",
+        "fact_id"
+      ]
+    },
+    "CQ16": {
+      "columns": [
+        "value_facet_id",
+        "value_facet_name",
+        "stage_count",
+        "region_count",
+        "first_observed_stage_order",
+        "last_observed_stage_order",
+        "state_count",
+        "supporting_fact_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "value_facet_id": 0,
+        "value_facet_name": 0,
+        "stage_count": 0,
+        "region_count": 0,
+        "first_observed_stage_order": 0,
+        "last_observed_stage_order": 0,
+        "state_count": 0,
+        "supporting_fact_count": 0
+      },
+      "row_count": 4,
+      "rows_sha256": "c8b27a082f52d4a90c30a46168a5a4f2f5ed83b102f87f5a999fd0c988097ed2",
+      "preview": [
+        {
+          "value_facet_id": "ITOPIC-c194bf845127c8804378fc09",
+          "value_facet_name": "团结统一",
+          "stage_count": 1,
+          "region_count": 7,
+          "first_observed_stage_order": 2,
+          "last_observed_stage_order": 2,
+          "state_count": 133,
+          "supporting_fact_count": 1
+        },
+        {
+          "value_facet_id": "ITOPIC-56b6a8b82841adaac4d27f4a",
+          "value_facet_name": "坚定信念",
+          "stage_count": 1,
+          "region_count": 7,
+          "first_observed_stage_order": 2,
+          "last_observed_stage_order": 2,
+          "state_count": 133,
+          "supporting_fact_count": 1
+        },
+        {
+          "value_facet_id": "ITOPIC-e97799547ffd21ac8c1b4613",
+          "value_facet_name": "坚持真理",
+          "stage_count": 1,
+          "region_count": 7,
+          "first_observed_stage_order": 2,
+          "last_observed_stage_order": 2,
+          "state_count": 133,
+          "supporting_fact_count": 1
+        },
+        {
+          "value_facet_id": "ITOPIC-93fd5c35b2c871d45e40ad1d",
+          "value_facet_name": "独立自主",
+          "stage_count": 1,
+          "region_count": 7,
+          "first_observed_stage_order": 2,
+          "last_observed_stage_order": 2,
+          "state_count": 133,
+          "supporting_fact_count": 1
+        }
+      ],
+      "elapsed_seconds": 0.002237,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq16_value_persistence.sql",
+      "file_sha256": "e4edc9a0e3d2c4c991f2c247f341987d4bbc9feaee2837580a105960086dc921",
+      "required_columns": [
+        "value_facet_id",
+        "value_facet_name",
+        "stage_count",
+        "region_count",
+        "first_observed_stage_order",
+        "last_observed_stage_order",
+        "state_count",
+        "supporting_fact_count"
+      ]
+    },
+    "CQ17": {
+      "columns": [
+        "media_type",
+        "work_count",
+        "share",
+        "classification_method_count",
+        "unknown_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "media_type": 0,
+        "work_count": 0,
+        "share": 0,
+        "classification_method_count": 0,
+        "unknown_count": 0
+      },
+      "row_count": 28,
+      "rows_sha256": "a8606e397a1582f5bce9b76f802597d0406368ca158836df87ea0ea98d723449",
+      "preview": [
+        {
+          "media_type": "歌曲",
+          "work_count": 275,
+          "share": 0.269872,
+          "classification_method_count": 2,
+          "unknown_count": 0
+        },
+        {
+          "media_type": "小说",
+          "work_count": 165,
+          "share": 0.161923,
+          "classification_method_count": 1,
+          "unknown_count": 0
+        },
+        {
+          "media_type": "话剧",
+          "work_count": 156,
+          "share": 0.153091,
+          "classification_method_count": 1,
+          "unknown_count": 0
+        },
+        {
+          "media_type": "电影",
+          "work_count": 74,
+          "share": 0.07262,
+          "classification_method_count": 1,
+          "unknown_count": 0
+        },
+        {
+          "media_type": "诗歌",
+          "work_count": 69,
+          "share": 0.067713,
+          "classification_method_count": 2,
+          "unknown_count": 0
+        },
+        {
+          "media_type": "未知",
+          "work_count": 57,
+          "share": 0.055937,
+          "classification_method_count": 1,
+          "unknown_count": 57
+        },
+        {
+          "media_type": "戏剧",
+          "work_count": 55,
+          "share": 0.053974,
+          "classification_method_count": 1,
+          "unknown_count": 0
+        },
+        {
+          "media_type": "剧本",
+          "work_count": 46,
+          "share": 0.045142,
+          "classification_method_count": 1,
+          "unknown_count": 0
+        },
+        {
+          "media_type": "歌剧",
+          "work_count": 28,
+          "share": 0.027478,
+          "classification_method_count": 1,
+          "unknown_count": 0
+        },
+        {
+          "media_type": "舞蹈",
+          "work_count": 24,
+          "share": 0.023553,
+          "classification_method_count": 1,
+          "unknown_count": 0
+        },
+        {
+          "media_type": "纪录片",
+          "work_count": 14,
+          "share": 0.013739,
+          "classification_method_count": 1,
+          "unknown_count": 0
+        },
+        {
+          "media_type": "电视剧",
+          "work_count": 8,
+          "share": 0.007851,
+          "classification_method_count": 1,
+          "unknown_count": 0
+        }
+      ],
+      "elapsed_seconds": 0.007294,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq17_creative_media_composition.sql",
+      "file_sha256": "d505edea760a576634759b890e57f58396629fdeeff5860c598342f9c13fd8d7",
+      "required_columns": [
+        "media_type",
+        "work_count",
+        "share",
+        "classification_method_count",
+        "unknown_count"
+      ]
+    },
+    "CQ18": {
+      "columns": [
+        "work_id",
+        "work_name",
+        "media_type",
+        "stage_order",
+        "stage_label_zh",
+        "province_name",
+        "basin_section_name",
+        "observation_tier",
+        "supporting_fact_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "work_id": 0,
+        "work_name": 0,
+        "media_type": 0,
+        "stage_order": 0,
+        "stage_label_zh": 0,
+        "province_name": 0,
+        "basin_section_name": 0,
+        "observation_tier": 0,
+        "supporting_fact_count": 0
+      },
+      "row_count": 53,
+      "rows_sha256": "382fd8c5e0f2a92784a43b96e6453cd7038f76d758ce9fa0b66acb1ddf66bfa0",
+      "preview": [
+        {
+          "work_id": "ITOPIC-a68f8a3c4b1f6c5e6bfee285",
+          "work_name": "戏醉春秋",
+          "media_type": "剧本",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "上海市",
+          "basin_section_name": "下游",
+          "observation_tier": "trusted_event_spacetime",
+          "supporting_fact_count": 13
+        },
+        {
+          "work_id": "ITOPIC-a68f8a3c4b1f6c5e6bfee285",
+          "work_name": "戏醉春秋",
+          "media_type": "剧本",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "云南省",
+          "basin_section_name": "上游",
+          "observation_tier": "trusted_event_spacetime",
+          "supporting_fact_count": 13
+        },
+        {
+          "work_id": "ITOPIC-a68f8a3c4b1f6c5e6bfee285",
+          "work_name": "戏醉春秋",
+          "media_type": "剧本",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "四川省",
+          "basin_section_name": "上游",
+          "observation_tier": "trusted_event_spacetime",
+          "supporting_fact_count": 11
+        },
+        {
+          "work_id": "ITOPIC-a68f8a3c4b1f6c5e6bfee285",
+          "work_name": "戏醉春秋",
+          "media_type": "剧本",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "江苏省",
+          "basin_section_name": "下游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 6
+        },
+        {
+          "work_id": "ITOPIC-a68f8a3c4b1f6c5e6bfee285",
+          "work_name": "戏醉春秋",
+          "media_type": "剧本",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "江西省",
+          "basin_section_name": "中游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 4
+        },
+        {
+          "work_id": "ITOPIC-a68f8a3c4b1f6c5e6bfee285",
+          "work_name": "戏醉春秋",
+          "media_type": "剧本",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "湖北省",
+          "basin_section_name": "中游",
+          "observation_tier": "trusted_event_spacetime",
+          "supporting_fact_count": 16
+        },
+        {
+          "work_id": "ITOPIC-a68f8a3c4b1f6c5e6bfee285",
+          "work_name": "戏醉春秋",
+          "media_type": "剧本",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "湖南省",
+          "basin_section_name": "中游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 14
+        },
+        {
+          "work_id": "ITOPIC-a68f8a3c4b1f6c5e6bfee285",
+          "work_name": "戏醉春秋",
+          "media_type": "剧本",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "重庆市",
+          "basin_section_name": "上游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 3
+        },
+        {
+          "work_id": "ITOPIC-a68f8a3c4b1f6c5e6bfee285",
+          "work_name": "戏醉春秋",
+          "media_type": "剧本",
+          "stage_order": 1,
+          "stage_label_zh": "建党与大革命",
+          "province_name": "上海市",
+          "basin_section_name": "下游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 2
+        },
+        {
+          "work_id": "ITOPIC-edda8710eab29581f8605fc4",
+          "work_name": "疯儿",
+          "media_type": "小说",
+          "stage_order": 1,
+          "stage_label_zh": "建党与大革命",
+          "province_name": "上海市",
+          "basin_section_name": "下游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 80
+        },
+        {
+          "work_id": "ITOPIC-a68f8a3c4b1f6c5e6bfee285",
+          "work_name": "戏醉春秋",
+          "media_type": "剧本",
+          "stage_order": 1,
+          "stage_label_zh": "建党与大革命",
+          "province_name": "云南省",
+          "basin_section_name": "上游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 2
+        },
+        {
+          "work_id": "ITOPIC-edda8710eab29581f8605fc4",
+          "work_name": "疯儿",
+          "media_type": "小说",
+          "stage_order": 1,
+          "stage_label_zh": "建党与大革命",
+          "province_name": "江苏省",
+          "basin_section_name": "下游",
+          "observation_tier": "relation_context",
+          "supporting_fact_count": 3
+        }
+      ],
+      "elapsed_seconds": 0.143653,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq18_creative_work_spacetime.sql",
+      "file_sha256": "539077a0042e5c7c0a51662b3bcc9ef6e4e40c98e117d1b19e821aa66918c9e7",
+      "required_columns": [
+        "work_id",
+        "work_name",
+        "media_type",
+        "stage_order",
+        "stage_label_zh",
+        "province_name",
+        "basin_section_name",
+        "observation_tier",
+        "supporting_fact_count"
+      ]
+    },
+    "CQ19": {
+      "columns": [
+        "research_tier",
+        "assertion_count",
+        "provenance_count",
+        "assertions_without_provenance",
+        "average_sources_per_assertion"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "research_tier": 0,
+        "assertion_count": 0,
+        "provenance_count": 0,
+        "assertions_without_provenance": 0,
+        "average_sources_per_assertion": 0
+      },
+      "row_count": 3,
+      "rows_sha256": "1d00ff922ab33914c497bb56e21f0700c87f9b8462eac960f17caebefb963fd8",
+      "preview": [
+        {
+          "research_tier": "contextual",
+          "assertion_count": 268047,
+          "provenance_count": 283676,
+          "assertions_without_provenance": 0,
+          "average_sources_per_assertion": 1.058307
+        },
+        {
+          "research_tier": "strict_semantic",
+          "assertion_count": 112158,
+          "provenance_count": 136892,
+          "assertions_without_provenance": 0,
+          "average_sources_per_assertion": 1.220528
+        },
+        {
+          "research_tier": "unresolved",
+          "assertion_count": 43945,
+          "provenance_count": 45744,
+          "assertions_without_provenance": 0,
+          "average_sources_per_assertion": 1.040938
+        }
+      ],
+      "elapsed_seconds": 4.019596,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq19_provenance_coverage.sql",
+      "file_sha256": "e48cbc4b4ab0ac56116b17aa4ecda34ff6b200da9bbfde8ddbb4dc04a49ef804",
+      "required_columns": [
+        "research_tier",
+        "assertion_count",
+        "provenance_count",
+        "assertions_without_provenance",
+        "average_sources_per_assertion"
+      ]
+    },
+    "CQ20": {
+      "columns": [
+        "research_tier",
+        "semantic_status",
+        "assertion_count",
+        "source_member_count",
+        "time_known_count",
+        "space_known_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "research_tier": 0,
+        "semantic_status": 0,
+        "assertion_count": 0,
+        "source_member_count": 0,
+        "time_known_count": 0,
+        "space_known_count": 0
+      },
+      "row_count": 4,
+      "rows_sha256": "083233391fe50fe7e7dac8ad531d39af99274ec83b93d0e96402ab32b8b03f63",
+      "preview": [
+        {
+          "research_tier": "contextual",
+          "semantic_status": "auto_accepted",
+          "assertion_count": 268047,
+          "source_member_count": 283676,
+          "time_known_count": 50628,
+          "space_known_count": 73869
+        },
+        {
+          "research_tier": "strict_semantic",
+          "semantic_status": "auto_accepted",
+          "assertion_count": 112158,
+          "source_member_count": 136892,
+          "time_known_count": 21270,
+          "space_known_count": 23290
+        },
+        {
+          "research_tier": "unresolved",
+          "semantic_status": "manual_review",
+          "assertion_count": 60,
+          "source_member_count": 61,
+          "time_known_count": 60,
+          "space_known_count": 52
+        },
+        {
+          "research_tier": "unresolved",
+          "semantic_status": "model_review",
+          "assertion_count": 43885,
+          "source_member_count": 45683,
+          "time_known_count": 5972,
+          "space_known_count": 8424
+        }
+      ],
+      "elapsed_seconds": 2.806519,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq20_assertion_tiers.sql",
+      "file_sha256": "74dd98a872de21b43bc8ffbef456e6f119ff6999ea1633f5ebc4f9e582f733b9",
+      "required_columns": [
+        "research_tier",
+        "semantic_status",
+        "assertion_count",
+        "source_member_count",
+        "time_known_count",
+        "space_known_count"
+      ]
+    },
+    "CQ21": {
+      "columns": [
+        "time_role",
+        "time_precision",
+        "assertion_count",
+        "normalized_time_count",
+        "owner_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "time_role": 0,
+        "time_precision": 0,
+        "assertion_count": 0,
+        "normalized_time_count": 0,
+        "owner_count": 0
+      },
+      "row_count": 22,
+      "rows_sha256": "e243e23b4ccdc89f5ae9ff759d48b6257d39e31cdf5c063ee1aaf9bb1da84bf7",
+      "preview": [
+        {
+          "time_role": "biographical",
+          "time_precision": "month",
+          "assertion_count": 384,
+          "normalized_time_count": 384,
+          "owner_count": 311
+        },
+        {
+          "time_role": "biographical",
+          "time_precision": "period",
+          "assertion_count": 3038,
+          "normalized_time_count": 3038,
+          "owner_count": 1805
+        },
+        {
+          "time_role": "biographical",
+          "time_precision": "year",
+          "assertion_count": 1246,
+          "normalized_time_count": 1246,
+          "owner_count": 930
+        },
+        {
+          "time_role": "commemoration_or_reception",
+          "time_precision": "month",
+          "assertion_count": 2,
+          "normalized_time_count": 2,
+          "owner_count": 2
+        },
+        {
+          "time_role": "commemoration_or_reception",
+          "time_precision": "period",
+          "assertion_count": 6,
+          "normalized_time_count": 6,
+          "owner_count": 6
+        },
+        {
+          "time_role": "commemoration_or_reception",
+          "time_precision": "year",
+          "assertion_count": 9,
+          "normalized_time_count": 9,
+          "owner_count": 8
+        },
+        {
+          "time_role": "context_time",
+          "time_precision": "month",
+          "assertion_count": 7628,
+          "normalized_time_count": 7628,
+          "owner_count": 0
+        },
+        {
+          "time_role": "context_time",
+          "time_precision": "period",
+          "assertion_count": 29506,
+          "normalized_time_count": 29506,
+          "owner_count": 0
+        },
+        {
+          "time_role": "context_time",
+          "time_precision": "year",
+          "assertion_count": 14303,
+          "normalized_time_count": 14303,
+          "owner_count": 0
+        },
+        {
+          "time_role": "creation_or_publication",
+          "time_precision": "month",
+          "assertion_count": 19,
+          "normalized_time_count": 19,
+          "owner_count": 18
+        },
+        {
+          "time_role": "creation_or_publication",
+          "time_precision": "period",
+          "assertion_count": 15,
+          "normalized_time_count": 15,
+          "owner_count": 14
+        },
+        {
+          "time_role": "creation_or_publication",
+          "time_precision": "year",
+          "assertion_count": 8,
+          "normalized_time_count": 8,
+          "owner_count": 7
+        }
+      ],
+      "elapsed_seconds": 1.112668,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq21_time_roles.sql",
+      "file_sha256": "bda29c13f85641701b6be9e8776a972d662fcd62d1eddba1b1c944c048e9dbc8",
+      "required_columns": [
+        "time_role",
+        "time_precision",
+        "assertion_count",
+        "normalized_time_count",
+        "owner_count"
+      ]
+    },
+    "CQ22": {
+      "columns": [
+        "space_role",
+        "assertion_count",
+        "anchor_count",
+        "province_count",
+        "city_count",
+        "county_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "space_role": 0,
+        "assertion_count": 0,
+        "anchor_count": 0,
+        "province_count": 0,
+        "city_count": 0,
+        "county_count": 0
+      },
+      "row_count": 7,
+      "rows_sha256": "ea7ee885e262fa17cd3c9a0d1a264fa8d8c400907d50be97d9cd72caf7ee24e2",
+      "preview": [
+        {
+          "space_role": "biographical_location",
+          "assertion_count": 373,
+          "anchor_count": 68,
+          "province_count": 250,
+          "city_count": 3,
+          "county_count": 3
+        },
+        {
+          "space_role": "commemoration_or_reception_location",
+          "assertion_count": 12,
+          "anchor_count": 7,
+          "province_count": 8,
+          "city_count": 0,
+          "county_count": 0
+        },
+        {
+          "space_role": "context_location",
+          "assertion_count": 75153,
+          "anchor_count": 2381,
+          "province_count": 53971,
+          "city_count": 1645,
+          "county_count": 891
+        },
+        {
+          "space_role": "creation_or_publication_location",
+          "assertion_count": 2,
+          "anchor_count": 2,
+          "province_count": 2,
+          "city_count": 1,
+          "county_count": 0
+        },
+        {
+          "space_role": "event_location",
+          "assertion_count": 7673,
+          "anchor_count": 134,
+          "province_count": 4946,
+          "city_count": 92,
+          "county_count": 24
+        },
+        {
+          "space_role": "relation_location",
+          "assertion_count": 22422,
+          "anchor_count": 1280,
+          "province_count": 17950,
+          "city_count": 1122,
+          "county_count": 647
+        },
+        {
+          "space_role": "unknown",
+          "assertion_count": 318515,
+          "anchor_count": 0,
+          "province_count": 149,
+          "city_count": 84,
+          "county_count": 73
+        }
+      ],
+      "elapsed_seconds": 1.342124,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq22_space_roles.sql",
+      "file_sha256": "96b1c98f8b25ec512b635a90eb7811f32c03300a98e6ff4ec6e7dd84235d2ebb",
+      "required_columns": [
+        "space_role",
+        "assertion_count",
+        "anchor_count",
+        "province_count",
+        "city_count",
+        "county_count"
+      ]
+    },
+    "CQ23": {
+      "columns": [
+        "entity_type",
+        "type_validation_status",
+        "entity_count",
+        "integrated_member_count",
+        "alias_entity_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "entity_type": 0,
+        "type_validation_status": 0,
+        "entity_count": 0,
+        "integrated_member_count": 0,
+        "alias_entity_count": 0
+      },
+      "row_count": 30,
+      "rows_sha256": "3663196755f236fc937c855e0dea425150b15538e3e4946a38cfa8718c22ef11",
+      "preview": [
+        {
+          "entity_type": "AdministrativeRegion",
+          "type_validation_status": "fallback_unresolved",
+          "entity_count": 3,
+          "integrated_member_count": 3,
+          "alias_entity_count": 0
+        },
+        {
+          "entity_type": "AdministrativeRegion",
+          "type_validation_status": "validated",
+          "entity_count": 2041,
+          "integrated_member_count": 3602,
+          "alias_entity_count": 19
+        },
+        {
+          "entity_type": "Artifact",
+          "type_validation_status": "fallback_unresolved",
+          "entity_count": 1324,
+          "integrated_member_count": 2378,
+          "alias_entity_count": 1
+        },
+        {
+          "entity_type": "Artifact",
+          "type_validation_status": "validated",
+          "entity_count": 1823,
+          "integrated_member_count": 3134,
+          "alias_entity_count": 2
+        },
+        {
+          "entity_type": "Concept",
+          "type_validation_status": "fallback_unresolved",
+          "entity_count": 1353,
+          "integrated_member_count": 1365,
+          "alias_entity_count": 1
+        },
+        {
+          "entity_type": "Concept",
+          "type_validation_status": "validated",
+          "entity_count": 20750,
+          "integrated_member_count": 20788,
+          "alias_entity_count": 13
+        },
+        {
+          "entity_type": "CreativeWork",
+          "type_validation_status": "fallback_unresolved",
+          "entity_count": 142,
+          "integrated_member_count": 143,
+          "alias_entity_count": 2
+        },
+        {
+          "entity_type": "CreativeWork",
+          "type_validation_status": "validated",
+          "entity_count": 877,
+          "integrated_member_count": 916,
+          "alias_entity_count": 5
+        },
+        {
+          "entity_type": "CulturalSite",
+          "type_validation_status": "validated",
+          "entity_count": 254,
+          "integrated_member_count": 411,
+          "alias_entity_count": 2
+        },
+        {
+          "entity_type": "Document",
+          "type_validation_status": "fallback_unresolved",
+          "entity_count": 344,
+          "integrated_member_count": 350,
+          "alias_entity_count": 2
+        },
+        {
+          "entity_type": "Document",
+          "type_validation_status": "validated",
+          "entity_count": 2110,
+          "integrated_member_count": 5250,
+          "alias_entity_count": 23
+        },
+        {
+          "entity_type": "Event",
+          "type_validation_status": "fallback_unresolved",
+          "entity_count": 348,
+          "integrated_member_count": 421,
+          "alias_entity_count": 2
+        }
+      ],
+      "elapsed_seconds": 1.013391,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq23_entity_type_quality.sql",
+      "file_sha256": "edb8fe22c93e25330b8f8d311b13120d844826d21bed271c3ae7c233ca1da10d",
+      "required_columns": [
+        "entity_type",
+        "type_validation_status",
+        "entity_count",
+        "integrated_member_count",
+        "alias_entity_count"
+      ]
+    },
+    "CQ24": {
+      "columns": [
+        "entity_id",
+        "canonical_name",
+        "entity_type",
+        "integrated_member_count",
+        "source_entity_count",
+        "aliases_json",
+        "type_validation_status"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "entity_id": 0,
+        "canonical_name": 0,
+        "entity_type": 0,
+        "integrated_member_count": 0,
+        "source_entity_count": 0,
+        "aliases_json": 0,
+        "type_validation_status": 0
+      },
+      "row_count": 70843,
+      "rows_sha256": "4f222b88b487f668faea06c9e6a23b935fe64252fc88e57c06584ba524e8def2",
+      "preview": [
+        {
+          "entity_id": "ITOPIC-73031f011a38f9e1195a17dd",
+          "canonical_name": "中华人民共和国史长编 第七卷 人物卷_12601694",
+          "entity_type": "Document",
+          "integrated_member_count": 83,
+          "source_entity_count": 1,
+          "aliases_json": "[]",
+          "type_validation_status": "validated"
+        },
+        {
+          "entity_id": "IENT-8327d3a1577b179696fe5125",
+          "canonical_name": "毛泽东",
+          "entity_type": "Person",
+          "integrated_member_count": 75,
+          "source_entity_count": 1,
+          "aliases_json": "[\"二十八画生\", \"子任\", \"教员\", \"李德胜\", \"杨子任\", \"毛主席\", \"毛泽东主席\", \"毛泽东同志\", \"毛润之\", \"泽东\", \"泽东同志\", \"润之\", \"润芝\"]",
+          "type_validation_status": "validated"
+        },
+        {
+          "entity_id": "IENT-a5365cb2adaebdc1ec880149",
+          "canonical_name": "贺龙",
+          "entity_type": "Person",
+          "integrated_member_count": 63,
+          "source_entity_count": 1,
+          "aliases_json": "[\"云卿\", \"贺云卿\", \"贺老总\", \"贺龙元帅\", \"贺龙军长\", \"贺龙司令员\", \"贺龙同志\", \"贺龙将军\", \"贺龙总指挥\", \"龙\"]",
+          "type_validation_status": "validated"
+        },
+        {
+          "entity_id": "IENT-d229c4819270fba2b7e59201",
+          "canonical_name": "朱德",
+          "entity_type": "Person",
+          "integrated_member_count": 60,
+          "source_entity_count": 1,
+          "aliases_json": "[\"朱建德\", \"朱德同志\", \"朱德总司令\", \"朱总司令\", \"朱玉阶\", \"玉阶\"]",
+          "type_validation_status": "validated"
+        },
+        {
+          "entity_id": "IENT-1d97d5296e4ed9c5d28abb8e",
+          "canonical_name": "周恩来",
+          "entity_type": "Person",
+          "integrated_member_count": 55,
+          "source_entity_count": 1,
+          "aliases_json": "[\"伍豪\", \"周副主席\", \"周少山\", \"周总理\", \"周恩来副主席\", \"周恩来同志\", \"周恩来总理\", \"周翔宇\", \"少山\", \"恩来\", \"恩来同志\", \"翔宇\"]",
+          "type_validation_status": "validated"
+        },
+        {
+          "entity_id": "IENT-23dc46d842654fb499a0c698",
+          "canonical_name": "陈毅",
+          "entity_type": "Person",
+          "integrated_member_count": 43,
+          "source_entity_count": 1,
+          "aliases_json": "[\"仲弘\", \"粟裕\", \"陈仲宏\", \"陈仲宏(陈毅)\", \"陈仲弘\", \"陈毅军长\", \"陈毅司令员\", \"陈毅同志\", \"陈毅将军\", \"陈粟\", \"陈老总\"]",
+          "type_validation_status": "validated"
+        },
+        {
+          "entity_id": "IENTREPAIR-069ead56a3ae256c9b1e2023",
+          "canonical_name": "湖南",
+          "entity_type": "AdministrativeRegion",
+          "integrated_member_count": 39,
+          "source_entity_count": 35,
+          "aliases_json": "[]",
+          "type_validation_status": "validated"
+        },
+        {
+          "entity_id": "IENT-f35a32bac83af494d2766af0",
+          "canonical_name": "彭德怀",
+          "entity_type": "Person",
+          "integrated_member_count": 36,
+          "source_entity_count": 1,
+          "aliases_json": "[\"彭得华\", \"彭德怀同志\", \"彭总\", \"彭老总\", \"得华\", \"慕洛\"]",
+          "type_validation_status": "validated"
+        },
+        {
+          "entity_id": "ITOPIC-cdc6fb7e5a21f0b85fbae407",
+          "canonical_name": "贵阳党史资料专辑 抗战胜利四十周年_11441776",
+          "entity_type": "Document",
+          "integrated_member_count": 35,
+          "source_entity_count": 1,
+          "aliases_json": "[]",
+          "type_validation_status": "validated"
+        },
+        {
+          "entity_id": "IENT-914d658d22eafe0e3037d75b",
+          "canonical_name": "任弼时",
+          "entity_type": "Person",
+          "integrated_member_count": 33,
+          "source_entity_count": 1,
+          "aliases_json": "[\"任弼时政委\", \"弼时\"]",
+          "type_validation_status": "validated"
+        },
+        {
+          "entity_id": "IENTREPAIR-0db954be0fc2ad333b758eb5",
+          "canonical_name": "湖北",
+          "entity_type": "AdministrativeRegion",
+          "integrated_member_count": 32,
+          "source_entity_count": 30,
+          "aliases_json": "[]",
+          "type_validation_status": "validated"
+        },
+        {
+          "entity_id": "IENT-fd8cc7b292e182cfbc8fbef0",
+          "canonical_name": "重庆市",
+          "entity_type": "Place",
+          "integrated_member_count": 32,
+          "source_entity_count": 1,
+          "aliases_json": "[]",
+          "type_validation_status": "validated"
+        }
+      ],
+      "elapsed_seconds": 0.613801,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq24_identity_integration.sql",
+      "file_sha256": "30a7f1cc2590589dcd6be84e704b1a674e81038b28c76c0a16a54779b0499cf5",
+      "required_columns": [
+        "entity_id",
+        "canonical_name",
+        "entity_type",
+        "integrated_member_count",
+        "source_entity_count",
+        "aliases_json",
+        "type_validation_status"
+      ]
+    },
+    "CQ25": {
+      "columns": [
+        "culture_subject_id",
+        "culture_subject_name",
+        "culture_form_code",
+        "stage_order",
+        "stage_label_zh",
+        "province_name",
+        "observation_tier",
+        "observation_status",
+        "supporting_fact_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "culture_subject_id": 0,
+        "culture_subject_name": 0,
+        "culture_form_code": 0,
+        "stage_order": 0,
+        "stage_label_zh": 0,
+        "province_name": 0,
+        "observation_tier": 0,
+        "observation_status": 0,
+        "supporting_fact_count": 0
+      },
+      "row_count": 6723,
+      "rows_sha256": "e404ed27b8f7781afd540e012a2b4c3b01c890b7951f2ca0bf0af585b1699519",
+      "preview": [
+        {
+          "culture_subject_id": "IENT-75752bbc5b226c353757f1a7",
+          "culture_subject_name": "《共产党宣言》",
+          "culture_form_code": "DocumentaryCulture",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "江西省",
+          "observation_tier": "relation_context",
+          "observation_status": "first_observed_in_dataset_not_historical_origin",
+          "supporting_fact_count": 2
+        },
+        {
+          "culture_subject_id": "IENT-18bc0834616c193b980bdbf9",
+          "culture_subject_name": "《告全县同胞书》",
+          "culture_form_code": "MaterialCulture",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "安徽省",
+          "observation_tier": "relation_context",
+          "observation_status": "first_observed_in_dataset_not_historical_origin",
+          "supporting_fact_count": 2
+        },
+        {
+          "culture_subject_id": "IENT-9f1894be87c3cfab9af10ac5",
+          "culture_subject_name": "《新比江西》杂志",
+          "culture_form_code": "DocumentaryCulture",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "江西省",
+          "observation_tier": "relation_context",
+          "observation_status": "first_observed_in_dataset_not_historical_origin",
+          "supporting_fact_count": 2
+        },
+        {
+          "culture_subject_id": "IENT-29a8114d1be4d0b52025006b",
+          "culture_subject_name": "《晨报》",
+          "culture_form_code": "DocumentaryCulture",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "上海市",
+          "observation_tier": "trusted_event_spacetime",
+          "observation_status": "first_observed_in_dataset_not_historical_origin",
+          "supporting_fact_count": 13
+        },
+        {
+          "culture_subject_id": "IENT-29a8114d1be4d0b52025006b",
+          "culture_subject_name": "《晨报》",
+          "culture_form_code": "DocumentaryCulture",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "云南省",
+          "observation_tier": "trusted_event_spacetime",
+          "observation_status": "first_observed_in_dataset_not_historical_origin",
+          "supporting_fact_count": 13
+        },
+        {
+          "culture_subject_id": "IENT-29a8114d1be4d0b52025006b",
+          "culture_subject_name": "《晨报》",
+          "culture_form_code": "DocumentaryCulture",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "四川省",
+          "observation_tier": "trusted_event_spacetime",
+          "observation_status": "first_observed_in_dataset_not_historical_origin",
+          "supporting_fact_count": 11
+        },
+        {
+          "culture_subject_id": "IENT-29a8114d1be4d0b52025006b",
+          "culture_subject_name": "《晨报》",
+          "culture_form_code": "DocumentaryCulture",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "江苏省",
+          "observation_tier": "relation_context",
+          "observation_status": "first_observed_in_dataset_not_historical_origin",
+          "supporting_fact_count": 6
+        },
+        {
+          "culture_subject_id": "IENT-29a8114d1be4d0b52025006b",
+          "culture_subject_name": "《晨报》",
+          "culture_form_code": "DocumentaryCulture",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "江西省",
+          "observation_tier": "relation_context",
+          "observation_status": "first_observed_in_dataset_not_historical_origin",
+          "supporting_fact_count": 4
+        },
+        {
+          "culture_subject_id": "IENT-29a8114d1be4d0b52025006b",
+          "culture_subject_name": "《晨报》",
+          "culture_form_code": "DocumentaryCulture",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "湖北省",
+          "observation_tier": "trusted_event_spacetime",
+          "observation_status": "first_observed_in_dataset_not_historical_origin",
+          "supporting_fact_count": 16
+        },
+        {
+          "culture_subject_id": "IENT-29a8114d1be4d0b52025006b",
+          "culture_subject_name": "《晨报》",
+          "culture_form_code": "DocumentaryCulture",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "湖南省",
+          "observation_tier": "relation_context",
+          "observation_status": "first_observed_in_dataset_not_historical_origin",
+          "supporting_fact_count": 14
+        },
+        {
+          "culture_subject_id": "IENT-29a8114d1be4d0b52025006b",
+          "culture_subject_name": "《晨报》",
+          "culture_form_code": "DocumentaryCulture",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "重庆市",
+          "observation_tier": "relation_context",
+          "observation_status": "first_observed_in_dataset_not_historical_origin",
+          "supporting_fact_count": 3
+        },
+        {
+          "culture_subject_id": "IENT-664def8e2f4ed0ac379a349b",
+          "culture_subject_name": "万安县城攻防战",
+          "culture_form_code": "HistoricalPractice",
+          "stage_order": 0,
+          "stage_label_zh": "建党前传播与孕育",
+          "province_name": "江西省",
+          "observation_tier": "relation_context",
+          "observation_status": "first_observed_in_dataset_not_historical_origin",
+          "supporting_fact_count": 2
+        }
+      ],
+      "elapsed_seconds": 0.124637,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq25_first_observed_states.sql",
+      "file_sha256": "9cd2c1e61535f41da6715855d1b7f0e8ec31ab8134d92105c0bd337033223f58",
+      "required_columns": [
+        "culture_subject_id",
+        "culture_subject_name",
+        "culture_form_code",
+        "stage_order",
+        "stage_label_zh",
+        "province_name",
+        "observation_tier",
+        "observation_status",
+        "supporting_fact_count"
+      ]
+    },
+    "CQ26": {
+      "columns": [
+        "boundary_dimension",
+        "boundary_value",
+        "assertion_count",
+        "source_member_count"
+      ],
+      "missing_required_columns": [],
+      "required_null_counts": {
+        "boundary_dimension": 0,
+        "boundary_value": 0,
+        "assertion_count": 0,
+        "source_member_count": 0
+      },
+      "row_count": 22,
+      "rows_sha256": "5654f4028dcaff37fbe3804b9570383a8113cc92d3fb87f31fdd4b834be6f950",
+      "preview": [
+        {
+          "boundary_dimension": "research_tier",
+          "boundary_value": "contextual",
+          "assertion_count": 268047,
+          "source_member_count": 283676
+        },
+        {
+          "boundary_dimension": "research_tier",
+          "boundary_value": "strict_semantic",
+          "assertion_count": 112158,
+          "source_member_count": 136892
+        },
+        {
+          "boundary_dimension": "research_tier",
+          "boundary_value": "unresolved",
+          "assertion_count": 43945,
+          "source_member_count": 45744
+        },
+        {
+          "boundary_dimension": "risk_tier",
+          "boundary_value": "A",
+          "assertion_count": 295097,
+          "source_member_count": 335385
+        },
+        {
+          "boundary_dimension": "risk_tier",
+          "boundary_value": "B",
+          "assertion_count": 85107,
+          "source_member_count": 85182
+        },
+        {
+          "boundary_dimension": "risk_tier",
+          "boundary_value": "C",
+          "assertion_count": 43886,
+          "source_member_count": 45684
+        },
+        {
+          "boundary_dimension": "risk_tier",
+          "boundary_value": "D",
+          "assertion_count": 60,
+          "source_member_count": 61
+        },
+        {
+          "boundary_dimension": "space_role",
+          "boundary_value": "biographical_location",
+          "assertion_count": 373,
+          "source_member_count": 373
+        },
+        {
+          "boundary_dimension": "space_role",
+          "boundary_value": "commemoration_or_reception_location",
+          "assertion_count": 12,
+          "source_member_count": 12
+        },
+        {
+          "boundary_dimension": "space_role",
+          "boundary_value": "context_location",
+          "assertion_count": 75153,
+          "source_member_count": 75218
+        },
+        {
+          "boundary_dimension": "space_role",
+          "boundary_value": "creation_or_publication_location",
+          "assertion_count": 2,
+          "source_member_count": 2
+        },
+        {
+          "boundary_dimension": "space_role",
+          "boundary_value": "event_location",
+          "assertion_count": 7673,
+          "source_member_count": 7719
+        }
+      ],
+      "elapsed_seconds": 5.519934,
+      "file": "D:\\REDCULTUREDATA\\stkg\\queries\\cq_v2\\cq26_quality_boundaries.sql",
+      "file_sha256": "5de8c2d85500e9870eb4ad49f4fbd88c53834d294152ed5b524423f48c72b4b8",
+      "required_columns": [
+        "boundary_dimension",
+        "boundary_value",
+        "assertion_count",
+        "source_member_count"
+      ]
+    }
+  },
+  "failures": [],
+  "completed_at": "2026-07-15T09:39:09+08:00"
+}

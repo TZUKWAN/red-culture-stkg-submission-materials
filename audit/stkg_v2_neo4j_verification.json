@@ -1,0 +1,558 @@
+{
+  "status": "PASS",
+  "build_version": "red-culture-stkg-neo4j-verification-v2-1",
+  "neo4j_uri": "bolt://127.0.0.1:7690",
+  "export_report": "D:\\REDCULTUREDATA\\audit_reports\\stkg_v2_graph_export.json",
+  "expected": {
+    "node_counts": {
+      "Assertion": 424150,
+      "BasinSection": 3,
+      "CultureForm": 7,
+      "CultureState": 11532,
+      "Entity": 152979,
+      "EventCell": 7067,
+      "EvolutionTransition": 4,
+      "HistoricalStage": 8,
+      "SourceRecord": 466312,
+      "StudyRegion": 13,
+      "TransitionCandidate": 159,
+      "TransitionType": 13
+    },
+    "relationship_counts": {
+      "AT_PLACE": 105635,
+      "CANDIDATE_FROM_STATE": 159,
+      "CANDIDATE_HAS_TYPE": 159,
+      "CANDIDATE_SUPPORTED_BY": 159,
+      "CANDIDATE_TO_STATE": 159,
+      "DURING_STAGE": 102425,
+      "EVENT_RELATION": 499,
+      "EVENT_ROLE": 54033,
+      "HAS_CULTURE_FORM": 23861,
+      "HAS_SPATIOTEMPORAL_CELL": 7067,
+      "IN_BASIN_SECTION": 141152,
+      "IN_STUDY_REGION": 90147,
+      "OBJECT": 424150,
+      "SEMANTIC_RELATION": 380205,
+      "STATE_ACTOR": 689950,
+      "STATE_DURING": 11532,
+      "STATE_EVENT": 13336,
+      "STATE_HAS_FORM": 11532,
+      "STATE_IN_BASIN": 11532,
+      "STATE_IN_REGION": 11532,
+      "STATE_OF": 11532,
+      "STATE_SEMANTIC_MEMBER": 2235,
+      "STATE_VALUE_FACET": 532,
+      "SUBJECT_OF": 424150,
+      "SUPPORTED_BY": 466312,
+      "TRANSITION_FROM_STATE": 4,
+      "TRANSITION_HAS_TYPE": 4,
+      "TRANSITION_SUPPORTED_BY": 5,
+      "TRANSITION_TO_STATE": 4,
+      "WITHIN_BASIN": 13
+    },
+    "sqlite_capability": {
+      "assertion_tiers": {
+        "contextual": 268047,
+        "strict_semantic": 112158,
+        "unresolved": 43945
+      },
+      "trusted_culture_states": 958,
+      "published_transitions": 4,
+      "published_transition_supports": 5
+    }
+  },
+  "actual": {
+    "node_counts": {
+      "Assertion": 424150,
+      "BasinSection": 3,
+      "CultureForm": 7,
+      "CultureState": 11532,
+      "Entity": 152979,
+      "EventCell": 7067,
+      "EvolutionTransition": 4,
+      "HistoricalStage": 8,
+      "SourceRecord": 466312,
+      "StudyRegion": 13,
+      "TransitionCandidate": 159,
+      "TransitionType": 13
+    },
+    "relationship_counts": {
+      "AT_PLACE": 105635,
+      "CANDIDATE_FROM_STATE": 159,
+      "CANDIDATE_HAS_TYPE": 159,
+      "CANDIDATE_SUPPORTED_BY": 159,
+      "CANDIDATE_TO_STATE": 159,
+      "DURING_STAGE": 102425,
+      "EVENT_RELATION": 499,
+      "EVENT_ROLE": 54033,
+      "HAS_CULTURE_FORM": 23861,
+      "HAS_SPATIOTEMPORAL_CELL": 7067,
+      "IN_BASIN_SECTION": 141152,
+      "IN_STUDY_REGION": 90147,
+      "OBJECT": 424150,
+      "SEMANTIC_RELATION": 380205,
+      "STATE_ACTOR": 689950,
+      "STATE_DURING": 11532,
+      "STATE_EVENT": 13336,
+      "STATE_HAS_FORM": 11532,
+      "STATE_IN_BASIN": 11532,
+      "STATE_IN_REGION": 11532,
+      "STATE_OF": 11532,
+      "STATE_SEMANTIC_MEMBER": 2235,
+      "STATE_VALUE_FACET": 532,
+      "SUBJECT_OF": 424150,
+      "SUPPORTED_BY": 466312,
+      "TRANSITION_FROM_STATE": 4,
+      "TRANSITION_HAS_TYPE": 4,
+      "TRANSITION_SUPPORTED_BY": 5,
+      "TRANSITION_TO_STATE": 4,
+      "WITHIN_BASIN": 13
+    },
+    "total_nodes": 1062247,
+    "total_relationships": 2984015,
+    "blank_titles": 0,
+    "missing_stable_ids": 0,
+    "duplicate_stable_ids": {
+      "duplicate_keys": 0,
+      "extra_nodes": 0
+    },
+    "assertion_tiers": {
+      "contextual": 268047,
+      "strict_semantic": 112158,
+      "unresolved": 43945
+    }
+  },
+  "schema": {
+    "constraints": [
+      {
+        "name": "assertion_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "Assertion"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "basinsection_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "BasinSection"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "cultureform_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "CultureForm"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "culturestate_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "CultureState"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "entity_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "Entity"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "eventcell_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "EventCell"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "evolutiontransition_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "EvolutionTransition"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "historicalstage_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "HistoricalStage"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "sourcerecord_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "SourceRecord"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "studyregion_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "StudyRegion"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "transitioncandidate_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "TransitionCandidate"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "transitiontype_stable_id_v2",
+        "type": "UNIQUENESS",
+        "labelsOrTypes": [
+          "TransitionType"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      }
+    ],
+    "indexes": [
+      {
+        "name": "assertion_stable_id_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "Assertion"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "basinsection_stable_id_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "BasinSection"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "creative_work_media_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "CreativeWork"
+        ],
+        "properties": [
+          "media_type"
+        ]
+      },
+      {
+        "name": "cultureform_stable_id_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "CultureForm"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "culturestate_stable_id_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "CultureState"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "entity_name_fulltext_v2",
+        "state": "ONLINE",
+        "type": "FULLTEXT",
+        "labelsOrTypes": [
+          "Entity"
+        ],
+        "properties": [
+          "name",
+          "caption"
+        ]
+      },
+      {
+        "name": "entity_name_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "Entity"
+        ],
+        "properties": [
+          "name"
+        ]
+      },
+      {
+        "name": "entity_stable_id_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "Entity"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "entity_type_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "Entity"
+        ],
+        "properties": [
+          "entity_type"
+        ]
+      },
+      {
+        "name": "eventcell_stable_id_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "EventCell"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "evolutiontransition_stable_id_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "EvolutionTransition"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "historicalstage_stable_id_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "HistoricalStage"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "index_343aff4e",
+        "state": "ONLINE",
+        "type": "LOOKUP",
+        "labelsOrTypes": null,
+        "properties": null
+      },
+      {
+        "name": "index_f7700477",
+        "state": "ONLINE",
+        "type": "LOOKUP",
+        "labelsOrTypes": null,
+        "properties": null
+      },
+      {
+        "name": "sourcerecord_stable_id_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "SourceRecord"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "state_form_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "CultureState"
+        ],
+        "properties": [
+          "culture_form_code"
+        ]
+      },
+      {
+        "name": "state_region_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "CultureState"
+        ],
+        "properties": [
+          "region_id"
+        ]
+      },
+      {
+        "name": "state_stage_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "CultureState"
+        ],
+        "properties": [
+          "stage_code"
+        ]
+      },
+      {
+        "name": "state_tier_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "CultureState"
+        ],
+        "properties": [
+          "observation_tier"
+        ]
+      },
+      {
+        "name": "studyregion_stable_id_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "StudyRegion"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "transitioncandidate_stable_id_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "TransitionCandidate"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      },
+      {
+        "name": "transitiontype_stable_id_v2",
+        "state": "ONLINE",
+        "type": "RANGE",
+        "labelsOrTypes": [
+          "TransitionType"
+        ],
+        "properties": [
+          "stable_id"
+        ]
+      }
+    ]
+  },
+  "identity_cases": {
+    "蔡和森/林彬": {
+      "canonical_count": 1,
+      "types": [
+        "Person"
+      ],
+      "alias_present": true
+    },
+    "毛泽东/毛润之": {
+      "canonical_count": 1,
+      "types": [
+        "Person"
+      ],
+      "alias_present": true
+    },
+    "邓小平/邓希贤": {
+      "canonical_count": 1,
+      "types": [
+        "Person"
+      ],
+      "alias_present": true
+    }
+  },
+  "capability": {
+    "trusted_culture_states": 958,
+    "published_transitions": 4,
+    "published_transition_supports": 5,
+    "published_nontrusted_state_endpoints": 0
+  },
+  "creative_media": {
+    "creative_work_nodes": 1019,
+    "media_populated": 1019,
+    "media_unknown": 57,
+    "media_qwen_v2": 6,
+    "non_creative_media_populated": 0
+  },
+  "ui": {
+    "reachable": true,
+    "counts": {
+      "总节点": 1062247,
+      "实体": 152979,
+      "语义关系": 380205,
+      "事件角色": 54033,
+      "文化状态": 11532,
+      "可信状态": 958,
+      "演进候选": 159,
+      "发布演进": 4,
+      "文艺作品": 1019,
+      "作品媒介已标注": 1019
+    }
+  },
+  "checks": {
+    "export_report_pass": true,
+    "node_counts_match": true,
+    "relationship_counts_match": true,
+    "total_nodes_match": true,
+    "total_relationships_match": true,
+    "no_blank_chinese_titles": true,
+    "no_missing_stable_ids": true,
+    "no_duplicate_stable_ids": true,
+    "all_uniqueness_constraints_present": true,
+    "required_indexes_online": true,
+    "assertion_tiers_complete": true,
+    "identity_aliases_resolved": true,
+    "trusted_state_count": true,
+    "published_transition_count": true,
+    "published_transition_support_count": true,
+    "published_transitions_use_trusted_states": true,
+    "creative_media_complete": true,
+    "research_ui_reachable": true
+  },
+  "completed_at": "2026-07-15T09:46:37+08:00"
+}

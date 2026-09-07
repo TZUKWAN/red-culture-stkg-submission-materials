@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "build_version": "red-culture-stkg-v2-creative-media-1",
+  "sources": {
+    "v2_evolution": {
+      "path": "D:\\REDCULTUREDATA\\derived\\red_culture_stkg_evolution_v2.sqlite",
+      "sha256": "e3c9644d17ad30131140457500d37e42bc0d58a5e6d9e8cd61ba823009ab71a8"
+    },
+    "v1_media": {
+      "path": "D:\\REDCULTUREDATA\\derived\\creative_media_enrichment_v1.sqlite",
+      "sha256": "4d6d09f15d0706eb7f653085c8d5789950838d47298287130744d957e77d2a26"
+    },
+    "unchanged": true
+  },
+  "output": {
+    "path": "D:\\REDCULTUREDATA\\derived\\stkg_v2_creative_media_enrichment.sqlite",
+    "size_bytes": 1990656,
+    "sha256": "fde1f05b01709520a334dd88a58de6e501f36d2d0a182675516098b122a1d13f"
+  },
+  "seed": {
+    "creative_works": 1019,
+    "inherited": 1013,
+    "qwen_pending": 6
+  },
+  "qwen": {
+    "model": "Qwen3.5-122B-A10B",
+    "prompt_version": "stkg-v2-creative-media-qwen-v2",
+    "completed_this_run": 6,
+    "technical_errors": 0
+  },
+  "validation": {
+    "checks": {
+      "quick_check": "ok",
+      "foreign_key_errors": 0,
+      "task_count": 1019,
+      "final_count": 1019,
+      "nonfinal_count": 0,
+      "invalid_media_count": 0,
+      "qwen_final_count": 6,
+      "qwen_missing_raw_response": 0,
+      "attempts_over_30": 0
+    },
+    "status_counts": {
+      "completed": 962,
+      "unknown": 57
+    },
+    "media_counts": {
+      "其他": 1,
+      "剧本": 46,
+      "动画片": 2,
+      "壁报": 1,
+      "小说": 165,
+      "广播剧": 1,
+      "戏剧": 55,
+      "报告文学": 7,
+      "散文": 1,
+      "文集": 3,
+      "曲艺": 4,
+      "未知": 57,
+      "歌剧": 28,
+      "歌曲": 275,
+      "民间传说": 1,
+      "漫画": 4,
+      "理论著作": 4,
+      "电影": 74,
+      "电视剧": 8,
+      "秧歌剧": 1,
+      "纪录片": 14,
+      "绘画": 2,
+      "舞剧": 7,
+      "舞蹈": 24,
+      "诗歌": 69,
+      "话剧": 156,
+      "连环画": 3,
+      "雕塑": 6
+    }
+  },
+  "completed_at": "2026-07-15T08:45:04+08:00"
+}

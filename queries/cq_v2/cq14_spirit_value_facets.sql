@@ -1,0 +1,3 @@
+select spirit_id,spirit_name,value_facet_id,value_facet_name,relation_code,fact_id
+from research_spirit_value_links
+order by spirit_name,value_facet_name,fact_id;

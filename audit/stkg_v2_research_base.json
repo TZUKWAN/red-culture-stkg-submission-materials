@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "build_version": "red-culture-stkg-research-v2-base-3",
+  "source_v1": {
+    "path": "D:\\REDCULTUREDATA\\releases\\red_culture_stkg_v1\\databases\\red_culture_stkg_evolution_v1.sqlite",
+    "sha256": "416578c5d3ae7d14193982d9d35f26c8b6e8665cd9b6399d47b67361ab1c48bd",
+    "unchanged": true
+  },
+  "semantic_v2": {
+    "path": "D:\\REDCULTUREDATA\\derived\\red_culture_stkg_semantic_v2.sqlite",
+    "sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377",
+    "unchanged": true
+  },
+  "output": {
+    "path": "D:\\REDCULTUREDATA\\derived\\red_culture_stkg_research_v2.sqlite",
+    "sha256": "1a38fb9433b68cf42417ce164c16fc865fe9e7868096f3286b5471a25c2b7961",
+    "size_bytes": 745832448
+  },
+  "validation": {
+    "counts": {
+      "entities": 152979,
+      "relation_contracts": 88,
+      "entity_members": 154150,
+      "assertions": 424150,
+      "scope_adjustments": 208,
+      "provenance": 466312,
+      "stages": 8,
+      "stage_memberships": 95358,
+      "regions": 13,
+      "basins": 3,
+      "region_memberships": 83080,
+      "basin_memberships": 134085,
+      "strict_assertions": 112158,
+      "contextual_assertions": 268047,
+      "unresolved_assertions": 43945,
+      "event_backbone_assertions": 53534,
+      "event_occurrence_time_assertions": 848,
+      "valid_spatial_assertions": 105635
+    },
+    "quick_check": "ok",
+    "foreign_key_errors": 0,
+    "tier_conservation": true,
+    "missing_canonical_endpoints": 0,
+    "invalid_time_labels": 0,
+    "owner_role_errors": 0,
+    "timed_unknown_roles": 0,
+    "untimed_known_roles": 0,
+    "invalid_time_owner_types": 0,
+    "invalid_space_owner_types": 0,
+    "strict_domain_range_errors": 0,
+    "pass": true
+  },
+  "completed_at": "2026-07-15T09:34:38"
+}

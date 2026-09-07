@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-07-30T11:06:30+00:00",
+  "result": "PASS",
+  "inputs": {
+    "baseline_runs": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\02_baselines\\BASELINE_RUNS.csv",
+      "sha256": "d730f8686040faccf14f595baeb36e2806e18f36a9cb38a1f6020f9d7301192f",
+      "bytes": 410341,
+      "row_count": 1113
+    },
+    "baseline_audit": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\02_baselines\\baseline_experiment_audit.json",
+      "sha256": "df2ed7c7205bfb367f98194079eab6496a32774f04d835e0a6e233f33a27e519",
+      "bytes": 6250,
+      "row_count": null
+    },
+    "gold": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\04_results\\AI_GOLD_LABELS.csv",
+      "sha256": "1190ed0d7a4ec16b34712293f47992d624788ba4734c2bfce4020d51de0a9c0f",
+      "bytes": 77541,
+      "row_count": 712
+    }
+  },
+  "canaries": {
+    "baseline_audit_pass": true,
+    "points_nonempty": true,
+    "summaries_nonempty": true,
+    "coverage_monotonic_as_threshold_relaxes": true,
+    "fixed_denominator_within_each_curve": true,
+    "curve_arithmetic_valid": true,
+    "safe_coverage_never_exceeds_coverage": true,
+    "review_escalation_equals_abstention": true,
+    "actual_llm_calls_zero": true,
+    "area_only_when_gate_satisfied": true,
+    "primary_curve_is_constrained_selective": true,
+    "constrained_accepted_rows_pass_hard_gate": true,
+    "score_only_is_diagnostic_not_primary": true,
+    "owner_proxy_excluded_from_primary_area": true,
+    "cached_models_have_no_fabricated_points": true,
+    "augrc_closed_form_crosscheck": true,
+    "bootstrap_replicate_count_complete": true,
+    "bootstrap_ci_recomputes_from_raw_replicates": true,
+    "bootstrap_fixed_seed_reproducible": true,
+    "figure_png_exists": true,
+    "figure_pdf_exists": true
+  },
+  "applicable_area_curve_count": 20,
+  "applicable_primary_constrained_curve_count": 10,
+  "applicable_score_only_diagnostic_curve_count": 10,
+  "formula_crosscheck_count": 10,
+  "maximum_augrc_crosscheck_abs_diff": 5.551115123125783e-17,
+  "bootstrap_iterations_per_applicable_curve": 2000,
+  "bootstrap_raw_row_count": 40000,
+  "outputs": {
+    "points": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\03_selective_inference\\RISK_COVERAGE_POINTS.csv",
+      "sha256": "72e89587d7da2ea0aa898c082f8e8d2b3d80562c7195be068d29874cf95c533c",
+      "bytes": 705489,
+      "row_count": 1750
+    },
+    "summary_csv": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\03_selective_inference\\RISK_COVERAGE_SUMMARY.csv",
+      "sha256": "c58df649a5846d3916e645458876f861026d376067107c6f10fa7ee238a46b90",
+      "bytes": 42565,
+      "row_count": 98
+    },
+    "bootstrap": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\03_selective_inference\\RISK_COVERAGE_BOOTSTRAP.csv",
+      "sha256": "16891817561a549c5049ec95cd7e295b7a373695ae98006dd24fa6aab819d30e",
+      "bytes": 4186636,
+      "row_count": 40000
+    },
+    "summary_json": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\03_selective_inference\\risk_coverage_summary.json",
+      "sha256": "9bd21a1341efd715492d49c55df67a54aa19965cb6dade68ddee4ff777715b0f",
+      "bytes": 170244,
+      "row_count": null
+    },
+    "chart_contract": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\03_selective_inference\\RISK_COVERAGE_CHART_CONTRACT.json",
+      "sha256": "8a551e19f4485f6d0bb33fdd7dd46697de18d52f2e64439202fa409dac63f5e7",
+      "bytes": 1599,
+      "row_count": null
+    },
+    "figure_png": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\03_selective_inference\\risk_coverage_curves.png",
+      "sha256": "0217aff121adec6924554c981acba4e0009b5ce688c5ca51adbe17d66ddf8ba3",
+      "bytes": 217825,
+      "row_count": null
+    },
+    "figure_pdf": {
+      "path": "D:\\REDCULTUREDATA\\dual_paper_project\\paper_A_method\\revision\\03_selective_inference\\risk_coverage_curves.pdf",
+      "sha256": "9fdd008b67486b611621d12d742084e1cc9c3bd3b8a764126125139d24e853f4",
+      "bytes": 24471,
+      "row_count": null
+    }
+  },
+  "scope_notes": [
+    "No confidence is fabricated for cached LLM rows; no cached-LLM AURC/AUGRC is reported.",
+    "Primary constrained_selective acceptance requires both the confidence threshold and hard_constraint_pass=1.",
+    "score_only_diagnostic curves are retained only to expose the effect of the hard gate and cannot represent automatic admission.",
+    "Constrained AURC/AUGRC integrate over each method's achievable [0,max_coverage] domain; normalized areas are also reported.",
+    "M2 remains an AI-gold supervised proxy and M6 remains a shared-system-signal deterministic replay.",
+    "Owner proxy tasks are excluded from primary areas and the figure by the dedicated role-owner audit.",
+    "Review escalation is a routing counter only; actual LLM calls remain zero."
+  ]
+}

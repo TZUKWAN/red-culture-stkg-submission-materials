@@ -1,0 +1,65 @@
+{
+  "contract_version": "redculture-current-release-1",
+  "release_version": "red-culture-stkg-v2-1",
+  "canonical_final_database": {
+    "path": "releases/red_culture_stkg_v2/databases/red_culture_stkg_final_v2.sqlite",
+    "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+    "counts": {
+      "research_entities": 152979,
+      "research_assertions": 424150,
+      "research_assertion_provenance": 466312,
+      "research_event_frames": 28065,
+      "research_culture_states": 11532,
+      "research_evolution_transitions": 4
+    }
+  },
+  "canonical_semantic_database": {
+    "path": "releases/red_culture_stkg_v2/databases/red_culture_stkg_semantic_v2.sqlite",
+    "sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377",
+    "counts": {
+      "v2_entities": 154150,
+      "v2_assertion_scopes": 424150
+    }
+  },
+  "canonical_graph": {
+    "nodes_path": "releases/red_culture_stkg_v2/graph/nodes.csv",
+    "nodes_sha256": "1155838b569955884fdff9c29ec57c1c2aa13a54df39948a7fdc6480073887d8",
+    "relationships_path": "releases/red_culture_stkg_v2/graph/relationships.csv",
+    "relationships_sha256": "30c88bea6eb9ec29c5e2d092a74ab9c3ddc41f4a9355fac83ce82ea99bb0695b",
+    "nodes": 1062247,
+    "relationships": 2984015
+  },
+  "runtime": {
+    "neo4j_container": "redculture-stkg-neo4j-v2",
+    "neo4j_data_volume": "redculture-stkg-neo4j-v2-656fdc3a8f72-data",
+    "neo4j_uri": "bolt://127.0.0.1:7690",
+    "ui_health_url": "http://127.0.0.1:8787/api/health"
+  },
+  "required_source_databases": [
+    "final_stkg_pipeline/final_curation.sqlite",
+    "final_stkg_pipeline/original_dataset.sqlite",
+    "final_stkg_pipeline/red_culture_evolution_v1.sqlite",
+    "final_stkg_pipeline/red_culture_semantic_integration_v1.sqlite"
+  ],
+  "allowed_database_paths": [
+    "final_stkg_pipeline/final_curation.sqlite",
+    "final_stkg_pipeline/original_dataset.sqlite",
+    "final_stkg_pipeline/red_culture_evolution_v1.sqlite",
+    "final_stkg_pipeline/red_culture_semantic_integration_v1.sqlite",
+    "releases/red_culture_stkg_v1/databases/creative_media_enrichment_v1.sqlite",
+    "releases/red_culture_stkg_v1/databases/red_culture_stkg_analysis_v1.sqlite",
+    "releases/red_culture_stkg_v1/databases/red_culture_stkg_evolution_v1.sqlite",
+    "releases/red_culture_stkg_v2/databases/red_culture_stkg_final_v2.sqlite",
+    "releases/red_culture_stkg_v2/databases/red_culture_stkg_semantic_v2.sqlite",
+    "releases/red_culture_stkg_v2/databases/stkg_v2_creative_media_enrichment.sqlite",
+    "derived/stkg_v2_entity_classifier.sqlite"
+  ],
+  "forbidden_active_paths": [
+    "derived/red_culture_stkg_final_v2.sqlite",
+    "derived/red_culture_stkg_semantic_v2.sqlite",
+    "derived/red_culture_stkg_research_v2.sqlite",
+    "derived/red_culture_stkg_event_culture_v2.sqlite",
+    "derived/red_culture_stkg_evolution_v2.sqlite",
+    "graph_exports/stkg_v2"
+  ]
+}

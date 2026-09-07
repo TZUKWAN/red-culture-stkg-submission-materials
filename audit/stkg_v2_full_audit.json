@@ -1,0 +1,2015 @@
+{
+  "status": "PASS",
+  "build_version": "red-culture-stkg-v2-full-audit-1",
+  "database": {
+    "path": "D:\\REDCULTUREDATA\\derived\\red_culture_stkg_final_v2.sqlite",
+    "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+    "size_bytes": 1187962880
+  },
+  "protected_v1": {
+    "path": "D:\\REDCULTUREDATA\\releases\\red_culture_stkg_v1\\databases\\red_culture_stkg_evolution_v1.sqlite",
+    "sha256": "416578c5d3ae7d14193982d9d35f26c8b6e8665cd9b6399d47b67361ab1c48bd",
+    "unchanged": true
+  },
+  "counts": {
+    "entities": 152979,
+    "assertions": 424150,
+    "provenance": 466312,
+    "scope_adjustments": 208,
+    "event_frames": 28065,
+    "event_cells": 7067,
+    "culture_states": 11532,
+    "trusted_culture_states": 958,
+    "transition_candidates": 159,
+    "published_transitions": 4,
+    "creative_works": 1019,
+    "creative_media": 1019,
+    "state_value_facets": 532
+  },
+  "integrity": {
+    "quick_check": "ok",
+    "foreign_key_errors": 0,
+    "invalid_time_labels": 0
+  },
+  "checks": {
+    "quick_check": true,
+    "foreign_keys": true,
+    "entity_names_nonblank": true,
+    "assertion_endpoints_complete": true,
+    "tier_conservation": true,
+    "strict_relation_contracts": true,
+    "all_assertions_have_provenance": true,
+    "canonical_time_labels": true,
+    "unknown_time_has_no_label": true,
+    "known_time_has_closed_role": true,
+    "untimed_has_unknown_role": true,
+    "event_time_owner_type": true,
+    "biographical_time_owner_type": true,
+    "event_space_owner_type": true,
+    "biographical_space_owner_type": true,
+    "no_context_role_promotion": true,
+    "all_states_have_support": true,
+    "all_states_have_events": true,
+    "trusted_transition_endpoints": true,
+    "creative_media_complete": true,
+    "state_value_types_valid": true,
+    "eight_historical_stages": true,
+    "thirteen_study_regions": true,
+    "three_basin_sections": true,
+    "database_unchanged_during_audit": true,
+    "required_reports_and_hash_chain": true
+  },
+  "report_chain": {
+    "stkg_v2_research_base.json": {
+      "status": "PASS",
+      "sha256": "af8629136583183f5c8baf06623eb086a306d4ffcd55e47b8f53a458384a4cc4"
+    },
+    "stkg_v2_event_culture.json": {
+      "status": "PASS",
+      "sha256": "0f3a1ebb0fafb5878016def971b259815c840e681ab3d1746961c37db16d6caf"
+    },
+    "stkg_v2_evolution.json": {
+      "status": "PASS",
+      "sha256": "1e6fa919d9523e988e982c96799fc3f3ae0dfac8ac99a5e9af80fb53f3c882c4"
+    },
+    "stkg_v2_creative_media.json": {
+      "status": "PASS",
+      "sha256": "664b1e5444b5d8f3944ec86630f5387d8d54f97d3c1967fb0103a527cd79a4a6"
+    },
+    "stkg_v2_final_materialization.json": {
+      "status": "PASS",
+      "sha256": "5febab189781a0b41f0e50c34a136e16705fee0d831d231c5d076c35a5a68670"
+    },
+    "stkg_v2_competency_queries.json": {
+      "status": "PASS",
+      "sha256": "997edfdf3b0f6aff51d858cd03c621fa478a6de7b5d8f200b15a3bdd778c1caf"
+    },
+    "stkg_v2_graph_export.json": {
+      "status": "PASS",
+      "sha256": "b9212bac293a50b14ea6032881d7e78860d6445f849e583ea343f85621aa9351"
+    },
+    "stkg_v2_neo4j_import.json": {
+      "status": "PASS",
+      "sha256": "9943bf9d509e9dcc09fa5aaf4a4a7e3d9e2611691e8871d503057326aea3612d"
+    },
+    "stkg_v2_neo4j_verification.json": {
+      "status": "PASS",
+      "sha256": "07fd7f5ae8b4996c829b179c8bff59afdc61804b71fc4a7fd94c8c91bc71256a"
+    },
+    "artifact_chain": {
+      "actual": {
+        "research": "1a38fb9433b68cf42417ce164c16fc865fe9e7868096f3286b5471a25c2b7961",
+        "event": "97d6b2acec0e2a8eb959956b5b69b716aefd1554b756cf7a112b609f7ba0e28d",
+        "evolution": "9b4c3107a4dc6399ea754ff3af957a37bf4420236dd943101c525b93a7db03a8",
+        "final": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+        "semantic": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377"
+      },
+      "expected": {
+        "research": "1a38fb9433b68cf42417ce164c16fc865fe9e7868096f3286b5471a25c2b7961",
+        "event": "97d6b2acec0e2a8eb959956b5b69b716aefd1554b756cf7a112b609f7ba0e28d",
+        "evolution": "9b4c3107a4dc6399ea754ff3af957a37bf4420236dd943101c525b93a7db03a8",
+        "final": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+        "semantic": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377"
+      }
+    }
+  },
+  "stratified_samples": {
+    "entity_type": [
+      {
+        "stratum": "AdministrativeRegion",
+        "entity_id": "IENT-009fbdf95505bbd4d85e95be",
+        "canonical_name": "通江",
+        "semantic_family": "SpatialEntity"
+      },
+      {
+        "stratum": "AdministrativeRegion",
+        "entity_id": "IENT-0121466d3de6662681b10b23",
+        "canonical_name": "汉口德租界",
+        "semantic_family": "SpatialEntity"
+      },
+      {
+        "stratum": "AdministrativeRegion",
+        "entity_id": "IENT-076d57181287ebe4af827541",
+        "canonical_name": "镇安",
+        "semantic_family": "SpatialEntity"
+      },
+      {
+        "stratum": "Artifact",
+        "entity_id": "IENT-002845e02ed3d2ff6210e9b9",
+        "canonical_name": "赵世炎传略",
+        "semantic_family": "Artifact"
+      },
+      {
+        "stratum": "Artifact",
+        "entity_id": "IENT-002ebae90f6af728dc71ea1f",
+        "canonical_name": "青莲堂商号",
+        "semantic_family": "Artifact"
+      },
+      {
+        "stratum": "Artifact",
+        "entity_id": "IENT-0039a2bca688cfbcac8e411f",
+        "canonical_name": "铜心",
+        "semantic_family": "Artifact"
+      },
+      {
+        "stratum": "Concept",
+        "entity_id": "IENT-00034cd5500503fbdc898f6c",
+        "canonical_name": "贺龙, 刘伯承, 周逸群",
+        "semantic_family": "ConceptualEntity"
+      },
+      {
+        "stratum": "Concept",
+        "entity_id": "IENT-00049d4ab5d00d16768c7fb9",
+        "canonical_name": "解玉华",
+        "semantic_family": "ConceptualEntity"
+      },
+      {
+        "stratum": "Concept",
+        "entity_id": "IENT-0005dac7ad8f4d028536f985",
+        "canonical_name": "谭振东/曾九思",
+        "semantic_family": "ConceptualEntity"
+      },
+      {
+        "stratum": "CreativeWork",
+        "entity_id": "IENT-089fd55e868bbe8d6888b968",
+        "canonical_name": "《咆哮了的土地》",
+        "semantic_family": "InformationObject"
+      },
+      {
+        "stratum": "CreativeWork",
+        "entity_id": "IENT-0e2a98b5e3daed7d70349b71",
+        "canonical_name": "《抗战壁报》",
+        "semantic_family": "InformationObject"
+      },
+      {
+        "stratum": "CreativeWork",
+        "entity_id": "IENT-181ac9d603dba1de51926d12",
+        "canonical_name": "《丰收》",
+        "semantic_family": "InformationObject"
+      },
+      {
+        "stratum": "CulturalSite",
+        "entity_id": "IENT-015c10f8741939b2eb9e74c9",
+        "canonical_name": "将军山战役战场遗址",
+        "semantic_family": "SpatialEntity"
+      },
+      {
+        "stratum": "CulturalSite",
+        "entity_id": "IENT-02aa3e040bf9d5cfc1f03f5d",
+        "canonical_name": "熊雄烈士故居",
+        "semantic_family": "SpatialEntity"
+      },
+      {
+        "stratum": "CulturalSite",
+        "entity_id": "IENT-02c96150ba93e456a5213b52",
+        "canonical_name": "黔东特区革命委员会旧址",
+        "semantic_family": "SpatialEntity"
+      },
+      {
+        "stratum": "Document",
+        "entity_id": "IENT-005785f3e101c60f79c4dfe3",
+        "canonical_name": "阜东报告干部",
+        "semantic_family": "InformationObject"
+      },
+      {
+        "stratum": "Document",
+        "entity_id": "IENT-008db1c19084c09915fc987e",
+        "canonical_name": "《前进》地下刊物",
+        "semantic_family": "InformationObject"
+      },
+      {
+        "stratum": "Document",
+        "entity_id": "IENT-00aab732985e6e2843019426",
+        "canonical_name": "剿匪报告",
+        "semantic_family": "InformationObject"
+      },
+      {
+        "stratum": "Event",
+        "entity_id": "IENT-00044861d53ed96d2e7e4ecd",
+        "canonical_name": "遵义",
+        "semantic_family": "Event"
+      },
+      {
+        "stratum": "Event",
+        "entity_id": "IENT-000634c0f9ceed402d7d6d10",
+        "canonical_name": "津浦路东会合",
+        "semantic_family": "Event"
+      },
+      {
+        "stratum": "Event",
+        "entity_id": "IENT-0006946cfcd9fa646fadfc78",
+        "canonical_name": "游击战术",
+        "semantic_family": "Event"
+      },
+      {
+        "stratum": "Institution",
+        "entity_id": "IENT-00045c922ba120523ef19327",
+        "canonical_name": "中央红军大学",
+        "semantic_family": "CollectiveEntity"
+      },
+      {
+        "stratum": "Institution",
+        "entity_id": "IENT-0010edb096b66bbbdce9a4ec",
+        "canonical_name": "杉坪民族学校",
+        "semantic_family": "CollectiveEntity"
+      },
+      {
+        "stratum": "Institution",
+        "entity_id": "IENT-00255d53122ae6b299f53a8b",
+        "canonical_name": "滇东北革命历史纪念馆",
+        "semantic_family": "CollectiveEntity"
+      },
+      {
+        "stratum": "Organization",
+        "entity_id": "IENT-0004130469ee40a42d0bdc82",
+        "canonical_name": "149团",
+        "semantic_family": "CollectiveEntity"
+      },
+      {
+        "stratum": "Organization",
+        "entity_id": "IENT-0006b268d75127ec9af15e9f",
+        "canonical_name": "罗盛文支队",
+        "semantic_family": "CollectiveEntity"
+      },
+      {
+        "stratum": "Organization",
+        "entity_id": "IENT-0006dc2b14fd5635228730de",
+        "canonical_name": "国民党军第七军",
+        "semantic_family": "CollectiveEntity"
+      },
+      {
+        "stratum": "Person",
+        "entity_id": "IENT-00069b1dd838af8906262d71",
+        "canonical_name": "潘健洋",
+        "semantic_family": "Person"
+      },
+      {
+        "stratum": "Person",
+        "entity_id": "IENT-0006dc41990c2392ca64656b",
+        "canonical_name": "赵书俊",
+        "semantic_family": "Person"
+      },
+      {
+        "stratum": "Person",
+        "entity_id": "IENT-000e725b1d58de0921e30fea",
+        "canonical_name": "聂景元",
+        "semantic_family": "Person"
+      },
+      {
+        "stratum": "Place",
+        "entity_id": "IENT-0001d7f3fa0449df87aefbe9",
+        "canonical_name": "狼山",
+        "semantic_family": "SpatialEntity"
+      },
+      {
+        "stratum": "Place",
+        "entity_id": "IENT-000690de41ca9edf4d959f00",
+        "canonical_name": "宜都、当阳、宜昌、枝江",
+        "semantic_family": "SpatialEntity"
+      },
+      {
+        "stratum": "Place",
+        "entity_id": "IENT-0009c572166d9162bf20dcba",
+        "canonical_name": "县公署",
+        "semantic_family": "SpatialEntity"
+      },
+      {
+        "stratum": "Position",
+        "entity_id": "IENT-0031699b97dcce82ec92189a",
+        "canonical_name": "青天畈小学校长",
+        "semantic_family": "ConceptualEntity"
+      },
+      {
+        "stratum": "Position",
+        "entity_id": "IENT-0185ab9ac7d3044daf2bab8a",
+        "canonical_name": "东南局军分委前委书记",
+        "semantic_family": "ConceptualEntity"
+      },
+      {
+        "stratum": "Position",
+        "entity_id": "IENT-03e7dec9e0160059cb4eb5b8",
+        "canonical_name": "中共贵州省委书记",
+        "semantic_family": "ConceptualEntity"
+      },
+      {
+        "stratum": "SocialGroup",
+        "entity_id": "IENT-078634baca70b5e2ae35b617",
+        "canonical_name": "上海工人",
+        "semantic_family": "CollectiveEntity"
+      },
+      {
+        "stratum": "SocialGroup",
+        "entity_id": "IENT-09bd5183ad7d5316b2aadafc",
+        "canonical_name": "农民",
+        "semantic_family": "CollectiveEntity"
+      },
+      {
+        "stratum": "SocialGroup",
+        "entity_id": "IENT-175bef80732ac020a1369704",
+        "canonical_name": "八百壮士",
+        "semantic_family": "CollectiveEntity"
+      },
+      {
+        "stratum": "Spirit",
+        "entity_id": "IENT-002126a721127cb932ac0386",
+        "canonical_name": "三大纪律八项注意/民族政策",
+        "semantic_family": "ConceptualEntity"
+      },
+      {
+        "stratum": "Spirit",
+        "entity_id": "IENT-0080d110c3f7624f90bbc892",
+        "canonical_name": "革命的知识分子到工农群众中去",
+        "semantic_family": "ConceptualEntity"
+      },
+      {
+        "stratum": "Spirit",
+        "entity_id": "IENT-008380c8d0336b830f7e1323",
+        "canonical_name": "马克思主义思想",
+        "semantic_family": "ConceptualEntity"
+      },
+      {
+        "stratum": "TimePeriod",
+        "entity_id": "IENT-001684f652f2cb885789beac",
+        "canonical_name": "1930年11月14日",
+        "semantic_family": "TimePeriod"
+      },
+      {
+        "stratum": "TimePeriod",
+        "entity_id": "IENT-0148cd6e331f22b8c351bf00",
+        "canonical_name": "1940年12月22日",
+        "semantic_family": "TimePeriod"
+      },
+      {
+        "stratum": "TimePeriod",
+        "entity_id": "IENT-01f07805adbdfd718b6fb663",
+        "canonical_name": "1927年10月初",
+        "semantic_family": "TimePeriod"
+      },
+      {
+        "stratum": "ValueFacet",
+        "entity_id": "IENT-189da0d14e24e410fae17373",
+        "canonical_name": "清正廉洁",
+        "semantic_family": "ConceptualEntity"
+      },
+      {
+        "stratum": "ValueFacet",
+        "entity_id": "IENT-32c4cdfd59640ce9e4a37dfe",
+        "canonical_name": "戴季陶主义",
+        "semantic_family": "ConceptualEntity"
+      },
+      {
+        "stratum": "ValueFacet",
+        "entity_id": "IENT-505dee560d49d451df793300",
+        "canonical_name": "宣传抗日",
+        "semantic_family": "ConceptualEntity"
+      }
+    ],
+    "research_tier": [
+      {
+        "stratum": "contextual",
+        "fact_id": "IFACT-000030f66949caf27c69b97c",
+        "subject_name": "王金英",
+        "predicate": "raw:held_position_in",
+        "object_name": "楚雄哨区",
+        "normalized_time_label": null,
+        "province": "云南省"
+      },
+      {
+        "stratum": "contextual",
+        "fact_id": "IFACT-0000c90267a7c94642915cd2",
+        "subject_name": "洪琛",
+        "predicate": "raw:关联",
+        "object_name": "复旦大学",
+        "normalized_time_label": null,
+        "province": null
+      },
+      {
+        "stratum": "contextual",
+        "fact_id": "IFACT-00010a9dd0d72513a91b50fd",
+        "subject_name": "江津中学",
+        "predicate": "raw:disseminates",
+        "object_name": "彭国清",
+        "normalized_time_label": null,
+        "province": null
+      },
+      {
+        "stratum": "contextual",
+        "fact_id": "IFACT-00010bf948e893fc3195335e",
+        "subject_name": "溧阳警卫团组建",
+        "predicate": "raw:战略方向",
+        "object_name": "南京",
+        "normalized_time_label": null,
+        "province": null
+      },
+      {
+        "stratum": "contextual",
+        "fact_id": "IFACT-0001c7d0ee897251d8c11b0e",
+        "subject_name": "五卅运动",
+        "predicate": "raw:关联",
+        "object_name": "北伐军",
+        "normalized_time_label": null,
+        "province": null
+      },
+      {
+        "stratum": "strict_semantic",
+        "fact_id": "IFACT-0000a41af5797e06444c70c0",
+        "subject_name": "吴本源",
+        "predicate": "participated_in",
+        "object_name": "天生桥战役",
+        "normalized_time_label": "1945年8月-1949年9月",
+        "province": null
+      },
+      {
+        "stratum": "strict_semantic",
+        "fact_id": "IFACT-0001037283bc53f32fea6567",
+        "subject_name": "乡长张爱民",
+        "predicate": "led",
+        "object_name": "土匪搜查与乡公所审讯",
+        "normalized_time_label": null,
+        "province": null
+      },
+      {
+        "stratum": "strict_semantic",
+        "fact_id": "IFACT-00012beb3ce556fc3f813cbf",
+        "subject_name": "葛文英",
+        "predicate": "led",
+        "object_name": "妇女解放运动",
+        "normalized_time_label": null,
+        "province": null
+      },
+      {
+        "stratum": "strict_semantic",
+        "fact_id": "IFACT-0001f794902d11892e2d5b4a",
+        "subject_name": "曹绍华",
+        "predicate": "organized",
+        "object_name": "秋收大反攻",
+        "normalized_time_label": null,
+        "province": null
+      },
+      {
+        "stratum": "strict_semantic",
+        "fact_id": "IFACT-00027fc750b2c145363d2446",
+        "subject_name": "六霍县委",
+        "predicate": "organized",
+        "object_name": "红十一军第三十三师",
+        "normalized_time_label": "1927年8月-1937年7月",
+        "province": "安徽省/湖北省"
+      },
+      {
+        "stratum": "unresolved",
+        "fact_id": "IFACT-00024eeb558ec2723734b4d0",
+        "subject_name": "邹韬奋",
+        "predicate": "raw:disseminates",
+        "object_name": "新民主主义论",
+        "normalized_time_label": null,
+        "province": null
+      },
+      {
+        "stratum": "unresolved",
+        "fact_id": "IFACT-000275ff62667f22b468a088",
+        "subject_name": "快邮代电",
+        "predicate": "raw:见于证据记录",
+        "object_name": "证据记录:EVD-TOPIC-8db926f7d49730efc1f65dc6",
+        "normalized_time_label": null,
+        "province": null
+      },
+      {
+        "stratum": "unresolved",
+        "fact_id": "IFACT-0003e2501071952e9f2faaed",
+        "subject_name": "徐彦刚",
+        "predicate": "used_artifact",
+        "object_name": "斧头",
+        "normalized_time_label": null,
+        "province": null
+      },
+      {
+        "stratum": "unresolved",
+        "fact_id": "IFACT-000440cae98b1dcff2f32a25",
+        "subject_name": "中共代表团",
+        "predicate": "participated_in",
+        "object_name": "政协会议",
+        "normalized_time_label": "1946年5月",
+        "province": "江苏省"
+      },
+      {
+        "stratum": "unresolved",
+        "fact_id": "IFACT-000738d5ad3ba78a30a4321e",
+        "subject_name": "土匪",
+        "predicate": "raw:主体-事件",
+        "object_name": "区政府保卫战",
+        "normalized_time_label": null,
+        "province": null
+      }
+    ],
+    "time_role": [
+      {
+        "stratum": "biographical",
+        "fact_id": "IFACT-000bb5b1f75ab3a98b7d9af4",
+        "subject_name": "王洪怡",
+        "predicate": "raw:发生于",
+        "object_name": "白市河",
+        "normalized_time_label": "1927年8月-1937年7月"
+      },
+      {
+        "stratum": "biographical",
+        "fact_id": "IFACT-00228b1300df459c6a5dac88",
+        "subject_name": "李亚群",
+        "predicate": "raw:发生于",
+        "object_name": "川黔边区",
+        "normalized_time_label": "1927年8月-1937年7月"
+      },
+      {
+        "stratum": "biographical",
+        "fact_id": "IFACT-002798fb38615f59c23c73cb",
+        "subject_name": "程克绳",
+        "predicate": "raw:发生于",
+        "object_name": "枣阳县",
+        "normalized_time_label": "1924年1月-1927年7月"
+      },
+      {
+        "stratum": "commemoration_or_reception",
+        "fact_id": "IFACT-021846840106e7032286aa63",
+        "subject_name": "淮海战役纪念馆",
+        "predicate": "commemorates",
+        "object_name": "淮海战役",
+        "normalized_time_label": "1945年8月-1949年9月"
+      },
+      {
+        "stratum": "commemoration_or_reception",
+        "fact_id": "IFACT-18e20ffa2139b6a71adcab79",
+        "subject_name": "苏南反顽战役阵亡将士纪念塔",
+        "predicate": "commemorates",
+        "object_name": "苏南反顽战役",
+        "normalized_time_label": "1943年"
+      },
+      {
+        "stratum": "commemoration_or_reception",
+        "fact_id": "IFACT-236f61c129ce15aac54a934d",
+        "subject_name": "渡江胜利纪念碑",
+        "predicate": "commemorates",
+        "object_name": "渡江战役",
+        "normalized_time_label": "1949年4月"
+      },
+      {
+        "stratum": "context_time",
+        "fact_id": "IFACT-0001d55eb65aef3af7ccf080",
+        "subject_name": "南京救国会",
+        "predicate": "raw:发生于",
+        "object_name": "南京",
+        "normalized_time_label": "1937年7月-1945年8月"
+      },
+      {
+        "stratum": "context_time",
+        "fact_id": "IFACT-00036867a92d91379b6c7a49",
+        "subject_name": "边纵十支队",
+        "predicate": "raw:进驻",
+        "object_name": "屏边",
+        "normalized_time_label": "1945年8月-1949年9月"
+      },
+      {
+        "stratum": "context_time",
+        "fact_id": "IFACT-00059d2b7413598785a86bdb",
+        "subject_name": "夏义筠",
+        "predicate": "raw:转移路线",
+        "object_name": "贵州桐梓",
+        "normalized_time_label": "1939年"
+      },
+      {
+        "stratum": "creation_or_publication",
+        "fact_id": "IFACT-19e92500e7cb0d8f4a22c8bc",
+        "subject_name": "瞿秋白",
+        "predicate": "edited",
+        "object_name": "热血日报",
+        "normalized_time_label": "1935年"
+      },
+      {
+        "stratum": "creation_or_publication",
+        "fact_id": "IFACT-2a5c55f87cbdade7b9a215f9",
+        "subject_name": "恽代英",
+        "predicate": "authored",
+        "object_name": "《阶级斗争》",
+        "normalized_time_label": "1920年1月"
+      },
+      {
+        "stratum": "creation_or_publication",
+        "fact_id": "IFACT-325d6c454584298a62a9c707",
+        "subject_name": "蒋光慈",
+        "predicate": "authored",
+        "object_name": "《疯儿》",
+        "normalized_time_label": "1924年1月-1927年7月"
+      },
+      {
+        "stratum": "event_occurrence",
+        "fact_id": "IFACT-0034a0f1809f3bcc4db96985",
+        "subject_name": "农村爱国增产运动",
+        "predicate": "occurred_at",
+        "object_name": "永城县",
+        "normalized_time_label": "1952年"
+      },
+      {
+        "stratum": "event_occurrence",
+        "fact_id": "IFACT-004768e90a965c7d3b21b95a",
+        "subject_name": "清匪反霸减租退押运动",
+        "predicate": "occurred_at",
+        "object_name": "云南",
+        "normalized_time_label": "1950年-1951年"
+      },
+      {
+        "stratum": "event_occurrence",
+        "fact_id": "IFACT-00750e72156be9c80dd89d4e",
+        "subject_name": "苏南反顽战役",
+        "predicate": "occurred_at",
+        "object_name": "溧水地区",
+        "normalized_time_label": "1943年"
+      },
+      {
+        "stratum": "relation_validity",
+        "fact_id": "IFACT-0000a41af5797e06444c70c0",
+        "subject_name": "吴本源",
+        "predicate": "participated_in",
+        "object_name": "天生桥战役",
+        "normalized_time_label": "1945年8月-1949年9月"
+      },
+      {
+        "stratum": "relation_validity",
+        "fact_id": "IFACT-00027fc750b2c145363d2446",
+        "subject_name": "六霍县委",
+        "predicate": "organized",
+        "object_name": "红十一军第三十三师",
+        "normalized_time_label": "1927年8月-1937年7月"
+      },
+      {
+        "stratum": "relation_validity",
+        "fact_id": "IFACT-000440cae98b1dcff2f32a25",
+        "subject_name": "中共代表团",
+        "predicate": "participated_in",
+        "object_name": "政协会议",
+        "normalized_time_label": "1946年5月"
+      },
+      {
+        "stratum": "source_document_time",
+        "fact_id": "IFACT-06226ccf5dff7fbf01d05a11",
+        "subject_name": "蔡和森",
+        "predicate": "mentioned_in",
+        "object_name": "《向导》周报",
+        "normalized_time_label": "1922年9月"
+      },
+      {
+        "stratum": "source_document_time",
+        "fact_id": "IFACT-088dafa7b1f81fde54904735",
+        "subject_name": "曲江工潮",
+        "predicate": "mentioned_in",
+        "object_name": "95.txt",
+        "normalized_time_label": "1920年12月"
+      },
+      {
+        "stratum": "source_document_time",
+        "fact_id": "IFACT-2204444f3655fd11d264c302",
+        "subject_name": "赣东北特区贫民银行",
+        "predicate": "mentioned_in",
+        "object_name": "173.txt",
+        "normalized_time_label": "1931年3月"
+      },
+      {
+        "stratum": "unknown",
+        "fact_id": "IFACT-000030f66949caf27c69b97c",
+        "subject_name": "王金英",
+        "predicate": "raw:held_position_in",
+        "object_name": "楚雄哨区",
+        "normalized_time_label": null
+      },
+      {
+        "stratum": "unknown",
+        "fact_id": "IFACT-0000c90267a7c94642915cd2",
+        "subject_name": "洪琛",
+        "predicate": "raw:关联",
+        "object_name": "复旦大学",
+        "normalized_time_label": null
+      },
+      {
+        "stratum": "unknown",
+        "fact_id": "IFACT-0001037283bc53f32fea6567",
+        "subject_name": "乡长张爱民",
+        "predicate": "led",
+        "object_name": "土匪搜查与乡公所审讯",
+        "normalized_time_label": null
+      }
+    ],
+    "space_role": [
+      {
+        "stratum": "biographical_location",
+        "fact_id": "IFACT-006dd6576c4206db4337356a",
+        "subject_name": "陈希堂",
+        "predicate": "raw:牺牲于",
+        "object_name": "突围战",
+        "place_raw": "湖北区域",
+        "province": "湖北省"
+      },
+      {
+        "stratum": "biographical_location",
+        "fact_id": "IFACT-01bd5b3ac9161e95f44b68c4",
+        "subject_name": "王效亭",
+        "predicate": "raw:牺牲于",
+        "object_name": "光山县白雀园",
+        "place_raw": "苏皖地区",
+        "province": "江苏省/安徽省"
+      },
+      {
+        "stratum": "biographical_location",
+        "fact_id": "IFACT-01ee3167022751e3c0e4c046",
+        "subject_name": "吴军",
+        "predicate": "imprisoned_at",
+        "object_name": "上饶集中营",
+        "place_raw": "江西",
+        "province": "江西省"
+      },
+      {
+        "stratum": "commemoration_or_reception_location",
+        "fact_id": "IFACT-18e20ffa2139b6a71adcab79",
+        "subject_name": "苏南反顽战役阵亡将士纪念塔",
+        "predicate": "commemorates",
+        "object_name": "苏南反顽战役",
+        "place_raw": "江苏区域",
+        "province": "江苏省"
+      },
+      {
+        "stratum": "commemoration_or_reception_location",
+        "fact_id": "IFACT-236f61c129ce15aac54a934d",
+        "subject_name": "渡江胜利纪念碑",
+        "predicate": "commemorates",
+        "object_name": "渡江战役",
+        "place_raw": "长江",
+        "province": null
+      },
+      {
+        "stratum": "commemoration_or_reception_location",
+        "fact_id": "IFACT-5f8a839bb1b31ed717be055b",
+        "subject_name": "鸡鸣三省红军纪念碑",
+        "predicate": "commemorates",
+        "object_name": "扎西会议",
+        "place_raw": "长江流域",
+        "province": null
+      },
+      {
+        "stratum": "context_location",
+        "fact_id": "IFACT-000030f66949caf27c69b97c",
+        "subject_name": "王金英",
+        "predicate": "raw:held_position_in",
+        "object_name": "楚雄哨区",
+        "place_raw": "云南",
+        "province": "云南省"
+      },
+      {
+        "stratum": "context_location",
+        "fact_id": "IFACT-0001c7d0ee897251d8c11b0e",
+        "subject_name": "五卅运动",
+        "predicate": "raw:关联",
+        "object_name": "北伐军",
+        "place_raw": "上海",
+        "province": null
+      },
+      {
+        "stratum": "context_location",
+        "fact_id": "IFACT-0001d55eb65aef3af7ccf080",
+        "subject_name": "南京救国会",
+        "predicate": "raw:发生于",
+        "object_name": "南京",
+        "place_raw": "长江流域",
+        "province": null
+      },
+      {
+        "stratum": "creation_or_publication_location",
+        "fact_id": "IFACT-85adddd2b660f4858ebba928",
+        "subject_name": "党员训练大纲",
+        "predicate": "created_at",
+        "object_name": "上海",
+        "place_raw": "上海",
+        "province": "上海市"
+      },
+      {
+        "stratum": "creation_or_publication_location",
+        "fact_id": "IFACT-d892d691e5a6146a06745606",
+        "subject_name": "《怒潮》",
+        "predicate": "created_at",
+        "object_name": "湖南",
+        "place_raw": "湖南",
+        "province": "湖南省"
+      },
+      {
+        "stratum": "event_location",
+        "fact_id": "IFACT-000da72c79d94b598ebcc682",
+        "subject_name": "苏南斗争形势",
+        "predicate": "occurred_at",
+        "object_name": "两淮高湾地区",
+        "place_raw": "江苏区域",
+        "province": "江苏省"
+      },
+      {
+        "stratum": "event_location",
+        "fact_id": "IFACT-001359bf1864bdc14ac5ceaa",
+        "subject_name": "旧城暴动",
+        "predicate": "raw:发生于",
+        "object_name": "泸西",
+        "place_raw": "云南",
+        "province": "云南省"
+      },
+      {
+        "stratum": "event_location",
+        "fact_id": "IFACT-0034a0f1809f3bcc4db96985",
+        "subject_name": "农村爱国增产运动",
+        "predicate": "occurred_at",
+        "object_name": "永城县",
+        "place_raw": "长江流域",
+        "province": null
+      },
+      {
+        "stratum": "relation_location",
+        "fact_id": "IFACT-00027fc750b2c145363d2446",
+        "subject_name": "六霍县委",
+        "predicate": "organized",
+        "object_name": "红十一军第三十三师",
+        "place_raw": "鄂豫皖边区",
+        "province": "安徽省/湖北省"
+      },
+      {
+        "stratum": "relation_location",
+        "fact_id": "IFACT-00038db76072bde257ebb9f3",
+        "subject_name": "张华俊",
+        "predicate": "led",
+        "object_name": "云南人民自卫军第五支队",
+        "place_raw": "云南区域",
+        "province": "云南省"
+      },
+      {
+        "stratum": "relation_location",
+        "fact_id": "IFACT-000440cae98b1dcff2f32a25",
+        "subject_name": "中共代表团",
+        "predicate": "participated_in",
+        "object_name": "政协会议",
+        "place_raw": "南京",
+        "province": "江苏省"
+      },
+      {
+        "stratum": "unknown",
+        "fact_id": "IFACT-0000a41af5797e06444c70c0",
+        "subject_name": "吴本源",
+        "predicate": "participated_in",
+        "object_name": "天生桥战役",
+        "place_raw": null,
+        "province": null
+      },
+      {
+        "stratum": "unknown",
+        "fact_id": "IFACT-0000c90267a7c94642915cd2",
+        "subject_name": "洪琛",
+        "predicate": "raw:关联",
+        "object_name": "复旦大学",
+        "place_raw": null,
+        "province": null
+      },
+      {
+        "stratum": "unknown",
+        "fact_id": "IFACT-0001037283bc53f32fea6567",
+        "subject_name": "乡长张爱民",
+        "predicate": "led",
+        "object_name": "土匪搜查与乡公所审讯",
+        "place_raw": null,
+        "province": null
+      }
+    ],
+    "historical_stage": [
+      {
+        "stratum": "agrarian_revolution",
+        "fact_id": "IFACT-00027fc750b2c145363d2446",
+        "subject_name": "六霍县委",
+        "predicate": "organized",
+        "object_name": "红十一军第三十三师",
+        "normalized_time_label": "1927年8月-1937年7月"
+      },
+      {
+        "stratum": "agrarian_revolution",
+        "fact_id": "IFACT-0007a75dbd234699e6a18f15",
+        "subject_name": "红军黔滇驰骋",
+        "predicate": "raw:发生于",
+        "object_name": "元谋马街渡",
+        "normalized_time_label": "1927年8月-1937年7月"
+      },
+      {
+        "stratum": "agrarian_revolution",
+        "fact_id": "IFACT-000a095b309ce430bd1e4076",
+        "subject_name": "陈洪涛",
+        "predicate": "led",
+        "object_name": "土地革命",
+        "normalized_time_label": "1927年8月-1937年7月"
+      },
+      {
+        "stratum": "founding_and_great_revolution",
+        "fact_id": "IFACT-000db8a6f03b72e5c1e928e7",
+        "subject_name": "徐全直",
+        "predicate": "participated_in",
+        "object_name": "京汉铁路工人大罢工",
+        "normalized_time_label": "1923年"
+      },
+      {
+        "stratum": "founding_and_great_revolution",
+        "fact_id": "IFACT-000e9cf9643353d8fff938ef",
+        "subject_name": "国共两党",
+        "predicate": "raw:推动",
+        "object_name": "国民会议促成",
+        "normalized_time_label": "1924年"
+      },
+      {
+        "stratum": "founding_and_great_revolution",
+        "fact_id": "IFACT-001586a197f66e07f42bdaae",
+        "subject_name": "许继慎",
+        "predicate": "participated_in",
+        "object_name": "南昌起义",
+        "normalized_time_label": "1927年7月"
+      },
+      {
+        "stratum": "liberation_war",
+        "fact_id": "IFACT-0000a41af5797e06444c70c0",
+        "subject_name": "吴本源",
+        "predicate": "participated_in",
+        "object_name": "天生桥战役",
+        "normalized_time_label": "1945年8月-1949年9月"
+      },
+      {
+        "stratum": "liberation_war",
+        "fact_id": "IFACT-00036867a92d91379b6c7a49",
+        "subject_name": "边纵十支队",
+        "predicate": "raw:进驻",
+        "object_name": "屏边",
+        "normalized_time_label": "1945年8月-1949年9月"
+      },
+      {
+        "stratum": "liberation_war",
+        "fact_id": "IFACT-000440cae98b1dcff2f32a25",
+        "subject_name": "中共代表团",
+        "predicate": "participated_in",
+        "object_name": "政协会议",
+        "normalized_time_label": "1946年5月"
+      },
+      {
+        "stratum": "new_era",
+        "fact_id": "IFACT-1163e870b54ea1ee9c616f7f",
+        "subject_name": "重庆城市精神",
+        "predicate": "raw:体现于地域",
+        "object_name": "重庆市",
+        "normalized_time_label": "2024年12月"
+      },
+      {
+        "stratum": "new_era",
+        "fact_id": "IFACT-237783aef02bed48b05a7b93",
+        "subject_name": "岳阳”四种精神”",
+        "predicate": "raw:体现于地域",
+        "object_name": "湖南省",
+        "normalized_time_label": "2017年"
+      },
+      {
+        "stratum": "new_era",
+        "fact_id": "IFACT-515232745d3692dbacc6c7f1",
+        "subject_name": "新时代贵州精神",
+        "predicate": "raw:体现于地域",
+        "object_name": "贵州省",
+        "normalized_time_label": "2017年10月"
+      },
+      {
+        "stratum": "pre_1921",
+        "fact_id": "IFACT-00430e9d99d83a5e436f143c",
+        "subject_name": "熊厚发",
+        "predicate": "participated_in",
+        "object_name": "包座战斗",
+        "normalized_time_label": "1914年"
+      },
+      {
+        "stratum": "pre_1921",
+        "fact_id": "IFACT-0047f0b91b0184c8c01bdd45",
+        "subject_name": "云南省立第二师范学校",
+        "predicate": "raw:关联",
+        "object_name": "张本钊",
+        "normalized_time_label": "1913年"
+      },
+      {
+        "stratum": "pre_1921",
+        "fact_id": "IFACT-008c0ed4c68517eeeced47dc",
+        "subject_name": "长沙反考运动",
+        "predicate": "raw:关联",
+        "object_name": "学生运动指导工作",
+        "normalized_time_label": "1920年"
+      },
+      {
+        "stratum": "reform_and_opening",
+        "fact_id": "IFACT-002fa8abe1f3c1b539732de4",
+        "subject_name": "郭述申",
+        "predicate": "raw:mentioned_in",
+        "object_name": "吴焕先",
+        "normalized_time_label": "1981年1月"
+      },
+      {
+        "stratum": "reform_and_opening",
+        "fact_id": "IFACT-007bf928277ebb6ec2b830e2",
+        "subject_name": "熊亨瀚",
+        "predicate": "raw:关联",
+        "object_name": "湖南省革命烈士纪念塔",
+        "normalized_time_label": "1949年10月-1978年12月"
+      },
+      {
+        "stratum": "reform_and_opening",
+        "fact_id": "IFACT-010fb6a7ad40e6bd69bf47e1",
+        "subject_name": "肖克",
+        "predicate": "raw:关联",
+        "object_name": "丽江石鼓渡口",
+        "normalized_time_label": "1984年"
+      },
+      {
+        "stratum": "socialist_revolution_and_construction",
+        "fact_id": "IFACT-000d533d827cde7d420e71e7",
+        "subject_name": "青龙港",
+        "predicate": "raw:关联",
+        "object_name": "上海",
+        "normalized_time_label": "1949年"
+      },
+      {
+        "stratum": "socialist_revolution_and_construction",
+        "fact_id": "IFACT-00135e9aa4f3a07fb1ed4833",
+        "subject_name": "卢汉",
+        "predicate": "raw:participated_in",
+        "object_name": "昆明五华山",
+        "normalized_time_label": "1949年12月"
+      },
+      {
+        "stratum": "socialist_revolution_and_construction",
+        "fact_id": "IFACT-0013c18d9bebe772215d29c6",
+        "subject_name": "大定县第一区",
+        "predicate": "raw:发生于",
+        "object_name": "接管大方镇",
+        "normalized_time_label": "1949年12月"
+      },
+      {
+        "stratum": "war_of_resistance",
+        "fact_id": "IFACT-0000a41af5797e06444c70c0",
+        "subject_name": "吴本源",
+        "predicate": "participated_in",
+        "object_name": "天生桥战役",
+        "normalized_time_label": "1945年8月-1949年9月"
+      },
+      {
+        "stratum": "war_of_resistance",
+        "fact_id": "IFACT-0001d55eb65aef3af7ccf080",
+        "subject_name": "南京救国会",
+        "predicate": "raw:发生于",
+        "object_name": "南京",
+        "normalized_time_label": "1937年7月-1945年8月"
+      },
+      {
+        "stratum": "war_of_resistance",
+        "fact_id": "IFACT-00036867a92d91379b6c7a49",
+        "subject_name": "边纵十支队",
+        "predicate": "raw:进驻",
+        "object_name": "屏边",
+        "normalized_time_label": "1945年8月-1949年9月"
+      }
+    ],
+    "study_region": [
+      {
+        "stratum": "上海市",
+        "fact_id": "IFACT-000d533d827cde7d420e71e7",
+        "subject_name": "青龙港",
+        "predicate": "raw:关联",
+        "object_name": "上海"
+      },
+      {
+        "stratum": "上海市",
+        "fact_id": "IFACT-0018fb32aaa8d1e57a9539b6",
+        "subject_name": "吴仲廉",
+        "predicate": "raw:participated_in",
+        "object_name": "中国共产党"
+      },
+      {
+        "stratum": "上海市",
+        "fact_id": "IFACT-002d48c822982282344d108a",
+        "subject_name": "龚饮冰",
+        "predicate": "raw:关系待定",
+        "object_name": "上海"
+      },
+      {
+        "stratum": "云南省",
+        "fact_id": "IFACT-000030f66949caf27c69b97c",
+        "subject_name": "王金英",
+        "predicate": "raw:held_position_in",
+        "object_name": "楚雄哨区"
+      },
+      {
+        "stratum": "云南省",
+        "fact_id": "IFACT-00036867a92d91379b6c7a49",
+        "subject_name": "边纵十支队",
+        "predicate": "raw:进驻",
+        "object_name": "屏边"
+      },
+      {
+        "stratum": "云南省",
+        "fact_id": "IFACT-00038db76072bde257ebb9f3",
+        "subject_name": "张华俊",
+        "predicate": "led",
+        "object_name": "云南人民自卫军第五支队"
+      },
+      {
+        "stratum": "四川省",
+        "fact_id": "IFACT-0007a75dbd234699e6a18f15",
+        "subject_name": "红军黔滇驰骋",
+        "predicate": "raw:发生于",
+        "object_name": "元谋马街渡"
+      },
+      {
+        "stratum": "四川省",
+        "fact_id": "IFACT-000f96e8f562a1cedcfcc242",
+        "subject_name": "刘愿庵",
+        "predicate": "raw:关联",
+        "object_name": "陈毅"
+      },
+      {
+        "stratum": "四川省",
+        "fact_id": "IFACT-0010e90a73e6315a76a7af5a",
+        "subject_name": "虎南区",
+        "predicate": "raw:发生于",
+        "object_name": "大竹"
+      },
+      {
+        "stratum": "安徽省",
+        "fact_id": "IFACT-00027fc750b2c145363d2446",
+        "subject_name": "六霍县委",
+        "predicate": "organized",
+        "object_name": "红十一军第三十三师"
+      },
+      {
+        "stratum": "安徽省",
+        "fact_id": "IFACT-00099decfe2cc48c2c82e06f",
+        "subject_name": "汪述庆",
+        "predicate": "raw:冲突",
+        "object_name": "潜山抗日自卫团"
+      },
+      {
+        "stratum": "安徽省",
+        "fact_id": "IFACT-000e6917daf91ca205e02a7a",
+        "subject_name": "何伟",
+        "predicate": "traveled_to",
+        "object_name": "大别山地区"
+      },
+      {
+        "stratum": "江苏省",
+        "fact_id": "IFACT-000440cae98b1dcff2f32a25",
+        "subject_name": "中共代表团",
+        "predicate": "participated_in",
+        "object_name": "政协会议"
+      },
+      {
+        "stratum": "江苏省",
+        "fact_id": "IFACT-000da72c79d94b598ebcc682",
+        "subject_name": "苏南斗争形势",
+        "predicate": "occurred_at",
+        "object_name": "两淮高湾地区"
+      },
+      {
+        "stratum": "江苏省",
+        "fact_id": "IFACT-000db8a6f03b72e5c1e928e7",
+        "subject_name": "徐全直",
+        "predicate": "participated_in",
+        "object_name": "京汉铁路工人大罢工"
+      },
+      {
+        "stratum": "江西省",
+        "fact_id": "IFACT-000a73cf65369922020f57da",
+        "subject_name": "方志敏",
+        "predicate": "raw:关联",
+        "object_name": "程伯谦"
+      },
+      {
+        "stratum": "江西省",
+        "fact_id": "IFACT-001586a197f66e07f42bdaae",
+        "subject_name": "许继慎",
+        "predicate": "participated_in",
+        "object_name": "南昌起义"
+      },
+      {
+        "stratum": "江西省",
+        "fact_id": "IFACT-00158ba93035d777f3077104",
+        "subject_name": "陈毅",
+        "predicate": "raw:领导活动",
+        "object_name": "都昌湖口彭泽地区"
+      },
+      {
+        "stratum": "浙江省",
+        "fact_id": "IFACT-004e0066e94a04d546da555a",
+        "subject_name": "王必成",
+        "predicate": "led",
+        "object_name": "虬山战斗"
+      },
+      {
+        "stratum": "浙江省",
+        "fact_id": "IFACT-007a58d1d6465cf6e537f138",
+        "subject_name": "铁流部队",
+        "predicate": "raw:发生于",
+        "object_name": "厚旁"
+      },
+      {
+        "stratum": "浙江省",
+        "fact_id": "IFACT-00b62459ed91af564b2a6016",
+        "subject_name": "葛文英",
+        "predicate": "raw:关联",
+        "object_name": "西河女校"
+      },
+      {
+        "stratum": "湖北省",
+        "fact_id": "IFACT-00027fc750b2c145363d2446",
+        "subject_name": "六霍县委",
+        "predicate": "organized",
+        "object_name": "红十一军第三十三师"
+      },
+      {
+        "stratum": "湖北省",
+        "fact_id": "IFACT-000a7070f84237be85878d94",
+        "subject_name": "王炳南",
+        "predicate": "raw:participated_in",
+        "object_name": "湘鄂边独立团"
+      },
+      {
+        "stratum": "湖北省",
+        "fact_id": "IFACT-000bf18f58b079d797e19575",
+        "subject_name": "周恩来",
+        "predicate": "raw:关系待定",
+        "object_name": "汉口"
+      },
+      {
+        "stratum": "湖南省",
+        "fact_id": "IFACT-000a7070f84237be85878d94",
+        "subject_name": "王炳南",
+        "predicate": "raw:participated_in",
+        "object_name": "湘鄂边独立团"
+      },
+      {
+        "stratum": "湖南省",
+        "fact_id": "IFACT-001625517b1e896324cf439a",
+        "subject_name": "贺龙",
+        "predicate": "raw:关联",
+        "object_name": "临澧"
+      },
+      {
+        "stratum": "湖南省",
+        "fact_id": "IFACT-001a8ba11ca92a3ada553162",
+        "subject_name": "汪精卫集团",
+        "predicate": "influenced",
+        "object_name": "陈伯钧"
+      },
+      {
+        "stratum": "西藏自治区",
+        "fact_id": "IFACT-0ee4313da9388d4f14dab7c9",
+        "subject_name": "老西藏精神",
+        "predicate": "raw:体现于地域",
+        "object_name": "西藏自治区"
+      },
+      {
+        "stratum": "西藏自治区",
+        "fact_id": "IFACT-1027c8caec67f2f0b1be6f8a",
+        "subject_name": "西藏民主改革精神",
+        "predicate": "raw:体现于地域",
+        "object_name": "西藏自治区"
+      },
+      {
+        "stratum": "西藏自治区",
+        "fact_id": "IFACT-1790eeb0cf2be35bcfe21e7a",
+        "subject_name": "十八军进藏精神",
+        "predicate": "raw:体现于地域",
+        "object_name": "西藏自治区"
+      },
+      {
+        "stratum": "贵州省",
+        "fact_id": "IFACT-0013c18d9bebe772215d29c6",
+        "subject_name": "大定县第一区",
+        "predicate": "raw:发生于",
+        "object_name": "接管大方镇"
+      },
+      {
+        "stratum": "贵州省",
+        "fact_id": "IFACT-0018f19a8fa1eea441fc5ccd",
+        "subject_name": "丁树奇",
+        "predicate": "raw:authored",
+        "object_name": "撰写纪念“五卅”文章"
+      },
+      {
+        "stratum": "贵州省",
+        "fact_id": "IFACT-001eec22ebd9924eb382559f",
+        "subject_name": "大定",
+        "predicate": "raw:发生于",
+        "object_name": "川滇黔省省委员会"
+      },
+      {
+        "stratum": "重庆市",
+        "fact_id": "IFACT-00042ed186b3b58c9028ab37",
+        "subject_name": "沙千里",
+        "predicate": "raw:关联",
+        "object_name": "铜梁县"
+      },
+      {
+        "stratum": "重庆市",
+        "fact_id": "IFACT-0008c76e2ee1d464ee9a3dac",
+        "subject_name": "北街川主庙",
+        "predicate": "raw:关联",
+        "object_name": "识字班"
+      },
+      {
+        "stratum": "重庆市",
+        "fact_id": "IFACT-00103279cf463477a98ab5b9",
+        "subject_name": "孟莲浦",
+        "predicate": "raw:发生于",
+        "object_name": "綦江"
+      },
+      {
+        "stratum": "青海省",
+        "fact_id": "IFACT-016218766fa65c8b77540e87",
+        "subject_name": "柴达木精神",
+        "predicate": "raw:体现于地域",
+        "object_name": "青海省"
+      },
+      {
+        "stratum": "青海省",
+        "fact_id": "IFACT-05c3e763ef7ec420ef800b30",
+        "subject_name": "王永海",
+        "predicate": "led",
+        "object_name": "元村支部"
+      },
+      {
+        "stratum": "青海省",
+        "fact_id": "IFACT-08dc81f9f58794acdd5e6f01",
+        "subject_name": "\"两路\" 精神",
+        "predicate": "raw:体现于地域",
+        "object_name": "青海省"
+      }
+    ],
+    "culture_form": [
+      {
+        "stratum": "CreativeNarrative",
+        "entity_id": "IENT-089fd55e868bbe8d6888b968",
+        "canonical_name": "《咆哮了的土地》",
+        "entity_type": "CreativeWork",
+        "culture_role": "cultural_expression"
+      },
+      {
+        "stratum": "CreativeNarrative",
+        "entity_id": "IENT-181ac9d603dba1de51926d12",
+        "canonical_name": "《丰收》",
+        "entity_type": "CreativeWork",
+        "culture_role": "cultural_expression"
+      },
+      {
+        "stratum": "CreativeNarrative",
+        "entity_id": "IENT-20aa30fbc3d6d9915cd6808b",
+        "canonical_name": "《四季歌》",
+        "entity_type": "CreativeWork",
+        "culture_role": "cultural_expression"
+      },
+      {
+        "stratum": "DocumentaryCulture",
+        "entity_id": "IENT-005785f3e101c60f79c4dfe3",
+        "canonical_name": "阜东报告干部",
+        "entity_type": "Document",
+        "culture_role": "documentary_carrier"
+      },
+      {
+        "stratum": "DocumentaryCulture",
+        "entity_id": "IENT-008db1c19084c09915fc987e",
+        "canonical_name": "《前进》地下刊物",
+        "entity_type": "Document",
+        "culture_role": "documentary_carrier"
+      },
+      {
+        "stratum": "DocumentaryCulture",
+        "entity_id": "IENT-00aab732985e6e2843019426",
+        "canonical_name": "剿匪报告",
+        "entity_type": "Document",
+        "culture_role": "documentary_carrier"
+      },
+      {
+        "stratum": "HistoricalPractice",
+        "entity_id": "IENT-0006946cfcd9fa646fadfc78",
+        "canonical_name": "游击战术",
+        "entity_type": "Event",
+        "culture_role": "culture_subject"
+      },
+      {
+        "stratum": "HistoricalPractice",
+        "entity_id": "IENT-0006946cfcd9fa646fadfc78",
+        "canonical_name": "游击战术",
+        "entity_type": "Event",
+        "culture_role": "spirit_manifestation_event"
+      },
+      {
+        "stratum": "HistoricalPractice",
+        "entity_id": "IENT-0006a23e0f0e217f070ea9c4",
+        "canonical_name": "群众缴地主武装",
+        "entity_type": "Event",
+        "culture_role": "culture_subject"
+      },
+      {
+        "stratum": "InstitutionalPractice",
+        "entity_id": "IENT-000fcad53e0be5fde04f1dca",
+        "canonical_name": "蚌埠市政府",
+        "entity_type": "Organization",
+        "culture_role": "institutional_actor"
+      },
+      {
+        "stratum": "InstitutionalPractice",
+        "entity_id": "IENT-0022aa99007c1838f4791042",
+        "canonical_name": "湖南省党部",
+        "entity_type": "Organization",
+        "culture_role": "institutional_actor"
+      },
+      {
+        "stratum": "InstitutionalPractice",
+        "entity_id": "IENT-00550dc5c2da225a5a562067",
+        "canonical_name": "武汉党组织",
+        "entity_type": "Organization",
+        "culture_role": "institutional_actor"
+      },
+      {
+        "stratum": "MaterialCulture",
+        "entity_id": "IENT-007c2c6c00b6405c248b27cb",
+        "canonical_name": "《广播简讯》",
+        "entity_type": "Artifact",
+        "culture_role": "material_carrier"
+      },
+      {
+        "stratum": "MaterialCulture",
+        "entity_id": "IENT-00e2aac382712ec253525df5",
+        "canonical_name": "《告同胞书》",
+        "entity_type": "Artifact",
+        "culture_role": "material_carrier"
+      },
+      {
+        "stratum": "MaterialCulture",
+        "entity_id": "IENT-010d1fc425179f99f1c23efe",
+        "canonical_name": "《环球周刊》",
+        "entity_type": "Artifact",
+        "culture_role": "material_carrier"
+      },
+      {
+        "stratum": "MemoryTransmission",
+        "entity_id": "IENT-077e5c9eac0aabe6009c190a",
+        "canonical_name": "《学生报》",
+        "entity_type": "Document",
+        "culture_role": "transmission_medium"
+      },
+      {
+        "stratum": "MemoryTransmission",
+        "entity_id": "IENT-169e6150860fb4c1ad573b91",
+        "canonical_name": "红军和游击队",
+        "entity_type": "Organization",
+        "culture_role": "transmission_medium"
+      },
+      {
+        "stratum": "MemoryTransmission",
+        "entity_id": "IENT-2a55f34b9d13da9d0c31ccea",
+        "canonical_name": "向少怀墓碑",
+        "entity_type": "Artifact",
+        "culture_role": "memorial_carrier"
+      },
+      {
+        "stratum": "SpiritValue",
+        "entity_id": "IENT-0080d110c3f7624f90bbc892",
+        "canonical_name": "革命的知识分子到工农群众中去",
+        "entity_type": "Spirit",
+        "culture_role": "semantic_subject"
+      },
+      {
+        "stratum": "SpiritValue",
+        "entity_id": "IENT-008380c8d0336b830f7e1323",
+        "canonical_name": "马克思主义思想",
+        "entity_type": "Spirit",
+        "culture_role": "semantic_subject"
+      },
+      {
+        "stratum": "SpiritValue",
+        "entity_id": "IENT-00882ca848bdab526ff8f549",
+        "canonical_name": "积极游击",
+        "entity_type": "Spirit",
+        "culture_role": "semantic_subject"
+      }
+    ],
+    "state_tier": [
+      {
+        "stratum": "asserted_event_spacetime",
+        "state_id": "STATE-0008131b7d8f9cc838a1afc5",
+        "stage_code": "war_of_resistance",
+        "region_id": "REGION-PROVINCE:江西省",
+        "culture_form_code": "InstitutionalPractice",
+        "supporting_event_count": 1
+      },
+      {
+        "stratum": "asserted_event_spacetime",
+        "state_id": "STATE-00341c4995cb4403d04b2632",
+        "stage_code": "founding_and_great_revolution",
+        "region_id": "REGION-PROVINCE:江西省",
+        "culture_form_code": "InstitutionalPractice",
+        "supporting_event_count": 7
+      },
+      {
+        "stratum": "asserted_event_spacetime",
+        "state_id": "STATE-009c70700ef3b42b048826a9",
+        "stage_code": "liberation_war",
+        "region_id": "REGION-PROVINCE:上海市",
+        "culture_form_code": "InstitutionalPractice",
+        "supporting_event_count": 1
+      },
+      {
+        "stratum": "asserted_event_spacetime",
+        "state_id": "STATE-00c3729290f5c36b704aaa5b",
+        "stage_code": "socialist_revolution_and_construction",
+        "region_id": "REGION-PROVINCE:湖北省",
+        "culture_form_code": "HistoricalPractice",
+        "supporting_event_count": 1
+      },
+      {
+        "stratum": "asserted_event_spacetime",
+        "state_id": "STATE-00f6a9d3a3ae3b12548a80b3",
+        "stage_code": "liberation_war",
+        "region_id": "REGION-PROVINCE:湖北省",
+        "culture_form_code": "InstitutionalPractice",
+        "supporting_event_count": 1
+      },
+      {
+        "stratum": "relation_context",
+        "state_id": "STATE-0009552050050603f2d3701b",
+        "stage_code": "liberation_war",
+        "region_id": "REGION-PROVINCE:云南省",
+        "culture_form_code": "HistoricalPractice",
+        "supporting_event_count": 1
+      },
+      {
+        "stratum": "relation_context",
+        "state_id": "STATE-002577354058424a184be43b",
+        "stage_code": "agrarian_revolution",
+        "region_id": "REGION-PROVINCE:江苏省",
+        "culture_form_code": "InstitutionalPractice",
+        "supporting_event_count": 1
+      },
+      {
+        "stratum": "relation_context",
+        "state_id": "STATE-002cd4ac87f6776fc5be6538",
+        "stage_code": "war_of_resistance",
+        "region_id": "REGION-PROVINCE:贵州省",
+        "culture_form_code": "HistoricalPractice",
+        "supporting_event_count": 1
+      },
+      {
+        "stratum": "relation_context",
+        "state_id": "STATE-00301b6b994b76f8e8f7b3d3",
+        "stage_code": "war_of_resistance",
+        "region_id": "REGION-PROVINCE:贵州省",
+        "culture_form_code": "HistoricalPractice",
+        "supporting_event_count": 1
+      },
+      {
+        "stratum": "relation_context",
+        "state_id": "STATE-0035c94990a0627414035182",
+        "stage_code": "liberation_war",
+        "region_id": "REGION-PROVINCE:湖南省",
+        "culture_form_code": "InstitutionalPractice",
+        "supporting_event_count": 1
+      },
+      {
+        "stratum": "trusted_event_spacetime",
+        "state_id": "STATE-0007b34bc9fbde2d422f56d1",
+        "stage_code": "pre_1921",
+        "region_id": "REGION-PROVINCE:云南省",
+        "culture_form_code": "InstitutionalPractice",
+        "supporting_event_count": 1
+      },
+      {
+        "stratum": "trusted_event_spacetime",
+        "state_id": "STATE-0016638d7b9e56876f28d960",
+        "stage_code": "agrarian_revolution",
+        "region_id": "REGION-PROVINCE:江西省",
+        "culture_form_code": "InstitutionalPractice",
+        "supporting_event_count": 1
+      },
+      {
+        "stratum": "trusted_event_spacetime",
+        "state_id": "STATE-00545c7b4a43dc93d32b1642",
+        "stage_code": "war_of_resistance",
+        "region_id": "REGION-PROVINCE:江西省",
+        "culture_form_code": "InstitutionalPractice",
+        "supporting_event_count": 2
+      },
+      {
+        "stratum": "trusted_event_spacetime",
+        "state_id": "STATE-0087e70f4285a1fcfff0b562",
+        "stage_code": "socialist_revolution_and_construction",
+        "region_id": "REGION-PROVINCE:江西省",
+        "culture_form_code": "InstitutionalPractice",
+        "supporting_event_count": 1
+      },
+      {
+        "stratum": "trusted_event_spacetime",
+        "state_id": "STATE-00e751c31d7be7c45e7188e6",
+        "stage_code": "socialist_revolution_and_construction",
+        "region_id": "REGION-PROVINCE:云南省",
+        "culture_form_code": "InstitutionalPractice",
+        "supporting_event_count": 1
+      }
+    ],
+    "creative_media": [
+      {
+        "stratum": "其他",
+        "entity_id": "IENT-883ddd19fc664597cce92bab",
+        "canonical_name": "《新民主主义论》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "剧本",
+        "entity_id": "ITOPIC-08c58b34f73fad0d0ea40619",
+        "canonical_name": "无论如何要胜利",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "剧本",
+        "entity_id": "ITOPIC-09cf2290fba6b3068fed1d98",
+        "canonical_name": "长夜行",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "动画片",
+        "entity_id": "ITOPIC-738636d31256a57dfe46bdbe",
+        "canonical_name": "电影新声",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "动画片",
+        "entity_id": "ITOPIC-9a7185b8bd5e7562c3fb1790",
+        "canonical_name": "民族痛史",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "壁报",
+        "entity_id": "IENT-0e2a98b5e3daed7d70349b71",
+        "canonical_name": "《抗战壁报》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "小说",
+        "entity_id": "IENT-089fd55e868bbe8d6888b968",
+        "canonical_name": "《咆哮了的土地》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "小说",
+        "entity_id": "IENT-181ac9d603dba1de51926d12",
+        "canonical_name": "《丰收》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "广播剧",
+        "entity_id": "ITOPIC-300a40c5be3ec251a31ee312",
+        "canonical_name": "河豚宴",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "戏剧",
+        "entity_id": "IENT-6526bfff58ae919b064acf16",
+        "canonical_name": "《红灯记》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "戏剧",
+        "entity_id": "ITOPIC-0fc3bbd754914e3ab6e4dde4",
+        "canonical_name": "苏东求官",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "报告文学",
+        "entity_id": "ITOPIC-004580f42d3d7b408c02fac1",
+        "canonical_name": "冀中一日",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "报告文学",
+        "entity_id": "ITOPIC-38eb24fa91fc6741db8e9a8e",
+        "canonical_name": "没有终点的长征",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "散文",
+        "entity_id": "IENT-b74763ade43ce9566d7d6668",
+        "canonical_name": "清贫",
+        "classification_method": "qwen_v2_semantic_classification",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "文集",
+        "entity_id": "IENTREPAIR-4233224ec5f262654926ec98",
+        "canonical_name": "《毛泽东选集》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "文集",
+        "entity_id": "ITOPIC-82c1eefffc1c3d2b6567945f",
+        "canonical_name": "毛泽东著作",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "曲艺",
+        "entity_id": "IENTREPAIR-0ad138a2e386f007b8640ad0",
+        "canonical_name": "莲花落",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "曲艺",
+        "entity_id": "IENTREPAIR-b5e06141d329c7e315924c17",
+        "canonical_name": "金钱板",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "未知",
+        "entity_id": "IENT-32b341339e4ed0ef90d42e63",
+        "canonical_name": "《山那边好地方》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "unknown"
+      },
+      {
+        "stratum": "未知",
+        "entity_id": "IENT-515af77966dd07191faecbfb",
+        "canonical_name": "《石日渔歌》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "unknown"
+      },
+      {
+        "stratum": "歌剧",
+        "entity_id": "ITOPIC-0c8cba3c92aee6379c2c8de6",
+        "canonical_name": "死亡线上",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "歌剧",
+        "entity_id": "ITOPIC-143f4f4af2d09fa8c7e92404",
+        "canonical_name": "老母刺瞎亲子眼",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "歌曲",
+        "entity_id": "IENT-20aa30fbc3d6d9915cd6808b",
+        "canonical_name": "《四季歌》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "歌曲",
+        "entity_id": "IENT-288a6193af44ca99613cc090",
+        "canonical_name": "《义勇军进行曲》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "民间传说",
+        "entity_id": "ITOPIC-04d5b5009a338b9603cf7808",
+        "canonical_name": "杜鹃花传说",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "漫画",
+        "entity_id": "ITOPIC-0411f134f4abd622573649e4",
+        "canonical_name": "抗日漫画",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "漫画",
+        "entity_id": "ITOPIC-427dc2421fbe0bea596be4a9",
+        "canonical_name": "漫画《选票制造厂》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "理论著作",
+        "entity_id": "IENT-72ef259fe2a289cf44cd6ebc",
+        "canonical_name": "简明中国通史",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "理论著作",
+        "entity_id": "IENT-891a5a4798622cadc61a5340",
+        "canonical_name": "民众艺术底理论和实际",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "电影",
+        "entity_id": "IENT-2886ddb539cdd677768c2733",
+        "canonical_name": "电影《永不消逝的电波》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "电影",
+        "entity_id": "ITOPIC-07a0344541ead10fe34d473f",
+        "canonical_name": "民族至上",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "电视剧",
+        "entity_id": "ITOPIC-0057735124b203a557f90b01",
+        "canonical_name": "中国有个毛泽东",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "电视剧",
+        "entity_id": "ITOPIC-14bac514d341974dd3c1faa3",
+        "canonical_name": "酒向人间都是爱",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "秧歌剧",
+        "entity_id": "ITOPIC-580176344b401d530d4bb78d",
+        "canonical_name": "兄妹开荒",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "纪录片",
+        "entity_id": "ITOPIC-0046b1c425c409e939e6e552",
+        "canonical_name": "战乌江",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "纪录片",
+        "entity_id": "ITOPIC-0c13aaedd189600210e81db7",
+        "canonical_name": "红霞漫卷西风",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "绘画",
+        "entity_id": "IENTREPAIR-dc01a9fa4b70aca63de8ee46",
+        "canonical_name": "毛主席画像",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "绘画",
+        "entity_id": "ITOPIC-65411ff716e6dc2e3608a1f2",
+        "canonical_name": "齐白石作品集",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "舞剧",
+        "entity_id": "ITOPIC-171b4a38463be78811764703",
+        "canonical_name": "白毛女",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "舞剧",
+        "entity_id": "ITOPIC-33df63911d8048c6d887c0bb",
+        "canonical_name": "和平鸽",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "舞蹈",
+        "entity_id": "ITOPIC-1eb44acafc581a27ffaa94ca",
+        "canonical_name": "前进",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "舞蹈",
+        "entity_id": "ITOPIC-2709e49de81af42452aba69c",
+        "canonical_name": "老母鸡",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "诗歌",
+        "entity_id": "IENT-1d9c94cc2a2c455453670a17",
+        "canonical_name": "《沁园春·雪》",
+        "classification_method": "qwen_v2_semantic_classification",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "诗歌",
+        "entity_id": "IENT-31de4570a21b9b61c9a14899",
+        "canonical_name": "《囚歌》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "话剧",
+        "entity_id": "IENT-d92af8712ef9eb724f5ac013",
+        "canonical_name": "《回春之曲》",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "话剧",
+        "entity_id": "ITOPIC-001e82a9ee01c94648f04668",
+        "canonical_name": "草亭天涯",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "连环画",
+        "entity_id": "ITOPIC-1855e0ee5cc094bd7a19f287",
+        "canonical_name": "黄阿福",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "连环画",
+        "entity_id": "ITOPIC-880aebc4a460e3bcb60f1844",
+        "canonical_name": "蓝莲花——丁丁在中国",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "雕塑",
+        "entity_id": "ITOPIC-189d0f35d41895bec47edfea",
+        "canonical_name": "遍地黄金",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      },
+      {
+        "stratum": "雕塑",
+        "entity_id": "ITOPIC-67318d6547c6b5e7b119d554",
+        "canonical_name": "国风",
+        "classification_method": "inherited_v1_member_consensus",
+        "task_status": "completed"
+      }
+    ]
+  },
+  "failures": [],
+  "completed_at": "2026-07-15T09:54:33+08:00"
+}

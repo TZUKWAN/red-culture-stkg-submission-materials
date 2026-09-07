@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "build_version": "red-culture-stkg-neo4j-export-v2-2",
+  "input": {
+    "path": "D:\\REDCULTUREDATA\\derived\\red_culture_stkg_final_v2.sqlite",
+    "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+    "unchanged": true
+  },
+  "node_counts": {
+    "Assertion": 424150,
+    "BasinSection": 3,
+    "CultureForm": 7,
+    "CultureState": 11532,
+    "Entity": 152979,
+    "EventCell": 7067,
+    "EvolutionTransition": 4,
+    "HistoricalStage": 8,
+    "SourceRecord": 466312,
+    "StudyRegion": 13,
+    "TransitionCandidate": 159,
+    "TransitionType": 13
+  },
+  "relationship_counts": {
+    "AT_PLACE": 105635,
+    "CANDIDATE_FROM_STATE": 159,
+    "CANDIDATE_HAS_TYPE": 159,
+    "CANDIDATE_SUPPORTED_BY": 159,
+    "CANDIDATE_TO_STATE": 159,
+    "DURING_STAGE": 102425,
+    "EVENT_RELATION": 499,
+    "EVENT_ROLE": 54033,
+    "HAS_CULTURE_FORM": 23861,
+    "HAS_SPATIOTEMPORAL_CELL": 7067,
+    "IN_BASIN_SECTION": 141152,
+    "IN_STUDY_REGION": 90147,
+    "OBJECT": 424150,
+    "SEMANTIC_RELATION": 380205,
+    "STATE_ACTOR": 689950,
+    "STATE_DURING": 11532,
+    "STATE_EVENT": 13336,
+    "STATE_HAS_FORM": 11532,
+    "STATE_IN_BASIN": 11532,
+    "STATE_IN_REGION": 11532,
+    "STATE_OF": 11532,
+    "STATE_SEMANTIC_MEMBER": 2235,
+    "STATE_VALUE_FACET": 532,
+    "SUBJECT_OF": 424150,
+    "SUPPORTED_BY": 466312,
+    "TRANSITION_FROM_STATE": 4,
+    "TRANSITION_HAS_TYPE": 4,
+    "TRANSITION_SUPPORTED_BY": 5,
+    "TRANSITION_TO_STATE": 4,
+    "WITHIN_BASIN": 13
+  },
+  "total_nodes": 1062247,
+  "total_relationships": 2984015,
+  "blank_captions": 0,
+  "creative_media": {
+    "creative_work_nodes": 1019,
+    "media_populated": 1019,
+    "media_unknown": 57,
+    "media_qwen_v2": 6,
+    "non_creative_media_populated": 0
+  },
+  "files": {
+    "nodes.csv": {
+      "path": "D:\\REDCULTUREDATA\\graph_exports\\stkg_v2\\nodes.csv",
+      "size_bytes": 854299588,
+      "sha256": "1155838b569955884fdff9c29ec57c1c2aa13a54df39948a7fdc6480073887d8"
+    },
+    "relationships.csv": {
+      "path": "D:\\REDCULTUREDATA\\graph_exports\\stkg_v2\\relationships.csv",
+      "size_bytes": 607668531,
+      "sha256": "30c88bea6eb9ec29c5e2d092a74ab9c3ddc41f4a9355fac83ce82ea99bb0695b"
+    },
+    "neo4j_import_args.txt": {
+      "path": "D:\\REDCULTUREDATA\\graph_exports\\stkg_v2\\neo4j_import_args.txt",
+      "size_bytes": 228,
+      "sha256": "597df005f10026a9935e6cae7c44e13fc82baed6426e5b8d3f19264893be63ea"
+    }
+  },
+  "completed_at": "2026-07-15T09:40:56"
+}

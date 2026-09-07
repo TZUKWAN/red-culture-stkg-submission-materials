@@ -1,0 +1,32 @@
+version: red-culture-event-role-mapping-v1
+rules:
+  raw_predicates_are_context_only: true
+  controlled_unmapped_predicates_fail: true
+  event_sequence_is_not_causality: true
+  event_entity_is_not_duplicated: true
+mappings:
+  - {predicate: participated_in, event_endpoint: object, role_code: participant, role_category: actor, counterpart_types: [Person, Organization], analysis_strength: core}
+  - {predicate: led, event_endpoint: object, role_code: leader, role_category: actor, counterpart_types: [Person, Organization], analysis_strength: core}
+  - {predicate: organized, event_endpoint: object, role_code: organizer, role_category: actor, counterpart_types: [Person, Organization], analysis_strength: core}
+  - {predicate: commanded, event_endpoint: object, role_code: commander, role_category: actor, counterpart_types: [Person, Organization], analysis_strength: core}
+  - {predicate: carried_out, event_endpoint: object, role_code: executor, role_category: actor, counterpart_types: [Person, Organization], analysis_strength: core}
+  - {predicate: supported, event_endpoint: object, role_code: supporter, role_category: actor, counterpart_types: [Person, Organization], analysis_strength: explicit_context}
+  - {predicate: guided, event_endpoint: object, role_code: guide, role_category: actor, counterpart_types: [Person, Organization], analysis_strength: explicit_context}
+  - {predicate: opposed, event_endpoint: object, role_code: opponent, role_category: actor, counterpart_types: [Person, Organization], analysis_strength: explicit_context}
+  - {predicate: responsible_for, event_endpoint: object, role_code: responsible_actor, role_category: actor, counterpart_types: [Person, Organization], analysis_strength: core}
+  - {predicate: dispatched, event_endpoint: object, role_code: dispatcher, role_category: actor, counterpart_types: [Person, Organization], analysis_strength: explicit_context}
+  - {predicate: protected, event_endpoint: object, role_code: protector, role_category: actor, counterpart_types: [Person, Organization], analysis_strength: explicit_context}
+  - {predicate: occurred_at, event_endpoint: subject, role_code: occurrence_place, role_category: place, counterpart_types: [Place], analysis_strength: core}
+  - {predicate: occurred_during, event_endpoint: subject, role_code: occurrence_period, role_category: time, counterpart_types: [TimePeriod], analysis_strength: core}
+  - {predicate: liberated, event_endpoint: subject, role_code: liberated_place, role_category: place, counterpart_types: [Place], analysis_strength: explicit_context}
+  - {predicate: embodied_in_event, event_endpoint: object, role_code: manifested_spirit, role_category: culture_semantics, counterpart_types: [Spirit], analysis_strength: core}
+  - {predicate: originated_from_event, event_endpoint: object, role_code: originated_spirit, role_category: culture_semantics, counterpart_types: [Spirit], analysis_strength: core}
+  - {predicate: depicts, event_endpoint: object, role_code: depicting_work, role_category: cultural_object, counterpart_types: [CreativeWork], analysis_strength: core}
+  - {predicate: used_in_event, event_endpoint: object, role_code: used_artifact, role_category: cultural_object, counterpart_types: [Artifact], analysis_strength: core}
+  - {predicate: commemorates, event_endpoint: object, role_code: memorial_carrier, role_category: memory_transmission, counterpart_types: [Artifact, Institution, CreativeWork, Document], analysis_strength: core}
+  - {predicate: documents, event_endpoint: object, role_code: documenting_source, role_category: documentary, counterpart_types: [Document], analysis_strength: core}
+  - {predicate: mentioned_in, event_endpoint: subject, role_code: source_document, role_category: documentary, counterpart_types: [Document], analysis_strength: explicit_context}
+  - {predicate: part_of, event_endpoint: subject, role_code: parent_event, role_category: event_structure, counterpart_types: [Event], analysis_strength: core}
+  - {predicate: part_of, event_endpoint: object, role_code: component_event, role_category: event_structure, counterpart_types: [Event], analysis_strength: core}
+  - {predicate: influenced, event_endpoint: subject, role_code: influenced_target, role_category: influence_context, counterpart_types: [Event, Place, Organization, Person, Spirit, Document], analysis_strength: explicit_context}
+  - {predicate: influenced, event_endpoint: object, role_code: influencing_entity, role_category: influence_context, counterpart_types: [Person, Organization, Event, Spirit, Document], analysis_strength: explicit_context}

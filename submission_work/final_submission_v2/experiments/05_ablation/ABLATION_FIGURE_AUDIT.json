@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checks": {
+    "source_summary_pass": true,
+    "classifier_has_three_tradeoff_metrics": true,
+    "relation_structural_value_is_3412": true,
+    "role_owner_has_time_and_space": true,
+    "provenance_is_explicit_saturation_canary": true,
+    "png_exists_nonempty": true,
+    "pdf_exists_nonempty": true,
+    "png_large_enough": true,
+    "pdf_single_page": true,
+    "chart_contract_exists": true
+  },
+  "source_hashes": {
+    "ABLATION_FIGURE_DATA.csv": "518099abc1ee1a8aaef3ef5007b1e84d9b687df467b445e0135ec99173120f2d",
+    "ablation_experiment_summary.json": "5cd36916f149e24c4c99048d5c4965f9b5699366bbdc910703db8a3737d215e3",
+    "ABLATION_PREDICTIONS.csv": "2d558ece6d700bd44c36e25b22c4bf6bf4ebcf3e549798d85dfb5c1e67718989",
+    "ABLATION_CHART_CONTRACT.md": "f3f45fcf5a17e47a74de9622bcc8b6970e2e25ec4cd151c962e15c9efe142cda"
+  },
+  "outputs": {
+    "fig_component_ablation.png": {
+      "sha256": "3cd532b8b16d1eaba2b07b527b9689ff35bc7a6b4da9c27e6fb89c8af0ab1328",
+      "bytes": 287455,
+      "width": 2423,
+      "height": 1611
+    },
+    "fig_component_ablation.pdf": {
+      "sha256": "44e4bae228fcc46df555744d053fbbe100e69c3d3b04830879a08b39e633d3be",
+      "bytes": 105782,
+      "pages": 1
+    }
+  },
+  "visual_qa": "PASS: original-resolution PNG inspected; labels, values, units, legends, footnotes, and card boundaries are readable with no clipping"
+}

@@ -1,0 +1,182 @@
+version: red-culture-stkg-schema-v1
+research_objective: 长江流域红色文化如何产生、发展、传播、转型和传承
+design:
+  organizing_backbone: event_centered_assertion_graph
+  research_center: red_culture_evolution
+  spirit_role: optional_semantic_clue
+  assertion_nodes_required: true
+  evolution_layer_separate_from_fact_layer: true
+modules:
+  - provenance
+  - identity
+  - assertion
+  - time
+  - space
+  - event_frame
+  - red_culture_semantics
+  - culture_state
+  - evolution_transition
+  - analysis_projection
+node_types:
+  Entity:
+    abstract: true
+    id_property: entity_id
+  Person: {extends: Entity}
+  Organization: {extends: Entity}
+  Institution: {extends: Entity}
+  Event: {extends: Entity}
+  Place: {extends: Entity}
+  AdministrativeRegion: {extends: Entity}
+  Document: {extends: Entity}
+  Artifact: {extends: Entity}
+  CreativeWork: {extends: Entity}
+  Spirit: {extends: Entity}
+  ValueFacet: {extends: Entity}
+  Concept: {extends: Entity}
+  TimePeriod: {extends: Entity}
+  Position: {extends: Entity}
+  BasinSection: {extends: Entity}
+  EvolutionStage: {extends: Entity, legacy_contract_type: true}
+  Assertion:
+    id_property: fact_id
+    required_properties: [fact_id, predicate, time_precision, integration_status, member_count]
+    optional_properties: [time_start, time_end, time_display, source_time_precision, time_raw, place_raw, province, city, county, basin]
+  SourceRecord:
+    id_property: provenance_id
+    required_properties: [provenance_id, fact_id, provenance_kind, source_member_id, source_table, source_record_id]
+    identity_rule: provenance_kind_and_fact_id_and_source_member_id
+  HistoricalStage:
+    id_property: stage_code
+    required_properties: [stage_code, stage_order, label_zh, time_start, time_end]
+  CultureForm:
+    id_property: culture_form_code
+    controlled_values: [HistoricalPractice, InstitutionalPractice, MaterialCulture, DocumentaryCulture, CreativeNarrative, SpiritValue, MemoryTransmission]
+  CultureState:
+    id_property: state_id
+    required_properties: [state_id, culture_subject_id, stage_code, fact_count, source_member_count, state_status]
+  EvolutionTransition:
+    id_property: transition_id
+    required_properties: [transition_id, transition_type, from_state_id, to_state_id, derivation_rule, review_status, confidence]
+edge_types:
+  SUBJECT_OF:
+    source: Entity
+    target: Assertion
+    required_properties: []
+  OBJECT:
+    source: Assertion
+    target: Entity
+    required_properties: []
+  SUPPORTED_BY:
+    source: Assertion
+    target: SourceRecord
+    required_properties: []
+  DURING_STAGE:
+    source: Assertion
+    target: HistoricalStage
+    required_properties: [overlap_start, overlap_end]
+  AT_PLACE:
+    source: Assertion
+    target: [Place, AdministrativeRegion]
+    required_properties: [role, spatial_precision]
+  IN_STUDY_REGION:
+    source: Assertion
+    target: AdministrativeRegion
+    required_properties: [study_area_status]
+  IN_BASIN_SEGMENT:
+    source: Assertion
+    target: BasinSection
+    required_properties: []
+  SEMANTIC_RELATION:
+    source: Entity
+    target: Entity
+    required_properties: [predicate, fact_id, semantic_strength]
+    catalog:
+      source: scripts/stkg_contract.py::RELATIONS
+      expected_count: 88
+      domain_range_required: true
+  HAS_CULTURE_FORM:
+    source: Entity
+    target: CultureForm
+    required_properties: [supporting_fact_ids, assignment_status]
+  STATE_OF:
+    source: CultureState
+    target: Entity
+    required_properties: []
+  STATE_DURING:
+    source: CultureState
+    target: HistoricalStage
+    required_properties: []
+  STATE_IN_REGION:
+    source: CultureState
+    target: AdministrativeRegion
+    required_properties: []
+  STATE_IN_BASIN_SEGMENT:
+    source: CultureState
+    target: BasinSection
+    required_properties: []
+  STATE_HAS_FORM:
+    source: CultureState
+    target: CultureForm
+    required_properties: []
+  STATE_SUPPORTED_BY:
+    source: CultureState
+    target: Assertion
+    required_properties: []
+  FROM_STATE:
+    source: EvolutionTransition
+    target: CultureState
+    required_properties: []
+  TO_STATE:
+    source: EvolutionTransition
+    target: CultureState
+    required_properties: []
+  TRANSITION_SUPPORTED_BY:
+    source: EvolutionTransition
+    target: Assertion
+    required_properties: []
+  DRIVEN_BY:
+    source: EvolutionTransition
+    target: Entity
+    required_properties: [support_type]
+  TRIGGERED_BY:
+    source: EvolutionTransition
+    target: Event
+    required_properties: [supporting_fact_ids]
+controlled_transition_types:
+  - emerged
+  - developed_into
+  - spread_to
+  - shifted_to
+  - diverged_into
+  - merged_into
+  - inherited_from
+  - transformed_into
+  - institutionalized_as
+  - memorialized_as
+  - adapted_as
+  - digitized_as
+  - reactivated_in
+subgraphs:
+  full_context:
+    fact_filter: all_integrated_facts
+  strict_evolution:
+    fact_filter: time_start_is_known_and_study_area_is_in_scope_or_mixed_scope
+  event_backbone:
+    fact_filter: strict_evolution_and_at_least_one_endpoint_is_Event
+constraints:
+  stable_source_ids_preserved: true
+  every_assertion_has_one_subject_and_one_object: true
+  every_assertion_has_source_member: true
+  unknown_time_is_preserved: true
+  unknown_space_is_preserved: true
+  raw_predicates_are_context_only: true
+  controlled_relations_require_domain_range_pass: true
+  culture_form_requires_supporting_fact: true
+  spirit_link_is_never_forced: true
+  culture_carrier_role_is_never_forced: true
+  cooccurrence_does_not_imply_causality: true
+  sequence_alone_does_not_imply_evolution: true
+  first_observed_is_not_historical_origin: true
+  transition_candidate_is_not_published_transition: true
+  fake_coordinates_forbidden: true
+  administrative_centroid_cannot_impersonate_event_location: true

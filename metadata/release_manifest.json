@@ -1,0 +1,765 @@
+{
+  "release_version": "red-culture-stkg-v2-1",
+  "research_objective": "长江流域红色文化如何演进",
+  "created_at": "2026-07-15T10:09:19+08:00",
+  "source_v1_release_manifest": "provenance/red_culture_stkg_v1_release_manifest.json",
+  "final_database": {
+    "path": "databases/red_culture_stkg_final_v2.sqlite",
+    "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+    "counts": {
+      "entities": 152979,
+      "assertions": 424150,
+      "provenance": 466312,
+      "event_frames": 28065,
+      "culture_states": 11532,
+      "published_transitions": 4
+    }
+  },
+  "semantic_database": {
+    "path": "databases/red_culture_stkg_semantic_v2.sqlite",
+    "sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377"
+  },
+  "graph": {
+    "nodes": 1062247,
+    "relationships": 2984015
+  },
+  "tests": {
+    "passed": true,
+    "tests": 171,
+    "elapsed_seconds": 0.731,
+    "sha256": "64b4aade7baff6f283a64d25ac72f6cc0d0351819b3309577adfc486a5fddde2"
+  },
+  "full_audit_sha256": "d325f0cc8b193a834b0c97bd1cb20e600a59910b7c9a275e00d8e3ba027c6a59",
+  "files": [
+    {
+      "path": "README.md",
+      "size_bytes": 1821,
+      "sha256": "a329ded5a10b247f6718ab8cbcf0ebbf9ebba9b5fe08c810a25a275a467097db"
+    },
+    {
+      "path": "audit/stkg_v2_competency_queries.json",
+      "size_bytes": 128549,
+      "sha256": "997edfdf3b0f6aff51d858cd03c621fa478a6de7b5d8f200b15a3bdd778c1caf"
+    },
+    {
+      "path": "audit/stkg_v2_creative_media.json",
+      "size_bytes": 2093,
+      "sha256": "664b1e5444b5d8f3944ec86630f5387d8d54f97d3c1967fb0103a527cd79a4a6"
+    },
+    {
+      "path": "audit/stkg_v2_event_culture.json",
+      "size_bytes": 2554,
+      "sha256": "0f3a1ebb0fafb5878016def971b259815c840e681ab3d1746961c37db16d6caf"
+    },
+    {
+      "path": "audit/stkg_v2_evolution.json",
+      "size_bytes": 2338,
+      "sha256": "1e6fa919d9523e988e982c96799fc3f3ae0dfac8ac99a5e9af80fb53f3c882c4"
+    },
+    {
+      "path": "audit/stkg_v2_final_materialization.json",
+      "size_bytes": 1430,
+      "sha256": "5febab189781a0b41f0e50c34a136e16705fee0d831d231c5d076c35a5a68670"
+    },
+    {
+      "path": "audit/stkg_v2_final_tests.log",
+      "size_bytes": 276,
+      "sha256": "64b4aade7baff6f283a64d25ac72f6cc0d0351819b3309577adfc486a5fddde2"
+    },
+    {
+      "path": "audit/stkg_v2_full_audit.json",
+      "size_bytes": 70449,
+      "sha256": "d325f0cc8b193a834b0c97bd1cb20e600a59910b7c9a275e00d8e3ba027c6a59"
+    },
+    {
+      "path": "audit/stkg_v2_full_audit.md",
+      "size_bytes": 1745,
+      "sha256": "9ef8f64e3ae8bd299ca0cf92156c380a28ed46d13a33d6c9b25cc376a7086e26"
+    },
+    {
+      "path": "audit/stkg_v2_graph_export.json",
+      "size_bytes": 2584,
+      "sha256": "b9212bac293a50b14ea6032881d7e78860d6445f849e583ea343f85621aa9351"
+    },
+    {
+      "path": "audit/stkg_v2_neo4j_import.json",
+      "size_bytes": 13993,
+      "sha256": "9943bf9d509e9dcc09fa5aaf4a4a7e3d9e2611691e8871d503057326aea3612d"
+    },
+    {
+      "path": "audit/stkg_v2_neo4j_verification.json",
+      "size_bytes": 13491,
+      "sha256": "07fd7f5ae8b4996c829b179c8bff59afdc61804b71fc4a7fd94c8c91bc71256a"
+    },
+    {
+      "path": "audit/stkg_v2_research_base.json",
+      "size_bytes": 1826,
+      "sha256": "af8629136583183f5c8baf06623eb086a306d4ffcd55e47b8f53a458384a4cc4"
+    },
+    {
+      "path": "code/scripts/255_initialize_stkg_v2_semantic_repair.py",
+      "size_bytes": 19926,
+      "sha256": "88fb3313e7c9ce1934ecf2074e792b18ca35185084551ad5887d943b2188613c"
+    },
+    {
+      "path": "code/scripts/256_label_and_fuse_stkg_v2_semantics.py",
+      "size_bytes": 25357,
+      "sha256": "4c4a5013f0d44dd8b63382b6305f0f1ff9da93c95638dea133115e9c8b1cb63e"
+    },
+    {
+      "path": "code/scripts/257_qwen_adjudicate_one_stkg_v2_task.py",
+      "size_bytes": 29755,
+      "sha256": "d69996622592be6b560d34655b59431013a80c59738ef92c29e9f75e6a68f098"
+    },
+    {
+      "path": "code/scripts/258_qwen_stkg_v2_task_pool.py",
+      "size_bytes": 6631,
+      "sha256": "84a353f023319ede6e7c450ab10f5543d634c480df836ba67820a9cde77c740d"
+    },
+    {
+      "path": "code/scripts/259_resolve_compatible_stkg_v2_subtypes.py",
+      "size_bytes": 14896,
+      "sha256": "e5d5a3c2aa6ebabd415767908d9b45284c2a6cf342b9e2393bb8ba81b9316a52"
+    },
+    {
+      "path": "code/scripts/260_train_evaluate_stkg_v2_entity_classifier.py",
+      "size_bytes": 17732,
+      "sha256": "7d0b6dbd925ee4b632b2e4a041bcc6d1c1b11fd86f4d8d428bb41cd867c50c4c"
+    },
+    {
+      "path": "code/scripts/261_prepare_stkg_v2_classifier_review.py",
+      "size_bytes": 4903,
+      "sha256": "ea349ee0bfaa9f297e1547baf07ffd78e8755de011b7fadda30e6b3e72d8bf0d"
+    },
+    {
+      "path": "code/scripts/262_flag_stkg_v2_identity_ambiguity.py",
+      "size_bytes": 5593,
+      "sha256": "5d0f07035461d248a8df73b5646ecb983eaf9734f5a164b5371f5a597990b7f2"
+    },
+    {
+      "path": "code/scripts/263_prepare_stkg_v2_model_second_review.py",
+      "size_bytes": 4500,
+      "sha256": "166d24b3ecd88bab03df33331bc263e6383d3ca050b6c1ab2e268a4474ab9a0c"
+    },
+    {
+      "path": "code/scripts/264_close_stkg_v2_classifier_same_type.py",
+      "size_bytes": 6420,
+      "sha256": "3b410b275821a783b4686bc28d27263713fb5404ccb132cb64f2f39dd6d7579a"
+    },
+    {
+      "path": "code/scripts/265_reopen_identity_conflicts_closed_by_type_review.py",
+      "size_bytes": 3298,
+      "sha256": "570662634010be85508a00edb7e5ba8ecad4373c057ad96793cc9bd213b3207d"
+    },
+    {
+      "path": "code/scripts/266_add_stkg_v2_semantic_query_indexes.py",
+      "size_bytes": 2924,
+      "sha256": "1065198b7065413778c246be81f3e40331eafc6bb4763f1d09e37c5f4a6bb784"
+    },
+    {
+      "path": "code/scripts/267_materialize_stkg_v2_cultural_sites.py",
+      "size_bytes": 6988,
+      "sha256": "ca5317a5bd70dff2f09b4d8f8503974050ba2e9e426661d330722e1ffbcb41ed"
+    },
+    {
+      "path": "code/scripts/268_materialize_stkg_v2_spatial_anchors.py",
+      "size_bytes": 15335,
+      "sha256": "fec6209e39ca600f6d373b62c2edf80f26b627962d240cfb09ccde8a69a7ce05"
+    },
+    {
+      "path": "code/scripts/269_restore_stkg_v2_strict_place_descriptors.py",
+      "size_bytes": 7037,
+      "sha256": "e30f62d08c35df55fd50cc1cd68e3da15f8dc93f91c492413aae9b8f08d5aada"
+    },
+    {
+      "path": "code/scripts/270_resolve_stkg_v2_spatial_reference_entities.py",
+      "size_bytes": 11373,
+      "sha256": "ecd3973f5e65e8f2caa76db246d41ec1809637f2a4fbfa61374e907210a3a002"
+    },
+    {
+      "path": "code/scripts/271_sync_stkg_v2_entity_type_hierarchy.py",
+      "size_bytes": 4093,
+      "sha256": "b856beb14a28d4f9d3241cc6e1dbf13a7f07fe0dfd1eb21b8c46796de7a33c5f"
+    },
+    {
+      "path": "code/scripts/272_audit_stkg_v2_spatial_model_contraindications.py",
+      "size_bytes": 10073,
+      "sha256": "dfcd4181e9053c1870641d50c2a1a9799791d380cd95b289d7e59193d1b9f0e9"
+    },
+    {
+      "path": "code/scripts/273_resolve_stkg_v2_strict_same_name_consensus.py",
+      "size_bytes": 8572,
+      "sha256": "056c5e5003458d2c59bd7279917734032fe8dbd724f603b7b6b3eef9023c62b9"
+    },
+    {
+      "path": "code/scripts/274_resolve_stkg_v2_strict_structure.py",
+      "size_bytes": 11149,
+      "sha256": "4b87c377295ed7ac0acd330d94abc07effb2517e0653addeabb777869e283dc0"
+    },
+    {
+      "path": "code/scripts/275_prepare_stkg_v2_name_cluster_reviews.py",
+      "size_bytes": 7915,
+      "sha256": "d7bbbf19a574c368b9987dd30f4d5758e93e9805dc35787885cc0ec8914846a6"
+    },
+    {
+      "path": "code/scripts/276_qwen_adjudicate_one_stkg_v2_name_cluster.py",
+      "size_bytes": 22643,
+      "sha256": "56118245384a414ebc59ed773047c7606a5dd0b92040d4a04cc6ce274cb249fe"
+    },
+    {
+      "path": "code/scripts/277_reset_stkg_v2_name_cluster_reviews_for_social_group.py",
+      "size_bytes": 4474,
+      "sha256": "31dee16a26ab148f4b97807b66024dd5dca7660d5b63734b8ea90054db9f6e05"
+    },
+    {
+      "path": "code/scripts/278_remediate_stkg_v2_name_cluster_guard_violations.py",
+      "size_bytes": 10336,
+      "sha256": "05c15a8fef76b1199a232d098f28d27d7ea4a478b03193ef27419324f94156cd"
+    },
+    {
+      "path": "code/scripts/279_close_stkg_v2_global_structure_constraints.py",
+      "size_bytes": 13903,
+      "sha256": "2708e8947e37a65b93c83e4c27c33a13ce1c00369222df9e080be8aeda710ae1"
+    },
+    {
+      "path": "code/scripts/280_close_stkg_v2_relation_and_name_consensus.py",
+      "size_bytes": 17322,
+      "sha256": "9cc75764cf0770a32129296d9fa43b8194c7a179f21da2800b409ce6b188f201"
+    },
+    {
+      "path": "code/scripts/281_close_stkg_v2_unresolved_semantics.py",
+      "size_bytes": 17319,
+      "sha256": "10cad123781f462e58227029b86714fb67f72082745f071c2e0ff0c75e254a52"
+    },
+    {
+      "path": "code/scripts/282_close_stkg_v2_event_time_semantics.py",
+      "size_bytes": 16675,
+      "sha256": "6e5b6025a2f788c8eecade2a91242fdadfd0d791625453757211449c0d85e2df"
+    },
+    {
+      "path": "code/scripts/283_close_stkg_v2_canonical_identity_and_space.py",
+      "size_bytes": 26961,
+      "sha256": "da59ce70e791d6fe4e41c77c6d487c9804fd7d42abafa0636aa2a28ee50535a2"
+    },
+    {
+      "path": "code/scripts/284_materialize_stkg_v2_research_base.py",
+      "size_bytes": 34508,
+      "sha256": "c04dfb82dadb996ac1fa62086c6ef670899c7fc89ccc3cb2ed429780973e165e"
+    },
+    {
+      "path": "code/scripts/285_build_stkg_v2_event_culture.py",
+      "size_bytes": 32532,
+      "sha256": "fa9421ea6230d36dbec7896dcfbecee60ec6663d4d00fd5ca2946b5fc06af48a"
+    },
+    {
+      "path": "code/scripts/286_build_stkg_v2_evolution.py",
+      "size_bytes": 43966,
+      "sha256": "6799902dff3e76662c32c2ec3460c2b8221574422444953ee68681bc094a77c7"
+    },
+    {
+      "path": "code/scripts/287_export_stkg_v2_neo4j.py",
+      "size_bytes": 35749,
+      "sha256": "ca86a096a9bc0d5282b50e6b26efe8dfdf962361080c64f92d54051145619d57"
+    },
+    {
+      "path": "code/scripts/288_verify_stkg_v2_neo4j.py",
+      "size_bytes": 12168,
+      "sha256": "846f8c8ba48d0f5945a9daae9923b4794fb6ed3350a0576d4802c721feb87efb"
+    },
+    {
+      "path": "code/scripts/289_enrich_stkg_v2_creative_media.py",
+      "size_bytes": 21156,
+      "sha256": "3e69701950139657c8002e0583c96ccdbe434327e4423f9df0001b67519e9fb2"
+    },
+    {
+      "path": "code/scripts/290_materialize_stkg_v2_final.py",
+      "size_bytes": 12379,
+      "sha256": "e90a974db21bfd21cd91222104fe786b59a56af79dbd7095351c4419ce131164"
+    },
+    {
+      "path": "code/scripts/291_import_stkg_v2_neo4j.py",
+      "size_bytes": 14614,
+      "sha256": "a2c55b58316dadb38e594c08346afd4fe6cd8393fa544f5cff9fcd3888c76396"
+    },
+    {
+      "path": "code/scripts/292_run_stkg_v2_competency_queries.py",
+      "size_bytes": 7627,
+      "sha256": "a2723c15904176ecc820592ec405f8e36a9d56d871b3fd125993beb634439077"
+    },
+    {
+      "path": "code/scripts/293_audit_stkg_v2_full.py",
+      "size_bytes": 21044,
+      "sha256": "7282935352cbfbcac9360aa7ca1fb666156339e5b775db1acca8e2f3878e9e67"
+    },
+    {
+      "path": "code/scripts/294_publish_stkg_v2.py",
+      "size_bytes": 11979,
+      "sha256": "3fc95ab7d27dc9c2fa80162c6d1c39802de3989e0528c432062d74647d05e703"
+    },
+    {
+      "path": "code/stkg_ui_v2/app.py",
+      "size_bytes": 12764,
+      "sha256": "30b2dfa1ee77144eca049f9fa793f9adf32e990d89965a01a6b5ba852380e4ac"
+    },
+    {
+      "path": "code/stkg_ui_v2/static/app.js",
+      "size_bytes": 9603,
+      "sha256": "e2922890bead84509da435a5aa7a4b787140d7fb43c93a035bc143f970daa755"
+    },
+    {
+      "path": "code/stkg_ui_v2/static/index.html",
+      "size_bytes": 3602,
+      "sha256": "e6d1b94809ae4c69a395817a57c435bb29eff6e9b85b96cba09e08057fd4b956"
+    },
+    {
+      "path": "code/stkg_ui_v2/static/styles.css",
+      "size_bytes": 7586,
+      "sha256": "1f4cfaf894944f4faa8460918e10605d228f79b12a7850d5966eabcef3836f7b"
+    },
+    {
+      "path": "code/stkg_ui_v2/static/vendor/CYTOSCAPE_LICENSE.txt",
+      "size_bytes": 1082,
+      "sha256": "eb319c6e6f233607f71e8e2f450391751883cfc0eeb3ca7ef574c13d1d9c2203"
+    },
+    {
+      "path": "code/stkg_ui_v2/static/vendor/LUCIDE_LICENSE.txt",
+      "size_bytes": 3208,
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    },
+    {
+      "path": "code/stkg_ui_v2/static/vendor/cytoscape.min.js",
+      "size_bytes": 435328,
+      "sha256": "9c2a3bf2592e0b14a1f7bec07c03a54f16dedf32af9cd0af155c716aa6c87bc3"
+    },
+    {
+      "path": "code/stkg_ui_v2/static/vendor/icons/home.svg",
+      "size_bytes": 458,
+      "sha256": "f6ee757df9d8859b2031dd6165e40ea83eb560c2b726e124eb67282ec8df9943"
+    },
+    {
+      "path": "code/stkg_ui_v2/static/vendor/icons/maximize-2.svg",
+      "size_bytes": 390,
+      "sha256": "01956982abebb3e1c481b7772c3152028e910cd43c1acef721ad4bb8fd0bc5e9"
+    },
+    {
+      "path": "code/stkg_ui_v2/static/vendor/icons/rotate-ccw.svg",
+      "size_bytes": 378,
+      "sha256": "b63ad4fd12e4fd7f3c457d96dfaebcd20c51d2ddf881dac60c4d68aed85fd9d8"
+    },
+    {
+      "path": "code/stkg_ui_v2/static/vendor/icons/search.svg",
+      "size_bytes": 352,
+      "sha256": "928a578d91fe334a388d4f4249c3a7bc16bf2cc00d96968ce14431c9f2db62a2"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_canonical_identity_space.py",
+      "size_bytes": 1532,
+      "sha256": "9a0c5d69a4e71cf8fcfa452d45a33e36ff9956cb8f9649d4867ccf058d9944a8"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_classifier_review_queue.py",
+      "size_bytes": 4005,
+      "sha256": "d987ef219d49ead76ac95b52314d1a2012bb596b6f0dee204ebc3f94a799e9eb"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_classifier_same_type.py",
+      "size_bytes": 751,
+      "sha256": "18436b2b6d69e83465d3115a900577779085ccb77cdd51433809fc0e8083e2e5"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_competency_queries.py",
+      "size_bytes": 2108,
+      "sha256": "107ea927ff67d1249cafbcab131ce8d93eb89531306f9847ffe66b8dd0b8840e"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_creative_media.py",
+      "size_bytes": 3118,
+      "sha256": "abb8e4230697a301a0a80e0edee4539d65845d6eaf1660474e539e3a53fb4e0d"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_cultural_site_materialization.py",
+      "size_bytes": 754,
+      "sha256": "67e73d96afb4ad055bdc1b9a359be11fb6dc8d19baddd54818e21d4c8e1367c6"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_entity_classifier.py",
+      "size_bytes": 1298,
+      "sha256": "910405fa0f0d92a955e2390f5da956a028a1b3a5dae885c7916bae31007fdcd3"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_entity_type_hierarchy_sync.py",
+      "size_bytes": 1072,
+      "sha256": "5d6a3cfe0c84c7daf84a4370e0fe3e8623aa6abe5ba7508780c6a6e640be1bf2"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_event_culture.py",
+      "size_bytes": 1864,
+      "sha256": "79e1a86440c3d138440742776f9bbfc4ba6db25c844696b181964a25d8fc69f9"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_event_time_semantic_closure.py",
+      "size_bytes": 4871,
+      "sha256": "871df4c3381dc720088d24e0e1bc5257d2dee76346bfc3a2a15241627ade032f"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_evolution.py",
+      "size_bytes": 2116,
+      "sha256": "278c87a5ecda298e71a82ad63535cd1212fd9ac973c8b56eca05e9814155dc46"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_final_materialization.py",
+      "size_bytes": 2888,
+      "sha256": "753e276f9ca69eaac8bb3736fea8996449da7786aac57a8146050569fc3479ba"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_full_audit.py",
+      "size_bytes": 1276,
+      "sha256": "d03f81be895bcb81b4ab8b9efc64a9dfc24e1de612b6ee70d27a50a6b88e144a"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_global_structure_closure.py",
+      "size_bytes": 3086,
+      "sha256": "9c62ad19751110f3c9eacbb266b977de20a7ad1fde67e30f26c3a6452bfd97ef"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_identity_ambiguity.py",
+      "size_bytes": 1436,
+      "sha256": "b279107422eca1278574b87256d60d4fd1690355d9f4297253fe0a4a45a2afa7"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_identity_conflict_status_repair.py",
+      "size_bytes": 1764,
+      "sha256": "0b77902bbabc96a739e1ebda6f2eba4c7927ac1063443aaa2cef095d79cddf6b"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_model_second_review_queue.py",
+      "size_bytes": 3194,
+      "sha256": "03169f1c992d4df4306c71328522470434c6291f1b2ec772d5eac778b02a934e"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_name_cluster_guard_remediation.py",
+      "size_bytes": 2398,
+      "sha256": "2398c9a8609b94e351e75293d6f4dc73a1b0757bf2a91bf3befa3fabde27a9c0"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_name_cluster_reviews.py",
+      "size_bytes": 15262,
+      "sha256": "257083552dd7d7a383e1dd3b56ce1ed9d59034985dae5072531d4c803ed11b67"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_neo4j_export.py",
+      "size_bytes": 2053,
+      "sha256": "29d4ac6c838eb6c8a661850c8bd0a933d4d0521b1e4c98428f42d4945fbe24e5"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_neo4j_import.py",
+      "size_bytes": 1924,
+      "sha256": "6e23b2d6f83ae201fbb5932e10f62b415750eb88f933112893769d9d7a390240"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_neo4j_verification.py",
+      "size_bytes": 2414,
+      "sha256": "14830d759cd4ae9d646bd1d7237990ccccc87f8644344fa08df63c1c8216065e"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_qwen_adjudication.py",
+      "size_bytes": 5862,
+      "sha256": "b0aa1c482114058f41776af76c138f05962c701dbb0c65fe2ee688a7ab0094db"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_qwen_pool.py",
+      "size_bytes": 4601,
+      "sha256": "6b6f87494b05a1ca000a5f64eadd896f8068bbb70fd55fb2200d3cc7aa352945"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_relation_name_consensus_closure.py",
+      "size_bytes": 3173,
+      "sha256": "07ebdbcad044ecaff8c3e21ff2b6de3c89e870ad249bd57fee6497c5cb588ff2"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_release_publish.py",
+      "size_bytes": 1117,
+      "sha256": "03af496b85b7327e301cbe8fb89771be4b563220f885498bfdd18926bd98e7b9"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_research_base.py",
+      "size_bytes": 3495,
+      "sha256": "b4a575f59926efc7ecb5db3536861498293535ad67385bbda82a7058cb77bf24"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_semantic_initialization.py",
+      "size_bytes": 4624,
+      "sha256": "4e415c0ccbd16b3b8b63890cd832d22b370e16b760992a38897a9bc5fc5055f5"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_semantic_query_indexes.py",
+      "size_bytes": 1188,
+      "sha256": "27711eb8bc8db12d887746b0d62d6b0a4449a2edf281bac2dd61a9fe3731a635"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_semantics.py",
+      "size_bytes": 11337,
+      "sha256": "cdde9f85a528760d914867db7375867208c713f38522b485378f4f12c696f44a"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_spatial_anchors.py",
+      "size_bytes": 5148,
+      "sha256": "436b136ef808caac087d8c4d330e16753c09195d61cff99e6e673d401b1eccdb"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_spatial_model_contraindications.py",
+      "size_bytes": 1919,
+      "sha256": "59389804926b27cce2372df9880191a7af8bcce06b4f2960f3334b7561981226"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_spatial_reference_entities.py",
+      "size_bytes": 2268,
+      "sha256": "ca7043b92083fb97d2a15ed9a9ba5535a03ea946c7c76a6a29a73e4900a72161"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_strict_place_descriptors.py",
+      "size_bytes": 2004,
+      "sha256": "2c7a74f479513f04a6dce6e08df4af295a0a2aa5f76dfd15dbbcb0462e8f1b76"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_strict_same_name_consensus.py",
+      "size_bytes": 1775,
+      "sha256": "6d9d464659f8a6a3e64964461173fbb9d3b1b5ad63c4ec851b329f44735202fe"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_strict_structure_resolution.py",
+      "size_bytes": 3724,
+      "sha256": "facfe8a4ddf0803860f4607481ed7e2b0db3f53d369f22b071f3a80ba15dadd2"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_subtype_closure.py",
+      "size_bytes": 1975,
+      "sha256": "4145c1c91644fb6c813350868c6584117dee3ec41caa4e6cd9ec095a8722c9ec"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_ui.py",
+      "size_bytes": 2075,
+      "sha256": "e47b2fb66bf48dc80280989f22c0dab7f51c4b481ab52d4fdb20684a389634c1"
+    },
+    {
+      "path": "code/tests/test_stkg_v2_unresolved_semantic_closure.py",
+      "size_bytes": 5424,
+      "sha256": "8b795efa1849ccd5082fd2270778afb48210bc7795b3f3089310eec24f772e63"
+    },
+    {
+      "path": "databases/red_culture_stkg_final_v2.sqlite",
+      "size_bytes": 1187962880,
+      "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7"
+    },
+    {
+      "path": "databases/red_culture_stkg_semantic_v2.sqlite",
+      "size_bytes": 1094549504,
+      "sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377"
+    },
+    {
+      "path": "databases/stkg_v2_creative_media_enrichment.sqlite",
+      "size_bytes": 1990656,
+      "sha256": "fde1f05b01709520a334dd88a58de6e501f36d2d0a182675516098b122a1d13f"
+    },
+    {
+      "path": "documents/STKG_LITERATURE_ANALYSIS.md",
+      "size_bytes": 23911,
+      "sha256": "c44cc5d5f0010709ce9490a143fbaebd9538f0f3b28d777a74b5a7f4e518995d"
+    },
+    {
+      "path": "documents/STKG_V2_DATA_DICTIONARY.md",
+      "size_bytes": 13203,
+      "sha256": "cf067eae4c0ca36f029fe6fd422a107f15a67baea355999d938fa83c2cdee6b9"
+    },
+    {
+      "path": "documents/STKG_V2_FINAL_RESEARCH_REPORT.md",
+      "size_bytes": 15464,
+      "sha256": "257d7df6f0c0ebb2fd23ba594c2d7a9bd9f1c5b861b0a0ef70ad8fe1d3eb3032"
+    },
+    {
+      "path": "documents/STKG_V2_SEMANTIC_REPAIR_RESEARCH_PLAN.md",
+      "size_bytes": 17660,
+      "sha256": "fe799c4bb1c3f2a0e5ff9469df51134ac50b1e6fe75437ba0dae72e9fce77dd2"
+    },
+    {
+      "path": "graph/neo4j_import_args.txt",
+      "size_bytes": 228,
+      "sha256": "597df005f10026a9935e6cae7c44e13fc82baed6426e5b8d3f19264893be63ea"
+    },
+    {
+      "path": "graph/nodes.csv",
+      "size_bytes": 854299588,
+      "sha256": "1155838b569955884fdff9c29ec57c1c2aa13a54df39948a7fdc6480073887d8"
+    },
+    {
+      "path": "graph/relationships.csv",
+      "size_bytes": 607668531,
+      "sha256": "30c88bea6eb9ec29c5e2d092a74ab9c3ddc41f4a9355fac83ce82ea99bb0695b"
+    },
+    {
+      "path": "provenance/red_culture_stkg_v1_release_manifest.json",
+      "size_bytes": 21603,
+      "sha256": "93fcb3ed881b8497ff56946c5411fa45db53d723c338dc3eb7c48dfe89293ed7"
+    },
+    {
+      "path": "queries/cq_v2/cq01_stage_form_distribution.sql",
+      "size_bytes": 603,
+      "sha256": "140a2e3147fdc65c3693f0cbeb5d87f3e90295282d9ca5fede713f94bb901782"
+    },
+    {
+      "path": "queries/cq_v2/cq02_province_stage_forms.sql",
+      "size_bytes": 364,
+      "sha256": "6d890b977da289e6727e3b753a14acdb1a15b6200c803b81765f8e16f30bc80b"
+    },
+    {
+      "path": "queries/cq_v2/cq03_basin_stage_forms.sql",
+      "size_bytes": 534,
+      "sha256": "c17cfd9716674f99e19649de720f627cc97eed82e2c74fab3d4290676f32e3e8"
+    },
+    {
+      "path": "queries/cq_v2/cq04_observation_tier_balance.sql",
+      "size_bytes": 430,
+      "sha256": "c9e1d41a60a103aa9f4bd76274b23d403eaed28c1ec810b919ebbbfb4c59bb51"
+    },
+    {
+      "path": "queries/cq_v2/cq05_event_time_coverage.sql",
+      "size_bytes": 369,
+      "sha256": "e52cbec5b78272f125e6132b9b33b6bfd97637160acb7d3e60769150968e902f"
+    },
+    {
+      "path": "queries/cq_v2/cq06_trusted_event_hubs.sql",
+      "size_bytes": 912,
+      "sha256": "d79e1fb2835228c762dcd9ee1b84b7100f378a0d8edbb2c696d0a934035579e7"
+    },
+    {
+      "path": "queries/cq_v2/cq07_person_event_timeline.sql",
+      "size_bytes": 387,
+      "sha256": "9149427cd1ca909e04e2785b0979edec2dd48cc8c83edd53d0ac78653e43f645"
+    },
+    {
+      "path": "queries/cq_v2/cq08_organization_event_regions.sql",
+      "size_bytes": 466,
+      "sha256": "8575133d81b22d78d5930cf8d6f5710966665beaa3d367b2e87eb91a451f520e"
+    },
+    {
+      "path": "queries/cq_v2/cq09_place_event_timeline.sql",
+      "size_bytes": 424,
+      "sha256": "f6d90340476026fd48723c7948074c1d9fc581c8c247fb8927f4d7fa513f33bc"
+    },
+    {
+      "path": "queries/cq_v2/cq10_culture_state_trajectory.sql",
+      "size_bytes": 434,
+      "sha256": "eb04d0b5df25b172ea7f7b0d69705020085862fd310d06c3881042d08cb32f40"
+    },
+    {
+      "path": "queries/cq_v2/cq11_published_transitions.sql",
+      "size_bytes": 502,
+      "sha256": "57b56fef68c83f405ea3a37168288bef55bbd7d35aafc67a3eb30583d3606472"
+    },
+    {
+      "path": "queries/cq_v2/cq12_transition_candidate_gates.sql",
+      "size_bytes": 385,
+      "sha256": "87ca78a6112d49e0257c2ef7377ff47b71adf6b71cb3a35c0793f07d9219870c"
+    },
+    {
+      "path": "queries/cq_v2/cq13_event_materialization.sql",
+      "size_bytes": 948,
+      "sha256": "0c3fdd6922e6da1737b92e21437b13fb946335db08b68ed7b0bf35452efcf3e6"
+    },
+    {
+      "path": "queries/cq_v2/cq14_spirit_value_facets.sql",
+      "size_bytes": 163,
+      "sha256": "c88788feb896331821fe55a0c12d1ef416e0c85b09304d1a38919d7e88284e39"
+    },
+    {
+      "path": "queries/cq_v2/cq15_spirit_manifestations.sql",
+      "size_bytes": 693,
+      "sha256": "2e70ee3cbad718ff084d47c0d9f75614b7295eef86370d762718d21a53a0cb80"
+    },
+    {
+      "path": "queries/cq_v2/cq16_value_persistence.sql",
+      "size_bytes": 537,
+      "sha256": "e4edc9a0e3d2c4c991f2c247f341987d4bbc9feaee2837580a105960086dc921"
+    },
+    {
+      "path": "queries/cq_v2/cq17_creative_media_composition.sql",
+      "size_bytes": 419,
+      "sha256": "d505edea760a576634759b890e57f58396629fdeeff5860c598342f9c13fd8d7"
+    },
+    {
+      "path": "queries/cq_v2/cq18_creative_work_spacetime.sql",
+      "size_bytes": 435,
+      "sha256": "539077a0042e5c7c0a51662b3bcc9ef6e4e40c98e117d1b19e821aa66918c9e7"
+    },
+    {
+      "path": "queries/cq_v2/cq19_provenance_coverage.sql",
+      "size_bytes": 435,
+      "sha256": "e48cbc4b4ab0ac56116b17aa4ecda34ff6b200da9bbfde8ddbb4dc04a49ef804"
+    },
+    {
+      "path": "queries/cq_v2/cq20_assertion_tiers.sql",
+      "size_bytes": 389,
+      "sha256": "74dd98a872de21b43bc8ffbef456e6f119ff6999ea1633f5ebc4f9e582f733b9"
+    },
+    {
+      "path": "queries/cq_v2/cq21_time_roles.sql",
+      "size_bytes": 353,
+      "sha256": "bda29c13f85641701b6be9e8776a972d662fcd62d1eddba1b1c944c048e9dbc8"
+    },
+    {
+      "path": "queries/cq_v2/cq22_space_roles.sql",
+      "size_bytes": 383,
+      "sha256": "96b1c98f8b25ec512b635a90eb7811f32c03300a98e6ff4ec6e7dd84235d2ebb"
+    },
+    {
+      "path": "queries/cq_v2/cq23_entity_type_quality.sql",
+      "size_bytes": 316,
+      "sha256": "edb8fe22c93e25330b8f8d311b13120d844826d21bed271c3ae7c233ca1da10d"
+    },
+    {
+      "path": "queries/cq_v2/cq24_identity_integration.sql",
+      "size_bytes": 273,
+      "sha256": "30a7f1cc2590589dcd6be84e704b1a674e81038b28c76c0a16a54779b0499cf5"
+    },
+    {
+      "path": "queries/cq_v2/cq25_first_observed_states.sql",
+      "size_bytes": 358,
+      "sha256": "9cd2c1e61535f41da6715855d1b7f0e8ec31ab8134d92105c0bd337033223f58"
+    },
+    {
+      "path": "queries/cq_v2/cq26_quality_boundaries.sql",
+      "size_bytes": 595,
+      "sha256": "5de8c2d85500e9870eb4ad49f4fbd88c53834d294152ed5b524423f48c72b4b8"
+    },
+    {
+      "path": "schema/competency_query_contract_v2.yaml",
+      "size_bytes": 4896,
+      "sha256": "0a8be723850c9a686228fd2816e923582c29742f516785906b6ca8ad612c1896"
+    },
+    {
+      "path": "schema/competency_questions_v2.md",
+      "size_bytes": 3426,
+      "sha256": "90e39d23eef5de15e9fb9385eaa3eff6339fec984b542dce45d50dac6873c47e"
+    },
+    {
+      "path": "schema/culture_form_mapping_v1.yaml",
+      "size_bytes": 6414,
+      "sha256": "3de51822e3d834105fd170fa82b26be96e94186d75c2e486ea24845a80c124fd"
+    },
+    {
+      "path": "schema/event_role_mapping_v1.yaml",
+      "size_bytes": 4599,
+      "sha256": "9921dc47d44dbacba1c4bf5f8bdb2762f7e89ce1b7c3d554dc03958f9148385d"
+    },
+    {
+      "path": "schema/evolution_rules_v1.yaml",
+      "size_bytes": 2640,
+      "sha256": "71347b85cb5b9eda1fcd772b2a67ada2d5dab1ad85ab8ff5ea1fda4dbfc5aa88"
+    },
+    {
+      "path": "schema/stkg_schema_v1.yaml",
+      "size_bytes": 5765,
+      "sha256": "7827eaed75cde5d71461ab14b5c25a39dc4d982f3aaa017d09d2a005e086d48e"
+    }
+  ]
+}
