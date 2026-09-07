@@ -506,7 +506,10 @@ class JudgeClient:
                 status_code=exc.code,
                 retry_after=retry_after,
             ) from None
-        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
+        except (urllib.error.URLError, OSError, json.JSONDecodeError) as exc:
+            # OSError 覆盖响应读取阶段的裸 socket 断连（如 ConnectionResetError
+            # WinError 10054）——这类异常不会被 URLError 包装，必须显式捕获才能
+            # 走有界传输重试而不是使整个 run 崩溃。
             raise JudgeClientError(
                 f"transport error from provider {self._provider}: "
                 f"{type(exc).__name__}"

@@ -125,7 +125,9 @@ def sha256_file(path: Path) -> str:
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
-    with path.open(newline="", encoding="utf-8") as handle:
+    # utf-8-sig：兼容 IMCR 参考文件（build_imcr_consensus 以 utf-8-sig 落盘，
+    # 首列名会带 BOM，plain utf-8 读取会误报缺列）。
+    with path.open(newline="", encoding="utf-8-sig") as handle:
         return list(csv.DictReader(handle))
 
 
