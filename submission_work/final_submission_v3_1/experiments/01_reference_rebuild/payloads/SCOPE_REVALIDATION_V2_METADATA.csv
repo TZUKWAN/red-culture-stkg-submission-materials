@@ -1,0 +1,209 @@
+﻿task_id,fact_id,books,n_evidence_blocks,evidence_source,has_evidence
+SA-0001,IFACT-00f57306a04e8b4fd7082a08,[],3,lexical,True
+SA-0002,IFACT-01bf69077bd9a8558d58c6a3,[],3,lexical,True
+SA-0003,IFACT-01d6f082fde8d25d9ab4e2e3,[],3,lexical,True
+SA-0004,IFACT-02f4c99acbf4d0970fd6201d,[],3,lexical,True
+SA-0005,IFACT-04016acbf1b859f27c8ebd1c,[],3,lexical,True
+SA-0006,IFACT-042cd38ef30fae25c2565f74,[],1,lexical,True
+SA-0007,IFACT-06c0a115fe90e94592fb70dd,[],3,lexical,True
+SA-0008,IFACT-07c298edab2e4a2ad9906813,[],3,lexical,True
+SA-0009,IFACT-07ea2ec16bc6ada050e2c5a4,[],1,lexical,True
+SA-0010,IFACT-07fab36763504d6a91b6500a,[],2,lexical,True
+SA-0011,IFACT-09414c2c361870ce813719f4,[],3,lexical,True
+SA-0012,IFACT-0b853270c3dc4d6d3cfd471e,[],2,lexical,True
+SA-0013,IFACT-0d32760f84d2caf0dce619bd,[],3,lexical,True
+SA-0014,IFACT-0d41513678fffeecac2487d2,['淮阴党史资料  第21辑'],2,direct,True
+SA-0015,IFACT-0d55ab7a57db06047986a05c,[],3,lexical,True
+SA-0016,IFACT-0ed0d7fb20556445418fe85a,[],2,lexical,True
+SA-0017,IFACT-0f8228bcedf0b8d347c5b1ae,[],0,none,False
+SA-0018,IFACT-10416a7ed82d736c969e5efc,[],3,lexical,True
+SA-0019,IFACT-107a8a15485a65ebe6b06900,[],1,lexical,True
+SA-0020,IFACT-10ad16edc517913143d34184,[],3,lexical,True
+SA-0021,IFACT-1255d697d41e18f91f56c25f,[],3,lexical,True
+SA-0022,IFACT-1267667ae2136c20b6a9998d,[],3,lexical,True
+SA-0023,IFACT-13abe24e1134117015864d4d,[],3,lexical,True
+SA-0024,IFACT-13ee19a3e16abb803befdebd,[],3,lexical,True
+SA-0025,IFACT-14022bc9aa03af410b5f84e0,"['中共党史人物传  第43卷', '中共党史人物传  第45卷']",3,direct,True
+SA-0026,IFACT-14ccf49651f0415fe7df3b4c,"['中共党史人物传  第19卷', '中共党史人物传第39卷', '中共綦江县党史资料汇编  第1辑_11449486 (2)']",3,direct,True
+SA-0027,IFACT-15416ecb6780dbe768926375,[],3,lexical,True
+SA-0028,IFACT-18e483030aa313598fa65a3e,[],1,lexical,True
+SA-0029,IFACT-1970b95060602fe96647eae4,[],3,lexical,True
+SA-0030,IFACT-1af018b9fb761da402a728e4,[],3,lexical,True
+SA-0031,IFACT-1bda92e2fd2fe77c05e48e7d,[],2,lexical,True
+SA-0032,IFACT-1c1a37ed74c1afed4337070d,[],3,lexical,True
+SA-0033,IFACT-1c6168766a1365d619331ea7,['中共泸西县党史资料  第2辑 （1950-1956年）'],3,direct,True
+SA-0034,IFACT-1cedc1e9bdd960957d6b38d2,[],3,lexical,True
+SA-0035,IFACT-1d0016d17402f4523dc37cbd,[],3,lexical,True
+SA-0036,IFACT-1e46c313417d40a4e9ca5c20,[],3,lexical,True
+SA-0037,IFACT-20cd8160e56a46af31bcd3c7,[],3,lexical,True
+SA-0038,IFACT-24b3e13a97f5084245259510,[],2,lexical,True
+SA-0039,IFACT-2593657cb34f799c1ebabb28,[],3,lexical,True
+SA-0040,IFACT-27f873a5b9b89d5118c8ad1c,[],3,lexical,True
+SA-0041,IFACT-2af553747932fc762c505e18,[],3,lexical,True
+SA-0042,IFACT-2b1c3e0c801ad8f2ed997c2b,[],3,lexical,True
+SA-0043,IFACT-2b67cb8dcaa4b7ceefe629c1,['梓潼党史资料汇编  1  基本完成社会主义改造时期_11449197'],3,direct,True
+SA-0044,IFACT-2d3063b56157a6395b109265,[],3,lexical,True
+SA-0045,IFACT-2db109479c252a208ff85c7e,[],3,lexical,True
+SA-0046,IFACT-2e66009a63d6531c3aa07f0b,[],3,lexical,True
+SA-0047,IFACT-2f32c95c39ca6a9240b9c4db,[],3,lexical,True
+SA-0048,IFACT-332fe69a927736a17cf8ceb4,[],3,lexical,True
+SA-0049,IFACT-34927765017499a33e72bc6d,[],3,lexical,True
+SA-0050,IFACT-39732926a89460b5b92859ef,[],3,lexical,True
+SA-0051,IFACT-3cb2abaf342bb1552e98c597,[],3,lexical,True
+SA-0052,IFACT-400b728d521318415bb498b6,[],3,lexical,True
+SA-0053,IFACT-42971247f9f868f8ad0d0e0c,[],1,lexical,True
+SA-0054,IFACT-434cd9d7b441ea0723de3465,[],1,lexical,True
+SA-0055,IFACT-44b7d09e17c24f5cadc21a41,[],3,lexical,True
+SA-0056,IFACT-474c38f593425c98d057a737,[],3,lexical,True
+SA-0057,IFACT-48e8673361079d1979bf72a8,[],1,lexical,True
+SA-0058,IFACT-48f976fbf83a6184a17160de,[],3,lexical,True
+SA-0059,IFACT-491e22997a954e2caa9b7401,[],3,lexical,True
+SA-0060,IFACT-4a8c8d673c0cd0f891285133,[],3,lexical,True
+SA-0061,IFACT-4b20e34fa38abcca2b1a8a00,[],3,lexical,True
+SA-0062,IFACT-4b730c9ddcd7ef6ad17d2780,[],3,lexical,True
+SA-0063,IFACT-4cff801f48ac4f87fa5c893a,[],3,lexical,True
+SA-0064,IFACT-55320ba8b9b960e93257e526,[],3,lexical,True
+SA-0065,IFACT-557f2af5d84fd542d77b8c6a,[],3,lexical,True
+SA-0066,IFACT-56b361fa27a3ec3fc38a77a6,[],0,none,False
+SA-0067,IFACT-5856d1b83962d0b34e87fdf3,"['中共党史人物传  第11卷', '李达的故事 - 永州党史方志网', '李达：党的一大会议的召集人']",3,direct,True
+SA-0068,IFACT-593039da2da2d852d072275e,[],3,lexical,True
+SA-0069,IFACT-5a8129384bdd07dd74342129,[],2,lexical,True
+SA-0070,IFACT-5af810f9749a8059fd16da24,[],3,lexical,True
+SA-0071,IFACT-5bbe037f9df9750feb24e51a,[],1,lexical,True
+SA-0072,IFACT-5cf654561088125ec9ac810b,[],2,lexical,True
+SA-0073,IFACT-5d0211c79cfdac8795369cf1,['中共党史人物传  第12卷'],3,direct,True
+SA-0074,IFACT-5e999aaba841afebba709e28,[],3,lexical,True
+SA-0075,IFACT-5f8d1ebf9a1d69a45667755f,[],3,lexical,True
+SA-0076,IFACT-609ae2feb2a606b311fe5946,[],1,lexical,True
+SA-0077,IFACT-61759e2adad44e3b8baf9e70,"['中共仁寿县党史资料选编  （1928～1949）_12049644', '中共党史人物传  第12卷']",3,direct,True
+SA-0078,IFACT-62866f97b3701fc4fd1ae63a,[],3,lexical,True
+SA-0079,IFACT-62e26a2c6f7c47d78afabeb1,[],3,lexical,True
+SA-0080,IFACT-65c8ebb0d7ddd0efa8cf971a,[],3,lexical,True
+SA-0081,IFACT-66f019c36f3065f1c8d4fc9e,[],3,lexical,True
+SA-0082,IFACT-673dc83d2aaf0c17f352f1bc,[],1,lexical,True
+SA-0083,IFACT-6b11588f369423e052f2b584,[],3,lexical,True
+SA-0084,IFACT-6b27cb6e6ba89cce260ea95a,"['中共党史人物传  第29卷', '中国共产党编年史1922年卷', '国共合作推动反帝反封建的国民革命  第二卷  第三册']",3,direct,True
+SA-0085,IFACT-6d12d9f5db004e62fcb9fab0,[],1,lexical,True
+SA-0086,IFACT-6fceb8b3af5b5bc3f3c8e7c5,[],3,lexical,True
+SA-0087,IFACT-7035e6f7f4591c1fe10d8423,"['中共横峰党史资料', '中共綦江县党史资料汇编  第1辑_11449486 (2)', '中共綦江县党史资料汇编  第3辑_11449488']",3,direct,True
+SA-0088,IFACT-721c94f0cbc3f7da439c58a0,[],3,lexical,True
+SA-0089,IFACT-7389b2db29c64202fcaaf923,[],3,lexical,True
+SA-0090,IFACT-73ce6229718c1a815a153576,[],3,lexical,True
+SA-0091,IFACT-755871c49ddc4bc57976a293,[],3,lexical,True
+SA-0092,IFACT-761eab296ad4d79d02bdfc93,[],3,lexical,True
+SA-0093,IFACT-763cbc5da91f1d315b473bc6,"['中共党史人物传  第06卷', '中共党史人物传  第07卷', '麻阳党史资料 2 英烈颂_11448570']",3,direct,True
+SA-0094,IFACT-7757a3da0c039c8543c99968,[],3,lexical,True
+SA-0095,IFACT-794a11af30345fc6eab66e93,[],1,lexical,True
+SA-0096,IFACT-7960bf2ac1b0d960355ef067,[],3,lexical,True
+SA-0097,IFACT-79b03953a063cbc6cad3742e,[],1,lexical,True
+SA-0098,IFACT-7ab1f796aaf6bf0d928cc1eb,[],2,lexical,True
+SA-0099,IFACT-7b06b624b672e3dbe0bf1a63,[],3,lexical,True
+SA-0100,IFACT-7d26b1c724f17e62bd6eeb1e,[],1,lexical,True
+SA-0101,IFACT-7ddfaf8c6e796a8b7545af84,[],3,lexical,True
+SA-0102,IFACT-8540db07f33f014b217f6faf,[],3,lexical,True
+SA-0103,IFACT-8666b6819e9e3353937372d6,[],3,lexical,True
+SA-0104,IFACT-86df77c476edd861a0829f62,[],3,lexical,True
+SA-0105,IFACT-879987876ce114e122ff3119,[],3,lexical,True
+SA-0106,IFACT-8d01dd786efc2f73b1df9971,[],3,lexical,True
+SA-0107,IFACT-8d98568aac282fc57491e4eb,[],3,lexical,True
+SA-0108,IFACT-8e07f04820da9c3ad90a0edb,[],3,lexical,True
+SA-0109,IFACT-8e7a441573cd69b41c73afea,[],3,lexical,True
+SA-0110,IFACT-8e9be5369a422887a0899849,[],2,lexical,True
+SA-0111,IFACT-9039462ef9b20c7d75818a24,[],2,lexical,True
+SA-0112,IFACT-90dd388076789b3912343add,[],2,lexical,True
+SA-0113,IFACT-91405b447b764d8bc3ce6361,[],3,lexical,True
+SA-0114,IFACT-91626dc51c717c20d296777a,[],3,lexical,True
+SA-0115,IFACT-91a4b09c7adf4af126228a14,[],3,lexical,True
+SA-0116,IFACT-93c8fc639293c254d3cc544a,[],3,lexical,True
+SA-0117,IFACT-94359608c8ae34fe88ee0e53,[],3,lexical,True
+SA-0118,IFACT-9511fdced9c5b7191c1fcb25,[],3,lexical,True
+SA-0119,IFACT-9857dbce8c67b2acc9acd263,[],3,lexical,True
+SA-0120,IFACT-997daee9b6754d8c8a082df9,[],3,lexical,True
+SA-0121,IFACT-9a02cd4a61b28592fe79e06c,[],3,lexical,True
+SA-0122,IFACT-9a1ed54443175d75f60a936b,[],3,lexical,True
+SA-0123,IFACT-9a676a4969b50b5bcb150685,[],3,lexical,True
+SA-0124,IFACT-9b1c615e6ba08a50ae93cc7d,[],3,lexical,True
+SA-0125,IFACT-9cdb49b0641a865c1cc35fc3,[],3,lexical,True
+SA-0126,IFACT-9d230cda8273ce41b5ec7856,[],3,lexical,True
+SA-0127,IFACT-9d23c5e8589852417142a2bd,[],1,lexical,True
+SA-0128,IFACT-9d4769f502f88873ed6f54d0,"['东安党史资料选辑  第1辑_11175194', '中共早期关于武装斗争的认识与革命道路的探索  第三卷  第三册', '新干党史资料  第2辑']",3,direct,True
+SA-0129,IFACT-9e259c6a1aa117e52f31671c,[],3,lexical,True
+SA-0130,IFACT-9e304b2d04358f4e32eb4391,[],3,lexical,True
+SA-0131,IFACT-a02bb63e5bbc29f2fc77fea3,"['宁远党史资料选辑  第2辑_12021065', '宁远党史资料选辑  第3辑']",3,direct,True
+SA-0132,IFACT-a0a616de6ff37aa748aedce7,[],3,lexical,True
+SA-0133,IFACT-a2a0ed7963151e07b0f018aa,[],3,lexical,True
+SA-0134,IFACT-a3e9e980d9dd4938bb5b3f2f,"['中共党史人物传  第19卷', '中共党史人物传第39卷', '中共綦江县党史资料汇编  第1辑_11449486 (2)']",3,direct,True
+SA-0135,IFACT-a3f3ca632fbd7c47224062bc,[],3,lexical,True
+SA-0136,IFACT-a625c68a4b868fe1b39541d7,"['中共党史人物传  第43卷', '株洲党史资料  民主革命时期  第2辑_14222726', '自力更生、发愤图强  第十一卷  第一册']",3,direct,True
+SA-0137,IFACT-a76430f4915971f0fccd669c,[],1,lexical,True
+SA-0138,IFACT-a852f8dd3319e31943aa207b,[],1,lexical,True
+SA-0139,IFACT-a9e4437ed243bc1e6d1365de,[],3,lexical,True
+SA-0140,IFACT-abb6e6ac3e2ad1c5e5b86816,[],3,lexical,True
+SA-0141,IFACT-adc75f42bb78a774b1d168df,"['中共党史人物传  第14卷', '中国共产党的成立是开天辟地的大事变  第一卷  第一册']",3,direct,True
+SA-0142,IFACT-ae1f8d52c255767cb861544b,[],3,lexical,True
+SA-0143,IFACT-ae967d3d03b0af5f84369ff2,[],2,direct,True
+SA-0144,IFACT-af31b6dc29b2f5883bcbbf22,"['中共党史人物传  第08卷', '中国共产党编年史1922年卷', '国共合作推动反帝反封建的国民革命  第二卷  第四册']",3,direct,True
+SA-0145,IFACT-af82101944c6b204cc3bb9f3,[],3,lexical,True
+SA-0146,IFACT-b39124e07615055bbdaedff2,[],3,lexical,True
+SA-0147,IFACT-b6214e4447a4499414ece9ca,[],1,lexical,True
+SA-0148,IFACT-b7184f251d4c99074b9f66cd,[],3,lexical,True
+SA-0149,IFACT-b74897c868dff61f653e7535,[],3,lexical,True
+SA-0150,IFACT-b7545de80ae467c6dcd7e8e0,[],3,lexical,True
+SA-0151,IFACT-b9afa019f28d07e8c52652fa,[],1,lexical,True
+SA-0152,IFACT-bc7b16839e85036523081838,[],3,lexical,True
+SA-0153,IFACT-bc87b7b7e9088e06f1fd7ab9,[],3,lexical,True
+SA-0154,IFACT-bcf762c4b513fc89ec62602a,['贵池党史资料选编  1919-1937_11449655'],3,direct,True
+SA-0155,IFACT-bd8df63ebbf8a4dd97f56b14,[],3,lexical,True
+SA-0156,IFACT-bdc8ab3448a4cc5e161bc918,[],3,lexical,True
+SA-0157,IFACT-c006a30aa956dc6df25adc3e,[],3,lexical,True
+SA-0158,IFACT-c3b78be879c299bc5b6e8a56,[],3,lexical,True
+SA-0159,IFACT-c41b8374fd519f3b616b8821,[],3,lexical,True
+SA-0160,IFACT-c46ee539aae17cb19cff2bf7,[],0,none,False
+SA-0161,IFACT-c59aeb95775074a76a5fc714,[],3,lexical,True
+SA-0162,IFACT-c6a7a55666e10d5a18ab4864,[],3,lexical,True
+SA-0163,IFACT-c815fd91fb05e7e6f101e018,"['中共党史人物传  第35卷', '中共党史人物传第36卷']",3,direct,True
+SA-0164,IFACT-c87b7d59ef4a6bb115d79b1e,[],3,lexical,True
+SA-0165,IFACT-cc42845a61ffe1a9c3aa0258,[],3,lexical,True
+SA-0166,IFACT-cdbf4e8c07ebc55a6de817c2,[],3,lexical,True
+SA-0167,IFACT-ced5335661e520d4419c8950,"['中共泸西县党史资料  第1辑  新民主主义革命时期_14237315', '中华人民共和国史长编 第七卷 人物卷_12601694', '中国共产党遂宁市党史资料汇编  1926-1949_11449200']",3,direct,True
+SA-0168,IFACT-cf9a8c0b086f8829d2661e15,[],1,lexical,True
+SA-0169,IFACT-d0ad4be3dc5bb5b07a334685,[],2,lexical,True
+SA-0170,IFACT-d20cdcd0193e761728314ed0,['会昌党史  社会主义时期专题选编  2_13198687'],3,direct,True
+SA-0171,IFACT-d46b169ab76ba211d28d1a16,"['中共党史人物传  第13卷', '中共党史人物传  第43卷', '中共永州历史资料  回忆录  第2辑']",3,direct,True
+SA-0172,IFACT-d4c67cb27b80127d8474b6f7,[],3,lexical,True
+SA-0173,IFACT-d687baf6d5e6585e4c27dcaa,[],3,lexical,True
+SA-0174,IFACT-d79a49206c7580934119eb4f,[],1,lexical,True
+SA-0175,IFACT-d85a1d1a95273078e36f6130,[],3,lexical,True
+SA-0176,IFACT-db2214f7fcf7b788db04182f,[],3,lexical,True
+SA-0177,IFACT-db934aa105535e5f9b93a104,[],3,lexical,True
+SA-0178,IFACT-dbe1d32d64d1a08bca22b1fb,[],3,lexical,True
+SA-0179,IFACT-dc10d5fecd35e92655cd81d1,[],3,lexical,True
+SA-0180,IFACT-dcf31436ba3a7970e44f8d09,[],3,lexical,True
+SA-0181,IFACT-dd1db1162411c0d5362687a0,[],3,lexical,True
+SA-0182,IFACT-deab7c243899b1e80ae28050,[],3,lexical,True
+SA-0183,IFACT-ded395aebbae610f5efb42b3,[],3,lexical,True
+SA-0184,IFACT-e0da80c259048e8cb27df770,[],3,lexical,True
+SA-0185,IFACT-e206b3acdfe7ebdbe9d0f657,[],3,lexical,True
+SA-0186,IFACT-e4332b803d8d9cad42a2cc08,[],3,lexical,True
+SA-0187,IFACT-e4d89012c5d8197c1489d382,[],3,lexical,True
+SA-0188,IFACT-e5499a407f6343100cbbfeb7,[],3,lexical,True
+SA-0189,IFACT-e720e6a1e7caaf929df02b84,[],3,lexical,True
+SA-0190,IFACT-e82f91a00987c4bc9caf8259,[],3,lexical,True
+SA-0191,IFACT-e86d52dfb6b67f7053d7ad86,"['宁远党史资料选辑  第2辑_12021065', '宁远党史资料选辑  第3辑']",3,direct,True
+SA-0192,IFACT-e86e4073c09d7dc5948559a6,[],3,lexical,True
+SA-0193,IFACT-e97d39df34d4f55bc6406dae,[],3,lexical,True
+SA-0194,IFACT-ebd73415e3741b2bd5691032,[],1,lexical,True
+SA-0195,IFACT-ed931f2fe6413bb20b72bd70,[],3,lexical,True
+SA-0196,IFACT-edcbc008f35f9fce70e1f87a,[],3,lexical,True
+SA-0197,IFACT-edd1545a49261f93a278fdd8,[],3,lexical,True
+SA-0198,IFACT-efca8880b5c54bd35a924227,[],3,lexical,True
+SA-0199,IFACT-f1447ebaa637f64e721553ed,[],3,lexical,True
+SA-0200,IFACT-f3479813b9dc036f86fb7715,[],2,lexical,True
+SA-0201,IFACT-f580ff567a745cbe794e0632,[],3,lexical,True
+SA-0202,IFACT-f6b1868d14a258ea2d6bf320,[],3,lexical,True
+SA-0203,IFACT-f9d5ee8e90ebe547c8f3bdcb,[],3,lexical,True
+SA-0204,IFACT-f9d80d4e779140cebb048aef,[],2,lexical,True
+SA-0205,IFACT-fb3c510aff3bd8e07f7f4e89,"['中共党史人物传   第04卷', '中共党史人物传  第15卷', '中共婺源党史资料']",3,direct,True
+SA-0206,IFACT-fc11ae2e31b1dad6218f6e58,[],2,lexical,True
+SA-0207,IFACT-fd934ba4419ac2dcae92684f,[],2,lexical,True
+SA-0208,IFACT-ffa3d1a49478a2bf70d52fc4,[],1,lexical,True

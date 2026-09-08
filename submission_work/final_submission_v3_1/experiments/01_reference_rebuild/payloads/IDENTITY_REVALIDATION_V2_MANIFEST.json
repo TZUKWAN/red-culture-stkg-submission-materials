@@ -1,0 +1,16 @@
+{
+  "experiment_id": "v31_payload_identity_revalidation_v2",
+  "prompt_version": "imcr.v4",
+  "seed": 20260908,
+  "n_payloads": 600,
+  "payload_file": "IDENTITY_REVALIDATION_V2_PAYLOADS.jsonl",
+  "payload_sha256": "8368a796d3f5172acb86bb7450017e333b22aa657246cd38aed688312fc5f85a",
+  "metadata_file": "IDENTITY_REVALIDATION_V2_METADATA.csv",
+  "metadata_sha256": "6caa034386964e0733a5abc00f261e900a02ca002835a493ea5e8bbf0809a66c",
+  "labels": [
+    "same_entity",
+    "different_entity",
+    "insufficient_evidence"
+  ],
+  "note": "entity types visible; merge decisions hidden"
+}

@@ -1,0 +1,18 @@
+{
+  "experiment_id": "v31_payload_relation_semantic_v2",
+  "prompt_version": "imcr.v4",
+  "seed": 20260908,
+  "n_payloads": 800,
+  "payload_file": "RELATION_SEMANTIC_V2_PAYLOADS.jsonl",
+  "payload_sha256": "0fb94d26cf6552dbb05f119bfa45c6096b6405acc2bfca7624e3dfc91b83a205",
+  "metadata_file": "RELATION_SEMANTIC_V2_METADATA.csv",
+  "metadata_sha256": "23191d724f3bb0c0fe68c216433536943ce1e20ecc2e353d38cd0dae7befbfe7",
+  "labels": [
+    "SUPPORTED",
+    "CONTEXTUAL_ONLY",
+    "UNSUPPORTED",
+    "CONTRADICTED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "note": "changed sampled with evidence; controls matched on (predicate,subject_type[,object_type]) with evidence"
+}

@@ -1,0 +1,18 @@
+{
+  "experiment_id": "v31_payload_scope_revalidation_v2",
+  "prompt_version": "imcr.v4",
+  "seed": 20260908,
+  "n_payloads": 208,
+  "payload_file": "SCOPE_REVALIDATION_V2_PAYLOADS.jsonl",
+  "payload_sha256": "188bd73fa9afe83be4aadb70f6b2722df530c0084e29605c5cf016873c7c808e",
+  "metadata_file": "SCOPE_REVALIDATION_V2_METADATA.csv",
+  "metadata_sha256": "e9d170729d14067063b43c46f77b54b1d5b2f0ef26eca7bee700d742df9fff14",
+  "labels": [
+    "A_BETTER",
+    "B_BETTER",
+    "EQUIVALENT",
+    "BOTH_WRONG",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "ab_seed": "1749861540"
+}
