@@ -62,3 +62,13 @@
   对 primary 为 0.988——同模型票膨胀约 27 个百分点，方向与 relation 一致。
 - nemotron 的 404 次失败尝试记录保留于
   `experiments/02_selective_semantic/blind_llm_runs/entity_type.jsonl`（审计证据）。
+
+## 6. Judge C 三次变更：3.5-35B 退化，改用 122B（2026-09-09）
+
+- Qwen3.5-35B-A3B 在 v4 真实长载荷下退化至 0.1–2.6 条/分（间歇 5–15 分钟停顿），
+  过夜仅推进 49 条；其 230 条记录归档于
+  `raw_runs/_archived_judgeC_attempts/2026-09-08_qwen3.5-35b/`（不参与共识）。
+- 实测 Qwen3.5-122B-A10B 同载荷 11s/条、上线后 14 条/分，**Judge C 最终 =
+  Qwen3.5-122B-A10B**（与 Judge A 的 Qwen3.6-35B-A3B 仍为不同模型实例；
+  面板家族数不变仍为 2，披露义务同 §2）。
+- 预计 ~2h 完成 relation 800 + scope 208 + identity 600。
