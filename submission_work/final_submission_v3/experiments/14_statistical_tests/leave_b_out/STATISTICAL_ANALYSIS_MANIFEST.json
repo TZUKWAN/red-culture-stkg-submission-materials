@@ -1,0 +1,267 @@
+{
+  "bootstrap": {
+    "applicable_pairs": 2,
+    "area_gate": {
+      "minimum_n": 8,
+      "minimum_unique_scores": 4,
+      "source": "run_selective_inference constants"
+    },
+    "delta_sign": "Full - baseline (negative delta = Full better on AURC/AUGRC)",
+    "implementation": "independent_eval.metrics.paired_bootstrap_diff_ci — shared resample indices (idx drawn once per replicate, applied to both systems); AURC and AUGRC use the same derived seed and therefore the identical index stream",
+    "n_replicates": 2000,
+    "pairs": [
+      {
+        "baseline_method_id": "B1_rule_only",
+        "bootstrap_seed": null,
+        "n_samples": 309,
+        "status": "not_applicable_incomplete_score_coverage",
+        "task_type": "entity_type"
+      },
+      {
+        "baseline_method_id": "B3_blind_llm",
+        "bootstrap_seed": null,
+        "n_samples": 309,
+        "status": "not_applicable_incomplete_score_coverage",
+        "task_type": "entity_type"
+      },
+      {
+        "baseline_method_id": "B4_rule_plus_classifier",
+        "bootstrap_seed": null,
+        "n_samples": 309,
+        "status": "not_applicable_incomplete_score_coverage",
+        "task_type": "entity_type"
+      },
+      {
+        "baseline_method_id": "B5_rule_plus_blind_llm",
+        "bootstrap_seed": null,
+        "n_samples": 309,
+        "status": "not_applicable_incomplete_score_coverage",
+        "task_type": "entity_type"
+      },
+      {
+        "baseline_method_id": "B8_entropy_threshold",
+        "bootstrap_seed": null,
+        "n_samples": 309,
+        "status": "not_applicable_incomplete_score_coverage",
+        "task_type": "entity_type"
+      },
+      {
+        "baseline_method_id": "B1_rule_only",
+        "bootstrap_seed": null,
+        "n_samples": 456,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "identity_pair"
+      },
+      {
+        "baseline_method_id": "B3_blind_llm",
+        "bootstrap_seed": null,
+        "n_samples": 456,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "identity_pair"
+      },
+      {
+        "baseline_method_id": "B4_rule_plus_classifier",
+        "bootstrap_seed": null,
+        "n_samples": 456,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "identity_pair"
+      },
+      {
+        "baseline_method_id": "B5_rule_plus_blind_llm",
+        "bootstrap_seed": null,
+        "n_samples": 456,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "identity_pair"
+      },
+      {
+        "baseline_method_id": "B8_entropy_threshold",
+        "bootstrap_seed": null,
+        "n_samples": 456,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "identity_pair"
+      },
+      {
+        "baseline_method_id": "B1_rule_only",
+        "bootstrap_seed": null,
+        "n_samples": 491,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "provenance_support"
+      },
+      {
+        "baseline_method_id": "B3_blind_llm",
+        "bootstrap_seed": 707394621,
+        "n_samples": 491,
+        "status": "applicable",
+        "task_type": "provenance_support"
+      },
+      {
+        "baseline_method_id": "B4_rule_plus_classifier",
+        "bootstrap_seed": null,
+        "n_samples": 491,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "provenance_support"
+      },
+      {
+        "baseline_method_id": "B5_rule_plus_blind_llm",
+        "bootstrap_seed": null,
+        "n_samples": 491,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "provenance_support"
+      },
+      {
+        "baseline_method_id": "B8_entropy_threshold",
+        "bootstrap_seed": null,
+        "n_samples": 491,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "provenance_support"
+      },
+      {
+        "baseline_method_id": "B1_rule_only",
+        "bootstrap_seed": null,
+        "n_samples": 248,
+        "status": "not_applicable_insufficient_discrete_points",
+        "task_type": "relation_contract"
+      },
+      {
+        "baseline_method_id": "B3_blind_llm",
+        "bootstrap_seed": 782092524,
+        "n_samples": 248,
+        "status": "applicable",
+        "task_type": "relation_contract"
+      },
+      {
+        "baseline_method_id": "B4_rule_plus_classifier",
+        "bootstrap_seed": null,
+        "n_samples": 248,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "relation_contract"
+      },
+      {
+        "baseline_method_id": "B5_rule_plus_blind_llm",
+        "bootstrap_seed": null,
+        "n_samples": 248,
+        "status": "not_applicable_insufficient_discrete_points",
+        "task_type": "relation_contract"
+      },
+      {
+        "baseline_method_id": "B8_entropy_threshold",
+        "bootstrap_seed": null,
+        "n_samples": 248,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "relation_contract"
+      },
+      {
+        "baseline_method_id": "B1_rule_only",
+        "bootstrap_seed": null,
+        "n_samples": 136,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "scope_adjustment"
+      },
+      {
+        "baseline_method_id": "B3_blind_llm",
+        "bootstrap_seed": null,
+        "n_samples": 136,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "scope_adjustment"
+      },
+      {
+        "baseline_method_id": "B4_rule_plus_classifier",
+        "bootstrap_seed": null,
+        "n_samples": 136,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "scope_adjustment"
+      },
+      {
+        "baseline_method_id": "B5_rule_plus_blind_llm",
+        "bootstrap_seed": null,
+        "n_samples": 136,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "scope_adjustment"
+      },
+      {
+        "baseline_method_id": "B8_entropy_threshold",
+        "bootstrap_seed": null,
+        "n_samples": 136,
+        "status": "not_applicable_no_numeric_confidence",
+        "task_type": "scope_adjustment"
+      }
+    ],
+    "per_replicate_output": "PAIRED_BOOTSTRAP_REPLICATES.csv (GOAL 13.2)"
+  },
+  "canaries": {
+    "bootstrap_seed_matches_derive_seed": true,
+    "delta_estimate_matches_full_minus_baseline": true,
+    "judge_all_rows_present": true,
+    "mcnemar_exact_binomial_only": true,
+    "mcnemar_p_in_unit_interval": true,
+    "paired_replicates_complete": true,
+    "paired_shared_index_replicate0_verified": true,
+    "report_written": true,
+    "wilson_accuracy_row_iff_accepted": true,
+    "wilson_coverage_row_per_cell": true,
+    "wilson_crosscheck_ok": true
+  },
+  "code_commit": "00498cd8d3a412b6d60620eb7c79ec4baf26f5c0",
+  "database_sha256": "UNAVAILABLE",
+  "experiment_id": "14_statistical_tests",
+  "goal_section": "GOAL.md section 18 (statistical analysis requirements)",
+  "inputs": {
+    "JUDGE_PAIRWISE_AGREEMENT.csv": {
+      "path": "..\\experiments\\08_independent_reference\\JUDGE_PAIRWISE_AGREEMENT.csv",
+      "sha256": "4761b41a0e82a84ecbd3eb5952f1bc3ea0ee53f68b20f4e1922573ed50714d17"
+    },
+    "JUDGE_RELIABILITY_SUMMARY.csv": {
+      "path": "..\\experiments\\08_independent_reference\\JUDGE_RELIABILITY_SUMMARY.csv",
+      "sha256": "08fdf2830b5c12d55e75915c324bed18a9987c09a9146a1227ee9a2b86f4e619"
+    },
+    "LEAVE_ONE_JUDGE_OUT.csv": {
+      "path": "..\\experiments\\08_independent_reference\\LEAVE_ONE_JUDGE_OUT.csv",
+      "sha256": "ca05bae1020eab493743b3d8327d0e203238b858feddb41c831af01dfd51051d"
+    },
+    "reference": {
+      "mode": "imcr_all",
+      "path": "..\\experiments\\08_independent_reference\\IMCR_REFERENCE_LEAVE_B_OUT.csv",
+      "sha256": "50bd576f6190cee8562bf8a58cbb4296756b94b3adac934321fe5d769918568c"
+    },
+    "runs": {
+      "path": "..\\experiments\\09_independent_baselines\\IMCR_BASELINE_RUNS.csv",
+      "role": "primary per-sample data source",
+      "rows": 18040,
+      "sha256": "07ef17a42864df5c5f56eec307b4be2c8984d23fbf6e45a6242e01bbc4f1cd49"
+    },
+    "selective_points_crosscheck": {
+      "files": [
+        "leave_b_out_RISK_COVERAGE_POINTS.csv",
+        "leave_b_out_SELECTIVE_GOAL13_METRICS.csv"
+      ],
+      "goal13_path": "..\\experiments\\13_selective_inference_independent\\leave_b_out\\leave_b_out_SELECTIVE_GOAL13_METRICS.csv",
+      "points_path": "..\\experiments\\13_selective_inference_independent\\leave_b_out\\leave_b_out_RISK_COVERAGE_POINTS.csv"
+    }
+  },
+  "model_ids": [],
+  "pipeline": "code/experiment_pipelines/run_statistical_tests.py",
+  "prompt_sha256": "UNAVAILABLE",
+  "sample_manifest_sha256": "UNAVAILABLE",
+  "schema_sha256": "UNAVAILABLE",
+  "seed": 20260907,
+  "seed_policy": {
+    "derivation": "derive_seed('paired_bootstrap::{task_type}::{baseline}') = SHA-256(label | master_seed)[:8] big-endian mod 2**31 (code/independent_eval/_common.py)",
+    "master_seed": 20260907,
+    "per_pair_seeds": {
+      "provenance_support::B3_blind_llm": 707394621,
+      "relation_contract::B3_blind_llm": 782092524
+    }
+  },
+  "timestamp": "2026-09-08T00:52:52.428411+00:00",
+  "wilson_crosscheck": {
+    "checked_cells": 26,
+    "files": [
+      "leave_b_out_RISK_COVERAGE_POINTS.csv",
+      "leave_b_out_SELECTIVE_GOAL13_METRICS.csv"
+    ],
+    "goal13_path": "..\\experiments\\13_selective_inference_independent\\leave_b_out\\leave_b_out_SELECTIVE_GOAL13_METRICS.csv",
+    "max_abs_diff": 5.551115123125783e-17,
+    "points_path": "..\\experiments\\13_selective_inference_independent\\leave_b_out\\leave_b_out_RISK_COVERAGE_POINTS.csv",
+    "status": "passed"
+  }
+}

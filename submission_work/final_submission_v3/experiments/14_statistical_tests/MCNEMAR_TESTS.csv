@@ -1,0 +1,26 @@
+task_type,baseline_method_id,comparison,n_pairs,b_full_correct_baseline_wrong,c_full_wrong_baseline_correct,n_discordant,statistic,p_value,method,full_wins,full_losses,ties,note
+entity_type,B1_rule_only,full_vs_baseline_correct_flag,276,90,0,90,0.0,1.6155871338926322e-27,exact_binomial,90,0,186,binary outcome = correct flag on the shared sample set
+entity_type,B3_blind_llm,full_vs_baseline_correct_flag,276,2,141,143,2.0,1.846933796755538e-39,exact_binomial,2,141,133,binary outcome = correct flag on the shared sample set
+entity_type,B4_rule_plus_classifier,full_vs_baseline_correct_flag,276,61,45,106,45.0,0.14478233933005036,exact_binomial,61,45,170,binary outcome = correct flag on the shared sample set
+entity_type,B5_rule_plus_blind_llm,full_vs_baseline_correct_flag,276,5,108,113,5.0,2.8319615385298505e-26,exact_binomial,5,108,163,binary outcome = correct flag on the shared sample set
+entity_type,B8_entropy_threshold,full_vs_baseline_correct_flag,276,93,48,141,48.0,0.0001881808393573049,exact_binomial,93,48,135,binary outcome = correct flag on the shared sample set
+identity_pair,B1_rule_only,full_vs_baseline_correct_flag,399,258,0,258,0.0,4.3180842775472223e-78,exact_binomial,258,0,141,binary outcome = correct flag on the shared sample set
+identity_pair,B3_blind_llm,full_vs_baseline_correct_flag,399,10,132,142,10.0,2.574736689877734e-28,exact_binomial,10,132,257,binary outcome = correct flag on the shared sample set
+identity_pair,B4_rule_plus_classifier,full_vs_baseline_correct_flag,399,258,0,258,0.0,4.3180842775472223e-78,exact_binomial,258,0,141,binary outcome = correct flag on the shared sample set
+identity_pair,B5_rule_plus_blind_llm,full_vs_baseline_correct_flag,399,258,0,258,0.0,4.3180842775472223e-78,exact_binomial,258,0,141,binary outcome = correct flag on the shared sample set
+identity_pair,B8_entropy_threshold,full_vs_baseline_correct_flag,399,258,0,258,0.0,4.3180842775472223e-78,exact_binomial,258,0,141,binary outcome = correct flag on the shared sample set
+provenance_support,B1_rule_only,full_vs_baseline_correct_flag,394,120,0,120,0.0,1.504632769052528e-36,exact_binomial,120,0,274,binary outcome = correct flag on the shared sample set
+provenance_support,B3_blind_llm,full_vs_baseline_correct_flag,394,8,257,265,8.0,1.8872258900287898e-65,exact_binomial,8,257,129,binary outcome = correct flag on the shared sample set
+provenance_support,B4_rule_plus_classifier,full_vs_baseline_correct_flag,394,120,0,120,0.0,1.504632769052528e-36,exact_binomial,120,0,274,binary outcome = correct flag on the shared sample set
+provenance_support,B5_rule_plus_blind_llm,full_vs_baseline_correct_flag,394,120,0,120,0.0,1.504632769052528e-36,exact_binomial,120,0,274,binary outcome = correct flag on the shared sample set
+provenance_support,B8_entropy_threshold,full_vs_baseline_correct_flag,394,120,0,120,0.0,1.504632769052528e-36,exact_binomial,120,0,274,binary outcome = correct flag on the shared sample set
+relation_contract,B1_rule_only,full_vs_baseline_correct_flag,66,7,36,43,7.0,8.963039363152348e-06,exact_binomial,7,36,23,binary outcome = correct flag on the shared sample set
+relation_contract,B3_blind_llm,full_vs_baseline_correct_flag,66,1,56,57,1.0,8.049116928532385e-16,exact_binomial,1,56,9,binary outcome = correct flag on the shared sample set
+relation_contract,B4_rule_plus_classifier,full_vs_baseline_correct_flag,66,7,0,7,0.0,0.015625,exact_binomial,7,0,59,binary outcome = correct flag on the shared sample set
+relation_contract,B5_rule_plus_blind_llm,full_vs_baseline_correct_flag,66,7,36,43,7.0,8.963039363152348e-06,exact_binomial,7,36,23,binary outcome = correct flag on the shared sample set
+relation_contract,B8_entropy_threshold,full_vs_baseline_correct_flag,66,7,0,7,0.0,0.015625,exact_binomial,7,0,59,binary outcome = correct flag on the shared sample set
+scope_adjustment,B1_rule_only,full_vs_baseline_correct_flag,111,51,0,51,0.0,8.881784197001252e-16,exact_binomial,51,0,60,binary outcome = correct flag; scope_adjustment applies the strict AFTER_BETTER binarisation (design §4.3)
+scope_adjustment,B3_blind_llm,full_vs_baseline_correct_flag,111,7,46,53,7.0,4.003196174551249e-08,exact_binomial,7,46,58,binary outcome = correct flag; scope_adjustment applies the strict AFTER_BETTER binarisation (design §4.3)
+scope_adjustment,B4_rule_plus_classifier,full_vs_baseline_correct_flag,111,51,0,51,0.0,8.881784197001252e-16,exact_binomial,51,0,60,binary outcome = correct flag; scope_adjustment applies the strict AFTER_BETTER binarisation (design §4.3)
+scope_adjustment,B5_rule_plus_blind_llm,full_vs_baseline_correct_flag,111,51,0,51,0.0,8.881784197001252e-16,exact_binomial,51,0,60,binary outcome = correct flag; scope_adjustment applies the strict AFTER_BETTER binarisation (design §4.3)
+scope_adjustment,B8_entropy_threshold,full_vs_baseline_correct_flag,111,51,0,51,0.0,8.881784197001252e-16,exact_binomial,51,0,60,binary outcome = correct flag; scope_adjustment applies the strict AFTER_BETTER binarisation (design §4.3)

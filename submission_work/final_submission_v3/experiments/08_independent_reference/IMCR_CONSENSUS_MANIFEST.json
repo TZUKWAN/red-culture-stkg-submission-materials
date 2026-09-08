@@ -1,0 +1,100 @@
+{
+  "code_commit": "00498cd8d3a412b6d60620eb7c79ec4baf26f5c0",
+  "database_sha256": "UNAVAILABLE",
+  "description": "IMCR 共识参考集构建清单（GOAL 7.4/7.5/21）",
+  "dry_run": false,
+  "experiment_id": "imcr_consensus_build",
+  "loo_reference_judge": "A",
+  "model_ids": [
+    "Qwen3.6-35B-A3B",
+    "gpt-5.6-luna",
+    "minimax/minimax-m3:free"
+  ],
+  "n_reference_all": 2593,
+  "n_reference_leave_one_out": {
+    "IMCR_REFERENCE_LEAVE_A_OUT.csv": 1621,
+    "IMCR_REFERENCE_LEAVE_B_OUT.csv": 1640,
+    "IMCR_REFERENCE_LEAVE_C_OUT.csv": 1824,
+    "IMCR_REFERENCE_LEAVE_QWEN_OUT.csv": 1621
+  },
+  "n_reference_strong": 1246,
+  "output_files": {
+    "IMCR_REFERENCE_ALL.csv": "f1a52f697bc528a574b036549c7f57e1b1ff0041cc5c4644e88357f968e3cd8b",
+    "IMCR_REFERENCE_LEAVE_A_OUT.csv": "6f41e1b3c6cb82f49f912830b8c51e56d821cf4ae0daa8499dae03bc53d75716",
+    "IMCR_REFERENCE_LEAVE_B_OUT.csv": "50bd576f6190cee8562bf8a58cbb4296756b94b3adac934321fe5d769918568c",
+    "IMCR_REFERENCE_LEAVE_C_OUT.csv": "cd0faeeebfa9f1c8bfc1c7af6fe809973c8b184953f6afa06f92ab3ffe7bfd64",
+    "IMCR_REFERENCE_LEAVE_QWEN_OUT.csv": "6f41e1b3c6cb82f49f912830b8c51e56d821cf4ae0daa8499dae03bc53d75716",
+    "IMCR_REFERENCE_STRONG.csv": "798a29a52be82c3054620b6dc0d981ee7807d38e51bba42c906f9436116c27a4",
+    "JUDGE_PAIRWISE_AGREEMENT.csv": "4761b41a0e82a84ecbd3eb5952f1bc3ea0ee53f68b20f4e1922573ed50714d17",
+    "JUDGE_RELIABILITY_SUMMARY.csv": "08fdf2830b5c12d55e75915c324bed18a9987c09a9146a1227ee9a2b86f4e619",
+    "LEAVE_ONE_JUDGE_OUT.csv": "ca05bae1020eab493743b3d8327d0e203238b858feddb41c831af01dfd51051d"
+  },
+  "prompt_sha256": "UNAVAILABLE",
+  "raw_root": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\raw_runs",
+  "sample_manifest_sha256": "UNAVAILABLE",
+  "schema_sha256": "UNAVAILABLE",
+  "seed": 20260907,
+  "tasks": [
+    {
+      "judges": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n_strong_consensus": 276,
+      "n_tasks": 382,
+      "n_unresolved": 16,
+      "n_weak_consensus": 90,
+      "task_type": "entity_type"
+    },
+    {
+      "judges": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n_strong_consensus": 66,
+      "n_tasks": 640,
+      "n_unresolved": 88,
+      "n_weak_consensus": 486,
+      "task_type": "relation_contract"
+    },
+    {
+      "judges": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n_strong_consensus": 111,
+      "n_tasks": 208,
+      "n_unresolved": 24,
+      "n_weak_consensus": 73,
+      "task_type": "scope_adjustment"
+    },
+    {
+      "judges": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n_strong_consensus": 399,
+      "n_tasks": 600,
+      "n_unresolved": 14,
+      "n_weak_consensus": 187,
+      "task_type": "identity_pair"
+    },
+    {
+      "judges": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n_strong_consensus": 394,
+      "n_tasks": 1000,
+      "n_unresolved": 95,
+      "n_weak_consensus": 511,
+      "task_type": "provenance_support"
+    }
+  ],
+  "timestamp": "2026-09-08T00:39:13.145924+00:00"
+}

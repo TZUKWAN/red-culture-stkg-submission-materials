@@ -1,0 +1,388 @@
+{
+  "figure": "imcr_figure_B_aurc_augrc_ci",
+  "generated_at": "2026-09-08T00:52:55+00:00",
+  "result": "PASS",
+  "synthetic": false,
+  "synthetic_watermark": false,
+  "font": {
+    "requested_chain": [
+      "Microsoft YaHei",
+      "SimHei",
+      "Noto Sans CJK SC",
+      "Source Han Sans SC",
+      "PingFang SC",
+      "Arial Unicode MS",
+      "DejaVu Sans"
+    ],
+    "resolved": "Microsoft YaHei",
+    "cjk_capable": true
+  },
+  "inputs": {
+    "deltas": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\14_statistical_tests\\PAIRED_BOOTSTRAP_DELTAS.csv",
+      "sha256": "92803396124b179bab5c74ea0f8d849028a6f4f2ce6d795ef546a934469aeac8",
+      "bytes": 9337,
+      "row_count": 50
+    },
+    "areas_crosscheck_file": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\imcr_strong\\imcr_strong_RISK_COVERAGE_SUMMARY.csv",
+      "sha256": "d1963f4825d5fbfe766666034dc3f44bf6831d109e694a3096fdca86dd58f6b5",
+      "bytes": 47643,
+      "row_count": null
+    }
+  },
+  "checks": [
+    {
+      "name": "delta_identity_full_minus_baseline",
+      "passed": true,
+      "detail": "estimate = full_estimate − baseline_estimate（±1e-6）"
+    },
+    {
+      "name": "ci95_contains_point_estimate",
+      "passed": true,
+      "detail": "ci95_low ≤ estimate ≤ ci95_high"
+    },
+    {
+      "name": "panels_nonempty",
+      "passed": true,
+      "detail": "panels=1"
+    },
+    {
+      "name": "areas_crosscheck",
+      "passed": true,
+      "detail": "areas=imcr_strong_RISK_COVERAGE_SUMMARY.csv, n_compared=2, max_abs_diff=0.000e+00"
+    }
+  ],
+  "panels": [
+    {
+      "task_type": "provenance_support",
+      "n_samples": 394,
+      "baselines": [
+        "B3_blind_llm"
+      ],
+      "metrics": [
+        "aurc",
+        "augrc"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "task_type": "entity_type",
+      "baseline_method_id": "B1_rule_only",
+      "metric": "aurc",
+      "reason": "status=not_applicable_incomplete_score_coverage"
+    },
+    {
+      "task_type": "entity_type",
+      "baseline_method_id": "B1_rule_only",
+      "metric": "augrc",
+      "reason": "status=not_applicable_incomplete_score_coverage"
+    },
+    {
+      "task_type": "entity_type",
+      "baseline_method_id": "B3_blind_llm",
+      "metric": "aurc",
+      "reason": "status=not_applicable_incomplete_score_coverage"
+    },
+    {
+      "task_type": "entity_type",
+      "baseline_method_id": "B3_blind_llm",
+      "metric": "augrc",
+      "reason": "status=not_applicable_incomplete_score_coverage"
+    },
+    {
+      "task_type": "entity_type",
+      "baseline_method_id": "B4_rule_plus_classifier",
+      "metric": "aurc",
+      "reason": "status=not_applicable_incomplete_score_coverage"
+    },
+    {
+      "task_type": "entity_type",
+      "baseline_method_id": "B4_rule_plus_classifier",
+      "metric": "augrc",
+      "reason": "status=not_applicable_incomplete_score_coverage"
+    },
+    {
+      "task_type": "entity_type",
+      "baseline_method_id": "B5_rule_plus_blind_llm",
+      "metric": "aurc",
+      "reason": "status=not_applicable_incomplete_score_coverage"
+    },
+    {
+      "task_type": "entity_type",
+      "baseline_method_id": "B5_rule_plus_blind_llm",
+      "metric": "augrc",
+      "reason": "status=not_applicable_incomplete_score_coverage"
+    },
+    {
+      "task_type": "entity_type",
+      "baseline_method_id": "B8_entropy_threshold",
+      "metric": "aurc",
+      "reason": "status=not_applicable_incomplete_score_coverage"
+    },
+    {
+      "task_type": "entity_type",
+      "baseline_method_id": "B8_entropy_threshold",
+      "metric": "augrc",
+      "reason": "status=not_applicable_incomplete_score_coverage"
+    },
+    {
+      "task_type": "entity_type",
+      "reason": "无 applicable 配对（area gate 未满足）"
+    },
+    {
+      "task_type": "relation_contract",
+      "baseline_method_id": "B1_rule_only",
+      "metric": "aurc",
+      "reason": "status=not_applicable_insufficient_discrete_points"
+    },
+    {
+      "task_type": "relation_contract",
+      "baseline_method_id": "B1_rule_only",
+      "metric": "augrc",
+      "reason": "status=not_applicable_insufficient_discrete_points"
+    },
+    {
+      "task_type": "relation_contract",
+      "baseline_method_id": "B3_blind_llm",
+      "metric": "aurc",
+      "reason": "status=not_applicable_insufficient_discrete_points"
+    },
+    {
+      "task_type": "relation_contract",
+      "baseline_method_id": "B3_blind_llm",
+      "metric": "augrc",
+      "reason": "status=not_applicable_insufficient_discrete_points"
+    },
+    {
+      "task_type": "relation_contract",
+      "baseline_method_id": "B4_rule_plus_classifier",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "relation_contract",
+      "baseline_method_id": "B4_rule_plus_classifier",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "relation_contract",
+      "baseline_method_id": "B5_rule_plus_blind_llm",
+      "metric": "aurc",
+      "reason": "status=not_applicable_insufficient_discrete_points"
+    },
+    {
+      "task_type": "relation_contract",
+      "baseline_method_id": "B5_rule_plus_blind_llm",
+      "metric": "augrc",
+      "reason": "status=not_applicable_insufficient_discrete_points"
+    },
+    {
+      "task_type": "relation_contract",
+      "baseline_method_id": "B8_entropy_threshold",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "relation_contract",
+      "baseline_method_id": "B8_entropy_threshold",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "relation_contract",
+      "reason": "无 applicable 配对（area gate 未满足）"
+    },
+    {
+      "task_type": "scope_adjustment",
+      "baseline_method_id": "B1_rule_only",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "scope_adjustment",
+      "baseline_method_id": "B1_rule_only",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "scope_adjustment",
+      "baseline_method_id": "B3_blind_llm",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "scope_adjustment",
+      "baseline_method_id": "B3_blind_llm",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "scope_adjustment",
+      "baseline_method_id": "B4_rule_plus_classifier",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "scope_adjustment",
+      "baseline_method_id": "B4_rule_plus_classifier",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "scope_adjustment",
+      "baseline_method_id": "B5_rule_plus_blind_llm",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "scope_adjustment",
+      "baseline_method_id": "B5_rule_plus_blind_llm",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "scope_adjustment",
+      "baseline_method_id": "B8_entropy_threshold",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "scope_adjustment",
+      "baseline_method_id": "B8_entropy_threshold",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "scope_adjustment",
+      "reason": "无 applicable 配对（area gate 未满足）"
+    },
+    {
+      "task_type": "identity_pair",
+      "baseline_method_id": "B1_rule_only",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "identity_pair",
+      "baseline_method_id": "B1_rule_only",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "identity_pair",
+      "baseline_method_id": "B3_blind_llm",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "identity_pair",
+      "baseline_method_id": "B3_blind_llm",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "identity_pair",
+      "baseline_method_id": "B4_rule_plus_classifier",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "identity_pair",
+      "baseline_method_id": "B4_rule_plus_classifier",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "identity_pair",
+      "baseline_method_id": "B5_rule_plus_blind_llm",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "identity_pair",
+      "baseline_method_id": "B5_rule_plus_blind_llm",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "identity_pair",
+      "baseline_method_id": "B8_entropy_threshold",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "identity_pair",
+      "baseline_method_id": "B8_entropy_threshold",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "identity_pair",
+      "reason": "无 applicable 配对（area gate 未满足）"
+    },
+    {
+      "task_type": "provenance_support",
+      "baseline_method_id": "B1_rule_only",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "provenance_support",
+      "baseline_method_id": "B1_rule_only",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "provenance_support",
+      "baseline_method_id": "B4_rule_plus_classifier",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "provenance_support",
+      "baseline_method_id": "B4_rule_plus_classifier",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "provenance_support",
+      "baseline_method_id": "B5_rule_plus_blind_llm",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "provenance_support",
+      "baseline_method_id": "B5_rule_plus_blind_llm",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "provenance_support",
+      "baseline_method_id": "B8_entropy_threshold",
+      "metric": "aurc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    },
+    {
+      "task_type": "provenance_support",
+      "baseline_method_id": "B8_entropy_threshold",
+      "metric": "augrc",
+      "reason": "status=not_applicable_no_numeric_confidence"
+    }
+  ],
+  "render": {
+    "n_panels": 1,
+    "n_errorbar_series": 2,
+    "dpi": 240,
+    "outputs": {
+      "png": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_aurc_augrc_ci.png",
+      "pdf": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_aurc_augrc_ci.pdf",
+      "contract": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_aurc_augrc_ci_CHART_CONTRACT.json",
+      "audit": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_aurc_augrc_ci_AUDIT.json"
+    }
+  },
+  "notes": [],
+  "errors": []
+}

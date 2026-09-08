@@ -1,0 +1,66 @@
+{
+  "figure_id": "imcr_figure_D_relation_contract_validation",
+  "analytical_question": "关系契约 changed 集（改后语义）与 control 对照集在独立共识参考下的标签构成是否不同？完整框架在两组上的准确率是否有差异？",
+  "supported_takeaway": "图D 对比 changed/control 两组的共识标签构成，并在存在 09 号基线运行时给出 B12_full_framework 在两组上的准确率（95% Wilson CI）；正确性按 apply_imcr_reference 语义在参考覆盖样本上重算。",
+  "family": "Independent reference validation",
+  "variant": "grouped stacked composition + accuracy errorbar",
+  "renderer": "static Matplotlib PNG/PDF",
+  "palette_policy": "hard two-root cap plus neutrals",
+  "palette": {
+    "语义成立": "#2F6B9A",
+    "语义不成立": "#C58A24",
+    "仅作上下文": "#4B5563",
+    "证据不足": "#8A8F98",
+    "未获参考标签": "#C3C7CD"
+  },
+  "non_color_distinction": {
+    "语义成立": "stack segment #1",
+    "语义不成立": "stack segment #2",
+    "仅作上下文": "stack segment #3",
+    "证据不足": "stack segment #4"
+  },
+  "x_axis": "样本组（changed / control）",
+  "y_axis": "样本数（左）/ 准确率（右）",
+  "input_files": [
+    {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\RELATION_CONTRACT_SAMPLE.csv",
+      "sha256": "903f0354e97e4a0e33f1644874351936e311833e9271c5c8eb75020b301e5f87",
+      "bytes": 215402,
+      "row_count": 640
+    },
+    {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\IMCR_REFERENCE_ALL.csv",
+      "sha256": "f1a52f697bc528a574b036549c7f57e1b1ff0041cc5c4644e88357f968e3cd8b",
+      "bytes": 386389,
+      "row_count": 2593
+    },
+    {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\09_independent_baselines\\IMCR_BASELINE_RUNS.csv",
+      "sha256": "07ef17a42864df5c5f56eec307b4be2c8984d23fbf6e45a6242e01bbc4f1cd49",
+      "bytes": 13646825,
+      "row_count": 31130
+    }
+  ],
+  "output": [
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_relation_contract_validation.png",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_relation_contract_validation.pdf"
+  ],
+  "qa_surface": "exported PNG at 240 dpi and PDF",
+  "generated_at": "2026-09-08T00:52:59+00:00",
+  "synthetic": false,
+  "font": {
+    "requested_chain": [
+      "Microsoft YaHei",
+      "SimHei",
+      "Noto Sans CJK SC",
+      "Source Han Sans SC",
+      "PingFang SC",
+      "Arial Unicode MS",
+      "DejaVu Sans"
+    ],
+    "resolved": "Microsoft YaHei",
+    "cjk_capable": true
+  },
+  "role_column": "RELATION_CONTRACT_SAMPLE.sample_role",
+  "accuracy_definition": "correct = covered AND prediction == reference_label（imcr_all）"
+}

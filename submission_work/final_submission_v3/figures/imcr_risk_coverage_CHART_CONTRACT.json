@@ -1,0 +1,72 @@
+{
+  "figure_id": "imcr_figure_A_risk_coverage",
+  "analytical_question": "在独立多模型共识参考下，随低置信预测被路由到人工复核，选择性风险下降多少，付出的覆盖率代价是多少？",
+  "supported_takeaway": "图A 仅报告经验风险—覆盖权衡：完整框架（B12）与各独立基线在同一冻结测试集分母下的 constrained_selective 主曲线；不对未评价样本外推。",
+  "family": "Uncertainty & Benchmark",
+  "variant": "small-multiple risk-coverage line charts",
+  "renderer": "static Matplotlib PNG/PDF",
+  "palette_policy": "hard two-root cap plus neutrals",
+  "palette": {
+    "B1_rule_only": "#2F6B9A",
+    "B2_frozen_classifier": "#2F6B9A",
+    "B3_blind_llm": "#2F6B9A",
+    "B4_rule_plus_classifier": "#2F6B9A",
+    "B5_rule_plus_blind_llm": "#2F6B9A",
+    "B7_classifier_margin": "#4B5563",
+    "B8_entropy_threshold": "#8A8F98",
+    "B9_rule_model_agreement": "#6B7280",
+    "B10_selective_no_structural_gate": "#A8ADB5",
+    "B11_structural_gate_no_abstention": "#52606D",
+    "B12_full_framework": "#C58A24"
+  },
+  "non_color_distinction": {
+    "B1_rule_only": "-- ^",
+    "B2_frozen_classifier": "- o",
+    "B3_blind_llm": "-. D",
+    "B4_rule_plus_classifier": ": v",
+    "B5_rule_plus_blind_llm": "(0, (3, 1, 1, 1)) P",
+    "B7_classifier_margin": "-- X",
+    "B8_entropy_threshold": "-. *",
+    "B9_rule_model_agreement": "-- h",
+    "B10_selective_no_structural_gate": "-. d",
+    "B11_structural_gate_no_abstention": ": <",
+    "B12_full_framework": "- s"
+  },
+  "x_axis": "覆盖率 Coverage（固定全测试集分母）",
+  "y_axis": "已接纳预测的选择性风险 Selective risk",
+  "input_files": [
+    {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\imcr_strong\\imcr_strong_RISK_COVERAGE_POINTS.csv",
+      "sha256": "a2a1943ffb6fe38bdd018902cb0e74d91175c7ebdbca00faae22afdf92617483",
+      "bytes": 1230987,
+      "row_count": 2795
+    }
+  ],
+  "output": [
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_risk_coverage.png",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_risk_coverage.pdf"
+  ],
+  "qa_surface": "exported PNG at 240 dpi and PDF",
+  "generated_at": "2026-09-08T00:52:54+00:00",
+  "synthetic": false,
+  "font": {
+    "requested_chain": [
+      "Microsoft YaHei",
+      "SimHei",
+      "Noto Sans CJK SC",
+      "Source Han Sans SC",
+      "PingFang SC",
+      "Arial Unicode MS",
+      "DejaVu Sans"
+    ],
+    "resolved": "Microsoft YaHei",
+    "cjk_capable": true
+  },
+  "curve_mode": "constrained_selective",
+  "acceptance_rule": "score>=threshold AND hard_constraint_pass=1",
+  "data_sufficiency": {
+    "minimum_task_n_for_figure": 8,
+    "excluded_from_figure": [],
+    "exclusion_reasons": {}
+  }
+}

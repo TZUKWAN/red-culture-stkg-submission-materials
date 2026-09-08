@@ -14,7 +14,7 @@ B4_rule_plus_classifier,Rule+classifier,relation_contract,not_available,640,0,64
 B4_rule_plus_classifier,Rule+classifier,scope_adjustment,not_available,208,0,208,method×task cell is N/A by design (§3): B4_rule_plus_classifier on scope_adjustment x208
 B4_rule_plus_classifier,Rule+classifier,identity_pair,not_available,600,0,600,method×task cell is N/A by design (§3): B4_rule_plus_classifier on identity_pair x600
 B4_rule_plus_classifier,Rule+classifier,provenance_support,not_available,1000,0,1000,method×task cell is N/A by design (§3): B4_rule_plus_classifier on provenance_support x1000
-B5_rule_plus_blind_llm,Rule+blind LLM,entity_type,available,382,104,278,partial: 104/382 rows available; top reasons: rule abstained and no usable B3 blind LLM prediction x278
+B5_rule_plus_blind_llm,Rule+blind LLM,entity_type,available,382,382,0,available
 B5_rule_plus_blind_llm,Rule+blind LLM,relation_contract,available,640,640,0,available
 B5_rule_plus_blind_llm,Rule+blind LLM,scope_adjustment,not_available,208,0,208,method×task cell is N/A by design (§3): B5_rule_plus_blind_llm on scope_adjustment x208
 B5_rule_plus_blind_llm,Rule+blind LLM,identity_pair,not_available,600,0,600,method×task cell is N/A by design (§3): B5_rule_plus_blind_llm on identity_pair x600
@@ -30,7 +30,7 @@ B8_entropy_threshold,Entropy threshold,scope_adjustment,not_available,208,0,208,
 B8_entropy_threshold,Entropy threshold,identity_pair,not_available,600,0,600,method×task cell is N/A by design (§3): B8_entropy_threshold on identity_pair x600
 B8_entropy_threshold,Entropy threshold,provenance_support,not_available,1000,0,1000,method×task cell is N/A by design (§3): B8_entropy_threshold on provenance_support x1000
 B9_rule_model_agreement,Rule-model agreement gate,entity_type,available,382,350,32,partial: 350/382 rows available; top reasons: agreement signal unavailable: rule or B2 frozen classifier prediction missing x32
-B9_rule_model_agreement,Rule-model agreement gate,relation_contract,not_available,640,0,640,agreement signal unavailable: rule or B3 blind LLM prediction missing x640
+B9_rule_model_agreement,Rule-model agreement gate,relation_contract,available,640,640,0,available
 B9_rule_model_agreement,Rule-model agreement gate,scope_adjustment,not_available,208,0,208,method×task cell is N/A by design (§3): B9_rule_model_agreement on scope_adjustment x208
 B9_rule_model_agreement,Rule-model agreement gate,identity_pair,not_available,600,0,600,method×task cell is N/A by design (§3): B9_rule_model_agreement on identity_pair x600
 B9_rule_model_agreement,Rule-model agreement gate,provenance_support,not_available,1000,0,1000,method×task cell is N/A by design (§3): B9_rule_model_agreement on provenance_support x1000
@@ -49,11 +49,11 @@ B12_full_framework,Full framework,relation_contract,available,640,640,0,availabl
 B12_full_framework,Full framework,scope_adjustment,available,208,208,0,available
 B12_full_framework,Full framework,identity_pair,available,600,600,0,available
 B12_full_framework,Full framework,provenance_support,available,1000,1000,0,available
-B3_blind_llm,Blind LLM (fresh),entity_type,not_available,0,0,0,fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs
-B3_blind_llm,Blind LLM (fresh),relation_contract,not_available,0,0,0,fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs
-B3_blind_llm,Blind LLM (fresh),scope_adjustment,not_available,0,0,0,fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs
-B3_blind_llm,Blind LLM (fresh),identity_pair,not_available,0,0,0,fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs
-B3_blind_llm,Blind LLM (fresh),provenance_support,not_available,0,0,0,fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs
+B3_blind_llm,Blind LLM (fresh),entity_type,available,382,382,0,available
+B3_blind_llm,Blind LLM (fresh),relation_contract,available,640,640,0,available
+B3_blind_llm,Blind LLM (fresh),scope_adjustment,available,208,208,0,available
+B3_blind_llm,Blind LLM (fresh),identity_pair,available,600,600,0,available
+B3_blind_llm,Blind LLM (fresh),provenance_support,available,1000,1000,0,available
 B6_classifier_conf_threshold,Classifier confidence threshold,entity_type,not_available,0,0,0,B6 is the B2 confidence-threshold sweep (no separate rows by design)
 B6_classifier_conf_threshold,Classifier confidence threshold,relation_contract,not_available,0,0,0,B6 is the B2 confidence-threshold sweep (no separate rows by design)
 B6_classifier_conf_threshold,Classifier confidence threshold,scope_adjustment,not_available,0,0,0,B6 is the B2 confidence-threshold sweep (no separate rows by design)

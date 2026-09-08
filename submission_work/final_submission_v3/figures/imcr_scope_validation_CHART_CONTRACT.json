@@ -1,0 +1,62 @@
+{
+  "figure_id": "imcr_figure_C_scope_validation",
+  "analytical_question": "208 条时空范围校正任务在盲评三 judge 共识下，改前/改后偏好的分布如何？各 judge 与共识是否同向？",
+  "supported_takeaway": "图C 报告 scope_adjustment 共识标签分布（含 unresolved 计数）与各 judge 解码后偏好的构成对比；A/B 匿名标签经 SCOPE_ADJUSTMENT_PAYLOAD_AB_MAPPING 解码回 BEFORE_/AFTER_ 语义。",
+  "family": "Independent reference validation",
+  "variant": "distribution bar + judge stacked composition",
+  "renderer": "static Matplotlib PNG/PDF",
+  "palette_policy": "hard two-root cap plus neutrals",
+  "palette": {
+    "改前更优": "#2F6B9A",
+    "改后更优": "#C58A24",
+    "两者相当": "#4B5563",
+    "两者皆误": "#8A8F98",
+    "证据不足": "#6B7280",
+    "未达成共识": "#C3C7CD"
+  },
+  "non_color_distinction": {
+    "改前更优": "stack segment #1",
+    "改后更优": "stack segment #2",
+    "两者相当": "stack segment #3",
+    "两者皆误": "stack segment #4",
+    "证据不足": "stack segment #5"
+  },
+  "x_axis": "标签 / judge",
+  "y_axis": "任务数（左）/ 票数（右）",
+  "input_files": [
+    {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\IMCR_REFERENCE_ALL.csv",
+      "sha256": "f1a52f697bc528a574b036549c7f57e1b1ff0041cc5c4644e88357f968e3cd8b",
+      "bytes": 386389,
+      "row_count": 2593
+    },
+    {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\IMCR_CONSENSUS_MANIFEST.json",
+      "sha256": "24bc48fe5cf21d0a4d48923cb77a073b5b2d88e6fdd13cf6a9006152363a55ab",
+      "bytes": 3184,
+      "row_count": null
+    }
+  ],
+  "output": [
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_scope_validation.png",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_scope_validation.pdf"
+  ],
+  "qa_surface": "exported PNG at 240 dpi and PDF",
+  "generated_at": "2026-09-08T00:52:57+00:00",
+  "synthetic": false,
+  "font": {
+    "requested_chain": [
+      "Microsoft YaHei",
+      "SimHei",
+      "Noto Sans CJK SC",
+      "Source Han Sans SC",
+      "PingFang SC",
+      "Arial Unicode MS",
+      "DejaVu Sans"
+    ],
+    "resolved": "Microsoft YaHei",
+    "cjk_capable": true
+  },
+  "label_decoding": "build_imcr_consensus.decode_ab_label + SCOPE_ADJUSTMENT_PAYLOAD_AB_MAPPING.csv",
+  "unresolved_source": "manifest"
+}

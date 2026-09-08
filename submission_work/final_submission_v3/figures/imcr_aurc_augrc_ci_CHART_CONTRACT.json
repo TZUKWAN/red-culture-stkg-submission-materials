@@ -1,0 +1,64 @@
+{
+  "figure_id": "imcr_figure_B_aurc_augrc_ci",
+  "analytical_question": "在同一冻结测试集上，完整框架相对各独立基线的 AURC/AUGRC 面积差及其 95% 置信区间如何？负值表示完整框架更优。",
+  "supported_takeaway": "图B 报告配对 bootstrap（共享重采样索引）下的 ΔAURC/ΔAUGRC 点估计与95% CI（Full − 基线，负值 = Full 更优）；area gate 未满足的配对不入图。",
+  "family": "Uncertainty & Benchmark",
+  "variant": "per-task errorbar chart with y=0 reference",
+  "renderer": "static Matplotlib PNG/PDF",
+  "palette_policy": "hard two-root cap plus neutrals",
+  "palette": {
+    "ΔAURC": "#2F6B9A",
+    "ΔAUGRC": "#C58A24"
+  },
+  "non_color_distinction": {
+    "ΔAURC": "circle marker, left offset",
+    "ΔAUGRC": "square marker, right offset"
+  },
+  "x_axis": "独立基线（每 task_type 一个面板）",
+  "y_axis": "面积差 Full − 基线（负值 = 完整框架更优）",
+  "input_files": [
+    {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\14_statistical_tests\\PAIRED_BOOTSTRAP_DELTAS.csv",
+      "sha256": "92803396124b179bab5c74ea0f8d849028a6f4f2ce6d795ef546a934469aeac8",
+      "bytes": 9337,
+      "row_count": 50
+    },
+    {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\imcr_strong\\imcr_strong_RISK_COVERAGE_SUMMARY.csv",
+      "sha256": "d1963f4825d5fbfe766666034dc3f44bf6831d109e694a3096fdca86dd58f6b5",
+      "bytes": 47643,
+      "row_count": null
+    }
+  ],
+  "output": [
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_aurc_augrc_ci.png",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_aurc_augrc_ci.pdf"
+  ],
+  "qa_surface": "exported PNG at 240 dpi and PDF",
+  "generated_at": "2026-09-08T00:52:55+00:00",
+  "synthetic": false,
+  "font": {
+    "requested_chain": [
+      "Microsoft YaHei",
+      "SimHei",
+      "Noto Sans CJK SC",
+      "Source Han Sans SC",
+      "PingFang SC",
+      "Arial Unicode MS",
+      "DejaVu Sans"
+    ],
+    "resolved": "Microsoft YaHei",
+    "cjk_capable": true
+  },
+  "delta_sign": "Full - baseline (negative = Full better)",
+  "bootstrap": {
+    "shared_resample_indices": true,
+    "source": "run_statistical_tests.py / metrics.paired_bootstrap_diff_ci"
+  },
+  "areas_crosscheck": {
+    "status": "compared",
+    "detail": "areas=imcr_strong_RISK_COVERAGE_SUMMARY.csv, n_compared=2, max_abs_diff=0.000e+00",
+    "max_abs_diff": 0.0,
+    "n_compared": 2
+  }
+}

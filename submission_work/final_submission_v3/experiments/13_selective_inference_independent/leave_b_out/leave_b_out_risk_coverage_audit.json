@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-09-08T00:52:25+00:00",
+  "result": "PASS",
+  "reference_mode": "imcr_all",
+  "reference_metadata": {
+    "reference_row_count": 1640,
+    "baseline_sample_keys": 2830,
+    "reference_covered_sample_keys": 1640,
+    "excluded_sample_keys": 1190,
+    "rows_retained": 18040,
+    "rows_excluded": 13090
+  },
+  "inputs": {
+    "baseline_runs": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\09_independent_baselines\\IMCR_BASELINE_RUNS.csv",
+      "sha256": "07ef17a42864df5c5f56eec307b4be2c8984d23fbf6e45a6242e01bbc4f1cd49",
+      "bytes": 13646825,
+      "row_count": 18040
+    },
+    "baseline_audit": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\data\\external_inputs\\baseline_experiment_audit.json",
+      "sha256": "df2ed7c7205bfb367f98194079eab6496a32774f04d835e0a6e233f33a27e519",
+      "bytes": 6250,
+      "row_count": null
+    },
+    "imcr_reference": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\IMCR_REFERENCE_LEAVE_B_OUT.csv",
+      "sha256": "50bd576f6190cee8562bf8a58cbb4296756b94b3adac934321fe5d769918568c",
+      "bytes": 215571,
+      "row_count": 1640
+    }
+  },
+  "canaries": {
+    "baseline_audit_pass": true,
+    "points_nonempty": true,
+    "summaries_nonempty": true,
+    "coverage_monotonic_as_threshold_relaxes": true,
+    "fixed_denominator_within_each_curve": true,
+    "curve_arithmetic_valid": true,
+    "safe_coverage_never_exceeds_coverage": true,
+    "review_escalation_equals_abstention": true,
+    "actual_llm_calls_zero": true,
+    "area_only_when_gate_satisfied": true,
+    "primary_curve_is_constrained_selective": true,
+    "constrained_accepted_rows_pass_hard_gate": true,
+    "score_only_is_diagnostic_not_primary": true,
+    "owner_proxy_excluded_from_primary_area": true,
+    "cached_models_have_no_fabricated_points": true,
+    "augrc_closed_form_crosscheck": true,
+    "goal13_metrics_crosscheck": true,
+    "bootstrap_replicate_count_complete": true,
+    "bootstrap_ci_recomputes_from_raw_replicates": true,
+    "bootstrap_fixed_seed_reproducible": true,
+    "figure_png_exists": true,
+    "figure_pdf_exists": true
+  },
+  "applicable_area_curve_count": 25,
+  "applicable_primary_constrained_curve_count": 15,
+  "applicable_score_only_diagnostic_curve_count": 10,
+  "formula_crosscheck_count": 10,
+  "maximum_augrc_crosscheck_abs_diff": 1.1102230246251565e-16,
+  "goal13_metrics_crosscheck_max_abs_diff": 5.551115123125783e-17,
+  "bootstrap_iterations_per_applicable_curve": 2000,
+  "bootstrap_raw_row_count": 50000,
+  "outputs": {
+    "points": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\leave_b_out\\leave_b_out_RISK_COVERAGE_POINTS.csv",
+      "sha256": "42830b208318e6811110e2809c0bf5f67dbc1688b2badd4b75149df211e84465",
+      "bytes": 1301849,
+      "row_count": 2942
+    },
+    "summary_csv": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\leave_b_out\\leave_b_out_RISK_COVERAGE_SUMMARY.csv",
+      "sha256": "ddf1e99cd83eb4b4c8cf24240164789cbacbabec6e9f31e9bb31eeea9a0d9b77",
+      "bytes": 48062,
+      "row_count": 110
+    },
+    "bootstrap": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\leave_b_out\\leave_b_out_RISK_COVERAGE_BOOTSTRAP.csv",
+      "sha256": "4cbc36c0100128245dfe0d9a539ff7635d0ba66ec8208b241755dc8413bd166c",
+      "bytes": 5861092,
+      "row_count": 50000
+    },
+    "goal13_metrics": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\leave_b_out\\leave_b_out_SELECTIVE_GOAL13_METRICS.csv",
+      "sha256": "dda2dd1cb97b105e6d035f7636bfa6f2c5f1481e6891d5d8814ab7edd14fd133",
+      "bytes": 8066,
+      "row_count": 26
+    },
+    "summary_json": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\leave_b_out\\leave_b_out_risk_coverage_summary.json",
+      "sha256": "87b3e3a280d2e6d6db8665670c85729bdb6731893b3443d017e862d237dd2756",
+      "bytes": 192105,
+      "row_count": null
+    },
+    "chart_contract": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\leave_b_out\\leave_b_out_RISK_COVERAGE_CHART_CONTRACT.json",
+      "sha256": "224ac6de1b846b25782fb116b15ab4e66cde2ff632bae372b16f26da713394c8",
+      "bytes": 1567,
+      "row_count": null
+    },
+    "figure_png": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\leave_b_out\\leave_b_out_risk_coverage_curves.png",
+      "rendered": false,
+      "note": "B-series runs: inline ERA-style figure not rendered"
+    },
+    "figure_pdf": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\leave_b_out\\leave_b_out_risk_coverage_curves.pdf",
+      "rendered": false,
+      "note": "B-series runs: inline ERA-style figure not rendered"
+    }
+  },
+  "scope_notes": [
+    "No confidence is fabricated for cached LLM rows; no cached-LLM AURC/AUGRC is reported.",
+    "Primary constrained_selective acceptance requires both the confidence threshold and hard_constraint_pass=1.",
+    "score_only_diagnostic curves are retained only to expose the effect of the hard gate and cannot represent automatic admission.",
+    "Constrained AURC/AUGRC integrate over each method's achievable [0,max_coverage] domain; normalized areas are also reported.",
+    "M2 remains an AI-gold supervised proxy and M6 remains a shared-system-signal deterministic replay.",
+    "Owner proxy tasks are excluded from primary areas and the figure by the dedicated role-owner audit.",
+    "Review escalation is a routing counter only; actual LLM calls remain zero.",
+    "Correctness reference for this run: imcr_all.",
+    "IMCR mode evaluates only reference-covered samples; the curve denominator is the IMCR-covered subset of the frozen task test set.",
+    "A missing IMCR reference file is a hard error; no silent fallback to ERA exists."
+  ]
+}

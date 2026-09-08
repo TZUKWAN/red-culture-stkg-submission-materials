@@ -1,0 +1,107 @@
+{
+  "figure": "imcr_figure_D_relation_contract_validation",
+  "generated_at": "2026-09-08T00:52:59+00:00",
+  "result": "PASS",
+  "synthetic": false,
+  "synthetic_watermark": false,
+  "font": {
+    "requested_chain": [
+      "Microsoft YaHei",
+      "SimHei",
+      "Noto Sans CJK SC",
+      "Source Han Sans SC",
+      "PingFang SC",
+      "Arial Unicode MS",
+      "DejaVu Sans"
+    ],
+    "resolved": "Microsoft YaHei",
+    "cjk_capable": true
+  },
+  "inputs": {
+    "sample": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\RELATION_CONTRACT_SAMPLE.csv",
+      "sha256": "903f0354e97e4a0e33f1644874351936e311833e9271c5c8eb75020b301e5f87",
+      "bytes": 215402,
+      "row_count": 640
+    },
+    "reference": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\IMCR_REFERENCE_ALL.csv",
+      "sha256": "f1a52f697bc528a574b036549c7f57e1b1ff0041cc5c4644e88357f968e3cd8b",
+      "bytes": 386389,
+      "row_count": 2593
+    },
+    "runs": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\09_independent_baselines\\IMCR_BASELINE_RUNS.csv",
+      "sha256": "07ef17a42864df5c5f56eec307b4be2c8984d23fbf6e45a6242e01bbc4f1cd49",
+      "bytes": 13646825,
+      "row_count": 31130
+    },
+    "b12_accuracy_meta": {
+      "status": "ok",
+      "rows_retained": 552
+    }
+  },
+  "checks": [
+    {
+      "name": "changed_and_control_both_present",
+      "passed": true,
+      "detail": "changed=265, control=287"
+    },
+    {
+      "name": "accuracy_within_unit_interval",
+      "passed": true,
+      "detail": "{\"changed\": 0.3019, \"control\": 0.1672}"
+    }
+  ],
+  "panels": [
+    {
+      "panel": "composition",
+      "changed": {
+        "context_only": 80,
+        "insufficient_evidence": 72,
+        "invalid": 113
+      },
+      "control": {
+        "context_only": 95,
+        "insufficient_evidence": 114,
+        "invalid": 76,
+        "valid": 2
+      },
+      "unlabeled": {
+        "changed": 55,
+        "control": 33
+      }
+    },
+    {
+      "panel": "b12_accuracy",
+      "changed": {
+        "accuracy": 0.3018867924528302,
+        "n": 265,
+        "correct": 80,
+        "ci95_low": 0.24976833665810683,
+        "ci95_high": 0.35966690275550406
+      },
+      "control": {
+        "accuracy": 0.1672473867595819,
+        "n": 287,
+        "correct": 48,
+        "ci95_low": 0.12852766293425308,
+        "ci95_high": 0.2147571604383566
+      }
+    }
+  ],
+  "excluded": [],
+  "render": {
+    "n_panels": 2,
+    "accuracy_panel": true,
+    "dpi": 240,
+    "outputs": {
+      "png": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_relation_contract_validation.png",
+      "pdf": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_relation_contract_validation.pdf",
+      "contract": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_relation_contract_validation_CHART_CONTRACT.json",
+      "audit": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_relation_contract_validation_AUDIT.json"
+    }
+  },
+  "notes": [],
+  "errors": []
+}

@@ -1008,7 +1008,17 @@ def main(argv: list[str] | None = None) -> dict[str, Any]:
         "qa_surface": "exported PNG at 240 dpi and PDF",
     }
     write_json(contract_path, chart_contract)
-    make_figure(all_points, summaries, figure_png, figure_pdf)
+    inline_figure_rendered = any(row["method_id"] in SCORE_METHODS for row in summaries)
+    if inline_figure_rendered:
+        # v2/ERA 运行（M 系列方法号）：内联 small-multiple 图与 era 逐格对齐。
+        make_figure(all_points, summaries, figure_png, figure_pdf)
+    else:
+        # IMCR 独立基线运行（B 系列方法号）：era 风格图不适用（方法选择硬编码
+        # M2/M6）；GOAL 13.1 的 IMCR 风险-覆盖图由 build_imcr_figures.py 渲染。
+        print(
+            "[run_selective_inference] B-series runs detected: skipping inline "
+            "ERA-style figure; render the IMCR figure via build_imcr_figures.py"
+        )
 
     applicable = [row for row in summaries if row["area_status"] == "applicable"]
     formula_checks = [
@@ -1219,8 +1229,11 @@ def main(argv: list[str] | None = None) -> dict[str, Any]:
         "bootstrap_replicate_count_complete": len(bootstrap_rows) == len(applicable) * iterations,
         "bootstrap_ci_recomputes_from_raw_replicates": bootstrap_ci_valid,
         "bootstrap_fixed_seed_reproducible": bootstrap_reproducible,
-        "figure_png_exists": figure_png.exists() and figure_png.stat().st_size > 0,
-        "figure_pdf_exists": figure_pdf.exists() and figure_pdf.stat().st_size > 0,
+        # 内联图仅对 v2/ERA（M 系列）运行渲染；B 系列运行由 build_imcr_figures 出图。
+        "figure_png_exists": (not inline_figure_rendered)
+        or (figure_png.exists() and figure_png.stat().st_size > 0),
+        "figure_pdf_exists": (not inline_figure_rendered)
+        or (figure_pdf.exists() and figure_pdf.stat().st_size > 0),
     }
     outputs = {
         "points": output_record(points_path, len(all_points)),
@@ -1229,8 +1242,20 @@ def main(argv: list[str] | None = None) -> dict[str, Any]:
         "goal13_metrics": output_record(goal13_path, len(goal13_rows)),
         "summary_json": output_record(summary_json_path),
         "chart_contract": output_record(contract_path),
-        "figure_png": output_record(figure_png),
-        "figure_pdf": output_record(figure_pdf),
+        # B 系列运行跳过内联 ERA 图（GOAL 13.1 的 IMCR 图由 build_imcr_figures
+        # 渲染），此处如实记录 not_rendered 而不是哈希不存在的文件。
+        "figure_png": (
+            output_record(figure_png)
+            if figure_png.exists()
+            else {"path": str(figure_png.resolve()), "rendered": False,
+                  "note": "B-series runs: inline ERA-style figure not rendered"}
+        ),
+        "figure_pdf": (
+            output_record(figure_pdf)
+            if figure_pdf.exists()
+            else {"path": str(figure_pdf.resolve()), "rendered": False,
+                  "note": "B-series runs: inline ERA-style figure not rendered"}
+        ),
     }
     input_records: dict[str, Any] = {
         "baseline_runs": output_record(runs_path, len(runs)),

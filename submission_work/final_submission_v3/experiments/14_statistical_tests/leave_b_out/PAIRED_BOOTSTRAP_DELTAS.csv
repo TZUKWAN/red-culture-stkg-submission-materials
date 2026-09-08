@@ -1,0 +1,51 @@
+task_type,baseline_method_id,metric,status,n_samples,n_replicates,n_valid_replicates,estimate,ci95_low,ci95_high,full_estimate,baseline_estimate,bootstrap_seed,note
+entity_type,B1_rule_only,aurc,not_applicable_incomplete_score_coverage,309,,,,,,,,,area gate reused from run_selective_inference: not_applicable_incomplete_score_coverage
+entity_type,B1_rule_only,augrc,not_applicable_incomplete_score_coverage,309,,,,,,,,,area gate reused from run_selective_inference: not_applicable_incomplete_score_coverage
+entity_type,B3_blind_llm,aurc,not_applicable_incomplete_score_coverage,309,,,,,,,,,area gate reused from run_selective_inference: not_applicable_incomplete_score_coverage
+entity_type,B3_blind_llm,augrc,not_applicable_incomplete_score_coverage,309,,,,,,,,,area gate reused from run_selective_inference: not_applicable_incomplete_score_coverage
+entity_type,B4_rule_plus_classifier,aurc,not_applicable_incomplete_score_coverage,309,,,,,,,,,area gate reused from run_selective_inference: not_applicable_incomplete_score_coverage
+entity_type,B4_rule_plus_classifier,augrc,not_applicable_incomplete_score_coverage,309,,,,,,,,,area gate reused from run_selective_inference: not_applicable_incomplete_score_coverage
+entity_type,B5_rule_plus_blind_llm,aurc,not_applicable_incomplete_score_coverage,309,,,,,,,,,area gate reused from run_selective_inference: not_applicable_incomplete_score_coverage
+entity_type,B5_rule_plus_blind_llm,augrc,not_applicable_incomplete_score_coverage,309,,,,,,,,,area gate reused from run_selective_inference: not_applicable_incomplete_score_coverage
+entity_type,B8_entropy_threshold,aurc,not_applicable_incomplete_score_coverage,309,,,,,,,,,area gate reused from run_selective_inference: not_applicable_incomplete_score_coverage
+entity_type,B8_entropy_threshold,augrc,not_applicable_incomplete_score_coverage,309,,,,,,,,,area gate reused from run_selective_inference: not_applicable_incomplete_score_coverage
+identity_pair,B1_rule_only,aurc,not_applicable_no_numeric_confidence,456,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+identity_pair,B1_rule_only,augrc,not_applicable_no_numeric_confidence,456,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+identity_pair,B3_blind_llm,aurc,not_applicable_no_numeric_confidence,456,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+identity_pair,B3_blind_llm,augrc,not_applicable_no_numeric_confidence,456,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+identity_pair,B4_rule_plus_classifier,aurc,not_applicable_no_numeric_confidence,456,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+identity_pair,B4_rule_plus_classifier,augrc,not_applicable_no_numeric_confidence,456,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+identity_pair,B5_rule_plus_blind_llm,aurc,not_applicable_no_numeric_confidence,456,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+identity_pair,B5_rule_plus_blind_llm,augrc,not_applicable_no_numeric_confidence,456,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+identity_pair,B8_entropy_threshold,aurc,not_applicable_no_numeric_confidence,456,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+identity_pair,B8_entropy_threshold,augrc,not_applicable_no_numeric_confidence,456,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+provenance_support,B1_rule_only,aurc,not_applicable_no_numeric_confidence,491,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+provenance_support,B1_rule_only,augrc,not_applicable_no_numeric_confidence,491,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+provenance_support,B3_blind_llm,aurc,applicable,491,2000,2000,0.322372508570535,0.2883463823669296,0.35476048089775597,0.3913103208418315,0.06893781227129649,707394621,paired bootstrap with shared resample indices (metrics.paired_bootstrap_diff_ci); Full - baseline; negative delta = Full has the smaller area (better)
+provenance_support,B3_blind_llm,augrc,applicable,491,2000,2000,0.2896142790182552,0.261877180283805,0.3158031947768592,0.34369361334986986,0.05407933433161468,707394621,paired bootstrap with shared resample indices (metrics.paired_bootstrap_diff_ci); Full - baseline; negative delta = Full has the smaller area (better)
+provenance_support,B4_rule_plus_classifier,aurc,not_applicable_no_numeric_confidence,491,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+provenance_support,B4_rule_plus_classifier,augrc,not_applicable_no_numeric_confidence,491,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+provenance_support,B5_rule_plus_blind_llm,aurc,not_applicable_no_numeric_confidence,491,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+provenance_support,B5_rule_plus_blind_llm,augrc,not_applicable_no_numeric_confidence,491,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+provenance_support,B8_entropy_threshold,aurc,not_applicable_no_numeric_confidence,491,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+provenance_support,B8_entropy_threshold,augrc,not_applicable_no_numeric_confidence,491,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+relation_contract,B1_rule_only,aurc,not_applicable_insufficient_discrete_points,248,,,,,,,,,area gate reused from run_selective_inference: not_applicable_insufficient_discrete_points
+relation_contract,B1_rule_only,augrc,not_applicable_insufficient_discrete_points,248,,,,,,,,,area gate reused from run_selective_inference: not_applicable_insufficient_discrete_points
+relation_contract,B3_blind_llm,aurc,applicable,248,2000,2000,-0.38761056770159347,-0.48710316436469453,-0.28638987404388766,0.2617549034254428,0.6493654711270362,782092524,paired bootstrap with shared resample indices (metrics.paired_bootstrap_diff_ci); Full - baseline; negative delta = Full has the smaller area (better)
+relation_contract,B3_blind_llm,augrc,applicable,248,2000,2000,-0.2079702133194589,-0.25644084124609784,-0.1558628300598335,0.1550468262226847,0.3630170395421436,782092524,paired bootstrap with shared resample indices (metrics.paired_bootstrap_diff_ci); Full - baseline; negative delta = Full has the smaller area (better)
+relation_contract,B4_rule_plus_classifier,aurc,not_applicable_no_numeric_confidence,248,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+relation_contract,B4_rule_plus_classifier,augrc,not_applicable_no_numeric_confidence,248,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+relation_contract,B5_rule_plus_blind_llm,aurc,not_applicable_insufficient_discrete_points,248,,,,,,,,,area gate reused from run_selective_inference: not_applicable_insufficient_discrete_points
+relation_contract,B5_rule_plus_blind_llm,augrc,not_applicable_insufficient_discrete_points,248,,,,,,,,,area gate reused from run_selective_inference: not_applicable_insufficient_discrete_points
+relation_contract,B8_entropy_threshold,aurc,not_applicable_no_numeric_confidence,248,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+relation_contract,B8_entropy_threshold,augrc,not_applicable_no_numeric_confidence,248,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+scope_adjustment,B1_rule_only,aurc,not_applicable_no_numeric_confidence,136,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+scope_adjustment,B1_rule_only,augrc,not_applicable_no_numeric_confidence,136,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+scope_adjustment,B3_blind_llm,aurc,not_applicable_no_numeric_confidence,136,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+scope_adjustment,B3_blind_llm,augrc,not_applicable_no_numeric_confidence,136,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+scope_adjustment,B4_rule_plus_classifier,aurc,not_applicable_no_numeric_confidence,136,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+scope_adjustment,B4_rule_plus_classifier,augrc,not_applicable_no_numeric_confidence,136,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+scope_adjustment,B5_rule_plus_blind_llm,aurc,not_applicable_no_numeric_confidence,136,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+scope_adjustment,B5_rule_plus_blind_llm,augrc,not_applicable_no_numeric_confidence,136,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+scope_adjustment,B8_entropy_threshold,aurc,not_applicable_no_numeric_confidence,136,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence
+scope_adjustment,B8_entropy_threshold,augrc,not_applicable_no_numeric_confidence,136,,,,,,,,,area gate reused from run_selective_inference: not_applicable_no_numeric_confidence

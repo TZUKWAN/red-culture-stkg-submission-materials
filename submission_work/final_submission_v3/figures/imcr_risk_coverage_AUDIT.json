@@ -1,0 +1,261 @@
+{
+  "figure": "imcr_figure_A_risk_coverage",
+  "generated_at": "2026-09-08T00:52:54+00:00",
+  "result": "PASS",
+  "synthetic": false,
+  "synthetic_watermark": false,
+  "font": {
+    "requested_chain": [
+      "Microsoft YaHei",
+      "SimHei",
+      "Noto Sans CJK SC",
+      "Source Han Sans SC",
+      "PingFang SC",
+      "Arial Unicode MS",
+      "DejaVu Sans"
+    ],
+    "resolved": "Microsoft YaHei",
+    "cjk_capable": true
+  },
+  "inputs": {
+    "points": {
+      "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\13_selective_inference_independent\\imcr_strong\\imcr_strong_RISK_COVERAGE_POINTS.csv",
+      "sha256": "a2a1943ffb6fe38bdd018902cb0e74d91175c7ebdbca00faae22afdf92617483",
+      "bytes": 1230987,
+      "row_count": 2795
+    }
+  },
+  "checks": [
+    {
+      "name": "coverage_and_risk_within_unit_square",
+      "passed": true,
+      "detail": "coverage/selective_risk ∈ [0,1]"
+    },
+    {
+      "name": "coverage_monotonic_as_threshold_relaxes",
+      "passed": true,
+      "detail": "行序（阈值放松方向）coverage 非降"
+    },
+    {
+      "name": "panels_nonempty",
+      "passed": true,
+      "detail": "panels=5"
+    }
+  ],
+  "panels": [
+    {
+      "task_type": "entity_type",
+      "n": 276,
+      "curves": [
+        {
+          "method_id": "B1_rule_only",
+          "n_points": 3
+        },
+        {
+          "method_id": "B2_frozen_classifier",
+          "n_points": 82
+        },
+        {
+          "method_id": "B3_blind_llm",
+          "n_points": 19
+        },
+        {
+          "method_id": "B4_rule_plus_classifier",
+          "n_points": 69
+        },
+        {
+          "method_id": "B5_rule_plus_blind_llm",
+          "n_points": 18
+        },
+        {
+          "method_id": "B7_classifier_margin",
+          "n_points": 82
+        },
+        {
+          "method_id": "B8_entropy_threshold",
+          "n_points": 82
+        },
+        {
+          "method_id": "B9_rule_model_agreement",
+          "n_points": 2
+        },
+        {
+          "method_id": "B10_selective_no_structural_gate",
+          "n_points": 4
+        },
+        {
+          "method_id": "B11_structural_gate_no_abstention",
+          "n_points": 1
+        },
+        {
+          "method_id": "B12_full_framework",
+          "n_points": 4
+        }
+      ]
+    },
+    {
+      "task_type": "relation_contract",
+      "n": 66,
+      "curves": [
+        {
+          "method_id": "B1_rule_only",
+          "n_points": 1
+        },
+        {
+          "method_id": "B3_blind_llm",
+          "n_points": 11
+        },
+        {
+          "method_id": "B5_rule_plus_blind_llm",
+          "n_points": 1
+        },
+        {
+          "method_id": "B9_rule_model_agreement",
+          "n_points": 2
+        },
+        {
+          "method_id": "B10_selective_no_structural_gate",
+          "n_points": 4
+        },
+        {
+          "method_id": "B11_structural_gate_no_abstention",
+          "n_points": 1
+        },
+        {
+          "method_id": "B12_full_framework",
+          "n_points": 3
+        }
+      ]
+    },
+    {
+      "task_type": "scope_adjustment",
+      "n": 111,
+      "curves": [
+        {
+          "method_id": "B3_blind_llm",
+          "n_points": 19
+        },
+        {
+          "method_id": "B11_structural_gate_no_abstention",
+          "n_points": 1
+        }
+      ]
+    },
+    {
+      "task_type": "identity_pair",
+      "n": 399,
+      "curves": [
+        {
+          "method_id": "B3_blind_llm",
+          "n_points": 20
+        },
+        {
+          "method_id": "B11_structural_gate_no_abstention",
+          "n_points": 1
+        }
+      ]
+    },
+    {
+      "task_type": "provenance_support",
+      "n": 394,
+      "curves": [
+        {
+          "method_id": "B3_blind_llm",
+          "n_points": 14
+        },
+        {
+          "method_id": "B10_selective_no_structural_gate",
+          "n_points": 4
+        },
+        {
+          "method_id": "B11_structural_gate_no_abstention",
+          "n_points": 1
+        },
+        {
+          "method_id": "B12_full_framework",
+          "n_points": 4
+        }
+      ]
+    }
+  ],
+  "excluded": [],
+  "render": {
+    "n_panels": 5,
+    "n_curves": 26,
+    "method_styles": {
+      "B1_rule_only": {
+        "color": "#2F6B9A",
+        "linestyle": "--",
+        "marker": "^"
+      },
+      "B2_frozen_classifier": {
+        "color": "#2F6B9A",
+        "linestyle": "-",
+        "marker": "o"
+      },
+      "B3_blind_llm": {
+        "color": "#2F6B9A",
+        "linestyle": "-.",
+        "marker": "D"
+      },
+      "B4_rule_plus_classifier": {
+        "color": "#2F6B9A",
+        "linestyle": ":",
+        "marker": "v"
+      },
+      "B5_rule_plus_blind_llm": {
+        "color": "#2F6B9A",
+        "linestyle": [
+          0,
+          [
+            3,
+            1,
+            1,
+            1
+          ]
+        ],
+        "marker": "P"
+      },
+      "B7_classifier_margin": {
+        "color": "#4B5563",
+        "linestyle": "--",
+        "marker": "X"
+      },
+      "B8_entropy_threshold": {
+        "color": "#8A8F98",
+        "linestyle": "-.",
+        "marker": "*"
+      },
+      "B9_rule_model_agreement": {
+        "color": "#6B7280",
+        "linestyle": "--",
+        "marker": "h"
+      },
+      "B10_selective_no_structural_gate": {
+        "color": "#A8ADB5",
+        "linestyle": "-.",
+        "marker": "d"
+      },
+      "B11_structural_gate_no_abstention": {
+        "color": "#52606D",
+        "linestyle": ":",
+        "marker": "<"
+      },
+      "B12_full_framework": {
+        "color": "#C58A24",
+        "linestyle": "-",
+        "marker": "s"
+      }
+    },
+    "dpi": 240,
+    "outputs": {
+      "png": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_risk_coverage.png",
+      "pdf": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_risk_coverage.pdf",
+      "contract": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_risk_coverage_CHART_CONTRACT.json",
+      "audit": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\figures\\imcr_risk_coverage_AUDIT.json"
+    },
+    "n_input_columns": 31
+  },
+  "notes": [],
+  "errors": []
+}

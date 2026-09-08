@@ -4,7 +4,27 @@
     "calls_per_task": {
       "entity_type": {
         "MODEL_OUTPUT_INVALID": 0,
-        "OK": 137,
+        "OK": 382,
+        "TRANSPORT_ERROR": 0
+      },
+      "identity_pair": {
+        "MODEL_OUTPUT_INVALID": 0,
+        "OK": 600,
+        "TRANSPORT_ERROR": 0
+      },
+      "provenance_support": {
+        "MODEL_OUTPUT_INVALID": 0,
+        "OK": 1000,
+        "TRANSPORT_ERROR": 0
+      },
+      "relation_contract": {
+        "MODEL_OUTPUT_INVALID": 0,
+        "OK": 640,
+        "TRANSPORT_ERROR": 0
+      },
+      "scope_adjustment": {
+        "MODEL_OUTPUT_INVALID": 0,
+        "OK": 208,
         "TRANSPORT_ERROR": 0
       }
     },
@@ -12,7 +32,7 @@
       "gpt-5.6-luna"
     ]
   },
-  "code_commit": "40b373422e2a11f757ab78519d59409a2f7adb90",
+  "code_commit": "00498cd8d3a412b6d60620eb7c79ec4baf26f5c0",
   "database_sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
   "db_manifest": {
     "final_db_path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\release_databases\\red_culture_stkg_final_v2.sqlite",
@@ -204,13 +224,6 @@
     },
     {
       "method_id": "B9_rule_model_agreement",
-      "n_not_available": 640,
-      "n_rows": 640,
-      "reason": "agreement signal unavailable: rule or B3 blind LLM prediction missing x640",
-      "task_type": "relation_contract"
-    },
-    {
-      "method_id": "B9_rule_model_agreement",
       "n_not_available": 208,
       "n_rows": 208,
       "reason": "method×task cell is N/A by design (§3): B9_rule_model_agreement on scope_adjustment x208",
@@ -228,41 +241,6 @@
       "n_not_available": 1000,
       "n_rows": 1000,
       "reason": "method×task cell is N/A by design (§3): B9_rule_model_agreement on provenance_support x1000",
-      "task_type": "provenance_support"
-    },
-    {
-      "method_id": "B3_blind_llm",
-      "n_not_available": 0,
-      "n_rows": 0,
-      "reason": "fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs",
-      "task_type": "entity_type"
-    },
-    {
-      "method_id": "B3_blind_llm",
-      "n_not_available": 0,
-      "n_rows": 0,
-      "reason": "fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs",
-      "task_type": "relation_contract"
-    },
-    {
-      "method_id": "B3_blind_llm",
-      "n_not_available": 0,
-      "n_rows": 0,
-      "reason": "fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs",
-      "task_type": "scope_adjustment"
-    },
-    {
-      "method_id": "B3_blind_llm",
-      "n_not_available": 0,
-      "n_rows": 0,
-      "reason": "fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs",
-      "task_type": "identity_pair"
-    },
-    {
-      "method_id": "B3_blind_llm",
-      "n_not_available": 0,
-      "n_rows": 0,
-      "reason": "fresh blind LLM run pending; produce via run_blind_llm_baseline.py and merge via --append-runs",
       "task_type": "provenance_support"
     },
     {
@@ -302,12 +280,12 @@
     }
   ],
   "output_files": {
-    "BASELINE_AVAILABILITY_MATRIX.csv": "10932b79ccc0824100665b185123f4650676f2244932ff920bd961f1798fcfbb",
-    "IMCR_BASELINE_RUNS.csv": "498347e485660e76d1ee6ff4114750686a24bbddb4393967992fa6519a267382"
+    "BASELINE_AVAILABILITY_MATRIX.csv": "e8695c7a8babacc52b9310c4cd2cb765fcbea09153e95e5799ee9f26a3a79b5b",
+    "IMCR_BASELINE_RUNS.csv": "07ef17a42864df5c5f56eec307b4be2c8984d23fbf6e45a6242e01bbc4f1cd49"
   },
   "prompt_sha256": "319e561ae6175e92d238e77a34aaf33f03bd7d26aabde6e3a4c7024529dea81b",
   "sample_manifest_sha256": "UNAVAILABLE",
   "schema_sha256": "UNAVAILABLE",
   "seed": 20260907,
-  "timestamp": "2026-09-07T20:02:43.776154+00:00"
+  "timestamp": "2026-09-07T21:53:14.238973+00:00"
 }
