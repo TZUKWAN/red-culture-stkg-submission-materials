@@ -57,7 +57,7 @@ V3_REF_STRONG = V3 / "experiments" / "08_independent_reference" / "IMCR_REFERENC
 V3_REF_ALL = V3 / "experiments" / "08_independent_reference" / "IMCR_REFERENCE_ALL.csv"
 SAMPLE = V3 / "experiments" / "08_independent_reference" / "ENTITY_TYPE_SAMPLE.csv"
 SIDECAR = V3 / "experiments" / "08_independent_reference" / "ENTITY_TYPE_SAMPLE.sampling_metadata.csv"
-B3_RUNS = V3_1 / "experiments" / "02_selective_semantic" / "blind_llm_runs" / "entity_type.jsonl"
+B3_RUNS = V3 / "experiments" / "09_independent_baselines" / "IMCR_BLIND_LLM_RUNS.csv"
 SPLIT_MANIFEST = V3_1 / "data" / "frozen_splits" / "SPLIT_MANIFEST.json"
 OUT_DIR = V3_1 / "experiments" / "02_selective_semantic"
 
@@ -79,8 +79,11 @@ def load_runs_by_method() -> dict[str, dict[str, dict[str, str]]]:
     return out
 
 
+V3_REF_LOB = V3 / "experiments" / "08_independent_reference" / "IMCR_REFERENCE_LEAVE_B_OUT.csv"
+
+
 def load_reference(mode: str) -> dict[str, str]:
-    path = V3_REF_STRONG if mode == "strong" else V3_REF_ALL
+    path = {"strong": V3_REF_STRONG, "all": V3_REF_ALL, "leave_b_out": V3_REF_LOB}[mode]
     ref = {}
     for r in csv.DictReader(open(path, encoding="utf-8-sig")):
         if r["task_type"] == "entity_type" and r["reference_label"]:
@@ -89,19 +92,22 @@ def load_reference(mode: str) -> dict[str, str]:
 
 
 def load_b3_rows() -> dict[str, dict[str, Any]]:
+    """方案 B：B3 = gpt-5.6-luna（fresh 记录见 V3 IMCR_BLIND_LLM_RUNS.csv）。
+
+    主评价参考必须为 leave-B-out（无 Judge B 票）；对 primary 的数字仅作
+    自指敏感性附注。nemotron-3-ultra 尝试因 OpenRouter 免费档配额耗尽
+    （HTTP 429 持续）不可用，见 audit/01_REFERENCE_INDEPENDENCE_AUDIT.md。
+    """
     out: dict[str, dict[str, Any]] = {}
     if not B3_RUNS.exists():
         return out
-    for line in B3_RUNS.read_text(encoding="utf-8").splitlines():
-        if not line.strip():
-            continue
-        rec = json.loads(line)
-        if rec.get("status") == "OK" and rec.get("parsed_response"):
-            sid = str(rec["task_id"])
-            if sid not in out:  # 首次 OK 为准
+    for r in csv.DictReader(open(B3_RUNS, encoding="utf-8-sig")):
+        if r.get("method_id") == "B3_blind_llm" and r.get("task_type") == "entity_type"                 and r.get("availability_status") == "available" and r.get("prediction"):
+            sid = r["sample_id"]
+            if sid not in out:
                 out[sid] = {
-                    "prediction": str(rec["parsed_response"].get("decision") or ""),
-                    "confidence": float(rec["parsed_response"].get("confidence") or 0.0),
+                    "prediction": r["prediction"],
+                    "confidence": float(r["confidence"]) if r.get("confidence") else 0.0,
                 }
     return out
 
@@ -389,7 +395,7 @@ def evaluate(rows: list[dict[str, Any]]) -> dict[str, Any]:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--reference", choices=["strong", "all"], default="strong")
+    ap.add_argument("--reference", choices=["strong", "all", "leave_b_out"], default="strong")
     ap.add_argument("--split", choices=["dev", "val", "test"], default="dev")
     ap.add_argument("--freeze-test", action="store_true", help="记录配置哈希并解锁 test 评价")
     args = ap.parse_args()

@@ -49,3 +49,16 @@
   不换 B3 模型（避免再次重置）。
 - 网关渠道（Qwen 系）此前两次 wedge；A/C 并发已控制在 4+2，若再 wedge 则
   降并发+探针续跑，历史按 _archived_judgeA_attempts 同规格归档。
+
+## 5. B3 二次变更：nemotron 配额耗尽，回退方案 B（2026-09-08 晚）
+
+- nemotron-3-ultra 免费档当日配额耗尽：重跑 404 次尝试全部 HTTP 429（06:04–14:05 UTC），
+  仅 20 条 OK（凌晨配额窗口内完成）。实时探测持续 429，当日不会恢复。
+- 按指令 §22（记录错误、保持独立性、继续）与 P0-1 方案 B：**B3 = gpt-5.6-luna**
+  （2830 条真实 fresh 调用记录，与 v4 冻结 payload 完全同源），主评价参考 =
+  **IMCR_REFERENCE_LEAVE_B_OUT**（剔除 Judge B 票后的 2-judge 共识）；
+  对 primary（含 Judge B 票）的数字仅作自指敏感性附注，不再进入任何主表。
+- 实证：entity_type 上 B3 对 leave-B-out 一致率 0.713（coverage 1.0），
+  对 primary 为 0.988——同模型票膨胀约 27 个百分点，方向与 relation 一致。
+- nemotron 的 404 次失败尝试记录保留于
+  `experiments/02_selective_semantic/blind_llm_runs/entity_type.jsonl`（审计证据）。
