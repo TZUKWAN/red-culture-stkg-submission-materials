@@ -1,0 +1,57 @@
+﻿# note: Table B Independent baseline comparison (primary reference imcr_strong). Sources: experiments/14_statistical_tests/WILSON_CI_TABLE.csv; experiments/13_selective_inference_independent/imcr_strong/imcr_strong_SELECTIVE_GOAL13_METRICS.csv. Evidence class E.
+method_id,method_name,task_type,n_reference,coverage_n,coverage_correct,coverage,coverage_wilson95,acc_n,acc_correct,accuracy_on_accepted,accuracy_wilson95,macroF1_accepted,macroF1_fulldenominator
+B1_rule_only,Rule-only,entity_type,276,276,69,0.2500,0.2026..0.3043,69,37,0.5362,0.4198..0.6489,0.3448,0.1906
+B1_rule_only,Rule-only,relation_contract,66,66,16,0.2424,0.1551..0.3581,16,0,0.0000,0.0000..0.1936,0.0000,0.0000
+B1_rule_only,Rule-only,scope_adjustment,,111,0,0.0000,0.0000..0.0335,,,,,,
+B1_rule_only,Rule-only,identity_pair,,399,0,0.0000,0.0000..0.0095,,,,,,
+B1_rule_only,Rule-only,provenance_support,,394,0,0.0000,0.0000..0.0097,,,,,,
+B2_frozen_classifier,Frozen classifier,entity_type,276,276,82,0.2971,0.2463..0.3535,82,31,0.3780,0.2808..0.4862,0.1884,0.1005
+B2_frozen_classifier,Frozen classifier,relation_contract,,66,0,0.0000,0.0000..0.0550,,,,,,
+B2_frozen_classifier,Frozen classifier,scope_adjustment,,111,0,0.0000,0.0000..0.0335,,,,,,
+B2_frozen_classifier,Frozen classifier,identity_pair,,399,0,0.0000,0.0000..0.0095,,,,,,
+B2_frozen_classifier,Frozen classifier,provenance_support,,394,0,0.0000,0.0000..0.0097,,,,,,
+B3_blind_llm,Blind LLM (fresh),entity_type,276,276,250,0.9058,0.8656..0.9349,250,247,0.9880,0.9653..0.9959,0.9274,0.8451
+B3_blind_llm,Blind LLM (fresh),relation_contract,66,66,66,1.0000,0.9450..1.0000,66,62,0.9394,0.8543..0.9762,0.9042,0.9042
+B3_blind_llm,Blind LLM (fresh),scope_adjustment,111,111,111,1.0000,0.9665..1.0000,111,90,0.8108,0.7280..0.8728,0.6672,0.6672
+B3_blind_llm,Blind LLM (fresh),identity_pair,399,399,399,1.0000,0.9905..1.0000,399,380,0.9524,0.9268..0.9693,0.6823,0.6823
+B3_blind_llm,Blind LLM (fresh),provenance_support,394,394,394,1.0000,0.9903..1.0000,394,369,0.9365,0.9080..0.9567,0.8822,0.8822
+B4_rule_plus_classifier,Rule+classifier,entity_type,276,276,135,0.4891,0.4307..0.5478,135,65,0.4815,0.3989..0.5651,0.3698,0.2693
+B4_rule_plus_classifier,Rule+classifier,relation_contract,,66,0,0.0000,0.0000..0.0550,,,,,,
+B4_rule_plus_classifier,Rule+classifier,scope_adjustment,,111,0,0.0000,0.0000..0.0335,,,,,,
+B4_rule_plus_classifier,Rule+classifier,identity_pair,,399,0,0.0000,0.0000..0.0095,,,,,,
+B4_rule_plus_classifier,Rule+classifier,provenance_support,,394,0,0.0000,0.0000..0.0097,,,,,,
+B5_rule_plus_blind_llm,Rule+blind LLM,entity_type,276,276,247,0.8949,0.8532..0.9258,247,212,0.8583,0.8093..0.8963,0.7366,0.7080
+B5_rule_plus_blind_llm,Rule+blind LLM,relation_contract,66,66,16,0.2424,0.1551..0.3581,16,0,0.0000,0.0000..0.1936,0.0000,0.0000
+B5_rule_plus_blind_llm,Rule+blind LLM,scope_adjustment,,111,0,0.0000,0.0000..0.0335,,,,,,
+B5_rule_plus_blind_llm,Rule+blind LLM,identity_pair,,399,0,0.0000,0.0000..0.0095,,,,,,
+B5_rule_plus_blind_llm,Rule+blind LLM,provenance_support,,394,0,0.0000,0.0000..0.0097,,,,,,
+B7_classifier_margin,Classifier margin,entity_type,276,276,82,0.2971,0.2463..0.3535,82,31,0.3780,0.2808..0.4862,0.1884,0.1005
+B7_classifier_margin,Classifier margin,relation_contract,,66,0,0.0000,0.0000..0.0550,,,,,,
+B7_classifier_margin,Classifier margin,scope_adjustment,,111,0,0.0000,0.0000..0.0335,,,,,,
+B7_classifier_margin,Classifier margin,identity_pair,,399,0,0.0000,0.0000..0.0095,,,,,,
+B7_classifier_margin,Classifier margin,provenance_support,,394,0,0.0000,0.0000..0.0097,,,,,,
+B8_entropy_threshold,Entropy threshold,entity_type,276,276,82,0.2971,0.2463..0.3535,82,31,0.3780,0.2808..0.4862,0.1884,0.1005
+B8_entropy_threshold,Entropy threshold,relation_contract,,66,0,0.0000,0.0000..0.0550,,,,,,
+B8_entropy_threshold,Entropy threshold,scope_adjustment,,111,0,0.0000,0.0000..0.0335,,,,,,
+B8_entropy_threshold,Entropy threshold,identity_pair,,399,0,0.0000,0.0000..0.0095,,,,,,
+B8_entropy_threshold,Entropy threshold,provenance_support,,394,0,0.0000,0.0000..0.0097,,,,,,
+B9_rule_model_agreement,Rule-model agreement gate,entity_type,276,276,53,0.1920,0.1499..0.2426,53,21,0.3962,0.2759..0.5306,0.1620,0.0646
+B9_rule_model_agreement,Rule-model agreement gate,relation_contract,66,66,16,0.2424,0.1551..0.3581,16,0,0.0000,0.0000..0.1936,0.0000,0.0000
+B9_rule_model_agreement,Rule-model agreement gate,scope_adjustment,,111,0,0.0000,0.0000..0.0335,,,,,,
+B9_rule_model_agreement,Rule-model agreement gate,identity_pair,,399,0,0.0000,0.0000..0.0095,,,,,,
+B9_rule_model_agreement,Rule-model agreement gate,provenance_support,,394,0,0.0000,0.0000..0.0097,,,,,,
+B10_selective_no_structural_gate,"Selective, no structural gate",entity_type,276,276,41,0.1486,0.1114..0.1953,41,38,0.9268,0.8057..0.9748,0.7306,0.2470
+B10_selective_no_structural_gate,"Selective, no structural gate",relation_contract,66,66,66,1.0000,0.9450..1.0000,66,7,0.1061,0.0523..0.2031,0.1035,0.1035
+B10_selective_no_structural_gate,"Selective, no structural gate",scope_adjustment,,111,111,1.0000,0.9665..1.0000,111,51,0.4595,0.3697..0.5520,,
+B10_selective_no_structural_gate,"Selective, no structural gate",identity_pair,,399,399,1.0000,0.9905..1.0000,399,258,0.6466,0.5985..0.6919,,
+B10_selective_no_structural_gate,"Selective, no structural gate",provenance_support,394,394,394,1.0000,0.9903..1.0000,394,120,0.3046,0.2612..0.3517,0.1860,0.1860
+B11_structural_gate_no_abstention,"Structural gate, no abstention",entity_type,276,276,41,0.1486,0.1114..0.1953,41,38,0.9268,0.8057..0.9748,0.7306,0.2470
+B11_structural_gate_no_abstention,"Structural gate, no abstention",relation_contract,66,66,42,0.6364,0.5158..0.7419,42,1,0.0238,0.0042..0.1232,0.0208,0.0202
+B11_structural_gate_no_abstention,"Structural gate, no abstention",scope_adjustment,111,111,111,1.0000,0.9665..1.0000,111,51,0.4595,0.3697..0.5520,0.2099,0.2099
+B11_structural_gate_no_abstention,"Structural gate, no abstention",identity_pair,399,399,399,1.0000,0.9905..1.0000,399,258,0.6466,0.5985..0.6919,0.3752,0.3752
+B11_structural_gate_no_abstention,"Structural gate, no abstention",provenance_support,394,394,394,1.0000,0.9903..1.0000,394,120,0.3046,0.2612..0.3517,0.1860,0.1860
+B12_full_framework,Full framework,entity_type,276,276,41,0.1486,0.1114..0.1953,41,38,0.9268,0.8057..0.9748,0.7306,0.2470
+B12_full_framework,Full framework,relation_contract,66,66,42,0.6364,0.5158..0.7419,42,1,0.0238,0.0042..0.1232,0.0208,0.0202
+B12_full_framework,Full framework,scope_adjustment,,111,111,1.0000,0.9665..1.0000,111,51,0.4595,0.3697..0.5520,,
+B12_full_framework,Full framework,identity_pair,,399,399,1.0000,0.9905..1.0000,399,258,0.6466,0.5985..0.6919,,
+B12_full_framework,Full framework,provenance_support,394,394,394,1.0000,0.9903..1.0000,394,120,0.3046,0.2612..0.3517,0.1860,0.1860

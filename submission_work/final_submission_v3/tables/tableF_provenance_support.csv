@@ -1,0 +1,22 @@
+﻿# note: Table F Provenance support quality. Sources: PROVENANCE_SUPPORT_METADATA.csv (400/300/300); IMCR_REFERENCE_STRONG/LEAVE_B_OUT provenance rows; IMCR_BASELINE_RUNS.csv; PAIRED_BOOTSTRAP_DELTAS.csv. Evidence class E.
+method_or_test,reference_mode,tier_or_metric,n,correct_or_delta_estimate,accuracy_or_CI95
+reference labels,imcr_strong,ALL,394,"{""partially_supported"": 96, ""fully_supported"": 134, ""unsupported"": 152, ""insufficient_evidence"": 10, ""contradicted"": 2}",
+B12_full_framework,imcr_strong,strict_semantic,178,78,0.4382
+B12_full_framework,imcr_strong,contextual,117,38,0.3248
+B12_full_framework,imcr_strong,unresolved,99,4,0.0404
+B12_full_framework,imcr_strong,ALL,394,120,0.3046
+B3_blind_llm,imcr_strong,strict_semantic,178,171,0.9607
+B3_blind_llm,imcr_strong,contextual,117,107,0.9145
+B3_blind_llm,imcr_strong,unresolved,99,91,0.9192
+B3_blind_llm,imcr_strong,ALL,394,369,0.9365
+reference labels,leave_b_out,ALL,491,"{""partially_supported"": 109, ""fully_supported"": 184, ""unsupported"": 179, ""insufficient_evidence"": 17, ""contradicted"": 2}",
+B12_full_framework,leave_b_out,strict_semantic,221,103,0.4661
+B12_full_framework,leave_b_out,contextual,150,42,0.2800
+B12_full_framework,leave_b_out,unresolved,120,8,0.0667
+B12_full_framework,leave_b_out,ALL,491,153,0.3116
+B3_blind_llm,leave_b_out,strict_semantic,221,183,0.8281
+B3_blind_llm,leave_b_out,contextual,150,112,0.7467
+B3_blind_llm,leave_b_out,unresolved,120,97,0.8083
+B3_blind_llm,leave_b_out,ALL,491,392,0.7984
+paired_bootstrap(Full-B3),imcr_strong,delta_aurc,394,0.3752,0.3426..0.4073
+paired_bootstrap(Full-B3),imcr_strong,delta_augrc,394,0.3320,0.3070..0.3583

@@ -1,0 +1,14 @@
+﻿# note: Table D Structural admission deterministic + semantic validation. Sources: experiments/10_structural_validation/STRUCTURAL_REPLAY_AUDIT.json; experiments/12_provenance_validation/PROVENANCE_GATE_STRESS_SUMMARY.json; experiments/14_statistical_tests/WILSON_CI_TABLE.csv; JUDGE_RELIABILITY_SUMMARY.csv.
+evidence_class,variant_or_method,scope,changed_or_accuracy,strict_contract_violations,invalid_time_owner,invalid_space_owner,gate_stress_result,notes
+deterministic_replay(B),Full framework,424150 assertions replayed,0,0,0,0,,
+deterministic_replay(B),w/o Relation Contract,424150 assertions replayed,3412,3412,0,0,,
+deterministic_replay(B),w/o Role-owner Closure,424150 assertions replayed,208,0,44,112,,
+deterministic_replay(B),w/o Identity Projection,424150 assertions replayed,24005,0,0,0,,
+deterministic_replay(B),w/o Global Closure,424150 assertions replayed,27475,3412,44,112,,
+deterministic_replay(B),Provenance Gate fault-injection 1%,inject into strict 112158,1122,,,,"block_rate=1.0 (1122/1122), FP=0",
+deterministic_replay(B),Provenance Gate fault-injection 5%,inject into strict 112158,5608,,,,"block_rate=1.0 (5608/5608), FP=0",
+deterministic_replay(B),Provenance Gate fault-injection 20%,inject into strict 112158,22432,,,,"block_rate=1.0 (22432/22432), FP=0",
+independent_semantic(E),B12 relation_contract (contextual routing),"strong n=66, accepted 42","acc 0.0238 [0.0042,0.1232]",,,,,judge fleiss_kappa=0.0368; semantic effectiveness NOT established
+independent_semantic(E),"B12 scope_adjustment (constant AFTER_BETTER, strict)",strong n=111,"acc 0.4595 [0.3697,0.5520]",,,,,reference: BEFORE 58 vs AFTER 51; improvement not supported
+independent_semantic(E),B12 identity_pair (co-canonical query),strong n=399,"acc 0.6466 [0.5985,0.6919]",,,,,positives 217/217; hard negatives 41/180 (judge type-blindness)
+independent_semantic(E),B12 provenance_support (tier mapping),strong n=394,"acc 0.3046 [0.2612,0.3517]",,,,,strict tier 78/178=0.438 fully_supported

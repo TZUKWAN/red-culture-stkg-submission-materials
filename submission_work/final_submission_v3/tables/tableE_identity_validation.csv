@@ -1,0 +1,17 @@
+﻿# note: Table E Identity projection validation. 600 pairs = 300 positive + 300 hard negative (IDENTITY_PAIR_METADATA.csv); references IMCR_REFERENCE_STRONG/LEAVE_B_OUT identity rows; join IMCR_BASELINE_RUNS.csv; McNemar from 14_statistical_tests/MCNEMAR_TESTS.csv. Evidence class E.
+method_or_test,reference_mode,pair_kind_or_category,n,correct_or_stat,accuracy_or_p
+B12_full_framework,imcr_strong,hard_negative,180,41,0.2278
+B12_full_framework,imcr_strong,positive_merge_candidate,217,217,1.0000
+B3_blind_llm,imcr_strong,hard_negative,180,162,0.9000
+B3_blind_llm,imcr_strong,positive_merge_candidate,217,216,0.9954
+B12_full_framework,leave_b_out,hard_negative,224,62,0.2768
+B12_full_framework,leave_b_out,positive_merge_candidate,230,230,1.0000
+B3_blind_llm,leave_b_out,hard_negative,224,172,0.7679
+B3_blind_llm,leave_b_out,positive_merge_candidate,230,221,0.9609
+B12_full_framework,imcr_strong,hard_negative:alias_name_collision,27,5,0.1852
+B12_full_framework,imcr_strong,hard_negative:event_vs_work_same_name,30,1,0.0333
+B12_full_framework,imcr_strong,hard_negative:org_vs_place_same_name,40,0,0.0000
+B12_full_framework,imcr_strong,hard_negative:same_name_mixed_type,40,0,0.0000
+B12_full_framework,imcr_strong,hard_negative:same_name_person,9,1,0.1111
+B12_full_framework,imcr_strong,hard_negative:similar_name_person,34,34,1.0000
+mcnemar B12 vs B3,imcr_strong,full_wins:full_losses,399,10:132,p=2.5747366
