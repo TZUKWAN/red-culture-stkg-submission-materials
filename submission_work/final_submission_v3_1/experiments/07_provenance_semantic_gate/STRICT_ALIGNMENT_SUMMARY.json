@@ -1,0 +1,10 @@
+{
+  "n_strict_total": 112158,
+  "buckets": {
+    "aligned": 44025,
+    "mismatch_with_evidence": 6136,
+    "no_evidence": 61997
+  },
+  "alignment_csv": "STRICT_ALIGNMENT.csv",
+  "alignment_sha256": "e7426bd38c9b8253e8cb5cd8e2ce8f9f4bffdde6bee270b7e8beef141bb0e9f0"
+}
