@@ -1,5 +1,5 @@
 {
-  "code_commit": "f5a47cdae4a3f8012c51783dd90e85b35a3502e7",
+  "code_commit": "53fd21d9f9e829360990ff8ffec049dea9adcf49",
   "database_sha256": "UNAVAILABLE",
   "experiment_id": "imcr_v4_consensus_identity_revalidation_v2",
   "judges": [
@@ -33,5 +33,5 @@
     "unresolved": 22,
     "weak_consensus": 258
   },
-  "timestamp": "2026-09-10T20:25:18.596924+00:00"
+  "timestamp": "2026-09-11T06:55:26.889664+00:00"
 }
