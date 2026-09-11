@@ -1,0 +1,12 @@
+{
+  "total": 302230,
+  "route": {
+    "MEDIUM": 126228,
+    "HIGH": 147304,
+    "LOW": 16945,
+    "NO_SIGNAL": 11753
+  },
+  "no_signal_fn_sample": [],
+  "no_signal_fn_sample_n": 500,
+  "route_file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_release\\data\\PAGE_ROUTING_HML.csv"
+}

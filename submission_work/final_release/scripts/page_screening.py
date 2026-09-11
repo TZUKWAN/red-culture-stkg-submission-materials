@@ -55,7 +55,7 @@ SIGNALS = {
 
 SIGNAL_DESC = {
     "person": "人物/任职信号",
-    "person_freq": "常见姓氏人名",
+    "person_freq": "常见姓氏起始人名",
     "org": "组织机构",
     "event": "事件触发动词",
     "place": "地名后缀",
