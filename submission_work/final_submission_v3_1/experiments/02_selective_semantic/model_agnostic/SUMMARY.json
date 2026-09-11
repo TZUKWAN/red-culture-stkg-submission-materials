@@ -1,0 +1,1489 @@
+{
+  "created_utc": "2026-09-11T03:40:30+00:00",
+  "script": "code/experiment_pipelines/run_routing_model_agnostic.py",
+  "seed": 20260910,
+  "n_bootstrap": 2000,
+  "wall_seconds": 8.8,
+  "question": "框架机制（r_hat 风险路由 + 预算 top-k 升级 + 盲化 escalation prompt）是否模型无关",
+  "models": [
+    "openai/gpt-oss-20b",
+    "google/gemma-4-e4b",
+    "qwen/qwen3-8b"
+  ],
+  "models_skipped": {
+    "google/gemma-4-e4b": "probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request)"
+  },
+  "probe_results": {
+    "openai/gpt-oss-20b": {
+      "model": "openai/gpt-oss-20b",
+      "n": 2,
+      "json_ok_n": 2,
+      "pass": true,
+      "probe_calls_this_run": 0,
+      "latency_avg_s": null,
+      "note": "skip_escalation 模式：合格探针沿用日志缓存"
+    },
+    "google/gemma-4-e4b": {
+      "model": "google/gemma-4-e4b",
+      "n": 2,
+      "json_ok_n": 0,
+      "pass": false,
+      "probe_calls_this_run": 0,
+      "latency_avg_s": null,
+      "note": "skip_escalation 模式：沿用日志中的失败探针记录"
+    },
+    "qwen/qwen3-8b": {
+      "model": "qwen/qwen3-8b",
+      "n": 2,
+      "json_ok_n": 2,
+      "pass": true,
+      "probe_calls_this_run": 0,
+      "latency_avg_s": null,
+      "note": "skip_escalation 模式：合格探针沿用日志缓存"
+    }
+  },
+  "probe_details": {
+    "openai/gpt-oss-20b": [
+      {
+        "i": 0,
+        "json_ok": true,
+        "latency_s": 2.473,
+        "model": "openai/gpt-oss-20b",
+        "probe_protocol": "v2_production_params",
+        "served_model": "openai/gpt-oss-20b",
+        "started_utc": "2026-09-11T02:12:14+00:00",
+        "status": "OK",
+        "type": "probe"
+      },
+      {
+        "i": 1,
+        "json_ok": true,
+        "latency_s": 1.326,
+        "model": "openai/gpt-oss-20b",
+        "probe_protocol": "v2_production_params",
+        "served_model": "openai/gpt-oss-20b",
+        "started_utc": "2026-09-11T02:12:16+00:00",
+        "status": "OK",
+        "type": "probe"
+      }
+    ],
+    "google/gemma-4-e4b": [
+      {
+        "error": "pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request",
+        "i": 0,
+        "json_ok": false,
+        "latency_s": 19.29,
+        "model": "google/gemma-4-e4b",
+        "probe_protocol": "v2_production_params",
+        "started_utc": "2026-09-11T02:12:18+00:00",
+        "status": "ERROR",
+        "type": "probe"
+      },
+      {
+        "error": "pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request",
+        "i": 1,
+        "json_ok": false,
+        "latency_s": 13.694,
+        "model": "google/gemma-4-e4b",
+        "probe_protocol": "v2_production_params",
+        "started_utc": "2026-09-11T02:12:37+00:00",
+        "status": "ERROR",
+        "type": "probe"
+      },
+      {
+        "error": "pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request",
+        "i": 0,
+        "json_ok": false,
+        "latency_s": 14.735,
+        "model": "google/gemma-4-e4b",
+        "probe_protocol": "v2_production_params",
+        "started_utc": "2026-09-11T03:17:27+00:00",
+        "status": "ERROR",
+        "type": "probe"
+      },
+      {
+        "error": "pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request",
+        "i": 1,
+        "json_ok": false,
+        "latency_s": 11.458,
+        "model": "google/gemma-4-e4b",
+        "probe_protocol": "v2_production_params",
+        "started_utc": "2026-09-11T03:17:42+00:00",
+        "status": "ERROR",
+        "type": "probe"
+      }
+    ],
+    "qwen/qwen3-8b": [
+      {
+        "i": 0,
+        "json_ok": true,
+        "latency_s": 12.636,
+        "model": "qwen/qwen3-8b",
+        "probe_protocol": "v2_production_params",
+        "served_model": "qwen/qwen3-8b",
+        "started_utc": "2026-09-11T02:12:51+00:00",
+        "status": "OK",
+        "type": "probe"
+      },
+      {
+        "i": 1,
+        "json_ok": true,
+        "latency_s": 8.015,
+        "model": "qwen/qwen3-8b",
+        "probe_protocol": "v2_production_params",
+        "served_model": "qwen/qwen3-8b",
+        "started_utc": "2026-09-11T02:13:03+00:00",
+        "status": "OK",
+        "type": "probe"
+      }
+    ]
+  },
+  "plan": {
+    "chosen": "B_rb{10,20,30}_others_gptoss_rb{10,20,30,50}",
+    "random_budgets_by_model": {
+      "openai/gpt-oss-20b": [
+        0.1,
+        0.2,
+        0.3,
+        0.5
+      ],
+      "google/gemma-4-e4b": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "qwen/qwen3-8b": [
+        0.1,
+        0.2,
+        0.3
+      ]
+    },
+    "every_item_by_model": {
+      "openai/gpt-oss-20b": true,
+      "google/gemma-4-e4b": false,
+      "qwen/qwen3-8b": false
+    },
+    "pool_sizes": {
+      "openai/gpt-oss-20b": 320,
+      "google/gemma-4-e4b": 205,
+      "qwen/qwen3-8b": 205
+    },
+    "options_evaluated": [
+      {
+        "option": "A_rb{10,20,30,50}_all",
+        "random_budgets": {
+          "openai/gpt-oss-20b": [
+            0.1,
+            0.2,
+            0.3,
+            0.5
+          ],
+          "google/gemma-4-e4b": [
+            0.1,
+            0.2,
+            0.3,
+            0.5
+          ],
+          "qwen/qwen3-8b": [
+            0.1,
+            0.2,
+            0.3,
+            0.5
+          ]
+        },
+        "pool_sizes": {
+          "openai/gpt-oss-20b": 320,
+          "google/gemma-4-e4b": 239,
+          "qwen/qwen3-8b": 239
+        },
+        "estimated_new_calls": 485,
+        "within_cap": false
+      },
+      {
+        "option": "B_rb{10,20,30}_others_gptoss_rb{10,20,30,50}",
+        "random_budgets": {
+          "openai/gpt-oss-20b": [
+            0.1,
+            0.2,
+            0.3,
+            0.5
+          ],
+          "google/gemma-4-e4b": [
+            0.1,
+            0.2,
+            0.3
+          ],
+          "qwen/qwen3-8b": [
+            0.1,
+            0.2,
+            0.3
+          ]
+        },
+        "pool_sizes": {
+          "openai/gpt-oss-20b": 320,
+          "google/gemma-4-e4b": 205,
+          "qwen/qwen3-8b": 205
+        },
+        "estimated_new_calls": 417,
+        "within_cap": true
+      },
+      {
+        "option": "C_rb{10,20}_others",
+        "random_budgets": {
+          "openai/gpt-oss-20b": [
+            0.1,
+            0.2,
+            0.3,
+            0.5
+          ],
+          "google/gemma-4-e4b": [
+            0.1,
+            0.2
+          ],
+          "qwen/qwen3-8b": [
+            0.1,
+            0.2
+          ]
+        },
+        "pool_sizes": {
+          "openai/gpt-oss-20b": 320,
+          "google/gemma-4-e4b": 191,
+          "qwen/qwen3-8b": 191
+        },
+        "estimated_new_calls": 389,
+        "within_cap": true
+      },
+      {
+        "option": "D_no_random_others",
+        "random_budgets": {
+          "openai/gpt-oss-20b": [
+            0.1,
+            0.2,
+            0.3,
+            0.5
+          ],
+          "google/gemma-4-e4b": [],
+          "qwen/qwen3-8b": []
+        },
+        "pool_sizes": {
+          "openai/gpt-oss-20b": 320,
+          "google/gemma-4-e4b": 160,
+          "qwen/qwen3-8b": 160
+        },
+        "estimated_new_calls": 327,
+        "within_cap": true
+      }
+    ],
+    "call_cap": 450
+  },
+  "call_ledger": {
+    "openai/gpt-oss-20b": {
+      "pool_size": 320,
+      "old_cache_hits_readonly": 319,
+      "self_cache_hits_resume": 0,
+      "new_calls_this_run": 0,
+      "errors": 0,
+      "ok_records_total": 319,
+      "valid_decisions": 319,
+      "served_model_mismatch": 0,
+      "latency_avg_s": 13.808912225705328,
+      "probe_new_calls": 0
+    },
+    "google/gemma-4-e4b": {
+      "status": "probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request)",
+      "new_calls": 0
+    },
+    "qwen/qwen3-8b": {
+      "pool_size": 205,
+      "old_cache_hits_readonly": 0,
+      "self_cache_hits_resume": 190,
+      "new_calls_this_run": 0,
+      "errors": 0,
+      "ok_records_total": 190,
+      "valid_decisions": 190,
+      "served_model_mismatch": 0,
+      "latency_avg_s": 40.43974210526316,
+      "probe_new_calls": 0
+    }
+  },
+  "total_new_calls_this_run": 0,
+  "cumulative_calls_all_runs": {
+    "jsonl_records_total": 238,
+    "probe_attempts": 14,
+    "escalation_attempts": 224,
+    "unique_sample_ids_with_ok_records_across_models": 320
+  },
+  "old_cache_reuse": {
+    "caches": [
+      {
+        "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\ESCALATION_CALLS.jsonl",
+        "exists": true,
+        "lines": 242,
+        "ok_unique": 240,
+        "reused": 240
+      },
+      {
+        "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\budget_v2\\ESCALATION_CALLS.jsonl",
+        "exists": true,
+        "lines": 80,
+        "ok_unique": 79,
+        "reused": 79
+      }
+    ],
+    "dropped_prompt_sha": 0,
+    "dropped_payload_sha": [],
+    "dropped_model": 0
+  },
+  "population": {
+    "n_frame": 382,
+    "n_dev": 254,
+    "n_val": 66,
+    "n_work": 320,
+    "n_test_excluded": 62,
+    "n_labeled_leave_b_out": {
+      "dev": 207,
+      "val": 54,
+      "pooled": 261
+    },
+    "judge_composition_seen": {
+      "A;C": 309
+    }
+  },
+  "quality_reference": {
+    "primary": "leave_b_out (IMCR_REFERENCE_LEAVE_B_OUT.csv entity_type, judge_removed=B)",
+    "baseline_agreement_b0_pooled": 0.27586206896551724,
+    "note": "与 risk 标签（strong，仅 DEV 拟合 risk model）解耦；strong 口径禁止作为质量上限"
+  },
+  "r_hat_reuse": {
+    "model": "DecisionTree_max_depth4",
+    "verification": {
+      "checked_files": [
+        {
+          "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\ROUTING_RUNS_dev.csv",
+          "exists": true,
+          "n_compared": 254
+        },
+        {
+          "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\ROUTING_RUNS_val.csv",
+          "exists": true,
+          "n_compared": 66
+        }
+      ],
+      "n_compared": 320,
+      "max_abs_diff": 3.33333333379926e-07,
+      "match": true
+    },
+    "note": "同特征/同 DEV strong 标签/同 seed 确定性重训，与 ROUTING_RUNS_*.csv 逐样本核对"
+  },
+  "prompt": {
+    "prompt_version": "risk_routing.escalation.v1",
+    "prompt_sha256": "2c67d6cd7cc629d3ec2ce43131f111b56c5367ef110c37f410d6ff4cda6ba804",
+    "prompt_system": "你是独立的历史知识图谱实体类型评审。给定一个实体的名称、别名、它在语料中参与的关系上下文与文献节选，以及候选类型集合 candidate_types 和各类型定义 type_definitions。你的唯一任务：依据给出的信息判断该实体最合理的类型。\n约束：只允许从 candidate_types 列出的类型中选择一个；证据不足或不属于任何候选类型时选择 OTHER；不得臆测输入之外的信息；输入中不含任何系统标签或参考答案，也不要猜测其存在。\n输出且仅输出一个 JSON 对象：{\"task_id\":..., \"decision\":..., \"confidence\":0-1, \"evidence\":[引用证据关键句], \"reason_code\":简短代码, \"explanation\":一句话理由, \"insufficient_evidence\":bool}",
+    "pinned_model_note": "chat_json 钉住变体：重试全程固定模型（provider 版最后一次重试会静默回退 qwen/qwen3-8b）；served_model 逐条留痕"
+  },
+  "curve": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "k_total": 0,
+      "n_labeled": 261,
+      "agreement": 0.27586206896551724,
+      "n_correct": 72,
+      "wrong_to_right": 0,
+      "right_to_wrong": 0,
+      "generalized_risk": 0.7241379310344828,
+      "n_final_empty": 28,
+      "agreement_dev": 0.2753623188405797,
+      "agreement_val": 0.2777777777777778,
+      "seg_n": 0,
+      "seg_agreement_model": null,
+      "seg_agreement_base": null,
+      "seg_lift_vs_base": null,
+      "seg_wrong_to_right": 0,
+      "seg_right_to_wrong": 0,
+      "seg_n_fallback": 0,
+      "accepted_seg_n": 261,
+      "accepted_seg_agreement_base": 0.27586206896551724,
+      "arm": "BASELINE_B0",
+      "budget": 0.0,
+      "status": "ok",
+      "note": "无升级，基础分类器全发布（b=0 基线）"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "k_total": 32,
+      "n_labeled": 261,
+      "agreement": 0.3524904214559387,
+      "n_correct": 92,
+      "wrong_to_right": 20,
+      "right_to_wrong": 0,
+      "generalized_risk": 0.6475095785440613,
+      "n_final_empty": 12,
+      "agreement_dev": 0.3526570048309179,
+      "agreement_val": 0.35185185185185186,
+      "seg_n": 28,
+      "seg_agreement_model": 0.7142857142857143,
+      "seg_agreement_base": 0.0,
+      "seg_lift_vs_base": 0.7142857142857143,
+      "seg_wrong_to_right": 20,
+      "seg_right_to_wrong": 0,
+      "seg_n_fallback": 0,
+      "accepted_seg_n": 233,
+      "accepted_seg_agreement_base": 0.3090128755364807,
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 0.1,
+      "status": "ok",
+      "note": "每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "k_total": 64,
+      "n_labeled": 261,
+      "agreement": 0.42911877394636017,
+      "n_correct": 112,
+      "wrong_to_right": 40,
+      "right_to_wrong": 0,
+      "generalized_risk": 0.5708812260536398,
+      "n_final_empty": 2,
+      "agreement_dev": 0.43478260869565216,
+      "agreement_val": 0.4074074074074074,
+      "seg_n": 52,
+      "seg_agreement_model": 0.7884615384615384,
+      "seg_agreement_base": 0.019230769230769232,
+      "seg_lift_vs_base": 0.7692307692307693,
+      "seg_wrong_to_right": 40,
+      "seg_right_to_wrong": 0,
+      "seg_n_fallback": 1,
+      "accepted_seg_n": 209,
+      "accepted_seg_agreement_base": 0.3397129186602871,
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 0.2,
+      "status": "ok",
+      "note": "每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "k_total": 96,
+      "n_labeled": 261,
+      "agreement": 0.47509578544061304,
+      "n_correct": 124,
+      "wrong_to_right": 53,
+      "right_to_wrong": 1,
+      "generalized_risk": 0.524904214559387,
+      "n_final_empty": 0,
+      "agreement_dev": 0.4830917874396135,
+      "agreement_val": 0.4444444444444444,
+      "seg_n": 78,
+      "seg_agreement_model": 0.7692307692307693,
+      "seg_agreement_base": 0.10256410256410256,
+      "seg_lift_vs_base": 0.6666666666666666,
+      "seg_wrong_to_right": 53,
+      "seg_right_to_wrong": 1,
+      "seg_n_fallback": 1,
+      "accepted_seg_n": 183,
+      "accepted_seg_agreement_base": 0.34972677595628415,
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 0.3,
+      "status": "ok",
+      "note": "每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "k_total": 160,
+      "n_labeled": 261,
+      "agreement": 0.5977011494252874,
+      "n_correct": 156,
+      "wrong_to_right": 85,
+      "right_to_wrong": 1,
+      "generalized_risk": 0.4022988505747126,
+      "n_final_empty": 0,
+      "agreement_dev": 0.6086956521739131,
+      "agreement_val": 0.5555555555555556,
+      "seg_n": 129,
+      "seg_agreement_model": 0.8062015503875969,
+      "seg_agreement_base": 0.15503875968992248,
+      "seg_lift_vs_base": 0.6511627906976745,
+      "seg_wrong_to_right": 85,
+      "seg_right_to_wrong": 1,
+      "seg_n_fallback": 1,
+      "accepted_seg_n": 132,
+      "accepted_seg_agreement_base": 0.3939393939393939,
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 0.5,
+      "status": "ok",
+      "note": "每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "k_total": 320,
+      "n_labeled": 261,
+      "agreement": 0.8275862068965517,
+      "n_correct": 216,
+      "wrong_to_right": 151,
+      "right_to_wrong": 7,
+      "generalized_risk": 0.1724137931034483,
+      "n_final_empty": 0,
+      "agreement_dev": 0.821256038647343,
+      "agreement_val": 0.8518518518518519,
+      "seg_n": 261,
+      "seg_agreement_model": 0.8275862068965517,
+      "seg_agreement_base": 0.27586206896551724,
+      "seg_lift_vs_base": 0.5517241379310345,
+      "seg_wrong_to_right": 151,
+      "seg_right_to_wrong": 7,
+      "seg_n_fallback": 1,
+      "accepted_seg_n": 0,
+      "accepted_seg_agreement_base": null,
+      "arm": "EVERY_ITEM_B100",
+      "budget": 1.0,
+      "status": "ok",
+      "note": "M every-item（该模型质量上限）"
+    },
+    {
+      "model": "google/gemma-4-e4b",
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 0.0,
+      "status": "skipped_probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request)"
+    },
+    {
+      "model": "google/gemma-4-e4b",
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 0.1,
+      "status": "skipped_probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request)"
+    },
+    {
+      "model": "google/gemma-4-e4b",
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 0.2,
+      "status": "skipped_probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request)"
+    },
+    {
+      "model": "google/gemma-4-e4b",
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 0.3,
+      "status": "skipped_probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request)"
+    },
+    {
+      "model": "google/gemma-4-e4b",
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 0.5,
+      "status": "skipped_probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request)"
+    },
+    {
+      "model": "google/gemma-4-e4b",
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 1.0,
+      "status": "skipped_probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request)"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "n_all": 320,
+      "k_total": 0,
+      "n_labeled": 261,
+      "agreement": 0.27586206896551724,
+      "n_correct": 72,
+      "wrong_to_right": 0,
+      "right_to_wrong": 0,
+      "generalized_risk": 0.7241379310344828,
+      "n_final_empty": 28,
+      "agreement_dev": 0.2753623188405797,
+      "agreement_val": 0.2777777777777778,
+      "seg_n": 0,
+      "seg_agreement_model": null,
+      "seg_agreement_base": null,
+      "seg_lift_vs_base": null,
+      "seg_wrong_to_right": 0,
+      "seg_right_to_wrong": 0,
+      "seg_n_fallback": 0,
+      "accepted_seg_n": 261,
+      "accepted_seg_agreement_base": 0.27586206896551724,
+      "arm": "BASELINE_B0",
+      "budget": 0.0,
+      "status": "ok",
+      "note": "无升级，基础分类器全发布（b=0 基线）"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "n_all": 320,
+      "k_total": 32,
+      "n_labeled": 261,
+      "agreement": 0.3524904214559387,
+      "n_correct": 92,
+      "wrong_to_right": 20,
+      "right_to_wrong": 0,
+      "generalized_risk": 0.6475095785440613,
+      "n_final_empty": 14,
+      "agreement_dev": 0.3526570048309179,
+      "agreement_val": 0.35185185185185186,
+      "seg_n": 28,
+      "seg_agreement_model": 0.7142857142857143,
+      "seg_agreement_base": 0.0,
+      "seg_lift_vs_base": 0.7142857142857143,
+      "seg_wrong_to_right": 20,
+      "seg_right_to_wrong": 0,
+      "seg_n_fallback": 2,
+      "accepted_seg_n": 233,
+      "accepted_seg_agreement_base": 0.3090128755364807,
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 0.1,
+      "status": "ok",
+      "note": "每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "n_all": 320,
+      "k_total": 64,
+      "n_labeled": 261,
+      "agreement": 0.41762452107279696,
+      "n_correct": 109,
+      "wrong_to_right": 37,
+      "right_to_wrong": 0,
+      "generalized_risk": 0.5823754789272031,
+      "n_final_empty": 5,
+      "agreement_dev": 0.4251207729468599,
+      "agreement_val": 0.3888888888888889,
+      "seg_n": 52,
+      "seg_agreement_model": 0.7307692307692307,
+      "seg_agreement_base": 0.019230769230769232,
+      "seg_lift_vs_base": 0.7115384615384616,
+      "seg_wrong_to_right": 37,
+      "seg_right_to_wrong": 0,
+      "seg_n_fallback": 3,
+      "accepted_seg_n": 209,
+      "accepted_seg_agreement_base": 0.3397129186602871,
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 0.2,
+      "status": "ok",
+      "note": "每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "n_all": 320,
+      "k_total": 96,
+      "n_labeled": 261,
+      "agreement": 0.47509578544061304,
+      "n_correct": 124,
+      "wrong_to_right": 52,
+      "right_to_wrong": 0,
+      "generalized_risk": 0.524904214559387,
+      "n_final_empty": 3,
+      "agreement_dev": 0.48792270531400966,
+      "agreement_val": 0.42592592592592593,
+      "seg_n": 78,
+      "seg_agreement_model": 0.7692307692307693,
+      "seg_agreement_base": 0.10256410256410256,
+      "seg_lift_vs_base": 0.6666666666666666,
+      "seg_wrong_to_right": 52,
+      "seg_right_to_wrong": 0,
+      "seg_n_fallback": 4,
+      "accepted_seg_n": 183,
+      "accepted_seg_agreement_base": 0.34972677595628415,
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 0.3,
+      "status": "ok",
+      "note": "每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "n_all": 320,
+      "k_total": 160,
+      "n_labeled": 261,
+      "agreement": 0.5823754789272031,
+      "n_correct": 152,
+      "wrong_to_right": 83,
+      "right_to_wrong": 3,
+      "generalized_risk": 0.4176245210727969,
+      "n_final_empty": 3,
+      "agreement_dev": 0.6038647342995169,
+      "agreement_val": 0.5,
+      "seg_n": 129,
+      "seg_agreement_model": 0.7751937984496124,
+      "seg_agreement_base": 0.15503875968992248,
+      "seg_lift_vs_base": 0.6201550387596899,
+      "seg_wrong_to_right": 83,
+      "seg_right_to_wrong": 3,
+      "seg_n_fallback": 7,
+      "accepted_seg_n": 132,
+      "accepted_seg_agreement_base": 0.3939393939393939,
+      "arm": "ROUTED_RHAT_TOPK",
+      "budget": 0.5,
+      "status": "ok",
+      "note": "每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "arm": "EVERY_ITEM_B100",
+      "budget": 1.0,
+      "status": "not_run_call_budget_cap",
+      "note": "≤450 新调用硬约束下不可行（每模型需 240 次新调用）；该模型可观测上限为实际执行的最大预算点"
+    }
+  ],
+  "random_control": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "k_total": 32,
+      "n_labeled": 261,
+      "agreement": 0.3524904214559387,
+      "n_correct": 92,
+      "wrong_to_right": 21,
+      "right_to_wrong": 1,
+      "generalized_risk": 0.6475095785440613,
+      "n_final_empty": 26,
+      "agreement_dev": 0.34782608695652173,
+      "agreement_val": 0.37037037037037035,
+      "seg_n": 29,
+      "seg_agreement_model": 0.9310344827586207,
+      "seg_agreement_base": 0.2413793103448276,
+      "seg_lift_vs_base": 0.6896551724137931,
+      "seg_wrong_to_right": 21,
+      "seg_right_to_wrong": 1,
+      "seg_n_fallback": 0,
+      "accepted_seg_n": 232,
+      "accepted_seg_agreement_base": 0.2801724137931034,
+      "arm": "RANDOM_R1_SEED20260910",
+      "budget": 0.1,
+      "status": "ok",
+      "note": "R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "k_total": 64,
+      "n_labeled": 261,
+      "agreement": 0.39080459770114945,
+      "n_correct": 102,
+      "wrong_to_right": 32,
+      "right_to_wrong": 2,
+      "generalized_risk": 0.6091954022988506,
+      "n_final_empty": 24,
+      "agreement_dev": 0.3864734299516908,
+      "agreement_val": 0.4074074074074074,
+      "seg_n": 49,
+      "seg_agreement_model": 0.8775510204081632,
+      "seg_agreement_base": 0.2653061224489796,
+      "seg_lift_vs_base": 0.6122448979591837,
+      "seg_wrong_to_right": 32,
+      "seg_right_to_wrong": 2,
+      "seg_n_fallback": 0,
+      "accepted_seg_n": 212,
+      "accepted_seg_agreement_base": 0.2783018867924528,
+      "arm": "RANDOM_R1_SEED20260910",
+      "budget": 0.2,
+      "status": "ok",
+      "note": "R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "k_total": 96,
+      "n_labeled": 261,
+      "agreement": 0.4367816091954023,
+      "n_correct": 114,
+      "wrong_to_right": 44,
+      "right_to_wrong": 2,
+      "generalized_risk": 0.5632183908045977,
+      "n_final_empty": 23,
+      "agreement_dev": 0.42028985507246375,
+      "agreement_val": 0.5,
+      "seg_n": 75,
+      "seg_agreement_model": 0.84,
+      "seg_agreement_base": 0.28,
+      "seg_lift_vs_base": 0.56,
+      "seg_wrong_to_right": 44,
+      "seg_right_to_wrong": 2,
+      "seg_n_fallback": 0,
+      "accepted_seg_n": 186,
+      "accepted_seg_agreement_base": 0.27419354838709675,
+      "arm": "RANDOM_R1_SEED20260910",
+      "budget": 0.3,
+      "status": "ok",
+      "note": "R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "k_total": 160,
+      "n_labeled": 261,
+      "agreement": 0.5555555555555556,
+      "n_correct": 145,
+      "wrong_to_right": 76,
+      "right_to_wrong": 3,
+      "generalized_risk": 0.4444444444444444,
+      "n_final_empty": 18,
+      "agreement_dev": 0.5362318840579711,
+      "agreement_val": 0.6296296296296297,
+      "seg_n": 127,
+      "seg_agreement_model": 0.84251968503937,
+      "seg_agreement_base": 0.2677165354330709,
+      "seg_lift_vs_base": 0.5748031496062992,
+      "seg_wrong_to_right": 76,
+      "seg_right_to_wrong": 3,
+      "seg_n_fallback": 0,
+      "accepted_seg_n": 134,
+      "accepted_seg_agreement_base": 0.2835820895522388,
+      "arm": "RANDOM_R1_SEED20260910",
+      "budget": 0.5,
+      "status": "ok",
+      "note": "R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "n_all": 320,
+      "k_total": 32,
+      "n_labeled": 261,
+      "agreement": 0.3333333333333333,
+      "n_correct": 87,
+      "wrong_to_right": 16,
+      "right_to_wrong": 1,
+      "generalized_risk": 0.6666666666666667,
+      "n_final_empty": 26,
+      "agreement_dev": 0.3285024154589372,
+      "agreement_val": 0.35185185185185186,
+      "seg_n": 29,
+      "seg_agreement_model": 0.7586206896551724,
+      "seg_agreement_base": 0.2413793103448276,
+      "seg_lift_vs_base": 0.5172413793103449,
+      "seg_wrong_to_right": 16,
+      "seg_right_to_wrong": 1,
+      "seg_n_fallback": 2,
+      "accepted_seg_n": 232,
+      "accepted_seg_agreement_base": 0.2801724137931034,
+      "arm": "RANDOM_R1_SEED20260910",
+      "budget": 0.1,
+      "status": "ok",
+      "note": "R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "n_all": 320,
+      "k_total": 64,
+      "n_labeled": 261,
+      "agreement": 0.3716475095785441,
+      "n_correct": 97,
+      "wrong_to_right": 26,
+      "right_to_wrong": 1,
+      "generalized_risk": 0.6283524904214559,
+      "n_final_empty": 25,
+      "agreement_dev": 0.3719806763285024,
+      "agreement_val": 0.37037037037037035,
+      "seg_n": 49,
+      "seg_agreement_model": 0.7755102040816326,
+      "seg_agreement_base": 0.2653061224489796,
+      "seg_lift_vs_base": 0.5102040816326531,
+      "seg_wrong_to_right": 26,
+      "seg_right_to_wrong": 1,
+      "seg_n_fallback": 3,
+      "accepted_seg_n": 212,
+      "accepted_seg_agreement_base": 0.2783018867924528,
+      "arm": "RANDOM_R1_SEED20260910",
+      "budget": 0.2,
+      "status": "ok",
+      "note": "R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "n_all": 320,
+      "k_total": 96,
+      "n_labeled": 261,
+      "agreement": 0.41762452107279696,
+      "n_correct": 109,
+      "wrong_to_right": 39,
+      "right_to_wrong": 2,
+      "generalized_risk": 0.5823754789272031,
+      "n_final_empty": 24,
+      "agreement_dev": 0.4106280193236715,
+      "agreement_val": 0.4444444444444444,
+      "seg_n": 75,
+      "seg_agreement_model": 0.7733333333333333,
+      "seg_agreement_base": 0.28,
+      "seg_lift_vs_base": 0.49333333333333335,
+      "seg_wrong_to_right": 39,
+      "seg_right_to_wrong": 2,
+      "seg_n_fallback": 5,
+      "accepted_seg_n": 186,
+      "accepted_seg_agreement_base": 0.27419354838709675,
+      "arm": "RANDOM_R1_SEED20260910",
+      "budget": 0.3,
+      "status": "ok",
+      "note": "R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）"
+    }
+  ],
+  "evidence1_segment_lift_vs_base": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "budget": 0.1,
+      "seg_n": 28,
+      "seg_agreement_model": 0.7142857142857143,
+      "seg_agreement_base_same_segment": 0.0,
+      "lift": 0.7142857142857143,
+      "accepted_seg_agreement_base": 0.3090128755364807,
+      "lift_vs_accepted_base": 0.4052728387492336,
+      "bootstrap": {
+        "delta_observed": 0.7142857142857143,
+        "ci95_low": 0.5357142857142857,
+        "ci95_high": 0.8571428571428571,
+        "p_boot_two_sided": 0.0,
+        "frac_delta_gt0": 1.0
+      },
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "budget": 0.2,
+      "seg_n": 52,
+      "seg_agreement_model": 0.7884615384615384,
+      "seg_agreement_base_same_segment": 0.019230769230769232,
+      "lift": 0.7692307692307692,
+      "accepted_seg_agreement_base": 0.3397129186602871,
+      "lift_vs_accepted_base": 0.44874861980125136,
+      "bootstrap": {
+        "delta_observed": 0.7692307692307692,
+        "ci95_low": 0.6538461538461539,
+        "ci95_high": 0.8846153846153846,
+        "p_boot_two_sided": 0.0,
+        "frac_delta_gt0": 1.0
+      },
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "budget": 0.3,
+      "seg_n": 78,
+      "seg_agreement_model": 0.7692307692307693,
+      "seg_agreement_base_same_segment": 0.10256410256410256,
+      "lift": 0.6666666666666667,
+      "accepted_seg_agreement_base": 0.34972677595628415,
+      "lift_vs_accepted_base": 0.4195039932744851,
+      "bootstrap": {
+        "delta_observed": 0.6666666666666667,
+        "ci95_low": 0.5512820512820513,
+        "ci95_high": 0.7692307692307692,
+        "p_boot_two_sided": 0.0,
+        "frac_delta_gt0": 1.0
+      },
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "budget": 0.5,
+      "seg_n": 129,
+      "seg_agreement_model": 0.8062015503875969,
+      "seg_agreement_base_same_segment": 0.15503875968992248,
+      "lift": 0.6511627906976745,
+      "accepted_seg_agreement_base": 0.3939393939393939,
+      "lift_vs_accepted_base": 0.41226215644820297,
+      "bootstrap": {
+        "delta_observed": 0.6511627906976745,
+        "ci95_low": 0.5581395348837209,
+        "ci95_high": 0.7364341085271318,
+        "p_boot_two_sided": 0.0,
+        "frac_delta_gt0": 1.0
+      },
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "budget": 0.1,
+      "seg_n": 28,
+      "seg_agreement_model": 0.7142857142857143,
+      "seg_agreement_base_same_segment": 0.0,
+      "lift": 0.7142857142857143,
+      "accepted_seg_agreement_base": 0.3090128755364807,
+      "lift_vs_accepted_base": 0.4052728387492336,
+      "bootstrap": {
+        "delta_observed": 0.7142857142857143,
+        "ci95_low": 0.5357142857142857,
+        "ci95_high": 0.8571428571428571,
+        "p_boot_two_sided": 0.0,
+        "frac_delta_gt0": 1.0
+      },
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "budget": 0.2,
+      "seg_n": 52,
+      "seg_agreement_model": 0.7307692307692307,
+      "seg_agreement_base_same_segment": 0.019230769230769232,
+      "lift": 0.7115384615384615,
+      "accepted_seg_agreement_base": 0.3397129186602871,
+      "lift_vs_accepted_base": 0.39105631210894365,
+      "bootstrap": {
+        "delta_observed": 0.7115384615384615,
+        "ci95_low": 0.576923076923077,
+        "ci95_high": 0.8269230769230769,
+        "p_boot_two_sided": 0.0,
+        "frac_delta_gt0": 1.0
+      },
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "budget": 0.3,
+      "seg_n": 78,
+      "seg_agreement_model": 0.7692307692307693,
+      "seg_agreement_base_same_segment": 0.10256410256410256,
+      "lift": 0.6666666666666667,
+      "accepted_seg_agreement_base": 0.34972677595628415,
+      "lift_vs_accepted_base": 0.4195039932744851,
+      "bootstrap": {
+        "delta_observed": 0.6666666666666667,
+        "ci95_low": 0.5641025641025641,
+        "ci95_high": 0.7692307692307693,
+        "p_boot_two_sided": 0.0,
+        "frac_delta_gt0": 1.0
+      },
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "budget": 0.5,
+      "seg_n": 129,
+      "seg_agreement_model": 0.7751937984496124,
+      "seg_agreement_base_same_segment": 0.15503875968992248,
+      "lift": 0.6201550387596899,
+      "accepted_seg_agreement_base": 0.3939393939393939,
+      "lift_vs_accepted_base": 0.3812544045102185,
+      "bootstrap": {
+        "delta_observed": 0.6201550387596899,
+        "ci95_low": 0.5271317829457365,
+        "ci95_high": 0.7131782945736435,
+        "p_boot_two_sided": 0.0,
+        "frac_delta_gt0": 1.0
+      },
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    }
+  ],
+  "evidence2_same_budget_cross_model": [
+    {
+      "budget": 0.1,
+      "agreement_by_model": {
+        "openai/gpt-oss-20b": 0.3524904214559387,
+        "qwen/qwen3-8b": 0.3524904214559387
+      },
+      "ranking_best_to_worst": [
+        "qwen/qwen3-8b=0.3525",
+        "openai/gpt-oss-20b=0.3525"
+      ],
+      "monotone_gap_gptoss_vs_qwen": 0.0
+    },
+    {
+      "budget": 0.2,
+      "agreement_by_model": {
+        "openai/gpt-oss-20b": 0.42911877394636017,
+        "qwen/qwen3-8b": 0.41762452107279696
+      },
+      "ranking_best_to_worst": [
+        "openai/gpt-oss-20b=0.4291",
+        "qwen/qwen3-8b=0.4176"
+      ],
+      "monotone_gap_gptoss_vs_qwen": 0.011494252873563204
+    },
+    {
+      "budget": 0.3,
+      "agreement_by_model": {
+        "openai/gpt-oss-20b": 0.47509578544061304,
+        "qwen/qwen3-8b": 0.47509578544061304
+      },
+      "ranking_best_to_worst": [
+        "qwen/qwen3-8b=0.4751",
+        "openai/gpt-oss-20b=0.4751"
+      ],
+      "monotone_gap_gptoss_vs_qwen": 0.0
+    },
+    {
+      "budget": 0.5,
+      "agreement_by_model": {
+        "openai/gpt-oss-20b": 0.5977011494252874,
+        "qwen/qwen3-8b": 0.5823754789272031
+      },
+      "ranking_best_to_worst": [
+        "openai/gpt-oss-20b=0.5977",
+        "qwen/qwen3-8b=0.5824"
+      ],
+      "monotone_gap_gptoss_vs_qwen": 0.01532567049808431
+    }
+  ],
+  "evidence3_routed_vs_random": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "budget": 0.1,
+      "n_labeled": 261,
+      "final_agreement_routed": 0.3524904214559387,
+      "final_agreement_random": 0.3524904214559387,
+      "e3a_final_delta": {
+        "delta_observed": 0.0,
+        "ci95_low": -0.04597701149425287,
+        "ci95_high": 0.04597701149425287,
+        "p_boot_two_sided": 1.0,
+        "frac_delta_gt0": 0.4675
+      },
+      "n_routed_seg_labeled": 28,
+      "n_random_seg_labeled": 29,
+      "routed_seg_base_agreement": 0.0,
+      "random_seg_base_agreement": 0.2413793103448276,
+      "e3b_difficulty_delta_random_minus_routed": {
+        "delta_observed": 0.2413793103448276,
+        "ci95_low": 0.10344827586206896,
+        "ci95_high": 0.41379310344827586,
+        "p_boot_two_sided": 0.0,
+        "frac_delta_gt0": 1.0
+      },
+      "routed_seg_agreement": 0.7142857142857143,
+      "random_seg_agreement": 0.9310344827586207,
+      "e3c_segment_delta": {
+        "delta_observed": -0.21674876847290636,
+        "ci95_low": -0.3985529556650245,
+        "ci95_high": -0.03817733990147776,
+        "p_boot_two_sided": 0.016,
+        "frac_delta_gt0": 0.008
+      },
+      "e3c_classification": "R6显著劣于对手（95% CI 全为负）"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "budget": 0.2,
+      "n_labeled": 261,
+      "final_agreement_routed": 0.42911877394636017,
+      "final_agreement_random": 0.39080459770114945,
+      "e3a_final_delta": {
+        "delta_observed": 0.03831417624521072,
+        "ci95_low": -0.02298850574712641,
+        "ci95_high": 0.10344827586206895,
+        "p_boot_two_sided": 0.238,
+        "frac_delta_gt0": 0.881
+      },
+      "n_routed_seg_labeled": 52,
+      "n_random_seg_labeled": 49,
+      "routed_seg_base_agreement": 0.019230769230769232,
+      "random_seg_base_agreement": 0.2653061224489796,
+      "e3b_difficulty_delta_random_minus_routed": {
+        "delta_observed": 0.2460753532182104,
+        "ci95_low": 0.12362637362637362,
+        "ci95_high": 0.3877551020408163,
+        "p_boot_two_sided": 0.0,
+        "frac_delta_gt0": 1.0
+      },
+      "routed_seg_agreement": 0.7884615384615384,
+      "random_seg_agreement": 0.8775510204081632,
+      "e3c_segment_delta": {
+        "delta_observed": -0.0890894819466248,
+        "ci95_low": -0.22726648351648354,
+        "ci95_high": 0.050235478806907374,
+        "p_boot_two_sided": 0.216,
+        "frac_delta_gt0": 0.108
+      },
+      "e3c_classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "budget": 0.3,
+      "n_labeled": 261,
+      "final_agreement_routed": 0.47509578544061304,
+      "final_agreement_random": 0.4367816091954023,
+      "e3a_final_delta": {
+        "delta_observed": 0.03831417624521072,
+        "ci95_low": -0.023084291187739484,
+        "ci95_high": 0.10344827586206895,
+        "p_boot_two_sided": 0.257,
+        "frac_delta_gt0": 0.8715
+      },
+      "n_routed_seg_labeled": 78,
+      "n_random_seg_labeled": 75,
+      "routed_seg_base_agreement": 0.10256410256410256,
+      "random_seg_base_agreement": 0.28,
+      "e3b_difficulty_delta_random_minus_routed": {
+        "delta_observed": 0.17743589743589747,
+        "ci95_low": 0.04871794871794871,
+        "ci95_high": 0.29642307692307684,
+        "p_boot_two_sided": 0.005,
+        "frac_delta_gt0": 0.9975
+      },
+      "routed_seg_agreement": 0.7692307692307693,
+      "random_seg_agreement": 0.84,
+      "e3c_segment_delta": {
+        "delta_observed": -0.0707692307692307,
+        "ci95_low": -0.19948717948717953,
+        "ci95_high": 0.0476923076923077,
+        "p_boot_two_sided": 0.251,
+        "frac_delta_gt0": 0.1255
+      },
+      "e3c_classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "budget": 0.5,
+      "n_labeled": 261,
+      "final_agreement_routed": 0.5977011494252874,
+      "final_agreement_random": 0.5555555555555556,
+      "e3a_final_delta": {
+        "delta_observed": 0.04214559386973182,
+        "ci95_low": -0.02298850574712641,
+        "ci95_high": 0.10737547892720256,
+        "p_boot_two_sided": 0.235,
+        "frac_delta_gt0": 0.8825
+      },
+      "n_routed_seg_labeled": 129,
+      "n_random_seg_labeled": 127,
+      "routed_seg_base_agreement": 0.15503875968992248,
+      "random_seg_base_agreement": 0.2677165354330709,
+      "e3b_difficulty_delta_random_minus_routed": {
+        "delta_observed": 0.11267777574314841,
+        "ci95_low": 0.018922053347982665,
+        "ci95_high": 0.21406641030336324,
+        "p_boot_two_sided": 0.018,
+        "frac_delta_gt0": 0.991
+      },
+      "routed_seg_agreement": 0.8062015503875969,
+      "random_seg_agreement": 0.84251968503937,
+      "e3c_segment_delta": {
+        "delta_observed": -0.03631813465177314,
+        "ci95_low": -0.1299517792834035,
+        "ci95_high": 0.057318561923945494,
+        "p_boot_two_sided": 0.47,
+        "frac_delta_gt0": 0.235
+      },
+      "e3c_classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "budget": 0.1,
+      "n_labeled": 261,
+      "final_agreement_routed": 0.3524904214559387,
+      "final_agreement_random": 0.3333333333333333,
+      "e3a_final_delta": {
+        "delta_observed": 0.01915708812260536,
+        "ci95_low": -0.02681992337164746,
+        "ci95_high": 0.06130268199233718,
+        "p_boot_two_sided": 0.409,
+        "frac_delta_gt0": 0.7955
+      },
+      "n_routed_seg_labeled": 28,
+      "n_random_seg_labeled": 29,
+      "routed_seg_base_agreement": 0.0,
+      "random_seg_base_agreement": 0.2413793103448276,
+      "e3b_difficulty_delta_random_minus_routed": {
+        "delta_observed": 0.2413793103448276,
+        "ci95_low": 0.10344827586206896,
+        "ci95_high": 0.41379310344827586,
+        "p_boot_two_sided": 0.002,
+        "frac_delta_gt0": 0.999
+      },
+      "routed_seg_agreement": 0.7142857142857143,
+      "random_seg_agreement": 0.7586206896551724,
+      "e3c_segment_delta": {
+        "delta_observed": -0.044334975369458074,
+        "ci95_low": -0.28940886699507395,
+        "ci95_high": 0.16748768472906395,
+        "p_boot_two_sided": 0.611,
+        "frac_delta_gt0": 0.3055
+      },
+      "e3c_classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "budget": 0.2,
+      "n_labeled": 261,
+      "final_agreement_routed": 0.41762452107279696,
+      "final_agreement_random": 0.3716475095785441,
+      "e3a_final_delta": {
+        "delta_observed": 0.04597701149425287,
+        "ci95_low": -0.007662835249042155,
+        "ci95_high": 0.0996168582375479,
+        "p_boot_two_sided": 0.115,
+        "frac_delta_gt0": 0.9425
+      },
+      "n_routed_seg_labeled": 52,
+      "n_random_seg_labeled": 49,
+      "routed_seg_base_agreement": 0.019230769230769232,
+      "random_seg_base_agreement": 0.2653061224489796,
+      "e3b_difficulty_delta_random_minus_routed": {
+        "delta_observed": 0.2460753532182104,
+        "ci95_low": 0.12244897959183673,
+        "ci95_high": 0.3877551020408163,
+        "p_boot_two_sided": 0.0,
+        "frac_delta_gt0": 1.0
+      },
+      "routed_seg_agreement": 0.7307692307692307,
+      "random_seg_agreement": 0.7755102040816326,
+      "e3c_segment_delta": {
+        "delta_observed": -0.0447409733124019,
+        "ci95_low": -0.20450353218210354,
+        "ci95_high": 0.11852433281004704,
+        "p_boot_two_sided": 0.546,
+        "frac_delta_gt0": 0.273
+      },
+      "e3c_classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "model": "qwen/qwen3-8b",
+      "budget": 0.3,
+      "n_labeled": 261,
+      "final_agreement_routed": 0.47509578544061304,
+      "final_agreement_random": 0.41762452107279696,
+      "e3a_final_delta": {
+        "delta_observed": 0.05747126436781608,
+        "ci95_low": -0.0038314176245210496,
+        "ci95_high": 0.12260536398467431,
+        "p_boot_two_sided": 0.063,
+        "frac_delta_gt0": 0.9685
+      },
+      "n_routed_seg_labeled": 78,
+      "n_random_seg_labeled": 75,
+      "routed_seg_base_agreement": 0.10256410256410256,
+      "random_seg_base_agreement": 0.28,
+      "e3b_difficulty_delta_random_minus_routed": {
+        "delta_observed": 0.17743589743589747,
+        "ci95_low": 0.05846153846153848,
+        "ci95_high": 0.2953846153846154,
+        "p_boot_two_sided": 0.003,
+        "frac_delta_gt0": 0.9985
+      },
+      "routed_seg_agreement": 0.7692307692307693,
+      "random_seg_agreement": 0.7733333333333333,
+      "e3c_segment_delta": {
+        "delta_observed": -0.004102564102564044,
+        "ci95_low": -0.13435897435897437,
+        "ci95_high": 0.1266666666666667,
+        "p_boot_two_sided": 0.959,
+        "frac_delta_gt0": 0.4795
+      },
+      "e3c_classification": "无显著差异（95% CI 跨 0）"
+    }
+  ],
+  "evidence_counts": {
+    "e1_comparisons": 8,
+    "e1_lift_positive": 8,
+    "e1_sig_positive": 8,
+    "e1_sig_negative": 0,
+    "e3_comparisons": 7,
+    "e3a_positive": 6,
+    "e3a_tie": 1,
+    "e3a_sig_positive": 0,
+    "e3a_sig_negative": 0,
+    "e3b_difficulty_sig_separated": 7,
+    "e2_rank_reversals": 0,
+    "verdict_conditions": {
+      "c1_e1_all_positive_no_sig_negative": true,
+      "c2_e3a_no_sig_negative": true,
+      "c3_e3a_majority_positive": true,
+      "c4_e2_no_rank_reversal": true
+    }
+  },
+  "verdict": "支持：框架机制模型无关（附显著性保留，见 §0/§7）",
+  "knees": {
+    "openai/gpt-oss-20b": {
+      "budget": 0.5,
+      "gap": 0.04597701149425293,
+      "chord": {
+        "from": {
+          "budget": 0.0,
+          "selective_risk": 0.7241379310344828
+        },
+        "to": {
+          "budget": 1.0,
+          "selective_risk": 0.1724137931034483
+        }
+      },
+      "rule": "knee = argmax_b [chord(0%→100%) - selective_risk(b)]（数据决定，平局取最小预算）",
+      "budget_domain": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        1.0
+      ],
+      "risk_monotone_nonincreasing": true
+    },
+    "qwen/qwen3-8b": {
+      "budget": 0.2,
+      "gap": 0.019157088122605304,
+      "chord": {
+        "from": {
+          "budget": 0.0,
+          "selective_risk": 0.7241379310344828
+        },
+        "to": {
+          "budget": 0.5,
+          "selective_risk": 0.4176245210727969
+        }
+      },
+      "rule": "knee = argmax_b [chord(0%→100%) - selective_risk(b)]（数据决定，平局取最小预算）",
+      "budget_domain": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.5
+      ],
+      "risk_monotone_nonincreasing": true
+    }
+  },
+  "consistency_vs_budget_v2_gptoss": {
+    "file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\budget_v2\\ROUTING_COMPARISON.csv",
+    "rows": [
+      {
+        "budget": 0.1,
+        "routed_mine": 0.3524904214559387,
+        "routed_v2_R6": 0.35249,
+        "random_mine": 0.3524904214559387,
+        "random_v2_R1": 0.35249
+      },
+      {
+        "budget": 0.2,
+        "routed_mine": 0.42911877394636017,
+        "routed_v2_R6": 0.429119,
+        "random_mine": 0.39080459770114945,
+        "random_v2_R1": 0.390805
+      },
+      {
+        "budget": 0.3,
+        "routed_mine": 0.47509578544061304,
+        "routed_v2_R6": 0.475096,
+        "random_mine": 0.4367816091954023,
+        "random_v2_R1": 0.436782
+      },
+      {
+        "budget": 0.5,
+        "routed_mine": 0.5977011494252874,
+        "routed_v2_R6": 0.597701,
+        "random_mine": 0.5555555555555556,
+        "random_v2_R1": 0.555556
+      }
+    ],
+    "note": "本实验 gpt-oss-20b ROUTED/RANDOM 行应复现 budget_v2 的 R6/R1（同机制同实现）；唯一差异源=ETV3-0041（旧运行 ERROR 回退基础预测，本运行重试）"
+  },
+  "guards": {
+    "test_split_excluded": true,
+    "test_ids_excluded_n": 62,
+    "assert_no_test_samples_called": true,
+    "runner_blocks_test_split": true,
+    "no_existing_file_modified": "只新建 model_agnostic/* 与 audit/method_final/15_MODEL_AGNOSTIC_REPORT.md",
+    "old_caches_readonly": true,
+    "no_fabrication": "全部数字由真实调用记录与既有数据文件计算；报告由本脚本自动生成"
+  },
+  "inputs_sha256": {
+    "leave_b_out_reference": "50bd576f6190cee8562bf8a58cbb4296756b94b3adac934321fe5d769918568c",
+    "strong_reference": "798a29a52be82c3054620b6dc0d981ee7807d38e51bba42c906f9436116c27a4",
+    "split_manifest": "59b38d41fb9ec59609efca97daf10902dcf6ec869f7f55598fb04e00cf05a457",
+    "old_cache_risk_routing_readonly": "ae094a044ecb4cd0ce52c8c720937c422e91bdfd0ef6098c967ec6436a2fd8e4",
+    "old_cache_budget_v2_readonly": "44b1ab96ad6340bdf72571db27523e7cfa09d3e6453c27191fcb4ffd4d80944a",
+    "risk_model_card": "dc92c4dd31cc2b57152140271a63b7ac36057c4b0fcc318402720ef0e2b152a0",
+    "budget_v2_routing_comparison": "90fc47f3f5ea45d2bf815db41d6dc9a6805f3dbaff0b74ea835571549362e664"
+  },
+  "outputs": {
+    "curve": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\model_agnostic\\MODEL_AGNOSTIC_CURVE.csv",
+    "random_control": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\model_agnostic\\ROUTING_RANDOM_CONTROL.csv",
+    "selections": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\model_agnostic\\MODEL_AGNOSTIC_SELECTIONS.json",
+    "calls_jsonl": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\model_agnostic\\MODEL_AGNOSTIC_CALLS.jsonl",
+    "summary": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\model_agnostic\\SUMMARY.json",
+    "report": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\audit\\method_final\\15_MODEL_AGNOSTIC_REPORT.md"
+  }
+}

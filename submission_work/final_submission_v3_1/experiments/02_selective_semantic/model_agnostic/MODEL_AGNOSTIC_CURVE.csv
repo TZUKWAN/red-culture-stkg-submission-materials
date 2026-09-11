@@ -1,0 +1,19 @@
+﻿model,arm,budget,status,k_total,n_all,n_labeled,agreement,n_correct,wrong_to_right,right_to_wrong,generalized_risk,n_final_empty,agreement_dev,agreement_val,seg_n,seg_agreement_model,seg_agreement_base,seg_lift_vs_base,seg_wrong_to_right,seg_right_to_wrong,seg_n_fallback,accepted_seg_n,accepted_seg_agreement_base,note
+openai/gpt-oss-20b,BASELINE_B0,0.0,ok,0,320,261,0.275862,72,0,0,0.724138,28,0.275362,0.277778,0,,,,0,0,0,261,0.275862,无升级，基础分类器全发布（b=0 基线）
+openai/gpt-oss-20b,ROUTED_RHAT_TOPK,0.1,ok,32,320,261,0.35249,92,20,0,0.64751,12,0.352657,0.351852,28,0.714286,0.0,0.714286,20,0,0,233,0.309013,每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M
+openai/gpt-oss-20b,ROUTED_RHAT_TOPK,0.2,ok,64,320,261,0.429119,112,40,0,0.570881,2,0.434783,0.407407,52,0.788462,0.019231,0.769231,40,0,1,209,0.339713,每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M
+openai/gpt-oss-20b,ROUTED_RHAT_TOPK,0.3,ok,96,320,261,0.475096,124,53,1,0.524904,0,0.483092,0.444444,78,0.769231,0.102564,0.666667,53,1,1,183,0.349727,每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M
+openai/gpt-oss-20b,ROUTED_RHAT_TOPK,0.5,ok,160,320,261,0.597701,156,85,1,0.402299,0,0.608696,0.555556,129,0.806202,0.155039,0.651163,85,1,1,132,0.393939,每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M
+openai/gpt-oss-20b,EVERY_ITEM_B100,1.0,ok,320,320,261,0.827586,216,151,7,0.172414,0,0.821256,0.851852,261,0.827586,0.275862,0.551724,151,7,1,0,,M every-item（该模型质量上限）
+google/gemma-4-e4b,ROUTED_RHAT_TOPK,0.0,skipped_probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request),,,,,,,,,,,,,,,,,,,,,
+google/gemma-4-e4b,ROUTED_RHAT_TOPK,0.1,skipped_probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request),,,,,,,,,,,,,,,,,,,,,
+google/gemma-4-e4b,ROUTED_RHAT_TOPK,0.2,skipped_probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request),,,,,,,,,,,,,,,,,,,,,
+google/gemma-4-e4b,ROUTED_RHAT_TOPK,0.3,skipped_probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request),,,,,,,,,,,,,,,,,,,,,
+google/gemma-4-e4b,ROUTED_RHAT_TOPK,0.5,skipped_probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request),,,,,,,,,,,,,,,,,,,,,
+google/gemma-4-e4b,ROUTED_RHAT_TOPK,1.0,skipped_probe_failed (0/2 JSON 合格; pinned chat failed after retries (model=google/gemma-4-e4b): HTTP Error 400: Bad Request),,,,,,,,,,,,,,,,,,,,,
+qwen/qwen3-8b,BASELINE_B0,0.0,ok,0,320,261,0.275862,72,0,0,0.724138,28,0.275362,0.277778,0,,,,0,0,0,261,0.275862,无升级，基础分类器全发布（b=0 基线）
+qwen/qwen3-8b,ROUTED_RHAT_TOPK,0.1,ok,32,320,261,0.35249,92,20,0,0.64751,14,0.352657,0.351852,28,0.714286,0.0,0.714286,20,0,2,233,0.309013,每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M
+qwen/qwen3-8b,ROUTED_RHAT_TOPK,0.2,ok,64,320,261,0.417625,109,37,0,0.582375,5,0.425121,0.388889,52,0.730769,0.019231,0.711538,37,0,3,209,0.339713,每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M
+qwen/qwen3-8b,ROUTED_RHAT_TOPK,0.3,ok,96,320,261,0.475096,124,52,0,0.524904,3,0.487923,0.425926,78,0.769231,0.102564,0.666667,52,0,4,183,0.349727,每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M
+qwen/qwen3-8b,ROUTED_RHAT_TOPK,0.5,ok,160,320,261,0.582375,152,83,3,0.417625,3,0.603865,0.5,129,0.775194,0.155039,0.620155,83,3,7,132,0.393939,每 split 内 r_hat 最高的 k=round-half-up(b·n) 个升级给 M
+qwen/qwen3-8b,EVERY_ITEM_B100,1.0,not_run_call_budget_cap,,,,,,,,,,,,,,,,,,,,,≤450 新调用硬约束下不可行（每模型需 240 次新调用）；该模型可观测上限为实际执行的最大预算点

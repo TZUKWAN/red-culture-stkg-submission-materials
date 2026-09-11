@@ -1,0 +1,8 @@
+﻿model,arm,budget,status,k_total,n_all,n_labeled,agreement,n_correct,wrong_to_right,right_to_wrong,generalized_risk,n_final_empty,agreement_dev,agreement_val,seg_n,seg_agreement_model,seg_agreement_base,seg_lift_vs_base,seg_wrong_to_right,seg_right_to_wrong,seg_n_fallback,accepted_seg_n,accepted_seg_agreement_base,note
+openai/gpt-oss-20b,RANDOM_R1_SEED20260910,0.1,ok,32,320,261,0.35249,92,21,1,0.64751,26,0.347826,0.37037,29,0.931034,0.241379,0.689655,21,1,0,232,0.280172,R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）
+openai/gpt-oss-20b,RANDOM_R1_SEED20260910,0.2,ok,64,320,261,0.390805,102,32,2,0.609195,24,0.386473,0.407407,49,0.877551,0.265306,0.612245,32,2,0,212,0.278302,R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）
+openai/gpt-oss-20b,RANDOM_R1_SEED20260910,0.3,ok,96,320,261,0.436782,114,44,2,0.563218,23,0.42029,0.5,75,0.84,0.28,0.56,44,2,0,186,0.274194,R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）
+openai/gpt-oss-20b,RANDOM_R1_SEED20260910,0.5,ok,160,320,261,0.555556,145,76,3,0.444444,18,0.536232,0.62963,127,0.84252,0.267717,0.574803,76,3,0,134,0.283582,R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）
+qwen/qwen3-8b,RANDOM_R1_SEED20260910,0.1,ok,32,320,261,0.333333,87,16,1,0.666667,26,0.328502,0.351852,29,0.758621,0.241379,0.517241,16,1,2,232,0.280172,R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）
+qwen/qwen3-8b,RANDOM_R1_SEED20260910,0.2,ok,64,320,261,0.371648,97,26,1,0.628352,25,0.371981,0.37037,49,0.77551,0.265306,0.510204,26,1,3,212,0.278302,R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）
+qwen/qwen3-8b,RANDOM_R1_SEED20260910,0.3,ok,96,320,261,0.417625,109,39,2,0.582375,24,0.410628,0.444444,75,0.773333,0.28,0.493333,39,2,5,186,0.274194,R1 随机升级对照（每 split 固定全排列取前缀，seed=20260910）
