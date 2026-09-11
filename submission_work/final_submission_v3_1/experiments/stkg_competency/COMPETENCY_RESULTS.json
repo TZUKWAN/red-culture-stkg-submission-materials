@@ -1,0 +1,1162 @@
+[
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-7897eb0a03abfdd037e1d49e",
+    "subject": "鲁道源旅",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-98e38f0871f45944a4df79ca",
+    "subject": "土地分配运动",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-0715b42db1b0b162b77b3bc2",
+    "subject": "减租退押",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-09ab85bdc83a9501e2878313",
+    "subject": "淮海战役第二阶段",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": true,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-929bf57b04216119d1f1db78",
+    "subject": "十字河战斗",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-0fbe183178fb0317fd149cf9",
+    "subject": "镇压反革命",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-b9a3c02204381057090628b0",
+    "subject": "警卫队起义行军与马鞍底战斗",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-15684f537e175ef6e2af34c4",
+    "subject": "减租减息斗争",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-4e2c706da54d206752f922f6",
+    "subject": "学生游行",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-0aa0b4cf7e51c20c9662dc3e",
+    "subject": "冬季扩军运动",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": true,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-0b23b22da6764b0b85bef9d6",
+    "subject": "鄂豫边区农民暴动",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-d7c063d5dfe68dfb5094e0e6",
+    "subject": "苏中战役",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-195aae42648f1506bb296326",
+    "subject": "食米斗争",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": true,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-070552b498fb603744e64896",
+    "subject": "反美扶日运动",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-e86bc5c8acf82557dcc5eaa7",
+    "subject": "护厂斗争",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-138ac1e35597e9bb99bbf929",
+    "subject": "打万年县城",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-13f12703ee81ce8bf7290cbb",
+    "subject": "保安团起义",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-0090859f21e68396f6f933f9",
+    "subject": "土地改革试点",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-0cedcf58e7f9a44fa886529b",
+    "subject": "反“清乡”斗争胜利",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-06125632e825c13486316ae6",
+    "subject": "瓦埠暴动",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-17b02e19a72fe79e30931335",
+    "subject": "学生爱国运动",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": true,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-fc82e5eb368f6673c183a128",
+    "subject": "武装暴动",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-11847a5f35649a1f66c781d8",
+    "subject": "减租减息运动",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-0d309b0a334ce3ca8d758a45",
+    "subject": "陆良事件",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": true,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-ecb73850dfc2fa42022542eb",
+    "subject": "苏中四分区反清乡斗争",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-02d61a839c7dfec7b646b9af",
+    "subject": "青年协进会",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-b1ab3f2fd5aaa08fdd66fc41",
+    "subject": "二五减租",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-a85df946d9562e8efecd9e55",
+    "subject": "反霸斗争",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-bbc7ad229f04b1d8478f29fc",
+    "subject": "剿匪斗争",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-bdb066333e833434bf5936b1",
+    "subject": "五卅事件",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-fe2e32d9eb45cce9f693ca5e",
+    "subject": "五·一示威游行",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-52e9d10fda8ea554e3d31626",
+    "subject": "贵州省第三次代表大会",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-0c8daffb91a3c14c15420b62",
+    "subject": "武装起义",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-15e1e149db286ea122b091a1",
+    "subject": "土改运动",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-1c4db1f4e682ba3aa84aa3f3",
+    "subject": "杨岐暴动",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": true,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-07b508826802ad243ec8321b",
+    "subject": "合川学生救亡运动",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-0a16acf60652e20babb16018",
+    "subject": "护校斗争",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-0a647c141e6b42707d46a5a0",
+    "subject": "万安暴动",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-66529ece40e6b46479a0e6a8",
+    "subject": "土地改革运动",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q1_event_timeplace",
+    "fact_id": "IFACT-0ce377577ac364568870be84",
+    "subject": "反奸清算斗争",
+    "tier": "strict_semantic",
+    "K0_answerable": true,
+    "K1_answerable": true,
+    "K2_role_correct": false,
+    "K3_evidence_traced": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-02eda52c660ce417b214be34",
+    "person": "游嘉训",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-025841289d8167a2c1ae0035",
+    "person": "邵健民",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-01eebd27954f0fe662274904",
+    "person": "漆晓孚",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-02cc5af8ffc89a5bbd934eae",
+    "person": "阿西",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-01ac89cf50887caebada8236",
+    "person": "张光裕",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-017700f93a909ebe69264671",
+    "person": "杨霖",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-01c884969163ac3eb500ebe1",
+    "person": "杜文华",
+    "K0_answerable": true,
+    "K2_temporal_context": false,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-00e51b36c0375a85d68c158a",
+    "person": "许颖贤",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-009b6b649375fe72d2b59d04",
+    "person": "华中银行",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-02f529824efd15fd74436745",
+    "person": "王剑虹",
+    "K0_answerable": true,
+    "K2_temporal_context": false,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-0192a5ed5e7c3f94dcb7edf4",
+    "person": "史慎伯",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-02ebaed41db3913fa968b6e5",
+    "person": "王圆方",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-003887252fbc2317d327ee7d",
+    "person": "母广轼",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-00a0b78f01bb31aec1b22f8c",
+    "person": "田守尧",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-02ff40646d55b52509b67b9e",
+    "person": "刘麦溪",
+    "K0_answerable": true,
+    "K2_temporal_context": false,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-021ce77c7cc35b2ea141c34d",
+    "person": "康朴",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-02f9dc6401d819ab5f8be169",
+    "person": "曹铎光",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-01ff6c14dbdc6f6471626ea9",
+    "person": "王长德",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-024187028911d8f9e8c75e14",
+    "person": "赵先礼",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-025d26a20333b7c1239e4deb",
+    "person": "许先觉",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-0259aed20481137297753cf1",
+    "person": "涂兆兴",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-01e15fb2e3150ac42b9a56f4",
+    "person": "吕振球",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-00931acca934be98d868d363",
+    "person": "左腾春雄",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-01492c5c8a00b82dc6805e76",
+    "person": "何启芳",
+    "K0_answerable": true,
+    "K2_temporal_context": false,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-00bff3d0518e015b30d1585b",
+    "person": "刘小平",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-01bc85027cd7596211da01ad",
+    "person": "张大平",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-02afc7550151497ffa5277d3",
+    "person": "张克辛",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-01d5149f26678fb7c64c04ee",
+    "person": "胡奇才",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-02aa4ec0a2cabb46fb38c756",
+    "person": "王三友",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-0147696e73d189741e68e61a",
+    "person": "分局",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-0205e4425c586e752cbc4121",
+    "person": "姜献华",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-01683ee202bfd9aae251dc02",
+    "person": "文传声",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-028eaa8248530c2db30a25a0",
+    "person": "裴紫骝",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-027aad48e42e19de47ca6c0f",
+    "person": "曾开盛",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-0047edc7db11dcc62e0930d0",
+    "person": "张凤吉",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-02d8ef9ddce4099081a1cfcb",
+    "person": "高而公",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-01d4b070867ab10f9ca804a5",
+    "person": "王丰庆",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-01be4b90dafbe9ae456e3cbb",
+    "person": "刘革非",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-01a78c221637b55fd165bb09",
+    "person": "吴宽林",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": true
+  },
+  {
+    "q_type": "Q2_person_trajectory",
+    "entity_id": "IENT-02cbae083ceb66530b589ea4",
+    "person": "徐继先",
+    "K0_answerable": true,
+    "K2_temporal_context": true,
+    "K3_frame_linked": false
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-011978f198a62d03b305ffbb",
+    "form": "HistoricalPractice",
+    "stage": "解放战争",
+    "region": "REGION-PROVINCE:云南省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-00341c4995cb4403d04b2632",
+    "form": "InstitutionalPractice",
+    "stage": "建党与大革命",
+    "region": "REGION-PROVINCE:江西省",
+    "has_time": true,
+    "n_events": 7,
+    "time_source": "member_events_trusted"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-028d8b4acd582e833900554f",
+    "form": "SpiritValue",
+    "stage": "全民族抗日战争",
+    "region": "REGION-PROVINCE:江苏省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "member_events_asserted"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-0401ab01438926212070c78e",
+    "form": "HistoricalPractice",
+    "stage": "建党与大革命",
+    "region": "REGION-PROVINCE:云南省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-006f13c2737cda950034617e",
+    "form": "HistoricalPractice",
+    "stage": "建党与大革命",
+    "region": "REGION-PROVINCE:江西省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-027f0f08fffd5d53376d4654",
+    "form": "InstitutionalPractice",
+    "stage": "建党与大革命",
+    "region": "REGION-PROVINCE:贵州省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "member_events_asserted"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-00c74c31ea4f9f8a7b2c75a1",
+    "form": "InstitutionalPractice",
+    "stage": "土地革命战争",
+    "region": "REGION-PROVINCE:浙江省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-0112f0b71dae4783e6bcfc3e",
+    "form": "InstitutionalPractice",
+    "stage": "土地革命战争",
+    "region": "REGION-PROVINCE:贵州省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-0348c91eae7730c7788119d8",
+    "form": "HistoricalPractice",
+    "stage": "建党前传播与孕育",
+    "region": "REGION-PROVINCE:浙江省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-002577354058424a184be43b",
+    "form": "InstitutionalPractice",
+    "stage": "土地革命战争",
+    "region": "REGION-PROVINCE:江苏省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-0046064338f158bc94dec771",
+    "form": "HistoricalPractice",
+    "stage": "全民族抗日战争",
+    "region": "REGION-PROVINCE:贵州省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-03936594017950ac51ff5e80",
+    "form": "InstitutionalPractice",
+    "stage": "解放战争",
+    "region": "REGION-PROVINCE:贵州省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-0492adfd27461740299082a1",
+    "form": "InstitutionalPractice",
+    "stage": "改革开放和社会主义现代化建设",
+    "region": "REGION-PROVINCE:江西省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-03a65a72f1474967486fd0f0",
+    "form": "InstitutionalPractice",
+    "stage": "土地革命战争",
+    "region": "REGION-PROVINCE:贵州省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-0328818b6c15f9a21627a19e",
+    "form": "HistoricalPractice",
+    "stage": "建党与大革命",
+    "region": "REGION-PROVINCE:湖北省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-007713817414a0c9e22f48d8",
+    "form": "HistoricalPractice",
+    "stage": "建党与大革命",
+    "region": "REGION-PROVINCE:江西省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-045175b8955c86c3563fd704",
+    "form": "InstitutionalPractice",
+    "stage": "建党与大革命",
+    "region": "REGION-PROVINCE:四川省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "member_events_asserted"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-0461a1a52a28da47c538e244",
+    "form": "HistoricalPractice",
+    "stage": "解放战争",
+    "region": "REGION-PROVINCE:江苏省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-005e13b95327d707d9681db2",
+    "form": "HistoricalPractice",
+    "stage": "建党与大革命",
+    "region": "REGION-PROVINCE:江西省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-0327e0cfc8f23f729b12c7bb",
+    "form": "CreativeNarrative",
+    "stage": "建党与大革命",
+    "region": "REGION-PROVINCE:江西省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-03c6dbfd78eb62990eea7a41",
+    "form": "HistoricalPractice",
+    "stage": "土地革命战争",
+    "region": "REGION-PROVINCE:湖北省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-023611845d634230968ce8a3",
+    "form": "HistoricalPractice",
+    "stage": "社会主义革命和建设",
+    "region": "REGION-PROVINCE:四川省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "member_events_trusted"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-03fbd0a6c622e9add444073d",
+    "form": "HistoricalPractice",
+    "stage": "解放战争",
+    "region": "REGION-PROVINCE:四川省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-01c562890729835c290d999e",
+    "form": "HistoricalPractice",
+    "stage": "社会主义革命和建设",
+    "region": "REGION-PROVINCE:四川省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-03832f0b7983039a57d09327",
+    "form": "InstitutionalPractice",
+    "stage": "土地革命战争",
+    "region": "REGION-PROVINCE:湖南省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "member_events_asserted"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-02761fe99d213efb2bd7d7e1",
+    "form": "HistoricalPractice",
+    "stage": "土地革命战争",
+    "region": "REGION-PROVINCE:湖北省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-03e99ebaa34cfec207b0adbb",
+    "form": "MemoryTransmission",
+    "stage": "解放战争",
+    "region": "REGION-PROVINCE:湖北省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "member_events_asserted"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-025a507fa263e4aa8c1bb7bc",
+    "form": "HistoricalPractice",
+    "stage": "建党与大革命",
+    "region": "REGION-PROVINCE:湖北省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-021d0d0a413ba2d3485fc27e",
+    "form": "InstitutionalPractice",
+    "stage": "解放战争",
+    "region": "REGION-PROVINCE:贵州省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-04417d3f17af0c3d473bd5c1",
+    "form": "DocumentaryCulture",
+    "stage": "建党与大革命",
+    "region": "REGION-PROVINCE:四川省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-03b5b6c369545326c6dc2735",
+    "form": "HistoricalPractice",
+    "stage": "全民族抗日战争",
+    "region": "REGION-PROVINCE:湖南省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-00e751c31d7be7c45e7188e6",
+    "form": "InstitutionalPractice",
+    "stage": "社会主义革命和建设",
+    "region": "REGION-PROVINCE:云南省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "member_events_trusted"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-02f4b124837915c9024f44b8",
+    "form": "HistoricalPractice",
+    "stage": "土地革命战争",
+    "region": "REGION-PROVINCE:四川省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-02c877d6c4e5d9a8ff5643e0",
+    "form": "HistoricalPractice",
+    "stage": "土地革命战争",
+    "region": "REGION-PROVINCE:湖北省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-024217b8cc88cdc1b1e85b7d",
+    "form": "HistoricalPractice",
+    "stage": "建党与大革命",
+    "region": "REGION-PROVINCE:四川省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-01f976831d8fad81888a2789",
+    "form": "InstitutionalPractice",
+    "stage": "土地革命战争",
+    "region": "REGION-PROVINCE:湖北省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-0058320b5ab41da1bdb58ca2",
+    "form": "HistoricalPractice",
+    "stage": "解放战争",
+    "region": "REGION-PROVINCE:贵州省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-03bc3071e85cbf04f0404fc6",
+    "form": "HistoricalPractice",
+    "stage": "土地革命战争",
+    "region": "REGION-PROVINCE:贵州省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "stage_interval"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-019d5f8a4ced8123facd3a5b",
+    "form": "InstitutionalPractice",
+    "stage": "社会主义革命和建设",
+    "region": "REGION-PROVINCE:云南省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "member_events_asserted"
+  },
+  {
+    "q_type": "Q6_CultureState",
+    "state_id": "STATE-025f9b671f3ab66ec8f368fe",
+    "form": "InstitutionalPractice",
+    "stage": "建党与大革命",
+    "region": "REGION-PROVINCE:江西省",
+    "has_time": true,
+    "n_events": 1,
+    "time_source": "member_events_asserted"
+  }
+]
