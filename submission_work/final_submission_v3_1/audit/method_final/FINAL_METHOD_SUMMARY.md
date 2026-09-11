@@ -129,6 +129,13 @@ U1-U10 升级规格；LM Studio 生产链（gpt-oss-20b，零公网依赖）。
 5. Relation Contract 定位收缩为纯结构约束；
 6. 新增质量-预算权衡与升级成本公式（原方法完全缺失的维度）。
 
+## 补：冻结 TEST 正式数字（方法冻结 config 929c6a5 后唯一一次 TEST 运行）
+
+- 消融（n=62）：S0_production_faithful cov 0.065 / acc 0.250；盲 LLM cov 1.0 / acc 0.710；
+- 三路路由 @30% 预算（leave-B-out 口径，48 条有参考）：coverage 0.979 / sel_acc 0.617 /
+  升级段一致率 0.80（9:1 翻转）；与 DEV/VAL 同向且不劣，无漂移；
+- 边界：TEST n=62，读数具方向性意义，不做显著性声明；本表为唯一一次 TEST 运行。
+
 ## 最终判断
 
 **当前最终方法（Predictor + Risk Estimator + Selective Escalation + Selective Closure +

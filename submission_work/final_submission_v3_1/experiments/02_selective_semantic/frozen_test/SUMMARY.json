@@ -1,0 +1,352 @@
+{
+  "created_utc": "2026-09-11T01:21:32+00:00",
+  "script": "code/experiment_pipelines/run_frozen_test_eval.py",
+  "purpose": "方法冻结后唯一一次 TEST 正式评价（指令 §25）",
+  "single_run_declaration": "本表为方法冻结后唯一一次 TEST 评价，此前 TEST 未参与任何训练或调参；本运行之后不得再根据其结果修改任何方法组件。",
+  "frozen_components": {
+    "ablation_config_hash": "929c6a51430b85e3",
+    "ablation_summary_file": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\ABLATION_SUMMARY_strong_test.json",
+    "risk_model": {
+      "chosen": "DecisionTree_max_depth4",
+      "val_auprc": 0.7282641120984853,
+      "train": "DEV strong labels, n=166, seed=20260908",
+      "card": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\RISK_MODEL_CARD.json"
+    },
+    "tau_accept": 0.6666666666666666,
+    "tau_accept_source": "risk_routing/SUMMARY.json tau_accept_by_budget[b030][val]（VAL 学习，冻结）",
+    "tau_escalate_frozen_val": 0.84375,
+    "operating_budget": 0.3,
+    "routing_semantics": "ESCALATE = split 内 r_hat 最高前 k=round-half-up(b*n)（并列 (-r_hat, sample_id)）；AUTO_ACCEPT = 非升级且 clf_pred 存在且 r_hat<=tau_accept；ABSTAIN = 其余；clf_pred 缺失 → r_hat=1.0，永不 AUTO_ACCEPT",
+    "escalation_model": "openai/gpt-oss-20b",
+    "escalation_prompt_version": "risk_routing.escalation.v1",
+    "escalation_prompt_sha256": "2c67d6cd7cc629d3ec2ce43131f111b56c5367ef110c37f410d6ff4cda6ba804",
+    "split_manifest_sha256": "59b38d41fb9ec59609efca97daf10902dcf6ec869f7f55598fb04e00cf05a457"
+  },
+  "verification": {
+    "risk_model_matches_card": true,
+    "val_auprc_matches_card": true,
+    "r_hat_reuse_vs_routing_runs": {
+      "checked_files": [
+        {
+          "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\ROUTING_RUNS_dev.csv",
+          "n_compared": 254
+        },
+        {
+          "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\ROUTING_RUNS_val.csv",
+          "n_compared": 66
+        }
+      ],
+      "n_compared": 320,
+      "max_abs_diff": 3.33333333379926e-07,
+      "match": true
+    },
+    "devval_escalations_all_from_readonly_cache": true,
+    "n_devval_readonly": 96,
+    "prompt_sha_matches_frozen": true
+  },
+  "population": {
+    "n_frame": 382,
+    "n_dev": 254,
+    "n_val": 66,
+    "n_test": 62,
+    "n_lob_labeled": {
+      "dev": 207,
+      "val": 54,
+      "test": 48
+    },
+    "n_strong_labeled": {
+      "dev": 182,
+      "val": 48,
+      "test": 46
+    },
+    "n_no_clf_pred": {
+      "dev": 24,
+      "val": 8,
+      "test": 3
+    }
+  },
+  "routing_counts": {
+    "dev": {
+      "k_escalate": 76,
+      "auto_accept": 160,
+      "abstain": 18,
+      "tau_escalate_derived": 0.84375
+    },
+    "val": {
+      "k_escalate": 20,
+      "auto_accept": 41,
+      "abstain": 5,
+      "tau_escalate_derived": 0.84375
+    },
+    "test": {
+      "k_escalate": 19,
+      "auto_accept": 41,
+      "abstain": 2,
+      "tau_escalate_derived": 0.84375
+    }
+  },
+  "test_escalation_calls": {
+    "fresh_calls_made": 19,
+    "ok": 19,
+    "valid_decisions": 19,
+    "invalid_decisions": 0,
+    "errors": 0,
+    "log": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\frozen_test\\ESCALATION_CALLS_TEST.jsonl",
+    "budget_cap": 19
+  },
+  "metrics_primary_lob": {
+    "dev": {
+      "n_all": 254,
+      "n_eval_labeled": 207,
+      "n_auto_accept": 160,
+      "n_escalate": 76,
+      "n_abstain": 18,
+      "llm_call_rate": 0.299213,
+      "coverage": 0.937198,
+      "semantic_agreement": 0.510309,
+      "selective_accuracy": 0.510309,
+      "selective_risk": 0.489691,
+      "generalized_risk": 0.458937,
+      "aurc": 0.604465,
+      "n_correct_published": 99,
+      "eval_wrong_prevalence": 0.623188,
+      "n_escalated_labeled": 63,
+      "escalation_segment_agreement": 0.777778,
+      "wrong_to_right_escalated": 28,
+      "right_to_wrong_escalated": 1,
+      "accept_segment_agreement": 0.381679,
+      "n_escalated_with_base_pred": 42
+    },
+    "val": {
+      "n_all": 66,
+      "n_eval_labeled": 54,
+      "n_auto_accept": 41,
+      "n_escalate": 20,
+      "n_abstain": 5,
+      "llm_call_rate": 0.30303,
+      "coverage": 0.925926,
+      "semantic_agreement": 0.46,
+      "selective_accuracy": 0.46,
+      "selective_risk": 0.54,
+      "generalized_risk": 0.5,
+      "aurc": 0.765519,
+      "n_correct_published": 23,
+      "eval_wrong_prevalence": 0.592593,
+      "n_escalated_labeled": 15,
+      "escalation_segment_agreement": 0.733333,
+      "wrong_to_right_escalated": 4,
+      "right_to_wrong_escalated": 0,
+      "accept_segment_agreement": 0.342857,
+      "n_escalated_with_base_pred": 8
+    },
+    "test": {
+      "n_all": 62,
+      "n_eval_labeled": 48,
+      "n_auto_accept": 41,
+      "n_escalate": 19,
+      "n_abstain": 2,
+      "llm_call_rate": 0.306452,
+      "coverage": 0.979167,
+      "semantic_agreement": 0.617021,
+      "selective_accuracy": 0.617021,
+      "selective_risk": 0.382979,
+      "generalized_risk": 0.375,
+      "aurc": 0.591444,
+      "n_correct_published": 29,
+      "eval_wrong_prevalence": 0.541667,
+      "n_escalated_labeled": 15,
+      "escalation_segment_agreement": 0.8,
+      "wrong_to_right_escalated": 9,
+      "right_to_wrong_escalated": 1,
+      "accept_segment_agreement": 0.53125,
+      "n_escalated_with_base_pred": 12
+    }
+  },
+  "metrics_strong_sensitivity": {
+    "dev": {
+      "n_all": 254,
+      "n_eval_labeled": 182,
+      "n_auto_accept": 160,
+      "n_escalate": 76,
+      "n_abstain": 18,
+      "llm_call_rate": 0.299213,
+      "coverage": 0.928571,
+      "semantic_agreement": 0.532544,
+      "selective_accuracy": 0.532544,
+      "selective_risk": 0.467456,
+      "generalized_risk": 0.434066,
+      "aurc": 0.549992,
+      "n_correct_published": 90,
+      "eval_wrong_prevalence": 0.626374,
+      "n_escalated_labeled": 52,
+      "escalation_segment_agreement": 0.826923,
+      "wrong_to_right_escalated": 26,
+      "right_to_wrong_escalated": 1,
+      "accept_segment_agreement": 0.401709,
+      "n_escalated_with_base_pred": 36
+    },
+    "val": {
+      "n_all": 66,
+      "n_eval_labeled": 48,
+      "n_auto_accept": 41,
+      "n_escalate": 20,
+      "n_abstain": 5,
+      "llm_call_rate": 0.30303,
+      "coverage": 0.916667,
+      "semantic_agreement": 0.409091,
+      "selective_accuracy": 0.409091,
+      "selective_risk": 0.590909,
+      "generalized_risk": 0.541667,
+      "aurc": 0.789639,
+      "n_correct_published": 18,
+      "eval_wrong_prevalence": 0.625,
+      "n_escalated_labeled": 10,
+      "escalation_segment_agreement": 0.7,
+      "wrong_to_right_escalated": 3,
+      "right_to_wrong_escalated": 0,
+      "accept_segment_agreement": 0.323529,
+      "n_escalated_with_base_pred": 5
+    },
+    "test": {
+      "n_all": 62,
+      "n_eval_labeled": 46,
+      "n_auto_accept": 41,
+      "n_escalate": 19,
+      "n_abstain": 2,
+      "llm_call_rate": 0.306452,
+      "coverage": 0.978261,
+      "semantic_agreement": 0.644444,
+      "selective_accuracy": 0.644444,
+      "selective_risk": 0.355556,
+      "generalized_risk": 0.347826,
+      "aurc": 0.561533,
+      "n_correct_published": 29,
+      "eval_wrong_prevalence": 0.521739,
+      "n_escalated_labeled": 14,
+      "escalation_segment_agreement": 0.857143,
+      "wrong_to_right_escalated": 9,
+      "right_to_wrong_escalated": 1,
+      "accept_segment_agreement": 0.548387,
+      "n_escalated_with_base_pred": 11
+    }
+  },
+  "comparison_table_lob": {
+    "columns": [
+      "metric",
+      "dev",
+      "val",
+      "test"
+    ],
+    "note": "同口径：b=30% 三路路由 + leave-B-out 参考；DEV/VAL 升级决策只读复用既有缓存",
+    "rows": {
+      "n_all": [
+        254,
+        66,
+        62
+      ],
+      "n_eval_labeled": [
+        207,
+        54,
+        48
+      ],
+      "n_auto_accept": [
+        160,
+        41,
+        41
+      ],
+      "n_escalate": [
+        76,
+        20,
+        19
+      ],
+      "n_abstain": [
+        18,
+        5,
+        2
+      ],
+      "llm_call_rate": [
+        0.299213,
+        0.30303,
+        0.306452
+      ],
+      "coverage": [
+        0.937198,
+        0.925926,
+        0.979167
+      ],
+      "selective_accuracy": [
+        0.510309,
+        0.46,
+        0.617021
+      ],
+      "selective_risk": [
+        0.489691,
+        0.54,
+        0.382979
+      ],
+      "generalized_risk": [
+        0.458937,
+        0.5,
+        0.375
+      ],
+      "aurc": [
+        0.604465,
+        0.765519,
+        0.591444
+      ],
+      "n_escalated_labeled": [
+        63,
+        15,
+        15
+      ],
+      "escalation_segment_agreement": [
+        0.777778,
+        0.733333,
+        0.8
+      ],
+      "wrong_to_right_escalated": [
+        28,
+        4,
+        9
+      ],
+      "right_to_wrong_escalated": [
+        1,
+        0,
+        1
+      ],
+      "accept_segment_agreement": [
+        0.381679,
+        0.342857,
+        0.53125
+      ]
+    }
+  },
+  "guards": {
+    "fit_path_excludes_test": true,
+    "devval_no_fresh_calls": true,
+    "fresh_calls_only_test_escalation_band": true,
+    "quality_reference_primary": "leave_b_out (judge_removed=B)",
+    "strong_reference_role": "sensitivity only（含 Judge B，禁止作为质量上限）",
+    "no_method_change_after_this_run": true
+  },
+  "inputs_sha256": {
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\SUMMARY.json": "bffcec95eec843804ef87818f6906527c6e505e010dbd7544411cb0ab920dc87",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\RISK_MODEL_CARD.json": "dc92c4dd31cc2b57152140271a63b7ac36057c4b0fcc318402720ef0e2b152a0",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\ABLATION_SUMMARY_strong_test.json": "c961fe377a191cea78265efb04d0f26772bc2678c3064e2e7aa017f184fb1bf0",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\data\\frozen_splits\\SPLIT_MANIFEST.json": "59b38d41fb9ec59609efca97daf10902dcf6ec869f7f55598fb04e00cf05a457",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\IMCR_REFERENCE_LEAVE_B_OUT.csv": "50bd576f6190cee8562bf8a58cbb4296756b94b3adac934321fe5d769918568c",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\IMCR_REFERENCE_STRONG.csv": "798a29a52be82c3054620b6dc0d981ee7807d38e51bba42c906f9436116c27a4",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\09_independent_baselines\\IMCR_BASELINE_RUNS.csv": "07ef17a42864df5c5f56eec307b4be2c8984d23fbf6e45a6242e01bbc4f1cd49",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\ENTITY_TYPE_SAMPLE.csv": "284fe8c4d7f37b0476a880fe8e52facd631b21630aa1c7bc5ead7e71b0c9ed82",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\ENTITY_TYPE_SAMPLE.sampling_metadata.csv": "625f6c6c0ba3b1bd84de0457905b17cd676a03f9ba96be6647f556488f450c70",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\ESCALATION_CALLS.jsonl": "ae094a044ecb4cd0ce52c8c720937c422e91bdfd0ef6098c967ec6436a2fd8e4",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\budget_v2\\ESCALATION_CALLS.jsonl": "44b1ab96ad6340bdf72571db27523e7cfa09d3e6453c27191fcb4ffd4d80944a"
+  },
+  "outputs": {
+    "runs_test": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\frozen_test\\ROUTING_RUNS_TEST.csv",
+    "runs_devval_reeval": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\frozen_test\\ROUTING_RUNS_DEVVAL_REEVAL.csv",
+    "test_escalation_log": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\frozen_test\\ESCALATION_CALLS_TEST.jsonl",
+    "summary": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\frozen_test\\SUMMARY.json"
+  },
+  "wall_seconds": 80.2
+}

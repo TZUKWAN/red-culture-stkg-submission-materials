@@ -1,0 +1,310 @@
+{
+  "pipeline": "run_cross_source_robustness.py (指令 §18 三切分跨来源稳健性)",
+  "seed": 20260910,
+  "protocol": "weak-label 口径：训练与 held-out 评价标签均为生产分类器分数表 predicted_type（class_gate_pass=1），与生产 M3 训练口径逐行一致；held-out weak 标签仅用于同口径下的切分间相对比较。IMCR 独立参考（strong labels）不进入本实验的任何训练或评价调用。",
+  "imcr_reference_used": false,
+  "versions": {
+    "python": "3.13.2",
+    "sklearn": "1.8.0",
+    "numpy": "2.3.5"
+  },
+  "corpus_manifest": {
+    "source": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\source_data\\stkg_v2_entity_classifier.sqlite",
+    "sha256": "0343ba31ba2404c1f1f8ba7eef8ca9083d7670cfe06af875be67c7c4e7a80b7f",
+    "table": "entity_predictions",
+    "filter": "class_gate_pass=1",
+    "weak_label_field": "predicted_type",
+    "text_field": "canonical_name",
+    "n_rows_total": 6813,
+    "n_corpus": 1210,
+    "n_unique_texts": 946,
+    "class_distribution": {
+      "Concept": 6,
+      "Document": 52,
+      "Event": 156,
+      "Institution": 77,
+      "Organization": 550,
+      "Person": 145,
+      "Place": 222,
+      "ValueFacet": 2
+    }
+  },
+  "provenance_stats": {
+    "final_db": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\release_databases\\red_culture_stkg_final_v2.sqlite",
+    "final_db_sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+    "integration_db": "D:\\REDCULTUREDATA\\final_stkg_pipeline\\red_culture_semantic_integration_v1.sqlite",
+    "integration_db_sha256": "f4eb4f065f5d8c6e73af791034013f388b8b4ab1b617af4220b8129ab70f746c",
+    "chain": "entity_predictions.entity_id → research_entity_members.source_entity_id → canonical_entity_id → research_assertions(成员断言) → research_assertion_provenance.evidence_ids_json → up.evidence_registry.source_title",
+    "province_chain": "成员断言 fact_id → research_assertion_regions → research_study_regions.province_name",
+    "n_entities_no_member_assertion": 11,
+    "n_entities_assert_but_no_evidence": 534,
+    "n_entities_with_book": 572,
+    "n_entities_no_book": 638,
+    "n_distinct_books": 986,
+    "n_entities_with_province": 398,
+    "province_order": {
+      "青海省": 0,
+      "西藏自治区": 1,
+      "四川省": 2,
+      "云南省": 3,
+      "贵州省": 4,
+      "重庆市": 5,
+      "湖北省": 6,
+      "湖南省": 7,
+      "江西省": 8,
+      "安徽省": 9,
+      "江苏省": 10,
+      "上海市": 11,
+      "浙江省": 12
+    }
+  },
+  "production_base": {
+    "joblib": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\predictor_upgrade\\M3_improved_predictor.joblib",
+    "sha256": "2beea9587ec2a713d8c4b68bde829f2a95ea6fef056bddcf954382dfb3546500",
+    "route": "B_embed_lr",
+    "artifact_class": "EmbedTextClassifier",
+    "classes": [
+      "Concept",
+      "Document",
+      "Event",
+      "Institution",
+      "Organization",
+      "Person",
+      "Place",
+      "ValueFacet"
+    ],
+    "n_train_production": 1210,
+    "clf_params_reused": {
+      "C": 2,
+      "class_weight": "balanced",
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 5000,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": 20260910,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "deviation": "random_state=20260910（本实验 seed）；其余超参逐项取自生产 clf.get_params()",
+    "loadable": true
+  },
+  "embed_stats": {
+    "n_requested": 1210,
+    "n_unique": 946,
+    "n_new_embedded": 0,
+    "dim": 768,
+    "seconds": 0.0,
+    "batch_size": 64,
+    "checkpoint_every": 256,
+    "cache": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\09_cross_source_robustness\\emb_cache\\EMB_CACHE.npy",
+    "backend": "lmstudio text-embedding-nomic-embed-text-v1.5 (本地 127.0.0.1)",
+    "lineage": null,
+    "seeded_from_production": 0,
+    "m3_cache_sha256": null,
+    "n_live_embedded_after_seed": 0
+  },
+  "split_info": {
+    "book_grouped": {
+      "rule": "B1 实体—书并查集分量；B2 最大分量按构造归 train（互引核心 569/572，分量级 80/20 结构性不可达，与 frozen_splits R1 同惯例）；B3 其余分量按 sha256(seed:bg:cid) 序补足 train 预算；B4 无书实体单列 nobook:{eid} 组同序分配",
+      "seed": 20260910,
+      "n_components": 642,
+      "largest_component_size": 569,
+      "largest_component_pinned_to": "train",
+      "n_components_booked": 4,
+      "n_entities_no_book": 638,
+      "n_train": 968,
+      "n_heldout": 242
+    },
+    "province_holdout": {
+      "rule": "held-out = 关联该省的全部实体（跨省实体整体归 held-out 以保证省份完整）；选省 = 实体关联数中位数（并列取 province_order 小者）；无省实体留 train",
+      "chosen_province": "湖北省",
+      "chosen_province_order": 6,
+      "province_entity_counts": {
+        "江西省": 82,
+        "贵州省": 81,
+        "云南省": 77,
+        "四川省": 75,
+        "安徽省": 75,
+        "湖南省": 64,
+        "湖北省": 51,
+        "江苏省": 51,
+        "重庆市": 47,
+        "上海市": 28,
+        "浙江省": 10,
+        "青海省": 2,
+        "西藏自治区": 1
+      },
+      "median_count": 51,
+      "tie_with": [
+        "江苏省"
+      ],
+      "n_train": 1159,
+      "n_heldout": 51
+    }
+  },
+  "metrics": {
+    "random": {
+      "split": "random",
+      "n_train": 968,
+      "n_heldout": 242,
+      "fit_seconds": 0.06,
+      "accuracy": 0.5413,
+      "macro_f1": 0.4313,
+      "balanced_accuracy": 0.4752,
+      "coverage": 0.2562,
+      "selective_risk": 0.129,
+      "aurc_trapezoid": 0.2526,
+      "n_covered": 62,
+      "per_class_f1": {
+        "Concept": 0.1818,
+        "Document": 0.3077,
+        "Event": 0.4086,
+        "Institution": 0.8462,
+        "Organization": 0.6429,
+        "Person": 0.4533,
+        "Place": 0.6098,
+        "ValueFacet": 0.0
+      },
+      "per_class_support": {
+        "Concept": 2,
+        "Document": 13,
+        "Event": 34,
+        "Institution": 13,
+        "Organization": 101,
+        "Person": 35,
+        "Place": 44,
+        "ValueFacet": 0
+      },
+      "leakage_diagnostic": {
+        "heldout_dup_name_in_train": 85,
+        "heldout_share_book_with_train": 101,
+        "heldout_booked": 103
+      }
+    },
+    "book_grouped": {
+      "split": "book_grouped",
+      "n_train": 968,
+      "n_heldout": 242,
+      "fit_seconds": 0.05,
+      "accuracy": 0.5331,
+      "macro_f1": 0.4012,
+      "balanced_accuracy": 0.4183,
+      "coverage": 0.2975,
+      "selective_risk": 0.1389,
+      "aurc_trapezoid": 0.2421,
+      "n_covered": 72,
+      "per_class_f1": {
+        "Concept": 0.0,
+        "Document": 0.5238,
+        "Event": 0.3364,
+        "Institution": 0.7692,
+        "Organization": 0.6952,
+        "Person": 0.375,
+        "Place": 0.5098,
+        "ValueFacet": 0.0
+      },
+      "per_class_support": {
+        "Concept": 1,
+        "Document": 17,
+        "Event": 39,
+        "Institution": 7,
+        "Organization": 131,
+        "Person": 24,
+        "Place": 22,
+        "ValueFacet": 1
+      },
+      "leakage_diagnostic": {
+        "heldout_dup_name_in_train": 84,
+        "heldout_share_book_with_train": 0,
+        "heldout_booked": 2
+      }
+    },
+    "province_holdout": {
+      "split": "province_holdout",
+      "n_train": 1159,
+      "n_heldout": 51,
+      "fit_seconds": 0.05,
+      "accuracy": 0.549,
+      "macro_f1": 0.4316,
+      "balanced_accuracy": 0.4149,
+      "coverage": 0.3725,
+      "selective_risk": 0.2105,
+      "aurc_trapezoid": 0.2962,
+      "n_covered": 19,
+      "per_class_f1": {
+        "Concept": 0.0,
+        "Document": 0.5,
+        "Event": 0.3529,
+        "Institution": 0.8889,
+        "Organization": 0.6154,
+        "Person": 0.4,
+        "Place": 0.6957,
+        "ValueFacet": 0.0
+      },
+      "per_class_support": {
+        "Concept": 0,
+        "Document": 3,
+        "Event": 5,
+        "Institution": 5,
+        "Organization": 17,
+        "Person": 8,
+        "Place": 13,
+        "ValueFacet": 0
+      },
+      "leakage_diagnostic": {
+        "heldout_dup_name_in_train": 10,
+        "heldout_share_book_with_train": 36,
+        "heldout_booked": 38
+      }
+    }
+  },
+  "degradation": {
+    "macro_f1": {
+      "random": 0.4313,
+      "book_grouped": 0.4012,
+      "province_holdout": 0.4316
+    },
+    "delta_book_minus_random": -0.0301,
+    "delta_province_minus_random": 0.0003,
+    "delta_province_minus_book": 0.0304,
+    "random_overestimates": true,
+    "note": "退化梯度 = random → book_grouped → province_holdout 的 macro-F1 下降；负值越大（绝对值）说明随机切分相对该口径高估越多"
+  },
+  "top3_class_drop": [
+    {
+      "rank": 1,
+      "class": "Concept",
+      "f1_random": 0.1818,
+      "f1_book_grouped": 0.0,
+      "f1_province_holdout": 0.0,
+      "delta_province_minus_random": -0.1818,
+      "delta_book_minus_random": -0.1818
+    },
+    {
+      "rank": 2,
+      "class": "Event",
+      "f1_random": 0.4086,
+      "f1_book_grouped": 0.3364,
+      "f1_province_holdout": 0.3529,
+      "delta_province_minus_random": -0.0557,
+      "delta_book_minus_random": -0.0722
+    },
+    {
+      "rank": 3,
+      "class": "Person",
+      "f1_random": 0.4533,
+      "f1_book_grouped": 0.375,
+      "f1_province_holdout": 0.4,
+      "delta_province_minus_random": -0.0533,
+      "delta_book_minus_random": -0.0783
+    }
+  ],
+  "timings": {
+    "total_s": 12.37
+  }
+}
