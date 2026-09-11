@@ -54,3 +54,14 @@
 2026-09-10T23:28:07+08:00 queue start pending=116 workers=4 model=openai/gpt-oss-20b
 2026-09-10T23:40:23+08:00 queue start pending=98632 workers=4 model=openai/gpt-oss-20b
 2026-09-10T23:52:25+08:00 queue start pending=98632 workers=4 model=openai/gpt-oss-20b
+2026-09-11T11:50:28+08:00 queue start pending=98632 workers=6 model=openai/gpt-oss-20b
+2026-09-11T12:48:14+08:00 checkpoint 500/98632 flushed (failed=1)
+2026-09-11T13:22:14+08:00 checkpoint 1000/98632 flushed (failed=1)
+2026-09-11T13:22:14+08:00 chunk done: 1000/98632, 0.18 it/s, ETA 149.3 h, failed=1
+2026-09-11T13:54:14+08:00 checkpoint 1500/98632 flushed (failed=1)
+2026-09-11T14:26:43+08:00 checkpoint 2000/98632 flushed (failed=7)
+2026-09-11T14:26:43+08:00 chunk done: 2000/98632, 0.21 it/s, ETA 125.8 h, failed=7
+2026-09-11T15:02:46+08:00 checkpoint 2500/98632 flushed (failed=13)
+2026-09-11T15:20:20+08:00 queue start pending=95897 workers=6 model=openai/gpt-oss-20b
+2026-09-11T15:53:33+08:00 checkpoint 500/95897 flushed (failed=7)
+2026-09-11T16:59:37+08:00 queue start pending=95218 workers=6 model=openai/gpt-oss-20b
