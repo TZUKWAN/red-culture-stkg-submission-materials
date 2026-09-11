@@ -1,0 +1,35 @@
+{
+  "total_pages": 302230,
+  "screening_version": "page_screening_v1",
+  "seed": 20260910,
+  "ocr_dir": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output",
+  "books_count": 984,
+  "signal_distribution": {
+    "event": 148368,
+    "time": 194714,
+    "place": 255618,
+    "culture": 109933,
+    "document": 142755,
+    "org": 141633,
+    "person_freq": 128809,
+    "person": 125517,
+    "meeting": 77896
+  },
+  "score_distribution": {
+    "0": 11753,
+    "1": 16945,
+    "2": 32332,
+    "3": 43361,
+    "4": 49450,
+    "5": 50568,
+    "6": 45483,
+    "7": 32511,
+    "8": 16007,
+    "9": 3820
+  },
+  "pages_with_any_signal": 290477,
+  "pages_no_signal": 11753,
+  "elapsed_seconds": 367.2,
+  "output_csv": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\final_release\\data\\PAGE_SCREENING.csv",
+  "output_sha256": "517d9d444321f8a95d2ecbd574da33ca78def0b8fb2d6f0e33383afcca85b14d"
+}
