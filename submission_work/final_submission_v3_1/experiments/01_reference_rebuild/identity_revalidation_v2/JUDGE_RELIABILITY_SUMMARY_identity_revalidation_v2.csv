@@ -1,0 +1,12 @@
+﻿task_type,metric,value
+identity_revalidation_v2,n_tasks,600
+identity_revalidation_v2,n_judges,3
+identity_revalidation_v2,judges,"['A', 'B', 'C']"
+identity_revalidation_v2,n_strong_consensus,320
+identity_revalidation_v2,n_weak_consensus,258
+identity_revalidation_v2,n_unresolved,22
+identity_revalidation_v2,mean_pairwise_agreement,0.6884615384615383
+identity_revalidation_v2,fleiss_kappa,0.4061778057467517
+identity_revalidation_v2,krippendorff_alpha_nominal,0.4078899471100885
+identity_revalidation_v2,min_leave_one_judge_out_stability,0.6747404844290658
+identity_revalidation_v2,mean_leave_one_judge_out_stability,0.7024221453287197

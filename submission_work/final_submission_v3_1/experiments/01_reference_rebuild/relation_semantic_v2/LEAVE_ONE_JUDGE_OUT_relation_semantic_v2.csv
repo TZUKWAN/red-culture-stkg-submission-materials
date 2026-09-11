@@ -1,0 +1,4 @@
+﻿task_type,judge_removed,n_tasks,n_labeled_full_panel,n_unchanged_after_removal,stability
+relation_semantic_v2,A,800,759,548,0.7220026350461133
+relation_semantic_v2,B,800,759,570,0.7509881422924901
+relation_semantic_v2,C,800,759,559,0.7364953886693018

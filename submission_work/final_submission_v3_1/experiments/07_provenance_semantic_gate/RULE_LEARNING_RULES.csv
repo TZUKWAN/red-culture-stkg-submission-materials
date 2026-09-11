@@ -1,0 +1,30 @@
+﻿rule_id,status,target_verdict,conditions,train_n,train_k,train_precision,train_wilson_lb,train_wilson_ub,train_recall,train_coverage,val_n,val_k,val_precision,val_wilson_lb,val_wilson_ub,val_coverage,high_confidence
+R0_POLICY_NO_EVIDENCE,POLICY,INSUFFICIENT,stratum=recovery_D OR evidence_empty（空证据强制，同语义门规则；非学习规则）,NA,NA,1.0(定义),NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,POLICY
+R-UNSU-01,TRAIN_PASS_VAL_FAIL,UNSUPPORTED,subj_type=Artifact,41,41,1.0,0.9143,1.0,0.021,0.011,13,13,1.0,0.7719,1.0,0.0105,0
+R-UNSU-02,TRAIN_PASS_VAL_FAIL,UNSUPPORTED,elen:le50 AND subj_type=Artifact,39,39,1.0,0.9103,1.0,0.0199,0.0105,13,13,1.0,0.7719,1.0,0.0105,0
+R-UNSU-03,TRAIN_PASS_VAL_FAIL,UNSUPPORTED,n:nev1 AND subj_type=Artifact,39,39,1.0,0.9103,1.0,0.0199,0.0105,12,12,1.0,0.7575,1.0,0.0097,0
+R-UNSU-04,TRAIN_PASS_VAL_FAIL,UNSUPPORTED,stratum=mismatch_with_evidence AND subj_type=Artifact,39,39,1.0,0.9103,1.0,0.0199,0.0105,11,11,1.0,0.7412,1.0,0.0088,0
+R-UNSU-05,TRAIN_PASS_VAL_FAIL,UNSUPPORTED,elen:le50 AND n:nev1 AND subj_type=Artifact,37,37,1.0,0.9059,1.0,0.0189,0.0099,12,12,1.0,0.7575,1.0,0.0097,0
+R-UNSU-06,TRAIN_PASS_VAL_FAIL,UNSUPPORTED,elen:le50 AND stratum=mismatch_with_evidence AND subj_type=Artifact,37,37,1.0,0.9059,1.0,0.0189,0.0099,11,11,1.0,0.7412,1.0,0.0088,0
+R-UNSU-07,TRAIN_PASS_VAL_FAIL,UNSUPPORTED,n:nev1 AND stratum=mismatch_with_evidence AND subj_type=Artifact,37,37,1.0,0.9059,1.0,0.0189,0.0099,10,10,1.0,0.7225,1.0,0.008,0
+R-UNSU-08,TRAIN_PASS_VAL_FAIL,UNSUPPORTED,elen:le50 AND n:nev1 AND stratum=mismatch_with_evidence AND subj_type=Artifact,35,35,1.0,0.9011,1.0,0.0179,0.0094,10,10,1.0,0.7225,1.0,0.008,0
+NEARMISS,REJECTED,FULLY_SUPPORTED,gap:le40 AND n:nev3 AND pred=active_at AND pred_cue_between=0,36,33,0.9167,0.7817,0.9713,0.0382,0.0097,,,,,,,0
+NEARMISS,REJECTED,FULLY_SUPPORTED,elen:le200 AND gap:le40 AND mmode=NA AND pred=active_at,50,45,0.9,0.7864,0.9565,0.0521,0.0134,,,,,,,0
+NEARMISS,REJECTED,FULLY_SUPPORTED,elen:le200 AND gap:le40 AND pred=active_at AND stratum=aligned,50,45,0.9,0.7864,0.9565,0.0521,0.0134,,,,,,,0
+NEARMISS,REJECTED,FULLY_SUPPORTED,elen:le200 AND gap:le40 AND pred=active_at AND time_present=0,64,56,0.875,0.7723,0.9353,0.0648,0.0172,,,,,,,0
+NEARMISS,REJECTED,FULLY_SUPPORTED,elen:le200 AND gap:le40 AND pred=active_at AND subj_type=Person,56,49,0.875,0.7637,0.9381,0.0567,0.015,,,,,,,0
+NEARMISS,REJECTED,FULLY_SUPPORTED,elen:le200 AND gap:le40 AND place_present=0 AND pred=active_at,63,55,0.873,0.7689,0.9342,0.0637,0.0169,,,,,,,0
+NEARMISS,REJECTED,FULLY_SUPPORTED,gap:le40 AND n:nev3 AND pred=active_at,39,34,0.8718,0.7329,0.944,0.0394,0.0105,,,,,,,0
+NEARMISS,REJECTED,FULLY_SUPPORTED,gap:le40 AND n:nev3 AND place_present=0 AND pred=active_at,39,34,0.8718,0.7329,0.944,0.0394,0.0105,,,,,,,0
+NEARMISS,REJECTED,FULLY_SUPPORTED,elen:le200 AND gap:le40 AND pred=active_at AND pred_cue_between=0,62,54,0.871,0.7655,0.9331,0.0625,0.0166,,,,,,,0
+NEARMISS,REJECTED,FULLY_SUPPORTED,gap:le40 AND mmode=NA AND n:nev3 AND pred=active_at,38,33,0.8684,0.7267,0.9425,0.0382,0.0102,,,,,,,0
+NEARMISS,REJECTED,UNSUPPORTED,elen:le50 AND obj_type=Document AND stratum=mismatch_with_evidence,54,52,0.963,0.8746,0.9898,0.0266,0.0145,,,,,,,0
+NEARMISS,REJECTED,UNSUPPORTED,elen:le50 AND obj_type=Document AND subj_hit=0,54,52,0.963,0.8746,0.9898,0.0266,0.0145,,,,,,,0
+NEARMISS,REJECTED,UNSUPPORTED,elen:le50 AND pred=mentioned_in AND stratum=mismatch_with_evidence,54,52,0.963,0.8746,0.9898,0.0266,0.0145,,,,,,,0
+NEARMISS,REJECTED,UNSUPPORTED,elen:le50 AND pred=mentioned_in AND subj_hit=0,54,52,0.963,0.8746,0.9898,0.0266,0.0145,,,,,,,0
+NEARMISS,REJECTED,UNSUPPORTED,elen:le50 AND gap:none AND obj_type=Document AND stratum=mismatch_with_evidence,54,52,0.963,0.8746,0.9898,0.0266,0.0145,,,,,,,0
+NEARMISS,REJECTED,UNSUPPORTED,elen:le50 AND gap:none AND obj_type=Document AND subj_hit=0,54,52,0.963,0.8746,0.9898,0.0266,0.0145,,,,,,,0
+NEARMISS,REJECTED,UNSUPPORTED,elen:le50 AND gap:none AND pred=mentioned_in AND stratum=mismatch_with_evidence,54,52,0.963,0.8746,0.9898,0.0266,0.0145,,,,,,,0
+NEARMISS,REJECTED,UNSUPPORTED,elen:le50 AND gap:none AND pred=mentioned_in AND subj_hit=0,54,52,0.963,0.8746,0.9898,0.0266,0.0145,,,,,,,0
+NEARMISS,REJECTED,UNSUPPORTED,elen:le50 AND mmode=NA AND obj_type=Document AND stratum=mismatch_with_evidence,54,52,0.963,0.8746,0.9898,0.0266,0.0145,,,,,,,0
+NEARMISS,REJECTED,UNSUPPORTED,elen:le50 AND mmode=NA AND obj_type=Document AND subj_hit=0,54,52,0.963,0.8746,0.9898,0.0266,0.0145,,,,,,,0

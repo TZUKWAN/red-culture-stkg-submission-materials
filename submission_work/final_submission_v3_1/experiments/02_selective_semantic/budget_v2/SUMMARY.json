@@ -1,0 +1,623 @@
+{
+  "created_utc": "2026-09-10T08:07:01+00:00",
+  "script": "code/experiment_pipelines/run_budget_curves.py",
+  "seed": 20260910,
+  "n_bootstrap": 2000,
+  "wall_seconds": 17.0,
+  "inputs_sha256": {
+    "leave_b_out_reference": "50bd576f6190cee8562bf8a58cbb4296756b94b3adac934321fe5d769918568c",
+    "blind_llm_runs": "94e18170193ae7e74feea87d8df9dc8dd9f43d9bd61ea636cf0301b46a77f5f5",
+    "strong_reference": "798a29a52be82c3054620b6dc0d981ee7807d38e51bba42c906f9436116c27a4",
+    "split_manifest": "59b38d41fb9ec59609efca97daf10902dcf6ec869f7f55598fb04e00cf05a457",
+    "old_escalation_cache_readonly": "ae094a044ecb4cd0ce52c8c720937c422e91bdfd0ef6098c967ec6436a2fd8e4"
+  },
+  "population": {
+    "n_frame": 382,
+    "n_dev": 254,
+    "n_val": 66,
+    "n_work": 320,
+    "n_test_excluded": 62,
+    "n_labeled_leave_b_out": {
+      "dev": 207,
+      "val": 54,
+      "pooled": 261
+    },
+    "n_labeled_strong_sensitivity": {
+      "dev": 182,
+      "val": 48
+    },
+    "n_no_clf_pred": {
+      "dev": 24,
+      "val": 8
+    }
+  },
+  "guards": {
+    "test_split_excluded": true,
+    "test_ids_excluded_n": 62,
+    "assert_no_test_samples_called": true,
+    "escalation_runner_blocks_test": true,
+    "no_file_modified": "只新建文件；旧 risk_routing/* 全部只读"
+  },
+  "quality_reference": {
+    "primary": "leave_b_out (IMCR_REFERENCE_LEAVE_B_OUT.csv, judge_removed=B)",
+    "sensitivity_only": "strong 共识（含 Judge B）——禁止作为质量上限",
+    "forbidden_numbers": "旧 strong 口径 0.972/0.979 不再作为质量上限引用"
+  },
+  "r_hat_reuse": {
+    "model": "DecisionTree_max_depth4",
+    "selection": {
+      "chosen": "DecisionTree_max_depth4",
+      "selection": {
+        "LogisticRegression": {
+          "dev_auprc": 0.8904774688991355,
+          "val_auprc": 0.6517599099192217,
+          "val_auroc": 0.28717948717948716,
+          "n_train": 166,
+          "n_val_scored": 43
+        },
+        "DecisionTree_max_depth4": {
+          "dev_auprc": 0.8163428050646097,
+          "val_auprc": 0.7282641120984853,
+          "val_auroc": 0.5192307692307693,
+          "n_train": 166,
+          "n_val_scored": 43
+        },
+        "CalibratedLR_sigmoid": {
+          "dev_auprc": 0.8854951939919431,
+          "val_auprc": 0.6500932432525551,
+          "val_auroc": 0.2871794871794872,
+          "n_train": 166,
+          "n_val_scored": 43
+        }
+      },
+      "rule": "VAL AUPRC 选型；SIMPLICITY_ORDER=['LogisticRegression', 'DecisionTree_max_depth4', 'CalibratedLR_sigmoid'] 中取第一个 val_auprc >= best - 0.01 的候选（偏好最简单）"
+    },
+    "verification": {
+      "checked_files": [
+        {
+          "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\ROUTING_RUNS_dev.csv",
+          "exists": true,
+          "n_compared": 254
+        },
+        {
+          "path": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\ROUTING_RUNS_val.csv",
+          "exists": true,
+          "n_compared": 66
+        }
+      ],
+      "n_compared": 320,
+      "max_abs_diff": 3.33333333379926e-07,
+      "match": true
+    },
+    "note": "同特征/同 DEV strong 标签/同 seed 确定性重训，与既有 ROUTING_RUNS_*.csv 逐样本核对"
+  },
+  "escalation_every_item": {
+    "model": "openai/gpt-oss-20b",
+    "prompt_sha256": "2c67d6cd7cc629d3ec2ce43131f111b56c5367ef110c37f410d6ff4cda6ba804",
+    "prompt_system": "你是独立的历史知识图谱实体类型评审。给定一个实体的名称、别名、它在语料中参与的关系上下文与文献节选，以及候选类型集合 candidate_types 和各类型定义 type_definitions。你的唯一任务：依据给出的信息判断该实体最合理的类型。\n约束：只允许从 candidate_types 列出的类型中选择一个；证据不足或不属于任何候选类型时选择 OTHER；不得臆测输入之外的信息；输入中不含任何系统标签或参考答案，也不要猜测其存在。\n输出且仅输出一个 JSON 对象：{\"task_id\":..., \"decision\":..., \"confidence\":0-1, \"evidence\":[引用证据关键句], \"reason_code\":简短代码, \"explanation\":一句话理由, \"insufficient_evidence\":bool}",
+    "old_cache_hits_readonly": 240,
+    "fresh_calls_this_run": 0,
+    "this_phase_new_calls_jsonl_records": 80,
+    "this_phase_new_calls_ok_samples": 79,
+    "ok_records": 319,
+    "valid_decisions": 319,
+    "invalid_decisions": 0,
+    "missing_records": 1,
+    "fallback_policy": "status ERROR / decision 无效 → 回退基础预测（final_source=base_prediction_fallback）",
+    "jsonl_this_run": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\budget_v2\\ESCALATION_CALLS.jsonl"
+  },
+  "curve_pooled": [
+    {
+      "split": "pooled",
+      "budget": 0.0,
+      "llm_source": "none",
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "n_labeled_leave_b_out": 261,
+      "k_escalated": 0,
+      "agreement": 0.27586206896551724,
+      "n_correct": 72,
+      "wrong_to_right": 0,
+      "right_to_wrong": 0,
+      "generalized_risk": 0.7241379310344828,
+      "n_final_empty": 28,
+      "agreement_strong_sensitivity": 0.2826086956521739,
+      "note": "strong 列为敏感性附注，含 Judge B，禁止作为质量上限"
+    },
+    {
+      "split": "pooled",
+      "budget": 0.05,
+      "llm_source": "gpt-oss-20b_every_item",
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "n_labeled_leave_b_out": 261,
+      "k_escalated": 16,
+      "agreement": 0.31417624521072796,
+      "n_correct": 82,
+      "wrong_to_right": 10,
+      "right_to_wrong": 0,
+      "generalized_risk": 0.685823754789272,
+      "n_final_empty": 14,
+      "agreement_strong_sensitivity": 0.3217391304347826,
+      "note": "strong 列为敏感性附注，含 Judge B，禁止作为质量上限"
+    },
+    {
+      "split": "pooled",
+      "budget": 0.1,
+      "llm_source": "gpt-oss-20b_every_item",
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "n_labeled_leave_b_out": 261,
+      "k_escalated": 32,
+      "agreement": 0.3524904214559387,
+      "n_correct": 92,
+      "wrong_to_right": 20,
+      "right_to_wrong": 0,
+      "generalized_risk": 0.6475095785440613,
+      "n_final_empty": 12,
+      "agreement_strong_sensitivity": 0.36086956521739133,
+      "note": "strong 列为敏感性附注，含 Judge B，禁止作为质量上限"
+    },
+    {
+      "split": "pooled",
+      "budget": 0.2,
+      "llm_source": "gpt-oss-20b_every_item",
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "n_labeled_leave_b_out": 261,
+      "k_escalated": 64,
+      "agreement": 0.42911877394636017,
+      "n_correct": 112,
+      "wrong_to_right": 40,
+      "right_to_wrong": 0,
+      "generalized_risk": 0.5708812260536398,
+      "n_final_empty": 2,
+      "agreement_strong_sensitivity": 0.43478260869565216,
+      "note": "strong 列为敏感性附注，含 Judge B，禁止作为质量上限"
+    },
+    {
+      "split": "pooled",
+      "budget": 0.3,
+      "llm_source": "gpt-oss-20b_every_item",
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "n_labeled_leave_b_out": 261,
+      "k_escalated": 96,
+      "agreement": 0.47509578544061304,
+      "n_correct": 124,
+      "wrong_to_right": 53,
+      "right_to_wrong": 1,
+      "generalized_risk": 0.524904214559387,
+      "n_final_empty": 0,
+      "agreement_strong_sensitivity": 0.4782608695652174,
+      "note": "strong 列为敏感性附注，含 Judge B，禁止作为质量上限"
+    },
+    {
+      "split": "pooled",
+      "budget": 0.4,
+      "llm_source": "gpt-oss-20b_every_item",
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "n_labeled_leave_b_out": 261,
+      "k_escalated": 128,
+      "agreement": 0.5402298850574713,
+      "n_correct": 141,
+      "wrong_to_right": 70,
+      "right_to_wrong": 1,
+      "generalized_risk": 0.45977011494252873,
+      "n_final_empty": 0,
+      "agreement_strong_sensitivity": 0.5521739130434783,
+      "note": "strong 列为敏感性附注，含 Judge B，禁止作为质量上限"
+    },
+    {
+      "split": "pooled",
+      "budget": 0.5,
+      "llm_source": "gpt-oss-20b_every_item",
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "n_labeled_leave_b_out": 261,
+      "k_escalated": 160,
+      "agreement": 0.5977011494252874,
+      "n_correct": 156,
+      "wrong_to_right": 85,
+      "right_to_wrong": 1,
+      "generalized_risk": 0.4022988505747126,
+      "n_final_empty": 0,
+      "agreement_strong_sensitivity": 0.6086956521739131,
+      "note": "strong 列为敏感性附注，含 Judge B，禁止作为质量上限"
+    },
+    {
+      "split": "pooled",
+      "budget": 0.75,
+      "llm_source": "gpt-oss-20b_every_item",
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "n_labeled_leave_b_out": 261,
+      "k_escalated": 241,
+      "agreement": 0.7432950191570882,
+      "n_correct": 194,
+      "wrong_to_right": 125,
+      "right_to_wrong": 3,
+      "generalized_risk": 0.2567049808429118,
+      "n_final_empty": 0,
+      "agreement_strong_sensitivity": 0.7782608695652173,
+      "note": "strong 列为敏感性附注，含 Judge B，禁止作为质量上限"
+    },
+    {
+      "split": "pooled",
+      "budget": 1.0,
+      "llm_source": "gpt-oss-20b_every_item",
+      "model": "openai/gpt-oss-20b",
+      "n_all": 320,
+      "n_labeled_leave_b_out": 261,
+      "k_escalated": 320,
+      "agreement": 0.8275862068965517,
+      "n_correct": 216,
+      "wrong_to_right": 151,
+      "right_to_wrong": 7,
+      "generalized_risk": 0.1724137931034483,
+      "n_final_empty": 0,
+      "agreement_strong_sensitivity": 0.8739130434782608,
+      "note": "strong 列为敏感性附注，含 Judge B，禁止作为质量上限"
+    }
+  ],
+  "curve_external": {
+    "pooled": 0.8812260536398467,
+    "dev": 0.8743961352657005,
+    "val": 0.9074074074074074
+  },
+  "routing_baseline_agreement_b0": 0.27586206896551724,
+  "routing_verdict": "略优",
+  "routing_verdict_counts": {
+    "sig_better": 5,
+    "not_significant": 13,
+    "sig_worse": 0,
+    "positive_point_estimate": 14,
+    "n_comparisons": 18
+  },
+  "bootstrap": [
+    {
+      "budget": 0.05,
+      "pair_id": "R6_vs_R1",
+      "n_labeled": 261,
+      "delta_observed": -0.007662835249042155,
+      "ci95_low": -0.04214559386973182,
+      "ci95_high": 0.026819923371647514,
+      "p_boot_two_sided": 0.725,
+      "frac_delta_gt0": 0.286,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.05,
+      "pair_id": "R6_vs_R2",
+      "n_labeled": 261,
+      "delta_observed": 0.0038314176245210496,
+      "ci95_low": -0.007662835249042155,
+      "ci95_high": 0.01532567049808431,
+      "p_boot_two_sided": 0.783,
+      "frac_delta_gt0": 0.6085,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.05,
+      "pair_id": "R6_vs_R3",
+      "n_labeled": 261,
+      "delta_observed": 0.0038314176245210496,
+      "ci95_low": -0.007662835249042155,
+      "ci95_high": 0.01915708812260536,
+      "p_boot_two_sided": 0.794,
+      "frac_delta_gt0": 0.603,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.05,
+      "pair_id": "R6_vs_R4",
+      "n_labeled": 261,
+      "delta_observed": 0.0038314176245210496,
+      "ci95_low": -0.007662835249042155,
+      "ci95_high": 0.01532567049808431,
+      "p_boot_two_sided": 0.765,
+      "frac_delta_gt0": 0.6175,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.05,
+      "pair_id": "R6_vs_R5",
+      "n_labeled": 261,
+      "delta_observed": 0.0,
+      "ci95_low": -0.03448275862068961,
+      "ci95_high": 0.03065134099616862,
+      "p_boot_two_sided": 1.0,
+      "frac_delta_gt0": 0.4695,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.1,
+      "pair_id": "R6_vs_R1",
+      "n_labeled": 261,
+      "delta_observed": 0.0,
+      "ci95_low": -0.04214559386973182,
+      "ci95_high": 0.04597701149425287,
+      "p_boot_two_sided": 1.0,
+      "frac_delta_gt0": 0.465,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.1,
+      "pair_id": "R6_vs_R2",
+      "n_labeled": 261,
+      "delta_observed": -0.003831417624521105,
+      "ci95_low": -0.038314176245210774,
+      "ci95_high": 0.030651340996168563,
+      "p_boot_two_sided": 0.881,
+      "frac_delta_gt0": 0.347,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.1,
+      "pair_id": "R6_vs_R3",
+      "n_labeled": 261,
+      "delta_observed": -0.003831417624521105,
+      "ci95_low": -0.03831417624521072,
+      "ci95_high": 0.030651340996168563,
+      "p_boot_two_sided": 0.911,
+      "frac_delta_gt0": 0.3735,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.1,
+      "pair_id": "R6_vs_R4",
+      "n_labeled": 261,
+      "delta_observed": -0.003831417624521105,
+      "ci95_low": -0.03831417624521072,
+      "ci95_high": 0.03074712643678112,
+      "p_boot_two_sided": 0.956,
+      "frac_delta_gt0": 0.393,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.1,
+      "pair_id": "R6_vs_R5",
+      "n_labeled": 261,
+      "delta_observed": 0.007662835249042099,
+      "ci95_low": -0.03448275862068961,
+      "ci95_high": 0.04597701149425287,
+      "p_boot_two_sided": 0.817,
+      "frac_delta_gt0": 0.5915,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.2,
+      "pair_id": "R6_vs_R1",
+      "n_labeled": 261,
+      "delta_observed": 0.03831417624521072,
+      "ci95_low": -0.02298850574712641,
+      "ci95_high": 0.09578544061302685,
+      "p_boot_two_sided": 0.241,
+      "frac_delta_gt0": 0.8795,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.2,
+      "pair_id": "R6_vs_R2",
+      "n_labeled": 261,
+      "delta_observed": 0.04597701149425287,
+      "ci95_low": 0.011494252873563204,
+      "ci95_high": 0.08045977011494254,
+      "p_boot_two_sided": 0.007,
+      "frac_delta_gt0": 0.9965,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.2,
+      "pair_id": "R6_vs_R3",
+      "n_labeled": 261,
+      "delta_observed": 0.04980842911877398,
+      "ci95_low": 0.011494252873563204,
+      "ci95_high": 0.0881226053639847,
+      "p_boot_two_sided": 0.01,
+      "frac_delta_gt0": 0.995,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.2,
+      "pair_id": "R6_vs_R4",
+      "n_labeled": 261,
+      "delta_observed": 0.04980842911877398,
+      "ci95_low": 0.011494252873563204,
+      "ci95_high": 0.0881226053639847,
+      "p_boot_two_sided": 0.011,
+      "frac_delta_gt0": 0.9945,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.2,
+      "pair_id": "R6_vs_R5",
+      "n_labeled": 261,
+      "delta_observed": 0.007662835249042155,
+      "ci95_low": -0.03831417624521072,
+      "ci95_high": 0.05363984674329503,
+      "p_boot_two_sided": 0.797,
+      "frac_delta_gt0": 0.6015,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.3,
+      "pair_id": "R6_vs_R1",
+      "n_labeled": 261,
+      "delta_observed": 0.03831417624521072,
+      "ci95_low": -0.026819923371647514,
+      "ci95_high": 0.09961685823754796,
+      "p_boot_two_sided": 0.296,
+      "frac_delta_gt0": 0.852,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.3,
+      "pair_id": "R6_vs_R2",
+      "n_labeled": 261,
+      "delta_observed": 0.04980842911877398,
+      "ci95_low": 0.007662835249042155,
+      "ci95_high": 0.09195402298850575,
+      "p_boot_two_sided": 0.02,
+      "frac_delta_gt0": 0.99,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.3,
+      "pair_id": "R6_vs_R3",
+      "n_labeled": 261,
+      "delta_observed": 0.03831417624521072,
+      "ci95_low": 0.0,
+      "ci95_high": 0.08045977011494249,
+      "p_boot_two_sided": 0.067,
+      "frac_delta_gt0": 0.9665,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.3,
+      "pair_id": "R6_vs_R4",
+      "n_labeled": 261,
+      "delta_observed": 0.03831417624521072,
+      "ci95_low": 0.0,
+      "ci95_high": 0.07662835249042144,
+      "p_boot_two_sided": 0.071,
+      "frac_delta_gt0": 0.9645,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.3,
+      "pair_id": "R6_vs_R5",
+      "n_labeled": 261,
+      "delta_observed": 0.026819923371647514,
+      "ci95_low": -0.01915708812260536,
+      "ci95_high": 0.07279693486590039,
+      "p_boot_two_sided": 0.301,
+      "frac_delta_gt0": 0.8495,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.4,
+      "pair_id": "R6_vs_R1",
+      "n_labeled": 261,
+      "delta_observed": 0.05747126436781608,
+      "ci95_low": -0.01149425287356326,
+      "ci95_high": 0.12643678160919536,
+      "p_boot_two_sided": 0.111,
+      "frac_delta_gt0": 0.9445,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.4,
+      "pair_id": "R6_vs_R2",
+      "n_labeled": 261,
+      "delta_observed": 0.04214559386973182,
+      "ci95_low": 0.003831417624521105,
+      "ci95_high": 0.08045977011494254,
+      "p_boot_two_sided": 0.032,
+      "frac_delta_gt0": 0.984,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.4,
+      "pair_id": "R6_vs_R3",
+      "n_labeled": 261,
+      "delta_observed": 0.04597701149425287,
+      "ci95_low": 0.015325670498084252,
+      "ci95_high": 0.08045977011494254,
+      "p_boot_two_sided": 0.011,
+      "frac_delta_gt0": 0.9945,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.4,
+      "pair_id": "R6_vs_R4",
+      "n_labeled": 261,
+      "delta_observed": 0.04597701149425287,
+      "ci95_low": 0.011494252873563314,
+      "ci95_high": 0.08045977011494249,
+      "p_boot_two_sided": 0.007,
+      "frac_delta_gt0": 0.9965,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.4,
+      "pair_id": "R6_vs_R5",
+      "n_labeled": 261,
+      "delta_observed": 0.04214559386973182,
+      "ci95_low": 0.0,
+      "ci95_high": 0.08429118773946359,
+      "p_boot_two_sided": 0.069,
+      "frac_delta_gt0": 0.9655,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.5,
+      "pair_id": "R6_vs_R1",
+      "n_labeled": 261,
+      "delta_observed": 0.04214559386973182,
+      "ci95_low": -0.026819923371647514,
+      "ci95_high": 0.10727969348658994,
+      "p_boot_two_sided": 0.228,
+      "frac_delta_gt0": 0.886,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.5,
+      "pair_id": "R6_vs_R2",
+      "n_labeled": 261,
+      "delta_observed": 0.03065134099616862,
+      "ci95_low": -0.01532567049808431,
+      "ci95_high": 0.08045977011494254,
+      "p_boot_two_sided": 0.221,
+      "frac_delta_gt0": 0.8895,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.5,
+      "pair_id": "R6_vs_R3",
+      "n_labeled": 261,
+      "delta_observed": 0.034482758620689724,
+      "ci95_low": -0.011494252873563204,
+      "ci95_high": 0.08429118773946354,
+      "p_boot_two_sided": 0.183,
+      "frac_delta_gt0": 0.9085,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.5,
+      "pair_id": "R6_vs_R4",
+      "n_labeled": 261,
+      "delta_observed": 0.034482758620689724,
+      "ci95_low": -0.01532567049808431,
+      "ci95_high": 0.08429118773946365,
+      "p_boot_two_sided": 0.199,
+      "frac_delta_gt0": 0.9005,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.5,
+      "pair_id": "R6_vs_R5",
+      "n_labeled": 261,
+      "delta_observed": 0.04214559386973182,
+      "ci95_low": -0.007662835249042099,
+      "ci95_high": 0.09578544061302674,
+      "p_boot_two_sided": 0.109,
+      "frac_delta_gt0": 0.9455,
+      "classification": "无显著差异（95% CI 跨 0）"
+    }
+  ],
+  "outputs": {
+    "curve_local": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\budget_v2\\CURVE_LOCAL.csv",
+    "curve_external": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\budget_v2\\CURVE_EXTERNAL.json",
+    "routing_comparison": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\budget_v2\\ROUTING_COMPARISON.csv",
+    "routing_bootstrap": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\budget_v2\\ROUTING_BOOTSTRAP.json",
+    "routing_selections": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\budget_v2\\ROUTING_SELECTIONS.json",
+    "escalation_log": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\budget_v2\\ESCALATION_CALLS.jsonl",
+    "reports": [
+      "REPORT_BUDGET_CURVE.md",
+      "REPORT_ROUTING_COMPARISON.md",
+      "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\audit\\method_final\\FINAL_RISK_ROUTING_REPORT.md"
+    ]
+  }
+}

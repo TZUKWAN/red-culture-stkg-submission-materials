@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "experiment": "selective_scope_closure_v2 (指令 §4：三票共识重建)",
+    "generated_utc": "2026-09-10T07:42:31+00:00",
+    "caliber": "three-vote IMCR consensus（三票口径）：唯一裁判 = IMCR_V4_SCOPE_REVALIDATION_V2_ALL.csv 的 reference_label（A+B+C 多数票解码，110 strong + 77 weak = 187 条）；本实验不引入任何新裁判票",
+    "n_tasks_total": 208,
+    "n_reference": 187,
+    "n_unresolved_not_in_reference": 21,
+    "inputs_sha256": {
+      "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\01_reference_rebuild\\scope_revalidation_v2\\IMCR_V4_SCOPE_REVALIDATION_V2_ALL.csv": "af1d49e3cec42e3380c0b4bd6cd51f6b877fcc40674dc5ac86a4eb5a04dc326f",
+      "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\01_reference_rebuild\\V4_CONSENSUS_SUMMARY.json": "168ade7d700e9ddd26c3cd71ebe62add7ea1ffd72f4de8e2a8f0bdac608dfe64",
+      "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\05_scope_repair\\SCOPE_BY_TYPE_ERRORS.csv": "d2902d713908ec1b60ba9c7a17fefa5a04a449eb7f1c94955bb7f28c42a045e9",
+      "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\01_reference_rebuild\\payloads\\SCOPE_REVALIDATION_V2_METADATA.csv": "e9d170729d14067063b43c46f77b54b1d5b2f0ef26eca7bee700d742df9fff14",
+      "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\01_reference_rebuild\\payloads\\SCOPE_REVALIDATION_V2_PAYLOADS.jsonl": "188bd73fa9afe83be4aadb70f6b2722df530c0084e29605c5cf016873c7c808e",
+      "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\05_scope_repair\\CLOSURE_OLD_NEW_SUMMARY.json": "bf60a416e3a8a57255e129cf05ca7b27efc2d57a1f64bf83fca295eb814a000c"
+    },
+    "seed": 20260908,
+    "replaces": "experiments/05_scope_repair/CLOSURE_*（v1 两票口径，作废）"
+  },
+  "thresholds": {
+    "p_threshold_two_sided_binom": 0.05,
+    "min_decided": 10,
+    "learn_only": "规则统计只由 60% learn ∩ 三票参考计算；held-out 仅评价，未回流"
+  },
+  "book_key_derivation": {
+    "rule": "SCOPE_REVALIDATION_V2_METADATA.csv 的 books 列容错解析（严格 json → 单引号归一 json → ast.literal_eval）；空/[] → 无书 → nobook:{task_id} 单任务分量按同一确定性 60/40 hash 参与分配（同 data/frozen_splits 对 no-book 任务 hash 分配的精神，种子同为 20260908）",
+    "counts": {
+      "nobook_single_task_component": 184,
+      "metadata_books_column": 24
+    }
+  },
+  "split_summary": {
+    "method": "component-atomic: components sorted by sha256(seed:closure3:cid); largest prefix with cumulative task count <= round(ratio*N) -> learn, rest -> heldout",
+    "seed": 20260908,
+    "ratio": 0.6,
+    "budget_tasks": 125,
+    "n_total": 208,
+    "n_components": 201,
+    "learn_tasks": 125,
+    "heldout_tasks": 83
+  },
+  "three_vote_reference": {
+    "source": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\01_reference_rebuild\\scope_revalidation_v2\\IMCR_V4_SCOPE_REVALIDATION_V2_ALL.csv",
+    "decoding": "reference_label 已解码：AFTER_BETTER / BEFORE_BETTER / EQUIVALENT / BOTH_WRONG / INSUFFICIENT_EVIDENCE；与 imcr_label_decoded 逐条核验一致",
+    "decided_set": [
+      "AFTER_BETTER",
+      "BEFORE_BETTER"
+    ],
+    "reference_undecided_set": [
+      "BOTH_WRONG",
+      "EQUIVALENT",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "not_in_reference_marker": "NOT_IN_REFERENCE",
+    "label_distribution_total": {
+      "AFTER_BETTER": 56,
+      "BEFORE_BETTER": 101,
+      "BOTH_WRONG": 8,
+      "INSUFFICIENT_EVIDENCE": 22,
+      "NOT_IN_REFERENCE": 21
+    },
+    "tiers_in_reference": {
+      "weak_consensus": 77,
+      "strong_consensus": 110
+    },
+    "tiers_total_ledger": {
+      "weak_consensus": 77,
+      "strong_consensus": 110,
+      "unresolved": 21
+    },
+    "unresolved_policy": "21 条 unresolved 不入参考：不参与规则学习，不进入 agreement 分母"
+  },
+  "rules": {
+    "event_location→context_location": {
+      "action": "RETAIN",
+      "n_learn": 55,
+      "n_learn_in_reference": 50,
+      "n_learn_not_in_reference": 5,
+      "decided": 45,
+      "after_better": 6,
+      "before_better": 39,
+      "after_win_rate_learn_decided": 0.13333333333333333,
+      "binom_p_two_sided": 5.417768988991156e-07,
+      "p_threshold": 0.05,
+      "min_decided": 10,
+      "reason": "decided=45>=10 且 p=0.00000<0.05"
+    },
+    "event_location→relation_location": {
+      "action": "UNRESOLVED",
+      "n_learn": 5,
+      "n_learn_in_reference": 3,
+      "n_learn_not_in_reference": 2,
+      "decided": 2,
+      "after_better": 0,
+      "before_better": 2,
+      "after_win_rate_learn_decided": 0.0,
+      "binom_p_two_sided": 0.5,
+      "p_threshold": 0.05,
+      "min_decided": 10,
+      "reason": "decided=2<10"
+    },
+    "mixed": {
+      "action": "UNRESOLVED",
+      "n_learn": 9,
+      "n_learn_in_reference": 8,
+      "n_learn_not_in_reference": 1,
+      "decided": 8,
+      "after_better": 0,
+      "before_better": 8,
+      "after_win_rate_learn_decided": 0.0,
+      "binom_p_two_sided": 0.0078125,
+      "p_threshold": 0.05,
+      "min_decided": 10,
+      "reason": "decided=8<10"
+    },
+    "other": {
+      "action": "UNRESOLVED",
+      "n_learn": 24,
+      "n_learn_in_reference": 21,
+      "n_learn_not_in_reference": 3,
+      "decided": 15,
+      "after_better": 10,
+      "before_better": 5,
+      "after_win_rate_learn_decided": 0.6666666666666666,
+      "binom_p_two_sided": 0.3017578125,
+      "p_threshold": 0.05,
+      "min_decided": 10,
+      "reason": "p=0.30176>=0.05（不显著）"
+    },
+    "unknown→event_occurrence": {
+      "action": "UNRESOLVED",
+      "n_learn": 32,
+      "n_learn_in_reference": 31,
+      "n_learn_not_in_reference": 1,
+      "decided": 25,
+      "after_better": 17,
+      "before_better": 8,
+      "after_win_rate_learn_decided": 0.68,
+      "binom_p_two_sided": 0.10775214433670044,
+      "p_threshold": 0.05,
+      "min_decided": 10,
+      "reason": "p=0.10775>=0.05（不显著）"
+    }
+  },
+  "unseen_type_default": "UNRESOLVED"
+}

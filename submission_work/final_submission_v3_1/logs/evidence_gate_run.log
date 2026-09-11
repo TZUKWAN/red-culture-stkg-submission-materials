@@ -1,0 +1,10 @@
+[gate] alignment=112,158 rows, recovery=61,997 rows
+[gate] stratum mismatch_with_evidence: pop=6,136, sample=1500
+[gate] stratum recovery_B: pop=16,705, sample=1000
+[gate] stratum recovery_C: pop=40,345, sample=800
+[gate] stratum recovery_A: pop=2,841, sample=200
+[gate] stratum aligned: pop=44,025, sample=1500
+[gate] SAMPLE_IDS.json 已存在且与 seed 一致，复用
+[gate] 待判定 4985 / 5000 条（已完成 15）
+[gate] 100/4985 done, 0.34 it/s, ETA 238.6 min, forced_empty=0, failed=0
+[gate] 200/4985 done, 0.33 it/s, ETA 241.1 min, forced_empty=0, failed=0

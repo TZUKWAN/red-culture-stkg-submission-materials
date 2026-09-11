@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>VIZ-5 全库分层总览（交互版）</title>
+<style>
+  body { margin:0; padding:24px 28px; font-family:"Microsoft YaHei","SimHei","Noto Sans CJK SC",sans-serif;
+          color:#24303c; background:#fbfcfd; }
+  h1 { font-size:20px; margin:0 0 4px; }
+  .sub { color:#5a6572; font-size:12px; line-height:1.7; margin-bottom:12px; }
+  .card { background:#fff; border:1px solid #d8dee4; border-radius:10px; padding:14px 16px; margin-bottom:18px; }
+  .card h2 { font-size:14px; margin:0 0 10px; }
+  svg text { font-family:inherit; }
+  #tip { position:fixed; display:none; pointer-events:none; background:#24303c; color:#fff; font-size:12px;
+          line-height:1.6; padding:8px 11px; border-radius:6px; z-index:9; }
+  .lg { font-size:11.5px; color:#5a6572; display:flex; gap:16px; margin-bottom:8px; flex-wrap:wrap; }
+  .sw { display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:4px; vertical-align:-1px; }
+</style>
+</head>
+<body>
+<h1>VIZ-5 全库分层总览：十年 × 河段断言密度 + research_tier</h1>
+<div class="sub">数据源：red_culture_stkg_final_v3_1.sqlite（V3_1 副本库，含 U1-U8）（只读）。悬停热力图单元格查看该 (十年 × 河段) 的分层计数；悬停柱体查看该十年三段合计的分层构成。</div>
+<div class="card"><h2>(a) 十年 × 河段密度热力图（对数色标）</h2><div id="heat"></div></div>
+<div class="card"><h2>(b) 十年 × research_tier 层叠（三段合计）</h2>
+  <div class="lg" id="lg"></div><div id="bars"></div></div>
+<div class="foot" style="color:#5a6572;font-size:11.5px">
+  SQL 与行数见 figures/stkg_viz5_overview_tiers_CAPTION.md ｜ 生成时间：2026-09-11 05:05:15 +0800 ｜ 确定性管线
+</div>
+<div id="tip"></div>
+<script>
+const D = {"decs":["1850s","1870s","1880s","1890s","1900s","1910s","1920s","1930s","1940s","1950s","1960s","1970s","1980s","1990s","2000s","2010s","2020s"],"basins":["上游","中游","下游"],"mat":[[1,0,2,15,25,201,9631,5845,9742,834,25,11,38,15,3,4,5],[0,0,5,32,76,377,12011,4924,5713,237,24,10,17,3,1,4,2],[1,0,1,13,20,148,6057,5642,7714,211,21,6,8,8,3,1,0]],"tier_cells":[{"dec":"1850s","basin":"上游","strict":0,"contextual":1,"unresolved":0},{"dec":"1870s","basin":"上游","strict":0,"contextual":0,"unresolved":0},{"dec":"1880s","basin":"上游","strict":0,"contextual":2,"unresolved":0},{"dec":"1890s","basin":"上游","strict":0,"contextual":15,"unresolved":0},{"dec":"1900s","basin":"上游","strict":7,"contextual":17,"unresolved":1},{"dec":"1910s","basin":"上游","strict":52,"contextual":141,"unresolved":8},{"dec":"1920s","basin":"上游","strict":1941,"contextual":6885,"unresolved":805},{"dec":"1930s","basin":"上游","strict":1316,"contextual":3899,"unresolved":630},{"dec":"1940s","basin":"上游","strict":2452,"contextual":6374,"unresolved":916},{"dec":"1950s","basin":"上游","strict":231,"contextual":556,"unresolved":47},{"dec":"1960s","basin":"上游","strict":0,"contextual":20,"unresolved":5},{"dec":"1970s","basin":"上游","strict":2,"contextual":9,"unresolved":0},{"dec":"1980s","basin":"上游","strict":1,"contextual":34,"unresolved":3},{"dec":"1990s","basin":"上游","strict":3,"contextual":12,"unresolved":0},{"dec":"2000s","basin":"上游","strict":0,"contextual":3,"unresolved":0},{"dec":"2010s","basin":"上游","strict":0,"contextual":4,"unresolved":0},{"dec":"2020s","basin":"上游","strict":0,"contextual":5,"unresolved":0},{"dec":"1850s","basin":"中游","strict":0,"contextual":0,"unresolved":0},{"dec":"1870s","basin":"中游","strict":0,"contextual":0,"unresolved":0},{"dec":"1880s","basin":"中游","strict":1,"contextual":4,"unresolved":0},{"dec":"1890s","basin":"中游","strict":11,"contextual":21,"unresolved":0},{"dec":"1900s","basin":"中游","strict":32,"contextual":43,"unresolved":1},{"dec":"1910s","basin":"中游","strict":133,"contextual":230,"unresolved":14},{"dec":"1920s","basin":"中游","strict":3294,"contextual":7949,"unresolved":768},{"dec":"1930s","basin":"中游","strict":1143,"contextual":3335,"unresolved":446},{"dec":"1940s","basin":"中游","strict":1171,"contextual":3936,"unresolved":606},{"dec":"1950s","basin":"中游","strict":79,"contextual":153,"unresolved":5},{"dec":"1960s","basin":"中游","strict":3,"contextual":21,"unresolved":0},{"dec":"1970s","basin":"中游","strict":2,"contextual":8,"unresolved":0},{"dec":"1980s","basin":"中游","strict":3,"contextual":13,"unresolved":1},{"dec":"1990s","basin":"中游","strict":0,"contextual":3,"unresolved":0},{"dec":"2000s","basin":"中游","strict":0,"contextual":1,"unresolved":0},{"dec":"2010s","basin":"中游","strict":0,"contextual":3,"unresolved":1},{"dec":"2020s","basin":"中游","strict":0,"contextual":2,"unresolved":0},{"dec":"1850s","basin":"下游","strict":0,"contextual":1,"unresolved":0},{"dec":"1870s","basin":"下游","strict":0,"contextual":0,"unresolved":0},{"dec":"1880s","basin":"下游","strict":0,"contextual":1,"unresolved":0},{"dec":"1890s","basin":"下游","strict":0,"contextual":13,"unresolved":0},{"dec":"1900s","basin":"下游","strict":3,"contextual":17,"unresolved":0},{"dec":"1910s","basin":"下游","strict":45,"contextual":97,"unresolved":6},{"dec":"1920s","basin":"下游","strict":1487,"contextual":4034,"unresolved":536},{"dec":"1930s","basin":"下游","strict":1300,"contextual":3924,"unresolved":418},{"dec":"1940s","basin":"下游","strict":1717,"contextual":5336,"unresolved":661},{"dec":"1950s","basin":"下游","strict":66,"contextual":138,"unresolved":7},{"dec":"1960s","basin":"下游","strict":5,"contextual":15,"unresolved":1},{"dec":"1970s","basin":"下游","strict":1,"contextual":5,"unresolved":0},{"dec":"1980s","basin":"下游","strict":0,"contextual":8,"unresolved":0},{"dec":"1990s","basin":"下游","strict":0,"contextual":8,"unresolved":0},{"dec":"2000s","basin":"下游","strict":0,"contextual":3,"unresolved":0},{"dec":"2010s","basin":"下游","strict":0,"contextual":1,"unresolved":0},{"dec":"2020s","basin":"下游","strict":0,"contextual":0,"unresolved":0}],"decade_tot":{"1850s":2,"1870s":0,"1880s":8,"1890s":60,"1900s":121,"1910s":726,"1920s":27699,"1930s":16411,"1940s":23169,"1950s":1282,"1960s":70,"1970s":27,"1980s":63,"1990s":26,"2000s":7,"2010s":9,"2020s":7},"tiers":{"strict_semantic":{"上游":6005,"中游":5872,"下游":4624},"contextual":{"上游":17977,"中游":15722,"下游":13601},"unresolved":{"上游":2415,"中游":1842,"下游":1629}},"totals":{"strict_semantic":112158,"contextual":268047,"unresolved":43945},"timed_total":77930,"with_basin":52053,"multi":9625};
+const TC = {"strict_semantic": "#1b6ca8", "contextual": "#e8a33d", "unresolved": "#9aa5b1"};
+const tip = document.getElementById('tip');
+function esc(s) { const d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
+function show(ev, html) { tip.innerHTML = html; tip.style.display = 'block';
+  tip.style.left = (ev.clientX + 14) + 'px'; tip.style.top = (ev.clientY + 12) + 'px'; }
+function hide() { tip.style.display = 'none'; }
+const TIERS = ['strict', 'contextual', 'unresolved'];
+const TIER_ZH = { strict: 'strict_semantic', contextual: 'contextual', unresolved: 'unresolved' };
+
+(function drawHeat() {
+  const padL = 64, padT = 6, cw = 46, ch = 46, W = padL + D.decs.length * cw + 10, H = padT + 3 * ch + 8;
+  const max = Math.max(...D.mat.flat());
+  const logc = v => v <= 0 ? null : Math.log10(v) / Math.log10(max);
+  const col = t => { if (t == null) return '#f4f7f9';
+    const a = 0.10 + 0.88 * t; // 浅→深的蓝
+    return 'rgba(27,108,168,' + a.toFixed(3) + ')'; };
+  let s = '<svg width="' + W + '" height="' + H + '">';
+  D.mat.forEach((row, i) => {
+    s += '<text x="' + (padL - 10) + '" y="' + (padT + i * ch + ch / 2 + 4) + '" font-size="12" text-anchor="end">' + D.basins[i] + '</text>';
+    row.forEach((v, j) => {
+      s += '<rect data-i="' + i + '" data-j="' + j + '" x="' + (padL + j * cw) + '" y="' + (padT + i * ch)
+        + '" width="' + (cw - 3) + '" height="' + (ch - 3) + '" rx="4" fill="' + col(logc(v)) + '"/>';
+      if (v > 0) s += '<text x="' + (padL + j * cw + (cw - 3) / 2) + '" y="' + (padT + i * ch + ch / 2 + 3.5)
+        + '" font-size="9.5" text-anchor="middle" fill="' + (v > max * 0.55 ? '#fff' : '#24303c')
+        + '" pointer-events="none">' + v.toLocaleString() + '</text>';
+    });
+  });
+  D.decs.forEach((d, j) => s += '<text x="' + (padL + j * cw + (cw - 3) / 2) + '" y="' + (H - 0)
+    + '" font-size="9.5" text-anchor="middle" fill="#5a6572" transform="rotate(-28 '
+    + (padL + j * cw + (cw - 3) / 2) + ' ' + (H - 0) + ')">' + d + '</text>');
+  s += '</svg>';
+  document.getElementById('heat').innerHTML = s;
+  document.querySelectorAll('#heat rect').forEach(r => r.addEventListener('mousemove', ev => {
+    const i = +r.dataset.i, j = +r.dataset.j;
+    const cell = D.tier_cells[i * D.decs.length + j];
+    show(ev, '<b>' + cell.basin + ' · ' + cell.dec + '</b><br>'
+      + TIERS.map(t => TIER_ZH[t] + '：' + cell[t].toLocaleString()).join('<br>')
+      + '<br>合计：' + D.mat[i][j].toLocaleString());
+  }));
+  document.querySelectorAll('#heat rect').forEach(r => r.addEventListener('mouseleave', hide));
+})();
+
+(function drawBars() {
+  const W = Math.max(860, D.decs.length * 46), H = 250, padL = 64, padB = 44, padT = 12;
+  const max = Math.max(...Object.values(D.decade_tot));
+  const y = v => padT + (1 - v / max) * (H - padT - padB);
+  let s = '<svg width="' + W + '" height="' + H + '">';
+  for (let g = 0; g <= 4; g++) {
+    const v = max / 4 * g;
+    s += '<line x1="' + padL + '" y1="' + y(v) + '" x2="' + W + '" y2="' + y(v) + '" stroke="#e7ecef"/>'
+      + '<text x="' + (padL - 6) + '" y="' + (y(v) + 3.5) + '" font-size="9.5" fill="#5a6572" text-anchor="end">'
+      + Math.round(v).toLocaleString() + '</text>';
+  }
+  const bw = Math.min(38, (W - padL - 10) / D.decs.length * 0.7);
+  D.decs.forEach((d, j) => {
+    const cx = padL + (j + 0.5) * (W - padL - 10) / D.decs.length;
+    let acc = 0;
+    const cell = D.tier_cells.filter(c => c.dec === d);
+    const agg = { strict: 0, contextual: 0, unresolved: 0 };
+    cell.forEach(c => TIERS.forEach(t => agg[t] += c[t]));
+    TIERS.forEach(t => {
+      const v = agg[t], y0 = y(acc), y1 = y(acc + v);
+      s += '<rect data-dec="' + d + '" data-t="' + t + '" x="' + (cx - bw / 2) + '" y="' + y1
+        + '" width="' + bw + '" height="' + Math.max(y0 - y1, 0.5) + '" fill="' + TC[TIER_ZH[t]] + '" opacity="0.94"/>';
+      acc += v;
+    });
+    if (acc > 0) s += '<text x="' + cx + '" y="' + (y(acc) - 4) + '" font-size="8.5" text-anchor="middle" fill="#5a6572">'
+      + acc.toLocaleString() + '</text>';
+    s += '<text x="' + cx + '" y="' + (H - 26) + '" font-size="9.5" text-anchor="middle" fill="#5a6572" transform="rotate(-38 '
+      + cx + ' ' + (H - 26) + ')">' + d + '</text>';
+  });
+  s += '</svg>';
+  document.getElementById('bars').innerHTML = s;
+  document.getElementById('lg').innerHTML = TIERS.map(t =>
+    '<span><span class="sw" style="background:' + TC[TIER_ZH[t]] + '"></span>' + TIER_ZH[t] + '</span>').join('');
+  document.querySelectorAll('#bars rect').forEach(r => r.addEventListener('mousemove', ev => {
+    const dec = r.dataset.dec, t = r.dataset.t;
+    const agg = { strict: 0, contextual: 0, unresolved: 0 };
+    D.tier_cells.filter(c => c.dec === dec).forEach(c => TIERS.forEach(z => agg[z] += c[z]));
+    const tot = D.decade_tot[dec] || 0;
+    show(ev, '<b>' + dec + '</b><br>' + TIER_ZH[t] + '：' + agg[t].toLocaleString()
+      + '（' + (tot ? (agg[t] / tot * 100).toFixed(1) : '0') + '%）<br>三段合计：' + tot.toLocaleString());
+  }));
+  document.querySelectorAll('#bars rect').forEach(r => r.addEventListener('mouseleave', hide));
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+[copy] target exists, reused (matches_source=False)
+MEASURED copy.source_sha256 = a199d736b9ec436b…
+MEASURED copy.reused_existing = True
+MEASURED baseline.loaded_from_ledger = {"assertions": 424150, "assertions_contextual": 268047, "assertions_strict": 112158, "assertions_unresolved": 43945, "culture_states": 11532, "entities": 152979, "event_assertion_links": 140830, "event_frames": 28065, "event_relations": 499, "evolution_transitions": 4, "provenance": 466312}
+[U1] SKIP (already applied at 2026-09-10T16:15:51+08:00); current measured counts follow
+MEASURED U1.coverage_locatable_evidence = 0.396081
+MEASURED U1.coverage_with_provenance = 0.989168
+MEASURED U1.distinct_assertions_covered = 134750
+MEASURED U1.evidence_rows_total = 104865
+MEASURED U1.frames_matched_in_sem_event_entities = 28065
+MEASURED U1.frames_total = 28065
+MEASURED U1.frames_with_locatable_evidence = 11116
+MEASURED U1.frames_with_provenance = 27761
+MEASURED U1.frames_without_provenance = 304
+MEASURED U1.rows_inserted_total = 160245
+[U2] SKIP (already applied at 2026-09-10T16:16:41+08:00); current measured counts follow
+MEASURED U2.assertions_total_unchanged = 424150
+MEASURED U2.canonical_fact_count = 423373
+MEASURED U2.facts_merged_this_rule = 777
+MEASURED U2.facts_merged_total = 777
+MEASURED U2.identity_view_groups = 423373
+MEASURED U2.max_provenance_members_per_identity = 10
+MEASURED U2.merged_self_reference_violations = 0
+MEASURED U2.raw_quintet_collision_groups = 655
+MEASURED U2.raw_quintet_groups_kept_distinct = 1
+MEASURED U2.raw_quintet_groups_merged = 654
+MEASURED U2.state_identity_facts_in_groups = 1551
+MEASURED U2.state_identity_groups = 774
+MEASURED U2.unique_index_created = 1
+[U3] SKIP (already applied at 2026-09-10T16:16:44+08:00); current measured counts follow
+MEASURED U3.precision_distribution_json = {"stage_interval": 7719, "year": 1831, "period": 1214, "month": 768}
+MEASURED U3.source_flag_consistency_violations = 0
+MEASURED U3.states_fallback_to_stage = 7719
+MEASURED U3.states_source_member_events_asserted = 2109
+MEASURED U3.states_source_member_events_trusted = 1704
+MEASURED U3.states_source_stage_interval = 7719
+MEASURED U3.states_total = 11532
+MEASURED U3.states_with_state_time = 11532
+[U4] SKIP (already applied at 2026-09-10T16:16:52+08:00); current measured counts follow
+MEASURED U4.candidate_pairs_shared_counterpart = 8695
+MEASURED U4.confidence_min_max = [0.5, 0.9]
+MEASURED U4.frames_involved = 528
+MEASURED U4.relation_distribution_json = {"after": 3079, "before": 2815, "during": 2713, "overlaps": 88}
+MEASURED U4.rows_missing_basis = 0
+MEASURED U4.rows_not_inferred_violation = 0
+MEASURED U4.rows_seen_in_this_run = 8695
+MEASURED U4.rows_total = 8695
+MEASURED U4.timed_frames_total = 696
+[U5] SKIP (already applied at 2026-09-10T16:34:42+08:00); current measured counts follow
+MEASURED U5.left_facts = 53319
+MEASURED U5.precision_distribution_json = {"period": 3953608, "year": 1428582, "month": 254180}
+MEASURED U5.relation_distribution_json = {"equals": 2755067, "after": 970961, "before": 970363, "contains": 378696, "during": 341380, "overlaps": 140701, "meets": 53908, "starts": 22927, "ends": 2367}
+MEASURED U5.rows_family_same_entity = 3248879
+MEASURED U5.rows_family_same_event = 945385
+MEASURED U5.rows_family_same_state_subject = 1442106
+MEASURED U5.rows_involving_merged_fact = 0
+MEASURED U5.rows_missing_basis = 0
+MEASURED U5.rows_not_inferred_violation = 0
+MEASURED U5.rows_total = 5636370
+[U6] applying …
+MEASURED U6.rules_path = D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\experiments\05_scope_repair\v2_\CLOSURE3_RULES.json
+MEASURED U6.rules_sha256_16 = 1121a0288854f280
+MEASURED U6.rule_actions_json = {"event_location→context_location": "RETAIN", "event_location→relation_location": "UNRESOLVED", "mixed": "UNRESOLVED", "other": "UNRESOLVED", "unknown→event_occurrence": "UNRESOLVED"}
+MEASURED U6.unseen_type_default = UNRESOLVED
+MEASURED U6.rewrite_classes_json = []
+MEASURED U6.candidates_json = {"event_location→context_location": 7668, "event_location→relation_location": 7668, "mixed": 0, "other": 0, "unknown→event_occurrence": 37794}
+MEASURED U6.rows_backfilled = 0
+MEASURED U6.rows_backfilled_by_class_json = {}
+MEASURED U6.before_time_owner_cov = 0.013373
+MEASURED U6.before_space_owner_cov = 0.019003
+MEASURED U6.before_time_role_unknown_rate = 0.816268
+MEASURED U6.before_space_role_unknown_rate = 0.750949
+MEASURED U6.after_time_owner_cov = 0.013373
+MEASURED U6.after_space_owner_cov = 0.019003
+MEASURED U6.after_time_role_unknown_rate = 0.816268
+MEASURED U6.after_space_role_unknown_rate = 0.750949
+MEASURED U6.global_heuristic_used = False
+[U7] applying …
+MEASURED U7.rows_total = 382
+MEASURED U7.s1_explicit_inserted_this_run = 206
+MEASURED U7.s2_chain_pairs_seen = 478
+MEASURED U7.s2_chain_inserted_this_run = 176
+MEASURED U7.s2_skipped_json = {"city>county:multi_spatial": 13, "city>county:no_spatial_entity": 187, "city>county:type_ambiguous": 3, "province>city:multi_spatial": 3, "province>city:no_spatial_entity": 94, "province>city:type_ambiguous": 2, "within_basin:no_spatial_entity": 13}
+MEASURED U7.s3_within_basin_pairs_seen = 13
+MEASURED U7.s3_within_basin_inserted = 0
+MEASURED U7.relation_distribution_json = {"located_in": 382}
+MEASURED U7.status_distribution_json = {"auto_typed": 379, "rejected": 3}
+MEASURED U7.non_spatial_endpoint_rows = 0
+MEASURED U7.rows_on_cycle = 3
+MEASURED U7.places_with_parent = 346
+[U8] applying …
+Traceback (most recent call last):
+  File "D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\code\experiment_pipelines\apply_stkg_upgrades.py", line 1726, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\code\experiment_pipelines\apply_stkg_upgrades.py", line 1701, in main
+    m = runners[key](con)
+  File "D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\code\experiment_pipelines\apply_stkg_upgrades.py", line 1687, in <lambda>
+    "U8": lambda c: upgrade_u8(c, args.corpus)}
+                    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\code\experiment_pipelines\apply_stkg_upgrades.py", line 1251, in upgrade_u8
+    for (eid, hist, par, year), rec in sorted(rows.items()):
+                                       ~~~~~~^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'str' and 'NoneType'

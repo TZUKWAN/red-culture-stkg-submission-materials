@@ -1,0 +1,96 @@
+Thread 0x0000788c (most recent call first):
+  File "C:\Users\lauze\miniconda3\Lib\socket.py", line 719 in readinto
+  File "C:\Users\lauze\miniconda3\Lib\http\client.py", line 292 in _read_status
+  File "C:\Users\lauze\miniconda3\Lib\http\client.py", line 331 in begin
+  File "C:\Users\lauze\miniconda3\Lib\http\client.py", line 1430 in getresponse
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 1323 in do_open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 1348 in http_open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 466 in _call_chain
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 506 in _open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 489 in open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 189 in urlopen
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 42 in _post
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 54 in chat
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 92 in chat_json
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\experiment_pipelines\run_evidence_semantic_gate.py", line 319 in judge_one
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\thread.py", line 59 in run
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\thread.py", line 93 in _worker
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 992 in run
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 1041 in _bootstrap_inner
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 1012 in _bootstrap
+
+Thread 0x0000eef8 (most recent call first):
+  File "C:\Users\lauze\miniconda3\Lib\socket.py", line 719 in readinto
+  File "C:\Users\lauze\miniconda3\Lib\http\client.py", line 292 in _read_status
+  File "C:\Users\lauze\miniconda3\Lib\http\client.py", line 331 in begin
+  File "C:\Users\lauze\miniconda3\Lib\http\client.py", line 1430 in getresponse
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 1323 in do_open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 1348 in http_open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 466 in _call_chain
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 506 in _open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 489 in open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 189 in urlopen
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 42 in _post
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 54 in chat
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 92 in chat_json
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\experiment_pipelines\run_evidence_semantic_gate.py", line 319 in judge_one
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\thread.py", line 59 in run
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\thread.py", line 93 in _worker
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 992 in run
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 1041 in _bootstrap_inner
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 1012 in _bootstrap
+
+Thread 0x00006d70 (most recent call first):
+  File "C:\Users\lauze\miniconda3\Lib\socket.py", line 719 in readinto
+  File "C:\Users\lauze\miniconda3\Lib\http\client.py", line 292 in _read_status
+  File "C:\Users\lauze\miniconda3\Lib\http\client.py", line 331 in begin
+  File "C:\Users\lauze\miniconda3\Lib\http\client.py", line 1430 in getresponse
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 1323 in do_open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 1348 in http_open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 466 in _call_chain
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 506 in _open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 489 in open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 189 in urlopen
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 42 in _post
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 54 in chat
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 92 in chat_json
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\experiment_pipelines\run_evidence_semantic_gate.py", line 319 in judge_one
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\thread.py", line 59 in run
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\thread.py", line 93 in _worker
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 992 in run
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 1041 in _bootstrap_inner
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 1012 in _bootstrap
+
+Thread 0x00010a34 (most recent call first):
+  File "C:\Users\lauze\miniconda3\Lib\socket.py", line 719 in readinto
+  File "C:\Users\lauze\miniconda3\Lib\http\client.py", line 292 in _read_status
+  File "C:\Users\lauze\miniconda3\Lib\http\client.py", line 331 in begin
+  File "C:\Users\lauze\miniconda3\Lib\http\client.py", line 1430 in getresponse
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 1323 in do_open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 1348 in http_open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 466 in _call_chain
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 506 in _open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 489 in open
+  File "C:\Users\lauze\miniconda3\Lib\urllib\request.py", line 189 in urlopen
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 42 in _post
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 54 in chat
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 92 in chat_json
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\experiment_pipelines\run_evidence_semantic_gate.py", line 319 in judge_one
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\thread.py", line 59 in run
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\thread.py", line 93 in _worker
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 992 in run
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 1041 in _bootstrap_inner
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 1012 in _bootstrap
+
+Current thread 0x0000a514 (most recent call first):
+  File "<stdin>", line 9 in watcher
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 992 in run
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 1041 in _bootstrap_inner
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 1012 in _bootstrap
+
+Thread 0x0000aa20 (most recent call first):
+  File "C:\Users\lauze\miniconda3\Lib\threading.py", line 1092 in join
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\thread.py", line 239 in shutdown
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\_base.py", line 647 in __exit__
+  File "D:\REDCULTUREDATA\\u6295\u7a3f\u6750\u6599_\u4ee3\u7801\u6570\u636e\u6574\u7406\u5305\submission_work\final_submission_v3_1\code\experiment_pipelines\build_final_tiering.py", line 708 in run_queue
+  File "<stdin>", line 14 in <module>

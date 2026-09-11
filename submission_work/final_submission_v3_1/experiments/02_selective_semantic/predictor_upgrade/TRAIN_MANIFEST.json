@@ -1,0 +1,26 @@
+{
+  "source": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\source_data\\stkg_v2_entity_classifier.sqlite",
+  "sha256": "0343ba31ba2404c1f1f8ba7eef8ca9083d7670cfe06af875be67c7c4e7a80b7f",
+  "table": "entity_predictions",
+  "filter": "class_gate_pass=1",
+  "weak_label_field": "predicted_type",
+  "text_field": "canonical_name (表无 aliases 列)",
+  "n_rows_total": 6813,
+  "n_train": 1210,
+  "class_distribution": {
+    "Concept": 6,
+    "Document": 52,
+    "Event": 156,
+    "Institution": 77,
+    "Organization": 550,
+    "Person": 145,
+    "Place": 222,
+    "ValueFacet": 2
+  },
+  "confidence_stats": {
+    "min": 0.9003689289093018,
+    "mean": 0.9616388954899527,
+    "max": 0.9998347759246826
+  },
+  "leakage_statement": "weak 标签来自生产分类器（260 冻结模型）分数表；IMCR strong 独立参考仅用于 DEV/VAL 评价，不进入任何训练/拟合调用。"
+}

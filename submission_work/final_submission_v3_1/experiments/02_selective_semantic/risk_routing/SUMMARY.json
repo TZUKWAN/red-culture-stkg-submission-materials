@@ -1,0 +1,721 @@
+{
+  "created_utc": "2026-09-09T20:09:29+00:00",
+  "seed": 20260908,
+  "wall_seconds": 9.9,
+  "inputs_sha256": {
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\09_independent_baselines\\IMCR_BASELINE_RUNS.csv": "07ef17a42864df5c5f56eec307b4be2c8984d23fbf6e45a6242e01bbc4f1cd49",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\IMCR_REFERENCE_STRONG.csv": "798a29a52be82c3054620b6dc0d981ee7807d38e51bba42c906f9436116c27a4",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\09_independent_baselines\\IMCR_BLIND_LLM_RUNS.csv": "94e18170193ae7e74feea87d8df9dc8dd9f43d9bd61ea636cf0301b46a77f5f5",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\ENTITY_TYPE_SAMPLE.csv": "284fe8c4d7f37b0476a880fe8e52facd631b21630aa1c7bc5ead7e71b0c9ed82",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\ENTITY_TYPE_SAMPLE.sampling_metadata.csv": "625f6c6c0ba3b1bd84de0457905b17cd676a03f9ba96be6647f556488f450c70",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\data\\frozen_splits\\SPLIT_MANIFEST.json": "59b38d41fb9ec59609efca97daf10902dcf6ec869f7f55598fb04e00cf05a457"
+  },
+  "population": {
+    "n_frame": 382,
+    "n_dev": 254,
+    "n_val": 66,
+    "n_test_excluded": 62,
+    "n_reference_labeled": {
+      "dev": 182,
+      "val": 48
+    },
+    "n_no_clf_pred": {
+      "dev": 24,
+      "val": 8
+    }
+  },
+  "risk_model": {
+    "chosen": "DecisionTree_max_depth4",
+    "selection_rule": "VAL AUPRC 选型；SIMPLICITY_ORDER=['LogisticRegression', 'DecisionTree_max_depth4', 'CalibratedLR_sigmoid'] 中取第一个 val_auprc >= best - 0.01 的候选（偏好最简单）",
+    "selection": {
+      "LogisticRegression": {
+        "dev_auprc": 0.8904774688991355,
+        "val_auprc": 0.6517599099192217,
+        "val_auroc": 0.28717948717948716,
+        "n_train": 166,
+        "n_val_scored": 43
+      },
+      "DecisionTree_max_depth4": {
+        "dev_auprc": 0.8163428050646097,
+        "val_auprc": 0.7282641120984853,
+        "val_auroc": 0.5192307692307693,
+        "n_train": 166,
+        "n_val_scored": 43
+      },
+      "CalibratedLR_sigmoid": {
+        "dev_auprc": 0.8854951939919431,
+        "val_auprc": 0.6500932432525551,
+        "val_auroc": 0.2871794871794872,
+        "n_train": 166,
+        "n_val_scored": 43
+      }
+    },
+    "features": [
+      "clf_conf",
+      "clf_margin",
+      "entropy_margin_approx",
+      "rule_conf",
+      "rule_clf_agreement",
+      "rule_hit",
+      "lexical_contradiction",
+      "type_family_member",
+      "validated",
+      "source_multiplicity",
+      "pred_AdministrativeRegion",
+      "pred_Artifact",
+      "pred_BasinSection",
+      "pred_Concept",
+      "pred_CreativeWork",
+      "pred_CulturalSite",
+      "pred_Document",
+      "pred_Event",
+      "pred_EvolutionStage",
+      "pred_Institution",
+      "pred_Organization",
+      "pred_Person",
+      "pred_Place",
+      "pred_Position",
+      "pred_SocialGroup",
+      "pred_Spirit",
+      "pred_TimePeriod",
+      "pred_ValueFacet",
+      "pred_OTHER"
+    ],
+    "feature_descriptions": {
+      "clf_conf": "B2 冻结分类器置信（缺失→0，配 no_clf_pred 政策处理）",
+      "clf_margin": "B7 分类器 top1-top2 概率间隔",
+      "entropy_margin_approx": "由 margin 近似的归一化熵：H2(0.5+clip(margin,0,1)/2)（margin∈[0,1]，单调反转）",
+      "rule_conf": "B1 规则置信（缺失→0）",
+      "rule_clf_agreement": "rule_pred == clf_pred（两者都存在）",
+      "rule_hit": "规则给出候选（rule_pred 非空）",
+      "lexical_contradiction": "entity_model_contraindication(name, primary_source_type, clf_pred) 非空",
+      "type_family_member": "clf_pred ∈ TYPE_FAMILY",
+      "validated": "ENTITY_TYPE_SAMPLE.sampling_metadata.type_validation_status == validated",
+      "source_multiplicity": "integrated_member_count（成员数）",
+      "pred_*": "clf_pred 类别 onehot（类别域 = TYPE_FAMILY 键 + OTHER）"
+    },
+    "labels": "IMCR_REFERENCE_STRONG entity_type rows; wrong = clf_pred != reference_label; DEV only",
+    "forbidden_labels": "weak auto_accepted 标签禁止用作 risk 真值（未使用）",
+    "no_clf_policy": "clf_pred 缺失的样本 r_hat=1.0（无候选信号，永不 AUTO_ACCEPT）"
+  },
+  "budgets": [
+    0.0,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "per_split_budget_counts": {
+    "dev": {
+      "b000": 0,
+      "b005": 13,
+      "b010": 25,
+      "b020": 51,
+      "b030": 76,
+      "b040": 102,
+      "b050": 127,
+      "b075": 191,
+      "b100": 254
+    },
+    "val": {
+      "b000": 0,
+      "b005": 3,
+      "b010": 7,
+      "b020": 13,
+      "b030": 20,
+      "b040": 26,
+      "b050": 33,
+      "b075": 50,
+      "b100": 66
+    }
+  },
+  "tau_accept_by_budget": {
+    "b000": {
+      "dev": 0.6666666666666666,
+      "val": 0.6666666666666666
+    },
+    "b005": {
+      "dev": 0.6666666666666666,
+      "val": 0.6666666666666666
+    },
+    "b010": {
+      "dev": 0.6666666666666666,
+      "val": 0.6666666666666666
+    },
+    "b020": {
+      "dev": 0.6666666666666666,
+      "val": 0.6666666666666666
+    },
+    "b030": {
+      "dev": 0.6666666666666666,
+      "val": 0.6666666666666666
+    },
+    "b040": {
+      "dev": 0.6666666666666666,
+      "val": 0.6666666666666666
+    },
+    "b050": {
+      "dev": 0.6666666666666666,
+      "val": 0.6666666666666666
+    },
+    "b075": {
+      "dev": 0.6666666666666666,
+      "val": 0.6666666666666666
+    },
+    "b100": {
+      "dev": 0.0,
+      "val": 0.0
+    }
+  },
+  "tau_escalate_by_budget": {
+    "b000": {
+      "dev": Infinity,
+      "val": Infinity
+    },
+    "b005": {
+      "dev": 1.0,
+      "val": 1.0
+    },
+    "b010": {
+      "dev": 1.0,
+      "val": 1.0
+    },
+    "b020": {
+      "dev": 0.84375,
+      "val": 1.0
+    },
+    "b030": {
+      "dev": 0.84375,
+      "val": 0.84375
+    },
+    "b040": {
+      "dev": 0.6666666666666666,
+      "val": 0.6666666666666666
+    },
+    "b050": {
+      "dev": 0.6666666666666666,
+      "val": 0.6666666666666666
+    },
+    "b075": {
+      "dev": 0.6666666666666666,
+      "val": 0.6666666666666666
+    },
+    "b100": {
+      "dev": 0.0,
+      "val": 0.0
+    }
+  },
+  "operating_point": {
+    "budget": 0.0,
+    "basis": "VAL Pareto knee",
+    "knees": {
+      "dev": {
+        "budget": 0.0,
+        "gap": 0.0,
+        "chord": {
+          "from": {
+            "budget": 0.0,
+            "selective_risk": 0.5982905982905983
+          },
+          "to": {
+            "budget": 1.0,
+            "selective_risk": 0.027472527472527486
+          }
+        },
+        "rule": "knee = argmax_b [chord(0%→100%) - selective_risk(b)]（数据决定，平局取最小预算）",
+        "knee_b_le_75": {
+          "budget": 0.2,
+          "gap": 0.0010030417925154245,
+          "chord": {
+            "from": {
+              "budget": 0.0,
+              "selective_risk": 0.5982905982905983
+            },
+            "to": {
+              "budget": 0.75,
+              "selective_risk": 0.20879120879120883
+            }
+          },
+          "rule": "knee = argmax_b [chord(0%→100%) - selective_risk(b)]（数据决定，平局取最小预算）"
+        }
+      },
+      "val": {
+        "budget": 0.0,
+        "gap": 0.0,
+        "chord": {
+          "from": {
+            "budget": 0.0,
+            "selective_risk": 0.6764705882352942
+          },
+          "to": {
+            "budget": 1.0,
+            "selective_risk": 0.02083333333333337
+          }
+        },
+        "rule": "knee = argmax_b [chord(0%→100%) - selective_risk(b)]（数据决定，平局取最小预算）",
+        "knee_b_le_75": {
+          "budget": 0.1,
+          "gap": 0.00700100553041727,
+          "chord": {
+            "from": {
+              "budget": 0.0,
+              "selective_risk": 0.6764705882352942
+            },
+            "to": {
+              "budget": 0.75,
+              "selective_risk": 0.27083333333333337
+            }
+          },
+          "rule": "knee = argmax_b [chord(0%→100%) - selective_risk(b)]（数据决定，平局取最小预算）"
+        }
+      }
+    }
+  },
+  "curve": [
+    {
+      "n_all": 254,
+      "n_eval_labeled": 182,
+      "n_auto_accept": 160,
+      "n_escalate": 0,
+      "n_abstain": 94,
+      "llm_call_rate": 0.0,
+      "coverage": 0.6428571428571429,
+      "semantic_agreement": 0.4017094017094017,
+      "selective_accuracy": 0.4017094017094017,
+      "selective_risk": 0.5982905982905983,
+      "generalized_risk": 0.38461538461538464,
+      "aurc": 0.39458091997330635,
+      "n_correct_published": 47,
+      "eval_wrong_prevalence": 0.6263736263736264,
+      "split": "dev",
+      "budget": 0.0,
+      "llm_source": "none",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": null,
+      "tau_note": null
+    },
+    {
+      "n_all": 254,
+      "n_eval_labeled": 182,
+      "n_auto_accept": 160,
+      "n_escalate": 13,
+      "n_abstain": 81,
+      "llm_call_rate": 0.051181102362204724,
+      "coverage": 0.6923076923076923,
+      "semantic_agreement": 0.42857142857142855,
+      "selective_accuracy": 0.42857142857142855,
+      "selective_risk": 0.5714285714285714,
+      "generalized_risk": 0.3956043956043956,
+      "aurc": 0.4238051660645683,
+      "n_correct_published": 54,
+      "eval_wrong_prevalence": 0.6263736263736264,
+      "split": "dev",
+      "budget": 0.05,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 1.0,
+      "tau_note": null
+    },
+    {
+      "n_all": 254,
+      "n_eval_labeled": 182,
+      "n_auto_accept": 160,
+      "n_escalate": 25,
+      "n_abstain": 69,
+      "llm_call_rate": 0.0984251968503937,
+      "coverage": 0.7417582417582418,
+      "semantic_agreement": 0.45185185185185184,
+      "selective_accuracy": 0.45185185185185184,
+      "selective_risk": 0.5481481481481482,
+      "generalized_risk": 0.4065934065934066,
+      "aurc": 0.4523936493488432,
+      "n_correct_published": 61,
+      "eval_wrong_prevalence": 0.6263736263736264,
+      "split": "dev",
+      "budget": 0.1,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 1.0,
+      "tau_note": null
+    },
+    {
+      "n_all": 254,
+      "n_eval_labeled": 182,
+      "n_auto_accept": 160,
+      "n_escalate": 51,
+      "n_abstain": 43,
+      "llm_call_rate": 0.20078740157480315,
+      "coverage": 0.8351648351648352,
+      "semantic_agreement": 0.506578947368421,
+      "selective_accuracy": 0.506578947368421,
+      "selective_risk": 0.493421052631579,
+      "generalized_risk": 0.41208791208791207,
+      "aurc": 0.50166649737855,
+      "n_correct_published": 77,
+      "eval_wrong_prevalence": 0.6263736263736264,
+      "split": "dev",
+      "budget": 0.2,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 0.84375,
+      "tau_note": null
+    },
+    {
+      "n_all": 254,
+      "n_eval_labeled": 182,
+      "n_auto_accept": 160,
+      "n_escalate": 76,
+      "n_abstain": 18,
+      "llm_call_rate": 0.2992125984251969,
+      "coverage": 0.9285714285714286,
+      "semantic_agreement": 0.5325443786982249,
+      "selective_accuracy": 0.5325443786982249,
+      "selective_risk": 0.4674556213017751,
+      "generalized_risk": 0.4340659340659341,
+      "aurc": 0.5499923495603611,
+      "n_correct_published": 90,
+      "eval_wrong_prevalence": 0.6263736263736264,
+      "split": "dev",
+      "budget": 0.3,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 0.84375,
+      "tau_note": null
+    },
+    {
+      "n_all": 254,
+      "n_eval_labeled": 182,
+      "n_auto_accept": 152,
+      "n_escalate": 102,
+      "n_abstain": 0,
+      "llm_call_rate": 0.4015748031496063,
+      "coverage": 1.0,
+      "semantic_agreement": 0.5769230769230769,
+      "selective_accuracy": 0.5769230769230769,
+      "selective_risk": 0.42307692307692313,
+      "generalized_risk": 0.4230769230769231,
+      "aurc": 0.5664198914618082,
+      "n_correct_published": 105,
+      "eval_wrong_prevalence": 0.6263736263736264,
+      "split": "dev",
+      "budget": 0.4,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 0.6666666666666666,
+      "tau_note": null
+    },
+    {
+      "n_all": 254,
+      "n_eval_labeled": 182,
+      "n_auto_accept": 127,
+      "n_escalate": 127,
+      "n_abstain": 0,
+      "llm_call_rate": 0.5,
+      "coverage": 1.0,
+      "semantic_agreement": 0.6318681318681318,
+      "selective_accuracy": 0.6318681318681318,
+      "selective_risk": 0.36813186813186816,
+      "generalized_risk": 0.36813186813186816,
+      "aurc": 0.516182967957126,
+      "n_correct_published": 115,
+      "eval_wrong_prevalence": 0.6263736263736264,
+      "split": "dev",
+      "budget": 0.5,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 0.6666666666666666,
+      "tau_note": null
+    },
+    {
+      "n_all": 254,
+      "n_eval_labeled": 182,
+      "n_auto_accept": 63,
+      "n_escalate": 191,
+      "n_abstain": 0,
+      "llm_call_rate": 0.7519685039370079,
+      "coverage": 1.0,
+      "semantic_agreement": 0.7912087912087912,
+      "selective_accuracy": 0.7912087912087912,
+      "selective_risk": 0.20879120879120883,
+      "generalized_risk": 0.2087912087912088,
+      "aurc": 0.3191082972628976,
+      "n_correct_published": 144,
+      "eval_wrong_prevalence": 0.6263736263736264,
+      "split": "dev",
+      "budget": 0.75,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 0.6666666666666666,
+      "tau_note": null
+    },
+    {
+      "n_all": 254,
+      "n_eval_labeled": 182,
+      "n_auto_accept": 0,
+      "n_escalate": 254,
+      "n_abstain": 0,
+      "llm_call_rate": 1.0,
+      "coverage": 1.0,
+      "semantic_agreement": 0.9725274725274725,
+      "selective_accuracy": 0.9725274725274725,
+      "selective_risk": 0.027472527472527486,
+      "generalized_risk": 0.027472527472527472,
+      "aurc": 0.03607929222246794,
+      "n_correct_published": 177,
+      "eval_wrong_prevalence": 0.6263736263736264,
+      "split": "dev",
+      "budget": 1.0,
+      "llm_source": "B3_existing_blind_llm",
+      "tau_accept": 0.0,
+      "tau_escalate": 0.0,
+      "tau_note": "no remaining labeled rows; tau_accept=0 (accept nothing)"
+    },
+    {
+      "n_all": 66,
+      "n_eval_labeled": 48,
+      "n_auto_accept": 41,
+      "n_escalate": 0,
+      "n_abstain": 25,
+      "llm_call_rate": 0.0,
+      "coverage": 0.7083333333333334,
+      "semantic_agreement": 0.3235294117647059,
+      "selective_accuracy": 0.3235294117647059,
+      "selective_risk": 0.6764705882352942,
+      "generalized_risk": 0.4791666666666667,
+      "aurc": 0.656081036065208,
+      "n_correct_published": 11,
+      "eval_wrong_prevalence": 0.625,
+      "split": "val",
+      "budget": 0.0,
+      "llm_source": "none",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": null,
+      "tau_note": null
+    },
+    {
+      "n_all": 66,
+      "n_eval_labeled": 48,
+      "n_auto_accept": 41,
+      "n_escalate": 3,
+      "n_abstain": 22,
+      "llm_call_rate": 0.045454545454545456,
+      "coverage": 0.7708333333333334,
+      "semantic_agreement": 0.35135135135135137,
+      "selective_accuracy": 0.35135135135135137,
+      "selective_risk": 0.6486486486486487,
+      "generalized_risk": 0.5,
+      "aurc": 0.6980589646240188,
+      "n_correct_published": 13,
+      "eval_wrong_prevalence": 0.625,
+      "split": "val",
+      "budget": 0.05,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 1.0,
+      "tau_note": null
+    },
+    {
+      "n_all": 66,
+      "n_eval_labeled": 48,
+      "n_auto_accept": 41,
+      "n_escalate": 7,
+      "n_abstain": 18,
+      "llm_call_rate": 0.10606060606060606,
+      "coverage": 0.8125,
+      "semantic_agreement": 0.38461538461538464,
+      "selective_accuracy": 0.38461538461538464,
+      "selective_risk": 0.6153846153846154,
+      "generalized_risk": 0.5,
+      "aurc": 0.7243838725278742,
+      "n_correct_published": 15,
+      "eval_wrong_prevalence": 0.625,
+      "split": "val",
+      "budget": 0.1,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 1.0,
+      "tau_note": null
+    },
+    {
+      "n_all": 66,
+      "n_eval_labeled": 48,
+      "n_auto_accept": 41,
+      "n_escalate": 13,
+      "n_abstain": 12,
+      "llm_call_rate": 0.19696969696969696,
+      "coverage": 0.8541666666666666,
+      "semantic_agreement": 0.3902439024390244,
+      "selective_accuracy": 0.3902439024390244,
+      "selective_risk": 0.6097560975609756,
+      "generalized_risk": 0.5208333333333334,
+      "aurc": 0.7523907887027139,
+      "n_correct_published": 16,
+      "eval_wrong_prevalence": 0.625,
+      "split": "val",
+      "budget": 0.2,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 1.0,
+      "tau_note": null
+    },
+    {
+      "n_all": 66,
+      "n_eval_labeled": 48,
+      "n_auto_accept": 41,
+      "n_escalate": 20,
+      "n_abstain": 5,
+      "llm_call_rate": 0.30303030303030304,
+      "coverage": 0.9166666666666666,
+      "semantic_agreement": 0.4090909090909091,
+      "selective_accuracy": 0.4090909090909091,
+      "selective_risk": 0.5909090909090908,
+      "generalized_risk": 0.5416666666666666,
+      "aurc": 0.7896388852540224,
+      "n_correct_published": 18,
+      "eval_wrong_prevalence": 0.625,
+      "split": "val",
+      "budget": 0.3,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 0.84375,
+      "tau_note": null
+    },
+    {
+      "n_all": 66,
+      "n_eval_labeled": 48,
+      "n_auto_accept": 40,
+      "n_escalate": 26,
+      "n_abstain": 0,
+      "llm_call_rate": 0.3939393939393939,
+      "coverage": 1.0,
+      "semantic_agreement": 0.4583333333333333,
+      "selective_accuracy": 0.4583333333333333,
+      "selective_risk": 0.5416666666666667,
+      "generalized_risk": 0.5416666666666666,
+      "aurc": 0.8304368611440188,
+      "n_correct_published": 22,
+      "eval_wrong_prevalence": 0.625,
+      "split": "val",
+      "budget": 0.4,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 0.6666666666666666,
+      "tau_note": null
+    },
+    {
+      "n_all": 66,
+      "n_eval_labeled": 48,
+      "n_auto_accept": 33,
+      "n_escalate": 33,
+      "n_abstain": 0,
+      "llm_call_rate": 0.5,
+      "coverage": 1.0,
+      "semantic_agreement": 0.5208333333333334,
+      "selective_accuracy": 0.5208333333333334,
+      "selective_risk": 0.47916666666666663,
+      "generalized_risk": 0.4791666666666667,
+      "aurc": 0.7802029046217549,
+      "n_correct_published": 25,
+      "eval_wrong_prevalence": 0.625,
+      "split": "val",
+      "budget": 0.5,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 0.6666666666666666,
+      "tau_note": null
+    },
+    {
+      "n_all": 66,
+      "n_eval_labeled": 48,
+      "n_auto_accept": 16,
+      "n_escalate": 50,
+      "n_abstain": 0,
+      "llm_call_rate": 0.7575757575757576,
+      "coverage": 1.0,
+      "semantic_agreement": 0.7291666666666666,
+      "selective_accuracy": 0.7291666666666666,
+      "selective_risk": 0.27083333333333337,
+      "generalized_risk": 0.2708333333333333,
+      "aurc": 0.5339801029387669,
+      "n_correct_published": 35,
+      "eval_wrong_prevalence": 0.625,
+      "split": "val",
+      "budget": 0.75,
+      "llm_source": "gpt-oss-20b_fresh",
+      "tau_accept": 0.6666666666666666,
+      "tau_escalate": 0.6666666666666666,
+      "tau_note": null
+    },
+    {
+      "n_all": 66,
+      "n_eval_labeled": 48,
+      "n_auto_accept": 0,
+      "n_escalate": 66,
+      "n_abstain": 0,
+      "llm_call_rate": 1.0,
+      "coverage": 1.0,
+      "semantic_agreement": 0.9791666666666666,
+      "selective_accuracy": 0.9791666666666666,
+      "selective_risk": 0.02083333333333337,
+      "generalized_risk": 0.020833333333333332,
+      "aurc": 0.061424593924946924,
+      "n_correct_published": 47,
+      "eval_wrong_prevalence": 0.625,
+      "split": "val",
+      "budget": 1.0,
+      "llm_source": "B3_existing_blind_llm",
+      "tau_accept": 0.0,
+      "tau_escalate": 0.0,
+      "tau_note": "no remaining labeled rows; tau_accept=0 (accept nothing)"
+    }
+  ],
+  "escalation": {
+    "model": "openai/gpt-oss-20b",
+    "prompt_version": "risk_routing.escalation.v1",
+    "prompt_system": "你是独立的历史知识图谱实体类型评审。给定一个实体的名称、别名、它在语料中参与的关系上下文与文献节选，以及候选类型集合 candidate_types 和各类型定义 type_definitions。你的唯一任务：依据给出的信息判断该实体最合理的类型。\n约束：只允许从 candidate_types 列出的类型中选择一个；证据不足或不属于任何候选类型时选择 OTHER；不得臆测输入之外的信息；输入中不含任何系统标签或参考答案，也不要猜测其存在。\n输出且仅输出一个 JSON 对象：{\"task_id\":..., \"decision\":..., \"confidence\":0-1, \"evidence\":[引用证据关键句], \"reason_code\":简短代码, \"explanation\":一句话理由, \"insufficient_evidence\":bool}",
+    "prompt_sha256": "2c67d6cd7cc629d3ec2ce43131f111b56c5367ef110c37f410d6ff4cda6ba804",
+    "payload_fields": [
+      "task_id",
+      "entity_name",
+      "aliases",
+      "context_assertions",
+      "source_excerpt",
+      "candidate_types",
+      "type_definitions"
+    ],
+    "leakage_guards": "payload 不含生产标签/参考标签/正确性信息；TEST split 调用被显式阻断",
+    "fresh_calls_made": 0,
+    "cached_records_total": 240,
+    "ok_records": 240,
+    "valid_decisions": 240,
+    "invalid_decisions": 0,
+    "errors": 0,
+    "escalation_failures": [
+      "ETV3-0041"
+    ],
+    "escalation_failure_note": "状态 ERROR 的样本（JSONL 中留有完整错误记录；temperature=0 下输出为确定性畸形 JSON，重试同败）路由上回退基础预测（final_source=base_prediction_fallback）。",
+    "jsonl_records_total": 242,
+    "latency_avg_s": 14.035329166666665,
+    "latency_max_s": 20.483,
+    "b100_source": "IMCR_BLIND_LLM_RUNS.csv B3_blind_llm（gpt-5.6-luna 既有全量 382 行，真实 every-item 对照）"
+  },
+  "guards": {
+    "test_split_excluded": true,
+    "test_ids_excluded_n": 62,
+    "risk_labels_only_from_independent_reference": true,
+    "weak_auto_accepted_labels_used": false
+  },
+  "outputs": {
+    "model_card": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\RISK_MODEL_CARD.json",
+    "runs": {
+      "dev": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\ROUTING_RUNS_dev.csv",
+      "val": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\ROUTING_RUNS_val.csv"
+    },
+    "curve": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\QUALITY_BUDGET_CURVE.csv",
+    "escalation_log": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\risk_routing\\ESCALATION_CALLS.jsonl"
+  }
+}

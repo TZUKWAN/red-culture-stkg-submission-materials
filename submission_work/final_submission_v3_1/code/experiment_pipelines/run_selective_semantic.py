@@ -2,21 +2,34 @@
 """run_selective_semantic.py — P0-2/P0-4：链 A（Selective Semantic Prediction）。
 
 评价对象：系统真实执行的语义预测任务（entity_type，382 规范实体）。
-方法变体（第三章选择机制组件逐一消融，其余冻结）：
 
-    S0  Full Selective Semantic Controller（完整：规则优先融合 + isotonic 校准 +
-        类特异性阈值 theta_c + 证据一致性 + 反向冲突抑制 + 结构准入 + 弃权）
-    S1  w/o 类特异性可靠门（全局单阈值替代 theta_c）
-    S2  w/o 附加证据一致性（移除 rule-clf agreement 信号与规则融合）
-    S3  w/o 词法/规则反向冲突抑制（不做 contraindication 否决）
-    S4  w/o 弃权（theta=0，凡有预测必接受）
-    S5  w/o 结构准入（不做 TYPE_FAMILY/contraindication 硬门）
+P0-B（S0 生产保真）：S0_production_faithful 1:1 复刻生产分类器准入机制
+（code/scripts/260_train_evaluate_stkg_v2_entity_classifier.py L274-305）：
+
+    classifier prediction → class-specific reliability gate → evidence agreement
+    （硬性资格合取，支持/否决信号，不替换 prediction）→ strict contradiction
+    guard（词法严格提示不一致）→ structural admission（TYPE_FAMILY +
+    contraindication）→ eligible / abstain
+
+旧 S0 的"规则存在就用规则否则用分类器"逻辑整体保留为 S0_rule_first_legacy
+供对比（生产机制精确规范与差异清单见 audit/method_final/01_METHOD_IMPLEMENTATION_AUDIT.md）。
+
+P0-C（消融单变量）：S1–S5 相对 S0_production_faithful 各只改变一个声明组件；
+所有输出行携带 changed_components 字段（相对 faithful 版改变的组件，S0=none）。
+
+    S0_production_faithful   生产保真控制器（预测源=分类器 + 原始置信）
+    S0_rule_first_legacy     旧规则优先控制器（对照；isotonic 校准 + 加成）
+    S1_wo_class_gate         只改：按类 theta_c → 全局 theta
+    S2_wo_evidence_agreement 只去：agreement 准入合取（候选源不变）
+    S3_wo_contradiction_guard 只去：词法严格矛盾否决（生产 260 L293 语义）
+    S4_wo_abstention         只去：阈值弃权（守卫全部保留）
+    S5_wo_structural_admission 只去：TYPE_FAMILY+contraindication 结构门
     S6  Rule-only            S7  Classifier-only      S8  Blind-LLM-only
     S9  Rule+Classifier      S10 Rule+Blind-LLM
 
-数据：信号取自 V3 冻结基线行（B1 规则 / B2 分类器 proba / B7 margin——确定性生产
-组件重放）+ v3_1 新 B3 nemotron 盲 LLM fresh 行；参考 = IMCR strong（无 nemotron 票）。
-切分：book-grouped 冻结切分；theta_c/校准只在 DEV 上学习，VAL 观察，TEST 由
+数据：信号取自 V3 冻结基线行（B1 规则=256 融合重放 / B2 分类器=260 冻结模型
+重放 / B7 margin）+ v3_1 新 B3 盲 LLM fresh 行；参考 = IMCR（无 nemotron 票）。
+切分：book-grouped 冻结切分；theta/校准只在 DEV 上学习，VAL 观察，TEST 由
 --split test 显式运行（须已存在 TEST_FROZEN 守门文件）。
 """
 
@@ -24,6 +37,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import math
 import sys
@@ -51,6 +65,7 @@ from selective_stats import (  # noqa: E402
 
 sys.path.insert(0, str(V3 / "data" / "external_inputs"))
 import stkg_v2_semantics as sem  # noqa: E402
+from stkg_contract import strong_entity_type_hint  # noqa: E402  # 生产 260 L28 同款导入
 
 V3_RUNS = V3 / "experiments" / "09_independent_baselines" / "IMCR_BASELINE_RUNS.csv"
 V3_REF_STRONG = V3 / "experiments" / "08_independent_reference" / "IMCR_REFERENCE_STRONG.csv"
@@ -102,7 +117,12 @@ def load_b3_rows() -> dict[str, dict[str, Any]]:
     if not B3_RUNS.exists():
         return out
     for r in csv.DictReader(open(B3_RUNS, encoding="utf-8-sig")):
-        if r.get("method_id") == "B3_blind_llm" and r.get("task_type") == "entity_type"                 and r.get("availability_status") == "available" and r.get("prediction"):
+        if (
+            r.get("method_id") == "B3_blind_llm"
+            and r.get("task_type") == "entity_type"
+            and r.get("availability_status") == "available"
+            and r.get("prediction")
+        ):
             sid = r["sample_id"]
             if sid not in out:
                 out[sid] = {
@@ -164,6 +184,7 @@ def build_signal_frame() -> dict[str, dict[str, Any]]:
             "llm_pred": b3.get(sid, {}).get("prediction"),
             "llm_conf": b3.get(sid, {}).get("confidence"),
             "contra_cache": contra_pred,
+            "lexical_cache": {},
             "meta": m,
             "_primary_source_type": primary_source_type,
         }
@@ -171,7 +192,7 @@ def build_signal_frame() -> dict[str, dict[str, Any]]:
 
 
 def contra(frame: dict[str, Any], sid: str, pred: str) -> bool:
-    """词法/规则反向冲突抑制：entity_model_contraindication 非空即冲突（按样本缓存）。"""
+    """contraindication（生产硬约束门信号）：entity_model_contraindication 非空即冲突（按样本缓存）。"""
     cache = frame[sid]["contra_cache"]
     if pred not in cache:
         name = frame[sid]["name"]
@@ -184,8 +205,22 @@ def contra(frame: dict[str, Any], sid: str, pred: str) -> bool:
     return cache[pred]
 
 
+def lexical_hint_of(frame: dict[str, Any], sid: str) -> str:
+    """生产 260 L285 同式重算词法严格提示：refine_lexical_hint(name, source_type, strong hint)。"""
+    f = frame[sid]
+    cache = f["lexical_cache"]
+    if "hint" not in cache:
+        try:
+            cache["hint"] = sem.refine_lexical_hint(
+                f["name"], f["_primary_source_type"], strong_entity_type_hint(f["name"])
+            )
+        except Exception:
+            cache["hint"] = ""
+    return cache["hint"]
+
+
 def structural_ok(frame: dict[str, Any], sid: str, pred: str) -> bool:
-    """结构准入：TYPE_FAMILY 成员 + 无 contraindication。"""
+    """结构准入（生产硬约束门同款）：TYPE_FAMILY 成员 + 无 contraindication。"""
     tf = getattr(sem, "TYPE_FAMILY", {})
     if tf and pred not in tf:
         return False
@@ -197,7 +232,7 @@ def structural_ok(frame: dict[str, Any], sid: str, pred: str) -> bool:
 # ---------------------------------------------------------------------------
 
 def isotonic_fit(pairs: list[tuple[float, int]], bins: int = 10) -> list[tuple[float, float]]:
-    """简单 PAV 风格分箱保序回归：返回 (bin 上界, 校准值) 表。"""
+    """简单 PAV 风格分箱保序回归：返回 (bin 上界, 校准值) 表（仅 legacy 家族使用）。"""
     pairs = sorted(pairs)
     if not pairs:
         return [(1.0, 0.5)]
@@ -259,7 +294,42 @@ def learn_threshold(rows: list[dict[str, Any]], coverage_floor: float = COVERAGE
 # 变体构造
 # ---------------------------------------------------------------------------
 
-def compose_s_variants(frame: dict[str, Any], calib_table, theta_c: dict[str, float], theta_global: float) -> dict[str, list[dict[str, Any]]]:
+FAITHFUL_VARIANTS = [
+    "S0_production_faithful",
+    "S1_wo_class_gate",
+    "S2_wo_evidence_agreement",
+    "S3_wo_contradiction_guard",
+    "S4_wo_abstention",
+    "S5_wo_structural_admission",
+]
+LEGACY_VARIANT = "S0_rule_first_legacy"
+CONTROLLER_VARIANTS = FAITHFUL_VARIANTS + [LEGACY_VARIANT]
+
+_BASELINE_CHANGED = "candidate_source,class_gate,abstention,evidence_agreement,contradiction_guard,structural_admission"
+CHANGED_COMPONENTS: dict[str, str] = {
+    "S0_production_faithful": "none",
+    LEGACY_VARIANT: "candidate_source,score_calibration,evidence_agreement",
+    "S1_wo_class_gate": "class_gate",
+    "S2_wo_evidence_agreement": "evidence_agreement",
+    "S3_wo_contradiction_guard": "contradiction_guard",
+    "S4_wo_abstention": "abstention",
+    "S5_wo_structural_admission": "structural_admission",
+    "S6_rule_only": _BASELINE_CHANGED,
+    "S7_classifier_only": _BASELINE_CHANGED.replace("candidate_source,", ""),
+    "S8_blind_llm_only": _BASELINE_CHANGED,
+    "S9_rule_plus_classifier": _BASELINE_CHANGED,
+    "S10_rule_plus_blind_llm": _BASELINE_CHANGED,
+}
+
+
+def compose_s_variants(
+    frame: dict[str, Any],
+    calib_table: dict[str, list[tuple[float, float]]],
+    theta_c: dict[str, float],
+    theta_global: float,
+    theta_c_legacy: dict[str, float],
+    theta_global_legacy: float,
+) -> dict[str, list[dict[str, Any]]]:
     """按变体语义生成逐样本行。所有行统一字段：
     sample_id, prediction, score, accepted, correct, gate_violation, gate_reason。
     correct 由调用方对照参考后回填（此处先置 0）。"""
@@ -282,7 +352,7 @@ def compose_s_variants(frame: dict[str, Any], calib_table, theta_c: dict[str, fl
         clf_raw = f["clf_conf"]
         clf_cal = isotonic_apply(calib_table[sid], clf_raw) if clf_raw is not None else None
         margin = f["clf_margin"]
-        agreement = int(rule_p is not None and clf_p is not None and rule_p == clf_p)
+        agreement_legacy = int(rule_p is not None and clf_p is not None and rule_p == clf_p)
         # --- 信号源（确定性组件） ---
         sources = {
             "rule": (rule_p, rule_conf if rule_p else None),
@@ -300,60 +370,90 @@ def compose_s_variants(frame: dict[str, Any], calib_table, theta_c: dict[str, fl
                 p_, c_ = sources[alt]
             variants[name].append(base_row(sid, p_, c_, bool(p_), "rule_first_fusion", 0))
 
-        # 控制器族（S0–S5）：预测源 = 规则优先，否则分类器；分数 = 校准分类器置信，
-        # 规则来源且与分类器一致时 +0.1 一致性加成（S2 全部移除）。
-        for name in CONTROLLER_VARIANTS:
-            v_fusion = name != "S2_wo_evidence_agreement"
-            v_agree = name != "S2_wo_evidence_agreement"
-            v_per_class = name != "S1_wo_class_gate"
-            v_struct = name != "S5_wo_structural_admission"
-            v_contra = name != "S3_wo_contradiction_guard"
-
-            if v_fusion and rule_p:
-                pred, src_reason = rule_p, "rule"
-            else:
-                pred, src_reason = clf_p, "classifier"
-            if pred is None:
+        # ---------------------------------------------------------------
+        # 生产保真控制器族（S0_production_faithful + S1–S5，P0-B/P0-C）。
+        # 生产机制（260 L274-305）：预测源恒为分类器；class gate 按预测类取，
+        # 缺门弃权；agreement 为硬性资格合取（规则/词法/schema 证据，不替换
+        # 预测）；strict contradiction guard = 词法严格提示不一致否决；
+        # structural admission = TYPE_FAMILY + contraindication。
+        # ---------------------------------------------------------------
+        if clf_p is None or clf_raw is None:
+            for name in FAITHFUL_VARIANTS:
                 variants[name].append(base_row(sid, None, None, False, "no_candidate_signal", 0))
-                continue
+        else:
+            rule_agree = rule_p is not None and rule_p == clf_p
+            lexical = lexical_hint_of(frame, sid)
+            guard_veto = bool(lexical) and lexical != clf_p
+            struct_pass = structural_ok(frame, sid, clf_p)
+            for name in FAITHFUL_VARIANTS:
+                use_global = name == "S1_wo_class_gate"
+                keep_agree = name != "S2_wo_evidence_agreement"
+                keep_guard = name != "S3_wo_contradiction_guard"
+                keep_abstain = name != "S4_wo_abstention"
+                keep_struct = name != "S5_wo_structural_admission"
+                theta: float | None = None
+                if keep_abstain:
+                    theta = theta_global if use_global else theta_c.get(clf_p)
+                    if theta is None:
+                        # 生产：预测类无 learned gate → 不 eligible（弃权）
+                        variants[name].append(base_row(sid, clf_p, clf_raw, False, "source=classifier;no_class_gate", 0))
+                        continue
+                    if clf_raw < theta:
+                        variants[name].append(
+                            base_row(sid, clf_p, clf_raw, False, f"source=classifier;theta={theta};class_gate_abstain", 0)
+                        )
+                        continue
+                if keep_agree and not rule_agree:
+                    variants[name].append(base_row(sid, clf_p, clf_raw, False, "source=classifier;evidence_agreement_fail", 0))
+                    continue
+                violation = 0
+                reason = f"source=classifier;theta={theta if theta is not None else 0}"
+                if keep_guard and guard_veto:
+                    violation = 1
+                    reason += ";contradiction_guard"
+                if keep_struct and not struct_pass:
+                    violation = 1
+                    reason += ";structural_admission"
+                variants[name].append(base_row(sid, clf_p, clf_raw, violation == 0, reason, violation))
+
+        # ---------------------------------------------------------------
+        # S0_rule_first_legacy（旧 S0_full 逻辑原样保留，仅供对照）：
+        # 规则优先融合 + isotonic 校准分数 + agreement +0.1 加成 + contra 守卫
+        # + 结构门 + 阈值弃权。与生产机制的差异清单见
+        # audit/method_final/01_METHOD_IMPLEMENTATION_AUDIT.md §2。
+        # ---------------------------------------------------------------
+        name = LEGACY_VARIANT
+        if rule_p:
+            pred, src_reason = rule_p, "rule"
+        else:
+            pred, src_reason = clf_p, "classifier"
+        if pred is None:
+            variants[name].append(base_row(sid, None, None, False, "no_candidate_signal", 0))
+        else:
             score_val = clf_cal if clf_cal is not None else (rule_conf or 0.0)
-            if v_agree and agreement and src_reason == "rule" and score_val:
+            if agreement_legacy and src_reason == "rule" and score_val:
                 score_val = min(1.0, score_val + 0.1)
-            theta = (
-                0.0
-                if name == "S4_wo_abstention"
-                else (theta_global if name == "S1_wo_class_gate" else (theta_c.get(pred) or theta_global))
-            )
+            theta = theta_c_legacy.get(pred) or theta_global_legacy
             accept = bool(score_val is not None and score_val >= theta)
             gate_viol = 0
             reason = f"source={src_reason};theta={theta}"
-            if name != "S4_wo_abstention" and not accept:
+            if not accept:
                 reason += ";abstain"
-            if v_contra and contra(frame, sid, pred):
+            if contra(frame, sid, pred):
                 accept = False
                 gate_viol = 1
                 reason += ";contradiction_guard"
-            if v_struct and not structural_ok(frame, sid, pred):
+            if not structural_ok(frame, sid, pred):
                 accept = False
                 gate_viol = 1
                 reason += ";structural_admission"
             variants[name].append(base_row(sid, pred, score_val, accept, reason, gate_viol))
+        del margin
     return variants
 
 
 def violation_ok(v: int) -> bool:
     return v == 0
-
-
-DISABLED: set[str] = set()
-CONTROLLER_VARIANTS = [
-    "S0_full",
-    "S1_wo_class_gate",
-    "S2_wo_evidence_agreement",
-    "S3_wo_contradiction_guard",
-    "S4_wo_abstention",
-    "S5_wo_structural_admission",
-]
 
 
 def fill_correct(variants: dict[str, list[dict[str, Any]]], reference: dict[str, str]) -> None:
@@ -405,37 +505,69 @@ def main() -> int:
     split = load_split()
 
     dev_ids = [sid for sid in frame if split.get(f"entity_type:{sid}") == "dev"]
-    dev_rows = []
-    # DEV 上学：校准表（全局）+ theta（占位；真 theta 以分类器预测的类为键）
+    # isotonic 校准（仅 legacy 家族沿用）——只在 DEV 拟合
+    dev_cal_pairs = []
     for sid in dev_ids:
         f = frame[sid]
         if f["clf_conf"] is not None and f["clf_pred"] and reference.get(sid):
-            dev_rows.append((f["clf_conf"], int(f["clf_pred"] == reference[sid])))
-    calib_global = isotonic_fit(dev_rows)
+            dev_cal_pairs.append((f["clf_conf"], int(f["clf_pred"] == reference[sid])))
+    calib_global = isotonic_fit(dev_cal_pairs)
     calib_table: dict[str, list[tuple[float, float]]] = {sid: calib_global for sid in frame}
 
-    # 先以全局 theta=0.5 生成一次 DEV 控制器行，学习 theta_c
-    global DEFAULTS
-    DISABLED.clear()
-    variants = compose_s_variants(frame, calib_table, {}, 0.5)
-    dev_controller = [r for r in variants["S0_full"] if split.get(f"entity_type:{r['sample_id']}") == "dev"]
-    theta_c: dict[str, float] = {}
+    # 第一遍：占位 theta 生成全部变体行并回填 correct。
+    # BUGFIX(P0-A) 契约保持：fill_correct 必须先于任何 learn_threshold 调用，
+    # 阈值学习的 utility 才由独立参考回填的 correct 驱动。
+    variants = compose_s_variants(frame, calib_table, {}, 0.5, {}, 0.5)
+    fill_correct(variants, reference)
+
+    # faithful 家族阈值学习：与生产 per_class_rows 同构——DEV 上分类器候选的
+    # (原始置信, 预测 vs 独立参考) 对，按预测类分组（生产按预测类取门）。
+    dev_controller = []
+    for sid in dev_ids:
+        f = frame[sid]
+        ref = reference.get(sid)
+        if f["clf_pred"] and f["clf_conf"] is not None and ref:
+            dev_controller.append({
+                "sample_id": sid,
+                "prediction": f["clf_pred"],
+                "score": f["clf_conf"],
+                "accepted": 0,
+                "correct": int(f["clf_pred"] == ref),
+                "gate_violation": 0,
+                "gate_reason": "",
+            })
+    theta_global = learn_threshold(dev_controller)
     by_class: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for r in dev_controller:
-        ref = reference.get(r["sample_id"])
-        by_class[r["prediction"] or "?"].append(r)
-    theta_global = learn_threshold(dev_controller)
-    for cls, rows in by_class.items():
-        theta_c[cls] = learn_threshold(rows)
-    print(f"[selective_semantic] DEV theta_c learned: {theta_c}; global={theta_global}")
+        by_class[r["prediction"]].append(r)
+    theta_c: dict[str, float] = {cls: learn_threshold(rows) for cls, rows in sorted(by_class.items())}
+    print(f"[selective_semantic] DEV theta (faithful) learned: classes={len(theta_c)}; global={theta_global}")
+
+    # legacy 家族阈值学习：旧路径原样（在其自身占位行上按预测类学）。
+    dev_legacy = [r for r in variants[LEGACY_VARIANT] if split.get(f"entity_type:{r['sample_id']}") == "dev"]
+    theta_global_legacy = learn_threshold(dev_legacy)
+    by_class_legacy: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for r in dev_legacy:
+        by_class_legacy[r["prediction"] or "?"].append(r)
+    theta_c_legacy: dict[str, float] = {cls: learn_threshold(rows) for cls, rows in sorted(by_class_legacy.items())}
+    print(f"[selective_semantic] DEV theta (legacy) learned: classes={len(theta_c_legacy)}; global={theta_global_legacy}")
 
     # 正式变体生成（DEV 配置冻结）
-    variants = compose_s_variants(frame, calib_table, theta_c, theta_global)
+    variants = compose_s_variants(frame, calib_table, theta_c, theta_global, theta_c_legacy, theta_global_legacy)
     fill_correct(variants, reference)
 
     # 校准表哈希（进入配置指纹）
     config_hash = hashlib.sha256(
-        json.dumps({"theta_c": theta_c, "global": theta_global, "calib": calib_global}, sort_keys=True).encode()
+        json.dumps(
+            {
+                "theta_c": theta_c,
+                "global": theta_global,
+                "theta_c_legacy": theta_c_legacy,
+                "global_legacy": theta_global_legacy,
+                "calib": calib_global,
+            },
+            sort_keys=True,
+        ).encode()
     ).hexdigest()[:16]
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -444,8 +576,11 @@ def main() -> int:
     for name, rows in sorted(variants.items()):
         for r in rows:
             if split.get(f"entity_type:{r['sample_id']}") == args.split:
-                all_rows.append({"variant": name, **r})
-    fields = ["variant", "sample_id", "prediction", "score", "accepted", "correct", "gate_violation", "gate_reason"]
+                all_rows.append({"variant": name, **r, "changed_components": CHANGED_COMPONENTS[name]})
+    fields = [
+        "variant", "sample_id", "prediction", "score", "accepted", "correct",
+        "gate_violation", "gate_reason", "changed_components",
+    ]
     with open(rows_path, "w", encoding="utf-8-sig", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields)
         w.writeheader()
@@ -458,7 +593,7 @@ def main() -> int:
         acc_n = sum(r["accepted"] for r in sub)
         src_n = Counter(r["gate_reason"].split(";")[0] for r in sub if r["accepted"])
         if name in CONTROLLER_VARIANTS:
-            print(f"  [diag] {name}: accepted={acc_n} sources={dict(src_n)}")
+            print(f"  [diag] {name}: accepted={acc_n} sources={dict(src_n)} changed={CHANGED_COMPONENTS[name]}")
     out_json = OUT_DIR / f"ABLATION_SUMMARY_{args.reference}_{args.split}.json"
     out_json.write_text(
         json.dumps({"config_hash": config_hash, "reference": args.reference, "split": args.split, "n_reference_entity": len(reference), "variants": summary}, ensure_ascii=False, indent=2),
@@ -469,8 +604,6 @@ def main() -> int:
         print(f"  {name:<28} cov={m['coverage']:.3f} sel_acc={m['selective_accuracy'] if m['selective_accuracy'] is not None else float('nan'):.3f} risk={m['selective_risk'] if m['selective_risk'] is not None else float('nan')}")
     return 0
 
-
-import hashlib  # noqa: E402
 
 if __name__ == "__main__":
     raise SystemExit(main())

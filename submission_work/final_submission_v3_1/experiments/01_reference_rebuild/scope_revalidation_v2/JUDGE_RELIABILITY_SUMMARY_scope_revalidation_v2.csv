@@ -1,0 +1,12 @@
+﻿task_type,metric,value
+scope_revalidation_v2,n_tasks,208
+scope_revalidation_v2,n_judges,3
+scope_revalidation_v2,judges,"['A', 'B', 'C']"
+scope_revalidation_v2,n_strong_consensus,110
+scope_revalidation_v2,n_weak_consensus,77
+scope_revalidation_v2,n_unresolved,21
+scope_revalidation_v2,mean_pairwise_agreement,0.6522435897435898
+scope_revalidation_v2,fleiss_kappa,0.46725000786881105
+scope_revalidation_v2,krippendorff_alpha_nominal,0.468103773881842
+scope_revalidation_v2,min_leave_one_judge_out_stability,0.6844919786096256
+scope_revalidation_v2,mean_leave_one_judge_out_stability,0.7254901960784313

@@ -1,0 +1,962 @@
+{
+  "meta": {
+    "generated_utc": "2026-09-09T18:41:42+00:00",
+    "protocol": "two-vote blind panel (Judge A + Judge B); Judge C excluded (incomplete coverage, undefined protocol)",
+    "judges": {
+      "A": "Qwen3.6-35B-A3B",
+      "B": "gpt-5.6-luna"
+    },
+    "n_tasks": 208,
+    "ab_decode": "decision 的 A/B 为展示位，经 SCOPE_REVALIDATION_V2_AB_MAPPING.csv 解码回 before/after",
+    "invalid_vote_policy": "status!=OK / decision 缺失或非法 / MODEL_OUTPUT_INVALID → 该票 INVALID；聚合时任一票 INVALID 即整条 INVALID",
+    "integrity": {
+      "invalid_votes": {
+        "A": 0,
+        "B": 0
+      },
+      "prompt_sha256_all_match": true,
+      "ab_mapping_direction_conflicts": [],
+      "states_not_resolvable_by_roles": [],
+      "missing_votes": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    "recommendation_thresholds": {
+      "rule": "decided=AFTER_BETTER+BEFORE_BETTER(两票一致)；REWRITE: 双侧精确二项 p<0.05 且 AFTER 显著且 decided>=10；RETAIN: p<0.05 且 BEFORE 显著且 decided>=10；其余 UNRESOLVED",
+      "p_threshold": 0.05,
+      "min_decided": 10
+    },
+    "pooled_vote_level_counts": {
+      "BEFORE_BETTER": 193,
+      "INSUFFICIENT": 64,
+      "AFTER_BETTER": 132,
+      "BOTH_WRONG": 27
+    }
+  },
+  "overall": {
+    "aggregated_counts": {
+      "BEFORE_BETTER": 72,
+      "AFTER_BETTER": 38,
+      "EQUIVALENT": 0,
+      "BOTH_WRONG": 2,
+      "INSUFFICIENT": 16,
+      "DISAGREE": 80,
+      "INVALID": 0
+    },
+    "decided": 110,
+    "after_win_rate_overall_decided": 0.3455,
+    "adjustment_reason_counts": {
+      "final_entity_type_scope_closure": 208
+    }
+  },
+  "per_type": {
+    "unknown→event_occurrence": {
+      "n": 60,
+      "share_of_all": 0.2885,
+      "aggregated_counts": {
+        "BEFORE_BETTER": 4,
+        "AFTER_BETTER": 23,
+        "EQUIVALENT": 0,
+        "BOTH_WRONG": 0,
+        "INSUFFICIENT": 5,
+        "DISAGREE": 28,
+        "INVALID": 0
+      },
+      "decided": 27,
+      "after_win_rate": 0.8519,
+      "before_win_rate": 0.1481,
+      "binom_p_two_sided": 0.00031,
+      "recommendation": "REWRITE",
+      "undecided_rate": 0.55,
+      "evidence_source_counts": {
+        "lexical": 47,
+        "direct": 12,
+        "none": 1
+      },
+      "evidence_none_rate": 0.0167,
+      "evidence_direct_rate": 0.2,
+      "adjustment_reason_counts": {
+        "final_entity_type_scope_closure": 60
+      },
+      "time_owner_disposition": {
+        "assigned": 60
+      },
+      "space_owner_disposition": {
+        "unchanged": 60
+      },
+      "reason_code_counts_all_votes": {
+        "TIME_UNSUPPORTED": 12,
+        "TIME_ROLE_MATCH": 9,
+        "TIME_ROLE_CORRECT": 7,
+        "ROLE_MATCH": 4,
+        "TIME_MISMATCH": 4,
+        "TIME_ROLE_MISMATCH": 4,
+        "TIME_EVENT_OCCURRENCE": 3,
+        "TIME_NOT_SUPPORTED": 3,
+        "A_BETTER_TIME_ROLE": 2,
+        "TIME_EVENT_SUPPORTED": 2,
+        "EVIDENCE_MISMATCH": 2,
+        "B_CORRECT_TIME_ROLE": 2,
+        "EVENT_TIME_SUPPORTED": 2,
+        "NO_EVIDENCE": 2,
+        "EVENT_TIME_EXPLICIT": 2,
+        "TIME_ROLE_EXPLICIT": 2,
+        "EXPLICIT_OCCURRENCE": 2,
+        "EVIDENCE_IRRELEVANT": 2,
+        "TIME_ROLE_OCCURRENCE": 1,
+        "TEMPORAL_ROLE_UNSUPPORTED": 1,
+        "EVENT_TIME_ROLE_SUPPORTED": 1,
+        "EVIDENCE_LACKS_SPATIAL_TEMPORAL_DETAILS": 1,
+        "NO_EXPLICIT_TIME_EVIDENCE": 1,
+        "TIME_EXPLICITLY_SUPPORTED": 1,
+        "B_BETTER": 1,
+        "TIME_ROLE_EVENT_OCCURRENCE": 1,
+        "NO_SPATIAL_TEMPORAL_MENTION": 1,
+        "no_explicit_time_or_space": 1,
+        "EVENT_TIME_CONTEXT": 1,
+        "TIME_ROLE_SUPPORTED": 1,
+        "STANDARD_EVENT_ROLES": 1,
+        "NO_DIRECT_REF": 1,
+        "INSUFFICIENT": 1,
+        "NO_DIRECT_EVENT_TIME_OR_SPACE_EVIDENCE": 1,
+        "EVT_ROLE_MATCH": 1,
+        "EXPLICIT_TIME_PLACE": 1,
+        "EXPLICIT_EVENT_TIME": 1,
+        "TIME_INVALID": 1,
+        "TIME_NOT_ESTABLISHED": 1,
+        "TIME_OCCURRENCE_UNSUPPORTED": 1,
+        "event_time_explicit": 1,
+        "MISMATCH_TIME_SPACE": 1,
+        "TIME_DIRECTLY_ASSOCIATED_WITH_EVENT": 1,
+        "EVIDENCE_NOT_FOUND": 1,
+        "UNRELATED_CONTEXT": 1,
+        "NO_EVENT_TIME_EVIDENCE": 1,
+        "ASSERTION_EXPLICIT_TIME": 1,
+        "TEMPORAL_UNSUPPORTED": 1,
+        "EVIDENCE_MISSING": 1,
+        "TIME_SUPPORTED_EVENT": 1,
+        "TIME_AND_SPACE_ROLE_UNSUPPORTED": 1,
+        "EVIDENCE_INSUFFICIENT": 1,
+        "TIME_UNSUPPORTED_OR_CONTRADICTED": 1,
+        "EVIDENCE_NOT_ABOUT_ASSERTED_EVENT": 1,
+        "EVENT_PERIOD_REFERENCE": 1,
+        "time_is_event_occurrence": 1,
+        "SPACE_ROLE_MISLABELED": 1,
+        "A_BETTER": 1,
+        "TIME_PERIOD_UNSUPPORTED": 1,
+        "ASSERTION_STRUCTURE": 1,
+        "EVIDENCE_MATCHES_A": 1,
+        "TIME_EXPLICIT_EVENT": 1,
+        "EVIDENCE_NOT_ALIGNED": 1,
+        "TIME_CONTEXT_MISMATCH": 1,
+        "TIME_ROLE_CONTEXT_NOT_OCCURRENCE": 1,
+        "TIME_ROLE_ALIGNMENT": 1,
+        "NO_TEMPORAL_EVIDENCE": 1,
+        "evidence_not_temporally_specific": 1,
+        "A_TIME_SUPPORTED": 1,
+        "TIME_IS_SOURCE_DOCUMENT_NOT_EVENT": 1,
+        "TIME_EVENT_CONTEXT": 1,
+        "EVIDENCE_MISSING_SPATIO_TEMPORAL": 1
+      },
+      "reason_code_by_vote_direction": {
+        "BEFORE_BETTER": {
+          "TIME_UNSUPPORTED": 11,
+          "TIME_MISMATCH": 4,
+          "TIME_NOT_SUPPORTED": 2,
+          "TEMPORAL_ROLE_UNSUPPORTED": 1,
+          "NO_EXPLICIT_TIME_EVIDENCE": 1,
+          "TIME_INVALID": 1,
+          "TIME_NOT_ESTABLISHED": 1,
+          "TIME_OCCURRENCE_UNSUPPORTED": 1,
+          "UNRELATED_CONTEXT": 1,
+          "NO_EVENT_TIME_EVIDENCE": 1,
+          "TEMPORAL_UNSUPPORTED": 1,
+          "TIME_UNSUPPORTED_OR_CONTRADICTED": 1,
+          "TIME_PERIOD_UNSUPPORTED": 1,
+          "TIME_CONTEXT_MISMATCH": 1,
+          "NO_TEMPORAL_EVIDENCE": 1,
+          "TIME_IS_SOURCE_DOCUMENT_NOT_EVENT": 1
+        },
+        "AFTER_BETTER": {
+          "TIME_ROLE_MATCH": 9,
+          "TIME_ROLE_CORRECT": 7,
+          "ROLE_MATCH": 4,
+          "TIME_ROLE_MISMATCH": 4,
+          "TIME_EVENT_OCCURRENCE": 3,
+          "A_BETTER_TIME_ROLE": 2,
+          "TIME_EVENT_SUPPORTED": 2,
+          "B_CORRECT_TIME_ROLE": 2,
+          "EVENT_TIME_SUPPORTED": 2,
+          "EVENT_TIME_EXPLICIT": 2,
+          "TIME_ROLE_EXPLICIT": 2,
+          "EXPLICIT_OCCURRENCE": 2,
+          "TIME_ROLE_OCCURRENCE": 1,
+          "EVENT_TIME_ROLE_SUPPORTED": 1,
+          "TIME_EXPLICITLY_SUPPORTED": 1,
+          "B_BETTER": 1,
+          "TIME_ROLE_EVENT_OCCURRENCE": 1,
+          "EVENT_TIME_CONTEXT": 1,
+          "TIME_ROLE_SUPPORTED": 1,
+          "STANDARD_EVENT_ROLES": 1,
+          "EVT_ROLE_MATCH": 1,
+          "EXPLICIT_TIME_PLACE": 1,
+          "EXPLICIT_EVENT_TIME": 1,
+          "event_time_explicit": 1,
+          "TIME_DIRECTLY_ASSOCIATED_WITH_EVENT": 1,
+          "ASSERTION_EXPLICIT_TIME": 1,
+          "TIME_SUPPORTED_EVENT": 1,
+          "EVENT_PERIOD_REFERENCE": 1,
+          "time_is_event_occurrence": 1,
+          "A_BETTER": 1,
+          "ASSERTION_STRUCTURE": 1,
+          "EVIDENCE_MATCHES_A": 1,
+          "TIME_EXPLICIT_EVENT": 1,
+          "TIME_ROLE_ALIGNMENT": 1,
+          "A_TIME_SUPPORTED": 1,
+          "TIME_EVENT_CONTEXT": 1
+        }
+      },
+      "disagree_pair_counts": {
+        "AFTER_BETTER|BEFORE_BETTER": 13,
+        "BEFORE_BETTER|INSUFFICIENT": 8,
+        "AFTER_BETTER|INSUFFICIENT": 4,
+        "AFTER_BETTER|BOTH_WRONG": 2,
+        "BEFORE_BETTER|BOTH_WRONG": 1
+      },
+      "combination_table": {
+        "time: unknown→event_occurrence (owner changed) | space: event_location→event_location (owner same)": 52,
+        "time: unknown→event_occurrence (owner changed) | space: unknown→unknown (owner same)": 8
+      },
+      "examples": [
+        {
+          "task_id": "SA-0057",
+          "transformation_type": "unknown→event_occurrence",
+          "aggregated": "BEFORE_BETTER",
+          "evidence_source": "lexical",
+          "vote_A_decoded": "BEFORE_BETTER",
+          "vote_B_decoded": "BEFORE_BETTER",
+          "reason_A": "TIME_INVALID",
+          "reason_B": "TIME_NOT_ESTABLISHED",
+          "assertion_text": "断言：垦丰暴动（Event） —occurred_at→ 岷山（Place）\n时间：原始表述：红军；规范表述：1927年8月-1937年7月；区间：1927-08-01 至 1937-07-06；精度：period\n空间：原始表述：江西区域",
+          "payload_evidence": [
+            "垦丰暴动队伍三十余人在林德去，赴建年同志的部署下，在九江地区休整两天后，转赴到岷山。"
+          ],
+          "state_before": "time_role=unknown, time_owner=（无）; space_role=event_location, space_owner=垦丰暴动",
+          "state_after": "time_role=event_occurrence, time_owner=垦丰暴动; space_role=event_location, space_owner=垦丰暴动",
+          "expl_A": "断言中的时间区间为十年跨度，明显不符合单次暴动事件的发生时间，证据亦未支持其为事件发生时间，故b方案错误；a方案将时间标注为unknown更符合证据实际。",
+          "expl_B": "证据支持岷山是暴动队伍活动地点，但仅说明后续转赴岷山及十一月初会议，未明确垦丰暴动本身发生于所标时间区间，因此时间标注为unknown优于event_occurrence。"
+        },
+        {
+          "task_id": "SA-0014",
+          "transformation_type": "unknown→event_occurrence",
+          "aggregated": "AFTER_BETTER",
+          "evidence_source": "direct",
+          "vote_A_decoded": "AFTER_BETTER",
+          "vote_B_decoded": "AFTER_BETTER",
+          "reason_A": "TIME_ROLE_CORRECT",
+          "reason_B": "TIME_EXPLICITLY_SUPPORTED",
+          "assertion_text": "断言：反扫荡斗争（Event） —occurred_at→ 淮海区（Place）\n时间：原始表述：抗战；规范表述：1937年7月-1945年8月；区间：1937-07-07 至 1945-08-15；精度：period\n空间：原始表述：江苏区域",
+          "payload_evidence": [
+            "1943年2月24日，新四军四部一分为三路强攻日军据点洋河镇，经两小时激战，生俘伪官兵50余名，毙伤200余名，摧毁敌人碉堡20个。",
+            "泗阳、淮阴等地农民，配合淮北地委军事行动，全力以赴，开展反扫荡斗争，历时33天，取得了反扫荡斗争的伟大的胜利。"
+          ],
+          "state_before": "time_role=unknown, time_owner=（无）; space_role=event_location, space_owner=反扫荡斗争",
+          "state_after": "time_role=event_occurrence, time_owner=反扫荡斗争; space_role=event_location, space_owner=反扫荡斗争",
+          "expl_A": "证据明确记载了反扫荡斗争的具体起止时间与持续时长，属于事件发生时间，a的event_occurrence标注准确，b的unknown与原文不符。",
+          "expl_B": "证据明确记载反扫荡斗争发生于1942年11月14日至12月6日并持续33天，因此将其时间标为事件发生时间比标为未知更符合原文。"
+        }
+      ]
+    },
+    "event_location→context_location": {
+      "n": 90,
+      "share_of_all": 0.4327,
+      "aggregated_counts": {
+        "BEFORE_BETTER": 52,
+        "AFTER_BETTER": 7,
+        "EQUIVALENT": 0,
+        "BOTH_WRONG": 2,
+        "INSUFFICIENT": 6,
+        "DISAGREE": 23,
+        "INVALID": 0
+      },
+      "decided": 59,
+      "after_win_rate": 0.1186,
+      "before_win_rate": 0.8814,
+      "binom_p_two_sided": 0.0,
+      "recommendation": "RETAIN",
+      "undecided_rate": 0.3444,
+      "evidence_source_counts": {
+        "lexical": 88,
+        "none": 2
+      },
+      "evidence_none_rate": 0.0222,
+      "evidence_direct_rate": 0.0,
+      "adjustment_reason_counts": {
+        "final_entity_type_scope_closure": 90
+      },
+      "time_owner_disposition": {
+        "unchanged": 90
+      },
+      "space_owner_disposition": {
+        "removed": 90
+      },
+      "reason_code_counts_all_votes": {
+        "EVENT_LOC_MATCH": 19,
+        "EVENT_LOCATION_SUPPORTED": 15,
+        "SPACE_EVENT_SUPPORTED": 8,
+        "EVT_LOC_MATCH": 6,
+        "EVENT_LOCATION_EXPLICIT": 5,
+        "SPACE_EVENT_LOCATION": 4,
+        "SPACE_CONTEXT_NOT_EVENT": 4,
+        "DIRECT_EVENT_LOCATION": 4,
+        "EXPLICIT_EVENT_LOCATION": 4,
+        "CONTEXT_LOCATION_MATCH": 3,
+        "NO_EVIDENCE": 3,
+        "SPACE_NOT_EVENT_LOCATION": 3,
+        "SPACE_ROLE_ACCURATE": 3,
+        "CONTEXT_BETTER": 3,
+        "SPACE_ROLE_MISMATCH": 3,
+        "SPACE_EVENT_LOCATION_SUPPORTED": 3,
+        "DIRECT_LOCATION_EVIDENCE": 2,
+        "EVENT_LOC_FIT": 2,
+        "B_BETTER": 2,
+        "SPACE_ROLE_BETTER": 2,
+        "EVIDENCE_MISMATCH": 2,
+        "EVENT_LOCATION": 2,
+        "EVENT_LOC_SUPPORTED": 2,
+        "EVENT_LOC_BETTER": 2,
+        "SPACE_ROLE_CORRECT": 2,
+        "SPACE_ROLE_EVENT": 2,
+        "DESTINATION_NOT_EVENT_LOCATION": 1,
+        "EVENT_LOC": 1,
+        "EVIDENCE_EMPTY": 1,
+        "event_activity_location": 1,
+        "A_BETTER_EVENT_LOC": 1,
+        "SPACE_EVENT_EXPLICIT": 1,
+        "EVT_LOC_SUPPORTED": 1,
+        "ROLE_EVENT": 1,
+        "CONTEXT_LOCATION_BETTER": 1,
+        "SPACE_DOCUMENT_NOT_EVENT": 1,
+        "CONTEXT_LOCATION_SUPPORTED": 1,
+        "NO_DIRECT_SPATIAL_EVIDENCE": 1,
+        "event_location_supported": 1,
+        "ORG_LOC_MISMATCH": 1,
+        "NO_QIANRENQIAO_EVIDENCE": 1,
+        "NO_SPATIAL_SUPPORT": 1,
+        "SPACE_EVENT_LOC": 1,
+        "EVIDENCE_NOT_COVERING_ASSERTION": 1,
+        "LOC_MISMATCH": 1,
+        "NO_SUPPORT_FOR_CLAIMED_LOCATION": 1,
+        "B_SPACE_BETTER": 1,
+        "ROLE_MATCH": 1,
+        "BETTER_CONTEXT": 1,
+        "NO_SPATIAL_EVIDENCE": 1,
+        "EVENT_LOC_DIRECT": 1,
+        "NO_MENTION": 1,
+        "NO_SUPPORT_FOR_ASSERTED_LOCATION": 1,
+        "TIME_ROLE_MISMATCH": 1,
+        "EVENT_LOCATION_MISASSIGNED": 1,
+        "A_BETTER_SPACE_ROLE": 1,
+        "EVIDENCE_CONTRADICTION": 1,
+        "DIRECT_LOC": 1,
+        "A_SPACE_EVENT_LOCATION": 1,
+        "EVIDENCE_CONTRADICTS": 1,
+        "SPACE_ROLE_AND_OWNER_MISMATCH": 1,
+        "SPACE_IS_MEETING_CONTEXT": 1,
+        "CONTEXT_LOC_BETTER": 1,
+        "SPACE_ROLE_CONTEXT_NOT_EVENT": 1,
+        "SPACE_CONTEXT": 1,
+        "EVT_LOC_CORRECT": 1,
+        "WRONG_ROLE": 1,
+        "SPACE_ROLE_MISMATCH_BOTH": 1,
+        "EVENT_LOCATION_DIRECT": 1,
+        "EVENT_LOCATION_UNSUPPORTED": 1,
+        "CONTEXT_NOT_EVENT": 1,
+        "EVENT_NOT_AT_SCHOOL": 1,
+        "LOC_UNSUBST": 1,
+        "ASSERTION_ENTITY_MISMATCH": 1,
+        "EVT_LOC_BETTER": 1,
+        "ORG_NOT_EVENT_LOCATION": 1,
+        "SPACE_NOT_ESTABLISHED": 1,
+        "EVENT_LOC_ACCURATE": 1,
+        "EVENT_LOC_DETERMINED": 1,
+        "RELATION_TYPE_MATCH": 1,
+        "LOC_NOT_SUPPORTED": 1,
+        "target_location_unverified": 1,
+        "direct_event_location": 1,
+        "EVIDENCE_SUPPORTS_EVENT_LOC": 1,
+        "EVIDENCE_NOT_ABOUT_ASSERTED_EVENT": 1,
+        "assertion_verb_matches_event_loc": 1,
+        "SPACE_EVENT_VS_CONTEXT": 1,
+        "DIRECT_LOCATION": 1,
+        "TIME_SPACE_MISMATCH": 1,
+        "A_BETTER": 1,
+        "SPACE_IS_RECEPTION_CONTEXT": 1,
+        "explicit_event_location": 1,
+        "EVIDENCE_INSUFFICIENT": 1,
+        "NO_EVENT_CONTEXT": 1,
+        "SPACE_MIS定位且TIME不符": 1,
+        "EVENT_LOCATION_MATCH": 1
+      },
+      "reason_code_by_vote_direction": {
+        "BEFORE_BETTER": {
+          "EVENT_LOC_MATCH": 19,
+          "EVENT_LOCATION_SUPPORTED": 15,
+          "SPACE_EVENT_SUPPORTED": 8,
+          "EVT_LOC_MATCH": 6,
+          "EVENT_LOCATION_EXPLICIT": 5,
+          "SPACE_EVENT_LOCATION": 4,
+          "DIRECT_EVENT_LOCATION": 4,
+          "EXPLICIT_EVENT_LOCATION": 4,
+          "SPACE_ROLE_ACCURATE": 3,
+          "SPACE_ROLE_MISMATCH": 3,
+          "SPACE_EVENT_LOCATION_SUPPORTED": 3,
+          "DIRECT_LOCATION_EVIDENCE": 2,
+          "EVENT_LOC_FIT": 2,
+          "B_BETTER": 2,
+          "SPACE_ROLE_BETTER": 2,
+          "EVENT_LOCATION": 2,
+          "EVENT_LOC_SUPPORTED": 2,
+          "EVENT_LOC_BETTER": 2,
+          "SPACE_ROLE_CORRECT": 2,
+          "SPACE_ROLE_EVENT": 2,
+          "EVENT_LOC": 1,
+          "event_activity_location": 1,
+          "A_BETTER_EVENT_LOC": 1,
+          "SPACE_EVENT_EXPLICIT": 1,
+          "EVT_LOC_SUPPORTED": 1,
+          "ROLE_EVENT": 1,
+          "event_location_supported": 1,
+          "SPACE_EVENT_LOC": 1,
+          "B_SPACE_BETTER": 1,
+          "ROLE_MATCH": 1,
+          "EVENT_LOC_DIRECT": 1,
+          "A_BETTER_SPACE_ROLE": 1,
+          "DIRECT_LOC": 1,
+          "A_SPACE_EVENT_LOCATION": 1,
+          "EVT_LOC_CORRECT": 1,
+          "EVENT_LOCATION_DIRECT": 1,
+          "EVT_LOC_BETTER": 1,
+          "EVENT_LOC_ACCURATE": 1,
+          "EVENT_LOC_DETERMINED": 1,
+          "RELATION_TYPE_MATCH": 1,
+          "direct_event_location": 1,
+          "EVIDENCE_SUPPORTS_EVENT_LOC": 1,
+          "assertion_verb_matches_event_loc": 1,
+          "SPACE_EVENT_VS_CONTEXT": 1,
+          "DIRECT_LOCATION": 1,
+          "A_BETTER": 1,
+          "explicit_event_location": 1,
+          "EVENT_LOCATION_MATCH": 1
+        },
+        "AFTER_BETTER": {
+          "SPACE_CONTEXT_NOT_EVENT": 4,
+          "CONTEXT_LOCATION_MATCH": 3,
+          "SPACE_NOT_EVENT_LOCATION": 3,
+          "CONTEXT_BETTER": 3,
+          "DESTINATION_NOT_EVENT_LOCATION": 1,
+          "CONTEXT_LOCATION_BETTER": 1,
+          "SPACE_DOCUMENT_NOT_EVENT": 1,
+          "CONTEXT_LOCATION_SUPPORTED": 1,
+          "ORG_LOC_MISMATCH": 1,
+          "LOC_MISMATCH": 1,
+          "BETTER_CONTEXT": 1,
+          "SPACE_IS_MEETING_CONTEXT": 1,
+          "CONTEXT_LOC_BETTER": 1,
+          "SPACE_ROLE_CONTEXT_NOT_EVENT": 1,
+          "SPACE_CONTEXT": 1,
+          "EVENT_LOCATION_UNSUPPORTED": 1,
+          "CONTEXT_NOT_EVENT": 1,
+          "EVENT_NOT_AT_SCHOOL": 1,
+          "LOC_UNSUBST": 1,
+          "ORG_NOT_EVENT_LOCATION": 1,
+          "LOC_NOT_SUPPORTED": 1,
+          "TIME_SPACE_MISMATCH": 1,
+          "SPACE_IS_RECEPTION_CONTEXT": 1
+        }
+      },
+      "disagree_pair_counts": {
+        "AFTER_BETTER|BEFORE_BETTER": 11,
+        "AFTER_BETTER|INSUFFICIENT": 5,
+        "BEFORE_BETTER|BOTH_WRONG": 4,
+        "AFTER_BETTER|BOTH_WRONG": 2,
+        "BEFORE_BETTER|INSUFFICIENT": 1
+      },
+      "combination_table": {
+        "time: context_time→context_time (owner same) | space: event_location→context_location (owner changed)": 47,
+        "time: unknown→unknown (owner same) | space: event_location→context_location (owner changed)": 41,
+        "time: biographical→biographical (owner same) | space: event_location→context_location (owner changed)": 2
+      },
+      "examples": [
+        {
+          "task_id": "SA-0010",
+          "transformation_type": "event_location→context_location",
+          "aggregated": "BEFORE_BETTER",
+          "evidence_source": "lexical",
+          "vote_A_decoded": "BEFORE_BETTER",
+          "vote_B_decoded": "BEFORE_BETTER",
+          "reason_A": "EVENT_LOC",
+          "reason_B": "EVENT_LOCATION_SUPPORTED",
+          "assertion_text": "断言：贵阳大西门中山公园（Place） —raw:发生于→ 林青（Person）\n时间：原始表述：None；规范表述：None；区间：None 至 None；精度：unknown\n空间：原始表述：贵州",
+          "payload_evidence": [
+            "随后，在第二天下午，根据天真同志约定的地点即贵阳大西门中山公园（现贵阳市委机关所在地）内会见了林青同志。"
+          ],
+          "state_before": "time_role=unknown, time_owner=（无）; space_role=event_location, space_owner=林青",
+          "state_after": "time_role=unknown, time_owner=（无）; space_role=context_location, space_owner=（无）",
+          "expl_A": "证据明确指出会面事件实际发生在贵阳大西门中山公园内，属于事件发生地而非背景地点，故a的event_location标注更符合原文语义。",
+          "expl_B": "原文明确说明在贵阳大西门中山公园内会见林青，因此该地点属于事件发生地而非仅作背景地点。"
+        },
+        {
+          "task_id": "SA-0006",
+          "transformation_type": "event_location→context_location",
+          "aggregated": "AFTER_BETTER",
+          "evidence_source": "lexical",
+          "vote_A_decoded": "AFTER_BETTER",
+          "vote_B_decoded": "AFTER_BETTER",
+          "reason_A": "CONTEXT_LOCATION_MATCH",
+          "reason_B": "DESTINATION_NOT_EVENT_LOCATION",
+          "assertion_text": "断言：潘星南（Person） —raw:发生于→ 苏北解放区（Place）\n时间：原始表述：解放；规范表述：1945年8月-1949年9月；区间：1945-08-16 至 1949-09-30；精度：period\n空间：原始表述：江苏区域",
+          "payload_evidence": [
+            "地下党组织决定，让潘星南转移阵地，准备去苏北解放区。"
+          ],
+          "state_before": "time_role=biographical, time_owner=潘星南; space_role=event_location, space_owner=苏北解放区",
+          "state_after": "time_role=biographical, time_owner=潘星南; space_role=context_location, space_owner=（无）",
+          "expl_A": "证据表明“准备去苏北解放区”仅为背景计划而非实际发生的事件，因此空间角色应标注为context_location而非event_location。",
+          "expl_B": "证据表明苏北解放区是潘星南准备前往的目的地，并未明确说明断言事件发生于该地，因此标注为背景地点更符合原文。"
+        }
+      ]
+    },
+    "event_location→relation_location": {
+      "n": 5,
+      "share_of_all": 0.024,
+      "aggregated_counts": {
+        "BEFORE_BETTER": 1,
+        "AFTER_BETTER": 0,
+        "EQUIVALENT": 0,
+        "BOTH_WRONG": 0,
+        "INSUFFICIENT": 1,
+        "DISAGREE": 3,
+        "INVALID": 0
+      },
+      "decided": 1,
+      "after_win_rate": 0.0,
+      "before_win_rate": 1.0,
+      "binom_p_two_sided": 1.0,
+      "recommendation": "UNRESOLVED",
+      "undecided_rate": 0.8,
+      "evidence_source_counts": {
+        "lexical": 3,
+        "direct": 2
+      },
+      "evidence_none_rate": 0.0,
+      "evidence_direct_rate": 0.4,
+      "adjustment_reason_counts": {
+        "final_entity_type_scope_closure": 5
+      },
+      "time_owner_disposition": {
+        "unchanged": 5
+      },
+      "space_owner_disposition": {
+        "removed": 5
+      },
+      "reason_code_counts_all_votes": {
+        "EVENT_LOC_MATCH": 2,
+        "BETTER_SPACE_ROLE": 1,
+        "SUBJECT_IS_SITE_NOT_EVENT": 1,
+        "LOC_NOT_IN_EVIDENCE": 1,
+        "NO_JIAN_LOCATION_EVIDENCE": 1,
+        "EVENT_SITE_LOCATION_SUPPORTED": 1,
+        "NO_DIRECT_PLA_LOCATION": 1,
+        "OCCURRED_AT_EVENT_LOC": 1,
+        "SPACE_IS_RELATIONAL_SCOPE": 1
+      },
+      "reason_code_by_vote_direction": {
+        "BEFORE_BETTER": {
+          "EVENT_LOC_MATCH": 2,
+          "BETTER_SPACE_ROLE": 1,
+          "EVENT_SITE_LOCATION_SUPPORTED": 1,
+          "OCCURRED_AT_EVENT_LOC": 1
+        },
+        "AFTER_BETTER": {
+          "SUBJECT_IS_SITE_NOT_EVENT": 1,
+          "SPACE_IS_RELATIONAL_SCOPE": 1
+        }
+      },
+      "disagree_pair_counts": {
+        "AFTER_BETTER|BEFORE_BETTER": 2,
+        "BEFORE_BETTER|INSUFFICIENT": 1
+      },
+      "combination_table": {
+        "time: unknown→unknown (owner same) | space: event_location→relation_location (owner changed)": 4,
+        "time: context_time→context_time (owner same) | space: event_location→relation_location (owner changed)": 1
+      },
+      "examples": [
+        {
+          "task_id": "SA-0100",
+          "transformation_type": "event_location→relation_location",
+          "aggregated": "BEFORE_BETTER",
+          "evidence_source": "lexical",
+          "vote_A_decoded": "BEFORE_BETTER",
+          "vote_B_decoded": "BEFORE_BETTER",
+          "reason_A": "EVENT_LOC_MATCH",
+          "reason_B": "EVENT_SITE_LOCATION_SUPPORTED",
+          "assertion_text": "断言：芦花会议会址（CulturalSite） —occurred_at→ 黑水县（Place）\n时间：原始表述：None；规范表述：None；区间：None 至 None；精度：unknown\n空间：原始表述：四川",
+          "payload_evidence": [
+            "芦花会议会址，据调查，在离今县城二公里的中芦花名叫奎尼之地。"
+          ],
+          "state_before": "time_role=unknown, time_owner=（无）; space_role=event_location, space_owner=芦花会议会址",
+          "state_after": "time_role=unknown, time_owner=（无）; space_role=relation_location, space_owner=（无）",
+          "expl_A": "证据明确指出了芦花会议会址的具体地理位置，符合事件发生地的定义，因此方案a的空间角色标注更准确。",
+          "expl_B": "证据明确说明芦花会议会址的具体地点，支持将该会址作为事件发生地点，而非仅标注为关系所在地。"
+        },
+        {
+          "task_id": "SA-0040",
+          "transformation_type": "event_location→relation_location",
+          "aggregated": "DISAGREE",
+          "evidence_source": "lexical",
+          "vote_A_decoded": "BEFORE_BETTER",
+          "vote_B_decoded": "AFTER_BETTER",
+          "reason_A": "BETTER_SPACE_ROLE",
+          "reason_B": "SUBJECT_IS_SITE_NOT_EVENT",
+          "assertion_text": "断言：遵义会议会址（CulturalSite） —occurred_at→ 遵义县（Place）\n时间：原始表述：纪念；规范表述：1949年10月-1978年12月；区间：1949-10-01 至 1978-12-31；精度：period\n空间：原始表述：遵义",
+          "payload_evidence": [
+            "黄毛军德，送交了遵义文化机关，后来就陈列在遵义会议会址革命军事文物展览馆了。",
+            "当你走进“遵义会议会址”的革命文物陈列室，便会看见一床草绿色军用毛毯及其简短的说明文字。",
+            "1951年新学年向全国发的“遵义会议会址”全景照片就是由彭千里、彭一杭拍摄后，由市里送至京经毛泽东主席审定后发到的。"
+          ],
+          "state_before": "time_role=context_time, time_owner=（无）; space_role=event_location, space_owner=遵义会议会址",
+          "state_after": "time_role=context_time, time_owner=（无）; space_role=relation_location, space_owner=（无）",
+          "expl_A": "会议会址的空间属性明确指向历史事件发生地（event_location），时间标注为纪念期符合context_time定义，故b方案更契合原文语义与事实。",
+          "expl_B": "证据将遵义会议会址作为文化遗址、陈列和照片所指的地点，支持其与遵义县的空间关系而非将其作为事件发生地。"
+        }
+      ]
+    },
+    "mixed": {
+      "n": 16,
+      "share_of_all": 0.0769,
+      "aggregated_counts": {
+        "BEFORE_BETTER": 11,
+        "AFTER_BETTER": 0,
+        "EQUIVALENT": 0,
+        "BOTH_WRONG": 0,
+        "INSUFFICIENT": 0,
+        "DISAGREE": 5,
+        "INVALID": 0
+      },
+      "decided": 11,
+      "after_win_rate": 0.0,
+      "before_win_rate": 1.0,
+      "binom_p_two_sided": 0.00098,
+      "recommendation": "RETAIN",
+      "undecided_rate": 0.3125,
+      "evidence_source_counts": {
+        "lexical": 13,
+        "direct": 3
+      },
+      "evidence_none_rate": 0.0,
+      "evidence_direct_rate": 0.1875,
+      "adjustment_reason_counts": {
+        "final_entity_type_scope_closure": 16
+      },
+      "time_owner_disposition": {
+        "removed": 16
+      },
+      "space_owner_disposition": {
+        "removed": 16
+      },
+      "reason_code_counts_all_votes": {
+        "EVENT_NATURE": 3,
+        "EVENT_LOCATION_AND_OCCURRENCE": 3,
+        "EVENT_ROLE_MATCH": 3,
+        "EVENT_MATCH": 2,
+        "EVENT_LOCATION_OCCURRENCE": 2,
+        "EVIDENCE_MISSING_LOCATION_TIME": 1,
+        "EVENT_ROLES_MATCH": 1,
+        "EVENT_OCCURRENCE_AND_LOCATION": 1,
+        "EVENT_LOC_TIME": 1,
+        "EVENT_TIME_LOCATION_EXPLICIT": 1,
+        "EVENT_OCCURRENCE": 1,
+        "EVENT_OCCURRENCE_LOCATION": 1,
+        "EVENT_TIME_LOCATION": 1,
+        "DOC_MISMATCH": 1,
+        "EVIDENCE_LACKS_EVENT_TIME_SPACE": 1,
+        "ASSERTION_EVIDENCE_MISMATCH": 1,
+        "assertion_not_supported": 1,
+        "occurred_at_implies_event": 1,
+        "EVENT_TIME_SPACE": 1,
+        "ORG_ACTIVITY_EVENT": 1,
+        "MISSING_TIME_SPACE_CONTEXT": 1,
+        "OCCURRED_AT_EVENT": 1,
+        "EVENT_PREDICATE": 1,
+        "evidence_not_discriminative": 1
+      },
+      "reason_code_by_vote_direction": {
+        "BEFORE_BETTER": {
+          "EVENT_NATURE": 3,
+          "EVENT_LOCATION_AND_OCCURRENCE": 3,
+          "EVENT_ROLE_MATCH": 3,
+          "EVENT_MATCH": 2,
+          "EVENT_LOCATION_OCCURRENCE": 2,
+          "EVENT_ROLES_MATCH": 1,
+          "EVENT_OCCURRENCE_AND_LOCATION": 1,
+          "EVENT_LOC_TIME": 1,
+          "EVENT_TIME_LOCATION_EXPLICIT": 1,
+          "EVENT_OCCURRENCE": 1,
+          "EVENT_OCCURRENCE_LOCATION": 1,
+          "EVENT_TIME_LOCATION": 1,
+          "occurred_at_implies_event": 1,
+          "EVENT_TIME_SPACE": 1,
+          "ORG_ACTIVITY_EVENT": 1,
+          "OCCURRED_AT_EVENT": 1,
+          "EVENT_PREDICATE": 1
+        },
+        "AFTER_BETTER": {}
+      },
+      "disagree_pair_counts": {
+        "BEFORE_BETTER|INSUFFICIENT": 3,
+        "BOTH_WRONG|INSUFFICIENT": 2
+      },
+      "combination_table": {
+        "time: event_occurrence→relation_validity (owner changed) | space: event_location→relation_location (owner changed)": 16
+      },
+      "examples": [
+        {
+          "task_id": "SA-0016",
+          "transformation_type": "mixed",
+          "aggregated": "BEFORE_BETTER",
+          "evidence_source": "lexical",
+          "vote_A_decoded": "BEFORE_BETTER",
+          "vote_B_decoded": "BEFORE_BETTER",
+          "reason_A": "EVENT_ROLES_MATCH",
+          "reason_B": "EVENT_OCCURRENCE_AND_LOCATION",
+          "assertion_text": "断言：中国人民解放军（Organization） —occurred_at→ 南京（AdministrativeRegion）\n时间：原始表述：渡江战役；规范表述：1945年8月-1949年9月；区间：1945-08-16 至 1949-09-30；精度：period\n空间：原始表述：安徽区域",
+          "payload_evidence": [
+            "第二编（1921—1949）  党派、各阶层代表人士热烈响应。  1948年9月至1949年1月，中国人民解放军同国民党军主力进行战略决战，连续取得辽沈、淮海、平津三大战役的胜利。  1948年12月，中国人民银行成立并发行人民币。  1948年12月30日，毛泽东为新华社撰写《将革命进行到底》的新年献词。  1949年1月31日，北平和平解放。  1949年3月，中共七届二中全会在西柏坡召开。全会决定党在全国胜利后在政治、经济、外交方面应当采取的基本政策，毛泽东在全会上提出“两个务必”思想。  1949年4月，毛泽东、朱德发布《向全国进军的命令》。人民解放军发起渡江战役，解放南京，推翻国民党在中国大陆的统治。  1949年5月，上海解放。  1949年6月，新政治协商会议筹备会在北平开幕。  1949年6月，毛泽东发表《论人民民主专政》。  1949年9月，中国人民政治协商会议第一届全体会议在北平举行，会议通过了《中国人民政治协商会议共同纲领》等文件。毛泽东在开幕词中向全世界宣告：“占人类总数四分之一的中国人从此站立起来了。”"
+          ],
+          "state_before": "time_role=event_occurrence, time_owner=中国人民解放军; space_role=event_location, space_owner=中国人民解放军",
+          "state_after": "time_role=relation_validity, time_owner=（无）; space_role=relation_location, space_owner=（无）",
+          "expl_A": "证据明确指出人民解放军于1949年4月发起渡江战役并解放南京，属于具体的历史军事事件，因此时间与空间角色应标注为事件发生时间与地点（event_occurrence/event_location），a方案更符合原文语义。",
+          "expl_B": "证据明确将渡江战役表述为人民解放军发起的事件，并指出其解放南京，因此事件发生地和事件发生时间角色均比关系所在地与关系有效时间更符合原文。"
+        },
+        {
+          "task_id": "SA-0001",
+          "transformation_type": "mixed",
+          "aggregated": "DISAGREE",
+          "evidence_source": "lexical",
+          "vote_A_decoded": "BEFORE_BETTER",
+          "vote_B_decoded": "INSUFFICIENT",
+          "reason_A": "EVENT_NATURE",
+          "reason_B": "EVIDENCE_MISSING_LOCATION_TIME",
+          "assertion_text": "断言：人民解放军（Organization） —occurred_at→ 西南民族地区（Place）\n时间：原始表述：解放；规范表述：1945年8月-1949年9月；区间：1945-08-16 至 1949-09-30；精度：period\n空间：原始表述：长江流域",
+          "payload_evidence": [
+            "印刷中央发布的中国人民解放军布告",
+            "雷春国协助人民解放军开展剿匪斗争。"
+          ],
+          "state_before": "time_role=event_occurrence, time_owner=人民解放军; space_role=event_location, space_owner=人民解放军",
+          "state_after": "time_role=relation_validity, time_owner=（无）; space_role=relation_location, space_owner=（无）",
+          "expl_A": "证据明确提及人民解放军开展军事斗争，表明断言描述的是动态历史事件，故时间与空间应标注为事件发生时间与地点，方案b更符合原文语义。",
+          "expl_B": "证据未明确说明人民解放军相关事件发生于长江流域或西南民族地区，也未明确证明1945年8月至1949年9月是事件发生时间还是关系有效时间。"
+        }
+      ]
+    },
+    "other": {
+      "n": 37,
+      "share_of_all": 0.1779,
+      "aggregated_counts": {
+        "BEFORE_BETTER": 4,
+        "AFTER_BETTER": 8,
+        "EQUIVALENT": 0,
+        "BOTH_WRONG": 0,
+        "INSUFFICIENT": 4,
+        "DISAGREE": 21,
+        "INVALID": 0
+      },
+      "decided": 12,
+      "after_win_rate": 0.6667,
+      "before_win_rate": 0.3333,
+      "binom_p_two_sided": 0.3877,
+      "recommendation": "UNRESOLVED",
+      "undecided_rate": 0.6757,
+      "evidence_source_counts": {
+        "lexical": 29,
+        "direct": 8
+      },
+      "evidence_none_rate": 0.0,
+      "evidence_direct_rate": 0.2162,
+      "adjustment_reason_counts": {
+        "final_entity_type_scope_closure": 37
+      },
+      "time_owner_disposition": {
+        "removed": 27,
+        "unchanged": 10
+      },
+      "space_owner_disposition": {
+        "unchanged": 37
+      },
+      "reason_code_counts_all_votes": {
+        "TIME_NOT_BIOGRAPHICAL": 4,
+        "EVIDENCE_MISMATCH": 3,
+        "SPACE_RELATION_LOCATION": 3,
+        "TIME_ROLE_MISMATCH": 3,
+        "TIME_CONTEXT_BETTER": 3,
+        "TIME_ROLE_CONTEXT": 2,
+        "TIME_CONTEXT_MISMATCH": 2,
+        "NO_DIRECT_EVIDENCE": 2,
+        "TIME_ROLE_BETTER": 2,
+        "CONTEXT_TIME_BETTER": 2,
+        "ROLE_MISMATCH": 2,
+        "NO_DIRECT_SUPPORT_FOR_ASSERTION": 1,
+        "TIME_BIOGRAPHICAL": 1,
+        "event_time_misclassified": 1,
+        "EVIDENCE_MISSING": 1,
+        "SPACE_UNSUPPORTED": 1,
+        "BIO_TIME_BETTER": 1,
+        "SCHEMA_VIOLATION_CONTEXT_TIME": 1,
+        "TIME_ROLE_SCHEMA_MISMATCH": 1,
+        "A_TIME_ROLE_MISMATCH": 1,
+        "TIME_ROLE_PUBLICATION_NOT_SOURCE_OR_RELATION": 1,
+        "TEMPORAL_EVIDENCE_ABSENT": 1,
+        "ORG_NOT_BIOGRAPHICAL": 1,
+        "TIME_MISMATCH_AND_ENTITY_RELATION_UNSUPPORTED": 1,
+        "BIOGRAPHICAL_TIME_MISMATCH": 1,
+        "event_not_context_or_biography": 1,
+        "context_location_supported": 1,
+        "CONTEXTUAL_BASIS": 1,
+        "TIME_ROLE_INVALID_A": 1,
+        "TIME_OWNER_MISMATCH": 1,
+        "assertion_not_directly_supported": 1,
+        "TIME_MISMATCH_CONTEXT": 1,
+        "TIME_ROLE_AND_VALUE_UNSUPPORTED": 1,
+        "CONTEXT_TIME_SPACE": 1,
+        "NO_TEMPORAL_ROLE_EVIDENCE": 1,
+        "LOC_EVENT_MISMATCH": 1,
+        "SPACE_IS_EVENT_LOCATION": 1,
+        "TIME_MISMATCH_BIO_WRONG": 1,
+        "TIME_ROLE_EVENT_NOT_BIOGRAPHICAL_OR_CONTEXT": 1,
+        "NO_SPACE_ROLE_EVIDENCE": 1,
+        "EVIDENCE_MISSING_TIME": 1,
+        "evidence_not_temporally_specific": 1,
+        "A_TIME_ROLE_UNSUPPORTED": 1,
+        "EVENT_OCCURRENCE_MATCH": 1,
+        "TIME_IS_EVENT_OCCURRENCE": 1,
+        "SPACE_AND_TIME_ROLE_MISMATCH": 1,
+        "BIOGRAPHICAL_CONTEXT": 1,
+        "NO_DIRECT_EVENT_TIME_LOCATION": 1,
+        "SPACE_ROLE_SUPPORTED": 1,
+        "SPACE_RELEVANT": 1,
+        "SPACE_ROLE_EVENT_LOCATION": 1,
+        "TIME_ROLE_CONTEXT_NOT_BIOGRAPHICAL": 1,
+        "CONTEXT_TIME_BETTER_FOR_ORG": 1,
+        "role_mismatch": 1,
+        "TIME_ROLE_NOT_BIOGRAPHICAL": 1,
+        "RELATION_LOCATION_MATCH": 1,
+        "EVIDENCE_NOT_ABOUT_ASSERTION": 1
+      },
+      "reason_code_by_vote_direction": {
+        "BEFORE_BETTER": {
+          "SPACE_RELATION_LOCATION": 3,
+          "TIME_BIOGRAPHICAL": 1,
+          "BIO_TIME_BETTER": 1,
+          "TIME_ROLE_BETTER": 1,
+          "context_location_supported": 1,
+          "CONTEXTUAL_BASIS": 1,
+          "EVENT_OCCURRENCE_MATCH": 1,
+          "TIME_IS_EVENT_OCCURRENCE": 1,
+          "SPACE_ROLE_SUPPORTED": 1,
+          "SPACE_RELEVANT": 1,
+          "RELATION_LOCATION_MATCH": 1
+        },
+        "AFTER_BETTER": {
+          "TIME_NOT_BIOGRAPHICAL": 4,
+          "TIME_ROLE_MISMATCH": 3,
+          "TIME_CONTEXT_BETTER": 3,
+          "TIME_ROLE_CONTEXT": 2,
+          "TIME_CONTEXT_MISMATCH": 2,
+          "CONTEXT_TIME_BETTER": 2,
+          "SCHEMA_VIOLATION_CONTEXT_TIME": 1,
+          "TIME_ROLE_SCHEMA_MISMATCH": 1,
+          "TIME_ROLE_BETTER": 1,
+          "A_TIME_ROLE_MISMATCH": 1,
+          "ORG_NOT_BIOGRAPHICAL": 1,
+          "BIOGRAPHICAL_TIME_MISMATCH": 1,
+          "TIME_ROLE_INVALID_A": 1,
+          "TIME_OWNER_MISMATCH": 1,
+          "TIME_MISMATCH_CONTEXT": 1,
+          "CONTEXT_TIME_SPACE": 1,
+          "LOC_EVENT_MISMATCH": 1,
+          "TIME_MISMATCH_BIO_WRONG": 1,
+          "A_TIME_ROLE_UNSUPPORTED": 1,
+          "BIOGRAPHICAL_CONTEXT": 1,
+          "TIME_ROLE_CONTEXT_NOT_BIOGRAPHICAL": 1,
+          "CONTEXT_TIME_BETTER_FOR_ORG": 1,
+          "TIME_ROLE_NOT_BIOGRAPHICAL": 1
+        }
+      },
+      "disagree_pair_counts": {
+        "AFTER_BETTER|BOTH_WRONG": 10,
+        "AFTER_BETTER|INSUFFICIENT": 6,
+        "BEFORE_BETTER|BOTH_WRONG": 2,
+        "BEFORE_BETTER|INSUFFICIENT": 2,
+        "AFTER_BETTER|BEFORE_BETTER": 1
+      },
+      "combination_table": {
+        "time: biographical→context_time (owner changed) | space: context_location→context_location (owner same)": 20,
+        "time: biographical→context_time (owner changed) | space: unknown→unknown (owner same)": 5,
+        "time: unknown→unknown (owner same) | space: context_location→unknown (owner same)": 4,
+        "time: unknown→unknown (owner same) | space: relation_location→unknown (owner same)": 2,
+        "time: event_occurrence→relation_validity (owner changed) | space: unknown→unknown (owner same)": 2,
+        "time: relation_validity→relation_validity (owner same) | space: relation_location→unknown (owner same)": 2,
+        "time: unknown→unknown (owner same) | space: biographical_location→relation_location (owner same)": 1,
+        "time: source_document_time→relation_validity (owner same) | space: relation_location→relation_location (owner same)": 1
+      },
+      "examples": [
+        {
+          "task_id": "SA-0025",
+          "transformation_type": "other",
+          "aggregated": "BEFORE_BETTER",
+          "evidence_source": "direct",
+          "vote_A_decoded": "BEFORE_BETTER",
+          "vote_B_decoded": "BEFORE_BETTER",
+          "reason_A": "SPACE_RELATION_LOCATION",
+          "reason_B": "SPACE_RELATION_LOCATION",
+          "assertion_text": "断言：陶、铸（Person） —led→ 汤池训练班（Organization）\n时间：原始表述：None；规范表述：None；区间：None 至 None；精度：unknown\n空间：原始表述：汤池",
+          "payload_evidence": [
+            "七一五以后，李维汉参与了政治局常委决策的三件大事：一，决定举行南昌起义，由周恩来、李立三、恽代英、彭湃四人组成起义前敌委员会；",
+            "陶铸在主持汤池训练班时，就暗中布置在国民党地方政府中任职的共产党员尽量抓住地方武装中的枪杆子，同时指示从汤池合作社的资金中拿出了600元，由八路军武汉办事处从香港买到24支德国造驳壳枪，成立了汤池手枪队。",
+            "省委决定通过石璞的关系，以培训“农村合作训练班”干部事业的名义，由李范一出面，在湖北应城县汤池和京山、皂市等地举办农村合作事业干部训练班，招收从东北、华北流亡到武汉的大学生和华中、中南地区的大学生，进行短期的政治教育，毕业后分派到湖北各县农村发动群众，准备开展敌后游击战争，并决定派陶铸去具体领导汤池训练班的工作。"
+          ],
+          "state_before": "time_role=unknown, time_owner=（无）; space_role=relation_location, space_owner=（无）",
+          "state_after": "time_role=unknown, time_owner=（无）; space_role=unknown, space_owner=（无）",
+          "expl_A": "证据明确指出汤池训练班在湖北应城县汤池举办，且陶铸被派往该地具体领导该组织，因此“汤池”是主客体领导关系成立的空间范围，符合relation_location定义。",
+          "expl_B": "证据明确表述陶铸具体领导并主持汤池训练班，因此“汤池”是该领导关系成立的地点；时间信息缺失，双方均标注为unknown。"
+        },
+        {
+          "task_id": "SA-0012",
+          "transformation_type": "other",
+          "aggregated": "AFTER_BETTER",
+          "evidence_source": "lexical",
+          "vote_A_decoded": "AFTER_BETTER",
+          "vote_B_decoded": "AFTER_BETTER",
+          "reason_A": "TIME_CONTEXT_MISMATCH",
+          "reason_B": "TIME_NOT_BIOGRAPHICAL",
+          "assertion_text": "断言：四〇八团（Organization） —raw:发生于→ 田心铺（Place）\n时间：原始表述：解放战争；规范表述：1945年8月-1949年9月；区间：1945-08-16 至 1949-09-30；精度：period\n空间：原始表述：湖南区域",
+          "payload_evidence": [
+            "7日早晨，我师侦察参谋宋文忠同志率十名侦察员和一名司号员共12人，由火田渡去田心铺联络四〇八团。"
+          ],
+          "state_before": "time_role=biographical, time_owner=四〇八团; space_role=context_location, space_owner=（无）",
+          "state_after": "time_role=context_time, time_owner=（无）; space_role=context_location, space_owner=（无）",
+          "expl_A": "证据表明田心铺仅为联络目的地而非事件发生地，属背景地点；“解放战争”为宽泛历史时期，属背景时间而非人物生平时间，故a方案更符合原文语义。",
+          "expl_B": "证据描述的是部队在田心铺开展联络行动的历史情境，未涉及四〇八团的生平信息，因此时间标注为背景时间比生平时间更符合原文。"
+        }
+      ]
+    }
+  },
+  "collapse_ranking": [
+    "mixed",
+    "event_location→relation_location",
+    "event_location→context_location",
+    "other",
+    "unknown→event_occurrence"
+  ]
+}

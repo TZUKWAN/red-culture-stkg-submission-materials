@@ -1,0 +1,149 @@
+{
+  "pipeline": "run_predictor_upgrade.py (M3 semantic predictor upgrade)",
+  "seed": 20260908,
+  "versions": {
+    "python": "3.13.2",
+    "sklearn": "1.8.0",
+    "numpy": "2.3.5"
+  },
+  "train_manifest": {
+    "source": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\source_data\\stkg_v2_entity_classifier.sqlite",
+    "sha256": "0343ba31ba2404c1f1f8ba7eef8ca9083d7670cfe06af875be67c7c4e7a80b7f",
+    "table": "entity_predictions",
+    "filter": "class_gate_pass=1",
+    "weak_label_field": "predicted_type",
+    "text_field": "canonical_name (表无 aliases 列)",
+    "n_rows_total": 6813,
+    "n_train": 1210,
+    "class_distribution": {
+      "Concept": 6,
+      "Document": 52,
+      "Event": 156,
+      "Institution": 77,
+      "Organization": 550,
+      "Person": 145,
+      "Place": 222,
+      "ValueFacet": 2
+    },
+    "confidence_stats": {
+      "min": 0.9003689289093018,
+      "mean": 0.9616388954899527,
+      "max": 0.9998347759246826
+    },
+    "leakage_statement": "weak 标签来自生产分类器（260 冻结模型）分数表；IMCR strong 独立参考仅用于 DEV/VAL 评价，不进入任何训练/拟合调用。"
+  },
+  "eval_manifest": {
+    "reference": "IMCR_REFERENCE_STRONG.csv (entity_type 行；仅评价)",
+    "names_source": "run_selective_semantic.build_signal_frame() 只读复用",
+    "splits": "V3_1/data/frozen_splits/SPLIT_MANIFEST.json (entity_type 前缀键)",
+    "n_dev": 182,
+    "n_val": 48,
+    "test_used": false
+  },
+  "embed_stats": {
+    "n_requested": 1210,
+    "n_unique": 946,
+    "n_new_embedded": 946,
+    "dim": 768,
+    "seconds": 10.44,
+    "batch_size": 64,
+    "checkpoint_every": 500,
+    "cache": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\predictor_upgrade\\emb_cache\\EMB_CACHE.npy",
+    "backend": "lmstudio text-embedding-nomic-embed-text-v1.5 (本地 127.0.0.1)",
+    "eval_extra_seconds": 0.68
+  },
+  "timings": {
+    "A_char_tfidf_sgd_fit_s": 0.03,
+    "B_embed_lr_fit_s": 0.24,
+    "C_fused_char_embed_fit_s": 0.62,
+    "total_s": 25.26
+  },
+  "routes": {
+    "A_char_tfidf_sgd": "TF-IDF(char 3-5, min_df=2, sublinear_tf) + SGDClassifier(log_loss, alpha=2e-6, max_iter=40, elasticnet, optimal, balanced) — 关键超参对齐生产 260",
+    "B_embed_lr": "nomic-embed(768d, 本地 LM Studio, npy 缓存) + LogisticRegression(C=2, balanced)",
+    "C_fused_char_embed": "char TF-IDF ⊕ L2 归一嵌入 拼接 + LogisticRegression(C=2, balanced)"
+  },
+  "metrics": {
+    "A_char_tfidf_sgd": {
+      "dev": {
+        "n": 182,
+        "n_ref_classes": 16,
+        "n_ref_classes_covered_by_train": 8,
+        "accuracy": 0.1484,
+        "macro_f1": 0.1039,
+        "macro_f1_covered_only": 0.2077,
+        "balanced_accuracy": 0.1472,
+        "ece_10bins": 0.3977,
+        "brier_multiclass": 1.1569
+      },
+      "val": {
+        "n": 48,
+        "n_ref_classes": 14,
+        "n_ref_classes_covered_by_train": 6,
+        "accuracy": 0.25,
+        "macro_f1": 0.0693,
+        "macro_f1_covered_only": 0.1618,
+        "balanced_accuracy": 0.1286,
+        "ece_10bins": 0.397,
+        "brier_multiclass": 1.1028
+      }
+    },
+    "B_embed_lr": {
+      "dev": {
+        "n": 182,
+        "n_ref_classes": 16,
+        "n_ref_classes_covered_by_train": 8,
+        "accuracy": 0.2363,
+        "macro_f1": 0.1131,
+        "macro_f1_covered_only": 0.2262,
+        "balanced_accuracy": 0.1805,
+        "ece_10bins": 0.1818,
+        "brier_multiclass": 0.9653
+      },
+      "val": {
+        "n": 48,
+        "n_ref_classes": 14,
+        "n_ref_classes_covered_by_train": 6,
+        "accuracy": 0.3542,
+        "macro_f1": 0.166,
+        "macro_f1_covered_only": 0.3872,
+        "balanced_accuracy": 0.175,
+        "ece_10bins": 0.2776,
+        "brier_multiclass": 0.9227
+      }
+    },
+    "C_fused_char_embed": {
+      "dev": {
+        "n": 182,
+        "n_ref_classes": 16,
+        "n_ref_classes_covered_by_train": 8,
+        "accuracy": 0.2143,
+        "macro_f1": 0.1067,
+        "macro_f1_covered_only": 0.2134,
+        "balanced_accuracy": 0.168,
+        "ece_10bins": 0.2594,
+        "brier_multiclass": 0.9863
+      },
+      "val": {
+        "n": 48,
+        "n_ref_classes": 14,
+        "n_ref_classes_covered_by_train": 6,
+        "accuracy": 0.3542,
+        "macro_f1": 0.1535,
+        "macro_f1_covered_only": 0.3583,
+        "balanced_accuracy": 0.175,
+        "ece_10bins": 0.2079,
+        "brier_multiclass": 0.9137
+      }
+    }
+  },
+  "decision": {
+    "winner_route": "B_embed_lr",
+    "is_embedding_route": true,
+    "macro_f1_delta_vs_A_dev": 0.0092,
+    "macro_f1_delta_vs_A_val": 0.0967,
+    "significant_upgrade": false,
+    "rule": "DEV macro-F1 最高者胜出；嵌入路线须领先 A >0.02 才算显著升级",
+    "decision_split": "dev (val 仅观察)"
+  }
+}

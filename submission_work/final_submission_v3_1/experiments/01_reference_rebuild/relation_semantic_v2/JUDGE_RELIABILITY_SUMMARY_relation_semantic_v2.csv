@@ -1,0 +1,12 @@
+﻿task_type,metric,value
+relation_semantic_v2,n_tasks,800
+relation_semantic_v2,n_judges,3
+relation_semantic_v2,judges,"['A', 'B', 'C']"
+relation_semantic_v2,n_strong_consensus,459
+relation_semantic_v2,n_weak_consensus,300
+relation_semantic_v2,n_unresolved,41
+relation_semantic_v2,mean_pairwise_agreement,0.69875
+relation_semantic_v2,fleiss_kappa,0.5412227924916213
+relation_semantic_v2,krippendorff_alpha_nominal,0.5414139496614165
+relation_semantic_v2,min_leave_one_judge_out_stability,0.7220026350461133
+relation_semantic_v2,mean_leave_one_judge_out_stability,0.7364953886693018

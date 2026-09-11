@@ -1,0 +1,4 @@
+﻿task_type,judge_removed,n_tasks,n_labeled_full_panel,n_unchanged_after_removal,stability
+scope_revalidation_v2,A,208,187,138,0.7379679144385026
+scope_revalidation_v2,B,208,187,141,0.7540106951871658
+scope_revalidation_v2,C,208,187,128,0.6844919786096256

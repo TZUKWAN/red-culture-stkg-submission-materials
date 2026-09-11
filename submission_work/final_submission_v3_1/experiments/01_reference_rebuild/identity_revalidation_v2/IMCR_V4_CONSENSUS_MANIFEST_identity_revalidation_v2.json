@@ -1,0 +1,37 @@
+{
+  "code_commit": "f5a47cdae4a3f8012c51783dd90e85b35a3502e7",
+  "database_sha256": "UNAVAILABLE",
+  "experiment_id": "imcr_v4_consensus_identity_revalidation_v2",
+  "judges": [
+    "A",
+    "B",
+    "C"
+  ],
+  "model_ids": [
+    "Qwen3.6-35B-A3B",
+    "gpt-5.6-luna",
+    "qwen/qwen3-8b"
+  ],
+  "n_all": 578,
+  "n_leave_one_out": {
+    "IMCR_V4_IDENTITY_REVALIDATION_V2_LEAVE_A_OUT.csv": 418,
+    "IMCR_V4_IDENTITY_REVALIDATION_V2_LEAVE_B_OUT.csv": 410,
+    "IMCR_V4_IDENTITY_REVALIDATION_V2_LEAVE_C_OUT.csv": 390
+  },
+  "n_strong": 320,
+  "prompt_sha256": "UNAVAILABLE",
+  "raw_run_files": [
+    "A.jsonl",
+    "B.jsonl",
+    "C.jsonl"
+  ],
+  "sample_manifest_sha256": "UNAVAILABLE",
+  "schema_sha256": "UNAVAILABLE",
+  "seed": 20260907,
+  "tier_counts": {
+    "strong_consensus": 320,
+    "unresolved": 22,
+    "weak_consensus": 258
+  },
+  "timestamp": "2026-09-10T20:25:18.596924+00:00"
+}

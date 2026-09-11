@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "experiment": "selective_scope_closure (指令 §12/14)",
+    "generated_utc": "2026-09-09T19:15:42+00:00",
+    "caliber": "two-vote blind panel（两票口径）：Judge A=Qwen3.6-35B-A3B + Judge B=gpt-5.6-luna；A/B 展示位已经 SCOPE_REVALIDATION_V2_AB_MAPPING.csv 解码；本实验不引入任何新裁判票",
+    "n_tasks": 208,
+    "inputs_sha256": {
+      "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\05_scope_repair\\SCOPE_BY_TYPE_ERRORS.csv": "d2902d713908ec1b60ba9c7a17fefa5a04a449eb7f1c94955bb7f28c42a045e9",
+      "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\05_scope_repair\\SCOPE_BY_TYPE_SUMMARY.json": "225c87dc53c8732b620222786f3dd5001018a133f36040d48e0bf492a607d522",
+      "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\01_reference_rebuild\\payloads\\SCOPE_REVALIDATION_V2_METADATA.csv": "e9d170729d14067063b43c46f77b54b1d5b2f0ef26eca7bee700d742df9fff14",
+      "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\01_reference_rebuild\\payloads\\SCOPE_REVALIDATION_V2_PAYLOADS.jsonl": "188bd73fa9afe83be4aadb70f6b2722df530c0084e29605c5cf016873c7c808e"
+    },
+    "seed": 20260908
+  },
+  "thresholds": {
+    "p_threshold_two_sided_binom": 0.05,
+    "min_decided": 10,
+    "learn_only": "规则统计只由 60% learn 计算；held-out 仅评价，未回流"
+  },
+  "book_key_derivation": {
+    "rule": "payload 证据预览 evidence_excerpts[].source_title（非空去重）→ 回退 metadata books 列 → 仍为空则 nobook:{task_id} 单任务分量",
+    "counts": {
+      "nobook_single_task_component": 12,
+      "payload_evidence_source_title": 196
+    }
+  },
+  "split_summary": {
+    "method": "component-atomic: components sorted by sha256(seed:closure:cid); largest prefix with cumulative task count <= round(ratio*N) -> learn, rest -> heldout",
+    "seed": 20260908,
+    "ratio": 0.6,
+    "budget_tasks": 125,
+    "n_total": 208,
+    "n_components": 105,
+    "learn_tasks": 125,
+    "heldout_tasks": 83
+  },
+  "rules": {
+    "event_location→context_location": {
+      "action": "RETAIN",
+      "n_learn": 49,
+      "decided": 36,
+      "after_better": 6,
+      "before_better": 30,
+      "after_win_rate_learn_decided": 0.16666666666666666,
+      "binom_p_two_sided": 6.960169412195683e-05,
+      "p_threshold": 0.05,
+      "min_decided": 10,
+      "reason": "decided=36>=10 且 p=0.00007<0.05"
+    },
+    "event_location→relation_location": {
+      "action": "UNRESOLVED",
+      "n_learn": 4,
+      "decided": 1,
+      "after_better": 0,
+      "before_better": 1,
+      "after_win_rate_learn_decided": 0.0,
+      "binom_p_two_sided": 1.0,
+      "p_threshold": 0.05,
+      "min_decided": 10,
+      "reason": "decided=1<10"
+    },
+    "mixed": {
+      "action": "UNRESOLVED",
+      "n_learn": 11,
+      "decided": 7,
+      "after_better": 0,
+      "before_better": 7,
+      "after_win_rate_learn_decided": 0.0,
+      "binom_p_two_sided": 0.015625,
+      "p_threshold": 0.05,
+      "min_decided": 10,
+      "reason": "decided=7<10"
+    },
+    "other": {
+      "action": "UNRESOLVED",
+      "n_learn": 30,
+      "decided": 10,
+      "after_better": 6,
+      "before_better": 4,
+      "after_win_rate_learn_decided": 0.6,
+      "binom_p_two_sided": 0.75390625,
+      "p_threshold": 0.05,
+      "min_decided": 10,
+      "reason": "p=0.75391>=0.05（不显著）"
+    },
+    "unknown→event_occurrence": {
+      "action": "REWRITE",
+      "n_learn": 31,
+      "decided": 21,
+      "after_better": 17,
+      "before_better": 4,
+      "after_win_rate_learn_decided": 0.8095238095238095,
+      "binom_p_two_sided": 0.007197380065917969,
+      "p_threshold": 0.05,
+      "min_decided": 10,
+      "reason": "decided=21>=10 且 p=0.00720<0.05"
+    }
+  },
+  "unseen_type_default": "UNRESOLVED"
+}

@@ -1,0 +1,34 @@
+[queue] plan={"rule_D": 2106, "rule_safe": 0, "dev_done": 4999, "queue": {"mismatch_with_evidence": 4636, "recovery_B": 15706, "recovery_A": 2641, "aligned": 42525, "recovery_C": 39545}, "aligned_supplement_n": 0, "queue_total": 105053}
+[queue] todo=1,900, already_done=1,784, pending=116, workers=4, ckpt_flush=500
+2026-09-10T23:28:07+08:00 queue start pending=116 workers=4 model=openai/gpt-oss-20b
+=== STACK DUMP at 240s ===
+=== dumped ===
+Traceback (most recent call last):
+  File "<stdin>", line 14, in <module>
+  File "D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\code\experiment_pipelines\build_final_tiering.py", line 711, in run_queue
+    out = fut.result()
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\code\experiment_pipelines\run_evidence_semantic_gate.py", line 319, in judge_one
+    out = chat_json(messages, max_tokens=500, timeout=300)
+  File "D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 92, in chat_json
+    return extract_json(chat(messages, model=model, temperature=temperature,
+                             max_tokens=max_tokens, timeout=timeout, retries=retries))
+  File "D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 84, in extract_json
+    return json.loads(s[start : i + 1])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lauze\miniconda3\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\lauze\miniconda3\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lauze\miniconda3\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 126 (char 125)

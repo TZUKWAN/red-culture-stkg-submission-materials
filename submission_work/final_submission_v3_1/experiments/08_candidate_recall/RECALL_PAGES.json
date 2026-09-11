@@ -1,0 +1,1103 @@
+{
+  "method_version": "extraction-recall-v1",
+  "seed": 20260910,
+  "n_pages_requested": 120,
+  "n_pages_sampled": 120,
+  "max_per_book": 5,
+  "min_page_chars": 500,
+  "sampling_rule": "frame = book-dir .txt pages with body >= 500 chars; files sorted by path (codepoint), systematic equal-distance i*step, book cap 5 with skip-ahead",
+  "frame": {
+    "root": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output",
+    "total_page_files": 302229,
+    "total_books": 983,
+    "total_page_files_ge_min_chars": 218182,
+    "total_books_ge_min_chars": 958,
+    "production_linked_pages_in_frame": 62700,
+    "note": "frame = 书目录内 .txt 页文件（正文 ≥500 字）；production_linked = 该页路径出现在 evidence_registry.source_path_or_url 且证据可达生产断言"
+  },
+  "pages": [
+    {
+      "page_id": 0,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\1\\100.txt",
+      "book": "1",
+      "filename": "100.txt",
+      "text_length": 600,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 1,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\5\\35.txt",
+      "book": "5",
+      "filename": "35.txt",
+      "text_length": 535,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 2,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\“三反”“五反”运动 青海卷 (2)\\151.txt",
+      "book": "“三反”“五反”运动 青海卷 (2)",
+      "filename": "151.txt",
+      "text_length": 782,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 3,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\“四个现代化”战略目标  第八卷  第五册\\470.txt",
+      "book": "“四个现代化”战略目标  第八卷  第五册",
+      "filename": "470.txt",
+      "text_length": 603,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 4,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共五华区党史资料  第5辑_11688162\\285.txt",
+      "book": "中共五华区党史资料  第5辑_11688162",
+      "filename": "285.txt",
+      "text_length": 506,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 5,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共党史人物传  第01卷\\119.txt",
+      "book": "中共党史人物传  第01卷",
+      "filename": "119.txt",
+      "text_length": 623,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 6,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共党史人物传  第07卷\\311.txt",
+      "book": "中共党史人物传  第07卷",
+      "filename": "311.txt",
+      "text_length": 605,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 7,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共党史人物传  第13卷\\107.txt",
+      "book": "中共党史人物传  第13卷",
+      "filename": "107.txt",
+      "text_length": 676,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 8,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共党史人物传  第19卷\\287.txt",
+      "book": "中共党史人物传  第19卷",
+      "filename": "287.txt",
+      "text_length": 680,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 9,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共党史人物传  第25卷\\132.txt",
+      "book": "中共党史人物传  第25卷",
+      "filename": "132.txt",
+      "text_length": 590,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 10,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共党史人物传  第30卷\\44.txt",
+      "book": "中共党史人物传  第30卷",
+      "filename": "44.txt",
+      "text_length": 644,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 11,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共党史人物传  第38卷\\230.txt",
+      "book": "中共党史人物传  第38卷",
+      "filename": "230.txt",
+      "text_length": 652,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 12,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共党史人物传  第44卷\\351.txt",
+      "book": "中共党史人物传  第44卷",
+      "filename": "351.txt",
+      "text_length": 595,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 13,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共党史人物传  第49卷\\336.txt",
+      "book": "中共党史人物传  第49卷",
+      "filename": "336.txt",
+      "text_length": 686,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 14,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共党史人物传第36卷\\76.txt",
+      "book": "中共党史人物传第36卷",
+      "filename": "76.txt",
+      "text_length": 615,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 15,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共南溪县地方党史资料汇编  1921-1949_11441788\\465.txt",
+      "book": "中共南溪县地方党史资料汇编  1921-1949_11441788",
+      "filename": "465.txt",
+      "text_length": 611,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 16,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共德兴党史资料_13657107\\369.txt",
+      "book": "中共德兴党史资料_13657107",
+      "filename": "369.txt",
+      "text_length": 666,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 17,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共早期关于武装斗争的认识与革命道路的探索  第三卷  第五册\\343.txt",
+      "book": "中共早期关于武装斗争的认识与革命道路的探索  第三卷  第五册",
+      "filename": "343.txt",
+      "text_length": 628,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 18,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共江川县党史资料  第1辑_11441811\\218.txt",
+      "book": "中共江川县党史资料  第1辑_11441811",
+      "filename": "218.txt",
+      "text_length": 683,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 19,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共綦江县党史资料汇编  第1辑_11449486 (2)\\25.txt",
+      "book": "中共綦江县党史资料汇编  第1辑_11449486 (2)",
+      "filename": "25.txt",
+      "text_length": 660,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 20,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中共西双版纳傣族自治州党史资料  解放战争时期  第1辑_11449370\\151.txt",
+      "book": "中共西双版纳傣族自治州党史资料  解放战争时期  第1辑_11449370",
+      "filename": "151.txt",
+      "text_length": 701,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 21,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中华人民共和国史长编 第七卷 人物卷_12601694\\72.txt",
+      "book": "中华人民共和国史长编 第七卷 人物卷_12601694",
+      "filename": "72.txt",
+      "text_length": 644,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 22,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中华人民共和国史长编 第五卷 1992—2002_12601363\\216.txt",
+      "book": "中华人民共和国史长编 第五卷 1992—2002_12601363",
+      "filename": "216.txt",
+      "text_length": 1251,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 23,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中华人民共和国史长编 第六卷 2002—2009_12596357\\466.txt",
+      "book": "中华人民共和国史长编 第六卷 2002—2009_12596357",
+      "filename": "466.txt",
+      "text_length": 12682,
+      "text_truncated_for_llm": true,
+      "production_linked": false
+    },
+    {
+      "page_id": 24,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中华民族的认同  第六卷  第一册\\138.txt",
+      "book": "中华民族的认同  第六卷  第一册",
+      "filename": "138.txt",
+      "text_length": 575,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 25,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中国人从此站立起来了  第二卷  第五册\\222.txt",
+      "book": "中国人从此站立起来了  第二卷  第五册",
+      "filename": "222.txt",
+      "text_length": 537,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 26,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中国共产党丰都县党史资料汇编  1  激流涌进_11449167\\544.txt",
+      "book": "中国共产党丰都县党史资料汇编  1  激流涌进_11449167",
+      "filename": "544.txt",
+      "text_length": 555,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 27,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中国共产党滇西工委滇西北地委史料选编  上_11441575\\268.txt",
+      "book": "中国共产党滇西工委滇西北地委史料选编  上_11441575",
+      "filename": "268.txt",
+      "text_length": 628,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 28,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中国共产党的建设  第十二卷  第四册\\242.txt",
+      "book": "中国共产党的建设  第十二卷  第四册",
+      "filename": "242.txt",
+      "text_length": 641,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 29,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中国共产党编年史1922年卷\\271.txt",
+      "book": "中国共产党编年史1922年卷",
+      "filename": "271.txt",
+      "text_length": 884,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 30,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中国共产党编年史1928年卷\\92.txt",
+      "book": "中国共产党编年史1928年卷",
+      "filename": "92.txt",
+      "text_length": 850,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 31,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中国共产党编年史1935年卷\\127.txt",
+      "book": "中国共产党编年史1935年卷",
+      "filename": "127.txt",
+      "text_length": 894,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 32,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中国共产党编年史1940年卷\\86.txt",
+      "book": "中国共产党编年史1940年卷",
+      "filename": "86.txt",
+      "text_length": 825,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 33,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中国共产党编年史1946年卷\\148.txt",
+      "book": "中国共产党编年史1946年卷",
+      "filename": "148.txt",
+      "text_length": 794,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 34,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中国共产党苏州市历次代表大会（会议）文献汇编  1949-2001\\372.txt",
+      "book": "中国共产党苏州市历次代表大会（会议）文献汇编  1949-2001",
+      "filename": "372.txt",
+      "text_length": 690,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 35,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中国共产党青海省组织发展沿革概要\\107.txt",
+      "book": "中国共产党青海省组织发展沿革概要",
+      "filename": "107.txt",
+      "text_length": 617,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 36,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\中江县地方党史资料汇编  2  抗日战争、解放战争时期_12025828\\53.txt",
+      "book": "中江县地方党史资料汇编  2  抗日战争、解放战争时期_12025828",
+      "filename": "53.txt",
+      "text_length": 610,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 37,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\为历史转折作准备  第十六卷  第四册\\104.txt",
+      "book": "为历史转折作准备  第十六卷  第四册",
+      "filename": "104.txt",
+      "text_length": 630,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 38,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\丽江地区党史资料  第4辑_11441841\\172.txt",
+      "book": "丽江地区党史资料  第4辑_11441841",
+      "filename": "172.txt",
+      "text_length": 642,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 39,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\人民代表大会制度的建立和实施  第四卷  第二册\\203.txt",
+      "book": "人民代表大会制度的建立和实施  第四卷  第二册",
+      "filename": "203.txt",
+      "text_length": 537,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 40,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\人民政协和统一战线的理论与实践  第五卷  第四册\\406.txt",
+      "book": "人民政协和统一战线的理论与实践  第五卷  第四册",
+      "filename": "406.txt",
+      "text_length": 591,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 41,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\休宁党史资料选编  1919-1949_11449656\\49.txt",
+      "book": "休宁党史资料选编  1919-1949_11449656",
+      "filename": "49.txt",
+      "text_length": 602,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 42,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\党史资料丛书之二  昭通市解放前学生运动史资料_12886716\\165.txt",
+      "book": "党史资料丛书之二  昭通市解放前学生运动史资料_12886716",
+      "filename": "165.txt",
+      "text_length": 802,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 43,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\凯里市党史资料  第5辑_14047351\\179.txt",
+      "book": "凯里市党史资料  第5辑_14047351",
+      "filename": "179.txt",
+      "text_length": 644,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 44,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\北碚党史资料汇编-纪念中国共产党成立80周年\\138.txt",
+      "book": "北碚党史资料汇编-纪念中国共产党成立80周年",
+      "filename": "138.txt",
+      "text_length": 790,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 45,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\南京党史资料  21_14094942\\13.txt",
+      "book": "南京党史资料  21_14094942",
+      "filename": "13.txt",
+      "text_length": 519,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 46,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\南通市资本主义工商业的社会主义改造_10801759\\369.txt",
+      "book": "南通市资本主义工商业的社会主义改造_10801759",
+      "filename": "369.txt",
+      "text_length": 611,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 47,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\向社会主义过渡  第三卷  第一册\\252.txt",
+      "book": "向社会主义过渡  第三卷  第一册",
+      "filename": "252.txt",
+      "text_length": 639,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 48,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\吴县党史资料  第1辑_11999511\\68.txt",
+      "book": "吴县党史资料  第1辑_11999511",
+      "filename": "68.txt",
+      "text_length": 570,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 49,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\回顾黔东南解放  第1辑_11449404\\442.txt",
+      "book": "回顾黔东南解放  第1辑_11449404",
+      "filename": "442.txt",
+      "text_length": 696,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 50,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\国共合作推动反帝反封建的国民革命  第二卷  第二册\\304.txt",
+      "book": "国共合作推动反帝反封建的国民革命  第二卷  第二册",
+      "filename": "304.txt",
+      "text_length": 640,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 51,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\国防和军队建设  第十二卷  第二册\\214.txt",
+      "book": "国防和军队建设  第十二卷  第二册",
+      "filename": "214.txt",
+      "text_length": 579,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 52,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\国防和军队建设  第十二卷  第四册\\518.txt",
+      "book": "国防和军队建设  第十二卷  第四册",
+      "filename": "518.txt",
+      "text_length": 15998,
+      "text_truncated_for_llm": true,
+      "production_linked": false
+    },
+    {
+      "page_id": 53,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\大丰党史资料  第6辑_12005853\\155.txt",
+      "book": "大丰党史资料  第6辑_12005853",
+      "filename": "155.txt",
+      "text_length": 15998,
+      "text_truncated_for_llm": true,
+      "production_linked": false
+    },
+    {
+      "page_id": 54,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\大后方的建设和民主运动的开展  第七卷  第三册\\523.txt",
+      "book": "大后方的建设和民主运动的开展  第七卷  第三册",
+      "filename": "523.txt",
+      "text_length": 15998,
+      "text_truncated_for_llm": true,
+      "production_linked": false
+    },
+    {
+      "page_id": 55,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\大方党史资料  第13辑  红军在大方\\271.txt",
+      "book": "大方党史资料  第13辑  红军在大方",
+      "filename": "271.txt",
+      "text_length": 807,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 56,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\大方县党史参考资料  第14辑_11450113\\36.txt",
+      "book": "大方县党史参考资料  第14辑_11450113",
+      "filename": "36.txt",
+      "text_length": 582,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 57,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\宁远党史资料选辑  第3辑\\217.txt",
+      "book": "宁远党史资料选辑  第3辑",
+      "filename": "217.txt",
+      "text_length": 718,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 58,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\安顺地区党史资料  4  解放初期的安顺  1949-1956_11449987\\33.txt",
+      "book": "安顺地区党史资料  4  解放初期的安顺  1949-1956_11449987",
+      "filename": "33.txt",
+      "text_length": 616,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 59,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\左翼文化与思想理论战线  第四卷  第一册\\397.txt",
+      "book": "左翼文化与思想理论战线  第四卷  第一册",
+      "filename": "397.txt",
+      "text_length": 625,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 60,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\左翼文化与思想理论战线  第四卷  第六册\\466.txt",
+      "book": "左翼文化与思想理论战线  第四卷  第六册",
+      "filename": "466.txt",
+      "text_length": 561,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 61,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\平湖市社会主义时期党史专题集  第1辑  1949-1978_11864635\\267.txt",
+      "book": "平湖市社会主义时期党史专题集  第1辑  1949-1978_11864635",
+      "filename": "267.txt",
+      "text_length": 718,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 62,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\建立独立的比较完整的国民经济体系  第九卷  第七册\\364.txt",
+      "book": "建立独立的比较完整的国民经济体系  第九卷  第七册",
+      "filename": "364.txt",
+      "text_length": 656,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 63,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\建立独立的比较完整的国民经济体系  第九卷  第四册\\209.txt",
+      "book": "建立独立的比较完整的国民经济体系  第九卷  第四册",
+      "filename": "209.txt",
+      "text_length": 626,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 64,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\徐州党史资料  革命历史文献汇编  1921年11月-1927年11月_12010435\\65.txt",
+      "book": "徐州党史资料  革命历史文献汇编  1921年11月-1927年11月_12010435",
+      "filename": "65.txt",
+      "text_length": 570,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 65,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\成都党史资料  市中事件_11504860\\233.txt",
+      "book": "成都党史资料  市中事件_11504860",
+      "filename": "233.txt",
+      "text_length": 631,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 66,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\执政条件下党的建设  第十四卷  第三册\\187.txt",
+      "book": "执政条件下党的建设  第十四卷  第三册",
+      "filename": "187.txt",
+      "text_length": 624,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 67,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\执政条件下党的建设  第十四卷  第六册\\175.txt",
+      "book": "执政条件下党的建设  第十四卷  第六册",
+      "filename": "175.txt",
+      "text_length": 559,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 68,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\抗日民族统一战线的推进与全名族抗战  第五卷  第一册\\405.txt",
+      "book": "抗日民族统一战线的推进与全名族抗战  第五卷  第一册",
+      "filename": "405.txt",
+      "text_length": 547,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 69,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\抗日民族统一战线的推进与全名族抗战  第五卷  第四册\\573.txt",
+      "book": "抗日民族统一战线的推进与全名族抗战  第五卷  第四册",
+      "filename": "573.txt",
+      "text_length": 620,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 70,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\探索适合中国国情的社会主义建设道路  第七卷  第三册\\295.txt",
+      "book": "探索适合中国国情的社会主义建设道路  第七卷  第三册",
+      "filename": "295.txt",
+      "text_length": 630,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 71,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\改良派的变革主张  第四卷  第一册\\214.txt",
+      "book": "改良派的变革主张  第四卷  第一册",
+      "filename": "214.txt",
+      "text_length": 622,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 72,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\改良派的变革主张  第四卷  第五册\\229.txt",
+      "book": "改良派的变革主张  第四卷  第五册",
+      "filename": "229.txt",
+      "text_length": 619,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 73,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\新干党史资料  第1辑\\76.txt",
+      "book": "新干党史资料  第1辑",
+      "filename": "76.txt",
+      "text_length": 672,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 74,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\新文化运动  第七卷  第二册\\140.txt",
+      "book": "新文化运动  第七卷  第二册",
+      "filename": "140.txt",
+      "text_length": 615,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 75,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\新昌县社会主义时期党史专题集  第1辑_11931606\\100.txt",
+      "book": "新昌县社会主义时期党史专题集  第1辑_11931606",
+      "filename": "100.txt",
+      "text_length": 8143,
+      "text_truncated_for_llm": true,
+      "production_linked": false
+    },
+    {
+      "page_id": 76,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\昭通县六十年代国民经济调整_12886511\\154.txt",
+      "book": "昭通县六十年代国民经济调整_12886511",
+      "filename": "154.txt",
+      "text_length": 561,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 77,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\晚清统治集团的自救  第三卷  第三册\\148.txt",
+      "book": "晚清统治集团的自救  第三卷  第三册",
+      "filename": "148.txt",
+      "text_length": 547,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 78,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\曲靖党史资料  第2辑  边纵三支队革命斗争史_11441833\\222.txt",
+      "book": "曲靖党史资料  第2辑  边纵三支队革命斗争史_11441833",
+      "filename": "222.txt",
+      "text_length": 509,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 79,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\株洲党史资料  民主革命时期  第1辑_11441688\\424.txt",
+      "book": "株洲党史资料  民主革命时期  第1辑_11441688",
+      "filename": "424.txt",
+      "text_length": 832,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 80,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\梁平党史资料汇编  第1辑_11449172\\39.txt",
+      "book": "梁平党史资料汇编  第1辑_11449172",
+      "filename": "39.txt",
+      "text_length": 10006,
+      "text_truncated_for_llm": true,
+      "production_linked": false
+    },
+    {
+      "page_id": 81,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\武汉城工史料  中共鄂豫三地委城工部史料专辑_12277272\\300.txt",
+      "book": "武汉城工史料  中共鄂豫三地委城工部史料专辑_12277272",
+      "filename": "300.txt",
+      "text_length": 621,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 82,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\毕节地区党史资料丛书  2  红军在黔西北_11449964\\47.txt",
+      "book": "毕节地区党史资料丛书  2  红军在黔西北_11449964",
+      "filename": "47.txt",
+      "text_length": 628,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 83,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\毕节地区党史资料丛书  6  地下党在黔西北的革命活动_14027693\\223.txt",
+      "book": "毕节地区党史资料丛书  6  地下党在黔西北的革命活动_14027693",
+      "filename": "223.txt",
+      "text_length": 675,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 84,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\民主革命派的追求  第五卷  第一册\\242.txt",
+      "book": "民主革命派的追求  第五卷  第一册",
+      "filename": "242.txt",
+      "text_length": 617,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 85,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\民主革命派的追求  第五卷  第二册\\97.txt",
+      "book": "民主革命派的追求  第五卷  第二册",
+      "filename": "97.txt",
+      "text_length": 623,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 86,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\民族区域自治的理论与实践  第六卷  第一册\\539.txt",
+      "book": "民族区域自治的理论与实践  第六卷  第一册",
+      "filename": "539.txt",
+      "text_length": 614,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 87,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\民族区域自治的理论与实践  第六卷  第四册\\283.txt",
+      "book": "民族区域自治的理论与实践  第六卷  第四册",
+      "filename": "283.txt",
+      "text_length": 625,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 88,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\江北县党史资料汇编  第3辑（1919.5—1937.7）\\44.txt",
+      "book": "江北县党史资料汇编  第3辑（1919.5—1937.7）",
+      "filename": "44.txt",
+      "text_length": 547,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 89,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\沅陵党史资料 辰州烽火_11448552\\9.txt",
+      "book": "沅陵党史资料 辰州烽火_11448552",
+      "filename": "9.txt",
+      "text_length": 609,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 90,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\泰州党史资料  第1辑 一战二战时期革命文献_11449686\\194.txt",
+      "book": "泰州党史资料  第1辑 一战二战时期革命文献_11449686",
+      "filename": "194.txt",
+      "text_length": 8233,
+      "text_truncated_for_llm": true,
+      "production_linked": false
+    },
+    {
+      "page_id": 91,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\浙江解放_12704470\\54.txt",
+      "book": "浙江解放_12704470",
+      "filename": "54.txt",
+      "text_length": 639,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 92,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\淮北党史资料  第3辑_10273534\\367.txt",
+      "book": "淮北党史资料  第3辑_10273534",
+      "filename": "367.txt",
+      "text_length": 555,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 93,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\淮安党史资料  第6-7合辑_12005864\\40.txt",
+      "book": "淮安党史资料  第6-7合辑_12005864",
+      "filename": "40.txt",
+      "text_length": 616,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 94,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\湄潭党史资料  红军长征在湄潭：纪念遵义会议五十周年特辑_13395617\\79.txt",
+      "book": "湄潭党史资料  红军长征在湄潭：纪念遵义会议五十周年特辑_13395617",
+      "filename": "79.txt",
+      "text_length": 657,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 95,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\溧水党史资料  第5辑_12010411\\167.txt",
+      "book": "溧水党史资料  第5辑_12010411",
+      "filename": "167.txt",
+      "text_length": 538,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 96,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\灌云党史资料  第3辑  一代雄风_11449158\\76.txt",
+      "book": "灌云党史资料  第3辑  一代雄风_11449158",
+      "filename": "76.txt",
+      "text_length": 688,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 97,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\独立自主的和平外交  第十三卷  第二册\\518.txt",
+      "book": "独立自主的和平外交  第十三卷  第二册",
+      "filename": "518.txt",
+      "text_length": 587,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 98,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\白云党史资料  第1辑\\231.txt",
+      "book": "白云党史资料  第1辑",
+      "filename": "231.txt",
+      "text_length": 582,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 99,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\知识分子政策和教育科学文化建设  第十卷  第三册\\363.txt",
+      "book": "知识分子政策和教育科学文化建设  第十卷  第三册",
+      "filename": "363.txt",
+      "text_length": 640,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 100,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\祁山丰碑 民主革命时期祁阳党史资料汇编\\167.txt",
+      "book": "祁山丰碑 民主革命时期祁阳党史资料汇编",
+      "filename": "167.txt",
+      "text_length": 10756,
+      "text_truncated_for_llm": true,
+      "production_linked": true
+    },
+    {
+      "page_id": 101,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\繁荣昌盛的南岸  重庆市南岸区纪念建党八十周年党史资料_13570483\\551.txt",
+      "book": "繁荣昌盛的南岸  重庆市南岸区纪念建党八十周年党史资料_13570483",
+      "filename": "551.txt",
+      "text_length": 566,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 102,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\绍兴市资本主义工商业的社会主义改造_11449557\\85.txt",
+      "book": "绍兴市资本主义工商业的社会主义改造_11449557",
+      "filename": "85.txt",
+      "text_length": 572,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 103,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\自力更生、发愤图强  第十一卷  第四册\\25.txt",
+      "book": "自力更生、发愤图强  第十一卷  第四册",
+      "filename": "25.txt",
+      "text_length": 637,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 104,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\苏中四分区反“清乡”斗争史料选辑 江海奔腾  第6辑_11449755\\20.txt",
+      "book": "苏中四分区反“清乡”斗争史料选辑 江海奔腾  第6辑_11449755",
+      "filename": "20.txt",
+      "text_length": 728,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 105,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\萧县党史资料  第1辑_11795467\\301.txt",
+      "book": "萧县党史资料  第1辑_11795467",
+      "filename": "301.txt",
+      "text_length": 602,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 106,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\血战东南  上_13703204\\182.txt",
+      "book": "血战东南  上_13703204",
+      "filename": "182.txt",
+      "text_length": 8007,
+      "text_truncated_for_llm": true,
+      "production_linked": false
+    },
+    {
+      "page_id": 107,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\解放区土地制度改革的理论探索与实践  第十一卷  第三册\\233.txt",
+      "book": "解放区土地制度改革的理论探索与实践  第十一卷  第三册",
+      "filename": "233.txt",
+      "text_length": 547,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 108,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\解放青海 (2)\\461.txt",
+      "book": "解放青海 (2)",
+      "filename": "461.txt",
+      "text_length": 680,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 109,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\贵阳党史资料专辑  抗战胜利四十周年_11441776\\230.txt",
+      "book": "贵阳党史资料专辑  抗战胜利四十周年_11441776",
+      "filename": "230.txt",
+      "text_length": 608,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 110,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\赣州市党史资料汇编 1919-1949_13198516\\390.txt",
+      "book": "赣州市党史资料汇编 1919-1949_13198516",
+      "filename": "390.txt",
+      "text_length": 10285,
+      "text_truncated_for_llm": true,
+      "production_linked": false
+    },
+    {
+      "page_id": 111,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\郎岱风云  六枝党史资料丛书第3辑_12926483\\62.txt",
+      "book": "郎岱风云  六枝党史资料丛书第3辑_12926483",
+      "filename": "62.txt",
+      "text_length": 617,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 112,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\金湖党史资料  第2辑\\269.txt",
+      "book": "金湖党史资料  第2辑",
+      "filename": "269.txt",
+      "text_length": 818,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 113,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\铜山党史资料  第6辑_11449117\\162.txt",
+      "book": "铜山党史资料  第6辑_11449117",
+      "filename": "162.txt",
+      "text_length": 540,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    },
+    {
+      "page_id": 114,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\长沙市资本主义工商业的社会主义改造_10774365\\12.txt",
+      "book": "长沙市资本主义工商业的社会主义改造_10774365",
+      "filename": "12.txt",
+      "text_length": 10462,
+      "text_truncated_for_llm": true,
+      "production_linked": false
+    },
+    {
+      "page_id": 115,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\雷公山地区合围\\216.txt",
+      "book": "雷公山地区合围",
+      "filename": "216.txt",
+      "text_length": 628,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 116,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\马克思主义中国化与毛泽东思想  第十三卷  第五册\\176.txt",
+      "book": "马克思主义中国化与毛泽东思想  第十三卷  第五册",
+      "filename": "176.txt",
+      "text_length": 630,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 117,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\高淳史志资料  第6辑_10079460\\84.txt",
+      "book": "高淳史志资料  第6辑_10079460",
+      "filename": "84.txt",
+      "text_length": 10661,
+      "text_truncated_for_llm": true,
+      "production_linked": false
+    },
+    {
+      "page_id": 118,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\黄石党史资料汇编  回忆资料之一_11141647\\17.txt",
+      "book": "黄石党史资料汇编  回忆资料之一_11141647",
+      "filename": "17.txt",
+      "text_length": 582,
+      "text_truncated_for_llm": false,
+      "production_linked": false
+    },
+    {
+      "page_id": 119,
+      "path": "D:\\REDCULTUREDATA\\pdf_ocr_project\\output\\黔南州党史资料  6  中共黔南州历史大事记  1930-1989_11449410\\77.txt",
+      "book": "黔南州党史资料  6  中共黔南州历史大事记  1930-1989_11449410",
+      "filename": "77.txt",
+      "text_length": 551,
+      "text_truncated_for_llm": false,
+      "production_linked": true
+    }
+  ],
+  "generated_at": "2026-09-11T04:39:20+08:00",
+  "n_linked_sampled": 24,
+  "elapsed_s": 140.9
+}

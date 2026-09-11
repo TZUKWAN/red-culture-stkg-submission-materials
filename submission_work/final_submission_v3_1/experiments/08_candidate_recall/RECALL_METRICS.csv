@@ -1,0 +1,491 @@
+﻿scope,book,metric,value,ref_total,matched,pages_with_reference
+all_pages,ALL,entity_recall,0.0406,2563,104,109
+all_pages,ALL,relation_recall,0.0165,484,8,95
+all_pages,ALL,time_recall,0.0158,316,5,85
+all_pages,ALL,space_recall,0.0102,489,5,99
+all_pages,ALL,overall_recall,0.0208,,,
+all_pages,1,entity_recall,0.0,28,0,1
+all_pages,1,relation_recall,0.0,1,0,1
+all_pages,1,time_recall,0.0,1,0,1
+all_pages,1,space_recall,0.0,3,0,1
+all_pages,5,entity_recall,0.0,16,0,1
+all_pages,5,relation_recall,0.0,5,0,1
+all_pages,5,space_recall,0.0,1,0,1
+all_pages,“三反”“五反”运动 青海卷 (2),entity_recall,0.0,9,0,1
+all_pages,“三反”“五反”运动 青海卷 (2),time_recall,0.0,1,0,1
+all_pages,“三反”“五反”运动 青海卷 (2),space_recall,0.0,2,0,1
+all_pages,“四个现代化”战略目标  第八卷  第五册,entity_recall,0.0,23,0,1
+all_pages,“四个现代化”战略目标  第八卷  第五册,relation_recall,0.0,2,0,1
+all_pages,“四个现代化”战略目标  第八卷  第五册,time_recall,0.0,1,0,1
+all_pages,“四个现代化”战略目标  第八卷  第五册,space_recall,0.0,1,0,1
+all_pages,中共五华区党史资料  第5辑_11688162,entity_recall,0.0,8,0,1
+all_pages,中共五华区党史资料  第5辑_11688162,relation_recall,0.0,4,0,1
+all_pages,中共五华区党史资料  第5辑_11688162,space_recall,0.0,1,0,1
+all_pages,中共党史人物传  第01卷,entity_recall,0.1053,19,2,1
+all_pages,中共党史人物传  第01卷,time_recall,0.0,5,0,1
+all_pages,中共党史人物传  第01卷,space_recall,0.0,4,0,1
+all_pages,中共党史人物传  第07卷,entity_recall,0.0,13,0,1
+all_pages,中共党史人物传  第07卷,relation_recall,0.0,3,0,1
+all_pages,中共党史人物传  第07卷,time_recall,0.0,1,0,1
+all_pages,中共党史人物传  第07卷,space_recall,0.0,2,0,1
+all_pages,中共党史人物传  第13卷,entity_recall,0.1875,16,3,1
+all_pages,中共党史人物传  第13卷,relation_recall,0.0,7,0,1
+all_pages,中共党史人物传  第13卷,time_recall,0.0,3,0,1
+all_pages,中共党史人物传  第13卷,space_recall,0.0,2,0,1
+all_pages,中共党史人物传  第19卷,entity_recall,0.0,11,0,1
+all_pages,中共党史人物传  第19卷,relation_recall,0.0,7,0,1
+all_pages,中共党史人物传  第19卷,time_recall,0.0,1,0,1
+all_pages,中共党史人物传  第19卷,space_recall,0.0,1,0,1
+all_pages,中共党史人物传  第25卷,entity_recall,0.2258,31,7,1
+all_pages,中共党史人物传  第25卷,relation_recall,0.0,8,0,1
+all_pages,中共党史人物传  第25卷,time_recall,0.3333,3,1,1
+all_pages,中共党史人物传  第25卷,space_recall,0.4,5,2,1
+all_pages,中共党史人物传  第30卷,entity_recall,0.0,14,0,1
+all_pages,中共党史人物传  第30卷,relation_recall,0.0,5,0,1
+all_pages,中共党史人物传  第30卷,time_recall,0.0,8,0,1
+all_pages,中共党史人物传  第30卷,space_recall,0.0,1,0,1
+all_pages,中共党史人物传  第38卷,entity_recall,0.4211,19,8,1
+all_pages,中共党史人物传  第38卷,relation_recall,0.2,5,1,1
+all_pages,中共党史人物传  第38卷,time_recall,0.0,5,0,1
+all_pages,中共党史人物传  第38卷,space_recall,0.0833,12,1,1
+all_pages,中共党史人物传  第44卷,entity_recall,0.0,20,0,1
+all_pages,中共党史人物传  第44卷,relation_recall,0.0,6,0,1
+all_pages,中共党史人物传  第44卷,time_recall,0.0,3,0,1
+all_pages,中共党史人物传  第44卷,space_recall,0.0,7,0,1
+all_pages,中共党史人物传  第49卷,entity_recall,0.0,27,0,1
+all_pages,中共党史人物传  第49卷,relation_recall,0.0,3,0,1
+all_pages,中共党史人物传  第49卷,time_recall,0.0,2,0,1
+all_pages,中共党史人物传  第49卷,space_recall,0.0,2,0,1
+all_pages,中共党史人物传第36卷,entity_recall,0.0435,23,1,1
+all_pages,中共党史人物传第36卷,relation_recall,0.0,5,0,1
+all_pages,中共党史人物传第36卷,time_recall,0.0,4,0,1
+all_pages,中共党史人物传第36卷,space_recall,0.0,4,0,1
+all_pages,中共南溪县地方党史资料汇编  1921-1949_11441788,entity_recall,0.3571,14,5,1
+all_pages,中共南溪县地方党史资料汇编  1921-1949_11441788,relation_recall,0.0,2,0,1
+all_pages,中共南溪县地方党史资料汇编  1921-1949_11441788,time_recall,0.0,3,0,1
+all_pages,中共南溪县地方党史资料汇编  1921-1949_11441788,space_recall,0.0,3,0,1
+all_pages,中共德兴党史资料_13657107,entity_recall,0.0,10,0,1
+all_pages,中共德兴党史资料_13657107,relation_recall,0.0,5,0,1
+all_pages,中共早期关于武装斗争的认识与革命道路的探索  第三卷  第五册,entity_recall,0.0,13,0,1
+all_pages,中共早期关于武装斗争的认识与革命道路的探索  第三卷  第五册,relation_recall,0.0,2,0,1
+all_pages,中共早期关于武装斗争的认识与革命道路的探索  第三卷  第五册,space_recall,0.0,3,0,1
+all_pages,中共江川县党史资料  第1辑_11441811,entity_recall,0.0,34,0,1
+all_pages,中共江川县党史资料  第1辑_11441811,relation_recall,0.0,6,0,1
+all_pages,中共江川县党史资料  第1辑_11441811,time_recall,0.0,5,0,1
+all_pages,中共江川县党史资料  第1辑_11441811,space_recall,0.0,5,0,1
+all_pages,中共綦江县党史资料汇编  第1辑_11449486 (2),entity_recall,0.5278,36,19,1
+all_pages,中共綦江县党史资料汇编  第1辑_11449486 (2),relation_recall,0.1053,19,2,1
+all_pages,中共綦江县党史资料汇编  第1辑_11449486 (2),time_recall,0.6667,3,2,1
+all_pages,中共綦江县党史资料汇编  第1辑_11449486 (2),space_recall,0.1667,6,1,1
+all_pages,中共西双版纳傣族自治州党史资料  解放战争时期  第1辑_11449370,entity_recall,0.0,19,0,1
+all_pages,中共西双版纳傣族自治州党史资料  解放战争时期  第1辑_11449370,relation_recall,0.0,8,0,1
+all_pages,中共西双版纳傣族自治州党史资料  解放战争时期  第1辑_11449370,time_recall,0.0,2,0,1
+all_pages,中共西双版纳傣族自治州党史资料  解放战争时期  第1辑_11449370,space_recall,0.0,13,0,1
+all_pages,中华人民共和国史长编 第七卷 人物卷_12601694,entity_recall,0.0,38,0,1
+all_pages,中华人民共和国史长编 第七卷 人物卷_12601694,relation_recall,0.0,10,0,1
+all_pages,中华人民共和国史长编 第七卷 人物卷_12601694,time_recall,0.1111,9,1,1
+all_pages,中华人民共和国史长编 第七卷 人物卷_12601694,space_recall,0.0,16,0,1
+all_pages,中华人民共和国史长编 第五卷 1992—2002_12601363,entity_recall,0.0,45,0,1
+all_pages,中华人民共和国史长编 第五卷 1992—2002_12601363,time_recall,0.0,7,0,1
+all_pages,中华人民共和国史长编 第五卷 1992—2002_12601363,space_recall,0.0,2,0,1
+all_pages,中华民族的认同  第六卷  第一册,entity_recall,0.0,6,0,1
+all_pages,中华民族的认同  第六卷  第一册,relation_recall,0.0,1,0,1
+all_pages,中华民族的认同  第六卷  第一册,time_recall,0.0,2,0,1
+all_pages,中华民族的认同  第六卷  第一册,space_recall,0.0,1,0,1
+all_pages,中国人从此站立起来了  第二卷  第五册,entity_recall,0.0,25,0,1
+all_pages,中国人从此站立起来了  第二卷  第五册,relation_recall,0.0,8,0,1
+all_pages,中国人从此站立起来了  第二卷  第五册,time_recall,0.0,1,0,1
+all_pages,中国人从此站立起来了  第二卷  第五册,space_recall,0.0,5,0,1
+all_pages,中国共产党丰都县党史资料汇编  1  激流涌进_11449167,entity_recall,0.0,26,0,1
+all_pages,中国共产党丰都县党史资料汇编  1  激流涌进_11449167,relation_recall,0.0,5,0,1
+all_pages,中国共产党丰都县党史资料汇编  1  激流涌进_11449167,time_recall,0.0,5,0,1
+all_pages,中国共产党丰都县党史资料汇编  1  激流涌进_11449167,space_recall,0.0,2,0,1
+all_pages,中国共产党滇西工委滇西北地委史料选编  上_11441575,entity_recall,0.0833,36,3,1
+all_pages,中国共产党滇西工委滇西北地委史料选编  上_11441575,relation_recall,0.0,12,0,1
+all_pages,中国共产党滇西工委滇西北地委史料选编  上_11441575,time_recall,0.0,8,0,1
+all_pages,中国共产党滇西工委滇西北地委史料选编  上_11441575,space_recall,0.0,8,0,1
+all_pages,中国共产党的建设  第十二卷  第四册,entity_recall,0.0,20,0,1
+all_pages,中国共产党的建设  第十二卷  第四册,relation_recall,0.0,6,0,1
+all_pages,中国共产党的建设  第十二卷  第四册,time_recall,0.0,4,0,1
+all_pages,中国共产党的建设  第十二卷  第四册,space_recall,0.0,7,0,1
+all_pages,中国共产党编年史1922年卷,entity_recall,0.1818,33,6,1
+all_pages,中国共产党编年史1922年卷,relation_recall,0.2857,7,2,1
+all_pages,中国共产党编年史1922年卷,time_recall,0.0,3,0,1
+all_pages,中国共产党编年史1922年卷,space_recall,0.0,1,0,1
+all_pages,中国共产党编年史1928年卷,entity_recall,0.2963,27,8,1
+all_pages,中国共产党编年史1928年卷,relation_recall,0.25,4,1,1
+all_pages,中国共产党编年史1928年卷,time_recall,0.25,4,1,1
+all_pages,中国共产党编年史1928年卷,space_recall,0.0,4,0,1
+all_pages,中国共产党编年史1935年卷,entity_recall,0.1786,56,10,1
+all_pages,中国共产党编年史1935年卷,relation_recall,0.0909,22,2,1
+all_pages,中国共产党编年史1935年卷,time_recall,0.0,12,0,1
+all_pages,中国共产党编年史1935年卷,space_recall,0.0,22,0,1
+all_pages,中国共产党编年史1940年卷,entity_recall,0.0,23,0,1
+all_pages,中国共产党编年史1940年卷,relation_recall,0.0,8,0,1
+all_pages,中国共产党编年史1940年卷,time_recall,0.0,1,0,1
+all_pages,中国共产党编年史1940年卷,space_recall,0.0,5,0,1
+all_pages,中国共产党编年史1946年卷,entity_recall,0.0,24,0,1
+all_pages,中国共产党编年史1946年卷,relation_recall,0.0,2,0,1
+all_pages,中国共产党编年史1946年卷,time_recall,0.0,5,0,1
+all_pages,中国共产党苏州市历次代表大会（会议）文献汇编  1949-2001,entity_recall,0.0,29,0,1
+all_pages,中国共产党苏州市历次代表大会（会议）文献汇编  1949-2001,relation_recall,0.0,5,0,1
+all_pages,中国共产党苏州市历次代表大会（会议）文献汇编  1949-2001,space_recall,0.0,1,0,1
+all_pages,中国共产党青海省组织发展沿革概要,entity_recall,0.0,17,0,1
+all_pages,中国共产党青海省组织发展沿革概要,relation_recall,0.0,6,0,1
+all_pages,中国共产党青海省组织发展沿革概要,time_recall,0.0,4,0,1
+all_pages,中国共产党青海省组织发展沿革概要,space_recall,0.0,2,0,1
+all_pages,中江县地方党史资料汇编  2  抗日战争、解放战争时期_12025828,entity_recall,0.2083,24,5,1
+all_pages,中江县地方党史资料汇编  2  抗日战争、解放战争时期_12025828,relation_recall,0.0,2,0,1
+all_pages,中江县地方党史资料汇编  2  抗日战争、解放战争时期_12025828,time_recall,0.0,3,0,1
+all_pages,中江县地方党史资料汇编  2  抗日战争、解放战争时期_12025828,space_recall,0.0909,11,1,1
+all_pages,为历史转折作准备  第十六卷  第四册,entity_recall,0.0,20,0,1
+all_pages,丽江地区党史资料  第4辑_11441841,entity_recall,0.0,19,0,1
+all_pages,丽江地区党史资料  第4辑_11441841,relation_recall,0.0,4,0,1
+all_pages,丽江地区党史资料  第4辑_11441841,time_recall,0.0,2,0,1
+all_pages,丽江地区党史资料  第4辑_11441841,space_recall,0.0,2,0,1
+all_pages,人民代表大会制度的建立和实施  第四卷  第二册,entity_recall,0.0,29,0,1
+all_pages,人民代表大会制度的建立和实施  第四卷  第二册,time_recall,0.0,3,0,1
+all_pages,人民代表大会制度的建立和实施  第四卷  第二册,space_recall,0.0,1,0,1
+all_pages,人民政协和统一战线的理论与实践  第五卷  第四册,entity_recall,0.0,17,0,1
+all_pages,人民政协和统一战线的理论与实践  第五卷  第四册,relation_recall,0.0,3,0,1
+all_pages,休宁党史资料选编  1919-1949_11449656,entity_recall,0.0,18,0,1
+all_pages,休宁党史资料选编  1919-1949_11449656,relation_recall,0.0,7,0,1
+all_pages,休宁党史资料选编  1919-1949_11449656,time_recall,0.0,1,0,1
+all_pages,休宁党史资料选编  1919-1949_11449656,space_recall,0.0,6,0,1
+all_pages,党史资料丛书之二  昭通市解放前学生运动史资料_12886716,entity_recall,0.0,18,0,1
+all_pages,党史资料丛书之二  昭通市解放前学生运动史资料_12886716,relation_recall,0.0,4,0,1
+all_pages,党史资料丛书之二  昭通市解放前学生运动史资料_12886716,time_recall,0.0,2,0,1
+all_pages,党史资料丛书之二  昭通市解放前学生运动史资料_12886716,space_recall,0.0,2,0,1
+all_pages,凯里市党史资料  第5辑_14047351,entity_recall,0.0,30,0,1
+all_pages,凯里市党史资料  第5辑_14047351,relation_recall,0.0,5,0,1
+all_pages,凯里市党史资料  第5辑_14047351,time_recall,0.0,5,0,1
+all_pages,凯里市党史资料  第5辑_14047351,space_recall,0.0,17,0,1
+all_pages,北碚党史资料汇编-纪念中国共产党成立80周年,entity_recall,0.0,27,0,1
+all_pages,北碚党史资料汇编-纪念中国共产党成立80周年,relation_recall,0.0,4,0,1
+all_pages,北碚党史资料汇编-纪念中国共产党成立80周年,time_recall,0.0,5,0,1
+all_pages,北碚党史资料汇编-纪念中国共产党成立80周年,space_recall,0.0,7,0,1
+all_pages,南京党史资料  21_14094942,entity_recall,0.0,36,0,1
+all_pages,南京党史资料  21_14094942,relation_recall,0.0,8,0,1
+all_pages,南京党史资料  21_14094942,space_recall,0.0,1,0,1
+all_pages,南通市资本主义工商业的社会主义改造_10801759,entity_recall,0.0,20,0,1
+all_pages,南通市资本主义工商业的社会主义改造_10801759,relation_recall,0.0,4,0,1
+all_pages,南通市资本主义工商业的社会主义改造_10801759,time_recall,0.0,2,0,1
+all_pages,南通市资本主义工商业的社会主义改造_10801759,space_recall,0.0,1,0,1
+all_pages,向社会主义过渡  第三卷  第一册,entity_recall,0.0,34,0,1
+all_pages,向社会主义过渡  第三卷  第一册,relation_recall,0.0,6,0,1
+all_pages,向社会主义过渡  第三卷  第一册,time_recall,0.0,2,0,1
+all_pages,向社会主义过渡  第三卷  第一册,space_recall,0.0,1,0,1
+all_pages,吴县党史资料  第1辑_11999511,entity_recall,0.0,18,0,1
+all_pages,吴县党史资料  第1辑_11999511,relation_recall,0.0,5,0,1
+all_pages,吴县党史资料  第1辑_11999511,time_recall,0.0,2,0,1
+all_pages,吴县党史资料  第1辑_11999511,space_recall,0.0,10,0,1
+all_pages,回顾黔东南解放  第1辑_11449404,entity_recall,0.0,16,0,1
+all_pages,回顾黔东南解放  第1辑_11449404,relation_recall,0.0,2,0,1
+all_pages,回顾黔东南解放  第1辑_11449404,space_recall,0.0,2,0,1
+all_pages,国共合作推动反帝反封建的国民革命  第二卷  第二册,entity_recall,0.0,22,0,1
+all_pages,国共合作推动反帝反封建的国民革命  第二卷  第二册,relation_recall,0.0,8,0,1
+all_pages,国共合作推动反帝反封建的国民革命  第二卷  第二册,space_recall,0.0,11,0,1
+all_pages,国防和军队建设  第十二卷  第二册,entity_recall,0.0,19,0,1
+all_pages,国防和军队建设  第十二卷  第二册,space_recall,0.0,3,0,1
+all_pages,国防和军队建设  第十二卷  第四册,entity_recall,0.0,1,0,1
+all_pages,大后方的建设和民主运动的开展  第七卷  第三册,entity_recall,0.0,1,0,1
+all_pages,大方党史资料  第13辑  红军在大方,entity_recall,0.0,28,0,1
+all_pages,大方党史资料  第13辑  红军在大方,relation_recall,0.0,5,0,1
+all_pages,大方党史资料  第13辑  红军在大方,time_recall,0.0,1,0,1
+all_pages,大方党史资料  第13辑  红军在大方,space_recall,0.0,7,0,1
+all_pages,大方县党史参考资料  第14辑_11450113,entity_recall,0.0,18,0,1
+all_pages,大方县党史参考资料  第14辑_11450113,relation_recall,0.0,1,0,1
+all_pages,大方县党史参考资料  第14辑_11450113,time_recall,0.0,2,0,1
+all_pages,大方县党史参考资料  第14辑_11450113,space_recall,0.0,2,0,1
+all_pages,宁远党史资料选辑  第3辑,entity_recall,0.0,25,0,1
+all_pages,宁远党史资料选辑  第3辑,relation_recall,0.0,2,0,1
+all_pages,宁远党史资料选辑  第3辑,time_recall,0.0,1,0,1
+all_pages,宁远党史资料选辑  第3辑,space_recall,0.0,9,0,1
+all_pages,安顺地区党史资料  4  解放初期的安顺  1949-1956_11449987,entity_recall,0.0,32,0,1
+all_pages,安顺地区党史资料  4  解放初期的安顺  1949-1956_11449987,relation_recall,0.0,1,0,1
+all_pages,安顺地区党史资料  4  解放初期的安顺  1949-1956_11449987,time_recall,0.0,6,0,1
+all_pages,安顺地区党史资料  4  解放初期的安顺  1949-1956_11449987,space_recall,0.0,2,0,1
+all_pages,左翼文化与思想理论战线  第四卷  第一册,entity_recall,0.0,26,0,1
+all_pages,左翼文化与思想理论战线  第四卷  第一册,relation_recall,0.0,6,0,1
+all_pages,左翼文化与思想理论战线  第四卷  第一册,space_recall,0.0,1,0,1
+all_pages,左翼文化与思想理论战线  第四卷  第六册,entity_recall,0.0,30,0,1
+all_pages,左翼文化与思想理论战线  第四卷  第六册,relation_recall,0.0,3,0,1
+all_pages,左翼文化与思想理论战线  第四卷  第六册,space_recall,0.0,5,0,1
+all_pages,平湖市社会主义时期党史专题集  第1辑  1949-1978_11864635,entity_recall,0.0,25,0,1
+all_pages,平湖市社会主义时期党史专题集  第1辑  1949-1978_11864635,relation_recall,0.0,13,0,1
+all_pages,平湖市社会主义时期党史专题集  第1辑  1949-1978_11864635,time_recall,0.0,10,0,1
+all_pages,平湖市社会主义时期党史专题集  第1辑  1949-1978_11864635,space_recall,0.0,1,0,1
+all_pages,建立独立的比较完整的国民经济体系  第九卷  第七册,entity_recall,0.0,32,0,1
+all_pages,建立独立的比较完整的国民经济体系  第九卷  第七册,time_recall,0.0,2,0,1
+all_pages,建立独立的比较完整的国民经济体系  第九卷  第七册,space_recall,0.0,1,0,1
+all_pages,建立独立的比较完整的国民经济体系  第九卷  第四册,entity_recall,0.0,13,0,1
+all_pages,建立独立的比较完整的国民经济体系  第九卷  第四册,relation_recall,0.0,1,0,1
+all_pages,建立独立的比较完整的国民经济体系  第九卷  第四册,space_recall,0.0,4,0,1
+all_pages,徐州党史资料  革命历史文献汇编  1921年11月-1927年11月_12010435,entity_recall,0.0,23,0,1
+all_pages,徐州党史资料  革命历史文献汇编  1921年11月-1927年11月_12010435,relation_recall,0.0,2,0,1
+all_pages,徐州党史资料  革命历史文献汇编  1921年11月-1927年11月_12010435,time_recall,0.0,3,0,1
+all_pages,徐州党史资料  革命历史文献汇编  1921年11月-1927年11月_12010435,space_recall,0.0,4,0,1
+all_pages,成都党史资料  市中事件_11504860,entity_recall,0.0,13,0,1
+all_pages,成都党史资料  市中事件_11504860,relation_recall,0.0,1,0,1
+all_pages,成都党史资料  市中事件_11504860,time_recall,0.0,1,0,1
+all_pages,成都党史资料  市中事件_11504860,space_recall,0.0,4,0,1
+all_pages,执政条件下党的建设  第十四卷  第三册,entity_recall,0.0,22,0,1
+all_pages,执政条件下党的建设  第十四卷  第三册,relation_recall,0.0,1,0,1
+all_pages,执政条件下党的建设  第十四卷  第三册,space_recall,0.0,1,0,1
+all_pages,执政条件下党的建设  第十四卷  第六册,entity_recall,0.0,29,0,1
+all_pages,执政条件下党的建设  第十四卷  第六册,relation_recall,0.0,2,0,1
+all_pages,执政条件下党的建设  第十四卷  第六册,time_recall,0.0,2,0,1
+all_pages,执政条件下党的建设  第十四卷  第六册,space_recall,0.0,3,0,1
+all_pages,抗日民族统一战线的推进与全名族抗战  第五卷  第一册,entity_recall,0.0,7,0,1
+all_pages,抗日民族统一战线的推进与全名族抗战  第五卷  第一册,relation_recall,0.0,1,0,1
+all_pages,抗日民族统一战线的推进与全名族抗战  第五卷  第一册,space_recall,0.0,1,0,1
+all_pages,抗日民族统一战线的推进与全名族抗战  第五卷  第四册,entity_recall,0.037,27,1,1
+all_pages,抗日民族统一战线的推进与全名族抗战  第五卷  第四册,relation_recall,0.0,3,0,1
+all_pages,抗日民族统一战线的推进与全名族抗战  第五卷  第四册,space_recall,0.0,4,0,1
+all_pages,探索适合中国国情的社会主义建设道路  第七卷  第三册,entity_recall,0.0,6,0,1
+all_pages,探索适合中国国情的社会主义建设道路  第七卷  第三册,relation_recall,0.0,1,0,1
+all_pages,探索适合中国国情的社会主义建设道路  第七卷  第三册,space_recall,0.0,1,0,1
+all_pages,改良派的变革主张  第四卷  第一册,entity_recall,0.0,10,0,1
+all_pages,改良派的变革主张  第四卷  第一册,relation_recall,0.0,2,0,1
+all_pages,改良派的变革主张  第四卷  第一册,time_recall,0.0,1,0,1
+all_pages,改良派的变革主张  第四卷  第一册,space_recall,0.0,1,0,1
+all_pages,新干党史资料  第1辑,entity_recall,0.0,26,0,1
+all_pages,新干党史资料  第1辑,relation_recall,0.0,3,0,1
+all_pages,新干党史资料  第1辑,time_recall,0.0,4,0,1
+all_pages,新干党史资料  第1辑,space_recall,0.0,5,0,1
+all_pages,新文化运动  第七卷  第二册,entity_recall,0.0,7,0,1
+all_pages,新文化运动  第七卷  第二册,relation_recall,0.0,2,0,1
+all_pages,新文化运动  第七卷  第二册,time_recall,0.0,1,0,1
+all_pages,新文化运动  第七卷  第二册,space_recall,0.0,1,0,1
+all_pages,昭通县六十年代国民经济调整_12886511,entity_recall,0.0,28,0,1
+all_pages,昭通县六十年代国民经济调整_12886511,relation_recall,0.0,3,0,1
+all_pages,昭通县六十年代国民经济调整_12886511,time_recall,0.0,4,0,1
+all_pages,昭通县六十年代国民经济调整_12886511,space_recall,0.0,10,0,1
+all_pages,晚清统治集团的自救  第三卷  第三册,entity_recall,0.0,29,0,1
+all_pages,晚清统治集团的自救  第三卷  第三册,space_recall,0.0,15,0,1
+all_pages,曲靖党史资料  第2辑  边纵三支队革命斗争史_11441833,entity_recall,0.0,35,0,1
+all_pages,曲靖党史资料  第2辑  边纵三支队革命斗争史_11441833,relation_recall,0.0,11,0,1
+all_pages,曲靖党史资料  第2辑  边纵三支队革命斗争史_11441833,time_recall,0.0,2,0,1
+all_pages,曲靖党史资料  第2辑  边纵三支队革命斗争史_11441833,space_recall,0.0,5,0,1
+all_pages,株洲党史资料  民主革命时期  第1辑_11441688,entity_recall,0.0278,72,2,1
+all_pages,株洲党史资料  民主革命时期  第1辑_11441688,relation_recall,0.0,6,0,1
+all_pages,株洲党史资料  民主革命时期  第1辑_11441688,time_recall,0.0,18,0,1
+all_pages,株洲党史资料  民主革命时期  第1辑_11441688,space_recall,0.0,9,0,1
+all_pages,武汉城工史料  中共鄂豫三地委城工部史料专辑_12277272,entity_recall,0.0,23,0,1
+all_pages,武汉城工史料  中共鄂豫三地委城工部史料专辑_12277272,relation_recall,0.0,1,0,1
+all_pages,武汉城工史料  中共鄂豫三地委城工部史料专辑_12277272,time_recall,0.0,5,0,1
+all_pages,武汉城工史料  中共鄂豫三地委城工部史料专辑_12277272,space_recall,0.0,8,0,1
+all_pages,毕节地区党史资料丛书  2  红军在黔西北_11449964,entity_recall,0.0,27,0,1
+all_pages,毕节地区党史资料丛书  2  红军在黔西北_11449964,relation_recall,0.0,2,0,1
+all_pages,毕节地区党史资料丛书  2  红军在黔西北_11449964,time_recall,0.0,3,0,1
+all_pages,毕节地区党史资料丛书  2  红军在黔西北_11449964,space_recall,0.0,5,0,1
+all_pages,毕节地区党史资料丛书  6  地下党在黔西北的革命活动_14027693,entity_recall,0.1429,14,2,1
+all_pages,毕节地区党史资料丛书  6  地下党在黔西北的革命活动_14027693,relation_recall,0.0,12,0,1
+all_pages,毕节地区党史资料丛书  6  地下党在黔西北的革命活动_14027693,time_recall,0.0,1,0,1
+all_pages,毕节地区党史资料丛书  6  地下党在黔西北的革命活动_14027693,space_recall,0.0,2,0,1
+all_pages,民主革命派的追求  第五卷  第一册,entity_recall,0.0,24,0,1
+all_pages,民主革命派的追求  第五卷  第一册,relation_recall,0.0,3,0,1
+all_pages,民主革命派的追求  第五卷  第二册,entity_recall,0.0,5,0,1
+all_pages,民族区域自治的理论与实践  第六卷  第一册,entity_recall,0.0,24,0,1
+all_pages,民族区域自治的理论与实践  第六卷  第一册,relation_recall,0.0,3,0,1
+all_pages,民族区域自治的理论与实践  第六卷  第一册,time_recall,0.0,2,0,1
+all_pages,民族区域自治的理论与实践  第六卷  第一册,space_recall,0.0,8,0,1
+all_pages,民族区域自治的理论与实践  第六卷  第四册,entity_recall,0.0,33,0,1
+all_pages,民族区域自治的理论与实践  第六卷  第四册,relation_recall,0.0,2,0,1
+all_pages,民族区域自治的理论与实践  第六卷  第四册,time_recall,0.0,4,0,1
+all_pages,民族区域自治的理论与实践  第六卷  第四册,space_recall,0.0,1,0,1
+all_pages,江北县党史资料汇编  第3辑（1919.5—1937.7）,entity_recall,0.3158,19,6,1
+all_pages,江北县党史资料汇编  第3辑（1919.5—1937.7）,relation_recall,0.0,5,0,1
+all_pages,江北县党史资料汇编  第3辑（1919.5—1937.7）,time_recall,0.0,5,0,1
+all_pages,江北县党史资料汇编  第3辑（1919.5—1937.7）,space_recall,0.0,5,0,1
+all_pages,沅陵党史资料 辰州烽火_11448552,entity_recall,0.375,24,9,1
+all_pages,沅陵党史资料 辰州烽火_11448552,relation_recall,0.0,3,0,1
+all_pages,沅陵党史资料 辰州烽火_11448552,time_recall,0.0,5,0,1
+all_pages,沅陵党史资料 辰州烽火_11448552,space_recall,0.0,5,0,1
+all_pages,浙江解放_12704470,entity_recall,0.0,20,0,1
+all_pages,浙江解放_12704470,relation_recall,0.0,12,0,1
+all_pages,浙江解放_12704470,time_recall,0.0,2,0,1
+all_pages,浙江解放_12704470,space_recall,0.0,4,0,1
+all_pages,淮北党史资料  第3辑_10273534,entity_recall,0.0,32,0,1
+all_pages,淮北党史资料  第3辑_10273534,relation_recall,0.0,10,0,1
+all_pages,淮北党史资料  第3辑_10273534,time_recall,0.0,7,0,1
+all_pages,淮北党史资料  第3辑_10273534,space_recall,0.0,12,0,1
+all_pages,淮安党史资料  第6-7合辑_12005864,entity_recall,0.0,33,0,1
+all_pages,淮安党史资料  第6-7合辑_12005864,relation_recall,0.0,3,0,1
+all_pages,淮安党史资料  第6-7合辑_12005864,time_recall,0.0,5,0,1
+all_pages,淮安党史资料  第6-7合辑_12005864,space_recall,0.0,12,0,1
+all_pages,湄潭党史资料  红军长征在湄潭：纪念遵义会议五十周年特辑_13395617,entity_recall,0.0,13,0,1
+all_pages,湄潭党史资料  红军长征在湄潭：纪念遵义会议五十周年特辑_13395617,relation_recall,0.0,2,0,1
+all_pages,湄潭党史资料  红军长征在湄潭：纪念遵义会议五十周年特辑_13395617,time_recall,0.0,1,0,1
+all_pages,湄潭党史资料  红军长征在湄潭：纪念遵义会议五十周年特辑_13395617,space_recall,0.0,6,0,1
+all_pages,溧水党史资料  第5辑_12010411,entity_recall,0.0556,36,2,1
+all_pages,溧水党史资料  第5辑_12010411,time_recall,0.0,9,0,1
+all_pages,溧水党史资料  第5辑_12010411,space_recall,0.0,5,0,1
+all_pages,灌云党史资料  第3辑  一代雄风_11449158,entity_recall,0.0,33,0,1
+all_pages,灌云党史资料  第3辑  一代雄风_11449158,relation_recall,0.0,9,0,1
+all_pages,灌云党史资料  第3辑  一代雄风_11449158,time_recall,0.0,4,0,1
+all_pages,灌云党史资料  第3辑  一代雄风_11449158,space_recall,0.0,11,0,1
+all_pages,独立自主的和平外交  第十三卷  第二册,entity_recall,0.0,22,0,1
+all_pages,独立自主的和平外交  第十三卷  第二册,relation_recall,0.0,4,0,1
+all_pages,独立自主的和平外交  第十三卷  第二册,time_recall,0.0,2,0,1
+all_pages,独立自主的和平外交  第十三卷  第二册,space_recall,0.0,2,0,1
+all_pages,白云党史资料  第1辑,entity_recall,0.0,41,0,1
+all_pages,白云党史资料  第1辑,relation_recall,0.0,7,0,1
+all_pages,白云党史资料  第1辑,time_recall,0.0,2,0,1
+all_pages,白云党史资料  第1辑,space_recall,0.0,6,0,1
+all_pages,知识分子政策和教育科学文化建设  第十卷  第三册,entity_recall,0.0,26,0,1
+all_pages,知识分子政策和教育科学文化建设  第十卷  第三册,time_recall,0.0,1,0,1
+all_pages,知识分子政策和教育科学文化建设  第十卷  第三册,space_recall,0.0,1,0,1
+all_pages,繁荣昌盛的南岸  重庆市南岸区纪念建党八十周年党史资料_13570483,entity_recall,0.0,13,0,1
+all_pages,繁荣昌盛的南岸  重庆市南岸区纪念建党八十周年党史资料_13570483,relation_recall,0.0,4,0,1
+all_pages,繁荣昌盛的南岸  重庆市南岸区纪念建党八十周年党史资料_13570483,time_recall,0.0,8,0,1
+all_pages,繁荣昌盛的南岸  重庆市南岸区纪念建党八十周年党史资料_13570483,space_recall,0.0,8,0,1
+all_pages,绍兴市资本主义工商业的社会主义改造_11449557,entity_recall,0.0,26,0,1
+all_pages,绍兴市资本主义工商业的社会主义改造_11449557,relation_recall,0.0,4,0,1
+all_pages,绍兴市资本主义工商业的社会主义改造_11449557,time_recall,0.0,4,0,1
+all_pages,绍兴市资本主义工商业的社会主义改造_11449557,space_recall,0.0,1,0,1
+all_pages,自力更生、发愤图强  第十一卷  第四册,entity_recall,0.0,22,0,1
+all_pages,自力更生、发愤图强  第十一卷  第四册,relation_recall,0.0,7,0,1
+all_pages,自力更生、发愤图强  第十一卷  第四册,time_recall,0.0,5,0,1
+all_pages,自力更生、发愤图强  第十一卷  第四册,space_recall,0.0,3,0,1
+all_pages,苏中四分区反“清乡”斗争史料选辑 江海奔腾  第6辑_11449755,entity_recall,0.0,29,0,1
+all_pages,苏中四分区反“清乡”斗争史料选辑 江海奔腾  第6辑_11449755,relation_recall,0.0,5,0,1
+all_pages,苏中四分区反“清乡”斗争史料选辑 江海奔腾  第6辑_11449755,time_recall,0.0,2,0,1
+all_pages,苏中四分区反“清乡”斗争史料选辑 江海奔腾  第6辑_11449755,space_recall,0.0,9,0,1
+all_pages,萧县党史资料  第1辑_11795467,entity_recall,0.0,36,0,1
+all_pages,萧县党史资料  第1辑_11795467,relation_recall,0.0,7,0,1
+all_pages,萧县党史资料  第1辑_11795467,time_recall,0.0,3,0,1
+all_pages,萧县党史资料  第1辑_11795467,space_recall,0.0,5,0,1
+all_pages,解放区土地制度改革的理论探索与实践  第十一卷  第三册,entity_recall,0.0,16,0,1
+all_pages,解放区土地制度改革的理论探索与实践  第十一卷  第三册,relation_recall,0.0,2,0,1
+all_pages,解放青海 (2),entity_recall,0.0,24,0,1
+all_pages,解放青海 (2),relation_recall,0.0,6,0,1
+all_pages,解放青海 (2),space_recall,0.0,2,0,1
+all_pages,贵阳党史资料专辑  抗战胜利四十周年_11441776,entity_recall,0.0,28,0,1
+all_pages,贵阳党史资料专辑  抗战胜利四十周年_11441776,relation_recall,0.0,6,0,1
+all_pages,贵阳党史资料专辑  抗战胜利四十周年_11441776,time_recall,0.0,1,0,1
+all_pages,贵阳党史资料专辑  抗战胜利四十周年_11441776,space_recall,0.0,5,0,1
+all_pages,郎岱风云  六枝党史资料丛书第3辑_12926483,entity_recall,0.0256,39,1,1
+all_pages,郎岱风云  六枝党史资料丛书第3辑_12926483,relation_recall,0.0,15,0,1
+all_pages,郎岱风云  六枝党史资料丛书第3辑_12926483,time_recall,0.0,15,0,1
+all_pages,郎岱风云  六枝党史资料丛书第3辑_12926483,space_recall,0.0,10,0,1
+all_pages,金湖党史资料  第2辑,entity_recall,0.0,10,0,1
+all_pages,金湖党史资料  第2辑,time_recall,0.0,1,0,1
+all_pages,铜山党史资料  第6辑_11449117,entity_recall,0.1304,23,3,1
+all_pages,铜山党史资料  第6辑_11449117,relation_recall,0.0,1,0,1
+all_pages,铜山党史资料  第6辑_11449117,time_recall,0.0,2,0,1
+all_pages,铜山党史资料  第6辑_11449117,space_recall,0.0,13,0,1
+all_pages,雷公山地区合围,entity_recall,0.0,16,0,1
+all_pages,雷公山地区合围,relation_recall,0.0,2,0,1
+all_pages,雷公山地区合围,time_recall,0.0,1,0,1
+all_pages,雷公山地区合围,space_recall,0.0,6,0,1
+all_pages,马克思主义中国化与毛泽东思想  第十三卷  第五册,entity_recall,0.0,29,0,1
+all_pages,马克思主义中国化与毛泽东思想  第十三卷  第五册,relation_recall,0.0,5,0,1
+all_pages,马克思主义中国化与毛泽东思想  第十三卷  第五册,time_recall,0.0,6,0,1
+all_pages,马克思主义中国化与毛泽东思想  第十三卷  第五册,space_recall,0.0,1,0,1
+all_pages,高淳史志资料  第6辑_10079460,time_recall,0.0,3,0,1
+all_pages,黄石党史资料汇编  回忆资料之一_11141647,entity_recall,0.0,37,0,1
+all_pages,黄石党史资料汇编  回忆资料之一_11141647,relation_recall,0.0,7,0,1
+all_pages,黄石党史资料汇编  回忆资料之一_11141647,time_recall,0.0,1,0,1
+all_pages,黄石党史资料汇编  回忆资料之一_11141647,space_recall,0.0,6,0,1
+all_pages,黔南州党史资料  6  中共黔南州历史大事记  1930-1989_11449410,entity_recall,0.0385,26,1,1
+all_pages,黔南州党史资料  6  中共黔南州历史大事记  1930-1989_11449410,relation_recall,0.0,4,0,1
+all_pages,黔南州党史资料  6  中共黔南州历史大事记  1930-1989_11449410,time_recall,0.0,5,0,1
+all_pages,黔南州党史资料  6  中共黔南州历史大事记  1930-1989_11449410,space_recall,0.0,2,0,1
+production_linked,ALL,entity_recall,0.1573,661,104,23
+production_linked,ALL,relation_recall,0.0526,152,8,20
+production_linked,ALL,time_recall,0.0397,126,5,22
+production_linked,ALL,space_recall,0.0323,155,5,23
+production_linked,ALL,overall_recall,0.0705,,,
+production_linked,ALL,entity_precision_ai_supported,0.5022,227,114,
+production_linked,ALL,relation_precision_ai_supported,0.1737,167,29,
+production_linked,ALL,time_precision_ai_supported,0.4583,24,11,
+production_linked,ALL,space_precision_ai_supported,0.2051,39,8,
+production_linked,“三反”“五反”运动 青海卷 (2),entity_recall,0.0,9,0,1
+production_linked,“三反”“五反”运动 青海卷 (2),time_recall,0.0,1,0,1
+production_linked,“三反”“五反”运动 青海卷 (2),space_recall,0.0,2,0,1
+production_linked,中共党史人物传  第01卷,entity_recall,0.1053,19,2,1
+production_linked,中共党史人物传  第01卷,time_recall,0.0,5,0,1
+production_linked,中共党史人物传  第01卷,space_recall,0.0,4,0,1
+production_linked,中共党史人物传  第13卷,entity_recall,0.1875,16,3,1
+production_linked,中共党史人物传  第13卷,relation_recall,0.0,7,0,1
+production_linked,中共党史人物传  第13卷,time_recall,0.0,3,0,1
+production_linked,中共党史人物传  第13卷,space_recall,0.0,2,0,1
+production_linked,中共党史人物传  第25卷,entity_recall,0.2258,31,7,1
+production_linked,中共党史人物传  第25卷,relation_recall,0.0,8,0,1
+production_linked,中共党史人物传  第25卷,time_recall,0.3333,3,1,1
+production_linked,中共党史人物传  第25卷,space_recall,0.4,5,2,1
+production_linked,中共党史人物传  第38卷,entity_recall,0.4211,19,8,1
+production_linked,中共党史人物传  第38卷,relation_recall,0.2,5,1,1
+production_linked,中共党史人物传  第38卷,time_recall,0.0,5,0,1
+production_linked,中共党史人物传  第38卷,space_recall,0.0833,12,1,1
+production_linked,中共党史人物传第36卷,entity_recall,0.0435,23,1,1
+production_linked,中共党史人物传第36卷,relation_recall,0.0,5,0,1
+production_linked,中共党史人物传第36卷,time_recall,0.0,4,0,1
+production_linked,中共党史人物传第36卷,space_recall,0.0,4,0,1
+production_linked,中共南溪县地方党史资料汇编  1921-1949_11441788,entity_recall,0.3571,14,5,1
+production_linked,中共南溪县地方党史资料汇编  1921-1949_11441788,relation_recall,0.0,2,0,1
+production_linked,中共南溪县地方党史资料汇编  1921-1949_11441788,time_recall,0.0,3,0,1
+production_linked,中共南溪县地方党史资料汇编  1921-1949_11441788,space_recall,0.0,3,0,1
+production_linked,中共綦江县党史资料汇编  第1辑_11449486 (2),entity_recall,0.5278,36,19,1
+production_linked,中共綦江县党史资料汇编  第1辑_11449486 (2),relation_recall,0.1053,19,2,1
+production_linked,中共綦江县党史资料汇编  第1辑_11449486 (2),time_recall,0.6667,3,2,1
+production_linked,中共綦江县党史资料汇编  第1辑_11449486 (2),space_recall,0.1667,6,1,1
+production_linked,中华人民共和国史长编 第七卷 人物卷_12601694,entity_recall,0.0,38,0,1
+production_linked,中华人民共和国史长编 第七卷 人物卷_12601694,relation_recall,0.0,10,0,1
+production_linked,中华人民共和国史长编 第七卷 人物卷_12601694,time_recall,0.1111,9,1,1
+production_linked,中华人民共和国史长编 第七卷 人物卷_12601694,space_recall,0.0,16,0,1
+production_linked,中国共产党滇西工委滇西北地委史料选编  上_11441575,entity_recall,0.0833,36,3,1
+production_linked,中国共产党滇西工委滇西北地委史料选编  上_11441575,relation_recall,0.0,12,0,1
+production_linked,中国共产党滇西工委滇西北地委史料选编  上_11441575,time_recall,0.0,8,0,1
+production_linked,中国共产党滇西工委滇西北地委史料选编  上_11441575,space_recall,0.0,8,0,1
+production_linked,中国共产党编年史1922年卷,entity_recall,0.1818,33,6,1
+production_linked,中国共产党编年史1922年卷,relation_recall,0.2857,7,2,1
+production_linked,中国共产党编年史1922年卷,time_recall,0.0,3,0,1
+production_linked,中国共产党编年史1922年卷,space_recall,0.0,1,0,1
+production_linked,中国共产党编年史1928年卷,entity_recall,0.2963,27,8,1
+production_linked,中国共产党编年史1928年卷,relation_recall,0.25,4,1,1
+production_linked,中国共产党编年史1928年卷,time_recall,0.25,4,1,1
+production_linked,中国共产党编年史1928年卷,space_recall,0.0,4,0,1
+production_linked,中国共产党编年史1935年卷,entity_recall,0.1786,56,10,1
+production_linked,中国共产党编年史1935年卷,relation_recall,0.0909,22,2,1
+production_linked,中国共产党编年史1935年卷,time_recall,0.0,12,0,1
+production_linked,中国共产党编年史1935年卷,space_recall,0.0,22,0,1
+production_linked,中江县地方党史资料汇编  2  抗日战争、解放战争时期_12025828,entity_recall,0.2083,24,5,1
+production_linked,中江县地方党史资料汇编  2  抗日战争、解放战争时期_12025828,relation_recall,0.0,2,0,1
+production_linked,中江县地方党史资料汇编  2  抗日战争、解放战争时期_12025828,time_recall,0.0,3,0,1
+production_linked,中江县地方党史资料汇编  2  抗日战争、解放战争时期_12025828,space_recall,0.0909,11,1,1
+production_linked,抗日民族统一战线的推进与全名族抗战  第五卷  第四册,entity_recall,0.037,27,1,1
+production_linked,抗日民族统一战线的推进与全名族抗战  第五卷  第四册,relation_recall,0.0,3,0,1
+production_linked,抗日民族统一战线的推进与全名族抗战  第五卷  第四册,space_recall,0.0,4,0,1
+production_linked,株洲党史资料  民主革命时期  第1辑_11441688,entity_recall,0.0278,72,2,1
+production_linked,株洲党史资料  民主革命时期  第1辑_11441688,relation_recall,0.0,6,0,1
+production_linked,株洲党史资料  民主革命时期  第1辑_11441688,time_recall,0.0,18,0,1
+production_linked,株洲党史资料  民主革命时期  第1辑_11441688,space_recall,0.0,9,0,1
+production_linked,毕节地区党史资料丛书  6  地下党在黔西北的革命活动_14027693,entity_recall,0.1429,14,2,1
+production_linked,毕节地区党史资料丛书  6  地下党在黔西北的革命活动_14027693,relation_recall,0.0,12,0,1
+production_linked,毕节地区党史资料丛书  6  地下党在黔西北的革命活动_14027693,time_recall,0.0,1,0,1
+production_linked,毕节地区党史资料丛书  6  地下党在黔西北的革命活动_14027693,space_recall,0.0,2,0,1
+production_linked,江北县党史资料汇编  第3辑（1919.5—1937.7）,entity_recall,0.3158,19,6,1
+production_linked,江北县党史资料汇编  第3辑（1919.5—1937.7）,relation_recall,0.0,5,0,1
+production_linked,江北县党史资料汇编  第3辑（1919.5—1937.7）,time_recall,0.0,5,0,1
+production_linked,江北县党史资料汇编  第3辑（1919.5—1937.7）,space_recall,0.0,5,0,1
+production_linked,沅陵党史资料 辰州烽火_11448552,entity_recall,0.375,24,9,1
+production_linked,沅陵党史资料 辰州烽火_11448552,relation_recall,0.0,3,0,1
+production_linked,沅陵党史资料 辰州烽火_11448552,time_recall,0.0,5,0,1
+production_linked,沅陵党史资料 辰州烽火_11448552,space_recall,0.0,5,0,1
+production_linked,溧水党史资料  第5辑_12010411,entity_recall,0.0556,36,2,1
+production_linked,溧水党史资料  第5辑_12010411,time_recall,0.0,9,0,1
+production_linked,溧水党史资料  第5辑_12010411,space_recall,0.0,5,0,1
+production_linked,郎岱风云  六枝党史资料丛书第3辑_12926483,entity_recall,0.0256,39,1,1
+production_linked,郎岱风云  六枝党史资料丛书第3辑_12926483,relation_recall,0.0,15,0,1
+production_linked,郎岱风云  六枝党史资料丛书第3辑_12926483,time_recall,0.0,15,0,1
+production_linked,郎岱风云  六枝党史资料丛书第3辑_12926483,space_recall,0.0,10,0,1
+production_linked,铜山党史资料  第6辑_11449117,entity_recall,0.1304,23,3,1
+production_linked,铜山党史资料  第6辑_11449117,relation_recall,0.0,1,0,1
+production_linked,铜山党史资料  第6辑_11449117,time_recall,0.0,2,0,1
+production_linked,铜山党史资料  第6辑_11449117,space_recall,0.0,13,0,1
+production_linked,黔南州党史资料  6  中共黔南州历史大事记  1930-1989_11449410,entity_recall,0.0385,26,1,1
+production_linked,黔南州党史资料  6  中共黔南州历史大事记  1930-1989_11449410,relation_recall,0.0,4,0,1
+production_linked,黔南州党史资料  6  中共黔南州历史大事记  1930-1989_11449410,time_recall,0.0,5,0,1
+production_linked,黔南州党史资料  6  中共黔南州历史大事记  1930-1989_11449410,space_recall,0.0,2,0,1

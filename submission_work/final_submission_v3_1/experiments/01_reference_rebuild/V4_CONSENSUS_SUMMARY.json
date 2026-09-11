@@ -1,0 +1,29 @@
+{
+  "relation_semantic_v2": {
+    "tiers": {
+      "weak_consensus": 300,
+      "strong_consensus": 459,
+      "unresolved": 41
+    },
+    "strong": 459,
+    "all": 759
+  },
+  "scope_revalidation_v2": {
+    "tiers": {
+      "weak_consensus": 77,
+      "strong_consensus": 110,
+      "unresolved": 21
+    },
+    "strong": 110,
+    "all": 187
+  },
+  "identity_revalidation_v2": {
+    "tiers": {
+      "strong_consensus": 320,
+      "weak_consensus": 258,
+      "unresolved": 22
+    },
+    "strong": 320,
+    "all": 578
+  }
+}

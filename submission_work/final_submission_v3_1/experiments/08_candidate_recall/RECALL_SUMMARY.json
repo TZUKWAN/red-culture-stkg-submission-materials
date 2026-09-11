@@ -1,0 +1,6444 @@
+{
+  "method_version": "extraction-recall-v1",
+  "generated_at": "2026-09-11T08:10:58+08:00",
+  "seed": 20260910,
+  "model": "openai/gpt-oss-20b",
+  "workers": 2,
+  "temperatures": [
+    0.0,
+    0.3,
+    0.7
+  ],
+  "n_pages": 120,
+  "n_linked": 24,
+  "extraction_coverage": {
+    "pages_planned": 120,
+    "pages_with_any_ok_votes": 112,
+    "pages_with_full_3_votes": 108,
+    "ok_votes": 332,
+    "votes_expected": 360,
+    "note": "如未满 360 票即为部分结果：recall 分母仅含有 AI 参考的页，precision-like 仅统计已抽取（≥1 ok 票）的生产关联页，覆盖率如实随报"
+  },
+  "matching_rules": "N1 名称归一(NFKC+小写+去空白+去标点)；N2 类型归一/相容；N3 实体=精确/别名表/包含(短≥2)；N4 关系=S、O 名匹配(谓词不要求)；N5 时间=年份 token 相交；N6 空间=名称匹配",
+  "recall": {
+    "all_pages": {
+      "entity": {
+        "reference_total": 2563,
+        "matched_total": 104,
+        "recall_micro": 0.0406,
+        "pages_with_reference": 109,
+        "recall_macro_page_mean": 0.0364
+      },
+      "relation": {
+        "reference_total": 484,
+        "matched_total": 8,
+        "recall_micro": 0.0165,
+        "pages_with_reference": 95,
+        "recall_macro_page_mean": 0.0098
+      },
+      "time": {
+        "reference_total": 316,
+        "matched_total": 5,
+        "recall_micro": 0.0158,
+        "pages_with_reference": 85,
+        "recall_macro_page_mean": 0.016
+      },
+      "space": {
+        "reference_total": 489,
+        "matched_total": 5,
+        "recall_micro": 0.0102,
+        "pages_with_reference": 99,
+        "recall_macro_page_mean": 0.0075
+      },
+      "overall_recall_micro": 0.0208
+    },
+    "production_linked": {
+      "entity": {
+        "reference_total": 661,
+        "matched_total": 104,
+        "recall_micro": 0.1573,
+        "pages_with_reference": 23,
+        "recall_macro_page_mean": 0.1724
+      },
+      "relation": {
+        "reference_total": 152,
+        "matched_total": 8,
+        "recall_micro": 0.0526,
+        "pages_with_reference": 20,
+        "recall_macro_page_mean": 0.0466
+      },
+      "time": {
+        "reference_total": 126,
+        "matched_total": 5,
+        "recall_micro": 0.0397,
+        "pages_with_reference": 22,
+        "recall_macro_page_mean": 0.0619
+      },
+      "space": {
+        "reference_total": 155,
+        "matched_total": 5,
+        "recall_micro": 0.0323,
+        "pages_with_reference": 23,
+        "recall_macro_page_mean": 0.0322
+      },
+      "overall_recall_micro": 0.0705
+    }
+  },
+  "precision_like_production_linked": {
+    "entity": {
+      "production_total": 227,
+      "ai_supported": 114,
+      "precision": 0.5022
+    },
+    "relation": {
+      "production_total": 167,
+      "ai_supported": 29,
+      "precision": 0.1737
+    },
+    "time": {
+      "production_total": 24,
+      "ai_supported": 11,
+      "precision": 0.4583
+    },
+    "space": {
+      "production_total": 39,
+      "ai_supported": 8,
+      "precision": 0.2051
+    }
+  },
+  "per_book": {
+    "all_pages": {
+      "1": {
+        "entity": {
+          "reference_total": 28,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "5": {
+        "entity": {
+          "reference_total": 16,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "“三反”“五反”运动 青海卷 (2)": {
+        "entity": {
+          "reference_total": 9,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "“四个现代化”战略目标  第八卷  第五册": {
+        "entity": {
+          "reference_total": 23,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共五华区党史资料  第5辑_11688162": {
+        "entity": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "中共党史人物传  第01卷": {
+        "entity": {
+          "reference_total": 19,
+          "matched": 2,
+          "recall_micro": 0.1053
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传  第07卷": {
+        "entity": {
+          "reference_total": 13,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传  第13卷": {
+        "entity": {
+          "reference_total": 16,
+          "matched": 3,
+          "recall_micro": 0.1875
+        },
+        "relation": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传  第19卷": {
+        "entity": {
+          "reference_total": 11,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传  第25卷": {
+        "entity": {
+          "reference_total": 31,
+          "matched": 7,
+          "recall_micro": 0.2258
+        },
+        "relation": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 1,
+          "recall_micro": 0.3333
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 2,
+          "recall_micro": 0.4
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传  第30卷": {
+        "entity": {
+          "reference_total": 14,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传  第38卷": {
+        "entity": {
+          "reference_total": 19,
+          "matched": 8,
+          "recall_micro": 0.4211
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 1,
+          "recall_micro": 0.2
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 12,
+          "matched": 1,
+          "recall_micro": 0.0833
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传  第44卷": {
+        "entity": {
+          "reference_total": 20,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传  第49卷": {
+        "entity": {
+          "reference_total": 27,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传第36卷": {
+        "entity": {
+          "reference_total": 23,
+          "matched": 1,
+          "recall_micro": 0.0435
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共南溪县地方党史资料汇编  1921-1949_11441788": {
+        "entity": {
+          "reference_total": 14,
+          "matched": 5,
+          "recall_micro": 0.3571
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共德兴党史资料_13657107": {
+        "entity": {
+          "reference_total": 10,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "中共早期关于武装斗争的认识与革命道路的探索  第三卷  第五册": {
+        "entity": {
+          "reference_total": 13,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "中共江川县党史资料  第1辑_11441811": {
+        "entity": {
+          "reference_total": 34,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共綦江县党史资料汇编  第1辑_11449486 (2)": {
+        "entity": {
+          "reference_total": 36,
+          "matched": 19,
+          "recall_micro": 0.5278
+        },
+        "relation": {
+          "reference_total": 19,
+          "matched": 2,
+          "recall_micro": 0.1053
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 2,
+          "recall_micro": 0.6667
+        },
+        "space": {
+          "reference_total": 6,
+          "matched": 1,
+          "recall_micro": 0.1667
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共西双版纳傣族自治州党史资料  解放战争时期  第1辑_11449370": {
+        "entity": {
+          "reference_total": 19,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 13,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中华人民共和国史长编 第七卷 人物卷_12601694": {
+        "entity": {
+          "reference_total": 38,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 10,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 9,
+          "matched": 1,
+          "recall_micro": 0.1111
+        },
+        "space": {
+          "reference_total": 16,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中华人民共和国史长编 第五卷 1992—2002_12601363": {
+        "entity": {
+          "reference_total": 45,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中华人民共和国史长编 第六卷 2002—2009_12596357": {
+        "entity": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 0,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "中华民族的认同  第六卷  第一册": {
+        "entity": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中国人从此站立起来了  第二卷  第五册": {
+        "entity": {
+          "reference_total": 25,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中国共产党丰都县党史资料汇编  1  激流涌进_11449167": {
+        "entity": {
+          "reference_total": 26,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中国共产党滇西工委滇西北地委史料选编  上_11441575": {
+        "entity": {
+          "reference_total": 36,
+          "matched": 3,
+          "recall_micro": 0.0833
+        },
+        "relation": {
+          "reference_total": 12,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中国共产党的建设  第十二卷  第四册": {
+        "entity": {
+          "reference_total": 20,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中国共产党编年史1922年卷": {
+        "entity": {
+          "reference_total": 33,
+          "matched": 6,
+          "recall_micro": 0.1818
+        },
+        "relation": {
+          "reference_total": 7,
+          "matched": 2,
+          "recall_micro": 0.2857
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中国共产党编年史1928年卷": {
+        "entity": {
+          "reference_total": 27,
+          "matched": 8,
+          "recall_micro": 0.2963
+        },
+        "relation": {
+          "reference_total": 4,
+          "matched": 1,
+          "recall_micro": 0.25
+        },
+        "time": {
+          "reference_total": 4,
+          "matched": 1,
+          "recall_micro": 0.25
+        },
+        "space": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中国共产党编年史1935年卷": {
+        "entity": {
+          "reference_total": 56,
+          "matched": 10,
+          "recall_micro": 0.1786
+        },
+        "relation": {
+          "reference_total": 22,
+          "matched": 2,
+          "recall_micro": 0.0909
+        },
+        "time": {
+          "reference_total": 12,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 22,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中国共产党编年史1940年卷": {
+        "entity": {
+          "reference_total": 23,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中国共产党编年史1946年卷": {
+        "entity": {
+          "reference_total": 24,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 0
+        }
+      },
+      "中国共产党苏州市历次代表大会（会议）文献汇编  1949-2001": {
+        "entity": {
+          "reference_total": 29,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "中国共产党青海省组织发展沿革概要": {
+        "entity": {
+          "reference_total": 17,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中江县地方党史资料汇编  2  抗日战争、解放战争时期_12025828": {
+        "entity": {
+          "reference_total": 24,
+          "matched": 5,
+          "recall_micro": 0.2083
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 11,
+          "matched": 1,
+          "recall_micro": 0.0909
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "为历史转折作准备  第十六卷  第四册": {
+        "entity": {
+          "reference_total": 20,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "丽江地区党史资料  第4辑_11441841": {
+        "entity": {
+          "reference_total": 19,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "人民代表大会制度的建立和实施  第四卷  第二册": {
+        "entity": {
+          "reference_total": 29,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "人民政协和统一战线的理论与实践  第五卷  第四册": {
+        "entity": {
+          "reference_total": 17,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "休宁党史资料选编  1919-1949_11449656": {
+        "entity": {
+          "reference_total": 18,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "党史资料丛书之二  昭通市解放前学生运动史资料_12886716": {
+        "entity": {
+          "reference_total": 18,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "凯里市党史资料  第5辑_14047351": {
+        "entity": {
+          "reference_total": 30,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 17,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "北碚党史资料汇编-纪念中国共产党成立80周年": {
+        "entity": {
+          "reference_total": 27,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "南京党史资料  21_14094942": {
+        "entity": {
+          "reference_total": 36,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "南通市资本主义工商业的社会主义改造_10801759": {
+        "entity": {
+          "reference_total": 20,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "向社会主义过渡  第三卷  第一册": {
+        "entity": {
+          "reference_total": 34,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "吴县党史资料  第1辑_11999511": {
+        "entity": {
+          "reference_total": 18,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 10,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "回顾黔东南解放  第1辑_11449404": {
+        "entity": {
+          "reference_total": 16,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "国共合作推动反帝反封建的国民革命  第二卷  第二册": {
+        "entity": {
+          "reference_total": 22,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 11,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "国防和军队建设  第十二卷  第二册": {
+        "entity": {
+          "reference_total": 19,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "国防和军队建设  第十二卷  第四册": {
+        "entity": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "大丰党史资料  第6辑_12005853": {
+        "entity": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 0,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "大后方的建设和民主运动的开展  第七卷  第三册": {
+        "entity": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "大方党史资料  第13辑  红军在大方": {
+        "entity": {
+          "reference_total": 28,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "大方县党史参考资料  第14辑_11450113": {
+        "entity": {
+          "reference_total": 18,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "宁远党史资料选辑  第3辑": {
+        "entity": {
+          "reference_total": 25,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 9,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "安顺地区党史资料  4  解放初期的安顺  1949-1956_11449987": {
+        "entity": {
+          "reference_total": 32,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "左翼文化与思想理论战线  第四卷  第一册": {
+        "entity": {
+          "reference_total": 26,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "左翼文化与思想理论战线  第四卷  第六册": {
+        "entity": {
+          "reference_total": 30,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "平湖市社会主义时期党史专题集  第1辑  1949-1978_11864635": {
+        "entity": {
+          "reference_total": 25,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 13,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 10,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "建立独立的比较完整的国民经济体系  第九卷  第七册": {
+        "entity": {
+          "reference_total": 32,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "建立独立的比较完整的国民经济体系  第九卷  第四册": {
+        "entity": {
+          "reference_total": 13,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "徐州党史资料  革命历史文献汇编  1921年11月-1927年11月_12010435": {
+        "entity": {
+          "reference_total": 23,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "成都党史资料  市中事件_11504860": {
+        "entity": {
+          "reference_total": 13,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "执政条件下党的建设  第十四卷  第三册": {
+        "entity": {
+          "reference_total": 22,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "执政条件下党的建设  第十四卷  第六册": {
+        "entity": {
+          "reference_total": 29,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "抗日民族统一战线的推进与全名族抗战  第五卷  第一册": {
+        "entity": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "抗日民族统一战线的推进与全名族抗战  第五卷  第四册": {
+        "entity": {
+          "reference_total": 27,
+          "matched": 1,
+          "recall_micro": 0.037
+        },
+        "relation": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "探索适合中国国情的社会主义建设道路  第七卷  第三册": {
+        "entity": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "改良派的变革主张  第四卷  第一册": {
+        "entity": {
+          "reference_total": 10,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "改良派的变革主张  第四卷  第五册": {
+        "entity": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 0,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "新干党史资料  第1辑": {
+        "entity": {
+          "reference_total": 26,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "新文化运动  第七卷  第二册": {
+        "entity": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "新昌县社会主义时期党史专题集  第1辑_11931606": {
+        "entity": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 0,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "昭通县六十年代国民经济调整_12886511": {
+        "entity": {
+          "reference_total": 28,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 10,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "晚清统治集团的自救  第三卷  第三册": {
+        "entity": {
+          "reference_total": 29,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 15,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "曲靖党史资料  第2辑  边纵三支队革命斗争史_11441833": {
+        "entity": {
+          "reference_total": 35,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 11,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "株洲党史资料  民主革命时期  第1辑_11441688": {
+        "entity": {
+          "reference_total": 72,
+          "matched": 2,
+          "recall_micro": 0.0278
+        },
+        "relation": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 18,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 9,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "梁平党史资料汇编  第1辑_11449172": {
+        "entity": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 0,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "武汉城工史料  中共鄂豫三地委城工部史料专辑_12277272": {
+        "entity": {
+          "reference_total": 23,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "毕节地区党史资料丛书  2  红军在黔西北_11449964": {
+        "entity": {
+          "reference_total": 27,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "毕节地区党史资料丛书  6  地下党在黔西北的革命活动_14027693": {
+        "entity": {
+          "reference_total": 14,
+          "matched": 2,
+          "recall_micro": 0.1429
+        },
+        "relation": {
+          "reference_total": 12,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "民主革命派的追求  第五卷  第一册": {
+        "entity": {
+          "reference_total": 24,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "民主革命派的追求  第五卷  第二册": {
+        "entity": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "民族区域自治的理论与实践  第六卷  第一册": {
+        "entity": {
+          "reference_total": 24,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "民族区域自治的理论与实践  第六卷  第四册": {
+        "entity": {
+          "reference_total": 33,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "江北县党史资料汇编  第3辑（1919.5—1937.7）": {
+        "entity": {
+          "reference_total": 19,
+          "matched": 6,
+          "recall_micro": 0.3158
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "沅陵党史资料 辰州烽火_11448552": {
+        "entity": {
+          "reference_total": 24,
+          "matched": 9,
+          "recall_micro": 0.375
+        },
+        "relation": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "泰州党史资料  第1辑 一战二战时期革命文献_11449686": {
+        "entity": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 0,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "浙江解放_12704470": {
+        "entity": {
+          "reference_total": 20,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 12,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "淮北党史资料  第3辑_10273534": {
+        "entity": {
+          "reference_total": 32,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 10,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 12,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "淮安党史资料  第6-7合辑_12005864": {
+        "entity": {
+          "reference_total": 33,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 12,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "湄潭党史资料  红军长征在湄潭：纪念遵义会议五十周年特辑_13395617": {
+        "entity": {
+          "reference_total": 13,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "溧水党史资料  第5辑_12010411": {
+        "entity": {
+          "reference_total": 36,
+          "matched": 2,
+          "recall_micro": 0.0556
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 9,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "灌云党史资料  第3辑  一代雄风_11449158": {
+        "entity": {
+          "reference_total": 33,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 9,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 11,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "独立自主的和平外交  第十三卷  第二册": {
+        "entity": {
+          "reference_total": 22,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "白云党史资料  第1辑": {
+        "entity": {
+          "reference_total": 41,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "知识分子政策和教育科学文化建设  第十卷  第三册": {
+        "entity": {
+          "reference_total": 26,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "祁山丰碑 民主革命时期祁阳党史资料汇编": {
+        "entity": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 0,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "繁荣昌盛的南岸  重庆市南岸区纪念建党八十周年党史资料_13570483": {
+        "entity": {
+          "reference_total": 13,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "绍兴市资本主义工商业的社会主义改造_11449557": {
+        "entity": {
+          "reference_total": 26,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "自力更生、发愤图强  第十一卷  第四册": {
+        "entity": {
+          "reference_total": 22,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "苏中四分区反“清乡”斗争史料选辑 江海奔腾  第6辑_11449755": {
+        "entity": {
+          "reference_total": 29,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 9,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "萧县党史资料  第1辑_11795467": {
+        "entity": {
+          "reference_total": 36,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "血战东南  上_13703204": {
+        "entity": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 0,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "解放区土地制度改革的理论探索与实践  第十一卷  第三册": {
+        "entity": {
+          "reference_total": 16,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "解放青海 (2)": {
+        "entity": {
+          "reference_total": 24,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "贵阳党史资料专辑  抗战胜利四十周年_11441776": {
+        "entity": {
+          "reference_total": 28,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "赣州市党史资料汇编 1919-1949_13198516": {
+        "entity": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 0,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "郎岱风云  六枝党史资料丛书第3辑_12926483": {
+        "entity": {
+          "reference_total": 39,
+          "matched": 1,
+          "recall_micro": 0.0256
+        },
+        "relation": {
+          "reference_total": 15,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 15,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 10,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "金湖党史资料  第2辑": {
+        "entity": {
+          "reference_total": 10,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 1,
+          "space": 0
+        }
+      },
+      "铜山党史资料  第6辑_11449117": {
+        "entity": {
+          "reference_total": 23,
+          "matched": 3,
+          "recall_micro": 0.1304
+        },
+        "relation": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 13,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "长沙市资本主义工商业的社会主义改造_10774365": {
+        "entity": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 0,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "雷公山地区合围": {
+        "entity": {
+          "reference_total": 16,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "马克思主义中国化与毛泽东思想  第十三卷  第五册": {
+        "entity": {
+          "reference_total": 29,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "高淳史志资料  第6辑_10079460": {
+        "entity": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 0,
+          "relation": 0,
+          "time": 1,
+          "space": 0
+        }
+      },
+      "黄石党史资料汇编  回忆资料之一_11141647": {
+        "entity": {
+          "reference_total": 37,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "黔南州党史资料  6  中共黔南州历史大事记  1930-1989_11449410": {
+        "entity": {
+          "reference_total": 26,
+          "matched": 1,
+          "recall_micro": 0.0385
+        },
+        "relation": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      }
+    },
+    "production_linked": {
+      "“三反”“五反”运动 青海卷 (2)": {
+        "entity": {
+          "reference_total": 9,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传  第01卷": {
+        "entity": {
+          "reference_total": 19,
+          "matched": 2,
+          "recall_micro": 0.1053
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传  第13卷": {
+        "entity": {
+          "reference_total": 16,
+          "matched": 3,
+          "recall_micro": 0.1875
+        },
+        "relation": {
+          "reference_total": 7,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传  第25卷": {
+        "entity": {
+          "reference_total": 31,
+          "matched": 7,
+          "recall_micro": 0.2258
+        },
+        "relation": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 1,
+          "recall_micro": 0.3333
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 2,
+          "recall_micro": 0.4
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传  第38卷": {
+        "entity": {
+          "reference_total": 19,
+          "matched": 8,
+          "recall_micro": 0.4211
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 1,
+          "recall_micro": 0.2
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 12,
+          "matched": 1,
+          "recall_micro": 0.0833
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共党史人物传第36卷": {
+        "entity": {
+          "reference_total": 23,
+          "matched": 1,
+          "recall_micro": 0.0435
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共南溪县地方党史资料汇编  1921-1949_11441788": {
+        "entity": {
+          "reference_total": 14,
+          "matched": 5,
+          "recall_micro": 0.3571
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中共綦江县党史资料汇编  第1辑_11449486 (2)": {
+        "entity": {
+          "reference_total": 36,
+          "matched": 19,
+          "recall_micro": 0.5278
+        },
+        "relation": {
+          "reference_total": 19,
+          "matched": 2,
+          "recall_micro": 0.1053
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 2,
+          "recall_micro": 0.6667
+        },
+        "space": {
+          "reference_total": 6,
+          "matched": 1,
+          "recall_micro": 0.1667
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中华人民共和国史长编 第七卷 人物卷_12601694": {
+        "entity": {
+          "reference_total": 38,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "relation": {
+          "reference_total": 10,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 9,
+          "matched": 1,
+          "recall_micro": 0.1111
+        },
+        "space": {
+          "reference_total": 16,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中国共产党滇西工委滇西北地委史料选编  上_11441575": {
+        "entity": {
+          "reference_total": 36,
+          "matched": 3,
+          "recall_micro": 0.0833
+        },
+        "relation": {
+          "reference_total": 12,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 8,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中国共产党编年史1922年卷": {
+        "entity": {
+          "reference_total": 33,
+          "matched": 6,
+          "recall_micro": 0.1818
+        },
+        "relation": {
+          "reference_total": 7,
+          "matched": 2,
+          "recall_micro": 0.2857
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中国共产党编年史1928年卷": {
+        "entity": {
+          "reference_total": 27,
+          "matched": 8,
+          "recall_micro": 0.2963
+        },
+        "relation": {
+          "reference_total": 4,
+          "matched": 1,
+          "recall_micro": 0.25
+        },
+        "time": {
+          "reference_total": 4,
+          "matched": 1,
+          "recall_micro": 0.25
+        },
+        "space": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中国共产党编年史1935年卷": {
+        "entity": {
+          "reference_total": 56,
+          "matched": 10,
+          "recall_micro": 0.1786
+        },
+        "relation": {
+          "reference_total": 22,
+          "matched": 2,
+          "recall_micro": 0.0909
+        },
+        "time": {
+          "reference_total": 12,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 22,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "中江县地方党史资料汇编  2  抗日战争、解放战争时期_12025828": {
+        "entity": {
+          "reference_total": 24,
+          "matched": 5,
+          "recall_micro": 0.2083
+        },
+        "relation": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 11,
+          "matched": 1,
+          "recall_micro": 0.0909
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "抗日民族统一战线的推进与全名族抗战  第五卷  第四册": {
+        "entity": {
+          "reference_total": 27,
+          "matched": 1,
+          "recall_micro": 0.037
+        },
+        "relation": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 0,
+          "space": 1
+        }
+      },
+      "株洲党史资料  民主革命时期  第1辑_11441688": {
+        "entity": {
+          "reference_total": 72,
+          "matched": 2,
+          "recall_micro": 0.0278
+        },
+        "relation": {
+          "reference_total": 6,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 18,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 9,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "毕节地区党史资料丛书  6  地下党在黔西北的革命活动_14027693": {
+        "entity": {
+          "reference_total": 14,
+          "matched": 2,
+          "recall_micro": 0.1429
+        },
+        "relation": {
+          "reference_total": 12,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "江北县党史资料汇编  第3辑（1919.5—1937.7）": {
+        "entity": {
+          "reference_total": 19,
+          "matched": 6,
+          "recall_micro": 0.3158
+        },
+        "relation": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "沅陵党史资料 辰州烽火_11448552": {
+        "entity": {
+          "reference_total": 24,
+          "matched": 9,
+          "recall_micro": 0.375
+        },
+        "relation": {
+          "reference_total": 3,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "溧水党史资料  第5辑_12010411": {
+        "entity": {
+          "reference_total": 36,
+          "matched": 2,
+          "recall_micro": 0.0556
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 9,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 0,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "祁山丰碑 民主革命时期祁阳党史资料汇编": {
+        "entity": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "relation": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "time": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "space": {
+          "reference_total": 0,
+          "matched": 0,
+          "recall_micro": null
+        },
+        "pages_with_reference": {
+          "entity": 0,
+          "relation": 0,
+          "time": 0,
+          "space": 0
+        }
+      },
+      "郎岱风云  六枝党史资料丛书第3辑_12926483": {
+        "entity": {
+          "reference_total": 39,
+          "matched": 1,
+          "recall_micro": 0.0256
+        },
+        "relation": {
+          "reference_total": 15,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 15,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 10,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "铜山党史资料  第6辑_11449117": {
+        "entity": {
+          "reference_total": 23,
+          "matched": 3,
+          "recall_micro": 0.1304
+        },
+        "relation": {
+          "reference_total": 1,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 13,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      },
+      "黔南州党史资料  6  中共黔南州历史大事记  1930-1989_11449410": {
+        "entity": {
+          "reference_total": 26,
+          "matched": 1,
+          "recall_micro": 0.0385
+        },
+        "relation": {
+          "reference_total": 4,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "time": {
+          "reference_total": 5,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "space": {
+          "reference_total": 2,
+          "matched": 0,
+          "recall_micro": 0.0
+        },
+        "pages_with_reference": {
+          "entity": 1,
+          "relation": 1,
+          "time": 1,
+          "space": 1
+        }
+      }
+    }
+  },
+  "page_detail": [
+    {
+      "page_id": 0,
+      "book": "1",
+      "production_linked": false,
+      "text_length": 600,
+      "votes_ok": 3,
+      "ai_entity": 28,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 1,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 3,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 1,
+      "book": "5",
+      "production_linked": false,
+      "text_length": 535,
+      "votes_ok": 3,
+      "ai_entity": 16,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 5,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 2,
+      "book": "“三反”“五反”运动 青海卷 (2)",
+      "production_linked": true,
+      "text_length": 782,
+      "votes_ok": 3,
+      "ai_entity": 9,
+      "prod_entity": 2,
+      "entity_recall": 0.0,
+      "ai_relation": 0,
+      "prod_relation": 1,
+      "relation_recall": null,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 1,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 3,
+      "book": "“四个现代化”战略目标  第八卷  第五册",
+      "production_linked": false,
+      "text_length": 603,
+      "votes_ok": 3,
+      "ai_entity": 23,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 4,
+      "book": "中共五华区党史资料  第5辑_11688162",
+      "production_linked": false,
+      "text_length": 506,
+      "votes_ok": 3,
+      "ai_entity": 8,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 4,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 5,
+      "book": "中共党史人物传  第01卷",
+      "production_linked": true,
+      "text_length": 623,
+      "votes_ok": 3,
+      "ai_entity": 19,
+      "prod_entity": 20,
+      "entity_recall": 0.1053,
+      "ai_relation": 0,
+      "prod_relation": 11,
+      "relation_recall": null,
+      "ai_time": 5,
+      "prod_time": 2,
+      "time_recall": 0.0,
+      "ai_space": 4,
+      "prod_space": 2,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 6,
+      "book": "中共党史人物传  第07卷",
+      "production_linked": false,
+      "text_length": 605,
+      "votes_ok": 3,
+      "ai_entity": 13,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 3,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 7,
+      "book": "中共党史人物传  第13卷",
+      "production_linked": true,
+      "text_length": 676,
+      "votes_ok": 3,
+      "ai_entity": 16,
+      "prod_entity": 11,
+      "entity_recall": 0.1875,
+      "ai_relation": 7,
+      "prod_relation": 7,
+      "relation_recall": 0.0,
+      "ai_time": 3,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 8,
+      "book": "中共党史人物传  第19卷",
+      "production_linked": false,
+      "text_length": 680,
+      "votes_ok": 3,
+      "ai_entity": 11,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 7,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 9,
+      "book": "中共党史人物传  第25卷",
+      "production_linked": true,
+      "text_length": 590,
+      "votes_ok": 3,
+      "ai_entity": 31,
+      "prod_entity": 11,
+      "entity_recall": 0.2258,
+      "ai_relation": 8,
+      "prod_relation": 7,
+      "relation_recall": 0.0,
+      "ai_time": 3,
+      "prod_time": 2,
+      "time_recall": 0.3333,
+      "ai_space": 5,
+      "prod_space": 7,
+      "space_recall": 0.4
+    },
+    {
+      "page_id": 10,
+      "book": "中共党史人物传  第30卷",
+      "production_linked": false,
+      "text_length": 644,
+      "votes_ok": 3,
+      "ai_entity": 14,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 5,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 8,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 11,
+      "book": "中共党史人物传  第38卷",
+      "production_linked": true,
+      "text_length": 652,
+      "votes_ok": 3,
+      "ai_entity": 19,
+      "prod_entity": 25,
+      "entity_recall": 0.4211,
+      "ai_relation": 5,
+      "prod_relation": 20,
+      "relation_recall": 0.2,
+      "ai_time": 5,
+      "prod_time": 6,
+      "time_recall": 0.0,
+      "ai_space": 12,
+      "prod_space": 7,
+      "space_recall": 0.0833
+    },
+    {
+      "page_id": 12,
+      "book": "中共党史人物传  第44卷",
+      "production_linked": false,
+      "text_length": 595,
+      "votes_ok": 3,
+      "ai_entity": 20,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 6,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 3,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 7,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 13,
+      "book": "中共党史人物传  第49卷",
+      "production_linked": false,
+      "text_length": 686,
+      "votes_ok": 3,
+      "ai_entity": 27,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 3,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 14,
+      "book": "中共党史人物传第36卷",
+      "production_linked": true,
+      "text_length": 615,
+      "votes_ok": 3,
+      "ai_entity": 23,
+      "prod_entity": 2,
+      "entity_recall": 0.0435,
+      "ai_relation": 5,
+      "prod_relation": 1,
+      "relation_recall": 0.0,
+      "ai_time": 4,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 4,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 15,
+      "book": "中共南溪县地方党史资料汇编  1921-1949_11441788",
+      "production_linked": true,
+      "text_length": 611,
+      "votes_ok": 3,
+      "ai_entity": 14,
+      "prod_entity": 7,
+      "entity_recall": 0.3571,
+      "ai_relation": 2,
+      "prod_relation": 5,
+      "relation_recall": 0.0,
+      "ai_time": 3,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 3,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 16,
+      "book": "中共德兴党史资料_13657107",
+      "production_linked": false,
+      "text_length": 666,
+      "votes_ok": 3,
+      "ai_entity": 10,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 5,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 17,
+      "book": "中共早期关于武装斗争的认识与革命道路的探索  第三卷  第五册",
+      "production_linked": false,
+      "text_length": 628,
+      "votes_ok": 3,
+      "ai_entity": 13,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 3,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 18,
+      "book": "中共江川县党史资料  第1辑_11441811",
+      "production_linked": false,
+      "text_length": 683,
+      "votes_ok": 3,
+      "ai_entity": 34,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 6,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 5,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 5,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 19,
+      "book": "中共綦江县党史资料汇编  第1辑_11449486 (2)",
+      "production_linked": true,
+      "text_length": 660,
+      "votes_ok": 3,
+      "ai_entity": 36,
+      "prod_entity": 28,
+      "entity_recall": 0.5278,
+      "ai_relation": 19,
+      "prod_relation": 28,
+      "relation_recall": 0.1053,
+      "ai_time": 3,
+      "prod_time": 4,
+      "time_recall": 0.6667,
+      "ai_space": 6,
+      "prod_space": 8,
+      "space_recall": 0.1667
+    },
+    {
+      "page_id": 20,
+      "book": "中共西双版纳傣族自治州党史资料  解放战争时期  第1辑_11449370",
+      "production_linked": false,
+      "text_length": 701,
+      "votes_ok": 3,
+      "ai_entity": 19,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 8,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 13,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 21,
+      "book": "中华人民共和国史长编 第七卷 人物卷_12601694",
+      "production_linked": true,
+      "text_length": 644,
+      "votes_ok": 3,
+      "ai_entity": 38,
+      "prod_entity": 29,
+      "entity_recall": 0.0,
+      "ai_relation": 10,
+      "prod_relation": 16,
+      "relation_recall": 0.0,
+      "ai_time": 9,
+      "prod_time": 4,
+      "time_recall": 0.1111,
+      "ai_space": 16,
+      "prod_space": 6,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 22,
+      "book": "中华人民共和国史长编 第五卷 1992—2002_12601363",
+      "production_linked": false,
+      "text_length": 1251,
+      "votes_ok": 3,
+      "ai_entity": 45,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 7,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 23,
+      "book": "中华人民共和国史长编 第六卷 2002—2009_12596357",
+      "production_linked": false,
+      "text_length": 12682,
+      "votes_ok": 0,
+      "ai_entity": 0,
+      "prod_entity": 0,
+      "entity_recall": null,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 24,
+      "book": "中华民族的认同  第六卷  第一册",
+      "production_linked": false,
+      "text_length": 575,
+      "votes_ok": 3,
+      "ai_entity": 6,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 1,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 25,
+      "book": "中国人从此站立起来了  第二卷  第五册",
+      "production_linked": false,
+      "text_length": 537,
+      "votes_ok": 3,
+      "ai_entity": 25,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 8,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 5,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 26,
+      "book": "中国共产党丰都县党史资料汇编  1  激流涌进_11449167",
+      "production_linked": false,
+      "text_length": 555,
+      "votes_ok": 3,
+      "ai_entity": 26,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 5,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 5,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 27,
+      "book": "中国共产党滇西工委滇西北地委史料选编  上_11441575",
+      "production_linked": true,
+      "text_length": 628,
+      "votes_ok": 3,
+      "ai_entity": 36,
+      "prod_entity": 2,
+      "entity_recall": 0.0833,
+      "ai_relation": 12,
+      "prod_relation": 1,
+      "relation_recall": 0.0,
+      "ai_time": 8,
+      "prod_time": 2,
+      "time_recall": 0.0,
+      "ai_space": 8,
+      "prod_space": 2,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 28,
+      "book": "中国共产党的建设  第十二卷  第四册",
+      "production_linked": false,
+      "text_length": 641,
+      "votes_ok": 3,
+      "ai_entity": 20,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 6,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 4,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 7,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 29,
+      "book": "中国共产党编年史1922年卷",
+      "production_linked": true,
+      "text_length": 884,
+      "votes_ok": 3,
+      "ai_entity": 33,
+      "prod_entity": 10,
+      "entity_recall": 0.1818,
+      "ai_relation": 7,
+      "prod_relation": 10,
+      "relation_recall": 0.2857,
+      "ai_time": 3,
+      "prod_time": 2,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 4,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 30,
+      "book": "中国共产党编年史1928年卷",
+      "production_linked": true,
+      "text_length": 850,
+      "votes_ok": 3,
+      "ai_entity": 27,
+      "prod_entity": 12,
+      "entity_recall": 0.2963,
+      "ai_relation": 4,
+      "prod_relation": 8,
+      "relation_recall": 0.25,
+      "ai_time": 4,
+      "prod_time": 2,
+      "time_recall": 0.25,
+      "ai_space": 4,
+      "prod_space": 1,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 31,
+      "book": "中国共产党编年史1935年卷",
+      "production_linked": true,
+      "text_length": 894,
+      "votes_ok": 3,
+      "ai_entity": 56,
+      "prod_entity": 10,
+      "entity_recall": 0.1786,
+      "ai_relation": 22,
+      "prod_relation": 8,
+      "relation_recall": 0.0909,
+      "ai_time": 12,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 22,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 32,
+      "book": "中国共产党编年史1940年卷",
+      "production_linked": false,
+      "text_length": 825,
+      "votes_ok": 3,
+      "ai_entity": 23,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 8,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 5,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 33,
+      "book": "中国共产党编年史1946年卷",
+      "production_linked": false,
+      "text_length": 794,
+      "votes_ok": 3,
+      "ai_entity": 24,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 5,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 34,
+      "book": "中国共产党苏州市历次代表大会（会议）文献汇编  1949-2001",
+      "production_linked": false,
+      "text_length": 690,
+      "votes_ok": 3,
+      "ai_entity": 29,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 5,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 35,
+      "book": "中国共产党青海省组织发展沿革概要",
+      "production_linked": false,
+      "text_length": 617,
+      "votes_ok": 3,
+      "ai_entity": 17,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 6,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 4,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 36,
+      "book": "中江县地方党史资料汇编  2  抗日战争、解放战争时期_12025828",
+      "production_linked": true,
+      "text_length": 610,
+      "votes_ok": 3,
+      "ai_entity": 24,
+      "prod_entity": 16,
+      "entity_recall": 0.2083,
+      "ai_relation": 2,
+      "prod_relation": 11,
+      "relation_recall": 0.0,
+      "ai_time": 3,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 11,
+      "prod_space": 1,
+      "space_recall": 0.0909
+    },
+    {
+      "page_id": 37,
+      "book": "为历史转折作准备  第十六卷  第四册",
+      "production_linked": false,
+      "text_length": 630,
+      "votes_ok": 3,
+      "ai_entity": 20,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 38,
+      "book": "丽江地区党史资料  第4辑_11441841",
+      "production_linked": false,
+      "text_length": 642,
+      "votes_ok": 3,
+      "ai_entity": 19,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 4,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 39,
+      "book": "人民代表大会制度的建立和实施  第四卷  第二册",
+      "production_linked": false,
+      "text_length": 537,
+      "votes_ok": 3,
+      "ai_entity": 29,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 3,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 40,
+      "book": "人民政协和统一战线的理论与实践  第五卷  第四册",
+      "production_linked": false,
+      "text_length": 591,
+      "votes_ok": 3,
+      "ai_entity": 17,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 3,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 41,
+      "book": "休宁党史资料选编  1919-1949_11449656",
+      "production_linked": false,
+      "text_length": 602,
+      "votes_ok": 3,
+      "ai_entity": 18,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 7,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 6,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 42,
+      "book": "党史资料丛书之二  昭通市解放前学生运动史资料_12886716",
+      "production_linked": false,
+      "text_length": 802,
+      "votes_ok": 3,
+      "ai_entity": 18,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 4,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 43,
+      "book": "凯里市党史资料  第5辑_14047351",
+      "production_linked": false,
+      "text_length": 644,
+      "votes_ok": 3,
+      "ai_entity": 30,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 5,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 5,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 17,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 44,
+      "book": "北碚党史资料汇编-纪念中国共产党成立80周年",
+      "production_linked": false,
+      "text_length": 790,
+      "votes_ok": 3,
+      "ai_entity": 27,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 4,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 5,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 7,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 45,
+      "book": "南京党史资料  21_14094942",
+      "production_linked": false,
+      "text_length": 519,
+      "votes_ok": 3,
+      "ai_entity": 36,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 8,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 46,
+      "book": "南通市资本主义工商业的社会主义改造_10801759",
+      "production_linked": false,
+      "text_length": 611,
+      "votes_ok": 3,
+      "ai_entity": 20,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 4,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 47,
+      "book": "向社会主义过渡  第三卷  第一册",
+      "production_linked": false,
+      "text_length": 639,
+      "votes_ok": 3,
+      "ai_entity": 34,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 6,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 48,
+      "book": "吴县党史资料  第1辑_11999511",
+      "production_linked": false,
+      "text_length": 570,
+      "votes_ok": 3,
+      "ai_entity": 18,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 5,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 10,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 49,
+      "book": "回顾黔东南解放  第1辑_11449404",
+      "production_linked": false,
+      "text_length": 696,
+      "votes_ok": 3,
+      "ai_entity": 16,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 50,
+      "book": "国共合作推动反帝反封建的国民革命  第二卷  第二册",
+      "production_linked": false,
+      "text_length": 640,
+      "votes_ok": 3,
+      "ai_entity": 22,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 8,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 11,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 51,
+      "book": "国防和军队建设  第十二卷  第二册",
+      "production_linked": false,
+      "text_length": 579,
+      "votes_ok": 3,
+      "ai_entity": 19,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 3,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 52,
+      "book": "国防和军队建设  第十二卷  第四册",
+      "production_linked": false,
+      "text_length": 15998,
+      "votes_ok": 2,
+      "ai_entity": 1,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 53,
+      "book": "大丰党史资料  第6辑_12005853",
+      "production_linked": false,
+      "text_length": 15998,
+      "votes_ok": 2,
+      "ai_entity": 0,
+      "prod_entity": 0,
+      "entity_recall": null,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 54,
+      "book": "大后方的建设和民主运动的开展  第七卷  第三册",
+      "production_linked": false,
+      "text_length": 15998,
+      "votes_ok": 2,
+      "ai_entity": 1,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 55,
+      "book": "大方党史资料  第13辑  红军在大方",
+      "production_linked": false,
+      "text_length": 807,
+      "votes_ok": 3,
+      "ai_entity": 28,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 5,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 7,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 56,
+      "book": "大方县党史参考资料  第14辑_11450113",
+      "production_linked": false,
+      "text_length": 582,
+      "votes_ok": 3,
+      "ai_entity": 18,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 1,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 57,
+      "book": "宁远党史资料选辑  第3辑",
+      "production_linked": false,
+      "text_length": 718,
+      "votes_ok": 3,
+      "ai_entity": 25,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 9,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 58,
+      "book": "安顺地区党史资料  4  解放初期的安顺  1949-1956_11449987",
+      "production_linked": false,
+      "text_length": 616,
+      "votes_ok": 3,
+      "ai_entity": 32,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 1,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 6,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 59,
+      "book": "左翼文化与思想理论战线  第四卷  第一册",
+      "production_linked": false,
+      "text_length": 625,
+      "votes_ok": 3,
+      "ai_entity": 26,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 6,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 60,
+      "book": "左翼文化与思想理论战线  第四卷  第六册",
+      "production_linked": false,
+      "text_length": 561,
+      "votes_ok": 3,
+      "ai_entity": 30,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 3,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 5,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 61,
+      "book": "平湖市社会主义时期党史专题集  第1辑  1949-1978_11864635",
+      "production_linked": false,
+      "text_length": 718,
+      "votes_ok": 3,
+      "ai_entity": 25,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 13,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 10,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 62,
+      "book": "建立独立的比较完整的国民经济体系  第九卷  第七册",
+      "production_linked": false,
+      "text_length": 656,
+      "votes_ok": 3,
+      "ai_entity": 32,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 63,
+      "book": "建立独立的比较完整的国民经济体系  第九卷  第四册",
+      "production_linked": false,
+      "text_length": 626,
+      "votes_ok": 3,
+      "ai_entity": 13,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 1,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 4,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 64,
+      "book": "徐州党史资料  革命历史文献汇编  1921年11月-1927年11月_12010435",
+      "production_linked": false,
+      "text_length": 570,
+      "votes_ok": 3,
+      "ai_entity": 23,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 3,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 4,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 65,
+      "book": "成都党史资料  市中事件_11504860",
+      "production_linked": false,
+      "text_length": 631,
+      "votes_ok": 3,
+      "ai_entity": 13,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 1,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 4,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 66,
+      "book": "执政条件下党的建设  第十四卷  第三册",
+      "production_linked": false,
+      "text_length": 624,
+      "votes_ok": 3,
+      "ai_entity": 22,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 1,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 67,
+      "book": "执政条件下党的建设  第十四卷  第六册",
+      "production_linked": false,
+      "text_length": 559,
+      "votes_ok": 3,
+      "ai_entity": 29,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 3,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 68,
+      "book": "抗日民族统一战线的推进与全名族抗战  第五卷  第一册",
+      "production_linked": false,
+      "text_length": 547,
+      "votes_ok": 3,
+      "ai_entity": 7,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 1,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 69,
+      "book": "抗日民族统一战线的推进与全名族抗战  第五卷  第四册",
+      "production_linked": true,
+      "text_length": 620,
+      "votes_ok": 3,
+      "ai_entity": 27,
+      "prod_entity": 3,
+      "entity_recall": 0.037,
+      "ai_relation": 3,
+      "prod_relation": 2,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 4,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 70,
+      "book": "探索适合中国国情的社会主义建设道路  第七卷  第三册",
+      "production_linked": false,
+      "text_length": 630,
+      "votes_ok": 3,
+      "ai_entity": 6,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 1,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 71,
+      "book": "改良派的变革主张  第四卷  第一册",
+      "production_linked": false,
+      "text_length": 622,
+      "votes_ok": 3,
+      "ai_entity": 10,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 72,
+      "book": "改良派的变革主张  第四卷  第五册",
+      "production_linked": false,
+      "text_length": 619,
+      "votes_ok": 3,
+      "ai_entity": 0,
+      "prod_entity": 0,
+      "entity_recall": null,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 73,
+      "book": "新干党史资料  第1辑",
+      "production_linked": false,
+      "text_length": 672,
+      "votes_ok": 3,
+      "ai_entity": 26,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 3,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 4,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 5,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 74,
+      "book": "新文化运动  第七卷  第二册",
+      "production_linked": false,
+      "text_length": 615,
+      "votes_ok": 3,
+      "ai_entity": 7,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 75,
+      "book": "新昌县社会主义时期党史专题集  第1辑_11931606",
+      "production_linked": false,
+      "text_length": 8143,
+      "votes_ok": 0,
+      "ai_entity": 0,
+      "prod_entity": 0,
+      "entity_recall": null,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 76,
+      "book": "昭通县六十年代国民经济调整_12886511",
+      "production_linked": false,
+      "text_length": 561,
+      "votes_ok": 3,
+      "ai_entity": 28,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 3,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 4,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 10,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 77,
+      "book": "晚清统治集团的自救  第三卷  第三册",
+      "production_linked": false,
+      "text_length": 547,
+      "votes_ok": 3,
+      "ai_entity": 29,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 15,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 78,
+      "book": "曲靖党史资料  第2辑  边纵三支队革命斗争史_11441833",
+      "production_linked": false,
+      "text_length": 509,
+      "votes_ok": 3,
+      "ai_entity": 35,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 11,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 5,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 79,
+      "book": "株洲党史资料  民主革命时期  第1辑_11441688",
+      "production_linked": true,
+      "text_length": 832,
+      "votes_ok": 3,
+      "ai_entity": 72,
+      "prod_entity": 4,
+      "entity_recall": 0.0278,
+      "ai_relation": 6,
+      "prod_relation": 2,
+      "relation_recall": 0.0,
+      "ai_time": 18,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 9,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 80,
+      "book": "梁平党史资料汇编  第1辑_11449172",
+      "production_linked": false,
+      "text_length": 10006,
+      "votes_ok": 0,
+      "ai_entity": 0,
+      "prod_entity": 0,
+      "entity_recall": null,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 81,
+      "book": "武汉城工史料  中共鄂豫三地委城工部史料专辑_12277272",
+      "production_linked": false,
+      "text_length": 621,
+      "votes_ok": 3,
+      "ai_entity": 23,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 1,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 5,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 8,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 82,
+      "book": "毕节地区党史资料丛书  2  红军在黔西北_11449964",
+      "production_linked": false,
+      "text_length": 628,
+      "votes_ok": 3,
+      "ai_entity": 27,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 3,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 5,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 83,
+      "book": "毕节地区党史资料丛书  6  地下党在黔西北的革命活动_14027693",
+      "production_linked": true,
+      "text_length": 675,
+      "votes_ok": 3,
+      "ai_entity": 14,
+      "prod_entity": 2,
+      "entity_recall": 0.1429,
+      "ai_relation": 12,
+      "prod_relation": 1,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 84,
+      "book": "民主革命派的追求  第五卷  第一册",
+      "production_linked": false,
+      "text_length": 617,
+      "votes_ok": 3,
+      "ai_entity": 24,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 3,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 85,
+      "book": "民主革命派的追求  第五卷  第二册",
+      "production_linked": false,
+      "text_length": 623,
+      "votes_ok": 3,
+      "ai_entity": 5,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 86,
+      "book": "民族区域自治的理论与实践  第六卷  第一册",
+      "production_linked": false,
+      "text_length": 614,
+      "votes_ok": 3,
+      "ai_entity": 24,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 3,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 8,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 87,
+      "book": "民族区域自治的理论与实践  第六卷  第四册",
+      "production_linked": false,
+      "text_length": 625,
+      "votes_ok": 3,
+      "ai_entity": 33,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 4,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 88,
+      "book": "江北县党史资料汇编  第3辑（1919.5—1937.7）",
+      "production_linked": true,
+      "text_length": 547,
+      "votes_ok": 2,
+      "ai_entity": 19,
+      "prod_entity": 9,
+      "entity_recall": 0.3158,
+      "ai_relation": 5,
+      "prod_relation": 7,
+      "relation_recall": 0.0,
+      "ai_time": 5,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 5,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 89,
+      "book": "沅陵党史资料 辰州烽火_11448552",
+      "production_linked": true,
+      "text_length": 609,
+      "votes_ok": 3,
+      "ai_entity": 24,
+      "prod_entity": 12,
+      "entity_recall": 0.375,
+      "ai_relation": 3,
+      "prod_relation": 14,
+      "relation_recall": 0.0,
+      "ai_time": 5,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 5,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 90,
+      "book": "泰州党史资料  第1辑 一战二战时期革命文献_11449686",
+      "production_linked": false,
+      "text_length": 8233,
+      "votes_ok": 0,
+      "ai_entity": 0,
+      "prod_entity": 0,
+      "entity_recall": null,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 91,
+      "book": "浙江解放_12704470",
+      "production_linked": false,
+      "text_length": 639,
+      "votes_ok": 3,
+      "ai_entity": 20,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 12,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 4,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 92,
+      "book": "淮北党史资料  第3辑_10273534",
+      "production_linked": false,
+      "text_length": 555,
+      "votes_ok": 3,
+      "ai_entity": 32,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 10,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 7,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 12,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 93,
+      "book": "淮安党史资料  第6-7合辑_12005864",
+      "production_linked": false,
+      "text_length": 616,
+      "votes_ok": 3,
+      "ai_entity": 33,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 3,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 5,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 12,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 94,
+      "book": "湄潭党史资料  红军长征在湄潭：纪念遵义会议五十周年特辑_13395617",
+      "production_linked": false,
+      "text_length": 657,
+      "votes_ok": 3,
+      "ai_entity": 13,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 6,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 95,
+      "book": "溧水党史资料  第5辑_12010411",
+      "production_linked": true,
+      "text_length": 538,
+      "votes_ok": 3,
+      "ai_entity": 36,
+      "prod_entity": 2,
+      "entity_recall": 0.0556,
+      "ai_relation": 0,
+      "prod_relation": 1,
+      "relation_recall": null,
+      "ai_time": 9,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 5,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 96,
+      "book": "灌云党史资料  第3辑  一代雄风_11449158",
+      "production_linked": false,
+      "text_length": 688,
+      "votes_ok": 3,
+      "ai_entity": 33,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 9,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 4,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 11,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 97,
+      "book": "独立自主的和平外交  第十三卷  第二册",
+      "production_linked": false,
+      "text_length": 587,
+      "votes_ok": 3,
+      "ai_entity": 22,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 4,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 98,
+      "book": "白云党史资料  第1辑",
+      "production_linked": false,
+      "text_length": 582,
+      "votes_ok": 3,
+      "ai_entity": 41,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 7,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 6,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 99,
+      "book": "知识分子政策和教育科学文化建设  第十卷  第三册",
+      "production_linked": false,
+      "text_length": 640,
+      "votes_ok": 3,
+      "ai_entity": 26,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 100,
+      "book": "祁山丰碑 民主革命时期祁阳党史资料汇编",
+      "production_linked": true,
+      "text_length": 10756,
+      "votes_ok": 0,
+      "ai_entity": 0,
+      "prod_entity": 9,
+      "entity_recall": null,
+      "ai_relation": 0,
+      "prod_relation": 9,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 3,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 7,
+      "space_recall": null
+    },
+    {
+      "page_id": 101,
+      "book": "繁荣昌盛的南岸  重庆市南岸区纪念建党八十周年党史资料_13570483",
+      "production_linked": false,
+      "text_length": 566,
+      "votes_ok": 3,
+      "ai_entity": 13,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 4,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 8,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 8,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 102,
+      "book": "绍兴市资本主义工商业的社会主义改造_11449557",
+      "production_linked": false,
+      "text_length": 572,
+      "votes_ok": 3,
+      "ai_entity": 26,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 4,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 4,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 103,
+      "book": "自力更生、发愤图强  第十一卷  第四册",
+      "production_linked": false,
+      "text_length": 637,
+      "votes_ok": 3,
+      "ai_entity": 22,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 7,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 5,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 3,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 104,
+      "book": "苏中四分区反“清乡”斗争史料选辑 江海奔腾  第6辑_11449755",
+      "production_linked": false,
+      "text_length": 728,
+      "votes_ok": 3,
+      "ai_entity": 29,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 5,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 9,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 105,
+      "book": "萧县党史资料  第1辑_11795467",
+      "production_linked": false,
+      "text_length": 602,
+      "votes_ok": 3,
+      "ai_entity": 36,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 7,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 3,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 5,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 106,
+      "book": "血战东南  上_13703204",
+      "production_linked": false,
+      "text_length": 8007,
+      "votes_ok": 0,
+      "ai_entity": 0,
+      "prod_entity": 0,
+      "entity_recall": null,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 107,
+      "book": "解放区土地制度改革的理论探索与实践  第十一卷  第三册",
+      "production_linked": false,
+      "text_length": 547,
+      "votes_ok": 3,
+      "ai_entity": 16,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 108,
+      "book": "解放青海 (2)",
+      "production_linked": false,
+      "text_length": 680,
+      "votes_ok": 3,
+      "ai_entity": 24,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 6,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 109,
+      "book": "贵阳党史资料专辑  抗战胜利四十周年_11441776",
+      "production_linked": false,
+      "text_length": 608,
+      "votes_ok": 3,
+      "ai_entity": 28,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 6,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 5,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 110,
+      "book": "赣州市党史资料汇编 1919-1949_13198516",
+      "production_linked": false,
+      "text_length": 10285,
+      "votes_ok": 0,
+      "ai_entity": 0,
+      "prod_entity": 0,
+      "entity_recall": null,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 111,
+      "book": "郎岱风云  六枝党史资料丛书第3辑_12926483",
+      "production_linked": true,
+      "text_length": 617,
+      "votes_ok": 3,
+      "ai_entity": 39,
+      "prod_entity": 2,
+      "entity_recall": 0.0256,
+      "ai_relation": 15,
+      "prod_relation": 1,
+      "relation_recall": 0.0,
+      "ai_time": 15,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 10,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 112,
+      "book": "金湖党史资料  第2辑",
+      "production_linked": false,
+      "text_length": 818,
+      "votes_ok": 3,
+      "ai_entity": 10,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 113,
+      "book": "铜山党史资料  第6辑_11449117",
+      "production_linked": true,
+      "text_length": 540,
+      "votes_ok": 3,
+      "ai_entity": 23,
+      "prod_entity": 4,
+      "entity_recall": 0.1304,
+      "ai_relation": 1,
+      "prod_relation": 3,
+      "relation_recall": 0.0,
+      "ai_time": 2,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 13,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 114,
+      "book": "长沙市资本主义工商业的社会主义改造_10774365",
+      "production_linked": false,
+      "text_length": 10462,
+      "votes_ok": 0,
+      "ai_entity": 0,
+      "prod_entity": 0,
+      "entity_recall": null,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 0,
+      "prod_time": 0,
+      "time_recall": null,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 115,
+      "book": "雷公山地区合围",
+      "production_linked": false,
+      "text_length": 628,
+      "votes_ok": 3,
+      "ai_entity": 16,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 2,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 6,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 116,
+      "book": "马克思主义中国化与毛泽东思想  第十三卷  第五册",
+      "production_linked": false,
+      "text_length": 630,
+      "votes_ok": 3,
+      "ai_entity": 29,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 5,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 6,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 1,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 117,
+      "book": "高淳史志资料  第6辑_10079460",
+      "production_linked": false,
+      "text_length": 10661,
+      "votes_ok": 3,
+      "ai_entity": 0,
+      "prod_entity": 0,
+      "entity_recall": null,
+      "ai_relation": 0,
+      "prod_relation": 0,
+      "relation_recall": null,
+      "ai_time": 3,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 0,
+      "prod_space": 0,
+      "space_recall": null
+    },
+    {
+      "page_id": 118,
+      "book": "黄石党史资料汇编  回忆资料之一_11141647",
+      "production_linked": false,
+      "text_length": 582,
+      "votes_ok": 3,
+      "ai_entity": 37,
+      "prod_entity": 0,
+      "entity_recall": 0.0,
+      "ai_relation": 7,
+      "prod_relation": 0,
+      "relation_recall": 0.0,
+      "ai_time": 1,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 6,
+      "prod_space": 0,
+      "space_recall": 0.0
+    },
+    {
+      "page_id": 119,
+      "book": "黔南州党史资料  6  中共黔南州历史大事记  1930-1989_11449410",
+      "production_linked": true,
+      "text_length": 551,
+      "votes_ok": 3,
+      "ai_entity": 26,
+      "prod_entity": 4,
+      "entity_recall": 0.0385,
+      "ai_relation": 4,
+      "prod_relation": 2,
+      "relation_recall": 0.0,
+      "ai_time": 5,
+      "prod_time": 0,
+      "time_recall": 0.0,
+      "ai_space": 2,
+      "prod_space": 0,
+      "space_recall": 0.0
+    }
+  ],
+  "elapsed_s": 4.8,
+  "extraction_time": {
+    "votes": 360,
+    "votes_ok": 332,
+    "wall_span_s": 12294,
+    "sum_latency_s": 22351,
+    "avg_latency_s": 62.1,
+    "note": "wall_span 含两次外部中断与续跑间隔；sum_latency 为模型调用净耗时"
+  },
+  "missed_pool_sizes": {
+    "entity": 2459,
+    "relation": 476,
+    "time": 311,
+    "space": 484
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "method_version": "final-tiering-v1",
+  "generated_at": "2026-09-10T15:58:02+08:00",
+  "seed": 20260910,
+  "train_frac": 0.75,
+  "thresholds": {
+    "min_n_train": 30,
+    "min_n_test": 15,
+    "support_min": 0.95,
+    "wilson_lb_min": 0.9
+  },
+  "n_joined": 4971,
+  "n_train": 3728,
+  "n_test": 1243,
+  "candidates": [
+    {
+      "name": "R1_gap40_cue_between_len3",
+      "requires": {
+        "both_hit": true,
+        "both_hit_close": true,
+        "pred_cue_between": true,
+        "min_name_len_min": 3,
+        "max_gap": 40
+      },
+      "train": {
+        "n": 129,
+        "n_support": 112,
+        "support_rate": 0.8682,
+        "wilson_lb": 0.7991,
+        "wilson_ub": 0.9161,
+        "n_fully": 77,
+        "fully_rate": 0.5969
+      },
+      "test": {
+        "n": 43,
+        "n_support": 40,
+        "support_rate": 0.9302,
+        "wilson_lb": 0.8139,
+        "wilson_ub": 0.976,
+        "n_fully": 34,
+        "fully_rate": 0.7907
+      },
+      "accepted_train": false,
+      "accepted_test": false,
+      "accepted": false
+    },
+    {
+      "name": "R2_gap80_cue_between_len3",
+      "requires": {
+        "both_hit": true,
+        "both_hit_close": true,
+        "pred_cue_between": true,
+        "min_name_len_min": 3,
+        "max_gap": 80
+      },
+      "train": {
+        "n": 166,
+        "n_support": 139,
+        "support_rate": 0.8373,
+        "wilson_lb": 0.7737,
+        "wilson_ub": 0.8857,
+        "n_fully": 91,
+        "fully_rate": 0.5482
+      },
+      "test": {
+        "n": 54,
+        "n_support": 49,
+        "support_rate": 0.9074,
+        "wilson_lb": 0.8009,
+        "wilson_ub": 0.9598,
+        "n_fully": 41,
+        "fully_rate": 0.7593
+      },
+      "accepted_train": false,
+      "accepted_test": false,
+      "accepted": false
+    },
+    {
+      "name": "R3_gap80_cue_any_len3",
+      "requires": {
+        "both_hit": true,
+        "both_hit_close": true,
+        "pred_cue": true,
+        "min_name_len_min": 3,
+        "max_gap": 80
+      },
+      "train": {
+        "n": 430,
+        "n_support": 333,
+        "support_rate": 0.7744,
+        "wilson_lb": 0.7326,
+        "wilson_ub": 0.8114,
+        "n_fully": 224,
+        "fully_rate": 0.5209
+      },
+      "test": {
+        "n": 147,
+        "n_support": 128,
+        "support_rate": 0.8707,
+        "wilson_lb": 0.8069,
+        "wilson_ub": 0.9157,
+        "n_fully": 95,
+        "fully_rate": 0.6463
+      },
+      "accepted_train": false,
+      "accepted_test": false,
+      "accepted": false
+    },
+    {
+      "name": "R4_gap80_cue_between_len2",
+      "requires": {
+        "both_hit": true,
+        "both_hit_close": true,
+        "pred_cue_between": true,
+        "min_name_len_min": 2,
+        "max_gap": 80
+      },
+      "train": {
+        "n": 219,
+        "n_support": 180,
+        "support_rate": 0.8219,
+        "wilson_lb": 0.7658,
+        "wilson_ub": 0.8669,
+        "n_fully": 123,
+        "fully_rate": 0.5616
+      },
+      "test": {
+        "n": 77,
+        "n_support": 67,
+        "support_rate": 0.8701,
+        "wilson_lb": 0.7772,
+        "wilson_ub": 0.9279,
+        "n_fully": 55,
+        "fully_rate": 0.7143
+      },
+      "accepted_train": false,
+      "accepted_test": false,
+      "accepted": false
+    },
+    {
+      "name": "R5_both_hit_cue_any_len3",
+      "requires": {
+        "both_hit": true,
+        "pred_cue": true,
+        "min_name_len_min": 3
+      },
+      "train": {
+        "n": 468,
+        "n_support": 357,
+        "support_rate": 0.7628,
+        "wilson_lb": 0.7222,
+        "wilson_ub": 0.7991,
+        "n_fully": 242,
+        "fully_rate": 0.5171
+      },
+      "test": {
+        "n": 154,
+        "n_support": 132,
+        "support_rate": 0.8571,
+        "wilson_lb": 0.7932,
+        "wilson_ub": 0.9037,
+        "n_fully": 98,
+        "fully_rate": 0.6364
+      },
+      "accepted_train": false,
+      "accepted_test": false,
+      "accepted": false
+    },
+    {
+      "name": "R6_aligned_gap80_cue_between_len3",
+      "requires": {
+        "both_hit": true,
+        "both_hit_close": true,
+        "pred_cue_between": true,
+        "min_name_len_min": 3,
+        "max_gap": 80,
+        "stratum_family_in": [
+          "aligned"
+        ]
+      },
+      "train": {
+        "n": 90,
+        "n_support": 78,
+        "support_rate": 0.8667,
+        "wilson_lb": 0.7813,
+        "wilson_ub": 0.9221,
+        "n_fully": 52,
+        "fully_rate": 0.5778
+      },
+      "test": {
+        "n": 33,
+        "n_support": 30,
+        "support_rate": 0.9091,
+        "wilson_lb": 0.7643,
+        "wilson_ub": 0.9686,
+        "n_fully": 25,
+        "fully_rate": 0.7576
+      },
+      "accepted_train": false,
+      "accepted_test": false,
+      "accepted": false
+    },
+    {
+      "name": "R7_recoveryB_gap80_cue_between_len3",
+      "requires": {
+        "both_hit": true,
+        "both_hit_close": true,
+        "pred_cue_between": true,
+        "min_name_len_min": 3,
+        "max_gap": 80,
+        "stratum_family_in": [
+          "recovery_B"
+        ]
+      },
+      "train": {
+        "n": 60,
+        "n_support": 47,
+        "support_rate": 0.7833,
+        "wilson_lb": 0.6638,
+        "wilson_ub": 0.8688,
+        "n_fully": 30,
+        "fully_rate": 0.5
+      },
+      "test": {
+        "n": 19,
+        "n_support": 17,
+        "support_rate": 0.8947,
+        "wilson_lb": 0.6861,
+        "wilson_ub": 0.9706,
+        "n_fully": 14,
+        "fully_rate": 0.7368
+      },
+      "accepted_train": false,
+      "accepted_test": false,
+      "accepted": false
+    },
+    {
+      "name": "R8_aligned_or_recB_gap80_cue_any_len3",
+      "requires": {
+        "both_hit": true,
+        "both_hit_close": true,
+        "pred_cue": true,
+        "min_name_len_min": 3,
+        "max_gap": 80,
+        "stratum_family_in": [
+          "aligned",
+          "recovery_B"
+        ]
+      },
+      "train": {
+        "n": 404,
+        "n_support": 314,
+        "support_rate": 0.7772,
+        "wilson_lb": 0.7341,
+        "wilson_ub": 0.8151,
+        "n_fully": 213,
+        "fully_rate": 0.5272
+      },
+      "test": {
+        "n": 143,
+        "n_support": 125,
+        "support_rate": 0.8741,
+        "wilson_lb": 0.8098,
+        "wilson_ub": 0.9189,
+        "n_fully": 92,
+        "fully_rate": 0.6434
+      },
+      "accepted_train": false,
+      "accepted_test": false,
+      "accepted": false
+    }
+  ],
+  "accepted_rules": [],
+  "joint": {
+    "train": {
+      "n": 0,
+      "coverage": 0.0,
+      "support_rate": null,
+      "wilson_ci": null
+    },
+    "test": {
+      "n": 0,
+      "coverage": 0.0,
+      "support_rate": null,
+      "wilson_ci": null
+    }
+  },
+  "inputs": {
+    "dev_verdicts_sha256": "14ec4ab8c819112531840ac53cd2c853fdb5b6f24fde06fb4b9de1142ba1f21b",
+    "features_sha256": "4afdf0cb80b20e97408b6337062a98318914d7102e7ee3128d3efead645c30e5"
+  }
+}

@@ -1,0 +1,4 @@
+﻿task_type,judge_removed,n_tasks,n_labeled_full_panel,n_unchanged_after_removal,stability
+identity_revalidation_v2,A,600,578,418,0.7231833910034602
+identity_revalidation_v2,B,600,578,410,0.7093425605536332
+identity_revalidation_v2,C,600,578,390,0.6747404844290658

@@ -1,0 +1,43 @@
+{
+  "artifact": "M3_improved_predictor.joblib",
+  "route": "B_embed_lr",
+  "class": "EmbedTextClassifier",
+  "classes": [
+    "Concept",
+    "Document",
+    "Event",
+    "Institution",
+    "Organization",
+    "Person",
+    "Place",
+    "ValueFacet"
+  ],
+  "trained_on": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\data\\source_data\\stkg_v2_entity_classifier.sqlite",
+  "n_train": 1210,
+  "significant_upgrade": false,
+  "metrics": {
+    "dev": {
+      "n": 182,
+      "n_ref_classes": 16,
+      "n_ref_classes_covered_by_train": 8,
+      "accuracy": 0.2363,
+      "macro_f1": 0.1131,
+      "macro_f1_covered_only": 0.2262,
+      "balanced_accuracy": 0.1805,
+      "ece_10bins": 0.1818,
+      "brier_multiclass": 0.9653
+    },
+    "val": {
+      "n": 48,
+      "n_ref_classes": 14,
+      "n_ref_classes_covered_by_train": 6,
+      "accuracy": 0.3542,
+      "macro_f1": 0.166,
+      "macro_f1_covered_only": 0.3872,
+      "balanced_accuracy": 0.175,
+      "ece_10bins": 0.2776,
+      "brier_multiclass": 0.9227
+    }
+  },
+  "load_hint": "sys.path 需含 code/experiment_pipelines（import run_predictor_upgrade）；sklearn Pipeline 路线直接 predict_proba(texts)；B/C 工件 predict_proba(texts) 需本地 LM Studio embeddings 在线（127.0.0.1:1234）"
+}

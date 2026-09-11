@@ -1,0 +1,42 @@
+[recovery] no_evidence facts to process: 61997
+[recovery] fact_evidence: 118906 facts (362749 links) 0.3s
+[recovery] provenance scan: 466312 rows, sibling-evidence rows kept 7176, needed triples 54485 2.8s
+[recovery] kgrel2legs: 69999 KGREL -> 69999 LEG 0.7s
+[recovery] member2facts: 69999 links for 69999 members 0.6s
+[recovery] duplicate_of map: 0 members -> cluster heads 0.5s
+[recovery] scopes: 61997 facts, sibling triples 0 1.4s
+[recovery] topic quotes: 2144 TOPICFACT with quote/evid 0.0s
+[recovery] 2-char name index: 3480 names over 1073648 rows 9.2s
+[recovery] resume: 500 facts already in checkpoint
+[recovery] 2000/61997 chunk done (105 facts/s, ETA 9.5 min) counts={'B': 573, 'C': 1366, 'D': 56, 'A': 5}
+[recovery] 4000/61997 chunk done (500 facts/s, ETA 1.9 min) counts={'B': 1113, 'C': 2712, 'D': 160, 'A': 15}
+[recovery] 6000/61997 chunk done (585 facts/s, ETA 1.6 min) counts={'B': 1366, 'C': 4330, 'D': 285, 'A': 19}
+[recovery] 8000/61997 chunk done (629 facts/s, ETA 1.4 min) counts={'B': 1988, 'C': 5380, 'D': 374, 'A': 258}
+[recovery] 10000/61997 chunk done (857 facts/s, ETA 1.0 min) counts={'B': 2366, 'C': 6380, 'D': 406, 'A': 848}
+[recovery] 12000/61997 chunk done (808 facts/s, ETA 1.0 min) counts={'B': 3051, 'C': 6838, 'D': 435, 'A': 1676}
+[recovery] 14000/61997 chunk done (572 facts/s, ETA 1.4 min) counts={'B': 3912, 'C': 7887, 'D': 490, 'A': 1711}
+[recovery] 16000/61997 chunk done (590 facts/s, ETA 1.3 min) counts={'B': 4569, 'C': 9125, 'D': 539, 'A': 1767}
+[recovery] 18000/61997 chunk done (680 facts/s, ETA 1.1 min) counts={'B': 5230, 'C': 10361, 'D': 591, 'A': 1818}
+[recovery] 20000/61997 chunk done (574 facts/s, ETA 1.2 min) counts={'B': 5851, 'C': 11650, 'D': 633, 'A': 1866}
+[recovery] 22000/61997 chunk done (613 facts/s, ETA 1.1 min) counts={'B': 6470, 'C': 12952, 'D': 676, 'A': 1902}
+[recovery] 24000/61997 chunk done (627 facts/s, ETA 1.0 min) counts={'B': 7086, 'C': 14234, 'D': 712, 'A': 1968}
+[recovery] 26000/61997 chunk done (635 facts/s, ETA 0.9 min) counts={'B': 7729, 'C': 15511, 'D': 741, 'A': 2019}
+[recovery] 28000/61997 chunk done (670 facts/s, ETA 0.8 min) counts={'B': 8379, 'C': 16783, 'D': 777, 'A': 2061}
+[recovery] 30000/61997 chunk done (917 facts/s, ETA 0.6 min) counts={'B': 8998, 'C': 18086, 'D': 812, 'A': 2104}
+[recovery] 32000/61997 chunk done (682 facts/s, ETA 0.7 min) counts={'B': 9859, 'C': 19151, 'D': 843, 'A': 2147}
+[recovery] 34000/61997 chunk done (756 facts/s, ETA 0.6 min) counts={'B': 10978, 'C': 19962, 'D': 865, 'A': 2195}
+[recovery] 36000/61997 chunk done (706 facts/s, ETA 0.6 min) counts={'B': 11367, 'C': 21389, 'D': 1017, 'A': 2227}
+[recovery] 38000/61997 chunk done (844 facts/s, ETA 0.5 min) counts={'B': 11593, 'C': 22970, 'D': 1184, 'A': 2253}
+[recovery] 40000/61997 chunk done (1002 facts/s, ETA 0.4 min) counts={'B': 11842, 'C': 24529, 'D': 1356, 'A': 2273}
+[recovery] 42000/61997 chunk done (667 facts/s, ETA 0.5 min) counts={'B': 12416, 'C': 25842, 'D': 1428, 'A': 2314}
+[recovery] 44000/61997 chunk done (805 facts/s, ETA 0.4 min) counts={'B': 13001, 'C': 27176, 'D': 1461, 'A': 2362}
+[recovery] 46000/61997 chunk done (853 facts/s, ETA 0.3 min) counts={'B': 13491, 'C': 28602, 'D': 1502, 'A': 2405}
+[recovery] 48000/61997 chunk done (682 facts/s, ETA 0.3 min) counts={'B': 13828, 'C': 30140, 'D': 1570, 'A': 2462}
+[recovery] 50000/61997 chunk done (754 facts/s, ETA 0.3 min) counts={'B': 14178, 'C': 31656, 'D': 1657, 'A': 2509}
+[recovery] 52000/61997 chunk done (893 facts/s, ETA 0.2 min) counts={'B': 14515, 'C': 33173, 'D': 1736, 'A': 2576}
+[recovery] 54000/61997 chunk done (925 facts/s, ETA 0.1 min) counts={'B': 14844, 'C': 34707, 'D': 1808, 'A': 2641}
+[recovery] 56000/61997 chunk done (1041 facts/s, ETA 0.1 min) counts={'B': 15175, 'C': 36240, 'D': 1879, 'A': 2706}
+[recovery] 58000/61997 chunk done (1119 facts/s, ETA 0.1 min) counts={'B': 15534, 'C': 37738, 'D': 1957, 'A': 2771}
+[recovery] 60000/61997 chunk done (1049 facts/s, ETA 0.0 min) counts={'B': 15990, 'C': 39147, 'D': 2036, 'A': 2827}
+[recovery] done in 1.7 min: counts={'B': 16705, 'C': 40345, 'D': 2106, 'A': 2841} recovery_rate=0.9660
+[recovery] outputs: EVIDENCE_RECOVERY.csv, EVIDENCE_RECOVERY_SUMMARY.json, EVIDENCE_RECOVERY_REPORT.md

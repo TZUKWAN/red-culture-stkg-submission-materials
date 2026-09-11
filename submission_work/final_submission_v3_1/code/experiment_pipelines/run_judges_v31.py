@@ -37,6 +37,46 @@ from judge_client import (  # noqa: E402
 )
 from _common import derive_seed, MASTER_SEED  # noqa: E402
 
+
+class LMStudioJudgeClient(JudgeClient):
+    """LM Studio 兼容客户端：去掉 response_format/seed（部分本地模型 400）。"""
+
+    def _http_raw(self, messages, temperature, top_p, seed=None):
+        import urllib.error
+        import urllib.request
+        assert self.config is not None
+        url = self.config.base_url.rstrip("/") + "/chat/completions"
+        body: dict = {
+            "model": self.config.model,
+            "messages": list(messages),
+            "temperature": temperature,
+            "top_p": top_p,
+        }
+        request = urllib.request.Request(
+            url, data=json.dumps(body).encode("utf-8"),
+            headers={"Content-Type": "application/json",
+                     "Authorization": f"Bearer {self.config.api_key}"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=self.timeout) as resp:
+                envelope = json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            raise JudgeClientError(
+                f"HTTP {exc.code} from provider {self._provider}",
+                status_code=exc.code,
+            ) from None
+        except (urllib.error.URLError, OSError, json.JSONDecodeError) as exc:
+            raise JudgeClientError(
+                f"transport error from provider {self._provider}: {type(exc).__name__}"
+            ) from None
+        try:
+            return str(envelope["choices"][0]["message"].get("content") or "")
+        except (KeyError, IndexError, TypeError) as exc:
+            raise JudgeClientError(
+                f"malformed completion envelope from {self._provider}: {type(exc).__name__}"
+            ) from None
+
 PROMPT_VERSION = "imcr.v4"
 
 TASKS: dict[str, dict[str, Any]] = {
@@ -146,7 +186,10 @@ def run(judges: list[JudgeConfig], tasks: list[str], workers: int, timeout: floa
             raw_path.parent.mkdir(parents=True, exist_ok=True)
             done = completed_ids(raw_path)
             pending = [r for r in rows if r["task_id"] not in done]
-            client = JudgeClient(cfg, timeout=timeout, max_transport_retries=max_retries)
+            if "127.0.0.1:1234" in cfg.base_url or "localhost:1234" in cfg.base_url:
+                client = LMStudioJudgeClient(cfg, timeout=timeout, max_transport_retries=max_retries)
+            else:
+                client = JudgeClient(cfg, timeout=timeout, max_transport_retries=max_retries)
             counts = {"OK": 0, "MODEL_OUTPUT_INVALID": 0, "TRANSPORT_ERROR": 0, "SKIPPED": len(rows) - len(pending)}
             lock = threading.Lock()
             fh = open(raw_path, "a", encoding="utf-8")

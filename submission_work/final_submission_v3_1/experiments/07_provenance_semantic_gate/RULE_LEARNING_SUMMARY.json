@@ -1,0 +1,520 @@
+{
+  "method_version": "tier-rule-learning-v1",
+  "generated_at": "2026-09-11T04:21:52+08:00",
+  "deterministic": true,
+  "llm_calls": 0,
+  "task": "从 5,000 条证据语义门验证数据学习确定性判定规则（指令 §5.2 高置信过滤）",
+  "inputs": {
+    "evidence_gate_verdicts": {
+      "path": "EVIDENCE_GATE_VERDICTS.jsonl",
+      "sha256": "14ec4ab8c819112531840ac53cd2c853fdb5b6f24fde06fb4b9de1142ba1f21b"
+    },
+    "strict_alignment": {
+      "path": "STRICT_ALIGNMENT.csv",
+      "sha256": "e7426bd38c9b8253e8cb5cd8e2ce8f9f4bffdde6bee270b7e8beef141bb0e9f0"
+    },
+    "evidence_recovery": {
+      "path": "EVIDENCE_RECOVERY.csv",
+      "sha256": "f4c155559301873acf030e4a66f68477c251bba42f1f65bd95a2c5f654c012e7"
+    },
+    "final_tiering_features": {
+      "path": "FINAL_TIERING_FEATURES.csv",
+      "sha256": "4afdf0cb80b20e97408b6337062a98318914d7102e7ee3128d3efead645c30e5"
+    },
+    "evidence_gate_summary": {
+      "path": "EVIDENCE_GATE_SUMMARY.json",
+      "sha256": "5cac6b64dc2070f4c79dc3ba07ba965cf31773b88d998754d68bca957bcf026c"
+    }
+  },
+  "dev": {
+    "n_valid": 4971,
+    "n_skipped": {
+      "CALL_FAILED": 28
+    },
+    "stratum_field_mismatch_vs_derived": 0,
+    "decision_distribution": {
+      "UNSUPPORTED": 2600,
+      "INSUFFICIENT": 521,
+      "FULLY_SUPPORTED": 1158,
+      "PARTIALLY_SUPPORTED": 592,
+      "CONTRADICTED": 100
+    },
+    "feature_consistency_check": {
+      "n_checked": 4971,
+      "agreement": {
+        "subj_hit": 4971,
+        "obj_hit": 4971,
+        "pred_cue": 4971,
+        "pred_cue_between": 4971,
+        "evidence_len": 4971,
+        "n_evidence": 4971
+      },
+      "all_exact": true
+    }
+  },
+  "split": {
+    "seed": 20260910,
+    "train_frac": 0.75,
+    "n_train": 3728,
+    "n_val": 1243,
+    "train_decision_dist": {
+      "PARTIALLY_SUPPORTED": 446,
+      "FULLY_SUPPORTED": 864,
+      "INSUFFICIENT": 385,
+      "UNSUPPORTED": 1956,
+      "CONTRADICTED": 77
+    },
+    "val_decision_dist": {
+      "FULLY_SUPPORTED": 294,
+      "UNSUPPORTED": 644,
+      "PARTIALLY_SUPPORTED": 146,
+      "INSUFFICIENT": 136,
+      "CONTRADICTED": 23
+    },
+    "validation_never_used_for_selection": true
+  },
+  "rule_space": {
+    "max_depth": 4,
+    "min_n_train": 30,
+    "precision_min": 0.95,
+    "wilson_lb_min": 0.9,
+    "min_n_val": 15,
+    "n_atoms": 72,
+    "patterns_evaluated": 39605,
+    "frontier_by_depth": {
+      "1": 72,
+      "2": 1112,
+      "3": 7912,
+      "4": 30509
+    },
+    "frontier_cap_hit": false,
+    "train_passing_candidates": {
+      "FULLY_SUPPORTED": 0,
+      "UNSUPPORTED": 286,
+      "INSUFFICIENT": 0
+    },
+    "deduped_train_passing": {
+      "FULLY_SUPPORTED": 0,
+      "UNSUPPORTED": 8,
+      "INSUFFICIENT": 0
+    },
+    "greedy_min_rule_subset_sizes": {
+      "FULLY_SUPPORTED": 0,
+      "UNSUPPORTED": 1,
+      "INSUFFICIENT": 0
+    }
+  },
+  "rules_final": [
+    {
+      "rule_id": "R-UNSU-01",
+      "target": "UNSUPPORTED",
+      "conditions": [
+        "subj_type=Artifact"
+      ],
+      "train": {
+        "n": 41,
+        "k": 41,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.9143,
+          1.0
+        ],
+        "recall_train": 0.021,
+        "coverage": 0.011
+      },
+      "val": {
+        "n": 13,
+        "k": 13,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.7719,
+          1.0
+        ],
+        "coverage": 0.0105
+      },
+      "high_confidence": false
+    },
+    {
+      "rule_id": "R-UNSU-02",
+      "target": "UNSUPPORTED",
+      "conditions": [
+        "elen:le50",
+        "subj_type=Artifact"
+      ],
+      "train": {
+        "n": 39,
+        "k": 39,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.9103,
+          1.0
+        ],
+        "recall_train": 0.0199,
+        "coverage": 0.0105
+      },
+      "val": {
+        "n": 13,
+        "k": 13,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.7719,
+          1.0
+        ],
+        "coverage": 0.0105
+      },
+      "high_confidence": false
+    },
+    {
+      "rule_id": "R-UNSU-03",
+      "target": "UNSUPPORTED",
+      "conditions": [
+        "n:nev1",
+        "subj_type=Artifact"
+      ],
+      "train": {
+        "n": 39,
+        "k": 39,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.9103,
+          1.0
+        ],
+        "recall_train": 0.0199,
+        "coverage": 0.0105
+      },
+      "val": {
+        "n": 12,
+        "k": 12,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.7575,
+          1.0
+        ],
+        "coverage": 0.0097
+      },
+      "high_confidence": false
+    },
+    {
+      "rule_id": "R-UNSU-04",
+      "target": "UNSUPPORTED",
+      "conditions": [
+        "stratum=mismatch_with_evidence",
+        "subj_type=Artifact"
+      ],
+      "train": {
+        "n": 39,
+        "k": 39,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.9103,
+          1.0
+        ],
+        "recall_train": 0.0199,
+        "coverage": 0.0105
+      },
+      "val": {
+        "n": 11,
+        "k": 11,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.7412,
+          1.0
+        ],
+        "coverage": 0.0088
+      },
+      "high_confidence": false
+    },
+    {
+      "rule_id": "R-UNSU-05",
+      "target": "UNSUPPORTED",
+      "conditions": [
+        "elen:le50",
+        "n:nev1",
+        "subj_type=Artifact"
+      ],
+      "train": {
+        "n": 37,
+        "k": 37,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.9059,
+          1.0
+        ],
+        "recall_train": 0.0189,
+        "coverage": 0.0099
+      },
+      "val": {
+        "n": 12,
+        "k": 12,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.7575,
+          1.0
+        ],
+        "coverage": 0.0097
+      },
+      "high_confidence": false
+    },
+    {
+      "rule_id": "R-UNSU-06",
+      "target": "UNSUPPORTED",
+      "conditions": [
+        "elen:le50",
+        "stratum=mismatch_with_evidence",
+        "subj_type=Artifact"
+      ],
+      "train": {
+        "n": 37,
+        "k": 37,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.9059,
+          1.0
+        ],
+        "recall_train": 0.0189,
+        "coverage": 0.0099
+      },
+      "val": {
+        "n": 11,
+        "k": 11,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.7412,
+          1.0
+        ],
+        "coverage": 0.0088
+      },
+      "high_confidence": false
+    },
+    {
+      "rule_id": "R-UNSU-07",
+      "target": "UNSUPPORTED",
+      "conditions": [
+        "n:nev1",
+        "stratum=mismatch_with_evidence",
+        "subj_type=Artifact"
+      ],
+      "train": {
+        "n": 37,
+        "k": 37,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.9059,
+          1.0
+        ],
+        "recall_train": 0.0189,
+        "coverage": 0.0099
+      },
+      "val": {
+        "n": 10,
+        "k": 10,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.7225,
+          1.0
+        ],
+        "coverage": 0.008
+      },
+      "high_confidence": false
+    },
+    {
+      "rule_id": "R-UNSU-08",
+      "target": "UNSUPPORTED",
+      "conditions": [
+        "elen:le50",
+        "n:nev1",
+        "stratum=mismatch_with_evidence",
+        "subj_type=Artifact"
+      ],
+      "train": {
+        "n": 35,
+        "k": 35,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.9011,
+          1.0
+        ],
+        "recall_train": 0.0179,
+        "coverage": 0.0094
+      },
+      "val": {
+        "n": 10,
+        "k": 10,
+        "precision": 1.0,
+        "wilson_ci": [
+          0.7225,
+          1.0
+        ],
+        "coverage": 0.008
+      },
+      "high_confidence": false
+    }
+  ],
+  "n_high_confidence_rules": 0,
+  "high_confidence_targets": [],
+  "pipeline_dev_eval": {
+    "train": {
+      "n_rows": 3728,
+      "n_decided": 0,
+      "coverage": 0.0,
+      "per_target": {
+        "FULLY_SUPPORTED": {
+          "n_pred": 0,
+          "n_correct": 0,
+          "precision": null,
+          "wilson_ci": null
+        },
+        "UNSUPPORTED": {
+          "n_pred": 0,
+          "n_correct": 0,
+          "precision": null,
+          "wilson_ci": null
+        },
+        "INSUFFICIENT": {
+          "n_pred": 0,
+          "n_correct": 0,
+          "precision": null,
+          "wilson_ci": null
+        }
+      }
+    },
+    "val": {
+      "n_rows": 1243,
+      "n_decided": 0,
+      "coverage": 0.0,
+      "per_target": {
+        "FULLY_SUPPORTED": {
+          "n_pred": 0,
+          "n_correct": 0,
+          "precision": null,
+          "wilson_ci": null
+        },
+        "UNSUPPORTED": {
+          "n_pred": 0,
+          "n_correct": 0,
+          "precision": null,
+          "wilson_ci": null
+        },
+        "INSUFFICIENT": {
+          "n_pred": 0,
+          "n_correct": 0,
+          "precision": null,
+          "wilson_ci": null
+        }
+      }
+    }
+  },
+  "application": {
+    "n_corpus": 112158,
+    "n_rule_decided": 2106,
+    "rule_coverage": 0.018777,
+    "n_needs_llm": 110052,
+    "rule_strict_fully": 0,
+    "by_stratum": {
+      "aligned": {
+        "n": 44025,
+        "rule_decided": 0,
+        "needs_llm": 44025,
+        "by_rule": {},
+        "by_verdict": {}
+      },
+      "mismatch_with_evidence": {
+        "n": 6136,
+        "rule_decided": 0,
+        "needs_llm": 6136,
+        "by_rule": {},
+        "by_verdict": {}
+      },
+      "recovery_A": {
+        "n": 2841,
+        "rule_decided": 0,
+        "needs_llm": 2841,
+        "by_rule": {},
+        "by_verdict": {}
+      },
+      "recovery_B": {
+        "n": 16705,
+        "rule_decided": 0,
+        "needs_llm": 16705,
+        "by_rule": {},
+        "by_verdict": {}
+      },
+      "recovery_C": {
+        "n": 40345,
+        "rule_decided": 0,
+        "needs_llm": 40345,
+        "by_rule": {},
+        "by_verdict": {}
+      },
+      "recovery_D": {
+        "n": 2106,
+        "rule_decided": 2106,
+        "needs_llm": 0,
+        "by_rule": {
+          "R0_POLICY_NO_EVIDENCE": 2106
+        },
+        "by_verdict": {
+          "INSUFFICIENT": 2106
+        }
+      }
+    },
+    "llm_queue": {
+      "throughput_assumption": "0.5 it/s @ 6 workers",
+      "estimated_seconds": 220104.0,
+      "estimated_hours": 61.14,
+      "estimated_days": 2.55
+    }
+  },
+  "consistency_vs_sampling_estimate": {
+    "baseline_estimate_strict": 35226.0,
+    "baseline_ci95": [
+      33744,
+      36708
+    ],
+    "baseline_note": "分层抽样外推（FULLY + strict-predicate PARTIAL），宇宙 110,052（排除 recovery_D）",
+    "rule_strict_fully": 0,
+    "strict_predicates_from_gate": [
+      "held_position_in",
+      "member_of",
+      "organized",
+      "participated_in"
+    ],
+    "dev_strict_rate_by_stratum": {
+      "mismatch_with_evidence": {
+        "n_valid": 1500,
+        "n_strict": 23,
+        "strict_rate": 0.0153
+      },
+      "recovery_B": {
+        "n_valid": 974,
+        "n_strict": 543,
+        "strict_rate": 0.5575
+      },
+      "recovery_C": {
+        "n_valid": 800,
+        "n_strict": 83,
+        "strict_rate": 0.1037
+      },
+      "recovery_A": {
+        "n_valid": 200,
+        "n_strict": 53,
+        "strict_rate": 0.265
+      },
+      "aligned": {
+        "n_valid": 1497,
+        "n_strict": 710,
+        "strict_rate": 0.4743
+      }
+    },
+    "estimated_strict_remaining_in_queue": 35224.6,
+    "implied_total_strict_if_queue_fully_judged": 35224.6,
+    "delta_vs_baseline": -1.4,
+    "delta_pct": -0.0
+  },
+  "outputs": {
+    "rules_csv": "RULE_LEARNING_RULES.csv",
+    "application_csv": "RULE_LEARNING_APPLICATION.csv",
+    "summary_json": "RULE_LEARNING_SUMMARY.json",
+    "report_md": "13_TIER_RULE_LEARNING_REPORT.md"
+  }
+}

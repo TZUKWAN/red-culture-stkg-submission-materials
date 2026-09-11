@@ -1,0 +1,56 @@
+2026-09-10T15:58:51+08:00 queue start pending=12 workers=6 model=openai/gpt-oss-20b
+2026-09-10T15:59:34+08:00 chunk done: 12/12, 0.28 it/s, ETA 0.0 h, failed=0
+2026-09-10T15:59:34+08:00 queue loop exit: executed=12, failed=0, elapsed=0.01 h
+2026-09-10T16:00:17+08:00 queue start pending=105041 workers=6 model=openai/gpt-oss-20b
+2026-09-10T16:10:34+08:00 checkpoint 500/105041 flushed (failed=349)
+2026-09-10T16:11:12+08:00 checkpoint 1000/105041 flushed (failed=849)
+2026-09-10T16:11:12+08:00 chunk done: 1000/105041, 1.53 it/s, ETA 18.9 h, failed=849
+2026-09-10T16:11:54+08:00 checkpoint 1500/105041 flushed (failed=1349)
+2026-09-10T16:12:30+08:00 checkpoint 2000/105041 flushed (failed=1849)
+2026-09-10T16:12:30+08:00 chunk done: 2000/105041, 2.73 it/s, ETA 10.5 h, failed=1849
+2026-09-10T16:13:04+08:00 checkpoint 2500/105041 flushed (failed=2349)
+2026-09-10T16:13:31+08:00 checkpoint 3000/105041 flushed (failed=2849)
+2026-09-10T16:13:31+08:00 chunk done: 3000/105041, 3.78 it/s, ETA 7.5 h, failed=2849
+2026-09-10T16:14:00+08:00 checkpoint 3500/105041 flushed (failed=3349)
+2026-09-10T16:14:28+08:00 checkpoint 4000/105041 flushed (failed=3849)
+2026-09-10T16:14:28+08:00 chunk done: 4000/105041, 4.70 it/s, ETA 6.0 h, failed=3849
+2026-09-10T16:14:54+08:00 checkpoint 4500/105041 flushed (failed=4349)
+2026-09-10T16:15:24+08:00 checkpoint 5000/105041 flushed (failed=4849)
+2026-09-10T16:15:24+08:00 chunk done: 5000/105041, 5.51 it/s, ETA 5.0 h, failed=4849
+2026-09-10T16:15:57+08:00 checkpoint 5500/105041 flushed (failed=5349)
+2026-09-10T16:18:34+08:00 queue start pending=104872 workers=4 model=openai/gpt-oss-20b
+2026-09-10T16:37:11+08:00 checkpoint 500/104872 flushed (failed=0)
+2026-09-10T16:52:10+08:00 checkpoint 1000/104872 flushed (failed=0)
+2026-09-10T16:52:10+08:00 chunk done: 1000/104872, 0.50 it/s, ETA 58.2 h, failed=0
+2026-09-10T17:07:17+08:00 checkpoint 1500/104872 flushed (failed=0)
+2026-09-10T17:19:18+08:00 queue start pending=103007 workers=4 model=openai/gpt-oss-20b
+2026-09-10T17:34:30+08:00 checkpoint 500/103007 flushed (failed=0)
+2026-09-10T17:49:30+08:00 checkpoint 1000/103007 flushed (failed=0)
+2026-09-10T17:49:30+08:00 chunk done: 1000/103007, 0.55 it/s, ETA 51.3 h, failed=0
+2026-09-10T18:06:35+08:00 checkpoint 1500/103007 flushed (failed=0)
+2026-09-10T18:20:02+08:00 queue start pending=101280 workers=4 model=openai/gpt-oss-20b
+2026-09-10T18:36:13+08:00 checkpoint 500/101280 flushed (failed=0)
+2026-09-10T18:55:23+08:00 checkpoint 1000/101280 flushed (failed=0)
+2026-09-10T18:55:23+08:00 chunk done: 1000/101280, 0.47 it/s, ETA 59.1 h, failed=0
+2026-09-10T19:24:17+08:00 checkpoint 1500/101280 flushed (failed=0)
+2026-09-10T19:51:20+08:00 checkpoint 2000/101280 flushed (failed=3)
+2026-09-10T19:51:20+08:00 chunk done: 2000/101280, 0.37 it/s, ETA 75.5 h, failed=3
+2026-09-10T20:17:00+08:00 checkpoint 2500/101280 flushed (failed=3)
+2026-09-10T20:52:37+08:00 queue start pending=98633 workers=6 model=openai/gpt-oss-20b
+2026-09-10T20:55:42+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T21:03:06+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T21:48:06+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T21:53:06+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T21:58:07+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T22:03:08+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T22:08:07+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T22:08:52+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T22:13:07+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T22:18:08+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T22:23:14+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T22:28:00+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T22:35:52+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T22:42:59+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+2026-09-10T23:28:07+08:00 queue start pending=116 workers=4 model=openai/gpt-oss-20b
+2026-09-10T23:40:23+08:00 queue start pending=98632 workers=4 model=openai/gpt-oss-20b
+2026-09-10T23:52:25+08:00 queue start pending=98632 workers=4 model=openai/gpt-oss-20b

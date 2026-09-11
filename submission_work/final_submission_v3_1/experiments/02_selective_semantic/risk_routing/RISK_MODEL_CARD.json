@@ -1,0 +1,190 @@
+{
+  "created_utc": "2026-09-09T20:09:29+00:00",
+  "seed": 20260908,
+  "task": "r_hat = P(clf_pred wrong | features), entity_type 382 canonical entities",
+  "base_prediction": "B2_frozen_classifier prediction（生产机制：预测源恒为分类器）",
+  "feature_names": [
+    "clf_conf",
+    "clf_margin",
+    "entropy_margin_approx",
+    "rule_conf",
+    "rule_clf_agreement",
+    "rule_hit",
+    "lexical_contradiction",
+    "type_family_member",
+    "validated",
+    "source_multiplicity",
+    "pred_AdministrativeRegion",
+    "pred_Artifact",
+    "pred_BasinSection",
+    "pred_Concept",
+    "pred_CreativeWork",
+    "pred_CulturalSite",
+    "pred_Document",
+    "pred_Event",
+    "pred_EvolutionStage",
+    "pred_Institution",
+    "pred_Organization",
+    "pred_Person",
+    "pred_Place",
+    "pred_Position",
+    "pred_SocialGroup",
+    "pred_Spirit",
+    "pred_TimePeriod",
+    "pred_ValueFacet",
+    "pred_OTHER"
+  ],
+  "feature_descriptions": {
+    "clf_conf": "B2 冻结分类器置信（缺失→0，配 no_clf_pred 政策处理）",
+    "clf_margin": "B7 分类器 top1-top2 概率间隔",
+    "entropy_margin_approx": "由 margin 近似的归一化熵：H2(0.5+clip(margin,0,1)/2)（margin∈[0,1]，单调反转）",
+    "rule_conf": "B1 规则置信（缺失→0）",
+    "rule_clf_agreement": "rule_pred == clf_pred（两者都存在）",
+    "rule_hit": "规则给出候选（rule_pred 非空）",
+    "lexical_contradiction": "entity_model_contraindication(name, primary_source_type, clf_pred) 非空",
+    "type_family_member": "clf_pred ∈ TYPE_FAMILY",
+    "validated": "ENTITY_TYPE_SAMPLE.sampling_metadata.type_validation_status == validated",
+    "source_multiplicity": "integrated_member_count（成员数）",
+    "pred_*": "clf_pred 类别 onehot（类别域 = TYPE_FAMILY 键 + OTHER）"
+  },
+  "onehot_classes": [
+    "AdministrativeRegion",
+    "Artifact",
+    "BasinSection",
+    "Concept",
+    "CreativeWork",
+    "CulturalSite",
+    "Document",
+    "Event",
+    "EvolutionStage",
+    "Institution",
+    "Organization",
+    "Person",
+    "Place",
+    "Position",
+    "SocialGroup",
+    "Spirit",
+    "TimePeriod",
+    "ValueFacet",
+    "OTHER"
+  ],
+  "train": {
+    "split": "dev",
+    "n": 166,
+    "wrong_prevalence": 0.6867469879518072,
+    "labels_source": "IMCR_REFERENCE_STRONG.csv entity_type (strong consensus)",
+    "label_rule": "wrong = 1 iff clf_pred != reference_label",
+    "excluded": "无参考标签样本、clf_pred 缺失样本、全部 TEST 样本"
+  },
+  "selection": {
+    "chosen": "DecisionTree_max_depth4",
+    "selection": {
+      "LogisticRegression": {
+        "dev_auprc": 0.8904774688991355,
+        "val_auprc": 0.6517599099192217,
+        "val_auroc": 0.28717948717948716,
+        "n_train": 166,
+        "n_val_scored": 43
+      },
+      "DecisionTree_max_depth4": {
+        "dev_auprc": 0.8163428050646097,
+        "val_auprc": 0.7282641120984853,
+        "val_auroc": 0.5192307692307693,
+        "n_train": 166,
+        "n_val_scored": 43
+      },
+      "CalibratedLR_sigmoid": {
+        "dev_auprc": 0.8854951939919431,
+        "val_auprc": 0.6500932432525551,
+        "val_auroc": 0.2871794871794872,
+        "n_train": 166,
+        "n_val_scored": 43
+      }
+    },
+    "rule": "VAL AUPRC 选型；SIMPLICITY_ORDER=['LogisticRegression', 'DecisionTree_max_depth4', 'CalibratedLR_sigmoid'] 中取第一个 val_auprc >= best - 0.01 的候选（偏好最简单）"
+  },
+  "policies": {
+    "no_clf_pred": "r_hat=1.0，路由上永不 AUTO_ACCEPT",
+    "threshold_learning": "tau_accept/tau_escalate 仅在 VAL 上按预算约束学习，DEV 只作观察",
+    "test_guard": "assert_no_test_samples 显式过滤 + 断言（训练/打分/升级全部路径）",
+    "weak_labels": "禁止使用 weak auto_accepted 标签做 risk 真值（未使用）"
+  },
+  "val_scoring": {
+    "n": 43,
+    "wrong_prevalence": 0.6976744186046512
+  },
+  "candidates": [
+    "LogisticRegression",
+    "DecisionTree_max_depth4",
+    "CalibratedLR_sigmoid"
+  ],
+  "simplicity_preference": [
+    "LogisticRegression",
+    "DecisionTree_max_depth4",
+    "CalibratedLR_sigmoid"
+  ],
+  "auprc_tolerance": 0.01,
+  "feature_importance_tree": {
+    "clf_conf": 0.264341,
+    "entropy_margin_approx": 0.198883,
+    "pred_Concept": 0.18389,
+    "pred_Document": 0.146564,
+    "rule_clf_agreement": 0.114396,
+    "pred_Artifact": 0.091926,
+    "clf_margin": 0.0,
+    "rule_conf": 0.0,
+    "rule_hit": 0.0,
+    "lexical_contradiction": 0.0,
+    "type_family_member": 0.0,
+    "validated": 0.0,
+    "source_multiplicity": 0.0,
+    "pred_AdministrativeRegion": 0.0,
+    "pred_BasinSection": 0.0,
+    "pred_CreativeWork": 0.0,
+    "pred_CulturalSite": 0.0,
+    "pred_Event": 0.0,
+    "pred_EvolutionStage": 0.0,
+    "pred_Institution": 0.0,
+    "pred_Organization": 0.0,
+    "pred_Person": 0.0,
+    "pred_Place": 0.0,
+    "pred_Position": 0.0,
+    "pred_SocialGroup": 0.0,
+    "pred_Spirit": 0.0,
+    "pred_TimePeriod": 0.0,
+    "pred_ValueFacet": 0.0,
+    "pred_OTHER": 0.0
+  },
+  "feature_importance_top5": [
+    [
+      "clf_conf",
+      0.264341
+    ],
+    [
+      "entropy_margin_approx",
+      0.198883
+    ],
+    [
+      "pred_Concept",
+      0.18389
+    ],
+    [
+      "pred_Document",
+      0.146564
+    ],
+    [
+      "rule_clf_agreement",
+      0.114396
+    ]
+  ],
+  "r_hat_distribution": {
+    "dev": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "val": {
+      "min": 0.0,
+      "max": 1.0
+    }
+  }
+}

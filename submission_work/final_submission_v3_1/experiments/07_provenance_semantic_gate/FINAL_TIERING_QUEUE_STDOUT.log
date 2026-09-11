@@ -1,0 +1,24 @@
+[queue] plan={"rule_D": 2106, "rule_safe": 0, "dev_done": 4999, "queue": {"mismatch_with_evidence": 4636, "recovery_B": 15706, "recovery_A": 2641, "aligned": 42525, "recovery_C": 39545}, "aligned_supplement_n": 3000, "queue_total": 105053}
+[queue] todo=105,053, already_done=6,420, pending=98,633, workers=6, ckpt_flush=500
+2026-09-10T20:52:37+08:00 queue start pending=98633 workers=6 model=openai/gpt-oss-20b
+[queue] plan={"rule_D": 2106, "rule_safe": 0, "dev_done": 4999, "queue": {"mismatch_with_evidence": 4636, "recovery_B": 15706, "recovery_A": 2641, "aligned": 42525, "recovery_C": 39545}, "aligned_supplement_n": 3000, "queue_total": 105053}
+[queue] todo=105,053, already_done=6,420, pending=98,633, workers=4, ckpt_flush=500
+2026-09-10T20:55:42+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+[queue] plan={"rule_D": 2106, "rule_safe": 0, "dev_done": 4999, "queue": {"mismatch_with_evidence": 4636, "recovery_B": 15706, "recovery_A": 2641, "aligned": 42525, "recovery_C": 39545}, "aligned_supplement_n": 3000, "queue_total": 105053}
+[queue] todo=105,053, already_done=6,420, pending=98,633, workers=4, ckpt_flush=500
+2026-09-10T21:03:06+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+[queue] plan={"rule_D": 2106, "rule_safe": 0, "dev_done": 4999, "queue": {"mismatch_with_evidence": 4636, "recovery_B": 15706, "recovery_A": 2641, "aligned": 42525, "recovery_C": 39545}, "aligned_supplement_n": 3000, "queue_total": 105053}
+[queue] todo=105,053, already_done=6,420, pending=98,633, workers=4, ckpt_flush=500
+2026-09-10T21:48:06+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+[queue] plan={"rule_D": 2106, "rule_safe": 0, "dev_done": 4999, "queue": {"mismatch_with_evidence": 4636, "recovery_B": 15706, "recovery_A": 2641, "aligned": 42525, "recovery_C": 39545}, "aligned_supplement_n": 3000, "queue_total": 105053}
+[queue] todo=105,053, already_done=6,420, pending=98,633, workers=4, ckpt_flush=500
+2026-09-10T21:53:06+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+[queue] plan={"rule_D": 2106, "rule_safe": 0, "dev_done": 4999, "queue": {"mismatch_with_evidence": 4636, "recovery_B": 15706, "recovery_A": 2641, "aligned": 42525, "recovery_C": 39545}, "aligned_supplement_n": 3000, "queue_total": 105053}
+[queue] todo=105,053, already_done=6,420, pending=98,633, workers=4, ckpt_flush=500
+2026-09-10T21:58:07+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+[queue] plan={"rule_D": 2106, "rule_safe": 0, "dev_done": 4999, "queue": {"mismatch_with_evidence": 4636, "recovery_B": 15706, "recovery_A": 2641, "aligned": 42525, "recovery_C": 39545}, "aligned_supplement_n": 3000, "queue_total": 105053}
+[queue] todo=105,053, already_done=6,420, pending=98,633, workers=4, ckpt_flush=500
+2026-09-10T22:03:08+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b
+[queue] plan={"rule_D": 2106, "rule_safe": 0, "dev_done": 4999, "queue": {"mismatch_with_evidence": 4636, "recovery_B": 15706, "recovery_A": 2641, "aligned": 42525, "recovery_C": 39545}, "aligned_supplement_n": 3000, "queue_total": 105053}
+[queue] todo=105,053, already_done=6,420, pending=98,633, workers=4, ckpt_flush=500
+2026-09-10T22:08:07+08:00 queue start pending=98633 workers=4 model=openai/gpt-oss-20b

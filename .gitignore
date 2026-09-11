@@ -3,3 +3,5 @@ Thumbs.db
 ~$*
 __pycache__/
 *.pyc
+submission_work/final_submission_v3_1/data/repaired_release/*.sqlite
+submission_work/final_submission_v3_1/data/repaired_release/.tmp_*.sqlite

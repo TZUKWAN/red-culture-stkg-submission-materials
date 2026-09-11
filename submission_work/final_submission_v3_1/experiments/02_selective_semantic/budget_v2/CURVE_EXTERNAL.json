@@ -1,0 +1,39 @@
+{
+  "name": "CURVE_EXTERNAL",
+  "role": "horizontal reference line（gpt-5.6-luna every-item，leave-B-out 主口径）",
+  "model": "gpt-5.6-luna (V3 IMCR_BLIND_LLM_RUNS.csv, method_id=B3_blind_llm, fresh)",
+  "reference": {
+    "name": "IMCR_REFERENCE_LEAVE_B_OUT.csv (entity_type)",
+    "judge_removed": "B",
+    "judge_composition_seen": {
+      "A;C": 309
+    },
+    "note": "无 Judge B 票；与 gpt-5.6-luna（Judge B 同族）评价解耦"
+  },
+  "pooled": {
+    "n_all": 320,
+    "n_labeled": 261,
+    "agreement_leave_b_out": 0.8812260536398467,
+    "n_labeled_strong_sensitivity": 230,
+    "agreement_strong_sensitivity": 0.9739130434782609
+  },
+  "dev": {
+    "n_all": 254,
+    "n_labeled": 207,
+    "agreement_leave_b_out": 0.8743961352657005,
+    "n_labeled_strong_sensitivity": 182,
+    "agreement_strong_sensitivity": 0.9725274725274725
+  },
+  "val": {
+    "n_all": 66,
+    "n_labeled": 54,
+    "agreement_leave_b_out": 0.9074074074074074,
+    "n_labeled_strong_sensitivity": 48,
+    "agreement_strong_sensitivity": 0.9791666666666666
+  },
+  "forbidden_usage": "含 Judge B 的 strong 口径（旧 0.972/0.979）禁止作为质量上限；strong 列仅作敏感性",
+  "sources_sha256": {
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\08_independent_reference\\IMCR_REFERENCE_LEAVE_B_OUT.csv": "50bd576f6190cee8562bf8a58cbb4296756b94b3adac934321fe5d769918568c",
+    "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3\\experiments\\09_independent_baselines\\IMCR_BLIND_LLM_RUNS.csv": "94e18170193ae7e74feea87d8df9dc8dd9f43d9bd61ea636cf0301b46a77f5f5"
+  }
+}

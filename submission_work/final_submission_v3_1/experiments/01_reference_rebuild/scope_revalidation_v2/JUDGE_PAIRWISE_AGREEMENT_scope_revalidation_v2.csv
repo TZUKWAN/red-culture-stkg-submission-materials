@@ -1,0 +1,4 @@
+﻿task_type,judge_a,judge_b,n_compared,n_agree,agreement,cohens_kappa
+scope_revalidation_v2,A,B,208,128,0.6153846153846154,0.42727335306670344
+scope_revalidation_v2,A,C,208,141,0.6778846153846154,0.4831243972999036
+scope_revalidation_v2,B,C,208,138,0.6634615384615384,0.4994499449944994

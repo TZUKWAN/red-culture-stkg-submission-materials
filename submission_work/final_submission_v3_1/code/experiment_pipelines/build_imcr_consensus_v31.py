@@ -36,15 +36,17 @@ import consensus as consensus_mod  # noqa: E402
 from consensus import (  # noqa: E402
     UNRESOLVED,
     aggregate_all,
-    build_matrix,
-    decode_ab_label,
-    load_ab_mapping,
     reliability_summary,
-    pairwise_agreement,
     leave_one_judge_out,
     reduced_panel_labels,
 )
 from manifest import build_manifest, write_manifest, sha256_file  # noqa: E402
+from build_imcr_consensus import (  # noqa: E402  (V3 管线内实现，同 math)
+    build_matrix,
+    decode_ab_label,
+    load_ab_mapping,
+    load_raw_runs,
+)
 from _common import MASTER_SEED  # noqa: E402
 
 RAW_ROOT = V3_1 / "experiments" / "01_reference_rebuild" / "raw_runs"
@@ -62,21 +64,20 @@ LOQ_FIELDS = REFERENCE_FIELDS + ["judge_removed"]
 
 
 def build_rows(task_type: str) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]], dict[str, Any]]:
-    runs_path = RAW_ROOT / task_type / ""
-    recs: list[dict[str, Any]] = []
-    for jf in sorted((RAW_ROOT / task_type).glob("*.jsonl")):
-        for line in jf.read_text(encoding="utf-8").splitlines():
-            if line.strip():
-                r = json.loads(line)
-                r["_file"] = jf.name
-                recs.append(r)
-    # 复用 V3 的矩阵构建（同一 (task_id, judge) 以最后 OK 为准）
-    task_ids, judges, matrix, meta = build_matrix(recs)
+    runs = load_raw_runs(RAW_ROOT, task_type)
+    task_ids, judges, matrix, meta = build_matrix(runs)
+    if len(judges) not in (3, 5):
+        # GOAL 7.4 共识规则只定义 3/5 judge 档位；任务未跑齐时跳过（不产生部分共识）
+        raise ValueError(f"任务 {task_type} 只有 {len(judges)} 个 judge（{judges}），无法构建共识")
     results = aggregate_all(matrix, judges)
 
     ab_map = {}
     if task_type == "scope_revalidation_v2":
-        ab_map = load_ab_mapping(PAYLOADS)
+        # v4 映射文件（V3 的 load_ab_mapping 读 V3 注册表文件名，不适用）
+        amap_path = PAYLOADS / "SCOPE_REVALIDATION_V2_AB_MAPPING.csv"
+        ab_map = {}
+        for row in csv.DictReader(open(amap_path, encoding="utf-8-sig")):
+            ab_map[row["task_id"]] = {"a": row["a"], "b": row["b"]}
 
     reference_rows, loq_rows = [], []
     all_model_ids: set[str] = set()
@@ -106,19 +107,20 @@ def build_rows(task_type: str) -> tuple[list[dict[str, Any]], list[dict[str, Any
         if res.label is not None:
             loq_rows.append({**row, "consensus_tier": "weak_consensus", "judge_removed": ""})  # 占位，稍后按 judge 填
 
-    return reference_rows, loq_rows, task_ids, {"judges": judges, "matrix": matrix, "meta": meta, "tier_counts": tier_counts, "all_model_ids": all_model_ids, "results": results}
+    return reference_rows, loq_rows, task_ids, {"judges": judges, "matrix": matrix, "meta": meta, "tier_counts": tier_counts, "all_model_ids": all_model_ids, "results": results, "ab_map": ab_map}
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--tasks", nargs="*", default=V4_TASKS)
-    args = ap.parse_args()
+    args = ap.parse_args(argv)
 
     summary_out: dict[str, Any] = {}
     for task_type in args.tasks:
         out_dir = OUT / task_type
         out_dir.mkdir(parents=True, exist_ok=True)
         reference_rows, _loq_rows, task_ids, ctx = build_rows(task_type)
+        ab_map_global = ctx["ab_map"]
         judges = ctx["judges"]
 
         pairwise_rows = []
@@ -167,7 +169,7 @@ def main() -> int:
         # leave-one-out 参考（对称三份；B3=gpt-5.6-luna 主对照为 LEAVE_B）
         loq_files: list[Path] = []
         loq_counts: dict[str, int] = {}
-        ab_map = load_ab_mapping(PAYLOADS) if task_type == "scope_revalidation_v2" else {}
+        ab_map = ab_map_global if task_type == "scope_revalidation_v2" else {}
         for drop in judges:
             reduced = reduced_panel_labels(matrix, judges, drop)
             remaining = [j for j in judges if j != drop]
@@ -213,9 +215,19 @@ def main() -> int:
         summary_out[task_type] = {"tiers": ctx["tier_counts"], "strong": len(strong_rows), "all": len(all_rows)}
         print(f"[consensus_v31] {task_type}: tiers={ctx['tier_counts']} strong={len(strong_rows)} all={len(all_rows)}")
 
-    (OUT / "V4_CONSENSUS_SUMMARY.json").write_text(
-        json.dumps(summary_out, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    # BUGFIX(指令§21)：read-modify-write——按任务运行时只更新自己的键，
+    # 不覆盖其他任务的既有统计（旧实现整文件重写导致 scope/identity 丢失）。
+    summary_path = OUT / "V4_CONSENSUS_SUMMARY.json"
+    existing: dict[str, Any] = {}
+    if summary_path.exists():
+        try:
+            existing = json.loads(summary_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            existing = {}
+    existing.update(summary_out)
+    tmp_path = summary_path.with_suffix(".json.tmp")
+    tmp_path.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding="utf-8")
+    tmp_path.replace(summary_path)
     return 0
 
 

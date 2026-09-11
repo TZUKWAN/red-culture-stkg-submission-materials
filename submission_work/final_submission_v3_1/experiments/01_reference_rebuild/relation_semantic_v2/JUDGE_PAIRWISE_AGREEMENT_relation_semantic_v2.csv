@@ -1,0 +1,4 @@
+﻿task_type,judge_a,judge_b,n_compared,n_agree,agreement,cohens_kappa
+relation_semantic_v2,A,B,800,559,0.69875,0.5448364433028632
+relation_semantic_v2,A,C,800,570,0.7125,0.5523038105271866
+relation_semantic_v2,B,C,800,548,0.685,0.5355609207689048
