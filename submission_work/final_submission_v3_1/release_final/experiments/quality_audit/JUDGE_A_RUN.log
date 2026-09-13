@@ -13,3 +13,12 @@
 [judge:gpt-oss-20b] 600/2794 ok=600 bad=0 0.46 it/s ETA 80 min
 [judge:gpt-oss-20b] 800/2794 ok=800 bad=0 0.46 it/s ETA 72 min
 [judge:gpt-oss-20b] 1000/2794 ok=1000 bad=0 0.46 it/s ETA 65 min
+[judge:gpt-oss-20b] 1200/2794 ok=1200 bad=0 0.46 it/s ETA 58 min
+[judge:gpt-oss-20b] 1400/2794 ok=1400 bad=0 0.46 it/s ETA 50 min
+[judge:gpt-oss-20b] 1600/2794 ok=1600 bad=0 0.46 it/s ETA 43 min
+[judge:gpt-oss-20b] 1800/2794 ok=1800 bad=0 0.46 it/s ETA 36 min
+[judge:gpt-oss-20b] 2000/2794 ok=2000 bad=0 0.46 it/s ETA 29 min
+[judge:gpt-oss-20b] 2200/2794 ok=2200 bad=0 0.47 it/s ETA 21 min
+[judge:gpt-oss-20b] 2400/2794 ok=2400 bad=0 0.47 it/s ETA 14 min
+[judge:gpt-oss-20b] 2600/2794 ok=2600 bad=0 0.47 it/s ETA 7 min
+[judge:gpt-oss-20b] DONE ok=2794 bad=0 elapsed=97.9 min
