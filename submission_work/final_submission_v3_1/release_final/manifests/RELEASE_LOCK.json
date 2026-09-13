@@ -1,0 +1,32 @@
+{
+  "locked": true,
+  "locked_at": "2026-09-14T06:48:02.853318+08:00",
+  "tag": "stkg-final-reproducible-2026",
+  "git_head": "0f1453858a7067157a6e855bbb7f8fc843be338d",
+  "final_db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a",
+  "package_sha256": "see SHA256SUMS.txt (self-reference excluded by design)",
+  "final_numbers": {
+    "total_assertions": 424150,
+    "gate_universe": 112158,
+    "gate_strict": 31067,
+    "gate_contextual": 31282,
+    "gate_unresolved": 49809,
+    "pending_hold": 0,
+    "full_db_strict": 31067,
+    "full_db_contextual": 299329,
+    "full_db_unresolved": 93754
+  },
+  "independent_audit": {
+    "decision": "PASS",
+    "n": 4427,
+    "strict_support_precision_strong_consensus": 0.9928,
+    "false_positive_rate": 0.0041,
+    "cohens_kappa": 0.1838,
+    "judges": [
+      "gpt-oss-20b",
+      "qwen/qwen3-8b"
+    ],
+    "production_model": "qwen3.5-4b"
+  },
+  "replay_all_pass": true
+}
