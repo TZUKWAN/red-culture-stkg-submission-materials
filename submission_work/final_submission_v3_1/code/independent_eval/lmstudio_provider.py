@@ -3,14 +3,14 @@
 
 配置（环境变量，缺省用本地默认）：
     LMSTUDIO_BASE_URL  默认 http://127.0.0.1:1234/v1
-    LMSTUDIO_MODEL     默认 openai/gpt-oss-20b（升级裁决/生产主模型）
-    LMSTUDIO_MODEL_FALLBACK 默认 qwen/qwen3-8b
+    LMSTUDIO_MODEL     默认 qwen3.5-4b（最终生产语义门主模型）
+    LMSTUDIO_MODEL_FALLBACK 默认不启用（生产链禁止静默换模）
     LMSTUDIO_EMBED_MODEL    默认 text-embedding-nomic-embed-text-v1.5
     LMSTUDIO_API_KEY   可选（LM Studio 默认不校验）
 
 模型清单（2026-09-10 实测，见 method_final/03_LOCAL_LMSTUDIO_REPORT.md）：
-    openai/gpt-oss-20b      热身后 ~4s/条，structured JSON 稳定（升级/生产主模型）
-    qwen/qwen3-8b           ~12s/条，JSON 稳定（备用）
+    qwen3.5-4b              本地 LM Studio，最终生产语义门主模型
+    其他模型                 不得作为生产链静默回退
     text-embedding-nomic-embed-text-v1.5  嵌入（语义特征/检索）
     qwen/qwen3-vl-4b        （视觉，暂不用于生产链）
 """
@@ -24,8 +24,9 @@ import urllib.request
 from typing import Any
 
 DEFAULT_BASE = os.environ.get("LMSTUDIO_BASE_URL", "http://127.0.0.1:1234/v1")
-DEFAULT_MODEL = os.environ.get("LMSTUDIO_MODEL", "openai/gpt-oss-20b")
-DEFAULT_FALLBACK = os.environ.get("LMSTUDIO_MODEL_FALLBACK", "qwen/qwen3-8b")
+DEFAULT_MODEL = os.environ.get("LMSTUDIO_MODEL", "qwen3.5-4b")
+# 生产链默认不回退到其他模型；失败记录必须显式保留为 FAILED/UNRESOLVED。
+DEFAULT_FALLBACK = os.environ.get("LMSTUDIO_MODEL_FALLBACK", "")
 DEFAULT_EMBED = os.environ.get("LMSTUDIO_EMBED_MODEL", "text-embedding-nomic-embed-text-v1.5")
 API_KEY = os.environ.get("LMSTUDIO_API_KEY", "lm-studio")
 
@@ -46,26 +47,135 @@ def _post(url: str, body: dict[str, Any], timeout: float) -> dict[str, Any]:
 def chat(messages: list[dict[str, str]], model: str = DEFAULT_MODEL, *,
          temperature: float = 0.0, top_p: float = 1.0, max_tokens: int = 900,
          timeout: float = 300.0, retries: int = 2) -> str:
-    """单轮 chat，返回 content 文本。失败时回退备用模型一次。"""
+    """单轮 chat，返回最终答案文本；qwen3.5-4b 使用原生接口且关闭 reasoning。"""
     last_err: Exception | None = None
     for attempt in range(retries + 1):
-        use_model = model if attempt < retries else (DEFAULT_FALLBACK if model != DEFAULT_FALLBACK else model)
+        # 生产链不允许静默换模；仅在显式提供非空 fallback 时才使用它。
+        use_model = model
+        if attempt >= retries and DEFAULT_FALLBACK and model != DEFAULT_FALLBACK:
+            use_model = DEFAULT_FALLBACK
         try:
+            if use_model == "qwen3.5-4b":
+                # LM Studio 原生接口才支持 qwen3.5 的 reasoning="off"。
+                # 将 system/user 消息保持顺序拼接，禁止模型进入思考通道。
+                prompt = "\n\n".join(
+                    f"{m.get('role', 'user').upper()}: {m.get('content', '')}"
+                    for m in messages
+                )
+                d = _post(
+                    f"{DEFAULT_BASE.rstrip('/').rsplit('/v1', 1)[0]}/api/v1/chat",
+                    {"model": use_model, "input": prompt,
+                     "temperature": temperature,
+                     "max_output_tokens": max_tokens, "reasoning": "off"},
+                    timeout,
+                )
+                for item in d.get("output", []):
+                    if item.get("type") == "message" and str(item.get("content") or "").strip():
+                        return str(item["content"])
+                return ""
             d = _post(
                 f"{DEFAULT_BASE.rstrip('/')}/chat/completions",
                 {"model": use_model, "messages": messages, "temperature": temperature,
                  "top_p": top_p, "max_tokens": max_tokens},
                 timeout,
             )
-            return str(d["choices"][0]["message"].get("content") or "")
+            msg = d["choices"][0].get("message", {})
+            return str(msg.get("content") or "")
         except Exception as exc:  # 本地服务：网络类失败短暂退避后重试
             last_err = exc
             time.sleep(min(2 ** attempt, 8))
     raise LMStudioError(f"LM Studio chat failed after retries: {last_err}")
 
 
+_STRUCT_CHARS = set(",:}] \t\r\n")
+
+
+def _repair_unescaped_quotes(s: str) -> str:
+    """修复字符串值内部未转义的 ASCII 引号（qwen3.5-4b 偶发，如 其"led"（领导））。
+
+    仅做转义规范化，不改动任何语义内容：处于字符串内遇到 `"` 时，若其后
+    （跳过空白）不是 JSON 结构字符（, : } ] 或结尾），则视为字面引号并转义。
+    """
+    out: list[str] = []
+    in_str = False
+    i, n = 0, len(s)
+    while i < n:
+        c = s[i]
+        if not in_str:
+            if c == '"':
+                in_str = True
+            out.append(c)
+            i += 1
+            continue
+        if c == "\\":  # 已转义序列原样保留
+            out.append(s[i:i + 2])
+            i += 2
+            continue
+        if c == '"':
+            j = i + 1
+            while j < n and s[j] in " \t\r\n":
+                j += 1
+            if j >= n or s[j] in _STRUCT_CHARS:
+                in_str = False      # 合法收尾引号
+            else:
+                out.append("\\\"")  # 字符串内部的字面引号
+                i += 1
+                continue
+        elif c == "\n":
+            out.append("\\n")
+            i += 1
+            continue
+        elif c == "\r":
+            out.append("\\r")
+            i += 1
+            continue
+        elif c == "\t":
+            out.append("\\t")
+            i += 1
+            continue
+        out.append(c)
+        i += 1
+    return "".join(out)
+
+
+_SALVAGE_LABELS = ("FULLY_SUPPORTED", "PARTIALLY_SUPPORTED", "UNSUPPORTED",
+                   "CONTRADICTED", "INSUFFICIENT")
+
+
+def _salvage_fields(text: str) -> dict[str, Any] | None:
+    """schema 兜底提取：严格/修复解析都失败时，按已知字段模式直接提取。
+
+    只信任显式出现的 `"decision": "<五档枚举>"`；decision 缺失或不在枚举内
+    一律返回 None（上层记 CALL_FAILED 可重试），绝不猜测判定。
+    """
+    import re
+    m = re.search(r'"decision"\s*:\s*"([A-Z_]+)"', text)
+    if not m or m.group(1) not in _SALVAGE_LABELS:
+        return None
+    out: dict[str, Any] = {"decision": m.group(1)}
+    mc = re.search(r'"confidence"\s*:\s*([0-9.]+)', text)
+    if mc:
+        try:
+            out["confidence"] = max(0.0, min(1.0, float(mc.group(1))))
+        except ValueError:
+            pass
+
+    def grab(key: str) -> str:
+        mk = re.search(rf'"{key}"\s*:\s*"(.*)', text, re.S)
+        if not mk:
+            return ""
+        val = mk.group(1)
+        end = val.find('"')
+        return val[:end] if end >= 0 else val
+
+    out["evidence_quote"] = grab("evidence_quote")
+    out["explanation"] = grab("explanation")
+    out["_salvaged"] = True
+    return out
+
+
 def extract_json(text: str) -> dict[str, Any]:
-    """从模型输出中提取第一个 JSON 对象（容忍 ```json 包裹/前后噪声）。"""
+    """从模型输出中提取第一个 JSON 对象（容忍 ```json 包裹/前后噪声/内部引号）。"""
     s = text.strip()
     if s.startswith("```"):
         s = s.strip("`")
@@ -81,7 +191,23 @@ def extract_json(text: str) -> dict[str, Any]:
         elif s[i] == "}":
             depth -= 1
             if depth == 0:
-                return json.loads(s[start : i + 1])
+                raw = s[start : i + 1]
+                try:
+                    return json.loads(raw)
+                except json.JSONDecodeError:
+                    pass
+                try:
+                    return json.loads(_repair_unescaped_quotes(raw))
+                except json.JSONDecodeError:
+                    salv = _salvage_fields(raw)
+                    if salv is not None:
+                        return salv
+                    raise LMStudioError(
+                        f"malformed JSON object in output: unparseable even after repair/salvage")
+    # 右括号缺失（生成提前结束）——同样允许兜底提取，绝不静默丢判定。
+    salv = _salvage_fields(s[start:])
+    if salv is not None:
+        return salv
     raise LMStudioError("unbalanced JSON in model output")
 
 

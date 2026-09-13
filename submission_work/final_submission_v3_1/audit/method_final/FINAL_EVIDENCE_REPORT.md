@@ -1,17 +1,17 @@
 # FINAL EVIDENCE REPORT — 全库逐条 MEASURED 重分层（三概念分离）
 
-- 生成时间：2026-09-10T21:06:09+08:00｜方法版本：`final-tiering-v1`（全自动、无人工、seed 写死、checkpoint 可复现）
-- 模型：`openai/gpt-oss-20b`（LM Studio 本地，temperature=0，`lmstudio_provider.chat_json`，workers≤6）
+- 生成时间：2026-09-14T00:08:38+08:00｜方法版本：`final-tiering-v1`（全自动、无人工、seed 写死、checkpoint 可复现）
+- 模型：`qwen3.5-4b`（LM Studio 本地，temperature=0，`lmstudio_provider.chat_json`，workers≤6）
 - 冻结 policy：`FINAL_TIERING_POLICY.json`（先冻结成 JSON 再应用；LLM prompt/证据组装 = `run_evidence_semantic_gate.py` 同款）
 - 重分层对象：112,158 条 strict 断言（STRICT_ALIGNMENT 全量，数据库只读，不建新库）
 - 上游统计估计（对照基线）：分层抽样 5,000 条 → new strict ≈ **35,226** [33,744–36,708]（外推，非逐条）
 
 ## 0. 结论速览
 
-- MEASURED（gate_method = rule / llm，逐条确定计数）：**strict 2,063 ／ contextual 2,480 ／ unresolved 8,954**
-- 保守持留（LLM 队列未及，CONTEXTUAL 持留、不计入 MEASURED）：**98,661**
-- FINAL_TIERING.csv 全表三层计数：STRICT 2,063 ／ CONTEXTUAL 101,141 ／ UNRESOLVED 8,954
-- 与统计估计对照（同宇宙 110,052 条，排除 recovery_D）：估计 35,226 vs 实测 **2,063**（差 -33,163.0）。**注意：LLM 队列在报告时点未清空，下列 MEASURED 为已完成口径的确定数（下界），持留行见 §5。**
+- MEASURED（gate_method = rule / llm，逐条确定计数）：**strict 31,067 ／ contextual 31,282 ／ unresolved 49,809**
+- 保守持留（LLM 队列未及，CONTEXTUAL 持留、不计入 MEASURED）：**0**
+- FINAL_TIERING.csv 全表三层计数：STRICT 31,067 ／ CONTEXTUAL 31,282 ／ UNRESOLVED 49,809
+- 与统计估计对照（同宇宙 110,052 条，排除 recovery_D）：估计 35,226 vs 实测 **31,067**（差 -4,159.0）。LLM 队列已清空，MEASURED 即全库确定数。
 
 ## 1. 三概念分离（指令 §6 的 A/B/C 三个数，全部实测确定数）
 
@@ -19,7 +19,7 @@
 | --- | --- | --- | --- | --- |
 | A. lineage completeness | 有原生溯源指针（provenance evidence_ids≥1，bucket ∈ aligned/mismatch_with_evidence）的 strict 断言占比 | 50,161 | 112,158 | **44.72%** |
 | B. evidence localization rate | 证据文本可定位（direct 指针或恢复类 A/B/C；仅 recovery_D 不可定位）的占比 | 110,052 | 112,158 | **98.12%** |
-| C. semantic support rate (measured) | 已测（rule/llm）且可定位断言中，证据在语义上支持（FULLY / 安全规则 / PARTIAL-strict-predicate）的占比 | 2,063 | 11,391 | **18.11%** |
+| C. semantic support rate (measured) | 已测（rule/llm）且可定位断言中，证据在语义上支持（FULLY / 安全规则 / PARTIAL-strict-predicate）的占比 | 31,067 | 110,052 | **28.23%** |
 
 三者正交：A 说"有没有溯源链"，B 说"证据文本能否取回"，C 说"取回的证据是否真支持"。
 A ≠ B：61,997 条无原生指针，但其中
@@ -30,18 +30,18 @@ B ≠ C：可定位 ≠ 支持——recovery_C 层（40,345 条）定位成功�
 
 | 层 | 层规模 | 已测（rule+llm） | 已测 STRICT | 已测占比 |
 | --- | --- | --- | --- | --- |
-| aligned | 44,025 | 1,497 | 677 | 3.4% |
-| mismatch_with_evidence | 6,136 | 6,136 | 72 | 100.0% |
-| recovery_A | 2,841 | 200 | 45 | 7.0% |
-| recovery_B | 16,705 | 2,758 | 1,214 | 16.5% |
-| recovery_C | 40,345 | 800 | 55 | 2.0% |
+| aligned | 44,025 | 44,025 | 18,597 | 100.0% |
+| mismatch_with_evidence | 6,136 | 6,136 | 71 | 100.0% |
+| recovery_A | 2,841 | 2,841 | 1,444 | 100.0% |
+| recovery_B | 16,705 | 16,705 | 7,182 | 100.0% |
+| recovery_C | 40,345 | 40,345 | 3,773 | 100.0% |
 | recovery_D | 2,106 | 2,106 | 0 | 100.0% |
 
 按 gate_method：rule（确定性快路径 + 安全规则）= {"UNRESOLVED": 2106}；
-llm（gpt-oss-20b 五档判定）= {"UNRESOLVED": 6848, "CONTEXTUAL": 2480, "STRICT": 2063}。
+llm（gpt-oss-20b 五档判定）= {"UNRESOLVED": 47703, "CONTEXTUAL": 31282, "STRICT": 31067}。
 
-LLM 五档合并分布（DEV 5,000 + 本队列 checkpoint 6,423 条）：
-{"UNSUPPORTED": 6662, "INSUFFICIENT": 1503, "FULLY_SUPPORTED": 1952, "PARTIALLY_SUPPORTED": 1088, "CONTRADICTED": 186}
+LLM 五档合并分布（DEV 5,000 + 本队列 checkpoint 105,081 条）：
+{"UNSUPPORTED": 47576, "INSUFFICIENT": 3578, "FULLY_SUPPORTED": 23257, "PARTIALLY_SUPPORTED": 35514, "CONTRADICTED": 127}
 
 ## 3. 确定性快路径与安全规则学习（DEV 3/4 学、1/4 验）
 
@@ -68,11 +68,11 @@ FULL 占比 ≥70% 的 predicate，PARTIAL 判定可入 STRICT，否则 CONTEXTU
 - checkpoint：`FINAL_TIERING_CHECKPOINT.jsonl` 每 500 条 fsync，断点续跑；
   CALL_FAILED/UNPARSEABLE 记录保留并在续跑时自动重试；
 - 完成度：
-  - aligned: 1,497 / 44,025（3.4%）
+  - aligned: 44,025 / 44,025（100.0%）
   - mismatch_with_evidence: 6,136 / 6,136（100.0%）
-  - recovery_A: 200 / 2,841（7.0%）
-  - recovery_B: 2,758 / 16,705（16.5%）
-  - recovery_C: 800 / 40,345（2.0%）
+  - recovery_A: 2,841 / 2,841（100.0%）
+  - recovery_B: 16,705 / 16,705（100.0%）
+  - recovery_C: 40,345 / 40,345（100.0%）
   - recovery_D: 2,106 / 2,106（100.0%）
 
 ## 6. 局限性

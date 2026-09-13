@@ -286,6 +286,10 @@ def load_queue_checkpoint() -> dict[str, dict]:
             except json.JSONDecodeError:
                 break  # 尾部半行（崩溃残留）——丢弃
             if obj.get("fact_id"):
+                # 生产最终口径只接受当前固定模型；旧模型记录保留在原始
+                # checkpoint 中用于审计，但不得阻止 qwen3.5-4b 重跑，也不得混入 finalize。
+                if obj.get("model") != DEFAULT_MODEL:
+                    continue
                 done[obj["fact_id"]] = obj   # 后写覆盖先写（重试以最新为准）
     return done
 
@@ -599,7 +603,13 @@ def build_queue_plan(align: dict, recov: dict, feats: dict, policy: dict,
                  for rr in safe_rules):
             plan["rule_safe"] += 1
         elif fid in dev:
-            plan["dev_done"] += 1
+            # dev 覆盖只认有效五档判定；dev 阶段的 CALL_FAILED/UNPARSEABLE
+            # 必须由生产队列重测，不得当作已测跳过（否则 finalize 只能持留）。
+            if dev[fid].get("decision") in LABELS:
+                plan["dev_done"] += 1
+            else:
+                plan["dev_redo"] = plan.get("dev_redo", 0) + 1
+                by_stratum[st].append(fid)
         else:
             by_stratum[st].append(fid)
     for st in by_stratum:
@@ -1122,6 +1132,9 @@ def _pid_alive(pid: int) -> bool:
     try:
         import ctypes
         k = ctypes.windll.kernel32
+        k.OpenProcess.restype = ctypes.c_void_p
+        k.OpenProcess.argtypes = [ctypes.c_uint32, ctypes.c_bool, ctypes.c_uint32]
+        k.GetExitCodeProcess.argtypes = [ctypes.c_void_p, ctypes.POINTER(ctypes.c_ulong)]
         h = k.OpenProcess(0x1000, False, pid)   # PROCESS_QUERY_LIMITED_INFORMATION
         if not h:
             return False
@@ -1185,9 +1198,9 @@ def run_watchdog() -> int:
             # 22:24 实测）：重启模型引擎清除；失败不阻塞 guard。
             try:
                 lms = r"C:\Users\lauze\.lmstudio\bin\lms.exe"
-                subprocess.run([lms, "unload", "openai/gpt-oss-20b"],
+                subprocess.run([lms, "unload", DEFAULT_MODEL],
                                capture_output=True, timeout=300)
-                subprocess.run([lms, "load", "openai/gpt-oss-20b"],
+                subprocess.run([lms, "load", DEFAULT_MODEL],
                                capture_output=True, timeout=600)
                 print("[watchdog] lmstudio model reloaded")
             except Exception as exc:

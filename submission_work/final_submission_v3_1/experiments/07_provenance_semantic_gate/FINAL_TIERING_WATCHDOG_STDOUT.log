@@ -1,0 +1,387 @@
+[watchdog] pid=3068 alive, effective stale 0.9 min (ckpt age 0.9); ok
+[watchdog] pid=30560 alive, effective stale 1.7 min (ckpt age 1.7); ok
+[watchdog] pid=30560 alive, effective stale 2.7 min (ckpt age 2.7); ok
+[watchdog] pid=30560 alive, effective stale 0.5 min (ckpt age 0.5); ok
+[watchdog] pid=17880 alive, effective stale 0.7 min (ckpt age 3.6); ok
+[watchdog] triggered FinalTieringQueue task (spawn #2)
+[watchdog] pid=22656 alive, effective stale 1.7 min (ckpt age 1.7); ok
+[watchdog] pid=22656 alive, effective stale 0.9 min (ckpt age 0.9); ok
+[watchdog] pid=22656 alive, effective stale 2.5 min (ckpt age 2.5); ok
+[watchdog] pid=22656 alive, effective stale 4.0 min (ckpt age 4.0); ok
+[watchdog] pid=22656 alive, effective stale 0.7 min (ckpt age 0.7); ok
+[watchdog] pid=43224 alive, effective stale 0.4 min (ckpt age 0.4); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=43224 alive, effective stale 0.4 min (ckpt age 0.4); ok
+[watchdog] triggered FinalTieringQueue task (spawn #3)
+[watchdog] triggered FinalTieringQueue task (spawn #4)
+[watchdog] pid=32988 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=32988 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] pid=30540 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #2)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #2)
+[watchdog] pid=13328 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] pid=9456 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] pid=31600 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] pid=12184 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] pid=16884 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] pid=12308 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] pid=32632 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] pid=28456 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] pid=4748 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] pid=10648 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] pid=6976 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] pid=33724 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #2)
+[watchdog] pid=37636 alive, effective stale 0.0 min (ckpt age 0.0); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #2)
+[watchdog] triggered FinalTieringQueue task (spawn #3)
+[watchdog] pid=29412 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #2)
+[watchdog] pid=6384 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] pid=45992 alive, effective stale 0.1 min (ckpt age 0.1); ok
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] pid=44688 alive, effective stale 0.5 min (ckpt age 0.5); ok
+[watchdog] queue done marker present; nothing to do
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] triggered FinalTieringQueue task (spawn #1)
+[watchdog] queue done marker present; nothing to do
+[watchdog] queue done marker present; nothing to do
+[watchdog] queue done marker present; nothing to do
+[watchdog] queue done marker present; nothing to do
+[watchdog] queue done marker present; nothing to do
+[watchdog] queue done marker present; nothing to do
+[watchdog] queue done marker present; nothing to do
+[watchdog] queue done marker present; nothing to do
+[watchdog] queue done marker present; nothing to do
+[watchdog] queue done marker present; nothing to do
+[watchdog] queue done marker present; nothing to do
+[watchdog] queue done marker present; nothing to do
+[watchdog] queue done marker present; nothing to do
+[watchdog] queue done marker present; nothing to do

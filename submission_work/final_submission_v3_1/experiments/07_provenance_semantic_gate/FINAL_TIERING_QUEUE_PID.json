@@ -1,1 +1,1 @@
-{"pid": 44288, "spawns": 1, "self_registered": true, "ts": "2026-09-11T17:36:47+08:00"}
+{"pid": 0, "spawns": 1, "ts": "2026-09-14T00:07:59+08:00", "spawn_via": "schtasks", "note": "pid 由 queue 进程自注册后更新"}

@@ -5,3 +5,9 @@ __pycache__/
 *.pyc
 submission_work/final_submission_v3_1/data/repaired_release/*.sqlite
 submission_work/final_submission_v3_1/data/repaired_release/.tmp_*.sqlite
+
+# FINAL_TIERING raw checkpoint exceeds GitHub 100MB blob limit:
+# lossless archive = FINAL_TIERING_CHECKPOINT.jsonl.gz (127,633 records); raw/split files stay local only.
+submission_work/final_submission_v3_1/experiments/07_provenance_semantic_gate/FINAL_TIERING_CHECKPOINT.jsonl
+submission_work/final_submission_v3_1/experiments/07_provenance_semantic_gate/FINAL_TIERING_CHECKPOINT_GPTOSS.jsonl
+submission_work/final_submission_v3_1/experiments/07_provenance_semantic_gate/FINAL_TIERING_CHECKPOINT_Q35.jsonl

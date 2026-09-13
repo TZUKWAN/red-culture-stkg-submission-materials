@@ -1,7 +1,7 @@
 {
   "task": "全库逐条 MEASURED 重分层（统计估计 35,226 → 确定计数）",
   "method_version": "final-tiering-v1",
-  "generated_at": "2026-09-10T21:06:09+08:00",
+  "generated_at": "2026-09-14T00:08:38+08:00",
   "deterministic": true,
   "manual_review": false,
   "policy_file": "FINAL_TIERING_POLICY.json",
@@ -20,20 +20,20 @@
     }
   },
   "final_counts_full_csv": {
-    "CONTEXTUAL": 101141,
-    "UNRESOLVED": 8954,
-    "STRICT": 2063
+    "UNRESOLVED": 49809,
+    "CONTEXTUAL": 31282,
+    "STRICT": 31067
   },
   "measured": {
-    "n_measured": 13497,
-    "strict": 2063,
-    "contextual": 2480,
-    "unresolved": 8954,
+    "n_measured": 112158,
+    "strict": 31067,
+    "contextual": 31282,
+    "unresolved": 49809,
     "by_gate_method": {
       "llm": {
-        "UNRESOLVED": 6848,
-        "CONTEXTUAL": 2480,
-        "STRICT": 2063
+        "UNRESOLVED": 47703,
+        "CONTEXTUAL": 31282,
+        "STRICT": 31067
       },
       "rule": {
         "UNRESOLVED": 2106
@@ -42,20 +42,15 @@
     "note": "MEASURED = gate_method ∈ {rule, llm} 的确定计数；NOT_EVALUATED 保守持留 CONTEXTUAL，单列 pending_hold，不混入 MEASURED。"
   },
   "pending_hold": {
-    "n": 98661,
+    "n": 0,
     "tier": "CONTEXTUAL",
-    "by_stratum": {
-      "aligned": 42528,
-      "recovery_C": 39545,
-      "recovery_A": 2641,
-      "recovery_B": 13947
-    }
+    "by_stratum": {}
   },
   "comparison_with_estimate": {
     "estimated_strict_from_sampling": 35226.0,
     "estimate_universe": 110052,
-    "measured_strict_same_universe": 2063,
-    "delta": -33163.0,
+    "measured_strict_same_universe": 31067,
+    "delta": -4159.0,
     "note": "统计估计=分层抽样外推（±CI）；本文件为逐条 MEASURED 确定数；若队列未清空，measured_strict 为当前已完成口径（下界）。"
   },
   "three_concepts": {
@@ -71,61 +66,61 @@
     },
     "C_semantic_support_rate_measured": {
       "definition": "已测（rule/llm）且可定位断言中，证据在语义上支持（STRICT = FULLY / 安全规则 / PARTIAL-strict-predicate）的占比",
-      "n_measured_localizable": 11391,
-      "n_supported": 2063,
-      "rate": 0.1811
+      "n_measured_localizable": 110052,
+      "n_supported": 31067,
+      "rate": 0.2823
     }
   },
   "llm": {
-    "model_id": "openai/gpt-oss-20b",
+    "model_id": "qwen3.5-4b",
     "base_url": "http://127.0.0.1:1234/v1",
     "decision_distribution": {
-      "UNSUPPORTED": 6662,
-      "INSUFFICIENT": 1503,
-      "FULLY_SUPPORTED": 1952,
-      "PARTIALLY_SUPPORTED": 1088,
-      "CONTRADICTED": 186
+      "UNSUPPORTED": 47576,
+      "INSUFFICIENT": 3578,
+      "FULLY_SUPPORTED": 23257,
+      "PARTIALLY_SUPPORTED": 35514,
+      "CONTRADICTED": 127
     },
     "by_stratum": {
       "aligned": {
-        "UNSUPPORTED": 545,
-        "FULLY_SUPPORTED": 631,
-        "CONTRADICTED": 35,
-        "INSUFFICIENT": 77,
-        "PARTIALLY_SUPPORTED": 209
+        "UNSUPPORTED": 14437,
+        "FULLY_SUPPORTED": 13383,
+        "CONTRADICTED": 48,
+        "INSUFFICIENT": 834,
+        "PARTIALLY_SUPPORTED": 15323
       },
       "mismatch_with_evidence": {
-        "UNSUPPORTED": 4758,
-        "INSUFFICIENT": 1217,
-        "FULLY_SUPPORTED": 63,
-        "PARTIALLY_SUPPORTED": 68,
-        "CONTRADICTED": 30
+        "UNSUPPORTED": 4642,
+        "INSUFFICIENT": 1309,
+        "FULLY_SUPPORTED": 44,
+        "PARTIALLY_SUPPORTED": 130,
+        "CONTRADICTED": 11
       },
       "recovery_A": {
-        "PARTIALLY_SUPPORTED": 26,
-        "UNSUPPORTED": 100,
-        "FULLY_SUPPORTED": 45,
-        "INSUFFICIENT": 29
+        "PARTIALLY_SUPPORTED": 446,
+        "UNSUPPORTED": 834,
+        "FULLY_SUPPORTED": 1431,
+        "INSUFFICIENT": 130
       },
       "recovery_B": {
-        "FULLY_SUPPORTED": 1163,
-        "PARTIALLY_SUPPORTED": 717,
-        "INSUFFICIENT": 99,
-        "CONTRADICTED": 112,
-        "UNSUPPORTED": 667
+        "FULLY_SUPPORTED": 6293,
+        "PARTIALLY_SUPPORTED": 6780,
+        "INSUFFICIENT": 197,
+        "CONTRADICTED": 56,
+        "UNSUPPORTED": 3379
       },
       "recovery_C": {
-        "UNSUPPORTED": 592,
-        "FULLY_SUPPORTED": 50,
-        "PARTIALLY_SUPPORTED": 68,
-        "INSUFFICIENT": 81,
-        "CONTRADICTED": 9
+        "UNSUPPORTED": 24284,
+        "FULLY_SUPPORTED": 2106,
+        "PARTIALLY_SUPPORTED": 12835,
+        "INSUFFICIENT": 1108,
+        "CONTRADICTED": 12
       }
     },
-    "n_records_queue_checkpoint": 6423,
+    "n_records_queue_checkpoint": 105081,
     "completion_by_stratum": {
       "aligned": {
-        "done": 1497,
+        "done": 44025,
         "total": 44025
       },
       "mismatch_with_evidence": {
@@ -133,15 +128,15 @@
         "total": 6136
       },
       "recovery_A": {
-        "done": 200,
+        "done": 2841,
         "total": 2841
       },
       "recovery_B": {
-        "done": 2758,
+        "done": 16705,
         "total": 16705
       },
       "recovery_C": {
-        "done": 800,
+        "done": 40345,
         "total": 40345
       },
       "recovery_D": {

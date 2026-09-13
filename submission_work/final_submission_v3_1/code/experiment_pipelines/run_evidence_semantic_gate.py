@@ -301,7 +301,7 @@ def judge_one(item: dict) -> dict:
     rec.update({
         "decision": None, "confidence": None, "evidence_quote": "",
         "explanation": "", "forced": "", "parse_ok": 0, "retry_used": 0,
-        "latency_s": None, "model": DEFAULT_MODEL, "error": "",
+        "salvaged": 0, "latency_s": None, "model": DEFAULT_MODEL, "error": "",
         "ts": now_iso(),
     })
     if item["evidence_empty"]:
@@ -316,7 +316,7 @@ def judge_one(item: dict) -> dict:
     ]
     t0 = time.time()
     try:
-        out = chat_json(messages, max_tokens=500, timeout=300)
+        out = chat_json(messages, max_tokens=500, timeout=900)
     except LMStudioError as exc:
         rec.update({"decision": "CALL_FAILED", "error": str(exc)[:300],
                     "latency_s": round(time.time() - t0, 2)})
@@ -336,6 +336,8 @@ def judge_one(item: dict) -> dict:
                 "explanation": clean_text(out.get("explanation"))[:400],
                 "retry_used": attempt,
             })
+            if out.pop("_salvaged", None):
+                rec["salvaged"] = 1
             return rec
         # 一次纠错重试
         rec["retry_used"] = 1
@@ -344,7 +346,7 @@ def judge_one(item: dict) -> dict:
             {"role": "user", "content": "decision 字段不合法。必须且只能是 FULLY_SUPPORTED/PARTIALLY_SUPPORTED/UNSUPPORTED/CONTRADICTED/INSUFFICIENT 之一。重新输出且仅输出合法 JSON 对象。"},
         ]
         try:
-            out = chat_json(messages, max_tokens=500, timeout=300)
+            out = chat_json(messages, max_tokens=500, timeout=900)
         except LMStudioError as exc:
             rec.update({"decision": "CALL_FAILED", "error": str(exc)[:300]})
             return rec

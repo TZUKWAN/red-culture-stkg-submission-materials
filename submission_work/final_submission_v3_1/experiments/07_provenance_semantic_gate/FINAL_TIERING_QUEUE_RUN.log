@@ -65,3 +65,572 @@
 2026-09-11T15:20:20+08:00 queue start pending=95897 workers=6 model=openai/gpt-oss-20b
 2026-09-11T15:53:33+08:00 checkpoint 500/95897 flushed (failed=7)
 2026-09-11T16:59:37+08:00 queue start pending=95218 workers=6 model=openai/gpt-oss-20b
+2026-09-11T17:36:47+08:00 queue start pending=95192 workers=6 model=openai/gpt-oss-20b
+2026-09-11T17:55:26+08:00 queue start pending=95192 workers=6 model=qwen3.5-4b
+2026-09-11T18:11:59+08:00 queue start pending=95192 workers=6 model=qwen3.5-4b
+2026-09-11T21:44:38+08:00 queue start pending=95192 workers=6 model=qwen3.5-4b
+2026-09-11T22:12:44+08:00 queue start pending=95192 workers=6 model=qwen3.5-4b
+2026-09-11T23:30:55+08:00 queue start pending=95191 workers=4 model=qwen3.5-4b
+2026-09-11T23:57:07+08:00 queue start pending=95191 workers=6 model=openai/gpt-oss-20b
+2026-09-11T23:57:07+08:00 queue start pending=95191 workers=6 model=openai/gpt-oss-20b
+2026-09-12T01:35:38+08:00 queue start pending=95174 workers=6 model=openai/gpt-oss-20b
+2026-09-12T06:41:59+08:00 checkpoint 500/95174 flushed (failed=364)
+2026-09-12T12:25:30+08:00 checkpoint 1000/95174 flushed (failed=698)
+2026-09-12T12:25:30+08:00 chunk done: 1000/95174, 0.03 it/s, ETA 1020.0 h, failed=698
+2026-09-12T15:36:48+08:00 queue start pending=94791 workers=4 model=qwen3.5-4b
+2026-09-12T15:38:42+08:00 queue start pending=2 workers=1 model=qwen3.5-4b
+2026-09-12T16:02:18+08:00 chunk done: 2/2, 0.00 it/s, ETA 0.0 h, failed=2
+2026-09-12T16:02:18+08:00 queue loop exit: executed=2, failed=2, elapsed=0.39 h
+2026-09-12T16:03:32+08:00 queue start pending=2 workers=1 model=qwen3.5-4b
+2026-09-12T16:07:10+08:00 QUEUE CRASH:
+Traceback (most recent call last):
+  File "D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\code\experiment_pipelines\build_final_tiering.py", line 749, in run_queue_guarded
+    run_queue(workers, limit, only, supplement_n)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\code\experiment_pipelines\build_final_tiering.py", line 718, in run_queue
+    out = fut.result()
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\lauze\miniconda3\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\code\experiment_pipelines\run_evidence_semantic_gate.py", line 319, in judge_one
+    out = chat_json(messages, max_tokens=2000, timeout=900)
+  File "D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 102, in chat_json
+    return extract_json(chat(messages, model=model, temperature=temperature,
+                             max_tokens=max_tokens, timeout=timeout, retries=retries))
+  File "D:\REDCULTUREDATA\投稿材料_代码数据整理包\submission_work\final_submission_v3_1\code\independent_eval\lmstudio_provider.py", line 94, in extract_json
+    return json.loads(s[start : i + 1])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lauze\miniconda3\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\lauze\miniconda3\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lauze\miniconda3\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 35 (char 34)
+
+2026-09-12T16:23:07+08:00 queue start pending=105052 workers=6 model=qwen3.5-4b
+2026-09-12T16:27:03+08:00 queue start pending=105044 workers=6 model=qwen3.5-4b
+2026-09-12T16:45:25+08:00 queue start pending=105003 workers=6 model=qwen3.5-4b
+2026-09-12T16:51:09+08:00 queue start pending=105003 workers=6 model=qwen3.5-4b
+2026-09-12T17:16:38+08:00 queue start pending=104953 workers=6 model=qwen3.5-4b
+2026-09-12T17:26:53+08:00 checkpoint 500/104953 flushed (failed=22)
+2026-09-12T17:30:33+08:00 checkpoint 1000/104953 flushed (failed=28)
+2026-09-12T17:30:33+08:00 chunk done: 1000/104953, 1.20 it/s, ETA 24.1 h, failed=28
+2026-09-12T17:34:21+08:00 checkpoint 1500/104953 flushed (failed=36)
+2026-09-12T17:38:03+08:00 checkpoint 2000/104953 flushed (failed=42)
+2026-09-12T17:38:03+08:00 chunk done: 2000/104953, 1.56 it/s, ETA 18.4 h, failed=42
+2026-09-12T17:41:52+08:00 checkpoint 2500/104953 flushed (failed=51)
+2026-09-12T17:45:26+08:00 checkpoint 3000/104953 flushed (failed=62)
+2026-09-12T17:45:26+08:00 chunk done: 3000/104953, 1.74 it/s, ETA 16.3 h, failed=62
+2026-09-12T17:49:04+08:00 checkpoint 3500/104953 flushed (failed=69)
+2026-09-12T17:52:38+08:00 checkpoint 4000/104953 flushed (failed=80)
+2026-09-12T17:52:38+08:00 chunk done: 4000/104953, 1.85 it/s, ETA 15.1 h, failed=80
+2026-09-12T17:56:09+08:00 checkpoint 4500/104953 flushed (failed=84)
+2026-09-12T18:01:50+08:00 checkpoint 5000/104953 flushed (failed=105)
+2026-09-12T18:01:50+08:00 chunk done: 5000/104953, 1.84 it/s, ETA 15.1 h, failed=105
+2026-09-12T18:07:49+08:00 checkpoint 5500/104953 flushed (failed=130)
+2026-09-12T18:13:55+08:00 checkpoint 6000/104953 flushed (failed=151)
+2026-09-12T18:13:55+08:00 chunk done: 6000/104953, 1.75 it/s, ETA 15.7 h, failed=151
+2026-09-12T18:20:19+08:00 checkpoint 6500/104953 flushed (failed=189)
+2026-09-12T18:26:32+08:00 checkpoint 7000/104953 flushed (failed=218)
+2026-09-12T18:26:32+08:00 chunk done: 7000/104953, 1.67 it/s, ETA 16.3 h, failed=218
+2026-09-12T18:32:57+08:00 checkpoint 7500/104953 flushed (failed=240)
+2026-09-12T18:39:05+08:00 checkpoint 8000/104953 flushed (failed=265)
+2026-09-12T18:39:05+08:00 chunk done: 8000/104953, 1.62 it/s, ETA 16.7 h, failed=265
+2026-09-12T18:45:06+08:00 checkpoint 8500/104953 flushed (failed=291)
+2026-09-12T18:51:00+08:00 checkpoint 9000/104953 flushed (failed=324)
+2026-09-12T18:51:00+08:00 chunk done: 9000/104953, 1.59 it/s, ETA 16.8 h, failed=324
+2026-09-12T18:57:07+08:00 checkpoint 9500/104953 flushed (failed=347)
+2026-09-12T19:03:09+08:00 checkpoint 10000/104953 flushed (failed=370)
+2026-09-12T19:03:09+08:00 chunk done: 10000/104953, 1.56 it/s, ETA 16.9 h, failed=370
+2026-09-12T19:09:23+08:00 checkpoint 10500/104953 flushed (failed=401)
+2026-09-12T19:15:41+08:00 checkpoint 11000/104953 flushed (failed=430)
+2026-09-12T19:15:41+08:00 chunk done: 11000/104953, 1.54 it/s, ETA 16.9 h, failed=430
+2026-09-12T19:21:49+08:00 checkpoint 11500/104953 flushed (failed=456)
+2026-09-12T19:27:59+08:00 checkpoint 12000/104953 flushed (failed=485)
+2026-09-12T19:27:59+08:00 chunk done: 12000/104953, 1.52 it/s, ETA 17.0 h, failed=485
+2026-09-12T19:34:05+08:00 checkpoint 12500/104953 flushed (failed=512)
+2026-09-12T19:40:12+08:00 checkpoint 13000/104953 flushed (failed=533)
+2026-09-12T19:40:12+08:00 chunk done: 13000/104953, 1.51 it/s, ETA 16.9 h, failed=533
+2026-09-12T19:46:20+08:00 checkpoint 13500/104953 flushed (failed=558)
+2026-09-12T19:52:38+08:00 checkpoint 14000/104953 flushed (failed=574)
+2026-09-12T19:52:38+08:00 chunk done: 14000/104953, 1.50 it/s, ETA 16.9 h, failed=574
+2026-09-12T19:58:59+08:00 checkpoint 14500/104953 flushed (failed=601)
+2026-09-12T20:05:17+08:00 checkpoint 15000/104953 flushed (failed=633)
+2026-09-12T20:05:17+08:00 chunk done: 15000/104953, 1.48 it/s, ETA 16.9 h, failed=633
+2026-09-12T20:11:22+08:00 checkpoint 15500/104953 flushed (failed=662)
+2026-09-12T20:17:44+08:00 checkpoint 16000/104953 flushed (failed=689)
+2026-09-12T20:17:44+08:00 chunk done: 16000/104953, 1.47 it/s, ETA 16.8 h, failed=689
+2026-09-12T20:24:05+08:00 checkpoint 16500/104953 flushed (failed=719)
+2026-09-12T20:30:25+08:00 checkpoint 17000/104953 flushed (failed=746)
+2026-09-12T20:30:25+08:00 chunk done: 17000/104953, 1.46 it/s, ETA 16.7 h, failed=746
+2026-09-12T20:36:39+08:00 checkpoint 17500/104953 flushed (failed=776)
+2026-09-12T20:42:59+08:00 checkpoint 18000/104953 flushed (failed=811)
+2026-09-12T20:42:59+08:00 chunk done: 18000/104953, 1.45 it/s, ETA 16.6 h, failed=811
+2026-09-12T20:49:21+08:00 checkpoint 18500/104953 flushed (failed=842)
+2026-09-12T20:55:49+08:00 checkpoint 19000/104953 flushed (failed=869)
+2026-09-12T20:55:49+08:00 chunk done: 19000/104953, 1.44 it/s, ETA 16.5 h, failed=869
+2026-09-12T21:02:11+08:00 checkpoint 19500/104953 flushed (failed=895)
+2026-09-12T21:08:17+08:00 checkpoint 20000/104953 flushed (failed=928)
+2026-09-12T21:08:17+08:00 chunk done: 20000/104953, 1.44 it/s, ETA 16.4 h, failed=928
+2026-09-12T21:13:36+08:00 checkpoint 20500/104953 flushed (failed=944)
+2026-09-12T21:18:00+08:00 checkpoint 21000/104953 flushed (failed=955)
+2026-09-12T21:18:00+08:00 chunk done: 21000/104953, 1.45 it/s, ETA 16.1 h, failed=955
+2026-09-12T21:22:29+08:00 checkpoint 21500/104953 flushed (failed=975)
+2026-09-12T21:26:52+08:00 checkpoint 22000/104953 flushed (failed=984)
+2026-09-12T21:26:52+08:00 chunk done: 22000/104953, 1.47 it/s, ETA 15.7 h, failed=984
+2026-09-12T21:31:20+08:00 checkpoint 22500/104953 flushed (failed=995)
+2026-09-12T21:35:55+08:00 checkpoint 23000/104953 flushed (failed=1014)
+2026-09-12T21:35:55+08:00 chunk done: 23000/104953, 1.48 it/s, ETA 15.4 h, failed=1014
+2026-09-12T21:41:32+08:00 checkpoint 23500/104953 flushed (failed=1044)
+2026-09-12T21:46:57+08:00 checkpoint 24000/104953 flushed (failed=1064)
+2026-09-12T21:46:57+08:00 chunk done: 24000/104953, 1.48 it/s, ETA 15.2 h, failed=1064
+2026-09-12T21:52:35+08:00 checkpoint 24500/104953 flushed (failed=1084)
+2026-09-12T21:58:15+08:00 checkpoint 25000/104953 flushed (failed=1112)
+2026-09-12T21:58:15+08:00 chunk done: 25000/104953, 1.48 it/s, ETA 15.0 h, failed=1112
+2026-09-12T22:03:39+08:00 checkpoint 25500/104953 flushed (failed=1133)
+2026-09-12T22:09:13+08:00 checkpoint 26000/104953 flushed (failed=1162)
+2026-09-12T22:09:13+08:00 chunk done: 26000/104953, 1.48 it/s, ETA 14.8 h, failed=1162
+2026-09-12T22:14:54+08:00 checkpoint 26500/104953 flushed (failed=1183)
+2026-09-12T22:20:21+08:00 checkpoint 27000/104953 flushed (failed=1207)
+2026-09-12T22:20:21+08:00 chunk done: 27000/104953, 1.48 it/s, ETA 14.6 h, failed=1207
+2026-09-12T22:25:51+08:00 checkpoint 27500/104953 flushed (failed=1223)
+2026-09-12T22:31:18+08:00 checkpoint 28000/104953 flushed (failed=1245)
+2026-09-12T22:31:18+08:00 chunk done: 28000/104953, 1.48 it/s, ETA 14.4 h, failed=1245
+2026-09-12T22:36:50+08:00 checkpoint 28500/104953 flushed (failed=1265)
+2026-09-12T22:42:22+08:00 checkpoint 29000/104953 flushed (failed=1288)
+2026-09-12T22:42:22+08:00 chunk done: 29000/104953, 1.48 it/s, ETA 14.2 h, failed=1288
+2026-09-12T22:47:58+08:00 checkpoint 29500/104953 flushed (failed=1311)
+2026-09-12T22:53:24+08:00 checkpoint 30000/104953 flushed (failed=1335)
+2026-09-12T22:53:24+08:00 chunk done: 30000/104953, 1.48 it/s, ETA 14.0 h, failed=1335
+2026-09-12T22:59:07+08:00 checkpoint 30500/104953 flushed (failed=1359)
+2026-09-12T23:04:42+08:00 checkpoint 31000/104953 flushed (failed=1385)
+2026-09-12T23:04:42+08:00 chunk done: 31000/104953, 1.48 it/s, ETA 13.8 h, failed=1385
+2026-09-12T23:10:00+08:00 checkpoint 31500/104953 flushed (failed=1410)
+2026-09-12T23:15:33+08:00 checkpoint 32000/104953 flushed (failed=1434)
+2026-09-12T23:15:33+08:00 chunk done: 32000/104953, 1.49 it/s, ETA 13.6 h, failed=1434
+2026-09-12T23:21:04+08:00 checkpoint 32500/104953 flushed (failed=1465)
+2026-09-12T23:26:42+08:00 checkpoint 33000/104953 flushed (failed=1492)
+2026-09-12T23:26:42+08:00 chunk done: 33000/104953, 1.49 it/s, ETA 13.4 h, failed=1492
+2026-09-12T23:32:09+08:00 checkpoint 33500/104953 flushed (failed=1515)
+2026-09-12T23:37:43+08:00 checkpoint 34000/104953 flushed (failed=1543)
+2026-09-12T23:37:43+08:00 chunk done: 34000/104953, 1.49 it/s, ETA 13.3 h, failed=1543
+2026-09-12T23:43:14+08:00 checkpoint 34500/104953 flushed (failed=1567)
+2026-09-12T23:48:47+08:00 checkpoint 35000/104953 flushed (failed=1586)
+2026-09-12T23:48:47+08:00 chunk done: 35000/104953, 1.49 it/s, ETA 13.1 h, failed=1586
+2026-09-12T23:54:12+08:00 checkpoint 35500/104953 flushed (failed=1611)
+2026-09-12T23:59:48+08:00 checkpoint 36000/104953 flushed (failed=1631)
+2026-09-12T23:59:48+08:00 chunk done: 36000/104953, 1.49 it/s, ETA 12.9 h, failed=1631
+2026-09-13T00:05:25+08:00 checkpoint 36500/104953 flushed (failed=1656)
+2026-09-13T00:31:18+08:00 queue start pending=69659 workers=6 model=qwen3.5-4b
+2026-09-13T00:36:09+08:00 queue start pending=69657 workers=6 model=qwen3.5-4b
+2026-09-13T00:37:33+08:00 queue start pending=69650 workers=2 model=qwen3.5-4b
+2026-09-13T00:45:44+08:00 checkpoint 500/69650 flushed (failed=427)
+2026-09-13T00:49:59+08:00 queue start pending=69573 workers=2 model=qwen3.5-4b
+2026-09-13T00:58:00+08:00 checkpoint 500/69573 flushed (failed=7)
+2026-09-13T01:06:20+08:00 checkpoint 1000/69573 flushed (failed=19)
+2026-09-13T01:06:20+08:00 chunk done: 1000/69573, 1.02 it/s, ETA 18.7 h, failed=19
+2026-09-13T01:14:19+08:00 checkpoint 1500/69573 flushed (failed=25)
+2026-09-13T01:21:15+08:00 checkpoint 2000/69573 flushed (failed=27)
+2026-09-13T01:21:15+08:00 chunk done: 2000/69573, 1.07 it/s, ETA 17.6 h, failed=27
+2026-09-13T01:27:52+08:00 checkpoint 2500/69573 flushed (failed=28)
+2026-09-13T01:34:36+08:00 checkpoint 3000/69573 flushed (failed=28)
+2026-09-13T01:34:36+08:00 chunk done: 3000/69573, 1.12 it/s, ETA 16.5 h, failed=28
+2026-09-13T01:41:52+08:00 checkpoint 3500/69573 flushed (failed=28)
+2026-09-13T01:49:15+08:00 checkpoint 4000/69573 flushed (failed=28)
+2026-09-13T01:49:15+08:00 chunk done: 4000/69573, 1.12 it/s, ETA 16.2 h, failed=28
+2026-09-13T01:56:09+08:00 checkpoint 4500/69573 flushed (failed=29)
+2026-09-13T02:03:09+08:00 checkpoint 5000/69573 flushed (failed=29)
+2026-09-13T02:03:09+08:00 chunk done: 5000/69573, 1.14 it/s, ETA 15.7 h, failed=29
+2026-09-13T02:09:49+08:00 checkpoint 5500/69573 flushed (failed=29)
+2026-09-13T02:16:43+08:00 checkpoint 6000/69573 flushed (failed=30)
+2026-09-13T02:16:43+08:00 chunk done: 6000/69573, 1.15 it/s, ETA 15.3 h, failed=30
+2026-09-13T02:23:37+08:00 checkpoint 6500/69573 flushed (failed=30)
+2026-09-13T02:30:25+08:00 checkpoint 7000/69573 flushed (failed=30)
+2026-09-13T02:30:25+08:00 chunk done: 7000/69573, 1.16 it/s, ETA 15.0 h, failed=30
+2026-09-13T02:37:18+08:00 checkpoint 7500/69573 flushed (failed=30)
+2026-09-13T02:44:25+08:00 checkpoint 8000/69573 flushed (failed=31)
+2026-09-13T02:44:25+08:00 chunk done: 8000/69573, 1.17 it/s, ETA 14.7 h, failed=31
+2026-09-13T02:51:00+08:00 checkpoint 8500/69573 flushed (failed=31)
+2026-09-13T02:57:29+08:00 checkpoint 9000/69573 flushed (failed=32)
+2026-09-13T02:57:29+08:00 chunk done: 9000/69573, 1.18 it/s, ETA 14.3 h, failed=32
+2026-09-13T03:04:16+08:00 checkpoint 9500/69573 flushed (failed=32)
+2026-09-13T03:11:34+08:00 checkpoint 10000/69573 flushed (failed=33)
+2026-09-13T03:11:34+08:00 chunk done: 10000/69573, 1.18 it/s, ETA 14.1 h, failed=33
+2026-09-13T03:18:20+08:00 checkpoint 10500/69573 flushed (failed=33)
+2026-09-13T03:25:03+08:00 checkpoint 11000/69573 flushed (failed=34)
+2026-09-13T03:25:03+08:00 chunk done: 11000/69573, 1.18 it/s, ETA 13.8 h, failed=34
+2026-09-13T03:31:51+08:00 checkpoint 11500/69573 flushed (failed=35)
+2026-09-13T03:38:36+08:00 checkpoint 12000/69573 flushed (failed=36)
+2026-09-13T03:38:36+08:00 chunk done: 12000/69573, 1.19 it/s, ETA 13.5 h, failed=36
+2026-09-13T03:45:12+08:00 checkpoint 12500/69573 flushed (failed=36)
+2026-09-13T03:51:55+08:00 checkpoint 13000/69573 flushed (failed=37)
+2026-09-13T03:51:55+08:00 chunk done: 13000/69573, 1.19 it/s, ETA 13.2 h, failed=37
+2026-09-13T03:58:34+08:00 checkpoint 13500/69573 flushed (failed=37)
+2026-09-13T04:05:23+08:00 checkpoint 14000/69573 flushed (failed=37)
+2026-09-13T04:05:23+08:00 chunk done: 14000/69573, 1.19 it/s, ETA 12.9 h, failed=37
+2026-09-13T04:12:35+08:00 checkpoint 14500/69573 flushed (failed=37)
+2026-09-13T04:19:21+08:00 checkpoint 15000/69573 flushed (failed=38)
+2026-09-13T04:19:21+08:00 chunk done: 15000/69573, 1.19 it/s, ETA 12.7 h, failed=38
+2026-09-13T04:26:11+08:00 checkpoint 15500/69573 flushed (failed=39)
+2026-09-13T04:32:56+08:00 checkpoint 16000/69573 flushed (failed=40)
+2026-09-13T04:32:56+08:00 chunk done: 16000/69573, 1.20 it/s, ETA 12.4 h, failed=40
+2026-09-13T04:39:45+08:00 checkpoint 16500/69573 flushed (failed=40)
+2026-09-13T04:47:08+08:00 checkpoint 17000/69573 flushed (failed=41)
+2026-09-13T04:47:08+08:00 chunk done: 17000/69573, 1.19 it/s, ETA 12.2 h, failed=41
+2026-09-13T04:54:17+08:00 checkpoint 17500/69573 flushed (failed=42)
+2026-09-13T05:01:25+08:00 checkpoint 18000/69573 flushed (failed=42)
+2026-09-13T05:01:25+08:00 chunk done: 18000/69573, 1.19 it/s, ETA 12.0 h, failed=42
+2026-09-13T05:08:35+08:00 checkpoint 18500/69573 flushed (failed=42)
+2026-09-13T05:15:46+08:00 checkpoint 19000/69573 flushed (failed=44)
+2026-09-13T05:15:46+08:00 chunk done: 19000/69573, 1.19 it/s, ETA 11.8 h, failed=44
+2026-09-13T05:23:23+08:00 checkpoint 19500/69573 flushed (failed=44)
+2026-09-13T05:31:27+08:00 checkpoint 20000/69573 flushed (failed=46)
+2026-09-13T05:31:27+08:00 chunk done: 20000/69573, 1.18 it/s, ETA 11.6 h, failed=46
+2026-09-13T05:38:27+08:00 checkpoint 20500/69573 flushed (failed=46)
+2026-09-13T05:45:50+08:00 checkpoint 21000/69573 flushed (failed=46)
+2026-09-13T05:45:50+08:00 chunk done: 21000/69573, 1.18 it/s, ETA 11.4 h, failed=46
+2026-09-13T05:53:08+08:00 checkpoint 21500/69573 flushed (failed=46)
+2026-09-13T06:00:06+08:00 checkpoint 22000/69573 flushed (failed=47)
+2026-09-13T06:00:06+08:00 chunk done: 22000/69573, 1.18 it/s, ETA 11.2 h, failed=47
+2026-09-13T06:07:00+08:00 checkpoint 22500/69573 flushed (failed=47)
+2026-09-13T06:13:50+08:00 checkpoint 23000/69573 flushed (failed=47)
+2026-09-13T06:13:50+08:00 chunk done: 23000/69573, 1.18 it/s, ETA 10.9 h, failed=47
+2026-09-13T06:20:34+08:00 checkpoint 23500/69573 flushed (failed=48)
+2026-09-13T06:27:38+08:00 checkpoint 24000/69573 flushed (failed=48)
+2026-09-13T06:27:38+08:00 chunk done: 24000/69573, 1.18 it/s, ETA 10.7 h, failed=48
+2026-09-13T06:34:24+08:00 checkpoint 24500/69573 flushed (failed=48)
+2026-09-13T06:41:21+08:00 checkpoint 25000/69573 flushed (failed=49)
+2026-09-13T06:41:21+08:00 chunk done: 25000/69573, 1.19 it/s, ETA 10.4 h, failed=49
+2026-09-13T06:48:17+08:00 checkpoint 25500/69573 flushed (failed=49)
+2026-09-13T06:55:26+08:00 checkpoint 26000/69573 flushed (failed=49)
+2026-09-13T06:55:26+08:00 chunk done: 26000/69573, 1.19 it/s, ETA 10.2 h, failed=49
+2026-09-13T07:02:04+08:00 checkpoint 26500/69573 flushed (failed=50)
+2026-09-13T07:08:45+08:00 checkpoint 27000/69573 flushed (failed=50)
+2026-09-13T07:08:45+08:00 chunk done: 27000/69573, 1.19 it/s, ETA 10.0 h, failed=50
+2026-09-13T07:15:17+08:00 checkpoint 27500/69573 flushed (failed=50)
+2026-09-13T07:22:02+08:00 checkpoint 28000/69573 flushed (failed=51)
+2026-09-13T07:22:02+08:00 chunk done: 28000/69573, 1.19 it/s, ETA 9.7 h, failed=51
+2026-09-13T07:28:29+08:00 checkpoint 28500/69573 flushed (failed=51)
+2026-09-13T07:35:14+08:00 checkpoint 29000/69573 flushed (failed=52)
+2026-09-13T07:35:14+08:00 chunk done: 29000/69573, 1.19 it/s, ETA 9.4 h, failed=52
+2026-09-13T07:41:51+08:00 checkpoint 29500/69573 flushed (failed=52)
+2026-09-13T07:48:45+08:00 checkpoint 30000/69573 flushed (failed=52)
+2026-09-13T07:48:45+08:00 chunk done: 30000/69573, 1.19 it/s, ETA 9.2 h, failed=52
+2026-09-13T07:55:09+08:00 checkpoint 30500/69573 flushed (failed=53)
+2026-09-13T08:01:31+08:00 checkpoint 31000/69573 flushed (failed=53)
+2026-09-13T08:01:31+08:00 chunk done: 31000/69573, 1.20 it/s, ETA 8.9 h, failed=53
+2026-09-13T08:07:55+08:00 checkpoint 31500/69573 flushed (failed=54)
+2026-09-13T08:14:21+08:00 checkpoint 32000/69573 flushed (failed=56)
+2026-09-13T08:14:21+08:00 chunk done: 32000/69573, 1.20 it/s, ETA 8.7 h, failed=56
+2026-09-13T08:20:52+08:00 checkpoint 32500/69573 flushed (failed=56)
+2026-09-13T08:27:26+08:00 checkpoint 33000/69573 flushed (failed=56)
+2026-09-13T08:27:26+08:00 chunk done: 33000/69573, 1.20 it/s, ETA 8.4 h, failed=56
+2026-09-13T08:33:50+08:00 checkpoint 33500/69573 flushed (failed=56)
+2026-09-13T08:40:27+08:00 checkpoint 34000/69573 flushed (failed=56)
+2026-09-13T08:40:27+08:00 chunk done: 34000/69573, 1.20 it/s, ETA 8.2 h, failed=56
+2026-09-13T08:46:55+08:00 checkpoint 34500/69573 flushed (failed=57)
+2026-09-13T08:53:12+08:00 checkpoint 35000/69573 flushed (failed=57)
+2026-09-13T08:53:12+08:00 chunk done: 35000/69573, 1.21 it/s, ETA 8.0 h, failed=57
+2026-09-13T08:59:28+08:00 checkpoint 35500/69573 flushed (failed=58)
+2026-09-13T09:05:44+08:00 checkpoint 36000/69573 flushed (failed=58)
+2026-09-13T09:05:44+08:00 chunk done: 36000/69573, 1.21 it/s, ETA 7.7 h, failed=58
+2026-09-13T09:12:05+08:00 checkpoint 36500/69573 flushed (failed=58)
+2026-09-13T09:18:10+08:00 checkpoint 37000/69573 flushed (failed=59)
+2026-09-13T09:18:10+08:00 chunk done: 37000/69573, 1.21 it/s, ETA 7.5 h, failed=59
+2026-09-13T09:24:30+08:00 checkpoint 37500/69573 flushed (failed=59)
+2026-09-13T09:30:58+08:00 checkpoint 38000/69573 flushed (failed=59)
+2026-09-13T09:30:58+08:00 chunk done: 38000/69573, 1.22 it/s, ETA 7.2 h, failed=59
+2026-09-13T09:37:16+08:00 checkpoint 38500/69573 flushed (failed=59)
+2026-09-13T09:43:22+08:00 checkpoint 39000/69573 flushed (failed=60)
+2026-09-13T09:43:22+08:00 chunk done: 39000/69573, 1.22 it/s, ETA 7.0 h, failed=60
+2026-09-13T09:49:26+08:00 checkpoint 39500/69573 flushed (failed=60)
+2026-09-13T09:55:47+08:00 checkpoint 40000/69573 flushed (failed=60)
+2026-09-13T09:55:47+08:00 chunk done: 40000/69573, 1.22 it/s, ETA 6.7 h, failed=60
+2026-09-13T10:02:14+08:00 checkpoint 40500/69573 flushed (failed=60)
+2026-09-13T10:08:55+08:00 checkpoint 41000/69573 flushed (failed=60)
+2026-09-13T10:08:55+08:00 chunk done: 41000/69573, 1.22 it/s, ETA 6.5 h, failed=60
+2026-09-13T10:15:28+08:00 checkpoint 41500/69573 flushed (failed=60)
+2026-09-13T10:22:04+08:00 checkpoint 42000/69573 flushed (failed=61)
+2026-09-13T10:22:04+08:00 chunk done: 42000/69573, 1.22 it/s, ETA 6.3 h, failed=61
+2026-09-13T10:28:39+08:00 checkpoint 42500/69573 flushed (failed=61)
+2026-09-13T10:34:43+08:00 checkpoint 43000/69573 flushed (failed=63)
+2026-09-13T10:34:43+08:00 chunk done: 43000/69573, 1.23 it/s, ETA 6.0 h, failed=63
+2026-09-13T10:41:13+08:00 checkpoint 43500/69573 flushed (failed=63)
+2026-09-13T10:47:49+08:00 checkpoint 44000/69573 flushed (failed=64)
+2026-09-13T10:47:49+08:00 chunk done: 44000/69573, 1.23 it/s, ETA 5.8 h, failed=64
+2026-09-13T10:54:23+08:00 checkpoint 44500/69573 flushed (failed=64)
+2026-09-13T11:00:36+08:00 checkpoint 45000/69573 flushed (failed=64)
+2026-09-13T11:00:36+08:00 chunk done: 45000/69573, 1.23 it/s, ETA 5.6 h, failed=64
+2026-09-13T11:06:59+08:00 checkpoint 45500/69573 flushed (failed=64)
+2026-09-13T11:13:25+08:00 checkpoint 46000/69573 flushed (failed=64)
+2026-09-13T11:13:25+08:00 chunk done: 46000/69573, 1.23 it/s, ETA 5.3 h, failed=64
+2026-09-13T11:19:52+08:00 checkpoint 46500/69573 flushed (failed=64)
+2026-09-13T11:26:26+08:00 checkpoint 47000/69573 flushed (failed=64)
+2026-09-13T11:26:26+08:00 chunk done: 47000/69573, 1.23 it/s, ETA 5.1 h, failed=64
+2026-09-13T11:32:55+08:00 checkpoint 47500/69573 flushed (failed=65)
+2026-09-13T11:39:22+08:00 checkpoint 48000/69573 flushed (failed=65)
+2026-09-13T11:39:22+08:00 chunk done: 48000/69573, 1.23 it/s, ETA 4.9 h, failed=65
+2026-09-13T11:45:58+08:00 checkpoint 48500/69573 flushed (failed=65)
+2026-09-13T11:52:12+08:00 checkpoint 49000/69573 flushed (failed=66)
+2026-09-13T11:52:12+08:00 chunk done: 49000/69573, 1.23 it/s, ETA 4.6 h, failed=66
+2026-09-13T11:58:44+08:00 checkpoint 49500/69573 flushed (failed=67)
+2026-09-13T12:05:00+08:00 checkpoint 50000/69573 flushed (failed=67)
+2026-09-13T12:05:00+08:00 chunk done: 50000/69573, 1.23 it/s, ETA 4.4 h, failed=67
+2026-09-13T12:11:20+08:00 checkpoint 50500/69573 flushed (failed=68)
+2026-09-13T12:17:35+08:00 checkpoint 51000/69573 flushed (failed=68)
+2026-09-13T12:17:35+08:00 chunk done: 51000/69573, 1.24 it/s, ETA 4.2 h, failed=68
+2026-09-13T12:23:58+08:00 checkpoint 51500/69573 flushed (failed=68)
+2026-09-13T12:30:30+08:00 checkpoint 52000/69573 flushed (failed=68)
+2026-09-13T12:30:30+08:00 chunk done: 52000/69573, 1.24 it/s, ETA 3.9 h, failed=68
+2026-09-13T12:37:00+08:00 checkpoint 52500/69573 flushed (failed=68)
+2026-09-13T12:43:32+08:00 checkpoint 53000/69573 flushed (failed=68)
+2026-09-13T12:43:32+08:00 chunk done: 53000/69573, 1.24 it/s, ETA 3.7 h, failed=68
+2026-09-13T12:49:59+08:00 checkpoint 53500/69573 flushed (failed=68)
+2026-09-13T12:56:21+08:00 checkpoint 54000/69573 flushed (failed=68)
+2026-09-13T12:56:21+08:00 chunk done: 54000/69573, 1.24 it/s, ETA 3.5 h, failed=68
+2026-09-13T13:02:59+08:00 checkpoint 54500/69573 flushed (failed=68)
+2026-09-13T13:09:25+08:00 checkpoint 55000/69573 flushed (failed=68)
+2026-09-13T13:09:25+08:00 chunk done: 55000/69573, 1.24 it/s, ETA 3.3 h, failed=68
+2026-09-13T13:16:11+08:00 checkpoint 55500/69573 flushed (failed=68)
+2026-09-13T13:22:46+08:00 checkpoint 56000/69573 flushed (failed=68)
+2026-09-13T13:22:46+08:00 chunk done: 56000/69573, 1.24 it/s, ETA 3.0 h, failed=68
+2026-09-13T13:29:06+08:00 checkpoint 56500/69573 flushed (failed=68)
+2026-09-13T13:36:00+08:00 checkpoint 57000/69573 flushed (failed=68)
+2026-09-13T13:36:00+08:00 chunk done: 57000/69573, 1.24 it/s, ETA 2.8 h, failed=68
+2026-09-13T13:42:48+08:00 checkpoint 57500/69573 flushed (failed=68)
+2026-09-13T13:49:44+08:00 checkpoint 58000/69573 flushed (failed=69)
+2026-09-13T13:49:44+08:00 chunk done: 58000/69573, 1.24 it/s, ETA 2.6 h, failed=69
+2026-09-13T13:56:26+08:00 checkpoint 58500/69573 flushed (failed=69)
+2026-09-13T14:03:02+08:00 checkpoint 59000/69573 flushed (failed=69)
+2026-09-13T14:03:02+08:00 chunk done: 59000/69573, 1.24 it/s, ETA 2.4 h, failed=69
+2026-09-13T14:09:36+08:00 checkpoint 59500/69573 flushed (failed=70)
+2026-09-13T14:16:24+08:00 checkpoint 60000/69573 flushed (failed=70)
+2026-09-13T14:16:24+08:00 chunk done: 60000/69573, 1.24 it/s, ETA 2.1 h, failed=70
+2026-09-13T14:22:54+08:00 checkpoint 60500/69573 flushed (failed=70)
+2026-09-13T14:29:25+08:00 checkpoint 61000/69573 flushed (failed=70)
+2026-09-13T14:29:25+08:00 chunk done: 61000/69573, 1.24 it/s, ETA 1.9 h, failed=70
+2026-09-13T14:35:53+08:00 checkpoint 61500/69573 flushed (failed=70)
+2026-09-13T14:42:29+08:00 checkpoint 62000/69573 flushed (failed=70)
+2026-09-13T14:42:29+08:00 chunk done: 62000/69573, 1.24 it/s, ETA 1.7 h, failed=70
+2026-09-13T14:49:03+08:00 checkpoint 62500/69573 flushed (failed=71)
+2026-09-13T14:55:46+08:00 checkpoint 63000/69573 flushed (failed=72)
+2026-09-13T14:55:46+08:00 chunk done: 63000/69573, 1.24 it/s, ETA 1.5 h, failed=72
+2026-09-13T15:02:21+08:00 checkpoint 63500/69573 flushed (failed=72)
+2026-09-13T15:08:54+08:00 checkpoint 64000/69573 flushed (failed=72)
+2026-09-13T15:08:54+08:00 chunk done: 64000/69573, 1.24 it/s, ETA 1.2 h, failed=72
+2026-09-13T15:15:30+08:00 checkpoint 64500/69573 flushed (failed=72)
+2026-09-13T15:22:17+08:00 checkpoint 65000/69573 flushed (failed=72)
+2026-09-13T15:22:17+08:00 chunk done: 65000/69573, 1.24 it/s, ETA 1.0 h, failed=72
+2026-09-13T15:29:20+08:00 checkpoint 65500/69573 flushed (failed=72)
+2026-09-13T15:36:06+08:00 checkpoint 66000/69573 flushed (failed=73)
+2026-09-13T15:36:06+08:00 chunk done: 66000/69573, 1.24 it/s, ETA 0.8 h, failed=73
+2026-09-13T15:42:49+08:00 checkpoint 66500/69573 flushed (failed=74)
+2026-09-13T15:49:23+08:00 checkpoint 67000/69573 flushed (failed=74)
+2026-09-13T15:49:23+08:00 chunk done: 67000/69573, 1.24 it/s, ETA 0.6 h, failed=74
+2026-09-13T15:55:59+08:00 checkpoint 67500/69573 flushed (failed=74)
+2026-09-13T16:02:49+08:00 checkpoint 68000/69573 flushed (failed=74)
+2026-09-13T16:02:49+08:00 chunk done: 68000/69573, 1.24 it/s, ETA 0.4 h, failed=74
+2026-09-13T16:09:36+08:00 checkpoint 68500/69573 flushed (failed=75)
+2026-09-13T16:16:52+08:00 checkpoint 69000/69573 flushed (failed=78)
+2026-09-13T16:16:52+08:00 chunk done: 69000/69573, 1.24 it/s, ETA 0.1 h, failed=78
+2026-09-13T16:23:45+08:00 checkpoint 69500/69573 flushed (failed=78)
+2026-09-13T16:24:41+08:00 chunk done: 69573/69573, 1.24 it/s, ETA 0.0 h, failed=78
+2026-09-13T16:24:41+08:00 queue loop exit: executed=69573, failed=78, elapsed=15.58 h
+2026-09-13T16:28:06+08:00 queue start pending=78 workers=2 model=qwen3.5-4b
+2026-09-13T16:29:29+08:00 chunk done: 78/78, 0.94 it/s, ETA 0.0 h, failed=65
+2026-09-13T16:29:29+08:00 queue loop exit: executed=78, failed=65, elapsed=0.02 h
+2026-09-13T16:33:06+08:00 queue start pending=65 workers=2 model=qwen3.5-4b
+2026-09-13T16:34:15+08:00 chunk done: 65/65, 0.94 it/s, ETA 0.0 h, failed=61
+2026-09-13T16:34:15+08:00 queue loop exit: executed=65, failed=61, elapsed=0.02 h
+2026-09-13T16:38:04+08:00 queue start pending=61 workers=2 model=qwen3.5-4b
+2026-09-13T16:39:05+08:00 chunk done: 61/61, 1.00 it/s, ETA 0.0 h, failed=59
+2026-09-13T16:39:05+08:00 queue loop exit: executed=61, failed=59, elapsed=0.02 h
+2026-09-13T16:43:06+08:00 queue start pending=59 workers=2 model=qwen3.5-4b
+2026-09-13T16:44:02+08:00 chunk done: 59/59, 1.05 it/s, ETA 0.0 h, failed=56
+2026-09-13T16:44:02+08:00 queue loop exit: executed=59, failed=56, elapsed=0.02 h
+2026-09-13T16:48:07+08:00 queue start pending=56 workers=2 model=qwen3.5-4b
+2026-09-13T16:49:03+08:00 chunk done: 56/56, 0.99 it/s, ETA 0.0 h, failed=55
+2026-09-13T16:49:03+08:00 queue loop exit: executed=56, failed=55, elapsed=0.02 h
+2026-09-13T16:53:25+08:00 queue start pending=55 workers=2 model=qwen3.5-4b
+2026-09-13T16:54:24+08:00 chunk done: 55/55, 0.93 it/s, ETA 0.0 h, failed=55
+2026-09-13T16:54:24+08:00 queue loop exit: executed=55, failed=55, elapsed=0.02 h
+2026-09-13T16:58:06+08:00 queue start pending=55 workers=2 model=qwen3.5-4b
+2026-09-13T16:59:03+08:00 chunk done: 55/55, 0.97 it/s, ETA 0.0 h, failed=55
+2026-09-13T16:59:03+08:00 queue loop exit: executed=55, failed=55, elapsed=0.02 h
+2026-09-13T17:03:02+08:00 queue start pending=55 workers=2 model=qwen3.5-4b
+2026-09-13T17:03:58+08:00 chunk done: 55/55, 0.98 it/s, ETA 0.0 h, failed=53
+2026-09-13T17:03:58+08:00 queue loop exit: executed=55, failed=53, elapsed=0.02 h
+2026-09-13T17:08:06+08:00 queue start pending=53 workers=2 model=qwen3.5-4b
+2026-09-13T17:08:59+08:00 chunk done: 53/53, 1.01 it/s, ETA 0.0 h, failed=52
+2026-09-13T17:08:59+08:00 queue loop exit: executed=53, failed=52, elapsed=0.01 h
+2026-09-13T17:13:02+08:00 queue start pending=52 workers=2 model=qwen3.5-4b
+2026-09-13T17:13:54+08:00 chunk done: 52/52, 1.01 it/s, ETA 0.0 h, failed=51
+2026-09-13T17:13:54+08:00 queue loop exit: executed=52, failed=51, elapsed=0.01 h
+2026-09-13T17:18:03+08:00 queue start pending=51 workers=2 model=qwen3.5-4b
+2026-09-13T17:18:54+08:00 chunk done: 51/51, 1.00 it/s, ETA 0.0 h, failed=51
+2026-09-13T17:18:54+08:00 queue loop exit: executed=51, failed=51, elapsed=0.01 h
+2026-09-13T17:23:07+08:00 queue start pending=51 workers=2 model=qwen3.5-4b
+2026-09-13T17:23:58+08:00 chunk done: 51/51, 0.99 it/s, ETA 0.0 h, failed=50
+2026-09-13T17:23:58+08:00 queue loop exit: executed=51, failed=50, elapsed=0.01 h
+2026-09-13T17:28:08+08:00 queue start pending=50 workers=2 model=qwen3.5-4b
+2026-09-13T17:28:58+08:00 chunk done: 50/50, 0.99 it/s, ETA 0.0 h, failed=50
+2026-09-13T17:28:58+08:00 queue loop exit: executed=50, failed=50, elapsed=0.01 h
+2026-09-13T17:33:05+08:00 queue start pending=50 workers=2 model=qwen3.5-4b
+2026-09-13T17:33:53+08:00 chunk done: 50/50, 1.03 it/s, ETA 0.0 h, failed=50
+2026-09-13T17:33:53+08:00 queue loop exit: executed=50, failed=50, elapsed=0.01 h
+2026-09-13T17:38:02+08:00 queue start pending=50 workers=2 model=qwen3.5-4b
+2026-09-13T17:38:52+08:00 chunk done: 50/50, 1.00 it/s, ETA 0.0 h, failed=50
+2026-09-13T17:38:52+08:00 queue loop exit: executed=50, failed=50, elapsed=0.01 h
+2026-09-13T17:43:02+08:00 queue start pending=50 workers=2 model=qwen3.5-4b
+2026-09-13T17:43:48+08:00 chunk done: 50/50, 1.07 it/s, ETA 0.0 h, failed=50
+2026-09-13T17:43:48+08:00 queue loop exit: executed=50, failed=50, elapsed=0.01 h
+2026-09-13T17:48:02+08:00 queue start pending=50 workers=2 model=qwen3.5-4b
+2026-09-13T17:48:49+08:00 chunk done: 50/50, 1.07 it/s, ETA 0.0 h, failed=50
+2026-09-13T17:48:49+08:00 queue loop exit: executed=50, failed=50, elapsed=0.01 h
+2026-09-13T17:53:08+08:00 queue start pending=50 workers=2 model=qwen3.5-4b
+2026-09-13T17:53:58+08:00 chunk done: 50/50, 1.00 it/s, ETA 0.0 h, failed=50
+2026-09-13T17:53:58+08:00 queue loop exit: executed=50, failed=50, elapsed=0.01 h
+2026-09-13T17:58:03+08:00 queue start pending=50 workers=2 model=qwen3.5-4b
+2026-09-13T17:58:53+08:00 chunk done: 50/50, 0.99 it/s, ETA 0.0 h, failed=49
+2026-09-13T17:58:53+08:00 queue loop exit: executed=50, failed=49, elapsed=0.01 h
+2026-09-13T18:09:28+08:00 queue start pending=49 workers=2 model=qwen3.5-4b
+2026-09-13T18:10:31+08:00 chunk done: 49/49, 0.78 it/s, ETA 0.0 h, failed=49
+2026-09-13T18:10:31+08:00 queue loop exit: executed=49, failed=49, elapsed=0.02 h
+2026-09-13T18:13:06+08:00 queue start pending=49 workers=2 model=qwen3.5-4b
+2026-09-13T18:13:52+08:00 chunk done: 49/49, 1.05 it/s, ETA 0.0 h, failed=49
+2026-09-13T18:13:52+08:00 queue loop exit: executed=49, failed=49, elapsed=0.01 h
+2026-09-13T18:18:07+08:00 queue start pending=49 workers=2 model=qwen3.5-4b
+2026-09-13T18:18:58+08:00 chunk done: 49/49, 0.97 it/s, ETA 0.0 h, failed=49
+2026-09-13T18:18:58+08:00 queue loop exit: executed=49, failed=49, elapsed=0.01 h
+2026-09-13T18:23:06+08:00 queue start pending=49 workers=2 model=qwen3.5-4b
+2026-09-13T18:23:54+08:00 chunk done: 49/49, 1.02 it/s, ETA 0.0 h, failed=49
+2026-09-13T18:23:54+08:00 queue loop exit: executed=49, failed=49, elapsed=0.01 h
+2026-09-13T18:28:05+08:00 queue start pending=49 workers=2 model=qwen3.5-4b
+2026-09-13T18:28:54+08:00 chunk done: 49/49, 1.00 it/s, ETA 0.0 h, failed=48
+2026-09-13T18:28:54+08:00 queue loop exit: executed=49, failed=48, elapsed=0.01 h
+2026-09-13T18:33:06+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T18:33:54+08:00 chunk done: 48/48, 1.00 it/s, ETA 0.0 h, failed=48
+2026-09-13T18:33:54+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T18:38:08+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T18:38:59+08:00 chunk done: 48/48, 0.96 it/s, ETA 0.0 h, failed=48
+2026-09-13T18:38:59+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T18:43:06+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T18:43:52+08:00 chunk done: 48/48, 1.03 it/s, ETA 0.0 h, failed=48
+2026-09-13T18:43:52+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T18:48:06+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T18:48:53+08:00 chunk done: 48/48, 1.01 it/s, ETA 0.0 h, failed=48
+2026-09-13T18:48:53+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T18:53:13+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T18:54:03+08:00 chunk done: 48/48, 0.96 it/s, ETA 0.0 h, failed=48
+2026-09-13T18:54:03+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T18:58:05+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T18:58:52+08:00 chunk done: 48/48, 1.03 it/s, ETA 0.0 h, failed=48
+2026-09-13T18:58:52+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T19:03:06+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T19:03:53+08:00 chunk done: 48/48, 1.02 it/s, ETA 0.0 h, failed=48
+2026-09-13T19:03:53+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T19:08:02+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T19:08:55+08:00 chunk done: 48/48, 0.91 it/s, ETA 0.0 h, failed=48
+2026-09-13T19:08:55+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T19:13:10+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T19:13:57+08:00 chunk done: 48/48, 1.02 it/s, ETA 0.0 h, failed=48
+2026-09-13T19:13:57+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T19:18:03+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T19:18:50+08:00 chunk done: 48/48, 1.01 it/s, ETA 0.0 h, failed=48
+2026-09-13T19:18:50+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T19:23:08+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T19:23:57+08:00 chunk done: 48/48, 0.97 it/s, ETA 0.0 h, failed=48
+2026-09-13T19:23:57+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T19:28:06+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T19:28:56+08:00 chunk done: 48/48, 0.96 it/s, ETA 0.0 h, failed=48
+2026-09-13T19:28:56+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T19:33:06+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T19:33:56+08:00 chunk done: 48/48, 0.97 it/s, ETA 0.0 h, failed=48
+2026-09-13T19:33:56+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T19:38:03+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T19:38:55+08:00 chunk done: 48/48, 0.93 it/s, ETA 0.0 h, failed=48
+2026-09-13T19:38:55+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T19:43:07+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T19:43:57+08:00 chunk done: 48/48, 0.96 it/s, ETA 0.0 h, failed=48
+2026-09-13T19:43:57+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T19:48:05+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T19:48:53+08:00 chunk done: 48/48, 1.00 it/s, ETA 0.0 h, failed=48
+2026-09-13T19:48:53+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T19:53:03+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T19:53:51+08:00 chunk done: 48/48, 1.00 it/s, ETA 0.0 h, failed=48
+2026-09-13T19:53:51+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T19:58:06+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T19:58:55+08:00 chunk done: 48/48, 0.99 it/s, ETA 0.0 h, failed=48
+2026-09-13T19:58:55+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T20:03:03+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T20:03:51+08:00 chunk done: 48/48, 1.00 it/s, ETA 0.0 h, failed=48
+2026-09-13T20:03:51+08:00 queue loop exit: executed=48, failed=48, elapsed=0.01 h
+2026-09-13T20:08:10+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T20:43:05+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T20:48:19+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T20:48:19+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T20:53:02+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T20:58:16+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T20:58:16+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T21:03:02+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T21:08:16+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T21:08:16+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T21:13:02+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T21:18:16+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T21:18:16+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T21:23:02+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T21:28:16+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T21:28:16+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T21:33:02+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T21:38:16+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T21:38:16+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T21:43:02+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T21:48:16+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T21:48:16+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T21:53:02+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T21:58:16+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T21:58:16+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T22:03:02+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T22:08:16+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T22:08:16+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T22:13:02+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T22:18:16+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T22:18:16+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T22:23:02+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T22:28:16+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T22:28:16+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T22:33:03+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T22:38:17+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T22:38:17+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T22:43:05+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T22:48:09+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T22:53:24+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T22:53:24+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T23:08:05+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T23:13:19+08:00 chunk done: 48/48, 0.15 it/s, ETA 0.0 h, failed=48
+2026-09-13T23:13:19+08:00 queue loop exit: executed=48, failed=48, elapsed=0.09 h
+2026-09-13T23:23:05+08:00 queue start pending=48 workers=2 model=qwen3.5-4b
+2026-09-13T23:28:46+08:00 chunk done: 48/48, 0.14 it/s, ETA 0.0 h, failed=45
+2026-09-13T23:28:46+08:00 queue loop exit: executed=48, failed=45, elapsed=0.09 h
+2026-09-13T23:32:19+08:00 queue start pending=45 workers=2 model=qwen3.5-4b
+2026-09-13T23:36:25+08:00 chunk done: 45/45, 0.18 it/s, ETA 0.0 h, failed=30
+2026-09-13T23:36:25+08:00 queue loop exit: executed=45, failed=30, elapsed=0.07 h
+2026-09-13T23:38:04+08:00 queue start pending=30 workers=2 model=qwen3.5-4b
+2026-09-13T23:40:43+08:00 chunk done: 30/30, 0.19 it/s, ETA 0.0 h, failed=21
+2026-09-13T23:40:43+08:00 queue loop exit: executed=30, failed=21, elapsed=0.04 h
+2026-09-13T23:43:03+08:00 queue start pending=21 workers=2 model=qwen3.5-4b
+2026-09-13T23:44:42+08:00 chunk done: 21/21, 0.21 it/s, ETA 0.0 h, failed=18
+2026-09-13T23:44:42+08:00 queue loop exit: executed=21, failed=18, elapsed=0.03 h
+2026-09-13T23:51:42+08:00 queue start pending=18 workers=2 model=qwen3.5-4b
+2026-09-13T23:53:02+08:00 chunk done: 18/18, 0.22 it/s, ETA 0.0 h, failed=0
+2026-09-13T23:53:02+08:00 queue loop exit: executed=18, failed=0, elapsed=0.02 h
+2026-09-14T00:03:03+08:00 queue start pending=28 workers=2 model=qwen3.5-4b
+2026-09-14T00:05:44+08:00 chunk done: 28/28, 0.17 it/s, ETA 0.0 h, failed=0
+2026-09-14T00:05:44+08:00 queue loop exit: executed=28, failed=0, elapsed=0.04 h
