@@ -333,7 +333,7 @@ function initSearch() {
       if (!q) { pop.classList.add("hidden"); return; }
       const r = await API(`/api/search?q=${encodeURIComponent(q)}&limit=12`);
       pop.innerHTML = r.results.map((e) =>
-        `<div class="pop-item" data-id="${e.entity_id}"><span class="t">${esc(e.canonical_name)}</span><span class="d">${esc(e.entity_type)} · ${e.degree}</span></div>`).join("");
+        `<div class="pop-item" data-id="${e.entity_id}"><span class="t">${esc(e.canonical_name)}</span><span class="d">${esc(e.entity_type)}${e.degree ? " · " + e.degree : ""}</span></div>`).join("");
       pop.classList.remove("hidden");
       pop.querySelectorAll(".pop-item").forEach((el) =>
         el.onclick = () => { pop.classList.add("hidden"); loadEntity(el.dataset.id); });

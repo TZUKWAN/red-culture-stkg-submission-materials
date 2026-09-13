@@ -11,3 +11,5 @@
 [judge:gpt-oss-20b] 200/2794 ok=200 bad=0 0.48 it/s ETA 90 min
 [judge:gpt-oss-20b] 400/2794 ok=400 bad=0 0.46 it/s ETA 88 min
 [judge:gpt-oss-20b] 600/2794 ok=600 bad=0 0.46 it/s ETA 80 min
+[judge:gpt-oss-20b] 800/2794 ok=800 bad=0 0.46 it/s ETA 72 min
+[judge:gpt-oss-20b] 1000/2794 ok=1000 bad=0 0.46 it/s ETA 65 min

@@ -62,3 +62,16 @@
 - SAMPLED：证据门分层（5,000）、抽取召回（120 页×3）；
 - ESTIMATED：全库 strict 35,226（抽样外推；与逐条物化并行推进）；
 - DERIVED：所有聚合指标（κ/AURC/CI）由代码从原始行计算。
+
+## 十、FINAL：全量证据语义门（2026-09-14 定版，取代一切估计口径）
+
+- 生产模型：qwen3.5-4b（原生 API，reasoning=off，temperature=0）；判定档案 127,633 条（gzip 归档）。
+- 证据门宇宙（旧 strict 重分层宇宙）112,158 条 **逐条 MEASURED，零持留**：
+  STRICT **31,067** / CONTEXTUAL **31,282** / UNRESOLVED **49,809**。
+- 全库断言宇宙 424,150 条最终三层：strict_semantic 31,067 / contextual 299,329 / unresolved 93,754
+  （门宇宙之外的 311,992 条保留其历史口径，不属本轮重分层定义域）。
+- 三概念分离：A_lineage 0.4472 / B_localization 0.9812 / C_semantic_support(measured) 0.2823。
+- 独立质量审计：预注册协议（盲样本 4,427，双独立裁判 gpt-oss-20b + qwen3-8b），
+  结果见 release_final/experiments/quality_audit/AUDIT_RESULTS.json。
+- 离线复现：release_final/reproduce/replay_all.py 六步全 PASS（重放 0 差异）。
+- 权威数字源：release_final/manifests/FINAL_NUMBERS.json（禁止手抄历史数字）。

@@ -108,12 +108,30 @@ def api_search(req) -> dict:
     if types:
         cond += " AND entity_type IN (%s)" % ",".join("?" * len(types))
         args += types
+    # 两段式：内层先截断候选（避免单字查询命中数万行 × 相关子查询），
+    # 只对最终 limit 行计算 strict 度（索引探针，毫秒级）。
+    inner = ("SELECT entity_id, canonical_name, entity_type, aliases_json, "
+             "integrated_member_count AS mc FROM research_entities WHERE " + cond +
+             " ORDER BY CASE WHEN canonical_name LIKE ? THEN 0 ELSE 1 END, "
+             "integrated_member_count DESC, length(canonical_name) LIMIT 400")
     rows = STORE.q(
-        "SELECT e.entity_id, e.canonical_name, e.entity_type, e.aliases_json, "
-        "(SELECT COUNT(*) FROM research_assertions a WHERE a.research_tier='strict_semantic' "
-        " AND (a.subject_id=e.entity_id OR a.object_id=e.entity_id)) degree "
-        "FROM research_entities e WHERE " + cond +
-        " ORDER BY degree DESC, e.canonical_name LIMIT ?", tuple(args + [limit]))
+        "SELECT entity_id, canonical_name, entity_type, aliases_json FROM (" + inner + ") "
+        "ORDER BY mc DESC, length(canonical_name) LIMIT ?",
+        tuple(args + [qs + "%", limit]))
+    if rows:
+        ids = [r["entity_id"] for r in rows]
+        deg_rows = STORE.q(
+            "SELECT x.entity_id AS eid, COUNT(a.fact_id) AS d FROM "
+            "(SELECT entity_id FROM research_entities WHERE entity_id IN (%s)) x "
+            "LEFT JOIN research_assertions a ON a.research_tier='strict_semantic' "
+            "AND (a.subject_id=x.entity_id OR a.object_id=x.entity_id) "
+            "GROUP BY x.entity_id" % ",".join("?" * len(ids)), tuple(ids))
+        deg = {r["eid"]: r["d"] for r in deg_rows}
+    else:
+        deg = {}
+    for r in rows:
+        r["degree"] = deg.get(r["entity_id"], 0)
+    rows.sort(key=lambda r: (-r["degree"], len(r["canonical_name"])))
     return {"results": rows}
 
 
@@ -362,7 +380,7 @@ def main() -> int:
         print(f"[fatal] final DB not found: {DB}")
         return 1
     STORE = GraphStore(DB)
-    from http.server import HTTPServer, BaseHTTPRequestHandler
+    from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 
     class H(BaseHTTPRequestHandler):
         def do_GET(self):
@@ -388,7 +406,13 @@ def main() -> int:
         import webbrowser, threading
         threading.Timer(1.2, lambda: webbrowser.open(
             f"http://127.0.0.1:{args.port}{args.page}")).start()
-    HTTPServer(("127.0.0.1", args.port), H).serve_forever()
+    # 线程池式服务器：单个慢查询不再阻塞整个 UI（搜索/验证可并发）
+    from http.server import ThreadingHTTPServer
+
+    class Srv(ThreadingHTTPServer):
+        daemon_threads = True
+
+    Srv(("127.0.0.1", args.port), H).serve_forever()
     return 0
 
 

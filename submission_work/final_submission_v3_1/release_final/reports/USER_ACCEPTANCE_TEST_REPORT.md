@@ -22,6 +22,12 @@
 2. **相机飞出画布**：sigma v2 相机 x/y 为归一化视口坐标，误传图坐标 → 改用 `getNodeDisplayData`，并改为布局收敛后聚焦（回调式 runLayout）。
 3. **边命中区过窄**：STRICT 边宽 2→3，CONTEXTUAL 1→1.5。
 4. **深链缺失**：新增 `/#entity=<id>` 直载与 hashchange 监听（可分享/可引用）。
+5. **搜索致服务器挂死（严重）**：相关子查询对每个命中行计算 degree，单字查询命中数万行 →
+   单条查询分钟级；HTTPServer 单线程使整个 UI 被堵死。修复：两段式查询（内层按
+   前缀/热度截断 400 候选，degree 仅对最终 ≤50 行计算）+ ThreadingHTTPServer 并发。
+   修复后 20 个查询 p50=1.18s / max=1.27s（修复前 >60s 挂死）；邻居子图 66–101ms；
+   首屏静态资源 11ms。搜索延迟未达 <500ms 理想值（中文 LIKE 全表扫描边界），
+   如需进一步优化可引入 FTS5（记入 KNOWN_LIMITATIONS 后续项）。
 
 ## 已知边界
 
