@@ -149,6 +149,23 @@ def main() -> int:
     add("production_gate_model", "qwen3.5-4b", "model_id", "audit",
         "最终全量证据门生产模型（reasoning=off，温度 0）",
         "FINAL_TIERING_POLICY.json / checkpoint", "-", "DERIVED")
+
+    # ---- 独立质量审计（双裁判完成后合并）----
+    audit_res = ROOT / "release_final" / "experiments" / "quality_audit" / "AUDIT_RESULTS.json"
+    if audit_res.exists():
+        ar = json.loads(audit_res.read_text(encoding="utf-8"))
+        add("strict_support_precision_independent", ar.get("strict_support_precision_strong_consensus"),
+            "rate", "quality_audit",
+            "STRICT 强共识支撑精度（双独立裁判盲评，预注册协议）",
+            "AUDIT_RESULTS.json", "release_final/audit/score_quality_audit.py", "SAMPLED")
+        add("audit_judge_raw_agreement", ar.get("judge_raw_agreement"), "rate",
+            "quality_audit", "双裁判五档完全一致率", "AUDIT_RESULTS.json",
+            "score_quality_audit.py", "SAMPLED")
+        add("audit_cohens_kappa", ar.get("cohens_kappa"), "kappa",
+            "quality_audit", "双裁判 Cohen's kappa（风格两极的诚实呈现）",
+            "AUDIT_RESULTS.json", "score_quality_audit.py", "SAMPLED")
+        add("audit_decision", ar.get("decision"), "decision", "quality_audit",
+            "预注册触发器决策", "AUDIT_RESULTS.json", "score_quality_audit.py", "DERIVED")
     con.close()
 
     OUTD.mkdir(parents=True, exist_ok=True)

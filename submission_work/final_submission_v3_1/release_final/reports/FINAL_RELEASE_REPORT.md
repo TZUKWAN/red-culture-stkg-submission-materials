@@ -35,13 +35,27 @@
 | 数据完整性测试（18 项） | **ALL PASS** |
 | GUI 真实用户验收（9 场景） | **PASS**（含发现并修复 5 项问题，见 UAT 报告） |
 | 最终库硬结构审计 | 全零（pending/枚举/泄漏/孤儿/重复） |
-| 独立质量审计 | 预注册协议冻结；双裁判（gpt-oss-20b + qwen3-8b）盲评 4,427 样本；**结果待回填** |
+| **独立质量审计（预注册协议）** | **PASS — STRICT 支撑精度 0.9928（强共识口径）** |
 
-## 待完成（评分通过后）
+## 独立质量审计详情（双裁判盲评，n=4,427）
 
-1. 双裁判评分 → AUDIT_RESULTS.json 决策（PASS / INVESTIGATE_LOCAL / ESCALATE）
-2. FINAL_NUMBERS 合并独立精度指标
-3. Git tag + GitHub Release（资产：PUBLIC_REPRO_PACKAGE.zip、EXE、SHA256SUMS.txt、FINAL_RELEASE_REPORT.md）
+| 指标 | 值 | 解读 |
+|---|---|---|
+| STRICT 支撑精度（强共识） | **0.9928** | ≥0.90 预注册 PASS 线；超过同类历史人文 KG ~90% 基准 |
+| STRICT 误报率（强共识判 NEG） | 0.0041 | 0.4% |
+| salvaged 强共识不一致 | 0 | 解析兜底零错误 |
+| 裁判五档一致率 / Cohen's κ | 0.360 / 0.184 | 两裁判风格两极（A 硬判定 / B 对冲 PARTIAL）的诚实呈现 |
+| 粗分组一致率（A-B / 生产-A / 生产-B） | 0.63 / 0.71 / 0.77 | 生产模型居于两裁判之间，非离群者 |
+| CONTEXTUAL 升级机会 / UNRESOLVED 漏判机会 | 0.18 / 0.32 | 如实记录为后续研究机会，不追溯改判 |
+
+协议：`configs/FINAL_QUALITY_AUDIT_PROTOCOL.json`（判前冻结，seed=20260914）
+评分：`experiments/quality_audit/AUDIT_RESULTS.json`（decision=**PASS**）
+
+## 已完成
+
+1. ✅ 双裁判评分 → 预注册决策 = **PASS**
+2. ✅ FINAL_NUMBERS 合并独立精度指标（31 项机读）
+3. ⏳ Git tag `stkg-final-reproducible-2026` + GitHub Release（资产：包/EXE/哈希/报告）
 
 ## 底线自查
 

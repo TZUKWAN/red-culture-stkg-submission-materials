@@ -1,1 +1,24 @@
 [judge:qwen/qwen3-8b] total=4427 done=0 todo=4427
+[judge:qwen/qwen3-8b] total=4427 done=50 todo=4377
+[judge:qwen/qwen3-8b] 200/4377 ok=200 bad=0 0.71 it/s ETA 98 min
+[judge:qwen/qwen3-8b] 400/4377 ok=400 bad=0 0.65 it/s ETA 101 min
+[judge:qwen/qwen3-8b] 600/4377 ok=600 bad=0 0.62 it/s ETA 101 min
+[judge:qwen/qwen3-8b] 800/4377 ok=800 bad=0 0.60 it/s ETA 99 min
+[judge:qwen/qwen3-8b] 1000/4377 ok=1000 bad=0 0.59 it/s ETA 95 min
+[judge:qwen/qwen3-8b] 1200/4377 ok=1200 bad=0 0.58 it/s ETA 92 min
+[judge:qwen/qwen3-8b] 1400/4377 ok=1400 bad=0 0.58 it/s ETA 85 min
+[judge:qwen/qwen3-8b] 1600/4377 ok=1600 bad=0 0.58 it/s ETA 80 min
+[judge:qwen/qwen3-8b] 1800/4377 ok=1800 bad=0 0.58 it/s ETA 75 min
+[judge:qwen/qwen3-8b] 2000/4377 ok=2000 bad=0 0.58 it/s ETA 69 min
+[judge:qwen/qwen3-8b] 2200/4377 ok=2200 bad=0 0.58 it/s ETA 63 min
+[judge:qwen/qwen3-8b] 2400/4377 ok=2400 bad=0 0.58 it/s ETA 57 min
+[judge:qwen/qwen3-8b] 2600/4377 ok=2600 bad=0 0.58 it/s ETA 51 min
+[judge:qwen/qwen3-8b] 2800/4377 ok=2800 bad=0 0.58 it/s ETA 45 min
+[judge:qwen/qwen3-8b] 3000/4377 ok=3000 bad=0 0.58 it/s ETA 40 min
+[judge:qwen/qwen3-8b] 3200/4377 ok=3200 bad=0 0.58 it/s ETA 34 min
+[judge:qwen/qwen3-8b] 3400/4377 ok=3400 bad=0 0.58 it/s ETA 28 min
+[judge:qwen/qwen3-8b] 3600/4377 ok=3600 bad=0 0.58 it/s ETA 22 min
+[judge:qwen/qwen3-8b] 3800/4377 ok=3800 bad=0 0.57 it/s ETA 17 min
+[judge:qwen/qwen3-8b] 4000/4377 ok=4000 bad=0 0.57 it/s ETA 11 min
+[judge:qwen/qwen3-8b] 4200/4377 ok=4200 bad=0 0.57 it/s ETA 5 min
+[judge:qwen/qwen3-8b] DONE ok=4377 bad=0 elapsed=128.2 min

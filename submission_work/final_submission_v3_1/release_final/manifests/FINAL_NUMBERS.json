@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T02:24:09.516313+08:00",
+  "generated_at": "2026-09-14T06:41:35.225106+08:00",
   "final_db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a",
   "metrics": [
     {
@@ -296,6 +296,50 @@
       "definition": "最终全量证据门生产模型（reasoning=off，温度 0）",
       "source": "FINAL_TIERING_POLICY.json / checkpoint",
       "sql_or_script": "-",
+      "status": "DERIVED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "strict_support_precision_independent",
+      "value": 0.9928,
+      "unit": "rate",
+      "universe": "quality_audit",
+      "definition": "STRICT 强共识支撑精度（双独立裁判盲评，预注册协议）",
+      "source": "AUDIT_RESULTS.json",
+      "sql_or_script": "release_final/audit/score_quality_audit.py",
+      "status": "SAMPLED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "audit_judge_raw_agreement",
+      "value": 0.3598,
+      "unit": "rate",
+      "universe": "quality_audit",
+      "definition": "双裁判五档完全一致率",
+      "source": "AUDIT_RESULTS.json",
+      "sql_or_script": "score_quality_audit.py",
+      "status": "SAMPLED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "audit_cohens_kappa",
+      "value": 0.1838,
+      "unit": "kappa",
+      "universe": "quality_audit",
+      "definition": "双裁判 Cohen's kappa（风格两极的诚实呈现）",
+      "source": "AUDIT_RESULTS.json",
+      "sql_or_script": "score_quality_audit.py",
+      "status": "SAMPLED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "audit_decision",
+      "value": "PASS",
+      "unit": "decision",
+      "universe": "quality_audit",
+      "definition": "预注册触发器决策",
+      "source": "AUDIT_RESULTS.json",
+      "sql_or_script": "score_quality_audit.py",
       "status": "DERIVED",
       "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
     }
