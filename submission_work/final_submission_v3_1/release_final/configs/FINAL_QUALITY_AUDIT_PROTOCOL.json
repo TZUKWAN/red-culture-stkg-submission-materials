@@ -1,0 +1,65 @@
+{
+  "task": "FINAL QUALITY AUDIT — 预注册协议（冻结后不得修改）",
+  "frozen_at": "2026-09-14T01:40:52.012494+08:00",
+  "seed": 20260914,
+  "universe": "FINAL_TIERING 112,158（recovery_D 无证据不可评，排除并记录）",
+  "sample_sizes": {
+    "STRICT": 2000,
+    "CONTEXTUAL": 1000,
+    "UNRESOLVED": 1000,
+    "overlay_predicate_per_pred": 30,
+    "boundary_low": 100,
+    "boundary_high": 100,
+    "salvaged": 17
+  },
+  "actual_sample_n": 4427,
+  "actual_alloc_by_tier_stratum": {
+    "CONTEXTUAL|aligned": 400,
+    "CONTEXTUAL|mismatch_with_evidence": 100,
+    "CONTEXTUAL|recovery_A": 75,
+    "CONTEXTUAL|recovery_B": 250,
+    "CONTEXTUAL|recovery_C": 175,
+    "STRICT|aligned": 800,
+    "STRICT|mismatch_with_evidence": 54,
+    "STRICT|recovery_A": 150,
+    "STRICT|recovery_B": 500,
+    "STRICT|recovery_C": 350,
+    "UNRESOLVED|aligned": 400,
+    "UNRESOLVED|mismatch_with_evidence": 100,
+    "UNRESOLVED|recovery_A": 75,
+    "UNRESOLVED|recovery_B": 250,
+    "UNRESOLVED|recovery_C": 175
+  },
+  "judges": [
+    "gpt-oss-20b",
+    "qwen3-8b"
+  ],
+  "judge_blindness": "裁判仅见 assertion + evidence_text + 五档定义；禁止见到生产 tier/decision/confidence",
+  "labels": [
+    "FULLY_SUPPORTED",
+    "PARTIALLY_SUPPORTED",
+    "UNSUPPORTED",
+    "CONTRADICTED",
+    "INSUFFICIENT"
+  ],
+  "consensus_rules": {
+    "strong": "两裁判五档判定完全一致",
+    "weak": "两裁判在支持/不支持粗分组（{FULLY,PARTIAL} vs {UNSUPPORTED,CONTRADICTED} vs {INSUFFICIENT}）一致但五档不同",
+    "none": "粗分组都不一致"
+  },
+  "primary_metrics": [
+    "strict_support_precision（强共识口径：STRICT 样本中裁判强共识判支持 FULLY/PARTIAL 的比例）",
+    "fully_supported_precision",
+    "false_positive_rate（STRICT 被强共识判 UNSUPPORTED/CONTRADICTED）",
+    "contextual_upgrade_opportunity（CONTEXTUAL 被强共识判 FULLY）",
+    "unresolved_false_negative_opportunity（UNRESOLVED 被强共识判 FULLY/PARTIAL）",
+    "judge_raw_agreement",
+    "fleiss_kappa"
+  ],
+  "triggers": {
+    "PASS": "STRICT strong-consensus support precision >= 0.90 且 salvaged 错误 <= 2/17",
+    "INVESTIGATE_LOCAL": "precision 在 [0.80,0.90) 或单一 stratum/predicate 系统性偏差 -> 仅对该层局部重判",
+    "ESCALATE": "precision < 0.80 或 salvage 系统性错误 -> 全量 re-adjudication 评估（硬阻断，须记录）"
+  },
+  "freezing_note": "本文件与 SAMPLE_AUDIT.json 在任何 Judge 运行前生成；Judge 输出只能写入 JUDGE_*_VERDICTS.jsonl。"
+}

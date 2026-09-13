@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>长江流域中共党史时空知识图谱 · FINAL</title>
+<link rel="stylesheet" href="static/styles.css">
+<script src="static/vendor/graphology.min.js"></script>
+<script src="static/vendor/sigma.min.js"></script>
+</head>
+<body>
+<header id="topbar">
+  <div class="brand">
+    <span class="brand-mark"></span>
+    <div class="brand-text">
+      <strong>长江流域中共党史时空知识图谱</strong>
+      <span id="ver-line">FINAL RELEASE</span>
+    </div>
+  </div>
+  <div class="searchbox">
+    <input id="search" type="text" placeholder="搜索实体（人物 / 组织 / 事件 / 地点 / 文献…）" autocomplete="off">
+    <div id="search-pop" class="pop hidden"></div>
+  </div>
+  <div class="top-right">
+    <span id="db-badge" class="badge" title="数据库哈希校验状态">DB ···</span>
+    <button id="btn-verify" class="ghost-btn">验证</button>
+    <button id="btn-help" class="ghost-btn">帮助</button>
+  </div>
+</header>
+
+<div id="layout">
+  <aside id="left">
+    <section class="panel">
+      <h3>发布层</h3>
+      <label class="chk"><input type="checkbox" id="f-strict" checked> <span class="dot strict"></span>STRICT · 正式发布层</label>
+      <label class="chk"><input type="checkbox" id="f-contextual"> <span class="dot contextual"></span>CONTEXTUAL · 上下文层</label>
+      <label class="chk"><input type="checkbox" id="f-unresolved"> <span class="dot unresolved"></span>UNRESOLVED · 未决层</label>
+    </section>
+    <section class="panel">
+      <h3>实体类型</h3>
+      <div id="type-chips" class="chips"></div>
+    </section>
+    <section class="panel">
+      <h3>关系（predicate）</h3>
+      <select id="pred-select" multiple size="6"></select>
+    </section>
+    <section class="panel">
+      <h3>时间范围 <span id="year-label" class="muted"></span></h3>
+      <div class="range-row"><input id="y0" type="number"> <span>—</span> <input id="y1" type="number"></div>
+      <input id="time-slider" type="range" min="0" max="100" value="100">
+    </section>
+    <section class="panel">
+      <h3>工具</h3>
+      <div class="tool-col">
+        <button id="btn-path" class="tool-btn">最短路模式</button>
+        <button id="btn-layout" class="tool-btn">重新布局</button>
+        <button id="btn-clear" class="tool-btn">清空画布</button>
+        <button id="btn-export-png" class="tool-btn">导出 PNG</button>
+        <button id="btn-export-csv" class="tool-btn">导出 CSV</button>
+      </div>
+    </section>
+  </aside>
+
+  <main id="center">
+    <div id="graph"></div>
+    <div id="graph-empty">
+      <div class="empty-card">
+        <h2>从搜索开始探索</h2>
+        <p>搜索一个实体（如 <em>毛泽东</em>、<em>渡江战役</em>、<em>武汉</em>）点击载入其一跳关系子图；<br>
+        点击节点继续展开，点击连线查看断言与证据链。</p>
+        <p class="muted">STRICT 实线高亮 · CONTEXTUAL 半透明 · UNRESOLVED 灰阶默认隐藏</p>
+      </div>
+    </div>
+    <div id="toast" class="hidden"></div>
+  </main>
+
+  <aside id="right" class="hidden">
+    <button id="drawer-close" title="关闭">×</button>
+    <div id="drawer-body"></div>
+  </aside>
+</div>
+
+<footer id="statusbar">
+  <span id="st-nodes">节点 0</span><span id="st-edges">连线 0</span>
+  <span id="st-path" class="muted"></span>
+  <span class="spacer"></span>
+  <span id="st-hint" class="muted">单击展开 · 点击边查证据 · 滚轮缩放</span>
+</footer>
+
+<div id="help-modal" class="modal hidden">
+  <div class="modal-card">
+    <h2>使用说明</h2>
+    <ol>
+      <li>顶部搜索实体，回车或点击结果载入其一跳子图。</li>
+      <li>左栏控制发布层（STRICT/CONTEXTUAL/UNRESOLVED）、实体类型、关系与时间范围。</li>
+      <li>单击节点展开其邻居；「最短路模式」下依次点两个节点求严格层最短路径。</li>
+      <li>点击连线打开证据抽屉：断言 → 判定 → 引文 → 溯源指针，一键复制 evidence id。</li>
+      <li>时间轴按年份过滤；导出 PNG/CSV 供论文与核查使用。</li>
+    </ol>
+    <p class="muted">三层语义：STRICT=机器形成的规范化映射足够确定并通过证据语义门；CONTEXTUAL=原文信息在但映射/作用域不足以进入发布层；UNRESOLVED=当前无法形成可靠唯一映射或证据不足/冲突。三层不是史料可信度评级。</p>
+    <button id="help-close" class="tool-btn">关闭</button>
+  </div>
+</div>
+
+<script src="static/app.js"></script>
+</body>
+</html>

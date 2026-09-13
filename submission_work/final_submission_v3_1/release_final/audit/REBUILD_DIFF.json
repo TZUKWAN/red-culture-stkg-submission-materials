@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-09-14T02:59:42.026810+08:00",
+  "official_rows": 112158,
+  "rebuilt_rows": 112158,
+  "id_set_missing_in_rebuilt": [],
+  "id_set_extra_in_rebuilt": [],
+  "field_diff_counts": {},
+  "field_diff_total": 0,
+  "identical": true,
+  "diff_samples": [],
+  "tier_counts_official": {
+    "UNRESOLVED": 49809,
+    "CONTEXTUAL": 31282,
+    "STRICT": 31067
+  },
+  "tier_counts_rebuilt": {
+    "UNRESOLVED": 49809,
+    "CONTEXTUAL": 31282,
+    "STRICT": 31067
+  }
+}

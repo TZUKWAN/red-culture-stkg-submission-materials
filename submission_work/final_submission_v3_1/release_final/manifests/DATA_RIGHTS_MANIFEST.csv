@@ -1,0 +1,11 @@
+data_item,path_or_scope,category,redistribution,notes
+源文献全文（983 册）,不入包,private-source,禁止,"版权限制；仅派生断言与页码指针入包"
+证据原文片段（evidence_text，完整拼接）,checkpoint 原始件,derived-only,仅本地保留,"gzip 归档含完整拼接证据文本，公开版需评估引文边界"
+证据引文（evidence_quote ≤400 字）,FINAL_TIERING_CHECKPOINT.jsonl.gz / gate_verdict_details,derived-only,可公开,"短引文，学术引用范畴，带 evidence_id 可回溯"
+规范化断言（subject-predicate-object）,FINAL_TIERING.csv / research_assertions,derived-only,可公开,"机器抽取的规范化三元组"
+最终分层结果,evidence_gate_tier / FINAL_TIERING.csv,derived-only,可公开,"逐条 MEASURED"
+生产代码,code/,public,可公开,"Apache-2.0（建议）"
+冻结 prompt 与 policy,configs/,public,可公开,"含 SHA256"
+审计与 manifest,manifests/ audit/ reports/,public,可公开,"全部机器生成"
+图谱浏览器与 EXE,app/ YangtzeSTKG-Reproduce.exe,public,可公开,"纯标准库后端"
+最终数据库,data/red_culture_stkg_final.sqlite,derived-only,可公开（合法可公开版）,"仅含派生断言+短引文+页码指针，不含全文"

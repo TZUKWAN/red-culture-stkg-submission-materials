@@ -1,0 +1,13 @@
+[judge:gpt-oss-20b] total=4427 done=444 todo=3983
+[judge:gpt-oss-20b] total=4427 done=563 todo=3864
+[judge:gpt-oss-20b] 200/3864 ok=200 bad=0 0.46 it/s ETA 133 min
+[judge:gpt-oss-20b] total=4427 done=951 todo=3476
+[judge:gpt-oss-20b] 200/3476 ok=200 bad=0 0.51 it/s ETA 107 min
+[judge:gpt-oss-20b] total=4427 done=1239 todo=3188
+[judge:gpt-oss-20b] total=4427 done=1309 todo=3118
+[judge:gpt-oss-20b] total=4427 done=1346 todo=3081
+[judge:gpt-oss-20b] 200/3081 ok=200 bad=0 0.52 it/s ETA 92 min
+[judge:gpt-oss-20b] total=4427 done=1633 todo=2794
+[judge:gpt-oss-20b] 200/2794 ok=200 bad=0 0.48 it/s ETA 90 min
+[judge:gpt-oss-20b] 400/2794 ok=400 bad=0 0.46 it/s ETA 88 min
+[judge:gpt-oss-20b] 600/2794 ok=600 bad=0 0.46 it/s ETA 80 min

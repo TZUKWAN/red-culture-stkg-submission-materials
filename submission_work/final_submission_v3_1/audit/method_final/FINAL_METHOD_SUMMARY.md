@@ -46,7 +46,8 @@ STRICT / CONTEXTUAL / UNRESOLVED → EventFrame → CultureState → Evolution
 P0-A/B/C 三个实现错误修复（回归测试 4+11 项）；新增 Risk Estimator + 三路路由 +
 质量预算曲线；选择性闭包（替代固定改写）；证据恢复管线（96.6% 恢复率）+ 证据语义门
 （分层验证运行中）；预测器嵌入路线（VAL macro-F1 +9.7pt）；STKG 七项身份审计与
-U1-U10 升级规格；LM Studio 生产链（gpt-oss-20b，零公网依赖）。
+U1-U10 升级规格；LM Studio 生产链（历史/DEV 实验 gpt-oss-20b；**最终全量证据门
+qwen3.5-4b**，2026-09-13 完成 112,158/112,158，零公网依赖）。
 
 ## 四、最终核心实验结果（entity_type，IMCR strong 参考）
 

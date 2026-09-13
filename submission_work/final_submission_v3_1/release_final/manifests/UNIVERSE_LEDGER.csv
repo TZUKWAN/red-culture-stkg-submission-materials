@@ -1,0 +1,23 @@
+﻿universe_name,definition,count,source_db_sha256,sql
+all_entities,全部规范化实体（research_entities）,152979,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM research_entities
+all_assertions,全库断言宇宙（research_assertions）,424150,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM research_assertions
+all_provenance,断言溯源行（research_assertion_provenance）,466312,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM research_assertion_provenance
+gate_universe_old_strict,旧 strict 重分层宇宙（evidence_gate_tier = FINAL_TIERING 覆盖）,112158,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM evidence_gate_tier
+event_frames,EventFrame 主表,28065,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM research_event_frames
+culture_states,CultureState 主表,11532,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM research_culture_states
+place_versions,PlaceVersion 主表,72,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM research_place_versions
+event_relations,事件关系（research_event_relations）,499,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM research_event_relations
+place_relations,地点关系（research_place_relations）,382,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM research_place_relations
+assertion_temporal_pairs,断言时序关系对,5636370,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM assertion_temporal_relations
+assertions_outside_gate_universe,全库断言中不在旧 strict 重分层宇宙的部分（旧 contextual/unresolved 候选宇宙）,311992,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM research_assertions WHERE fact_id NOT IN (SELECT fact_id FROM evidence_gate_tier)
+assertions_by_risk_tier,research_assertions.risk_tier 分组计数,"{""A"": 295097, ""B"": 85107, ""C"": 43886, ""D"": 60}",12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,"SELECT risk_tier, COUNT(*) FROM research_assertions GROUP BY risk_tier"
+assertions_by_research_tier,research_assertions.research_tier 分组计数,"{""contextual"": 369188, ""strict_semantic"": 2063, ""unresolved"": 52899}",12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,"SELECT research_tier, COUNT(*) FROM research_assertions GROUP BY research_tier"
+final_strict,最终三层 STRICT（evidence_gate_tier.final_tier）,2063,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM evidence_gate_tier WHERE final_tier='STRICT'
+final_contextual,最终三层 CONTEXTUAL（evidence_gate_tier.final_tier）,101141,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM evidence_gate_tier WHERE final_tier='CONTEXTUAL'
+final_unresolved,最终三层 UNRESOLVED（evidence_gate_tier.final_tier）,8954,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM evidence_gate_tier WHERE final_tier='UNRESOLVED'
+gate_measured_rule,gate_method=rule 确定性判定,0,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM evidence_gate_tier WHERE gate_method='rule'
+gate_measured_llm,gate_method=llm 语义判定,0,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM evidence_gate_tier WHERE gate_method='llm'
+gate_none_hold,gate_method=none 持留（目标=0）,0,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM evidence_gate_tier WHERE gate_method='none'
+view_v_research_strict_assertions,发布视图 v_research_strict_assertions 行数,2063,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM v_research_strict_assertions
+view_v_research_contextual_assertions,发布视图 v_research_contextual_assertions 行数,369188,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM v_research_contextual_assertions
+view_v_research_unresolved_assertions,发布视图 v_research_unresolved_assertions 行数,52899,12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023,SELECT COUNT(*) FROM v_research_unresolved_assertions

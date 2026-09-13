@@ -1,0 +1,123 @@
+{
+  "task": "PHASE 0 baseline snapshot (read-only audit anchor)",
+  "generated_at": "2026-09-14T01:30:36.129693+08:00",
+  "git": {
+    "head": "e1dd933b94c50e11f438435a6770e39237de1053 final_tiering: full-library MEASURED complete — 112,158/112,158, pending_hold 0",
+    "branch": "main",
+    "status_short": "M submission_work/final_submission_v3_1/experiments/07_provenance_semantic_gate/FINAL_TIERING_WATCHDOG_STDOUT.log\n?? submission_work/final_submission_v3_1/release_final/"
+  },
+  "env": {
+    "python": "3.13.2 | packaged by conda-forge | (main, Feb 17 2025, 13:52:56) [MSC v.1942 64 bit (AMD64)]",
+    "os": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64"
+  },
+  "files": {
+    "final_tiering_csv": {
+      "path": "submission_work\\final_submission_v3_1\\experiments\\07_provenance_semantic_gate\\FINAL_TIERING.csv",
+      "sha256": "a9b1a60f64531f788b1eae5451f923937c1bf5df1d36acf4d4acb52fd13aff97",
+      "sha256_recheck": "a9b1a60f64531f788b1eae5451f923937c1bf5df1d36acf4d4acb52fd13aff97",
+      "match": true,
+      "bytes": 9074768
+    },
+    "final_tiering_summary": {
+      "path": "submission_work\\final_submission_v3_1\\experiments\\07_provenance_semantic_gate\\FINAL_TIERING_SUMMARY.json",
+      "sha256": "4629e75553d0c517cf0a0348cb4c6e9e131ebca3b0b026c182fb30a28c74113e",
+      "sha256_recheck": "4629e75553d0c517cf0a0348cb4c6e9e131ebca3b0b026c182fb30a28c74113e",
+      "match": true,
+      "bytes": 13204
+    },
+    "final_tiering_checkpoint_gz": {
+      "path": "submission_work\\final_submission_v3_1\\experiments\\07_provenance_semantic_gate\\FINAL_TIERING_CHECKPOINT.jsonl.gz",
+      "sha256": "9fda91cabae18cbdb52c0d26cd15facf857dc3cb0b92b62d4733c12e452a2403",
+      "sha256_recheck": "9fda91cabae18cbdb52c0d26cd15facf857dc3cb0b92b62d4733c12e452a2403",
+      "match": true,
+      "bytes": 46133023
+    },
+    "final_tiering_policy": {
+      "path": "submission_work\\final_submission_v3_1\\experiments\\07_provenance_semantic_gate\\FINAL_TIERING_POLICY.json",
+      "sha256": "46ed19fc820c54f73018ddd020bea2d5ebbd19578c1fc1f38f59232eda297257",
+      "sha256_recheck": "46ed19fc820c54f73018ddd020bea2d5ebbd19578c1fc1f38f59232eda297257",
+      "match": true,
+      "bytes": 17846
+    },
+    "final_tiering_rules": {
+      "path": "submission_work\\final_submission_v3_1\\experiments\\07_provenance_semantic_gate\\FINAL_TIERING_RULES.json",
+      "sha256": "3453c0eaf5a13d84dfb121ff9b69b6a3b8a65f537d0b0743750775a05fe90dd8",
+      "sha256_recheck": "3453c0eaf5a13d84dfb121ff9b69b6a3b8a65f537d0b0743750775a05fe90dd8",
+      "match": true,
+      "bytes": 7134
+    },
+    "final_tiering_features": {
+      "path": "submission_work\\final_submission_v3_1\\experiments\\07_provenance_semantic_gate\\FINAL_TIERING_FEATURES.csv",
+      "sha256": "4afdf0cb80b20e97408b6337062a98318914d7102e7ee3128d3efead645c30e5",
+      "sha256_recheck": "4afdf0cb80b20e97408b6337062a98318914d7102e7ee3128d3efead645c30e5",
+      "match": true,
+      "bytes": 10356676
+    },
+    "final_tiering_features_meta": {
+      "path": "submission_work\\final_submission_v3_1\\experiments\\07_provenance_semantic_gate\\FINAL_TIERING_FEATURES_META.json",
+      "sha256": "c39eba5336c0f097ffd22e42d13ab461f5e1a778af9cfdf109f83436275c9477",
+      "sha256_recheck": "c39eba5336c0f097ffd22e42d13ab461f5e1a778af9cfdf109f83436275c9477",
+      "match": true,
+      "bytes": 5296
+    },
+    "evidence_gate_verdicts": {
+      "path": "submission_work\\final_submission_v3_1\\experiments\\07_provenance_semantic_gate\\EVIDENCE_GATE_VERDICTS.jsonl",
+      "sha256": "14ec4ab8c819112531840ac53cd2c853fdb5b6f24fde06fb4b9de1142ba1f21b",
+      "sha256_recheck": "14ec4ab8c819112531840ac53cd2c853fdb5b6f24fde06fb4b9de1142ba1f21b",
+      "match": true,
+      "bytes": 6954651
+    },
+    "evidence_gate_checkpoint": {
+      "path": "submission_work\\final_submission_v3_1\\experiments\\07_provenance_semantic_gate\\EVIDENCE_GATE_CHECKPOINT.jsonl",
+      "sha256": "39a7c50e1c2d5843431f011938b5132960553bffbb12a4fc01a265a6f5b84bb1",
+      "sha256_recheck": "39a7c50e1c2d5843431f011938b5132960553bffbb12a4fc01a265a6f5b84bb1",
+      "match": true,
+      "bytes": 7025969
+    },
+    "final_evidence_report": {
+      "path": "submission_work\\final_submission_v3_1\\audit\\method_final\\FINAL_EVIDENCE_REPORT.md",
+      "sha256": "43ebd98c2999880a3bc4637ff0edc90be4d7281e0e0e959d6f5252f563d3d7eb",
+      "sha256_recheck": "43ebd98c2999880a3bc4637ff0edc90be4d7281e0e0e959d6f5252f563d3d7eb",
+      "match": true,
+      "bytes": 6395
+    },
+    "provider": {
+      "path": "submission_work\\final_submission_v3_1\\code\\independent_eval\\lmstudio_provider.py",
+      "sha256": "ede8f4f4e1789536386c30e240535c19c8c75999db2e44dfb6ed7c209a3dd67c",
+      "sha256_recheck": "ede8f4f4e1789536386c30e240535c19c8c75999db2e44dfb6ed7c209a3dd67c",
+      "match": true,
+      "bytes": 10250
+    },
+    "build_final_tiering": {
+      "path": "submission_work\\final_submission_v3_1\\code\\experiment_pipelines\\build_final_tiering.py",
+      "sha256": "bf3d04817aa9f12369961fd2ad7eb307828e3e0eb54875517bed12593115d340",
+      "sha256_recheck": "bf3d04817aa9f12369961fd2ad7eb307828e3e0eb54875517bed12593115d340",
+      "match": true,
+      "bytes": 61745
+    },
+    "semantic_gate": {
+      "path": "submission_work\\final_submission_v3_1\\code\\experiment_pipelines\\run_evidence_semantic_gate.py",
+      "sha256": "d47acafb2f6c4e1d5a3f169ddd289fb3e18ee7dc4fed3f087b450673d78411e4",
+      "sha256_recheck": "d47acafb2f6c4e1d5a3f169ddd289fb3e18ee7dc4fed3f087b450673d78411e4",
+      "match": true,
+      "bytes": 47487
+    }
+  },
+  "candidate_databases": [
+    {
+      "path": "submission_work\\final_submission_v3_1\\data\\repaired_release\\red_culture_stkg_final_v3_1.sqlite",
+      "sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023",
+      "sha256_recheck": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023",
+      "bytes": 3157905408
+    },
+    {
+      "path": "submission_work\\final_submission_v3_1\\data\\final_stkg_v3_1.sqlite",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_recheck": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "missing_files": [],
+  "all_hashes_consistent": true
+}

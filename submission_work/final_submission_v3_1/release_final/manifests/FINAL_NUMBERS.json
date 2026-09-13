@@ -1,0 +1,303 @@
+{
+  "generated_at": "2026-09-14T02:24:09.516313+08:00",
+  "final_db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a",
+  "metrics": [
+    {
+      "metric": "total_entities",
+      "value": 152979,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "规范化实体总数",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_entities",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "total_assertions",
+      "value": 424150,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "全库断言总数（完整 424k 宇宙）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_assertions",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "gate_universe_old_strict",
+      "value": 112158,
+      "unit": "count",
+      "universe": "old_strict_universe",
+      "definition": "旧 strict 重分层宇宙（本轮证据语义门的定义域，112,158，不是全库）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM evidence_gate_tier",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "assertions_outside_gate_universe",
+      "value": 311992,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "全库中断言不在证据门宇宙的部分（保留历史口径）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_assertions WHERE fact_id NOT IN (SELECT fact_id FROM evidence_gate_tier)",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "gate_strict",
+      "value": 31067,
+      "unit": "count",
+      "universe": "old_strict_universe",
+      "definition": "证据门最终 STRICT（MEASURED，gate 宇宙 112,158 内）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM evidence_gate_tier WHERE final_tier='STRICT'",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "gate_contextual",
+      "value": 31282,
+      "unit": "count",
+      "universe": "old_strict_universe",
+      "definition": "证据门最终 CONTEXTUAL（MEASURED，gate 宇宙 112,158 内）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM evidence_gate_tier WHERE final_tier='CONTEXTUAL'",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "gate_unresolved",
+      "value": 49809,
+      "unit": "count",
+      "universe": "old_strict_universe",
+      "definition": "证据门最终 UNRESOLVED（MEASURED，gate 宇宙 112,158 内）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM evidence_gate_tier WHERE final_tier='UNRESOLVED'",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "full_db_strict_semantic",
+      "value": 31067,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "全库 research_tier=strict_semantic（论文全库口径）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_assertions WHERE research_tier='strict_semantic'",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "full_db_contextual",
+      "value": 299329,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "全库 research_tier=contextual（论文全库口径）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_assertions WHERE research_tier='contextual'",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "full_db_unresolved",
+      "value": 93754,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "全库 research_tier=unresolved（论文全库口径）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_assertions WHERE research_tier='unresolved'",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "event_frames",
+      "value": 28065,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "EventFrame 总数",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_event_frames",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "culture_states",
+      "value": 11532,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "CultureState 总数",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_culture_states",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "place_versions",
+      "value": 72,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "PlaceVersion 总数",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_place_versions",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "event_relations",
+      "value": 499,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "事件关系数",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_event_relations",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "place_relations",
+      "value": 382,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "地点关系数",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_place_relations",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "assertion_temporal_pairs",
+      "value": 5636370,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "断言时序关系对",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM assertion_temporal_relations",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "event_frame_strict_backbone",
+      "value": 8017,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "EventFrame 关联 strict 断言骨架（实测 tiers 刷新后）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT SUM(strict_assertion_count) FROM research_event_frames",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "A_lineage",
+      "value": 0.4472,
+      "unit": "rate",
+      "universe": "old_strict_universe",
+      "definition": "A_lineage_completeness（三概念分离，全库确定数）",
+      "source": "FINAL_TIERING_SUMMARY.json",
+      "sql_or_script": "FINAL_TIERING_SUMMARY.json.three_concepts.A_lineage_completeness.rate",
+      "status": "DERIVED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "B_localization",
+      "value": 0.9812,
+      "unit": "rate",
+      "universe": "old_strict_universe",
+      "definition": "B_evidence_localization_rate（三概念分离，全库确定数）",
+      "source": "FINAL_TIERING_SUMMARY.json",
+      "sql_or_script": "FINAL_TIERING_SUMMARY.json.three_concepts.B_evidence_localization_rate.rate",
+      "status": "DERIVED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "C_semantic_support",
+      "value": 0.2823,
+      "unit": "rate",
+      "universe": "old_strict_universe",
+      "definition": "C_semantic_support_rate_measured（三概念分离，全库确定数）",
+      "source": "FINAL_TIERING_SUMMARY.json",
+      "sql_or_script": "FINAL_TIERING_SUMMARY.json.three_concepts.C_semantic_support_rate_measured.rate",
+      "status": "DERIVED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "checkpoint_records",
+      "value": 127633,
+      "unit": "count",
+      "universe": "audit",
+      "definition": "最终判定 checkpoint 记录数（gzip 归档）",
+      "source": "CHECKPOINT_INTEGRITY_REPORT.json",
+      "sql_or_script": "stream parse FINAL_TIERING_CHECKPOINT.jsonl.gz",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "checkpoint_malformed_json",
+      "value": 0,
+      "unit": "count",
+      "universe": "audit",
+      "definition": "checkpoint 畸形 JSON 行数（目标 0）",
+      "source": "CHECKPOINT_INTEGRITY_REPORT.json",
+      "sql_or_script": "stream parse",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "checkpoint_salvaged_records",
+      "value": 17,
+      "unit": "count",
+      "universe": "audit",
+      "definition": "兜底解析救回的判定数（逐条带 salvaged 审计标志）",
+      "source": "CHECKPOINT_INTEGRITY_REPORT.json",
+      "sql_or_script": "stream parse",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "replay_field_diffs",
+      "value": 0,
+      "unit": "count",
+      "universe": "audit",
+      "definition": "Level-A 离线重放与 FINAL_TIERING.csv 字段差异数（目标 0）",
+      "source": "REBUILD_DIFF.json",
+      "sql_or_script": "release_final/audit/replay_final_tiering.py",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "final_db_hard_violations",
+      "value": 0,
+      "unit": "count",
+      "universe": "audit",
+      "definition": "最终库硬结构违规数（目标 0）",
+      "source": "FINAL_DB_MANIFEST.json",
+      "sql_or_script": "release_final/code/build_final_db.py",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "final_db_sha256",
+      "value": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a",
+      "unit": "hash",
+      "universe": "audit",
+      "definition": "最终数据库 SHA256",
+      "source": "FINAL_DB_MANIFEST.json",
+      "sql_or_script": "sha256sum",
+      "status": "DERIVED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    {
+      "metric": "production_gate_model",
+      "value": "qwen3.5-4b",
+      "unit": "model_id",
+      "universe": "audit",
+      "definition": "最终全量证据门生产模型（reasoning=off，温度 0）",
+      "source": "FINAL_TIERING_POLICY.json / checkpoint",
+      "sql_or_script": "-",
+      "status": "DERIVED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    }
+  ]
+}

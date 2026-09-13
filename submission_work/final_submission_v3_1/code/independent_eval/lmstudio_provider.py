@@ -30,6 +30,10 @@ DEFAULT_FALLBACK = os.environ.get("LMSTUDIO_MODEL_FALLBACK", "")
 DEFAULT_EMBED = os.environ.get("LMSTUDIO_EMBED_MODEL", "text-embedding-nomic-embed-text-v1.5")
 API_KEY = os.environ.get("LMSTUDIO_API_KEY", "lm-studio")
 
+# 这些模型必须走 LM Studio 原生 /api/v1/chat 并显式 reasoning="off"
+# （兼容端点无法关闭其思考通道）。生产 gate 与独立裁判统一此规约。
+REASONING_OFF_NATIVE = {"qwen3.5-4b", "qwen/qwen3-8b"}
+
 
 class LMStudioError(RuntimeError):
     pass
@@ -55,7 +59,7 @@ def chat(messages: list[dict[str, str]], model: str = DEFAULT_MODEL, *,
         if attempt >= retries and DEFAULT_FALLBACK and model != DEFAULT_FALLBACK:
             use_model = DEFAULT_FALLBACK
         try:
-            if use_model == "qwen3.5-4b":
+            if use_model in REASONING_OFF_NATIVE:
                 # LM Studio 原生接口才支持 qwen3.5 的 reasoning="off"。
                 # 将 system/user 消息保持顺序拼接，禁止模型进入思考通道。
                 prompt = "\n\n".join(

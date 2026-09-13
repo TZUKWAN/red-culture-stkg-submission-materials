@@ -1,6 +1,6 @@
 # FINAL EVIDENCE REPORT — 全库逐条 MEASURED 重分层（三概念分离）
 
-- 生成时间：2026-09-14T00:08:38+08:00｜方法版本：`final-tiering-v1`（全自动、无人工、seed 写死、checkpoint 可复现）
+- 生成时间：2026-09-14T01:49:10+08:00｜方法版本：`final-tiering-v1`（全自动、无人工、seed 写死、checkpoint 可复现）
 - 模型：`qwen3.5-4b`（LM Studio 本地，temperature=0，`lmstudio_provider.chat_json`，workers≤6）
 - 冻结 policy：`FINAL_TIERING_POLICY.json`（先冻结成 JSON 再应用；LLM prompt/证据组装 = `run_evidence_semantic_gate.py` 同款）
 - 重分层对象：112,158 条 strict 断言（STRICT_ALIGNMENT 全量，数据库只读，不建新库）
@@ -38,7 +38,7 @@ B ≠ C：可定位 ≠ 支持——recovery_C 层（40,345 条）定位成功�
 | recovery_D | 2,106 | 2,106 | 0 | 100.0% |
 
 按 gate_method：rule（确定性快路径 + 安全规则）= {"UNRESOLVED": 2106}；
-llm（gpt-oss-20b 五档判定）= {"UNRESOLVED": 47703, "CONTEXTUAL": 31282, "STRICT": 31067}。
+llm（qwen3.5-4b 五档判定）= {"UNRESOLVED": 47703, "CONTEXTUAL": 31282, "STRICT": 31067}。
 
 LLM 五档合并分布（DEV 5,000 + 本队列 checkpoint 105,081 条）：
 {"UNSUPPORTED": 47576, "INSUFFICIENT": 3578, "FULLY_SUPPORTED": 23257, "PARTIALLY_SUPPORTED": 35514, "CONTRADICTED": 127}
@@ -77,7 +77,7 @@ FULL 占比 ≥70% 的 predicate，PARTIAL 判定可入 STRICT，否则 CONTEXTU
 
 ## 6. 局限性
 
-1. 单一本地判定模型（gpt-oss-20b，temperature=0），PARTIAL/UNSUPPORTED 边界存在模型主观性（同上游 gate）。
+1. 单一本地判定模型（qwen3.5-4b，temperature=0），PARTIAL/UNSUPPORTED 边界存在模型主观性（同上游 gate）。
 2. 证据拼接 ≤800 字/3 条，超长尾部截断，可能低估 FULLY_SUPPORTED。
 3. 队列未清空时，MEASURED 为已完成口径的确定数（非估计）；未测行保守持留 CONTEXTUAL，
    不外推补齐；持留清单由 `gate_method=none` 精确给定，续跑后重放 finalize 即可更新。

@@ -10,7 +10,9 @@
               支持率 ≥95% 且 Wilson 下界 ≥90% 的确定性特征组合才可"免 LLM 直接判定"
     policy    冻结 FINAL_TIERING_POLICY.json（predicate PARTIAL 表 + 安全规则 + §5.3 映射）
     queue     LLM 队列（prompt/证据组装/五档判定 = run_evidence_semantic_gate.py 同款，
-              gpt-oss-20b 本地，workers≤6，checkpoint 每 500 条，断点续跑）；
+              生产模型 = lmstudio_provider.DEFAULT_MODEL（最终口径 qwen3.5-4b，
+              reasoning=off；DEV 阶段历史判定 gpt-oss-20b 已按模型过滤），
+              workers≤6，checkpoint 每 500 条，断点续跑）；
               优先级：mismatch 全量 → recovery_B 全量 → recovery_A 全量 →
                       aligned 固定 seed 抽样补验 → aligned 余量 → recovery_C
     finalize  逐条落 FINAL_TIERING.csv（112,158 行）+ FINAL_TIERING_SUMMARY.json
@@ -898,7 +900,7 @@ B ≠ C：可定位 ≠ 支持——recovery_C 层（40,345 条）定位成功�
         lines += f"| {st} | {n:,} | {done:,} | {strict:,} | {done / n:.1%} |\n"
     lines += f"""
 按 gate_method：rule（确定性快路径 + 安全规则）= {json.dumps(m['by_gate_method'].get('rule', {}), ensure_ascii=False)}；
-llm（gpt-oss-20b 五档判定）= {json.dumps(m['by_gate_method'].get('llm', {}), ensure_ascii=False)}。
+llm（{DEFAULT_MODEL} 五档判定）= {json.dumps(m['by_gate_method'].get('llm', {}), ensure_ascii=False)}。
 
 LLM 五档合并分布（DEV 5,000 + 本队列 checkpoint {llm['n_records_queue_checkpoint']:,} 条）：
 {json.dumps(llm['decision_distribution'], ensure_ascii=False)}
@@ -948,7 +950,7 @@ FULL 占比 ≥{PRED_FULL_SHARE_MIN:.0%} 的 predicate，PARTIAL 判定可入 ST
     lines += """
 ## 6. 局限性
 
-1. 单一本地判定模型（gpt-oss-20b，temperature=0），PARTIAL/UNSUPPORTED 边界存在模型主观性（同上游 gate）。
+1. 单一本地判定模型（{dm}，temperature=0），PARTIAL/UNSUPPORTED 边界存在模型主观性（同上游 gate）。
 2. 证据拼接 ≤800 字/3 条，超长尾部截断，可能低估 FULLY_SUPPORTED。
 3. 队列未清空时，MEASURED 为已完成口径的确定数（非估计）；未测行保守持留 CONTEXTUAL，
    不外推补齐；持留清单由 `gate_method=none` 精确给定，续跑后重放 finalize 即可更新。
@@ -963,7 +965,7 @@ FULL 占比 ≥{PRED_FULL_SHARE_MIN:.0%} 的 predicate，PARTIAL 判定可入 ST
 - 重放路径：`features → learn → policy → queue(可断点续跑) → finalize`；
 - LLM 队列判定输入/输出逐条落盘（assertion / evidence_text / decision / confidence /
   evidence_quote / explanation / latency），可第三方逐步复查。
-""".format(sr=SEED_RULES, sa=SEED_ALIGN_SAMPLE)
+""".format(sr=SEED_RULES, sa=SEED_ALIGN_SAMPLE, dm=DEFAULT_MODEL)
     return lines
 
 

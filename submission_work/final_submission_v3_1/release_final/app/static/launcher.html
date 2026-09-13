@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>YangtzeSTKG · 启动器</title>
+<link rel="stylesheet" href="static/styles.css">
+<style>
+  body { align-items: center; justify-content: center; display: flex; }
+  .launcher { width: min(880px, 94vw); }
+  h1 { font-size: 22px; color: var(--gold); margin-bottom: 6px; letter-spacing: 1px; }
+  .sub { color: var(--txt-1); font-size: 13px; margin-bottom: 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .card { background: var(--glass); border: 1px solid var(--glass-border); border-radius: 14px;
+          padding: 20px 22px; cursor: pointer; transition: border-color .15s; }
+  .card:hover { border-color: rgba(201,168,106,.6); }
+  .card h3 { color: var(--teal); font-size: 15px; margin-bottom: 8px; }
+  .card p { color: var(--txt-1); font-size: 12.5px; line-height: 1.8; }
+  #out { margin-top: 18px; background: rgba(9,13,24,.7); border: 1px solid var(--glass-border);
+         border-radius: 10px; padding: 12px 14px; font-family: Consolas, monospace;
+         font-size: 12px; color: #b6c3da; max-height: 260px; overflow: auto; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<div class="launcher">
+  <h1>长江流域中共党史时空知识图谱 · FINAL</h1>
+  <div class="sub">审稿人模式：不需要 Python / Neo4j / 终端。全部数据本地，无网络依赖。</div>
+  <div class="grid">
+    <div class="card" onclick="doVerify()"><h3>A · 验证发布包</h3>
+      <p>校验最终数据库 SHA256 与 FINAL_NUMBERS 记录是否一致；检查库完整性。</p></div>
+    <div class="card" onclick="doReplay()"><h3>B · 一键复现论文结果</h3>
+      <p>Level-A 离线回放：checkpoint 完整性 → 独立重放 FINAL_TIERING 逐行对账 →
+      数据库哈希闭环 → 硬结构审计。全程不调用 LLM、不联网。</p></div>
+    <div class="card" onclick="location.href='/'"><h3>D · 浏览知识图谱</h3>
+      <p>打开交互式图谱浏览器：搜索、渐进展开、三层筛选、时间轴、证据链、最短路、导出。</p></div>
+    <div class="card" onclick="showReports()"><h3>E · 查看论文数据与审计</h3>
+      <p>FINAL_NUMBERS（论文数字唯一权威源）、UNIVERSE_LEDGER、审计报告、方法文档。</p></div>
+  </div>
+  <div id="out">就绪。</div>
+</div>
+<script>
+const out = document.getElementById('out');
+function log(s) { out.textContent += '\n' + s; out.scrollTop = out.scrollHeight; }
+async function doVerify() {
+  out.textContent = '校验数据库哈希（3.2GB，约 5-10 秒）…';
+  const r = await fetch('/api/verify').then(x => x.json());
+  log('recorded = ' + r.recorded_sha256);
+  log('actual   = ' + r.actual_sha256);
+  log(r.match ? 'RESULT: PASS — 数据库与发布记录一致' : 'RESULT: FAIL — 哈希不一致，数据可能被改动');
+}
+async function doReplay() {
+  out.textContent = 'Level-A 离线回放运行中（约 10-60 秒，勿关闭）…';
+  const r = await fetch('/api/replay').then(x => x.json());
+  (r.steps || []).forEach(s => log(`[${s.pass ? 'PASS' : 'FAIL'}] ${s.step}: ${s.detail}`));
+  log(r.all_pass ? 'RESULT: PASS — 论文结果可离线复现' : ('RESULT: FAIL' + (r.error ? ' — ' + r.error : '')));
+}
+async function showReports() {
+  const r = await fetch('/api/reports').then(x => x.json());
+  out.textContent = '可查看的产物（static 相对路径）：\n' +
+    r.files.map(f => `${f.path}  (${(f.bytes/1024).toFixed(1)} KB)`).join('\n') +
+    '\n\n直接浏览：/static/../manifests/FINAL_NUMBERS.json 等路径。';
+}
+</script>
+</body>
+</html>

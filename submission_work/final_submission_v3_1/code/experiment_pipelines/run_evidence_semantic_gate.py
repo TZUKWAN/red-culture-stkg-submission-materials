@@ -2,7 +2,9 @@
 """run_evidence_semantic_gate.py — P0-9 Evidence Semantic Gate 分层语义验证（指令 §13）。
 
 对词法对齐（STRICT_ALIGNMENT）与证据恢复（EVIDENCE_RECOVERY）产出的五个层，
-按写死 seed 确定性抽样后，用本地 LM Studio（gpt-oss-20b，lmstudio_provider.chat_json）
+按写死 seed 确定性抽样后，用本地 LM Studio（lmstudio_provider.chat_json；
+DEV 阶段模型为 gpt-oss-20b，最终生产口径为 qwen3.5-4b，二者在 checkpoint 中以
+model 字段严格区分、互不混入）
 逐条做五档语义支持判定：
 
     FULLY_SUPPORTED / PARTIALLY_SUPPORTED / UNSUPPORTED / CONTRADICTED / INSUFFICIENT

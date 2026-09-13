@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-09-14T01:37:45.009741+08:00",
+  "source_db": "submission_work\\final_submission_v3_1\\data\\repaired_release\\red_culture_stkg_final_v3_1.sqlite",
+  "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023",
+  "source_db_bytes": 3157905408,
+  "cross_check_gate_tier_vs_csv": {
+    "db_gate_tier_rows": 112158,
+    "csv_rows": 112158,
+    "id_set_diff": 0,
+    "field_mismatches": 112158,
+    "identical": false
+  },
+  "entries": [
+    {
+      "universe_name": "all_entities",
+      "definition": "全部规范化实体（research_entities）",
+      "sql": "SELECT COUNT(*) FROM research_entities",
+      "count": 152979,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "all_assertions",
+      "definition": "全库断言宇宙（research_assertions）",
+      "sql": "SELECT COUNT(*) FROM research_assertions",
+      "count": 424150,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "all_provenance",
+      "definition": "断言溯源行（research_assertion_provenance）",
+      "sql": "SELECT COUNT(*) FROM research_assertion_provenance",
+      "count": 466312,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "gate_universe_old_strict",
+      "definition": "旧 strict 重分层宇宙（evidence_gate_tier = FINAL_TIERING 覆盖）",
+      "sql": "SELECT COUNT(*) FROM evidence_gate_tier",
+      "count": 112158,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "event_frames",
+      "definition": "EventFrame 主表",
+      "sql": "SELECT COUNT(*) FROM research_event_frames",
+      "count": 28065,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "culture_states",
+      "definition": "CultureState 主表",
+      "sql": "SELECT COUNT(*) FROM research_culture_states",
+      "count": 11532,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "place_versions",
+      "definition": "PlaceVersion 主表",
+      "sql": "SELECT COUNT(*) FROM research_place_versions",
+      "count": 72,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "event_relations",
+      "definition": "事件关系（research_event_relations）",
+      "sql": "SELECT COUNT(*) FROM research_event_relations",
+      "count": 499,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "place_relations",
+      "definition": "地点关系（research_place_relations）",
+      "sql": "SELECT COUNT(*) FROM research_place_relations",
+      "count": 382,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "assertion_temporal_pairs",
+      "definition": "断言时序关系对",
+      "sql": "SELECT COUNT(*) FROM assertion_temporal_relations",
+      "count": 5636370,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "assertions_outside_gate_universe",
+      "definition": "全库断言中不在旧 strict 重分层宇宙的部分（旧 contextual/unresolved 候选宇宙）",
+      "sql": "SELECT COUNT(*) FROM research_assertions WHERE fact_id NOT IN (SELECT fact_id FROM evidence_gate_tier)",
+      "count": 311992,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "assertions_by_risk_tier",
+      "definition": "research_assertions.risk_tier 分组计数",
+      "sql": "SELECT risk_tier, COUNT(*) FROM research_assertions GROUP BY risk_tier",
+      "count": {
+        "A": 295097,
+        "B": 85107,
+        "C": 43886,
+        "D": 60
+      },
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "assertions_by_research_tier",
+      "definition": "research_assertions.research_tier 分组计数",
+      "sql": "SELECT research_tier, COUNT(*) FROM research_assertions GROUP BY research_tier",
+      "count": {
+        "contextual": 369188,
+        "strict_semantic": 2063,
+        "unresolved": 52899
+      },
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "final_strict",
+      "definition": "最终三层 STRICT（evidence_gate_tier.final_tier）",
+      "sql": "SELECT COUNT(*) FROM evidence_gate_tier WHERE final_tier='STRICT'",
+      "count": 2063,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "final_contextual",
+      "definition": "最终三层 CONTEXTUAL（evidence_gate_tier.final_tier）",
+      "sql": "SELECT COUNT(*) FROM evidence_gate_tier WHERE final_tier='CONTEXTUAL'",
+      "count": 101141,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "final_unresolved",
+      "definition": "最终三层 UNRESOLVED（evidence_gate_tier.final_tier）",
+      "sql": "SELECT COUNT(*) FROM evidence_gate_tier WHERE final_tier='UNRESOLVED'",
+      "count": 8954,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "gate_measured_rule",
+      "definition": "gate_method=rule 确定性判定",
+      "sql": "SELECT COUNT(*) FROM evidence_gate_tier WHERE gate_method='rule'",
+      "count": 0,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "gate_measured_llm",
+      "definition": "gate_method=llm 语义判定",
+      "sql": "SELECT COUNT(*) FROM evidence_gate_tier WHERE gate_method='llm'",
+      "count": 0,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "gate_none_hold",
+      "definition": "gate_method=none 持留（目标=0）",
+      "sql": "SELECT COUNT(*) FROM evidence_gate_tier WHERE gate_method='none'",
+      "count": 0,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "view_v_research_strict_assertions",
+      "definition": "发布视图 v_research_strict_assertions 行数",
+      "sql": "SELECT COUNT(*) FROM v_research_strict_assertions",
+      "count": 2063,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "view_v_research_contextual_assertions",
+      "definition": "发布视图 v_research_contextual_assertions 行数",
+      "sql": "SELECT COUNT(*) FROM v_research_contextual_assertions",
+      "count": 369188,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    },
+    {
+      "universe_name": "view_v_research_unresolved_assertions",
+      "definition": "发布视图 v_research_unresolved_assertions 行数",
+      "sql": "SELECT COUNT(*) FROM v_research_unresolved_assertions",
+      "count": 52899,
+      "source_db_sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023"
+    }
+  ]
+}

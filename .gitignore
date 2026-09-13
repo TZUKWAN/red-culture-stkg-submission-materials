@@ -11,3 +11,8 @@ submission_work/final_submission_v3_1/data/repaired_release/.tmp_*.sqlite
 submission_work/final_submission_v3_1/experiments/07_provenance_semantic_gate/FINAL_TIERING_CHECKPOINT.jsonl
 submission_work/final_submission_v3_1/experiments/07_provenance_semantic_gate/FINAL_TIERING_CHECKPOINT_GPTOSS.jsonl
 submission_work/final_submission_v3_1/experiments/07_provenance_semantic_gate/FINAL_TIERING_CHECKPOINT_Q35.jsonl
+
+# release dist artifacts (shipped as GitHub Release assets, not git tree)
+submission_work/final_submission_v3_1/release_final/dist/
+submission_work/final_submission_v3_1/release_final/*.exe
+submission_work/final_submission_v3_1/release_final/data/*.sqlite
