@@ -1,3 +1,6 @@
+> [SUPERSEDED 2026-09-16] 本目录为历史版本存档；最终权威数字见
+> `submission_work/final_submission_v3_1/AUTHORITATIVE_RESULTS.md`。
+
 # final_submission_v3 — 独立 AI 评价体系（IMCR）与论文证据升级包
 
 在完全保留 V2 工程、原实验与数据库的前提下，补建的独立评价链路。证据等级：

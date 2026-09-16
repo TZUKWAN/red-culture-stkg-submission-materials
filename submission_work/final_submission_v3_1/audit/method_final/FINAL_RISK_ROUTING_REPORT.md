@@ -1,3 +1,5 @@
+> [HISTORICAL 2026-09-16] 历史实验存档：本报告的数字属于**当时局部实验**，不是全库结论；最终权威数字见 AUTHORITATIVE_RESULTS.md。
+
 # FINAL RISK ROUTING REPORT — 风险路由最终有效性判定（指令 §3）
 
 日期：2026-09-10 ｜ 工作线：final_submission_v3_1 ｜ 数据与全部产物：`experiments/02_selective_semantic/budget_v2/`

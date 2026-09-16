@@ -1,0 +1,8 @@
+﻿decision_path,count
+"v2_semantic_normalization[auto_accepted]->strict_candidate_check[fail]->contextual(outside_gate)",268047
+"v2_semantic_normalization[auto_accepted]->strict_candidate_check[pass]->evidence_gate_final[UNRESOLVED]",49809
+"v2_semantic_normalization[auto_accepted]->strict_candidate_check[pass]->evidence_gate_final[CONTEXTUAL]",31282
+"v2_semantic_normalization[auto_accepted]->strict_candidate_check[pass]->evidence_gate_final[STRICT]",31067
+"v2_semantic_normalization[model_review]->excluded_from_strict_layer[hard_blocker:scope_conflict_model_review]->unresolved(outside_gate)",27492
+"v2_semantic_normalization[model_review]->excluded_from_strict_layer[hard_blocker:endpoint_entity_type_unresolved]->unresolved(outside_gate)",16393
+"v2_semantic_normalization[manual_review]->excluded_from_strict_layer[hard_blocker:manual_review_legacy]->unresolved(outside_gate)",60

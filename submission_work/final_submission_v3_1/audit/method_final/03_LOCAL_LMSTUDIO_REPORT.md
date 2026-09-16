@@ -1,3 +1,5 @@
+> [HISTORICAL 2026-09-16] 历史实验存档：本报告的数字属于**当时局部实验**，不是全库结论；最终权威数字见 AUTHORITATIVE_RESULTS.md。
+
 # 03 — 本地 LM Studio 推理链报告（WS-B）
 
 日期：2026-09-10 ｜ 状态：PRODUCTION READY（生产链已零依赖公网）

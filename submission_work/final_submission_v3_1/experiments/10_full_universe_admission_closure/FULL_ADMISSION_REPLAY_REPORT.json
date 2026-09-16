@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-09-16T23:44:41.169971+08:00",
+  "row_count_diff": 0,
+  "fact_id_diff": 0,
+  "tier_diff": 0,
+  "pre_gate_tier_diff": 0,
+  "decision_path_missing": 0,
+  "blocking_reason_missing_non_strict": 0,
+  "unexplained_unresolved": 0,
+  "all_zero": true,
+  "recomputed_tier_counts": {
+    "unresolved": 43945,
+    "UNRESOLVED": 49809,
+    "contextual": 268047,
+    "CONTEXTUAL": 31282,
+    "STRICT": 31067
+  }
+}

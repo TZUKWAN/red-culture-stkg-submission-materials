@@ -1,3 +1,6 @@
+> [SUPERSEDED 2026-09-16] 本目录为历史版本存档；最终权威数字见
+> `submission_work/final_submission_v3_1/AUTHORITATIVE_RESULTS.md`。
+
 # 论文投稿材料、代码与数据整理包
 
 本目录是论文《选择性预测与结构准入协同的时空知识图谱构建方法——以长江流域中共党史文献为例》的集中整理副本。

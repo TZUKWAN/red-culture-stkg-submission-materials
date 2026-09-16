@@ -1,3 +1,5 @@
+> [HISTORICAL 2026-09-16] 历史实验存档：本报告的数字属于**当时局部实验**，不是全库结论；最终权威数字见 AUTHORITATIVE_RESULTS.md。
+
 # 15 — MODEL-AGNOSTIC REPORT：框架机制模型无关性验证
 
 生成：2026-09-11T03:40:30+00:00 ｜ 实现：`code/experiment_pipelines/run_routing_model_agnostic.py` ｜ seed=20260910（R1 随机与 bootstrap 同源）｜ bootstrap=2000 次

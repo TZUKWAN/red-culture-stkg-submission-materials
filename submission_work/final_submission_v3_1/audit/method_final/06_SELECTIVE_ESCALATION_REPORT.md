@@ -1,3 +1,5 @@
+> [HISTORICAL 2026-09-16] 历史实验存档：本报告的数字属于**当时局部实验**，不是全库结论；最终权威数字见 AUTHORITATIVE_RESULTS.md。
+
 # 06 — Selective Escalation 报告：盲升级 prompt 与真实调用统计（指令 §六/七）
 
 日期：2026-09-09 ｜ 工作目录：`submission_work/final_submission_v3_1/`

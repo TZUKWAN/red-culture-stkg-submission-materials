@@ -1,3 +1,5 @@
+> [HISTORICAL 2026-09-16] 历史实验存档：本报告的数字属于**当时局部实验**，不是全库结论；最终权威数字见 AUTHORITATIVE_RESULTS.md。
+
 # FINAL EXTRACTION RECALL — 候选抽取召回基准（指令 §17）
 
 - 生成时间：2026-09-11T08:10:58+08:00  |  method_version: extraction-recall-v1

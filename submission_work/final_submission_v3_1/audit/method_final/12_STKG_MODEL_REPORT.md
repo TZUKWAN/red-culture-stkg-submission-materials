@@ -1,3 +1,5 @@
+> [HISTORICAL 2026-09-16] 历史实验存档：本报告的数字属于**当时局部实验**，不是全库结论；最终权威数字见 AUTHORITATIVE_RESULTS.md。
+
 # 12 · 时空知识图谱（STKG）身份与语义审计报告
 
 - 审计对象：`data/release_databases/red_culture_stkg_final_v2.sqlite`（sha256 `a199d736…9ee7`）+ ATTACH `red_culture_stkg_semantic_v2.sqlite`（sha256 `fbfb6529…bb377`，与 build 元数据一致）+ ATTACH 上游 `red_culture_semantic_integration_v1.sqlite`

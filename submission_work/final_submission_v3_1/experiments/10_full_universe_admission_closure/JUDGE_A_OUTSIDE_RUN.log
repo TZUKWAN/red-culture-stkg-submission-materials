@@ -1,0 +1,8 @@
+[outside:gpt-oss-20b] assembling inputs for 5000 items...
+[outside:gpt-oss-20b] inputs assembled: 5000
+[outside:gpt-oss-20b] total=5000 done=6 todo=4994
+[outside:gpt-oss-20b] 250/4994 ok=248 bad=2 0.44 it/s ETA 179min
+[outside:gpt-oss-20b] assembling inputs for 5000 items...
+[outside:gpt-oss-20b] inputs assembled: 5000
+[outside:gpt-oss-20b] total=5000 done=440 todo=4560
+[outside:gpt-oss-20b] 250/4560 ok=247 bad=3 0.41 it/s ETA 177min

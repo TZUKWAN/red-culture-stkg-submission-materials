@@ -1,3 +1,9 @@
+> [AUTHORITATIVE NOTICE 2026-09-16] 本文件为**历史实验存档（HISTORICAL）**。
+> 文中「NEW STRICT ≈ 35,226」等统计估计、旧 scope 两票结果均已被
+> 全量 MEASURED 结果取代。论文最终数字只允许引用：
+> `experiments/10_full_universe_admission_closure/AUTHORITATIVE_RESULTS.md`
+> 所列六个权威来源。标记依据：FULL_UNIVERSE_ADMISSION_CLOSURE_REPORT.md。
+
 # FINAL METHOD SUMMARY — 选择性预测 + 结构准入 + 时空知识组织 最终方法
 
 日期：2026-09-10 ｜ 工作线：final_submission_v3_1 ｜ 状态：方法定型中（证据门统计与 Judge C 尾部收敛后冻结 TEST）
@@ -95,7 +101,7 @@ qwen3.5-4b**，2026-09-13 完成 112,158/112,158，零公网依赖）。
 
 **证据语义门（5,000 条分层验证，本地 20B）**：词法对齐层支持率 56.1%、
 同行双名强恢复层 70.4%、弱定位层 14.8%、词法不匹配层 2.3%。
-**NEW STRICT ≈ 35,226 条 [33,744–36,708]**（旧 112,158 → 收缩 69%，
+**[SUPERSEDED：此为抽样统计估计；最终 MEASURED 值 = STRICT 31,067，见 AUTHORITATIVE_RESULTS.md]** 旧估计 NEW STRICT ≈ 35,226 条 [33,744–36,708]（旧 112,158 → 收缩 69%，
 但每条都带经验证的语义支持；Support–Coverage 详见 09_EVIDENCE_GATE_REPORT.md）。
 
 **三项结构组件的独立三 judge 验证（v4，全部带真实证据）**：
@@ -103,7 +109,7 @@ qwen3.5-4b**，2026-09-13 完成 112,158/112,158，零公网依赖）。
   （无证据时代 0.037 → 证明旧低κ是任务缺证据，非 judge 无能）；
   **changed 58.8% vs control 67.8% 支持率（p≈0.04）**——契约改写集中在线边界
   模糊断言，语义收益主张不成立，Relation Contract 定位收缩为纯结构约束；
-- scope（208 全量带原文）：strong 110，κ=0.467；**BEFORE 64.5% vs AFTER 25.5%**
+- scope（208 全量带原文）：strong 110，κ=0.467；**[SUPERSEDED：旧两票口径，最终以 FINAL_SCOPE_REPORT/AUTHORITATIVE_RESULTS.md 为准]** BEFORE 64.5% vs AFTER 25.5%
   ——生产闭包改写大方向不被独立证据支持，选择性闭包规则（RETAIN 降格类 /
   REWRITE unknown→event_occurrence）得到三票共识验证；
 - identity（600=300正+300硬负，类型可见）：strong 320，标注率 96.3%（578/600）；

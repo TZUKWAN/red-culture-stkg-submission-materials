@@ -1,3 +1,5 @@
+> [HISTORICAL 2026-09-16] 历史实验存档：本报告的数字属于**当时局部实验**，不是全库结论；最终权威数字见 AUTHORITATIVE_RESULTS.md。
+
 # FINAL TEST REPORT — 方法冻结后唯一一次 TEST 正式评价（指令 §25）
 
 日期：2026-09-11 ｜ 工作线：final_submission_v3_1 ｜ 评价脚本：`code/experiment_pipelines/run_frozen_test_eval.py`

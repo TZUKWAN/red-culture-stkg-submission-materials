@@ -1,3 +1,5 @@
+> [HISTORICAL 2026-09-16] 历史实验存档：本报告的数字属于**当时局部实验**，不是全库结论；最终权威数字见 AUTHORITATIVE_RESULTS.md。
+
 # 00 — 根因分析（ROOT CAUSE ANALYSIS）
 
 日期：2026-09-10 ｜ 范围：v3_1 今晚全部实证发现的方法学集成
