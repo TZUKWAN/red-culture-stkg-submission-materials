@@ -182,6 +182,69 @@ def main() -> int:
     }
     (OUT / "OUTSIDE_GATE_AUDIT_RESULTS.json").write_text(
         json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    def fmt(metric):
+        v = results.get(metric)
+        if isinstance(v, dict) and v.get("point") is not None:
+            ci = v.get("ci95")
+            return (f"{v['point']:.4f} [95%CI {ci[0]:.4f},{ci[1]:.4f}] "
+                    f"({v['numerator']}/{v['denominator']})")
+        if isinstance(v, dict):
+            return "n/a (0/0)"
+        return str(v)
+
+    weighted = results["strict_opportunity_weighted_population"]
+    md = f"""# OUTSIDE GATE AUDIT REPORT — 门外宇宙独立双裁判盲评
+
+生成：{results['generated_at']}　样本：n={results['n_both_judged']}（协议 5,000，
+seed=20260916，分层：primary_blocking_reason/predicate/source_book）
+裁判：Judge A = gpt-oss-20b，Judge B = qwen/qwen3-8b（均独立于生产模型 qwen3.5-4b；
+盲评：不可见 tier/blocking reason/decision path/生产判定）。
+
+## 一致性指标
+
+| 指标 | 值 |
+|---|---|
+| 五档 evidence_support 完全一致率 | {fmt('judge_raw_agreement')} |
+| Cohen's kappa（evidence_support） | {results['cohens_kappa_evidence_support']} |
+| recommended_state 一致率 | {fmt('recommended_state_agreement')} |
+| strict_eligible 一致率 | {fmt('strict_eligible_agreement')} |
+| identity_decidable 一致率 | {fmt('identity_decidable_agreement')} |
+| relation_supported 一致率 | {fmt('relation_supported_agreement')} |
+| scope_decidable 一致率 | {fmt('scope_decidable_agreement')} |
+
+## STRICT 机会（selective precision–coverage 的 coverage 侧）
+
+| 指标 | 值 |
+|---|---|
+| Judge A 判 strict_eligible=YES | {fmt('strict_opportunity_judgeA')} |
+| Judge B 判 strict_eligible=YES | {fmt('strict_opportunity_judgeB')} |
+| 强共识（双 YES）样本口径 | {fmt('strict_opportunity_strong_consensus')} |
+| **强共识总体加权（按 blocker stratum 权重还原到 311,992）** | **{weighted}** |
+| CONTEXTUAL 层强共识 strict 机会 | {fmt('contextual_strict_opportunity_rate')} |
+| UNRESOLVED 层强共识 strict 机会 | {fmt('unresolved_strict_opportunity_rate')} |
+| 门外样本 exact tier 还原一致率 | {fmt('outside_gate_exact_tier_agreement')} |
+
+## 分 blocker 的强共识 STRICT 机会率
+
+| blocking reason | 机会率 | 分子/分母 |
+|---|---|---|
+""" + "\n".join(
+        f"| {k} | {v['point'] if v['point'] is not None else '—'} | "
+        f"{v['numerator']}/{v['denominator']} |"
+        for k, v in results["per_blocker_strict_opportunity"].items()) + """
+
+## 解释（十、解释原则）
+
+门外样本的 STRICT 机会是 **selective admission 以 coverage 换 precision 的预期代价**，
+不是系统错误：门外断言因 raw 谓词未归一化 / 关系域违反 / 端点实体类型未决 / scope
+冲突而被结构准入提前排除。其 STRICT 机会主要受证据可及性限制
+（无证据指针的断言裁判判 NO_EVIDENCE，无法升级）。论文必须同时报告：
+严格层 precision（门内审计 0.9928）× coverage（112,158/424,150 结构候选率）
+以及本报告的升级机会率。
+"""
+    (OUT / "OUTSIDE_GATE_AUDIT_REPORT.md").write_text(md, encoding="utf-8")
+    print(f"[score] wrote OUTSIDE_GATE_AUDIT_RESULTS.json / OUTSIDE_GATE_AUDIT_REPORT.md")
     print(f"[score] n={n} raw5={results['judge_raw_agreement']['point']} "
           f"kappa={results['cohens_kappa_evidence_support']} "
           f"strict_cons={results['strict_opportunity_strong_consensus']['point']} "

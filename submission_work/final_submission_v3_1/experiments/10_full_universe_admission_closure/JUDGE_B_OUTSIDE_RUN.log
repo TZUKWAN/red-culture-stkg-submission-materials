@@ -1,0 +1,24 @@
+[outside:qwen/qwen3-8b] assembling inputs for 5000 items...
+[outside:qwen/qwen3-8b] inputs assembled: 5000
+[outside:qwen/qwen3-8b] total=5000 done=0 todo=5000
+[outside:qwen/qwen3-8b] 250/5000 ok=250 bad=0 0.88 it/s ETA 90min
+[outside:qwen/qwen3-8b] 500/5000 ok=500 bad=0 0.88 it/s ETA 85min
+[outside:qwen/qwen3-8b] 750/5000 ok=750 bad=0 0.84 it/s ETA 84min
+[outside:qwen/qwen3-8b] 1000/5000 ok=1000 bad=0 0.84 it/s ETA 79min
+[outside:qwen/qwen3-8b] 1250/5000 ok=1250 bad=0 0.86 it/s ETA 73min
+[outside:qwen/qwen3-8b] 1500/5000 ok=1500 bad=0 0.85 it/s ETA 68min
+[outside:qwen/qwen3-8b] 1750/5000 ok=1750 bad=0 0.85 it/s ETA 63min
+[outside:qwen/qwen3-8b] 2000/5000 ok=2000 bad=0 0.84 it/s ETA 60min
+[outside:qwen/qwen3-8b] 2250/5000 ok=2250 bad=0 0.84 it/s ETA 54min
+[outside:qwen/qwen3-8b] 2500/5000 ok=2500 bad=0 0.84 it/s ETA 49min
+[outside:qwen/qwen3-8b] 2750/5000 ok=2750 bad=0 0.83 it/s ETA 45min
+[outside:qwen/qwen3-8b] 3000/5000 ok=3000 bad=0 0.83 it/s ETA 40min
+[outside:qwen/qwen3-8b] 3250/5000 ok=3250 bad=0 0.83 it/s ETA 35min
+[outside:qwen/qwen3-8b] 3500/5000 ok=3500 bad=0 0.82 it/s ETA 31min
+[outside:qwen/qwen3-8b] 3750/5000 ok=3750 bad=0 0.81 it/s ETA 26min
+[outside:qwen/qwen3-8b] 4000/5000 ok=4000 bad=0 0.81 it/s ETA 21min
+[outside:qwen/qwen3-8b] 4250/5000 ok=4250 bad=0 0.80 it/s ETA 16min
+[outside:qwen/qwen3-8b] 4500/5000 ok=4500 bad=0 0.81 it/s ETA 10min
+[outside:qwen/qwen3-8b] 4750/5000 ok=4750 bad=0 0.81 it/s ETA 5min
+[outside:qwen/qwen3-8b] 5000/5000 ok=5000 bad=0 0.80 it/s ETA 0min
+[outside:qwen/qwen3-8b] DONE ok=5000 bad=0 elapsed=104.0min

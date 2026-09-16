@@ -6,3 +6,23 @@
 [outside:gpt-oss-20b] inputs assembled: 5000
 [outside:gpt-oss-20b] total=5000 done=440 todo=4560
 [outside:gpt-oss-20b] 250/4560 ok=247 bad=3 0.41 it/s ETA 177min
+[outside:gpt-oss-20b] 500/4560 ok=496 bad=4 0.43 it/s ETA 158min
+[outside:gpt-oss-20b] 750/4560 ok=745 bad=5 0.42 it/s ETA 150min
+[outside:gpt-oss-20b] assembling inputs for 5000 items...
+[outside:gpt-oss-20b] inputs assembled: 5000
+[outside:gpt-oss-20b] total=5000 done=1292 todo=3708
+[outside:gpt-oss-20b] 250/3708 ok=248 bad=2 0.42 it/s ETA 136min
+[outside:gpt-oss-20b] 500/3708 ok=497 bad=3 0.43 it/s ETA 124min
+[outside:gpt-oss-20b] 750/3708 ok=746 bad=4 0.43 it/s ETA 115min
+[outside:gpt-oss-20b] 1000/3708 ok=994 bad=6 0.44 it/s ETA 104min
+[outside:gpt-oss-20b] 1250/3708 ok=1243 bad=7 0.43 it/s ETA 95min
+[outside:gpt-oss-20b] 1500/3708 ok=1491 bad=9 0.43 it/s ETA 85min
+[outside:gpt-oss-20b] 1750/3708 ok=1740 bad=10 0.43 it/s ETA 76min
+[outside:gpt-oss-20b] 2000/3708 ok=1987 bad=13 0.43 it/s ETA 66min
+[outside:gpt-oss-20b] 2250/3708 ok=2232 bad=18 0.43 it/s ETA 57min
+[outside:gpt-oss-20b] 2500/3708 ok=2480 bad=20 0.43 it/s ETA 47min
+[outside:gpt-oss-20b] 2750/3708 ok=2727 bad=23 0.43 it/s ETA 37min
+[outside:gpt-oss-20b] 3000/3708 ok=2974 bad=26 0.42 it/s ETA 28min
+[outside:gpt-oss-20b] 3250/3708 ok=3222 bad=28 0.42 it/s ETA 18min
+[outside:gpt-oss-20b] 3500/3708 ok=3469 bad=31 0.43 it/s ETA 8min
+[outside:gpt-oss-20b] DONE ok=3676 bad=32 elapsed=144.9min
