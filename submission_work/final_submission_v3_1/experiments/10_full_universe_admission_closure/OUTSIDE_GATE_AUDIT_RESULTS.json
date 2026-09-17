@@ -188,5 +188,36 @@
       "pop": 27492,
       "sampled": 1573
     }
+  },
+  "weighted_strict_opportunity_design_ci": {
+    "method": "stratified bootstrap (per-layer with replacement, population-weighted mixture)",
+    "bootstrap_seed": 20260916,
+    "bootstrap_iterations": 10000,
+    "layers": {
+      "CONTEXTUAL": {
+        "population": 268047,
+        "sample_n": 2483,
+        "yes": 17,
+        "rate": 0.006847
+      },
+      "UNRESOLVED": {
+        "population": 43945,
+        "sample_n": 2474,
+        "yes": 14,
+        "rate": 0.005659
+      }
+    },
+    "weighted_point": 0.006679,
+    "weighted_ci95": [
+      0.004029,
+      0.009675
+    ],
+    "population_count_interval": [
+      1257,
+      3019
+    ],
+    "population_total": 311992,
+    "note": "未加权样本口径 0.63% [0.0044,0.0089] 仅描述样本；加权总体推断以本设计型 CI 为准。",
+    "updated_at": "2026-09-17T12:13:06.749515+08:00"
   }
 }

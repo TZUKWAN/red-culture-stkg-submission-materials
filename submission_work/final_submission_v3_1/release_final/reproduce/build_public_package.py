@@ -84,6 +84,14 @@ def main() -> int:
             if target.is_dir():
                 continue
             lines.append(f"{sha256_of(target)}  {arc}")
+    # 发布资产（EXE / figures / 报告）也纳入哈希清单
+    exe = ROOT / "YangtzeSTKG-Reproduce.exe"
+    if exe.exists():
+        lines.append(f"{sha256_of(exe)}  YangtzeSTKG-Reproduce.exe")
+    for extra in (ROOT / "figures").glob("*.png"):
+        lines.append(f"{sha256_of(extra)}  figures/{extra.name}")
+    for extra in (ROOT / "reports").glob("*.md"):
+        lines.append(f"{sha256_of(extra)}  reports/{extra.name}")
     lines.append(f"{sha256_of(zip_path)}  PUBLIC_REPRO_PACKAGE.zip")
     sums.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"[package] {zip_path.name}: {n} files, "

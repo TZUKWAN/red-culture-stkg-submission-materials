@@ -127,5 +127,36 @@
     "INVESTIGATE_LOCAL": "[0.80, 0.90) 或单层系统偏差",
     "ESCALATE": "< 0.80 或 salvage 系统性错误"
   },
-  "decision": "PASS"
+  "decision": "PASS",
+  "strict_support_precision_strong_consensus_detail": {
+    "definition": "production STRICT 样本中，双裁判形成强共识（五档一致）的判定里，判为 FULLY_SUPPORTED/PARTIALLY_SUPPORTED 的比例",
+    "point": 0.9928,
+    "ci95_wilson": [
+      0.9852,
+      0.9965
+    ],
+    "A_supported": 965,
+    "B_contradicted_by_consensus": 4,
+    "N_strong_consensus_strict": 972,
+    "fully_only_precision": {
+      "point": 0.8066,
+      "ci95_wilson": [
+        0.7806,
+        0.8302
+      ],
+      "A_fully": 784,
+      "N": 972
+    },
+    "false_positive_rate": {
+      "point": 0.0041,
+      "ci95_wilson": [
+        0.0016,
+        0.0105
+      ],
+      "B": 4,
+      "N": 972
+    },
+    "phrasing_rule": "禁止写「99.28%（n=4,427）」；规范表述：在 4,427 条分层独立审计样本中，对 STRICT 样本形成强共识的判定显示其证据支持精度为 99.28%（965/972）。",
+    "patched_at": "2026-09-17T12:15:38.847822+08:00"
+  }
 }

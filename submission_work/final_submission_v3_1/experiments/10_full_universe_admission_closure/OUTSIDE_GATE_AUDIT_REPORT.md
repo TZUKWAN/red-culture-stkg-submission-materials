@@ -24,7 +24,7 @@ seed=20260916，分层：primary_blocking_reason/predicate/source_book）
 | Judge A 判 strict_eligible=YES | 0.0583 [95%CI 0.0521,0.0652] (289/4957) |
 | Judge B 判 strict_eligible=YES | 0.0115 [95%CI 0.0089,0.0149] (57/4957) |
 | 强共识（双 YES）样本口径 | 0.0063 [95%CI 0.0044,0.0089] (31/4957) |
-| **强共识总体加权（按 blocker stratum 权重还原到 311,992）** | **0.0066** |
+| **强共识总体加权（按 blocker stratum 权重还原到 311,992）** | **0.0066，设计型 95%CI [0.0040, 0.0097]**（stratified bootstrap B=10,000，seed=20260916；条数区间 [1,257, 3,019]） |
 | CONTEXTUAL 层强共识 strict 机会 | 0.0068 [95%CI 0.0043,0.0109] (17/2483) |
 | UNRESOLVED 层强共识 strict 机会 | 0.0057 [95%CI 0.0034,0.0095] (14/2474) |
 | 门外样本 exact tier 还原一致率 | 0.4303 [95%CI 0.4166,0.4441] (2133/4957) |
