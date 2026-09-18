@@ -1,158 +1,143 @@
 {
-  "generated_at": "2026-09-18T19:10:35.821111+08:00",
+  "generated_at": "2026-09-19T00:45:11.132836+08:00",
   "zero_new_llm_calls": true,
-  "data_sources": [
-    "release_final/experiments/quality_audit/SAMPLE_KEY.json",
-    "release_final/experiments/quality_audit/JUDGE_gpt_oss_20b_VERDICTS.jsonl",
-    "release_final/experiments/quality_audit/JUDGE_qwen_qwen3_8b_VERDICTS.jsonl"
-  ],
-  "joined_valid_n": 4427,
-  "stages": [
-    {
-      "stage": "Pre-Gate Strict Candidate",
-      "population": 112158,
-      "audit_valid_n": 4427,
-      "evidence_supported": {
-        "point": 0.2979,
-        "ci95": [
-          0.2847,
-          0.3116
-        ],
-        "numerator": 1319,
-        "denominator": 4427
-      },
-      "unsupported": {
-        "point": 0.0571,
-        "ci95": [
-          0.0507,
-          0.0644
-        ],
-        "numerator": 253,
-        "denominator": 4427
-      },
-      "contradicted": {
-        "point": 0.0041,
-        "ci95": [
-          0.0026,
-          0.0064
-        ],
-        "numerator": 18,
-        "denominator": 4427
-      },
-      "insufficient": {
-        "point": 0.0047,
-        "ci95": [
-          0.0031,
-          0.0072
-        ],
-        "numerator": 21,
-        "denominator": 4427
-      },
-      "weight_note": "sample rate is stratified; population rate needs final-tier weighting (see weighted fields)"
+  "metric_definitions": {
+    "strong_consensus_coverage": "consensus_n / audited_n",
+    "support_precision_among_strong_consensus": "supported_consensus_n / consensus_n（FULLY+PARTIAL，双裁判五档一致）",
+    "negative_rate_among_strong_consensus": "(UNSUPPORTED+CONTRADICTED) / consensus_n",
+    "insufficient_reported_separately": true
+  },
+  "n_audited": 4427,
+  "n_consensus_sample": 1593,
+  "pre_gate_strict_candidate": {
+    "population": 112158,
+    "audited_n": 4427,
+    "consensus_n_sample": 1593,
+    "coverage_ratio_estimator": {
+      "point": 0.3209,
+      "ci95_stratified_bootstrap": [
+        0.3059,
+        0.336
+      ]
     },
-    {
-      "stage": "Final STRICT",
-      "population": 31067,
-      "audit_valid_n": 2268,
-      "evidence_supported": {
-        "point": 0.4255,
-        "ci95": [
-          0.4053,
-          0.4459
-        ],
-        "numerator": 965,
-        "denominator": 2268
-      },
-      "unsupported": {
-        "point": 0.0018,
-        "ci95": [
-          0.0007,
-          0.0045
-        ],
-        "numerator": 4,
-        "denominator": 2268
-      },
-      "contradicted": {
-        "point": 0.0004,
-        "ci95": [
-          0.0001,
-          0.0025
-        ],
-        "numerator": 1,
-        "denominator": 2268
-      },
-      "insufficient": {
-        "point": 0.0013,
-        "ci95": [
-          0.0004,
-          0.0039
-        ],
-        "numerator": 3,
-        "denominator": 2268
-      },
-      "weight_note": "sample drawn within this stratum; rate is direct"
-    }
-  ],
-  "pre_gate_weighted_population_rate": {
-    "point": 0.222,
-    "ci95_stratified_bootstrap": [
-      0.2106,
-      0.2338
-    ],
-    "bootstrap_iterations": 10000,
-    "bootstrap_seed": 20260916,
-    "weights": {
+    "support_precision_among_consensus": {
+      "point": 0.6918,
+      "ci95_stratified_bootstrap": [
+        0.6651,
+        0.7196
+      ]
+    },
+    "negative_rate_among_consensus": {
+      "point": 0.2917,
+      "ci95_stratified_bootstrap": [
+        0.2639,
+        0.3181
+      ]
+    },
+    "insufficient_rate_among_consensus": {
+      "point": 0.0164
+    },
+    "per_stratum": {
       "STRICT": {
-        "population": 31067,
-        "sample_n": 2268
+        "N_h": 31067,
+        "n_h": 2268,
+        "c_h": 972,
+        "s_h": 965,
+        "neg_h": 4,
+        "ins_h": 3
       },
       "CONTEXTUAL": {
-        "population": 31282,
-        "sample_n": 1094
+        "N_h": 31282,
+        "n_h": 1094,
+        "c_h": 350,
+        "s_h": 268,
+        "neg_h": 66,
+        "ins_h": 16
       },
       "UNRESOLVED": {
-        "population": 49809,
-        "sample_n": 1065
+        "N_h": 49809,
+        "n_h": 1065,
+        "c_h": 271,
+        "s_h": 86,
+        "neg_h": 183,
+        "ins_h": 2
       }
-    }
+    },
+    "pi_weighted_robust": null
   },
-  "pre_gate_stage_note": "Pre-Gate 样本按 final 层分层抽取，样本率≠总体率；总体率以 final 层构成加权还原（112,158 = 31,067 kept + 31,282 →CTX + 49,809 →UNRES）。",
+  "final_strict": {
+    "population": 31067,
+    "audited_n": 2268,
+    "consensus_n": 972,
+    "coverage": {
+      "point": 0.4286,
+      "numerator": 972,
+      "denominator": 2268,
+      "note": "仅说明 Judge 一致性覆盖，不得与知识错误率混淆"
+    },
+    "support_precision_among_consensus": {
+      "point": 0.9928,
+      "ci95_wilson_frozen": [
+        0.9852,
+        0.9965
+      ],
+      "numerator": 965,
+      "denominator": 972,
+      "source": "冻结审计 AUDIT_RESULTS.json（965/972）"
+    },
+    "negative_rate_among_consensus": {
+      "point": 0.0041,
+      "ci95_wilson_frozen": [
+        0.0016,
+        0.0105
+      ],
+      "numerator": 4,
+      "denominator": 972
+    },
+    "insufficient_n": 3
+  },
   "admission_outcome_comparison": {
     "kept_final_strict": {
-      "supported": {
-        "point": 0.4255,
-        "ci95": [
-          0.4053,
-          0.4459
-        ],
+      "consensus_n": 972,
+      "support_precision_among_consensus": {
+        "point": 0.9928,
         "numerator": 965,
-        "denominator": 2268
+        "denominator": 972
+      },
+      "negative_rate_among_consensus": {
+        "point": 0.0041,
+        "numerator": 4,
+        "denominator": 972
       }
     },
     "downgraded_by_gate": {
-      "supported": {
-        "point": 0.164,
-        "ci95": [
-          0.1489,
-          0.1802
-        ],
+      "consensus_n": 621,
+      "support_precision_among_consensus": {
+        "point": 0.57,
         "numerator": 354,
-        "denominator": 2159
+        "denominator": 621
+      },
+      "negative_rate_among_consensus": {
+        "point": 0.401,
+        "numerator": 249,
+        "denominator": 621
       }
     },
-    "difference_in_proportions_kept_minus_downgraded": {
-      "point": 0.2615,
+    "difference_support_precision_kept_minus_downgraded": {
+      "point": 0.4228,
       "ci95_newcombe": [
-        0.2356,
-        0.2869
-      ],
-      "ci95_stratified_bootstrap": [
-        0.2362,
-        0.2867
-      ],
-      "fisher_exact_two_sided_p": 0.0,
-      "mcnemar_note": "McNemar 不适用：结局分组（kept/downgraded）为观测分层而非同一受试对象的两次测量；采用组间差值 + Newcombe CI + 分层 bootstrap + Fisher 精确检验。"
-    }
+        0.3836,
+        0.4622
+      ]
+    },
+    "difference_negative_rate_downgraded_minus_kept": {
+      "point": 0.3969,
+      "ci95_newcombe": [
+        0.3585,
+        0.436
+      ]
+    },
+    "statistical_unit_note": "统计单位=断言；比较限强共识样本（条件指标）。McNemar 不适用：kept/downgraded 为观测结局分层而非同一对象两次测量。"
   },
   "outside_gate_frozen_reference": {
     "weighted_strict_opportunity": 0.0066,
@@ -164,49 +149,43 @@
       1257,
       3019
     ],
-    "source": "10_full_universe_admission_closure/OUTSIDE_GATE_AUDIT_RESULTS.json(weighted_strict_opportunity_design_ci)；本轮零重算"
+    "source": "10_full_universe_admission_closure/OUTSIDE_GATE_AUDIT_RESULTS.json（零重算）"
   },
-  "statistical_unit_note": "统计单位 = 断言（fact_id）；强共识口径 = 双裁判五档一致；全部率为强共识口径，另附单裁判口径见 per_judge。",
-  "per_judge_secondary": {
-    "judgeA": {
-      "pre_gate_supported": {
-        "point": 0.5415,
-        "ci95": [
-          0.5267,
-          0.5561
-        ],
-        "numerator": 2397,
-        "denominator": 4427
-      },
-      "final_strict_supported": {
-        "point": 0.7553,
-        "ci95": [
-          0.7372,
-          0.7725
-        ],
-        "numerator": 1713,
-        "denominator": 2268
-      }
+  "diagnostic_unconditional_shares": {
+    "definition": "unconditional strong-consensus support share = 强共识支持数 / 全部审计样本；混合覆盖与精度，不得作为 accuracy/precision/support quality/evidence support rate。",
+    "pre_gate_share": {
+      "point": 0.2979,
+      "ci95": [
+        0.2847,
+        0.3116
+      ],
+      "numerator": 1319,
+      "denominator": 4427
     },
-    "judgeB": {
-      "pre_gate_supported": {
-        "point": 0.8475,
-        "ci95": [
-          0.8366,
-          0.8578
-        ],
-        "numerator": 3752,
-        "denominator": 4427
-      },
-      "final_strict_supported": {
-        "point": 0.9877,
-        "ci95": [
-          0.9822,
-          0.9914
-        ],
-        "numerator": 2240,
-        "denominator": 2268
-      }
-    }
+    "final_strict_share": {
+      "point": 0.4255,
+      "ci95": [
+        0.4053,
+        0.4459
+      ],
+      "numerator": 965,
+      "denominator": 2268
+    },
+    "downgraded_share": {
+      "point": 0.164,
+      "ci95": [
+        0.1489,
+        0.1802
+      ],
+      "numerator": 354,
+      "denominator": 2159
+    },
+    "legacy_removed_from_manuscript": [
+      "22.20%",
+      "29.79%",
+      "42.55%",
+      "16.40%",
+      "+26.15pp"
+    ]
   }
 }

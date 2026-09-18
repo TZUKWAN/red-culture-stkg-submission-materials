@@ -13,14 +13,24 @@
 - `release_final/experiments/quality_audit/JUDGE_qwen_qwen3_8b_VERDICTS.jsonl`
 - 层总体规模常量（31,067/31,282/49,809，源自 FINAL_NUMBERS.json）
 
+**指标定义（2026-09-19 修正版，替代同日初版口径）**：核心质量指标一律为
+**强共识条件指标**（分母 = 双裁判五档完全一致的样本），两指标独立报告：
+①强共识覆盖率 = consensus_n / audited_n；②强共识条件支持精度 =
+supported_consensus_n / consensus_n（FULLY+PARTIAL）；负向率与不足率单列。
+
 新增数字（全部可在 `audit/CASCADED_ADMISSION_EVIDENCE_MAP.md` 溯源）：
-- Pre-Gate Strict Candidate（若直接发布，强共识口径）：支持率 29.79%
-  （样本口径，1,319/4,427，95%CI 28.47–31.16）；
-  总体加权 22.20%（95%CI 21.06–23.38，分层 bootstrap B=10,000，seed=20260916）。
-- Final STRICT：支持率 42.55%（965/2,268，95%CI 40.53–44.59）。
-- 准入结局分组：kept 42.55% vs downgraded 16.40%（354/2,159），
-  差值 +26.15pp（Newcombe 95%CI 23.56–28.69；分层 bootstrap 23.62–28.67；
-  Fisher 精确 p<0.001）。McNemar 不适用（分组为观测分层而非同一对象两次测量）。
+- Pre-Gate Strict Candidate（若直接发布）：
+  强共识覆盖率 32.09%（95%CI 30.59–33.60，final 层比率估计量）；
+  强共识条件支持精度 69.18%（95%CI 66.51–71.96）；
+  强共识条件负向率 29.17%（95%CI 26.39–31.81）；不足率 1.64%。
+- Final STRICT（冻结口径）：支持精度 99.28%（965/972，95%CI [0.9852, 0.9965]）；
+  负向率 0.41%（4/972）；强共识覆盖率 972/2,268。
+- 准入结局分组（强共识条件口径）：kept 99.28% vs downgraded 57.00%（支持精度）；
+  负向率 0.41% vs 40.10%。
+- **[WITHDRAWN 同日]** 初版曾以 29.79%/42.55%/16.40%/22.20%/+26.15pp
+  （unconditional strong-consensus support share，分母含 Judge 分歧）作为
+  知识质量指标——该口径混合评价不确定性与知识质量，已全部撤出论文正文，
+  仅保留于 RESULTS.json 诊断附录（diagnostic_unconditional_shares）。McNemar 不适用（分组为观测分层而非同一对象两次测量）。
 
 ## 二、直接引用的既有权威结果（零重算）
 
