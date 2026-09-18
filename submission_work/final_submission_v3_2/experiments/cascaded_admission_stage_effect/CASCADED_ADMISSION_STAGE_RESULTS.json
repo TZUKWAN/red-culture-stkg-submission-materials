@@ -1,0 +1,212 @@
+{
+  "generated_at": "2026-09-18T19:10:35.821111+08:00",
+  "zero_new_llm_calls": true,
+  "data_sources": [
+    "release_final/experiments/quality_audit/SAMPLE_KEY.json",
+    "release_final/experiments/quality_audit/JUDGE_gpt_oss_20b_VERDICTS.jsonl",
+    "release_final/experiments/quality_audit/JUDGE_qwen_qwen3_8b_VERDICTS.jsonl"
+  ],
+  "joined_valid_n": 4427,
+  "stages": [
+    {
+      "stage": "Pre-Gate Strict Candidate",
+      "population": 112158,
+      "audit_valid_n": 4427,
+      "evidence_supported": {
+        "point": 0.2979,
+        "ci95": [
+          0.2847,
+          0.3116
+        ],
+        "numerator": 1319,
+        "denominator": 4427
+      },
+      "unsupported": {
+        "point": 0.0571,
+        "ci95": [
+          0.0507,
+          0.0644
+        ],
+        "numerator": 253,
+        "denominator": 4427
+      },
+      "contradicted": {
+        "point": 0.0041,
+        "ci95": [
+          0.0026,
+          0.0064
+        ],
+        "numerator": 18,
+        "denominator": 4427
+      },
+      "insufficient": {
+        "point": 0.0047,
+        "ci95": [
+          0.0031,
+          0.0072
+        ],
+        "numerator": 21,
+        "denominator": 4427
+      },
+      "weight_note": "sample rate is stratified; population rate needs final-tier weighting (see weighted fields)"
+    },
+    {
+      "stage": "Final STRICT",
+      "population": 31067,
+      "audit_valid_n": 2268,
+      "evidence_supported": {
+        "point": 0.4255,
+        "ci95": [
+          0.4053,
+          0.4459
+        ],
+        "numerator": 965,
+        "denominator": 2268
+      },
+      "unsupported": {
+        "point": 0.0018,
+        "ci95": [
+          0.0007,
+          0.0045
+        ],
+        "numerator": 4,
+        "denominator": 2268
+      },
+      "contradicted": {
+        "point": 0.0004,
+        "ci95": [
+          0.0001,
+          0.0025
+        ],
+        "numerator": 1,
+        "denominator": 2268
+      },
+      "insufficient": {
+        "point": 0.0013,
+        "ci95": [
+          0.0004,
+          0.0039
+        ],
+        "numerator": 3,
+        "denominator": 2268
+      },
+      "weight_note": "sample drawn within this stratum; rate is direct"
+    }
+  ],
+  "pre_gate_weighted_population_rate": {
+    "point": 0.222,
+    "ci95_stratified_bootstrap": [
+      0.2106,
+      0.2338
+    ],
+    "bootstrap_iterations": 10000,
+    "bootstrap_seed": 20260916,
+    "weights": {
+      "STRICT": {
+        "population": 31067,
+        "sample_n": 2268
+      },
+      "CONTEXTUAL": {
+        "population": 31282,
+        "sample_n": 1094
+      },
+      "UNRESOLVED": {
+        "population": 49809,
+        "sample_n": 1065
+      }
+    }
+  },
+  "pre_gate_stage_note": "Pre-Gate 样本按 final 层分层抽取，样本率≠总体率；总体率以 final 层构成加权还原（112,158 = 31,067 kept + 31,282 →CTX + 49,809 →UNRES）。",
+  "admission_outcome_comparison": {
+    "kept_final_strict": {
+      "supported": {
+        "point": 0.4255,
+        "ci95": [
+          0.4053,
+          0.4459
+        ],
+        "numerator": 965,
+        "denominator": 2268
+      }
+    },
+    "downgraded_by_gate": {
+      "supported": {
+        "point": 0.164,
+        "ci95": [
+          0.1489,
+          0.1802
+        ],
+        "numerator": 354,
+        "denominator": 2159
+      }
+    },
+    "difference_in_proportions_kept_minus_downgraded": {
+      "point": 0.2615,
+      "ci95_newcombe": [
+        0.2356,
+        0.2869
+      ],
+      "ci95_stratified_bootstrap": [
+        0.2362,
+        0.2867
+      ],
+      "fisher_exact_two_sided_p": 0.0,
+      "mcnemar_note": "McNemar 不适用：结局分组（kept/downgraded）为观测分层而非同一受试对象的两次测量；采用组间差值 + Newcombe CI + 分层 bootstrap + Fisher 精确检验。"
+    }
+  },
+  "outside_gate_frozen_reference": {
+    "weighted_strict_opportunity": 0.0066,
+    "design_ci95": [
+      0.004,
+      0.0097
+    ],
+    "count_interval": [
+      1257,
+      3019
+    ],
+    "source": "10_full_universe_admission_closure/OUTSIDE_GATE_AUDIT_RESULTS.json(weighted_strict_opportunity_design_ci)；本轮零重算"
+  },
+  "statistical_unit_note": "统计单位 = 断言（fact_id）；强共识口径 = 双裁判五档一致；全部率为强共识口径，另附单裁判口径见 per_judge。",
+  "per_judge_secondary": {
+    "judgeA": {
+      "pre_gate_supported": {
+        "point": 0.5415,
+        "ci95": [
+          0.5267,
+          0.5561
+        ],
+        "numerator": 2397,
+        "denominator": 4427
+      },
+      "final_strict_supported": {
+        "point": 0.7553,
+        "ci95": [
+          0.7372,
+          0.7725
+        ],
+        "numerator": 1713,
+        "denominator": 2268
+      }
+    },
+    "judgeB": {
+      "pre_gate_supported": {
+        "point": 0.8475,
+        "ci95": [
+          0.8366,
+          0.8578
+        ],
+        "numerator": 3752,
+        "denominator": 4427
+      },
+      "final_strict_supported": {
+        "point": 0.9877,
+        "ci95": [
+          0.9822,
+          0.9914
+        ],
+        "numerator": 2240,
+        "denominator": 2268
+      }
+    }
+  }
+}

@@ -1,47 +1,55 @@
 {
   "contract_version": "redculture-current-release-1",
-  "release_version": "red-culture-stkg-v2-1",
+  "release_version": "red-culture-stkg-final-2026-09",
+  "supersedes": "red-culture-stkg-v2-1",
+  "supersedes_notice": "旧 red-culture-stkg-v2-1 指向 releases/red_culture_stkg_v2/ 布局，为历史版本；本条目为论文唯一权威发布入口。",
+  "paper": {
+    "title_zh": "面向知识规范化与级联准入的历史文献时空知识图谱构建方法——以长江流域中共党史文献为例",
+    "target_journal": "数据分析与知识发现",
+    "manuscript_dir": "submission_work/final_submission_v3_2/manuscript",
+    "authoritative_results": "submission_work/final_submission_v3_1/AUTHORITATIVE_RESULTS.md"
+  },
   "canonical_final_database": {
-    "path": "releases/red_culture_stkg_v2/databases/red_culture_stkg_final_v2.sqlite",
-    "sha256": "a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7",
+    "path": "submission_work/final_submission_v3_1/release_final/data/red_culture_stkg_final.sqlite",
+    "sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a",
     "counts": {
       "research_entities": 152979,
       "research_assertions": 424150,
       "research_assertion_provenance": 466312,
       "research_event_frames": 28065,
-      "research_culture_states": 11532,
-      "research_evolution_transitions": 4
+      "research_culture_states": 11532
+    },
+    "final_tiers_full_db": {
+      "STRICT": 31067,
+      "CONTEXTUAL": 299329,
+      "UNRESOLVED": 93754
+    },
+    "gate_universe_old_strict": 112158,
+    "gate_tiers": {
+      "STRICT": 31067,
+      "CONTEXTUAL": 31282,
+      "UNRESOLVED": 49809
     }
   },
-  "canonical_semantic_database": {
-    "path": "releases/red_culture_stkg_v2/databases/red_culture_stkg_semantic_v2.sqlite",
-    "sha256": "fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377",
-    "counts": {
-      "v2_entities": 154150,
-      "v2_assertion_scopes": 424150
-    }
+  "release_package": {
+    "zip": "submission_work/final_submission_v3_1/release_final/dist/PUBLIC_REPRO_PACKAGE.zip",
+    "sha256": "e6582d1a79e97103d783e70c087f1708c0c96ad0f14f99a75622b4a46f7df5ae",
+    "checksums": "submission_work/final_submission_v3_1/release_final/dist/SHA256SUMS.txt",
+    "exe": "submission_work/final_submission_v3_1/YangtzeSTKG-Reproduce.exe",
+    "exe_sha256": "8fdfe517af59c9732d8af2f5046bfb6c79a69d2df1a9682cab377e4136b6da93",
+    "git_tag": "stkg-final-reproducible-2026"
   },
-  "canonical_graph": {
-    "nodes_path": "releases/red_culture_stkg_v2/graph/nodes.csv",
-    "nodes_sha256": "1155838b569955884fdff9c29ec57c1c2aa13a54df39948a7fdc6480073887d8",
-    "relationships_path": "releases/red_culture_stkg_v2/graph/relationships.csv",
-    "relationships_sha256": "30c88bea6eb9ec29c5e2d092a74ab9c3ddc41f4a9355fac83ce82ea99bb0695b",
-    "nodes": 1062247,
-    "relationships": 2984015
+  "replay": {
+    "entry": "submission_work/final_submission_v3_1/release_final/reproduce/replay_all.py",
+    "mode": "Level-A offline replay (no LLM, no network)",
+    "result": "ALL PASS"
   },
-  "runtime": {
+  "historical_runtime_v2": {
+    "note": "v2 时代 Neo4j 运行时入口已废弃；审稿人模式直接读取本文件 canonical_final_database 指向的 SQLite。",
     "neo4j_container": "redculture-stkg-neo4j-v2",
-    "neo4j_data_volume": "redculture-stkg-neo4j-v2-656fdc3a8f72-data",
-    "neo4j_uri": "bolt://127.0.0.1:7690",
-    "ui_health_url": "http://127.0.0.1:8787/api/health"
+    "neo4j_uri": "bolt://127.0.0.1:7690"
   },
-  "required_source_databases": [
-    "final_stkg_pipeline/final_curation.sqlite",
-    "final_stkg_pipeline/original_dataset.sqlite",
-    "final_stkg_pipeline/red_culture_evolution_v1.sqlite",
-    "final_stkg_pipeline/red_culture_semantic_integration_v1.sqlite"
-  ],
-  "allowed_database_paths": [
+  "historical_source_databases": [
     "final_stkg_pipeline/final_curation.sqlite",
     "final_stkg_pipeline/original_dataset.sqlite",
     "final_stkg_pipeline/red_culture_evolution_v1.sqlite",
@@ -53,13 +61,5 @@
     "releases/red_culture_stkg_v2/databases/red_culture_stkg_semantic_v2.sqlite",
     "releases/red_culture_stkg_v2/databases/stkg_v2_creative_media_enrichment.sqlite",
     "derived/stkg_v2_entity_classifier.sqlite"
-  ],
-  "forbidden_active_paths": [
-    "derived/red_culture_stkg_final_v2.sqlite",
-    "derived/red_culture_stkg_semantic_v2.sqlite",
-    "derived/red_culture_stkg_research_v2.sqlite",
-    "derived/red_culture_stkg_event_culture_v2.sqlite",
-    "derived/red_culture_stkg_evolution_v2.sqlite",
-    "graph_exports/stkg_v2"
   ]
 }

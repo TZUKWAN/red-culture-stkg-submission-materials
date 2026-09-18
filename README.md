@@ -1,28 +1,42 @@
-# 论文投稿材料、代码与数据整理包
+# 面向知识规范化与级联准入的历史文献时空知识图谱构建方法——以长江流域中共党史文献为例
 
-本目录是论文《选择性预测与结构准入协同的时空知识图谱构建方法——以长江流域中共党史文献为例》的集中整理副本。
+本仓库是论文《面向知识规范化与级联准入的历史文献时空知识图谱构建方法——以长江流域中共党史文献为例》（目标期刊：数据分析与知识发现）的投稿材料与可复现发布包集中整理副本。
 
 > 本仓库中的大型 SQLite 数据库和 CSV 数据文件由 Git LFS 管理。完整克隆前请安装 Git LFS，并在克隆后执行 `git lfs pull`。
 
+## 权威入口（审稿人从这里进入）
+
+1. **权威数字清单**：[`submission_work/final_submission_v3_1/AUTHORITATIVE_RESULTS.md`](submission_work/final_submission_v3_1/AUTHORITATIVE_RESULTS.md)
+   ——论文最终数字只允许引用该文件列出的六个权威来源。
+2. **最终发布数据库**：`submission_work/final_submission_v3_1/release_final/data/red_culture_stkg_final.sqlite`
+   （SHA256 = `020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a`，424,150 条断言 / 152,979 实体）
+3. **一键复现**：`submission_work/final_submission_v3_1/release_final/reproduce/replay_all.py`
+   （Level-A 离线回放，六步校验，约 10 秒，无需网络与 LLM）
+4. **图谱浏览器 / 一键 EXE**：`submission_work/final_submission_v3_1/YangtzeSTKG-Reproduce.exe`
+   （或 `python release_final/app/server.py`）
+5. **最新论文正文**：[`submission_work/final_submission_v3_2/manuscript/论文正文.md`](submission_work/final_submission_v3_2/manuscript/论文正文.md)
+
+## 核心结果（与 AUTHORITATIVE_RESULTS.md 一致）
+
+- 全库 **424,150** 条结构化断言全部具有可重放的准入路径：
+  112,158 条进入严格候选，268,047 条进入上下文状态，43,945 条进入未决状态，无法解释的历史状态为 0。
+- 112,158 条严格候选经证据语义核验：**STRICT 31,067 / CONTEXTUAL 31,282 / UNRESOLVED 49,809**（零持留）。
+- 独立双裁判审计（4,427 条分层样本）：对 STRICT 样本形成强共识的判定显示证据支持精度
+  **99.28%（965/972，95%CI 0.9852–0.9965）**；
+  级联阶段增益：直接发布候选的支持率仅 22.20%（总体加权），核验后最终严格层为 **42.55%**。
+- 门外 311,992 条的 5,000 条分层双模型盲审：加权 STRICT 机会仅 **0.66%（95%CI 0.40–0.97）**，
+  前置准入未造成大规模高质量知识遗漏。
+
 ## 目录
 
-- `manuscript/`：论文主稿与投稿要求材料。
-- `data/release_databases/`：与论文规模统计对应的发布数据库。
-- `data/graph_export/`：图谱节点和关系导出文件。
-- `data/source_data/`：工作空间中的原始主数据文件，需在公开前确认授权范围。
-- `code/`：构建脚本、测试、查询和界面代码。
-- `schema/`：Schema、实体类型、事件角色、文化状态和演进规则。
-- `queries/`：论文能力查询。
-- `documents/`：数据字典、研究报告、构建方案和文献分析。
-- `audit/`：发布清单、全量审计、测试和验证证据。
-- `metadata/`：版本、哈希和整理说明。
-- `submission_work/final_submission_v2/`：本轮核验后的终稿 Word、PDF、8幅正文图、实验CSV/JSON、实验脚本和图表公式交叉核验记录；投稿时优先使用其中的“投稿终稿_学术创新强化版”两个文件。
+- `submission_work/final_submission_v3_2/`：**本轮工作目录**——级联准入阶段增益实验、修订后论文正文（manuscript/）、CHANGELOG。
+- `submission_work/final_submission_v3_1/`：**最终发布包**（release_final/：可复现包、最终数据库、审计、图谱浏览器、EXE）与全库准入闭环实验（experiments/10_full_universe_admission_closure/）。
+- `manuscript/`、`submission_work/final_submission_v2|v3/`：**历史版本存档（SUPERSEDED）**，其中数字不得作为论文引用来源。
+- `data/`、`code/`、`schema/`、`queries/`、`documents/`、`audit/`、`metadata/`：历史构建材料与版本元数据（v2 时代，仅作参考）。
 
 ## 重要说明
 
-1. 本目录由原文件复制生成，原工作空间文件未移动、未覆盖。
-2. 数据库、图谱导出和原始数据是否可以公开，需要在投稿前按版权、授权和平台要求逐项确认。
-3. `release_manifest.json` 和 `CURRENT_RELEASE.json` 中的 SHA-256 是版本核验依据；复制完成后应重新检查整理包内文件哈希。
-4. 投稿终稿与发布包 README 的研究目标表述已统一；正式公开前仍需按期刊模板复核题名、摘要和数据声明。
-5. 论文投稿阶段可先提供数据通讯作者和数据标题；录用后再补充 ScienceDB 或其他公共平台的 DOI/URL。
-6. `submission_work/final_submission_v2/qa/` 仅为版面核验中间件和旧版本，不属于投稿上传文件。
+1. 本目录由原文件复制生成，原工作空间文件未移动、未覆盖；历史版本目录顶部均带 SUPERSEDED 横幅。
+2. 数据库、图谱导出和原始数据的公开范围按 `submission_work/final_submission_v3_1/release_final/manifests/DATA_RIGHTS_MANIFEST.csv` 执行；源文献全文不入包。
+3. 版本核验依据：`release_final/manifests/RELEASE_LOCK.json`、`FINAL_NUMBERS.json`（db_sha256）、`dist/SHA256SUMS.txt`、`metadata/CURRENT_RELEASE.json`。
+4. 源文献语料涉及版权与授权，公开前需逐项确认（含 ScienceDB/DOI 预留接口，录用后补充）。
