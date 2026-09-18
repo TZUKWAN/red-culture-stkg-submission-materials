@@ -81,3 +81,16 @@ supported_consensus_n / consensus_n（FULLY+PARTIAL）；负向率与不足率�
 - `metadata/CURRENT_RELEASE.json`：由 red-culture-stkg-v2-1 更新为
   red-culture-stkg-final-2026-09（canonical DB 指向 release_final 数据库，
   含 final_tiers、gate_tiers、release_package、EXE/zip 哈希与 git tag）。
+
+## 六、2026-09-19 统计措辞修正（无数字变动）
+
+- 69.18% 的估计量称谓由「设计加权」统一改为「按最终层构成后分层校正
+  （final-tier post-stratified）」：冻结采样器存在 overlay/fallback 等多重
+  入选路由，真实入样概率无法从冻结产物完整复原，不宣称完整设计加权估计。
+  涉及：论文正文（摘要/4.5/表 5 注/5/6）、README、RESULTS.json（estimator 注记）、
+  CASCADED_ADMISSION_STAGE_REPORT.md（估计方法声明 + 表述规范第 5 条）。
+- 图 5 主标题改为「级联准入前后强共识条件证据质量变化」；差值 +30.10pp 保留于柱标。
+- §5 讨论改为中性表述：「前置规范化与结构约束不能替代断言级证据核验；
+  二者在级联过程中分别控制结构语义条件与证据支持条件。」
+- 门外 0.66% 的「设计型 95%CI」称谓保留（该审计分层权重已知，术语准确）。
+- 数字本身零变动。

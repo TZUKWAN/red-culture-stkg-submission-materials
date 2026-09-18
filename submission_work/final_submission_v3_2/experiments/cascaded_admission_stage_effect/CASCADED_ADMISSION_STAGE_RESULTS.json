@@ -63,7 +63,8 @@
         "ins_h": 2
       }
     },
-    "pi_weighted_robust": null
+    "pi_weighted_robust": null,
+    "estimator": "final-tier post-stratified ratio estimator; true inclusion probabilities not fully recoverable from frozen artifacts; NOT claimed as a full design-weighted estimate"
   },
   "final_strict": {
     "population": 31067,

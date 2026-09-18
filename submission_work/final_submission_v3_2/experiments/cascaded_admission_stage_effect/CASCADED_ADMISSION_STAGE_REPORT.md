@@ -34,7 +34,7 @@ unconditional strong-consensus support share（把 Judge 分歧计入分母）�
 
 ## 三、估计方法声明
 
-- Pre-Gate 采用 final 层比率估计量
+- Pre-Gate 采用 **按最终层构成后分层校正的比率估计量（final-tier post-stratified ratio estimator）**。说明：冻结采样器存在 overlay/fallback 等多重入选路由，真实入样概率（inclusion probabilities）无法从冻结产物完整复原，故该估计为后分层校正，**不宣称完整设计加权估计**。
   P = Σ[N_h·(s_h/n_h)] / Σ[N_h·(c_h/n_h)]（N_h = 31,067/31,282/49,809；
   样本 n_h = 2,268/1,094/1,065），CI 为与设计一致的分层 bootstrap
   （B=10,000，seed=20260916，replicates 见
@@ -56,6 +56,9 @@ unconditional strong-consensus support share（把 Judge 分歧计入分母）�
 4. 局限：层内 predicate/boundary 路由过采样使层内代表性存在不可精确量化的偏差；
    Judge 强共识覆盖率（Pre-Gate 32.09%、Final STRICT 42.86%）属于评价不确定性，
    不与知识错误率混同。
+5. 表述规范：69.18% 一律称「按最终层构成后分层校正」，不称「设计加权」；
+   前置规范化与结构约束不能替代断言级证据核验，二者分别控制结构语义条件与
+   证据支持条件。
 
 ## 五、五项审计
 
