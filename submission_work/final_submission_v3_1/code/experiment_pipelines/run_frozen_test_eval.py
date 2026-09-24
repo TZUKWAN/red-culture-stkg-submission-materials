@@ -126,10 +126,11 @@ def load_jsonl(path: Path) -> list[dict[str, Any]]:
 
 
 def build_readonly_cache() -> dict[str, dict[str, Any]]:
-    """合并只读缓存（旧 risk_routing + budget_v2）：status=OK 优先，ERROR 仅兜底。"""
+    """合并只读缓存（旧 risk_routing + budget_v2 + 上次 TEST 实调）：
+    status=OK 优先，ERROR 仅兜底。"""
     ok: dict[str, dict[str, Any]] = {}
     err: dict[str, dict[str, Any]] = {}
-    for path in (OLD_ESC_LOG, BUDGET_V2_ESC_LOG):
+    for path in (OLD_ESC_LOG, BUDGET_V2_ESC_LOG, TEST_ESC_LOG):
         for rec in load_jsonl(path):
             sid = str(rec.get("sample_id"))
             if rec.get("status") == "OK":
@@ -580,7 +581,11 @@ def main() -> int:
                 "AUTO_ACCEPT = 非升级且 clf_pred 存在且 r_hat<=tau_accept；ABSTAIN = 其余；"
                 "clf_pred 缺失 → r_hat=1.0，永不 AUTO_ACCEPT"
             ),
-            "escalation_model": DEFAULT_MODEL,
+            # 升级模型必须记录「实际执行调用的模型」：重放模式下从缓存记录取，
+            # 仅全新调用时才是当前 DEFAULT_MODEL（防止溯源腐蚀）。
+            "escalation_model": (
+                sorted({r.get("model") for r in ok_test if r.get("model")})[0]
+                if ok_test else DEFAULT_MODEL),
             "escalation_prompt_version": "risk_routing.escalation.v1",
             "escalation_prompt_sha256": FROZEN_PROMPT_SHA,
             "split_manifest_sha256": sha256_file(rr.SPLIT_MANIFEST),

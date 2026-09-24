@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-09-11T01:21:32+00:00",
+  "created_utc": "2026-09-24T13:40:13+00:00",
   "script": "code/experiment_pipelines/run_frozen_test_eval.py",
   "purpose": "方法冻结后唯一一次 TEST 正式评价（指令 §25）",
   "single_run_declaration": "本表为方法冻结后唯一一次 TEST 评价，此前 TEST 未参与任何训练或调参；本运行之后不得再根据其结果修改任何方法组件。",
@@ -86,7 +86,7 @@
     }
   },
   "test_escalation_calls": {
-    "fresh_calls_made": 19,
+    "fresh_calls_made": 0,
     "ok": 19,
     "valid_decisions": 19,
     "invalid_decisions": 0,
@@ -348,5 +348,5 @@
     "test_escalation_log": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\frozen_test\\ESCALATION_CALLS_TEST.jsonl",
     "summary": "D:\\REDCULTUREDATA\\投稿材料_代码数据整理包\\submission_work\\final_submission_v3_1\\experiments\\02_selective_semantic\\frozen_test\\SUMMARY.json"
   },
-  "wall_seconds": 80.2
+  "wall_seconds": 13.8
 }
