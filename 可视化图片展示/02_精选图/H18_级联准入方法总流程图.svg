@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="762.1305pt" height="468.545516pt" viewBox="0 0 762.1305 468.545516" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:57:59.710043</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 468.545516 
+L 762.1305 468.545516 
+L 762.1305 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 236.377182 77.587266 
+Q 248.326906 77.587266 258.823186 77.587266 
+" clip-path="url(#p3794c2f22e)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 252.823186 74.587266 
+L 258.823186 77.587266 
+L 252.823186 80.587266 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 409.357182 77.587266 
+Q 421.306906 77.587266 431.803186 77.587266 
+" clip-path="url(#p3794c2f22e)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 425.803186 74.587266 
+L 431.803186 77.587266 
+L 425.803186 80.587266 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 582.337182 77.587266 
+Q 594.286906 77.587266 604.783186 77.587266 
+" clip-path="url(#p3794c2f22e)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 598.783186 74.587266 
+L 604.783186 77.587266 
+L 598.783186 80.587266 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 507.798 110.079085 
+Q 507.798 121.93919 507.798 132.345851 
+" clip-path="url(#p3794c2f22e)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 510.798 126.345851 
+L 507.798 132.345851 
+L 504.798 126.345851 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 433.258818 166.291266 
+Q 421.309094 166.291266 410.812814 166.291266 
+" clip-path="url(#p3794c2f22e)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 416.812814 169.291266 
+L 410.812814 166.291266 
+L 416.812814 163.291266 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 334.818 110.079085 
+Q 334.818 121.93919 334.818 132.345851 
+" clip-path="url(#p3794c2f22e)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 337.818 126.345851 
+L 334.818 132.345851 
+L 331.818 126.345851 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 493.848 198.785115 
+Q 493.848 213.414443 493.848 226.590327 
+" clip-path="url(#p3794c2f22e)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 496.848 220.590327 
+L 493.848 226.590327 
+L 490.848 220.590327 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 334.818 198.785115 
+Q 334.818 213.414443 334.818 226.590327 
+" clip-path="url(#p3794c2f22e)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 337.818 220.590327 
+L 334.818 226.590327 
+L 331.818 220.590327 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 499.428 293.031085 
+Q 499.428 304.89119 499.428 315.297851 
+" clip-path="url(#p3794c2f22e)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 502.428 309.297851 
+L 499.428 315.297851 
+L 496.428 309.297851 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 123.336 108.633666 
+L 228.24 108.633666 
+Q 234.936 108.633666 234.936 101.980866 
+L 234.936 53.193666 
+Q 234.936 46.540866 228.24 46.540866 
+L 123.336 46.540866 
+Q 116.64 46.540866 116.64 53.193666 
+L 116.64 101.980866 
+Q 116.64 108.633666 123.336 108.633666 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #edf1f4; stroke: #6e8ca0; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 268.416 108.633666 
+L 401.22 108.633666 
+Q 407.916 108.633666 407.916 101.980866 
+L 407.916 53.193666 
+Q 407.916 46.540866 401.22 46.540866 
+L 268.416 46.540866 
+Q 261.72 46.540866 261.72 53.193666 
+L 261.72 101.980866 
+Q 261.72 108.633666 268.416 108.633666 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #f0f2f4; stroke: #7fa3a0; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 441.396 108.633666 
+L 574.2 108.633666 
+Q 580.896 108.633666 580.896 101.980866 
+L 580.896 53.193666 
+Q 580.896 46.540866 574.2 46.540866 
+L 441.396 46.540866 
+Q 434.7 46.540866 434.7 53.193666 
+L 434.7 101.980866 
+Q 434.7 108.633666 441.396 108.633666 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #f0f2f4; stroke: #7fa3a0; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 614.376 108.633666 
+L 730.44 108.633666 
+Q 737.136 108.633666 737.136 101.980866 
+L 737.136 53.193666 
+Q 737.136 46.540866 730.44 46.540866 
+L 614.376 46.540866 
+Q 607.68 46.540866 607.68 53.193666 
+L 607.68 101.980866 
+Q 607.68 108.633666 614.376 108.633666 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #f3f0ea; stroke: #c2a08b; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 441.396 197.337666 
+L 574.2 197.337666 
+Q 580.896 197.337666 580.896 190.684866 
+L 580.896 141.897666 
+Q 580.896 135.244866 574.2 135.244866 
+L 441.396 135.244866 
+Q 434.7 135.244866 434.7 141.897666 
+L 434.7 190.684866 
+Q 434.7 197.337666 441.396 197.337666 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #eff3ee; stroke: #8fa586; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 614.376 197.337666 
+L 730.44 197.337666 
+Q 737.136 197.337666 737.136 190.684866 
+L 737.136 141.897666 
+Q 737.136 135.244866 730.44 135.244866 
+L 614.376 135.244866 
+Q 607.68 135.244866 607.68 141.897666 
+L 607.68 190.684866 
+Q 607.68 197.337666 614.376 197.337666 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #f0f2f4; stroke: #8b93a8; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 268.416 197.337666 
+L 401.22 197.337666 
+Q 407.916 197.337666 407.916 190.684866 
+L 407.916 141.897666 
+Q 407.916 135.244866 401.22 135.244866 
+L 268.416 135.244866 
+Q 261.72 135.244866 261.72 141.897666 
+L 261.72 190.684866 
+Q 261.72 197.337666 268.416 197.337666 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #f3f1f1; stroke: #a68080; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 268.416 291.585666 
+L 730.44 291.585666 
+Q 737.136 291.585666 737.136 284.932866 
+L 737.136 236.145666 
+Q 737.136 229.492866 730.44 229.492866 
+L 268.416 229.492866 
+Q 261.72 229.492866 261.72 236.145666 
+L 261.72 284.932866 
+Q 261.72 291.585666 268.416 291.585666 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #3e5c6e; stroke: #3e5c6e; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 268.416 374.745666 
+L 730.44 374.745666 
+Q 737.136 374.745666 737.136 368.092866 
+L 737.136 324.849666 
+Q 737.136 318.196866 730.44 318.196866 
+L 268.416 318.196866 
+Q 261.72 318.196866 261.72 324.849666 
+L 261.72 368.092866 
+Q 261.72 374.745666 268.416 374.745666 
+z
+" clip-path="url(#p3794c2f22e)" style="fill: #faf7f0; stroke: #c2a08b; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(157.788 73.985297)">候选抽取</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(151.038 85.600641)">282,165 候选</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(290.818 74.417616)">一级控制：选择性预测</text>
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(278.804625 85.070291)">规则/分类器/LLM + 显式弃权</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(468.198 74.417616)">二级控制：结构准入</text>
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(451.330875 85.070291)">身份投影/关系契约/时空/来源</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(655.608 74.664591)">前置三层</text>
+    <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(627.181875 84.627253)">112,158 / 268,047 / 43,945</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(485.798 162.745278)">证据语义门</text>
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(462.497937 174.150628)">定位 110,052 · 五档判定</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(652.408 158.794891)">严格层派生</text>
+    <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(640.85925 168.283141)">EventFrame 28,065</text>
+    <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(640.56175 177.771391)">CultureState 11,532</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(297.073406 163.227247)">上下文层 / 未决集合</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(287.518 173.637816)">（保留来源与决策记录）</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="499.428" y="263.283516" transform="rotate(-0 499.428 263.283516)">全库最终三层：STRICT 31,067 · CONTEXTUAL 299,329 · UNRESOLVED 93,754（466,312 来源关联，全部可返回原文）</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="499.428" y="348.679516" transform="rotate(-0 499.428 348.679516)">独立审计：门内 99.28% 支持精度（965/972 强共识）· 门外 STRICT 机会率 0.63%（样本）/0.66%（加权）</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="426.888" y="16.147266" transform="rotate(-0 426.888 16.147266)">级联准入方法总流程：从候选知识到分层发布的连续质量控制链</text>
+   </g>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="459.619266" transform="rotate(-0 7.2 459.619266)">数据源：AUTHORITATIVE_RESULTS.md 方法定型叙述 + FINAL_NUMBERS.json</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3794c2f22e">
+   <rect x="103.248" y="22.147266" width="647.28" height="388.08"/>
+  </clipPath>
+ </defs>
+</svg>

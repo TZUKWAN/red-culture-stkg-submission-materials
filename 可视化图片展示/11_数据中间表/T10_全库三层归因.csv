@@ -1,0 +1,12 @@
+﻿归因路径,断言数
+UNRESOLVED_前置_作用域冲突model_review,27492
+UNRESOLVED_前置_端点实体类型未决,16393
+UNRESOLVED_前置_人工遗留manual_review,60
+UNRESOLVED_核验_证据不支持,47576
+UNRESOLVED_核验_证据相矛盾,127
+UNRESOLVED_核验_无可定位证据,2106
+CONTEXTUAL_前置_谓词未完成规范化,264635
+CONTEXTUAL_前置_关系域约束违反,3412
+CONTEXTUAL_核验降级_PARTIAL非strict谓词,27704
+CONTEXTUAL_核验降级_证据不足INSUFFICIENT,3578
+STRICT_证据完全或安全部分支持,31067

@@ -1,0 +1,699 @@
+{
+  "method_version": "final-tiering-v1",
+  "frozen_at": "2026-09-10T15:58:04+08:00",
+  "note": "冻结 policy：先写盘再应用；queue/finalize 只读本文件，不现场改规则。",
+  "seeds": {
+    "rules_split": 20260910,
+    "aligned_supplement": 20260910
+  },
+  "tier_mapping_5_3": {
+    "FULLY_SUPPORTED": "STRICT",
+    "PARTIALLY_SUPPORTED": "predicate 表（full_share>=0.70 → STRICT，否则 CONTEXTUAL）",
+    "UNSUPPORTED": "UNRESOLVED",
+    "CONTRADICTED": "UNRESOLVED",
+    "INSUFFICIENT": "CONTEXTUAL",
+    "NO_EVIDENCE(recovery_D)": "UNRESOLVED",
+    "SAFE_RULE_FULL(免LLM安全规则)": "STRICT",
+    "NOT_EVALUATED(队列未及)": "CONTEXTUAL 保守持留（不计入 MEASURED）"
+  },
+  "predicate_policy_table": {
+    "led": {
+      "n_full": 208,
+      "n_partial": 148,
+      "n_full_partial": 356,
+      "full_share": 0.5843,
+      "partial_map_to": "contextual"
+    },
+    "participated_in": {
+      "n_full": 153,
+      "n_partial": 111,
+      "n_full_partial": 264,
+      "full_share": 0.5795,
+      "partial_map_to": "contextual"
+    },
+    "active_at": {
+      "n_full": 176,
+      "n_partial": 30,
+      "n_full_partial": 206,
+      "full_share": 0.8544,
+      "partial_map_to": "strict"
+    },
+    "member_of": {
+      "n_full": 67,
+      "n_partial": 57,
+      "n_full_partial": 124,
+      "full_share": 0.5403,
+      "partial_map_to": "contextual"
+    },
+    "held_position_in": {
+      "n_full": 83,
+      "n_partial": 37,
+      "n_full_partial": 120,
+      "full_share": 0.6917,
+      "partial_map_to": "contextual"
+    },
+    "organized": {
+      "n_full": 68,
+      "n_partial": 49,
+      "n_full_partial": 117,
+      "full_share": 0.5812,
+      "partial_map_to": "contextual"
+    },
+    "occurred_at": {
+      "n_full": 59,
+      "n_partial": 32,
+      "n_full_partial": 91,
+      "full_share": 0.6484,
+      "partial_map_to": "contextual"
+    },
+    "influenced": {
+      "n_full": 30,
+      "n_partial": 17,
+      "n_full_partial": 47,
+      "full_share": 0.6383,
+      "partial_map_to": "contextual"
+    },
+    "has_value_facet": {
+      "n_full": 20,
+      "n_partial": 13,
+      "n_full_partial": 33,
+      "full_share": 0.6061,
+      "partial_map_to": "contextual"
+    },
+    "stationed_at": {
+      "n_full": 20,
+      "n_partial": 11,
+      "n_full_partial": 31,
+      "full_share": 0.6452,
+      "partial_map_to": "contextual"
+    },
+    "worked_at": {
+      "n_full": 24,
+      "n_partial": 5,
+      "n_full_partial": 29,
+      "full_share": 0.8276,
+      "partial_map_to": "strict"
+    },
+    "supported": {
+      "n_full": 21,
+      "n_partial": 4,
+      "n_full_partial": 25,
+      "full_share": 0.84,
+      "partial_map_to": "strict"
+    },
+    "guided": {
+      "n_full": 18,
+      "n_partial": 5,
+      "n_full_partial": 23,
+      "full_share": 0.7826,
+      "partial_map_to": "strict"
+    },
+    "collaborated_with": {
+      "n_full": 17,
+      "n_partial": 6,
+      "n_full_partial": 23,
+      "full_share": 0.7391,
+      "partial_map_to": "strict"
+    },
+    "dispatched": {
+      "n_full": 17,
+      "n_partial": 4,
+      "n_full_partial": 21,
+      "full_share": 0.8095,
+      "partial_map_to": "strict"
+    },
+    "captured": {
+      "n_full": 14,
+      "n_partial": 5,
+      "n_full_partial": 19,
+      "full_share": 0.7368,
+      "partial_map_to": "strict"
+    },
+    "carried_out": {
+      "n_full": 10,
+      "n_partial": 7,
+      "n_full_partial": 17,
+      "full_share": 0.5882,
+      "partial_map_to": "contextual"
+    },
+    "created": {
+      "n_full": 13,
+      "n_partial": 4,
+      "n_full_partial": 17,
+      "full_share": 0.7647,
+      "partial_map_to": "strict"
+    },
+    "commanded": {
+      "n_full": 7,
+      "n_partial": 9,
+      "n_full_partial": 16,
+      "full_share": 0.4375,
+      "partial_map_to": "contextual"
+    },
+    "contacted": {
+      "n_full": 11,
+      "n_partial": 2,
+      "n_full_partial": 13,
+      "full_share": 0.8462,
+      "partial_map_to": "strict"
+    },
+    "opposed": {
+      "n_full": 10,
+      "n_partial": 2,
+      "n_full_partial": 12,
+      "full_share": 0.8333,
+      "partial_map_to": "strict"
+    },
+    "died_at": {
+      "n_full": 10,
+      "n_partial": 1,
+      "n_full_partial": 11,
+      "full_share": 0.9091,
+      "partial_map_to": "strict"
+    },
+    "fought_at": {
+      "n_full": 8,
+      "n_partial": 3,
+      "n_full_partial": 11,
+      "full_share": 0.7273,
+      "partial_map_to": "strict"
+    },
+    "responsible_for": {
+      "n_full": 8,
+      "n_partial": 2,
+      "n_full_partial": 10,
+      "full_share": 0.8,
+      "partial_map_to": "strict"
+    },
+    "introduced": {
+      "n_full": 8,
+      "n_partial": 1,
+      "n_full_partial": 9,
+      "full_share": 0.8889,
+      "partial_map_to": "contextual"
+    },
+    "liberated": {
+      "n_full": 8,
+      "n_partial": 1,
+      "n_full_partial": 9,
+      "full_share": 0.8889,
+      "partial_map_to": "contextual"
+    },
+    "born_at": {
+      "n_full": 8,
+      "n_partial": 0,
+      "n_full_partial": 8,
+      "full_share": 1.0,
+      "partial_map_to": "contextual"
+    },
+    "traveled_to": {
+      "n_full": 6,
+      "n_partial": 2,
+      "n_full_partial": 8,
+      "full_share": 0.75,
+      "partial_map_to": "contextual"
+    },
+    "colleague_of": {
+      "n_full": 5,
+      "n_partial": 3,
+      "n_full_partial": 8,
+      "full_share": 0.625,
+      "partial_map_to": "contextual"
+    },
+    "governed": {
+      "n_full": 5,
+      "n_partial": 3,
+      "n_full_partial": 8,
+      "full_share": 0.625,
+      "partial_map_to": "contextual"
+    },
+    "imprisoned_at": {
+      "n_full": 4,
+      "n_partial": 1,
+      "n_full_partial": 5,
+      "full_share": 0.8,
+      "partial_map_to": "contextual"
+    },
+    "met_with": {
+      "n_full": 3,
+      "n_partial": 2,
+      "n_full_partial": 5,
+      "full_share": 0.6,
+      "partial_map_to": "contextual"
+    },
+    "visited": {
+      "n_full": 4,
+      "n_partial": 1,
+      "n_full_partial": 5,
+      "full_share": 0.8,
+      "partial_map_to": "contextual"
+    },
+    "arrested_at": {
+      "n_full": 2,
+      "n_partial": 2,
+      "n_full_partial": 4,
+      "full_share": 0.5,
+      "partial_map_to": "contextual"
+    },
+    "used_artifact": {
+      "n_full": 3,
+      "n_partial": 1,
+      "n_full_partial": 4,
+      "full_share": 0.75,
+      "partial_map_to": "contextual"
+    },
+    "authored": {
+      "n_full": 2,
+      "n_partial": 2,
+      "n_full_partial": 4,
+      "full_share": 0.5,
+      "partial_map_to": "contextual"
+    },
+    "recruited": {
+      "n_full": 4,
+      "n_partial": 0,
+      "n_full_partial": 4,
+      "full_share": 1.0,
+      "partial_map_to": "contextual"
+    },
+    "comrade_of": {
+      "n_full": 2,
+      "n_partial": 2,
+      "n_full_partial": 4,
+      "full_share": 0.5,
+      "partial_map_to": "contextual"
+    },
+    "part_of": {
+      "n_full": 2,
+      "n_partial": 2,
+      "n_full_partial": 4,
+      "full_share": 0.5,
+      "partial_map_to": "contextual"
+    },
+    "mentioned_in": {
+      "n_full": 3,
+      "n_partial": 0,
+      "n_full_partial": 3,
+      "full_share": 1.0,
+      "partial_map_to": "contextual"
+    },
+    "spouse_of": {
+      "n_full": 3,
+      "n_partial": 0,
+      "n_full_partial": 3,
+      "full_share": 1.0,
+      "partial_map_to": "contextual"
+    },
+    "trained": {
+      "n_full": 3,
+      "n_partial": 0,
+      "n_full_partial": 3,
+      "full_share": 1.0,
+      "partial_map_to": "contextual"
+    },
+    "protected": {
+      "n_full": 1,
+      "n_partial": 1,
+      "n_full_partial": 2,
+      "full_share": 0.5,
+      "partial_map_to": "contextual"
+    },
+    "family_of": {
+      "n_full": 1,
+      "n_partial": 1,
+      "n_full_partial": 2,
+      "full_share": 0.5,
+      "partial_map_to": "contextual"
+    },
+    "reported_to": {
+      "n_full": 2,
+      "n_partial": 0,
+      "n_full_partial": 2,
+      "full_share": 1.0,
+      "partial_map_to": "contextual"
+    },
+    "located_in": {
+      "n_full": 2,
+      "n_partial": 0,
+      "n_full_partial": 2,
+      "full_share": 1.0,
+      "partial_map_to": "contextual"
+    },
+    "implemented": {
+      "n_full": 1,
+      "n_partial": 1,
+      "n_full_partial": 2,
+      "full_share": 0.5,
+      "partial_map_to": "contextual"
+    },
+    "appointed": {
+      "n_full": 1,
+      "n_partial": 1,
+      "n_full_partial": 2,
+      "full_share": 0.5,
+      "partial_map_to": "contextual"
+    },
+    "rescued": {
+      "n_full": 1,
+      "n_partial": 0,
+      "n_full_partial": 1,
+      "full_share": 1.0,
+      "partial_map_to": "contextual"
+    },
+    "active_during": {
+      "n_full": 0,
+      "n_partial": 1,
+      "n_full_partial": 1,
+      "full_share": 0.0,
+      "partial_map_to": "contextual"
+    },
+    "transmitted_by": {
+      "n_full": 1,
+      "n_partial": 0,
+      "n_full_partial": 1,
+      "full_share": 1.0,
+      "partial_map_to": "contextual"
+    },
+    "edited": {
+      "n_full": 1,
+      "n_partial": 0,
+      "n_full_partial": 1,
+      "full_share": 1.0,
+      "partial_map_to": "contextual"
+    }
+  },
+  "partial_strict_preds": [
+    "active_at",
+    "captured",
+    "collaborated_with",
+    "contacted",
+    "created",
+    "died_at",
+    "dispatched",
+    "fought_at",
+    "guided",
+    "opposed",
+    "responsible_for",
+    "supported",
+    "worked_at"
+  ],
+  "safe_rules": [],
+  "safe_rule_evidence": {
+    "joint": {
+      "train": {
+        "n": 0,
+        "coverage": 0.0,
+        "support_rate": null,
+        "wilson_ci": null
+      },
+      "test": {
+        "n": 0,
+        "coverage": 0.0,
+        "support_rate": null,
+        "wilson_ci": null
+      }
+    },
+    "candidates": [
+      {
+        "name": "R1_gap40_cue_between_len3",
+        "requires": {
+          "both_hit": true,
+          "both_hit_close": true,
+          "pred_cue_between": true,
+          "min_name_len_min": 3,
+          "max_gap": 40
+        },
+        "train": {
+          "n": 129,
+          "n_support": 112,
+          "support_rate": 0.8682,
+          "wilson_lb": 0.7991,
+          "wilson_ub": 0.9161,
+          "n_fully": 77,
+          "fully_rate": 0.5969
+        },
+        "test": {
+          "n": 43,
+          "n_support": 40,
+          "support_rate": 0.9302,
+          "wilson_lb": 0.8139,
+          "wilson_ub": 0.976,
+          "n_fully": 34,
+          "fully_rate": 0.7907
+        },
+        "accepted_train": false,
+        "accepted_test": false,
+        "accepted": false
+      },
+      {
+        "name": "R2_gap80_cue_between_len3",
+        "requires": {
+          "both_hit": true,
+          "both_hit_close": true,
+          "pred_cue_between": true,
+          "min_name_len_min": 3,
+          "max_gap": 80
+        },
+        "train": {
+          "n": 166,
+          "n_support": 139,
+          "support_rate": 0.8373,
+          "wilson_lb": 0.7737,
+          "wilson_ub": 0.8857,
+          "n_fully": 91,
+          "fully_rate": 0.5482
+        },
+        "test": {
+          "n": 54,
+          "n_support": 49,
+          "support_rate": 0.9074,
+          "wilson_lb": 0.8009,
+          "wilson_ub": 0.9598,
+          "n_fully": 41,
+          "fully_rate": 0.7593
+        },
+        "accepted_train": false,
+        "accepted_test": false,
+        "accepted": false
+      },
+      {
+        "name": "R3_gap80_cue_any_len3",
+        "requires": {
+          "both_hit": true,
+          "both_hit_close": true,
+          "pred_cue": true,
+          "min_name_len_min": 3,
+          "max_gap": 80
+        },
+        "train": {
+          "n": 430,
+          "n_support": 333,
+          "support_rate": 0.7744,
+          "wilson_lb": 0.7326,
+          "wilson_ub": 0.8114,
+          "n_fully": 224,
+          "fully_rate": 0.5209
+        },
+        "test": {
+          "n": 147,
+          "n_support": 128,
+          "support_rate": 0.8707,
+          "wilson_lb": 0.8069,
+          "wilson_ub": 0.9157,
+          "n_fully": 95,
+          "fully_rate": 0.6463
+        },
+        "accepted_train": false,
+        "accepted_test": false,
+        "accepted": false
+      },
+      {
+        "name": "R4_gap80_cue_between_len2",
+        "requires": {
+          "both_hit": true,
+          "both_hit_close": true,
+          "pred_cue_between": true,
+          "min_name_len_min": 2,
+          "max_gap": 80
+        },
+        "train": {
+          "n": 219,
+          "n_support": 180,
+          "support_rate": 0.8219,
+          "wilson_lb": 0.7658,
+          "wilson_ub": 0.8669,
+          "n_fully": 123,
+          "fully_rate": 0.5616
+        },
+        "test": {
+          "n": 77,
+          "n_support": 67,
+          "support_rate": 0.8701,
+          "wilson_lb": 0.7772,
+          "wilson_ub": 0.9279,
+          "n_fully": 55,
+          "fully_rate": 0.7143
+        },
+        "accepted_train": false,
+        "accepted_test": false,
+        "accepted": false
+      },
+      {
+        "name": "R5_both_hit_cue_any_len3",
+        "requires": {
+          "both_hit": true,
+          "pred_cue": true,
+          "min_name_len_min": 3
+        },
+        "train": {
+          "n": 468,
+          "n_support": 357,
+          "support_rate": 0.7628,
+          "wilson_lb": 0.7222,
+          "wilson_ub": 0.7991,
+          "n_fully": 242,
+          "fully_rate": 0.5171
+        },
+        "test": {
+          "n": 154,
+          "n_support": 132,
+          "support_rate": 0.8571,
+          "wilson_lb": 0.7932,
+          "wilson_ub": 0.9037,
+          "n_fully": 98,
+          "fully_rate": 0.6364
+        },
+        "accepted_train": false,
+        "accepted_test": false,
+        "accepted": false
+      },
+      {
+        "name": "R6_aligned_gap80_cue_between_len3",
+        "requires": {
+          "both_hit": true,
+          "both_hit_close": true,
+          "pred_cue_between": true,
+          "min_name_len_min": 3,
+          "max_gap": 80,
+          "stratum_family_in": [
+            "aligned"
+          ]
+        },
+        "train": {
+          "n": 90,
+          "n_support": 78,
+          "support_rate": 0.8667,
+          "wilson_lb": 0.7813,
+          "wilson_ub": 0.9221,
+          "n_fully": 52,
+          "fully_rate": 0.5778
+        },
+        "test": {
+          "n": 33,
+          "n_support": 30,
+          "support_rate": 0.9091,
+          "wilson_lb": 0.7643,
+          "wilson_ub": 0.9686,
+          "n_fully": 25,
+          "fully_rate": 0.7576
+        },
+        "accepted_train": false,
+        "accepted_test": false,
+        "accepted": false
+      },
+      {
+        "name": "R7_recoveryB_gap80_cue_between_len3",
+        "requires": {
+          "both_hit": true,
+          "both_hit_close": true,
+          "pred_cue_between": true,
+          "min_name_len_min": 3,
+          "max_gap": 80,
+          "stratum_family_in": [
+            "recovery_B"
+          ]
+        },
+        "train": {
+          "n": 60,
+          "n_support": 47,
+          "support_rate": 0.7833,
+          "wilson_lb": 0.6638,
+          "wilson_ub": 0.8688,
+          "n_fully": 30,
+          "fully_rate": 0.5
+        },
+        "test": {
+          "n": 19,
+          "n_support": 17,
+          "support_rate": 0.8947,
+          "wilson_lb": 0.6861,
+          "wilson_ub": 0.9706,
+          "n_fully": 14,
+          "fully_rate": 0.7368
+        },
+        "accepted_train": false,
+        "accepted_test": false,
+        "accepted": false
+      },
+      {
+        "name": "R8_aligned_or_recB_gap80_cue_any_len3",
+        "requires": {
+          "both_hit": true,
+          "both_hit_close": true,
+          "pred_cue": true,
+          "min_name_len_min": 3,
+          "max_gap": 80,
+          "stratum_family_in": [
+            "aligned",
+            "recovery_B"
+          ]
+        },
+        "train": {
+          "n": 404,
+          "n_support": 314,
+          "support_rate": 0.7772,
+          "wilson_lb": 0.7341,
+          "wilson_ub": 0.8151,
+          "n_fully": 213,
+          "fully_rate": 0.5272
+        },
+        "test": {
+          "n": 143,
+          "n_support": 125,
+          "support_rate": 0.8741,
+          "wilson_lb": 0.8098,
+          "wilson_ub": 0.9189,
+          "n_fully": 92,
+          "fully_rate": 0.6434
+        },
+        "accepted_train": false,
+        "accepted_test": false,
+        "accepted": false
+      }
+    ],
+    "thresholds": {
+      "min_n_train": 30,
+      "min_n_test": 15,
+      "support_min": 0.95,
+      "wilson_lb_min": 0.9
+    }
+  },
+  "deterministic_fast_path": {
+    "recovery_D": "直接 UNRESOLVED（无证据可定位，§5.3 NO_EVIDENCE 档）",
+    "safe_rule": "免 LLM 判 SAFE_RULE_FULL→STRICT（仅当 DEV train/test 双验证通过）"
+  },
+  "inputs": {
+    "strict_alignment_sha256": "e7426bd38c9b8253e8cb5cd8e2ce8f9f4bffdde6bee270b7e8beef141bb0e9f0",
+    "evidence_recovery_sha256": "f4c155559301873acf030e4a66f68477c251bba42f1f65bd95a2c5f654c012e7",
+    "dev_verdicts_sha256": "14ec4ab8c819112531840ac53cd2c853fdb5b6f24fde06fb4b9de1142ba1f21b",
+    "rules_sha256": "3453c0eaf5a13d84dfb121ff9b69b6a3b8a65f537d0b0743750775a05fe90dd8"
+  },
+  "model": {
+    "provider": "lmstudio_provider.chat_json (local LM Studio only)",
+    "model_id": "openai/gpt-oss-20b",
+    "base_url": "http://127.0.0.1:1234/v1",
+    "temperature": 0.0,
+    "max_tokens": 500,
+    "workers_max": 6
+  }
+}

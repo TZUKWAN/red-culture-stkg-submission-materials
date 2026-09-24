@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="524.909862pt" height="445.726803pt" viewBox="0 0 524.909862 445.726803" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:49:35.442611</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 445.726803 
+L 524.909862 445.726803 
+L 524.909862 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 98.002719 390.230953 
+L 510.922719 390.230953 
+L 510.922719 24.326953 
+L 98.002719 24.326953 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 98.002719 390.230953 
+L 98.002719 24.326953 
+" clip-path="url(#pc3f0c3f8a5)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="ma89c531e76" d="M 0 0 
+L 0 3.5 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ma89c531e76" x="98.002719" y="390.230953" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="98.002719" y="404.174703" transform="rotate(-0 98.002719 404.174703)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 154.873699 390.230953 
+L 154.873699 24.326953 
+" clip-path="url(#pc3f0c3f8a5)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#ma89c531e76" x="154.873699" y="390.230953" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="154.873699" y="404.174703" transform="rotate(-0 154.873699 404.174703)">10000</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 211.74468 390.230953 
+L 211.74468 24.326953 
+" clip-path="url(#pc3f0c3f8a5)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#ma89c531e76" x="211.74468" y="390.230953" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="211.74468" y="404.174703" transform="rotate(-0 211.74468 404.174703)">20000</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 268.61566 390.230953 
+L 268.61566 24.326953 
+" clip-path="url(#pc3f0c3f8a5)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#ma89c531e76" x="268.61566" y="390.230953" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="268.61566" y="404.174703" transform="rotate(-0 268.61566 404.174703)">30000</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 325.486641 390.230953 
+L 325.486641 24.326953 
+" clip-path="url(#pc3f0c3f8a5)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#ma89c531e76" x="325.486641" y="390.230953" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="325.486641" y="404.174703" transform="rotate(-0 325.486641 404.174703)">40000</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 382.357621 390.230953 
+L 382.357621 24.326953 
+" clip-path="url(#pc3f0c3f8a5)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#ma89c531e76" x="382.357621" y="390.230953" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="382.357621" y="404.174703" transform="rotate(-0 382.357621 404.174703)">50000</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 439.228602 390.230953 
+L 439.228602 24.326953 
+" clip-path="url(#pc3f0c3f8a5)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#ma89c531e76" x="439.228602" y="390.230953" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="439.228602" y="404.174703" transform="rotate(-0 439.228602 404.174703)">60000</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 496.099582 390.230953 
+L 496.099582 24.326953 
+" clip-path="url(#pc3f0c3f8a5)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#ma89c531e76" x="496.099582" y="390.230953" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="496.099582" y="404.174703" transform="rotate(-0 496.099582 404.174703)">70000</text>
+     </g>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="304.462719" y="418.101422" transform="rotate(-0 304.462719 418.101422)">断言数</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_17">
+      <defs>
+       <path id="me110ddc2ee" d="M 0 0 
+L -3.5 0 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="368.343173" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="371.245845" transform="rotate(-0 91.002719 371.245845)">原始·通信</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="351.389045" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="354.275701" transform="rotate(-0 91.002719 354.275701)">原始·时间关联</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="334.434916" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="337.798198" transform="rotate(-0 91.002719 337.798198)">原始·mentioned_in</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="317.480788" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="320.351429" transform="rotate(-0 91.002719 320.351429)">原始·disseminates</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="300.52666" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="303.413316" transform="rotate(-0 91.002719 303.413316)">原始·发展</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="283.572531" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="286.475203" transform="rotate(-0 91.002719 286.475203)">原始·关系待定</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_23">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="266.618403" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="269.505059" transform="rotate(-0 91.002719 269.505059)">原始·关联人物</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="249.664274" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="252.566946" transform="rotate(-0 91.002719 252.566946)">原始·事件发生地</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="232.710146" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="236.073427" transform="rotate(-0 91.002719 236.073427)">原始·embodied_in_event</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="215.756017" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="218.658689" transform="rotate(-0 91.002719 218.658689)">原始·见于证据记录</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_27">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="198.801889" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="201.688545" transform="rotate(-0 91.002719 201.688545)">原始·发生地</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="181.84776" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="184.766448" transform="rotate(-0 91.002719 184.766448)">原始·革命</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_29">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="164.893632" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="167.780288" transform="rotate(-0 91.002719 167.780288)">原始·活动于</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="147.939504" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="150.842175" transform="rotate(-0 91.002719 150.842175)">原始·任职于</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_31">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="130.985375" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="133.856016" transform="rotate(-0 91.002719 133.856016)">原始·组织</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_32">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="114.031247" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_25">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="116.917903" transform="rotate(-0 91.002719 116.917903)">原始·隶属</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_33">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="97.077118" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_26">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="99.963775" transform="rotate(-0 91.002719 99.963775)">原始·领导</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_34">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="80.12299" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_27">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="82.99363" transform="rotate(-0 91.002719 82.99363)">原始·参与</text>
+     </g>
+    </g>
+    <g id="ytick_19">
+     <g id="line2d_35">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="63.168861" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_28">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="66.055518" transform="rotate(-0 91.002719 66.055518)">原始·发生于</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_36">
+      <g>
+       <use xlink:href="#me110ddc2ee" x="98.002719" y="46.214733" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_29">
+      <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.002719" y="49.101389" transform="rotate(-0 91.002719 49.101389)">原始·关联</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 98.002719 390.230953 
+L 98.002719 24.326953 
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 98.002719 390.230953 
+L 510.922719 390.230953 
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 98.002719 373.598953 
+L 104.87842 373.598953 
+L 104.87842 363.087393 
+L 98.002719 363.087393 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 98.002719 356.644825 
+L 105.714424 356.644825 
+L 105.714424 346.133265 
+L 98.002719 346.133265 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 98.002719 339.690696 
+L 106.294508 339.690696 
+L 106.294508 329.179137 
+L 98.002719 329.179137 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 98.002719 322.736568 
+L 106.340004 322.736568 
+L 106.340004 312.225008 
+L 98.002719 312.225008 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 98.002719 305.782439 
+L 106.385501 305.782439 
+L 106.385501 295.27088 
+L 98.002719 295.27088 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 98.002719 288.828311 
+L 106.942837 288.828311 
+L 106.942837 278.316751 
+L 98.002719 278.316751 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 98.002719 271.874182 
+L 107.824337 271.874182 
+L 107.824337 261.362623 
+L 98.002719 261.362623 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 98.002719 254.920054 
+L 109.320044 254.920054 
+L 109.320044 244.408494 
+L 98.002719 244.408494 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 98.002719 237.965926 
+L 110.042305 237.965926 
+L 110.042305 227.454366 
+L 98.002719 227.454366 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 98.002719 221.011797 
+L 110.497273 221.011797 
+L 110.497273 210.500238 
+L 98.002719 210.500238 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 98.002719 204.057669 
+L 112.425199 204.057669 
+L 112.425199 193.546109 
+L 98.002719 193.546109 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 98.002719 187.10354 
+L 113.1304 187.10354 
+L 113.1304 176.591981 
+L 98.002719 176.591981 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 98.002719 170.149412 
+L 115.536042 170.149412 
+L 115.536042 159.637852 
+L 98.002719 159.637852 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 98.002719 153.195283 
+L 124.953876 153.195283 
+L 124.953876 142.683724 
+L 98.002719 142.683724 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 98.002719 136.241155 
+L 125.875186 136.241155 
+L 125.875186 125.729595 
+L 98.002719 125.729595 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 98.002719 119.287027 
+L 141.497645 119.287027 
+L 141.497645 108.775467 
+L 98.002719 108.775467 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 98.002719 102.332898 
+L 176.120698 102.332898 
+L 176.120698 91.821338 
+L 98.002719 91.821338 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 98.002719 85.37877 
+L 203.435829 85.37877 
+L 203.435829 74.86721 
+L 98.002719 74.86721 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 98.002719 68.424641 
+L 404.986584 68.424641 
+L 404.986584 57.913082 
+L 98.002719 57.913082 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 98.002719 51.470513 
+L 491.259862 51.470513 
+L 491.259862 40.958953 
+L 98.002719 40.958953 
+z
+" clip-path="url(#pc3f0c3f8a5)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="109.87842" y="370.217001" transform="rotate(-0 109.87842 370.217001)">1,209</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="110.714424" y="353.262873" transform="rotate(-0 110.714424 353.262873)">1,356</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="111.294508" y="336.308745" transform="rotate(-0 111.294508 336.308745)">1,458</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="111.340004" y="319.354616" transform="rotate(-0 111.340004 319.354616)">1,466</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="111.385501" y="302.400488" transform="rotate(-0 111.385501 302.400488)">1,474</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="111.942837" y="285.446359" transform="rotate(-0 111.942837 285.446359)">1,572</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="112.824337" y="268.492231" transform="rotate(-0 112.824337 268.492231)">1,727</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="114.320044" y="251.538102" transform="rotate(-0 114.320044 251.538102)">1,990</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="115.042305" y="234.583974" transform="rotate(-0 115.042305 234.583974)">2,117</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="115.497273" y="217.629845" transform="rotate(-0 115.497273 217.629845)">2,197</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="117.425199" y="200.675717" transform="rotate(-0 117.425199 200.675717)">2,536</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="118.1304" y="183.721589" transform="rotate(-0 118.1304 183.721589)">2,660</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="120.536042" y="166.76746" transform="rotate(-0 120.536042 166.76746)">3,083</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="129.953876" y="149.813332" transform="rotate(-0 129.953876 149.813332)">4,739</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="130.875186" y="132.859203" transform="rotate(-0 130.875186 132.859203)">4,901</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="146.497645" y="115.905075" transform="rotate(-0 146.497645 115.905075)">7,648</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="181.120698" y="98.950946" transform="rotate(-0 181.120698 98.950946)">13,736</text>
+   </g>
+   <g id="text_47">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="208.435829" y="81.996818" transform="rotate(-0 208.435829 81.996818)">18,539</text>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="409.986584" y="65.04269" transform="rotate(-0 409.986584 65.04269)">53,979</text>
+   </g>
+   <g id="text_49">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="496.259862" y="48.088561" transform="rotate(-0 496.259862 48.088561)">69,149</text>
+   </g>
+   <g id="text_50">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="304.462719" y="18.326953" transform="rotate(-0 304.462719 18.326953)">未归一原始谓词 Top20（上下文层主要来源）</text>
+   </g>
+  </g>
+  <g id="text_51">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="36.730719" y="436.800553" transform="rotate(-0 36.730719 436.800553)">数据源：T03_谓词分布</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc3f0c3f8a5">
+   <rect x="98.002719" y="24.326953" width="412.92" height="365.904"/>
+  </clipPath>
+ </defs>
+</svg>

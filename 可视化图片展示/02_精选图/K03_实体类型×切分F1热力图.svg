@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="436.129131pt" height="369.214962pt" viewBox="0 0 436.129131 369.214962" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:13:07.911982</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 369.214962 
+L 436.129131 369.214962 
+L 436.129131 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 63.504 322.186312 
+L 378.4392 322.186312 
+L 378.4392 22.810312 
+L 63.504 22.810312 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#pe5cee2171a)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAABSEAAATgCAYAAAAISIcvAAAkr0lEQVR4nO3aQU4UURRAUdoU0YGkO4GJI9fkyJW4I8csACeOXUMnIAOREEyMEQINaeIe6laZyjkL+O/nDW/e6u/d7/0BAAAAAEDkVfUwAAAAAMA/IiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgNRwdfu9nQAAE3l3/N6uAQAA/kMuIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACA1XP+6aicAwETOvn2xawAWYxiGub8AAKNxCQkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAACp1cdPH/btCACYxnpzZNUALMb1z5u5vwAAo3EJCQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAAKnV6dfP+3YEAExj83Zt1QAsxvPz09xfAIDRuIQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACA1HD/cN9OAICJvDl8bdcALMbuaTf3FwBgNC4hAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAIDWc/7hoJwDARP5sTuwagMXYXm7n/gIAjMYlJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKSGx91jOwEAJrK93No1AIuxPlrP/QUAGI1LSAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAAEiJkAAAAABASoQEAAAAAFIiJAAAAACQEiEBAAAAgJQICQAAAACkREgAAAAAICVCAgAAAAApERIAAAAASImQAAAAAEBKhAQAAAAAUiIkAAAAAJASIQEAAACAlAgJAAAAAKRESAAAAAAgJUICAAAAACkREgAAAABIiZAAAAAAQEqEBAAAAABSIiQAAAAAkBIhAQAAAICUCAkAAAAApERIAAAAACAlQgIAAAAAKRESAAAAADgovQBaFTLZvpvaRQAAAABJRU5ErkJggg==" id="image3077b828ee" transform="scale(1 -1) translate(0 -299.52)" x="63.504" y="-22.666313" width="315.12" height="299.52"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mcd1b5e6ce1" d="M 0 0 
+L 0 3.5 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mcd1b5e6ce1" x="115.9932" y="322.186312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="115.9932" y="336.344125" transform="rotate(-0 115.9932 336.344125)">随机切分</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mcd1b5e6ce1" x="220.9716" y="322.186312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="220.9716" y="336.344125" transform="rotate(-0 220.9716 336.344125)">书籍分组</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mcd1b5e6ce1" x="325.95" y="322.186312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="325.95" y="336.187875" transform="rotate(-0 325.95 336.187875)">湖北省留出</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4">
+      <defs>
+       <path id="m4094e442c0" d="M 0 0 
+L -3.5 0 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m4094e442c0" x="63.504" y="41.521312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="56.504" y="44.993187" transform="rotate(-0 56.504 44.993187)">组织</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m4094e442c0" x="63.504" y="78.943312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="56.504" y="82.415188" transform="rotate(-0 56.504 82.415188)">地点</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m4094e442c0" x="63.504" y="116.365312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="56.504" y="119.846562" transform="rotate(-0 56.504 119.846562)">人物</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m4094e442c0" x="63.504" y="153.787312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="56.504" y="157.327156" transform="rotate(-0 56.504 157.327156)">事件</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m4094e442c0" x="63.504" y="191.209312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="56.504" y="194.788219" transform="rotate(-0 56.504 194.788219)">机构</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m4094e442c0" x="63.504" y="228.631312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="56.504" y="232.132094" transform="rotate(-0 56.504 232.132094)">文献</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m4094e442c0" x="63.504" y="266.053313" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="56.504" y="269.612687" transform="rotate(-0 56.504 269.612687)">概念</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m4094e442c0" x="63.504" y="303.475312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="56.504" y="307.054219" transform="rotate(-0 56.504 307.054219)">价值面向</text>
+     </g>
+    </g>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(108.5557 39.112891)">0.64</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(102.266364 48.013719)">(n=101)</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(213.5341 39.112891)">0.70</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(207.244764 48.013719)">(n=131)</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(318.5125 39.112891)">0.62</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(314.348164 48.013719)">(n=17)</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(108.5557 76.534891)">0.61</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(104.391364 85.435719)">(n=44)</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(213.5341 76.534891)">0.51</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(209.369764 85.435719)">(n=22)</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(318.5125 76.534891)">0.70</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(314.348164 85.435719)">(n=13)</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(108.5557 113.956891)">0.45</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(104.391364 122.857719)">(n=35)</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(213.5341 113.956891)">0.38</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(209.369764 122.857719)">(n=24)</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(318.5125 113.956891)">0.40</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(316.473164 122.857719)">(n=8)</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(108.5557 151.378891)">0.41</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(104.391364 160.279719)">(n=34)</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(213.5341 151.378891)">0.34</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(209.369764 160.279719)">(n=39)</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(318.5125 151.378891)">0.35</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(316.473164 160.279719)">(n=5)</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(108.5557 188.800891)">0.85</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(104.391364 197.701719)">(n=13)</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(213.5341 188.800891)">0.77</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(211.494764 197.701719)">(n=7)</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(318.5125 188.800891)">0.89</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(316.473164 197.701719)">(n=5)</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(108.5557 226.222891)">0.31</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(104.391364 235.123719)">(n=13)</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(213.5341 226.222891)">0.52</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(209.369764 235.123719)">(n=17)</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(318.5125 226.222891)">0.50</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2f4a2b" transform="translate(316.473164 235.123719)">(n=3)</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(108.5557 263.644891)">0.18</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(106.516364 272.545719)">(n=2)</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(213.5341 263.644891)">0.00</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(211.494764 272.545719)">(n=1)</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(318.5125 263.644891)">0.00</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(316.473164 272.545719)">(n=0)</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(108.5557 301.066891)">0.00</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(106.516364 309.967719)">(n=0)</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(213.5341 301.066891)">0.00</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(211.494764 309.967719)">(n=1)</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(318.5125 301.066891)">0.00</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(316.473164 309.967719)">(n=0)</text>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="220.9716" y="16.810312" transform="rotate(-0 220.9716 16.810312)">各实体类型在三切分下的 F1</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_3">
+    <path d="M 386.028 284.764312 
+L 397.2546 284.764312 
+L 397.2546 60.232312 
+L 386.028 60.232312 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <image xlink:href="data:image/png;base64,
+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" id="image20373fc624" transform="scale(1 -1) translate(0 -224.4)" x="385.92" y="-60.24" width="11.28" height="224.4"/>
+   <g id="matplotlib.axis_3"/>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_9">
+     <g id="line2d_12">
+      <defs>
+       <path id="m58456e7bcd" d="M 0 0 
+L 3.5 0 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m58456e7bcd" x="397.2546" y="284.764312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_37">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="404.2546" y="288.236187" transform="rotate(-0 404.2546 288.236187)">0.0</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m58456e7bcd" x="397.2546" y="259.816312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_38">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="404.2546" y="263.288187" transform="rotate(-0 404.2546 263.288187)">0.1</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m58456e7bcd" x="397.2546" y="234.868312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_39">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="404.2546" y="238.340187" transform="rotate(-0 404.2546 238.340187)">0.2</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m58456e7bcd" x="397.2546" y="209.920312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_40">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="404.2546" y="213.392187" transform="rotate(-0 404.2546 213.392187)">0.3</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m58456e7bcd" x="397.2546" y="184.972312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_41">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="404.2546" y="188.444187" transform="rotate(-0 404.2546 188.444187)">0.4</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#m58456e7bcd" x="397.2546" y="160.024312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_42">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="404.2546" y="163.496187" transform="rotate(-0 404.2546 163.496187)">0.5</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m58456e7bcd" x="397.2546" y="135.076312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_43">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="404.2546" y="138.548187" transform="rotate(-0 404.2546 138.548187)">0.6</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m58456e7bcd" x="397.2546" y="110.128312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_44">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="404.2546" y="113.600188" transform="rotate(-0 404.2546 113.600188)">0.7</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m58456e7bcd" x="397.2546" y="85.180312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_45">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="404.2546" y="88.652187" transform="rotate(-0 404.2546 88.652187)">0.8</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#m58456e7bcd" x="397.2546" y="60.232312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_46">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="404.2546" y="63.704187" transform="rotate(-0 404.2546 63.704187)">0.9</text>
+     </g>
+    </g>
+    <g id="text_47">
+     <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="427.003975" y="172.498312" transform="rotate(-90 427.003975 172.498312)">F1</text>
+    </g>
+   </g>
+   <g id="LineCollection_1"/>
+   <g id="patch_4">
+    <path d="M 386.028 284.764312 
+L 391.6413 284.764312 
+L 397.2546 284.764312 
+L 397.2546 60.232312 
+L 391.6413 60.232312 
+L 386.028 60.232312 
+L 386.028 284.764312 
+z
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+  <g id="text_48">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="360.288712" transform="rotate(-0 7.2 360.288712)">数据源：CROSS_SOURCE_SUMMARY.json per_class_f1/per_class_support</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe5cee2171a">
+   <rect x="63.504" y="22.810312" width="314.9352" height="299.376"/>
+  </clipPath>
+ </defs>
+</svg>

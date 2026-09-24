@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="668.016pt" height="318.506287pt" viewBox="0 0 668.016 318.506287" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T02:06:57.153954</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 318.506287 
+L 668.016 318.506287 
+L 668.016 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 571.536 260.490437 
+C 601.132666 260.490437 629.521114 248.807421 650.449117 228.014437 
+C 671.37712 207.221454 683.136 179.016157 683.136 149.610437 
+C 683.136 120.204718 671.37712 91.999421 650.449117 71.206438 
+C 629.521114 50.413454 601.132666 38.730437 571.536 38.730437 
+C 541.939334 38.730437 513.550886 50.413454 492.622883 71.206438 
+C 471.69488 91.999421 459.936 120.204718 459.936 149.610437 
+C 459.936 179.016157 471.69488 207.221454 492.622883 228.014437 
+C 513.550886 248.807421 541.939334 260.490437 571.536 260.490437 
+z
+" clip-path="url(#p179d3a38c3)" style="fill: #edf1f4; stroke: #6e8ca0; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 448.776 229.998437 
+C 470.233583 229.998437 490.815207 221.528251 505.98801 206.453337 
+C 521.160812 191.378424 529.686 170.929584 529.686 149.610437 
+C 529.686 128.291291 521.160812 107.842451 505.98801 92.767538 
+C 490.815207 77.692624 470.233583 69.222437 448.776 69.222437 
+C 427.318417 69.222437 406.736793 77.692624 391.56399 92.767538 
+C 376.391188 107.842451 367.866 128.291291 367.866 149.610437 
+C 367.866 170.929584 376.391188 191.378424 391.56399 206.453337 
+C 406.736793 221.528251 427.318417 229.998437 448.776 229.998437 
+z
+" clip-path="url(#p179d3a38c3)" style="fill: #dce6ec; stroke: #6e8ca0; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 342.756 205.050437 
+C 357.554333 205.050437 371.748557 199.208929 382.212558 188.812437 
+C 392.67656 178.415946 398.556 164.313297 398.556 149.610437 
+C 398.556 134.907578 392.67656 120.804929 382.212558 110.408438 
+C 371.748557 100.011946 357.554333 94.170437 342.756 94.170437 
+C 327.957667 94.170437 313.763443 100.011946 303.299442 110.408438 
+C 292.83544 120.804929 286.956 134.907578 286.956 149.610437 
+C 286.956 164.313297 292.83544 178.415946 303.299442 188.812437 
+C 313.763443 199.208929 327.957667 205.050437 342.756 205.050437 
+z
+" clip-path="url(#p179d3a38c3)" style="fill: #c6d6df; stroke: #6e8ca0; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 253.476 183.983238 
+C 262.650966 183.983238 271.451385 180.361502 277.939066 173.915677 
+C 284.426747 167.469852 288.072 158.726211 288.072 149.610437 
+C 288.072 140.494664 284.426747 131.751023 277.939066 125.305198 
+C 271.451385 118.859373 262.650966 115.237637 253.476 115.237637 
+C 244.301034 115.237637 235.500615 118.859373 229.012934 125.305198 
+C 222.525253 131.751023 218.88 140.494664 218.88 149.610437 
+C 218.88 158.726211 222.525253 167.469852 229.012934 173.915677 
+C 235.500615 180.361502 244.301034 183.983238 253.476 183.983238 
+z
+" clip-path="url(#p179d3a38c3)" style="fill: #b0c6d2; stroke: #6e8ca0; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(554.336 146.784262)">门外宇宙</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(557.72225 156.68555)">311,992</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(431.576 146.784262)">分层抽样</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(439.101 156.68555)">5,000</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(321.256 146.767466)">双裁判有效</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(333.081 156.668753)">4,957</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(240.576 141.650902)">强共识</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(230.063844 151.800716)">STRICT机会</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(249.176 161.702004)">31</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="376.236" y="47.046437" transform="rotate(-0 376.236 47.046437)">种子 20260916 · 五层分层（CONTEXTUAL/UNRESOLVED × 阻断原因）· 双裁判独立盲评</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="376.236" y="16.098437" transform="rotate(-0 376.236 16.098437)">门外审计的嵌套抽样结构</text>
+   </g>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="309.580038" transform="rotate(-0 7.2 309.580038)">数据源：OUTSIDE_GATE_AUDIT_PROTOCOL.json / OUTSIDE_GATE_AUDIT_RESULTS.json</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p179d3a38c3">
+   <rect x="91.656" y="22.098437" width="569.16" height="255.024"/>
+  </clipPath>
+ </defs>
+</svg>

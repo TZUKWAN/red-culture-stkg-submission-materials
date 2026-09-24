@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="693.648pt" height="356.768497pt" viewBox="0 0 693.648 356.768497" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T02:06:58.874623</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 356.768497 
+L 693.648 356.768497 
+L 693.648 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 227.575419 151.801483 
+Q 242.837392 137.9016 257.024793 124.980387 
+" clip-path="url(#pacb4187c65)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 250.568788 126.802474 
+L 257.024793 124.980387 
+L 254.608859 131.238443 
+z
+" clip-path="url(#pacb4187c65)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 227.350639 176.878744 
+Q 242.837829 196.112835 257.413479 214.214851 
+" clip-path="url(#pacb4187c65)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 255.987198 207.660027 
+L 257.413479 214.214851 
+L 251.313851 211.422982 
+z
+" clip-path="url(#pacb4187c65)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 389.280986 124.122089 
+Q 404.6583 140.67337 419.046331 156.159842 
+" clip-path="url(#pacb4187c65)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 417.160279 149.722233 
+L 419.046331 156.159842 
+L 412.764613 153.806119 
+z
+" clip-path="url(#pacb4187c65)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 389.280986 215.436005 
+Q 404.6583 198.884724 419.046331 183.398252 
+" clip-path="url(#pacb4187c65)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 412.764613 185.751975 
+L 419.046331 183.398252 
+L 417.160279 189.83586 
+z
+" clip-path="url(#pacb4187c65)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 546.160588 169.779047 
+Q 555.319792 169.779047 563.025553 169.779047 
+" clip-path="url(#pacb4187c65)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 557.025553 166.779047 
+L 563.025553 169.779047 
+L 557.025553 172.779047 
+z
+" clip-path="url(#pacb4187c65)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 115.056 209.141447 
+L 219.96 209.141447 
+Q 226.656 209.141447 226.656 202.488647 
+L 226.656 131.525447 
+Q 226.656 124.872647 219.96 124.872647 
+L 115.056 124.872647 
+Q 108.36 124.872647 108.36 131.525447 
+L 108.36 202.488647 
+Q 108.36 209.141447 115.056 209.141447 
+z
+" clip-path="url(#pacb4187c65)" style="fill: #edf1f4; stroke: #6e8ca0; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 265.716 153.701447 
+L 381.78 153.701447 
+Q 388.476 153.701447 388.476 147.048647 
+L 388.476 98.261447 
+Q 388.476 91.608647 381.78 91.608647 
+L 265.716 91.608647 
+Q 259.02 91.608647 259.02 98.261447 
+L 259.02 147.048647 
+Q 259.02 153.701447 265.716 153.701447 
+z
+" clip-path="url(#pacb4187c65)" style="fill: #f0f2f4; stroke: #8b93a8; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 265.716 247.949447 
+L 381.78 247.949447 
+Q 388.476 247.949447 388.476 241.296647 
+L 388.476 192.509447 
+Q 388.476 185.856647 381.78 185.856647 
+L 265.716 185.856647 
+Q 259.02 185.856647 259.02 192.509447 
+L 259.02 241.296647 
+Q 259.02 247.949447 265.716 247.949447 
+z
+" clip-path="url(#pacb4187c65)" style="fill: #f3f0ea; stroke: #c2a08b; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 427.536 203.597447 
+L 538.02 203.597447 
+Q 544.716 203.597447 544.716 196.944647 
+L 544.716 142.613447 
+Q 544.716 135.960647 538.02 135.960647 
+L 427.536 135.960647 
+Q 420.84 135.960647 420.84 142.613447 
+L 420.84 196.944647 
+Q 420.84 203.597447 427.536 203.597447 
+z
+" clip-path="url(#pacb4187c65)" style="fill: #eff3ee; stroke: #8fa586; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 572.616 203.597447 
+L 666.36 203.597447 
+Q 673.056 203.597447 673.056 196.944647 
+L 673.056 142.613447 
+Q 673.056 135.960647 666.36 135.960647 
+L 572.616 135.960647 
+Q 565.92 135.960647 565.92 142.613447 
+L 565.92 196.944647 
+Q 565.92 203.597447 572.616 203.597447 
+z
+" clip-path="url(#pacb4187c65)" style="fill: #3e5c6e; stroke: #3e5c6e; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(145.508 163.449063)">门外宇宙</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(149.9355 175.999719)">311,992</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(288.046828 118.984875)">CONTEXTUAL 层</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(303.498 130.649438)">2,483 样本</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(288.534797 213.232875)">UNRESOLVED 层</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(303.498 224.897437)">2,474 样本</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(457.778 166.299672)">双裁判有效</text>
+    <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(471.528 178.159984)">4,957</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(589.500875 166.607528)">强共识 STRICT</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(585.088 177.065128)">机会 31（0.63%）</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="390.708" y="56.127047" transform="rotate(-0 390.708 56.127047)">CONTEXTUAL 翻案率 0.68%（17/2,483）· UNRESOLVED 翻案率 0.57%（14/2,474）</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="390.708" y="16.863047" transform="rotate(-0 390.708 16.863047)">门外审计抽样—判定—机会识别分流</text>
+   </g>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="347.842247" transform="rotate(-0 7.2 347.842247)">数据源：OUTSIDE_GATE_AUDIT_RESULTS.json（contextual/unresolved_strict_opportunity_rate）</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pacb4187c65">
+   <rect x="94.968" y="22.863047" width="591.48" height="288.288"/>
+  </clipPath>
+ </defs>
+</svg>

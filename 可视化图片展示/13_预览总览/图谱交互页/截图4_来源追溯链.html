@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 820px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body><div style="font-family:SimSun,serif;background:#ffffff;padding:10px 18px 4px 18px;"><h2 style="margin:2px 0 6px 0;color:#2B2B2B;font-weight:bold;">来源追溯链示例 — 知识陈述 → 来源记录 → 原文证据（严格层抽样）</h2><div style="color:#6B6B6B;font-size:13px;">数据源：长江流域党史时空知识图谱最终库（sha256 020d4905…），交互式力导向布局，拖拽/滚轮可缩放</div></div>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#3E5C6E", "font": {"color": "#2B2B2B"}, "id": "FIFACT-00012beb3ce556fc3f813cbf", "label": "\u845b\u6587\u82f1 \u2014led\u2014 \u5987\u5973\u89e3\u653e\u8fd0\u52a8", "shape": "dot", "size": 22, "title": "\u65ad\u8a00 IFACT-00012beb3ce556fc3f813cbf"}, {"color": "#AD9E8C", "font": {"color": "#2B2B2B"}, "id": "PROV-N|IFACT-00012beb3ce556fc3f813cbf|FACT-1b399bbe8bad17899a7a1adc", "label": "\u6765\u6e90\u8bb0\u5f55", "shape": "dot", "size": 14, "title": "PROV-N|IFACT-00012beb3ce556fc3f813cbf|FACT-1b399bbe8bad17899a7a1adc"}, {"color": "#AD9E8C", "font": {"color": "#2B2B2B"}, "id": "PROV-N|IFACT-00012beb3ce556fc3f813cbf|FACT-89cfa3b2be2d8f384e3751ec", "label": "\u6765\u6e90\u8bb0\u5f55", "shape": "dot", "size": 14, "title": "PROV-N|IFACT-00012beb3ce556fc3f813cbf|FACT-89cfa3b2be2d8f384e3751ec"}, {"color": "#3E5C6E", "font": {"color": "#2B2B2B"}, "id": "FIFACT-0001f794902d11892e2d5b4a", "label": "\u66f9\u7ecd\u534e \u2014organize\u2014 \u79cb\u6536\u5927\u53cd\u653b", "shape": "dot", "size": 22, "title": "\u65ad\u8a00 IFACT-0001f794902d11892e2d5b4a"}, {"color": "#AD9E8C", "font": {"color": "#2B2B2B"}, "id": "PROV-N|IFACT-0001f794902d11892e2d5b4a|FACT-39481364eb2cfd014425d076", "label": "\u6765\u6e90\u8bb0\u5f55", "shape": "dot", "size": 14, "title": "PROV-N|IFACT-0001f794902d11892e2d5b4a|FACT-39481364eb2cfd014425d076"}, {"color": "#3E5C6E", "font": {"color": "#2B2B2B"}, "id": "FIFACT-00087d873760cf8fd21f043f", "label": "\u7ea2\u519b\u653b\u57ce\u90e8\u961f \u2014carried_\u2014 \u653f\u6cbb\u653b\u52bf", "shape": "dot", "size": 22, "title": "\u65ad\u8a00 IFACT-00087d873760cf8fd21f043f"}, {"color": "#AD9E8C", "font": {"color": "#2B2B2B"}, "id": "PROV-N|IFACT-00087d873760cf8fd21f043f|FACT-3a971c52c68489af9a600204", "label": "\u6765\u6e90\u8bb0\u5f55", "shape": "dot", "size": 14, "title": "PROV-N|IFACT-00087d873760cf8fd21f043f|FACT-3a971c52c68489af9a600204"}]);
+                  edges = new vis.DataSet([{"color": "#C9C4BC", "from": "FIFACT-00012beb3ce556fc3f813cbf", "title": "\u6765\u6e90\u652f\u6301", "to": "PROV-N|IFACT-00012beb3ce556fc3f813cbf|FACT-1b399bbe8bad17899a7a1adc"}, {"color": "#C9C4BC", "from": "FIFACT-00012beb3ce556fc3f813cbf", "title": "\u6765\u6e90\u652f\u6301", "to": "PROV-N|IFACT-00012beb3ce556fc3f813cbf|FACT-89cfa3b2be2d8f384e3751ec"}, {"color": "#C9C4BC", "from": "FIFACT-0001f794902d11892e2d5b4a", "title": "\u6765\u6e90\u652f\u6301", "to": "PROV-N|IFACT-0001f794902d11892e2d5b4a|FACT-39481364eb2cfd014425d076"}, {"color": "#C9C4BC", "from": "FIFACT-00087d873760cf8fd21f043f", "title": "\u6765\u6e90\u652f\u6301", "to": "PROV-N|IFACT-00087d873760cf8fd21f043f|FACT-3a971c52c68489af9a600204"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"interaction": {"hover": true, "tooltipDelay": 80, "navigationButtons": false, "keyboard": false}, "physics": {"stabilization": {"iterations": 420, "fit": true}}, "nodes": {"font": {"size": 13, "face": "SimSun"}, "borderWidth": 1.2, "shape": "dot"}, "edges": {"font": {"size": 10, "face": "SimSun"}, "smooth": {"type": "continuous"}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    <script>setTimeout(function(){try{network.fit();}catch(e){}},6500);setTimeout(function(){try{network.fit();}catch(e){}},10000);setTimeout(function(){try{network.fit();}catch(e){}},14000);</script></body>
+</html>

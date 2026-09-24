@@ -1,0 +1,350 @@
+{
+  "seed": 20260910,
+  "n_bootstrap": 2000,
+  "method": "paired percentile bootstrap（同一重采样索引集）",
+  "population": {
+    "scope": "pooled DEV+VAL labeled (leave-B-out)",
+    "n": 261
+  },
+  "required_pairs": [
+    "R6_vs_R1",
+    "R6_vs_R2",
+    "R6_vs_R3"
+  ],
+  "additional_pairs": [
+    "R6_vs_R4",
+    "R6_vs_R5"
+  ],
+  "comparisons": [
+    {
+      "budget": 0.05,
+      "pair_id": "R6_vs_R1",
+      "n_labeled": 261,
+      "delta_observed": -0.007662835249042155,
+      "ci95_low": -0.04214559386973182,
+      "ci95_high": 0.026819923371647514,
+      "p_boot_two_sided": 0.725,
+      "frac_delta_gt0": 0.286,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.05,
+      "pair_id": "R6_vs_R2",
+      "n_labeled": 261,
+      "delta_observed": 0.0038314176245210496,
+      "ci95_low": -0.007662835249042155,
+      "ci95_high": 0.01532567049808431,
+      "p_boot_two_sided": 0.783,
+      "frac_delta_gt0": 0.6085,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.05,
+      "pair_id": "R6_vs_R3",
+      "n_labeled": 261,
+      "delta_observed": 0.0038314176245210496,
+      "ci95_low": -0.007662835249042155,
+      "ci95_high": 0.01915708812260536,
+      "p_boot_two_sided": 0.794,
+      "frac_delta_gt0": 0.603,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.05,
+      "pair_id": "R6_vs_R4",
+      "n_labeled": 261,
+      "delta_observed": 0.0038314176245210496,
+      "ci95_low": -0.007662835249042155,
+      "ci95_high": 0.01532567049808431,
+      "p_boot_two_sided": 0.765,
+      "frac_delta_gt0": 0.6175,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.05,
+      "pair_id": "R6_vs_R5",
+      "n_labeled": 261,
+      "delta_observed": 0.0,
+      "ci95_low": -0.03448275862068961,
+      "ci95_high": 0.03065134099616862,
+      "p_boot_two_sided": 1.0,
+      "frac_delta_gt0": 0.4695,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.1,
+      "pair_id": "R6_vs_R1",
+      "n_labeled": 261,
+      "delta_observed": 0.0,
+      "ci95_low": -0.04214559386973182,
+      "ci95_high": 0.04597701149425287,
+      "p_boot_two_sided": 1.0,
+      "frac_delta_gt0": 0.465,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.1,
+      "pair_id": "R6_vs_R2",
+      "n_labeled": 261,
+      "delta_observed": -0.003831417624521105,
+      "ci95_low": -0.038314176245210774,
+      "ci95_high": 0.030651340996168563,
+      "p_boot_two_sided": 0.881,
+      "frac_delta_gt0": 0.347,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.1,
+      "pair_id": "R6_vs_R3",
+      "n_labeled": 261,
+      "delta_observed": -0.003831417624521105,
+      "ci95_low": -0.03831417624521072,
+      "ci95_high": 0.030651340996168563,
+      "p_boot_two_sided": 0.911,
+      "frac_delta_gt0": 0.3735,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.1,
+      "pair_id": "R6_vs_R4",
+      "n_labeled": 261,
+      "delta_observed": -0.003831417624521105,
+      "ci95_low": -0.03831417624521072,
+      "ci95_high": 0.03074712643678112,
+      "p_boot_two_sided": 0.956,
+      "frac_delta_gt0": 0.393,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.1,
+      "pair_id": "R6_vs_R5",
+      "n_labeled": 261,
+      "delta_observed": 0.007662835249042099,
+      "ci95_low": -0.03448275862068961,
+      "ci95_high": 0.04597701149425287,
+      "p_boot_two_sided": 0.817,
+      "frac_delta_gt0": 0.5915,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.2,
+      "pair_id": "R6_vs_R1",
+      "n_labeled": 261,
+      "delta_observed": 0.03831417624521072,
+      "ci95_low": -0.02298850574712641,
+      "ci95_high": 0.09578544061302685,
+      "p_boot_two_sided": 0.241,
+      "frac_delta_gt0": 0.8795,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.2,
+      "pair_id": "R6_vs_R2",
+      "n_labeled": 261,
+      "delta_observed": 0.04597701149425287,
+      "ci95_low": 0.011494252873563204,
+      "ci95_high": 0.08045977011494254,
+      "p_boot_two_sided": 0.007,
+      "frac_delta_gt0": 0.9965,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.2,
+      "pair_id": "R6_vs_R3",
+      "n_labeled": 261,
+      "delta_observed": 0.04980842911877398,
+      "ci95_low": 0.011494252873563204,
+      "ci95_high": 0.0881226053639847,
+      "p_boot_two_sided": 0.01,
+      "frac_delta_gt0": 0.995,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.2,
+      "pair_id": "R6_vs_R4",
+      "n_labeled": 261,
+      "delta_observed": 0.04980842911877398,
+      "ci95_low": 0.011494252873563204,
+      "ci95_high": 0.0881226053639847,
+      "p_boot_two_sided": 0.011,
+      "frac_delta_gt0": 0.9945,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.2,
+      "pair_id": "R6_vs_R5",
+      "n_labeled": 261,
+      "delta_observed": 0.007662835249042155,
+      "ci95_low": -0.03831417624521072,
+      "ci95_high": 0.05363984674329503,
+      "p_boot_two_sided": 0.797,
+      "frac_delta_gt0": 0.6015,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.3,
+      "pair_id": "R6_vs_R1",
+      "n_labeled": 261,
+      "delta_observed": 0.03831417624521072,
+      "ci95_low": -0.026819923371647514,
+      "ci95_high": 0.09961685823754796,
+      "p_boot_two_sided": 0.296,
+      "frac_delta_gt0": 0.852,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.3,
+      "pair_id": "R6_vs_R2",
+      "n_labeled": 261,
+      "delta_observed": 0.04980842911877398,
+      "ci95_low": 0.007662835249042155,
+      "ci95_high": 0.09195402298850575,
+      "p_boot_two_sided": 0.02,
+      "frac_delta_gt0": 0.99,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.3,
+      "pair_id": "R6_vs_R3",
+      "n_labeled": 261,
+      "delta_observed": 0.03831417624521072,
+      "ci95_low": 0.0,
+      "ci95_high": 0.08045977011494249,
+      "p_boot_two_sided": 0.067,
+      "frac_delta_gt0": 0.9665,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.3,
+      "pair_id": "R6_vs_R4",
+      "n_labeled": 261,
+      "delta_observed": 0.03831417624521072,
+      "ci95_low": 0.0,
+      "ci95_high": 0.07662835249042144,
+      "p_boot_two_sided": 0.071,
+      "frac_delta_gt0": 0.9645,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.3,
+      "pair_id": "R6_vs_R5",
+      "n_labeled": 261,
+      "delta_observed": 0.026819923371647514,
+      "ci95_low": -0.01915708812260536,
+      "ci95_high": 0.07279693486590039,
+      "p_boot_two_sided": 0.301,
+      "frac_delta_gt0": 0.8495,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.4,
+      "pair_id": "R6_vs_R1",
+      "n_labeled": 261,
+      "delta_observed": 0.05747126436781608,
+      "ci95_low": -0.01149425287356326,
+      "ci95_high": 0.12643678160919536,
+      "p_boot_two_sided": 0.111,
+      "frac_delta_gt0": 0.9445,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.4,
+      "pair_id": "R6_vs_R2",
+      "n_labeled": 261,
+      "delta_observed": 0.04214559386973182,
+      "ci95_low": 0.003831417624521105,
+      "ci95_high": 0.08045977011494254,
+      "p_boot_two_sided": 0.032,
+      "frac_delta_gt0": 0.984,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.4,
+      "pair_id": "R6_vs_R3",
+      "n_labeled": 261,
+      "delta_observed": 0.04597701149425287,
+      "ci95_low": 0.015325670498084252,
+      "ci95_high": 0.08045977011494254,
+      "p_boot_two_sided": 0.011,
+      "frac_delta_gt0": 0.9945,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.4,
+      "pair_id": "R6_vs_R4",
+      "n_labeled": 261,
+      "delta_observed": 0.04597701149425287,
+      "ci95_low": 0.011494252873563314,
+      "ci95_high": 0.08045977011494249,
+      "p_boot_two_sided": 0.007,
+      "frac_delta_gt0": 0.9965,
+      "classification": "R6显著优于对手（95% CI 全为正）"
+    },
+    {
+      "budget": 0.4,
+      "pair_id": "R6_vs_R5",
+      "n_labeled": 261,
+      "delta_observed": 0.04214559386973182,
+      "ci95_low": 0.0,
+      "ci95_high": 0.08429118773946359,
+      "p_boot_two_sided": 0.069,
+      "frac_delta_gt0": 0.9655,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.5,
+      "pair_id": "R6_vs_R1",
+      "n_labeled": 261,
+      "delta_observed": 0.04214559386973182,
+      "ci95_low": -0.026819923371647514,
+      "ci95_high": 0.10727969348658994,
+      "p_boot_two_sided": 0.228,
+      "frac_delta_gt0": 0.886,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.5,
+      "pair_id": "R6_vs_R2",
+      "n_labeled": 261,
+      "delta_observed": 0.03065134099616862,
+      "ci95_low": -0.01532567049808431,
+      "ci95_high": 0.08045977011494254,
+      "p_boot_two_sided": 0.221,
+      "frac_delta_gt0": 0.8895,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.5,
+      "pair_id": "R6_vs_R3",
+      "n_labeled": 261,
+      "delta_observed": 0.034482758620689724,
+      "ci95_low": -0.011494252873563204,
+      "ci95_high": 0.08429118773946354,
+      "p_boot_two_sided": 0.183,
+      "frac_delta_gt0": 0.9085,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.5,
+      "pair_id": "R6_vs_R4",
+      "n_labeled": 261,
+      "delta_observed": 0.034482758620689724,
+      "ci95_low": -0.01532567049808431,
+      "ci95_high": 0.08429118773946365,
+      "p_boot_two_sided": 0.199,
+      "frac_delta_gt0": 0.9005,
+      "classification": "无显著差异（95% CI 跨 0）"
+    },
+    {
+      "budget": 0.5,
+      "pair_id": "R6_vs_R5",
+      "n_labeled": 261,
+      "delta_observed": 0.04214559386973182,
+      "ci95_low": -0.007662835249042099,
+      "ci95_high": 0.09578544061302674,
+      "p_boot_two_sided": 0.109,
+      "frac_delta_gt0": 0.9455,
+      "classification": "无显著差异（95% CI 跨 0）"
+    }
+  ]
+}

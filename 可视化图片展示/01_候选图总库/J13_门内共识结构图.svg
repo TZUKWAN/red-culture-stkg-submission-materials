@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="540.93664pt" height="221.823734pt" viewBox="0 0 540.93664 221.823734" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T02:07:00.009181</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 221.823734 
+L 540.93664 221.823734 
+L 540.93664 -0 
+L 0 -0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 73.44 184.529203 
+L 519.84 184.529203 
+L 519.84 23.753203 
+L 73.44 23.753203 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 73.44 184.529203 
+L 73.44 23.753203 
+" clip-path="url(#p6582bef684)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m19186ae19c" d="M 0 0 
+L 0 3.5 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m19186ae19c" x="73.44" y="184.529203" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="73.44" y="198.472953" transform="rotate(-0 73.44 198.472953)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 162.72 184.529203 
+L 162.72 23.753203 
+" clip-path="url(#p6582bef684)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m19186ae19c" x="162.72" y="184.529203" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="162.72" y="198.472953" transform="rotate(-0 162.72 198.472953)">20</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 252 184.529203 
+L 252 23.753203 
+" clip-path="url(#p6582bef684)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m19186ae19c" x="252" y="184.529203" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="252" y="198.472953" transform="rotate(-0 252 198.472953)">40</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 341.28 184.529203 
+L 341.28 23.753203 
+" clip-path="url(#p6582bef684)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m19186ae19c" x="341.28" y="184.529203" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="341.28" y="198.472953" transform="rotate(-0 341.28 198.472953)">60</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 430.56 184.529203 
+L 430.56 23.753203 
+" clip-path="url(#p6582bef684)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m19186ae19c" x="430.56" y="184.529203" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="430.56" y="198.472953" transform="rotate(-0 430.56 198.472953)">80</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 519.84 184.529203 
+L 519.84 23.753203 
+" clip-path="url(#p6582bef684)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m19186ae19c" x="519.84" y="184.529203" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="519.84" y="198.472953" transform="rotate(-0 519.84 198.472953)">100</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="296.64" y="212.270766" transform="rotate(-0 296.64 212.270766)">占比（%）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 73.44 184.529203 
+L 519.84 184.529203 
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 73.44 177.221203 
+L 171.69264 177.221203 
+L 171.69264 31.061203 
+L 73.44 31.061203 
+z
+" clip-path="url(#p6582bef684)" style="fill: #6e8ca0"/>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="122.56632" y="106.102797" transform="rotate(-0 122.56632 106.102797)">强共识 22.0%</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 171.69264 177.221203 
+L 287.44416 177.221203 
+L 287.44416 31.061203 
+L 171.69264 31.061203 
+z
+" clip-path="url(#p6582bef684)" style="fill: #8b93a8"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="229.5684" y="106.102797" transform="rotate(-0 229.5684 106.102797)">弱共识 25.9%</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 287.44416 177.221203 
+L 457.43328 177.221203 
+L 457.43328 31.061203 
+L 287.44416 31.061203 
+z
+" clip-path="url(#p6582bef684)" style="fill: #7d8b99"/>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="372.43872" y="106.102797" transform="rotate(-0 372.43872 106.102797)">无共识 38.1%</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 457.43328 177.221203 
+L 519.84 177.221203 
+L 519.84 31.061203 
+L 457.43328 31.061203 
+z
+" clip-path="url(#p6582bef684)" style="fill: #ad9e8c"/>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="488.63664" y="106.182875" transform="rotate(-0 488.63664 106.182875)">部分一致 14.0%（推算）</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="296.64" y="17.753203" transform="rotate(-0 296.64 17.753203)">门内双裁判共识结构（n=4,427）</text>
+   </g>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="204.991603" transform="rotate(-0 7.2 204.991603)">数据源：AUDIT_RESULTS.json（弱共识 0.2593、无共识 0.3808；部分一致=1−其余，推算口径）</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6582bef684">
+   <rect x="73.44" y="23.753203" width="446.4" height="160.776"/>
+  </clipPath>
+ </defs>
+</svg>

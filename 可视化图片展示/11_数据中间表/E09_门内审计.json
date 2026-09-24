@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-09-14T06:40:59.920643+08:00",
+  "n_judged_both": 4427,
+  "judge_raw_agreement": 0.3598,
+  "weak_consensus_rate": 0.2593,
+  "no_consensus_rate": 0.3808,
+  "cohens_kappa": 0.1838,
+  "strict_support_precision_strong_consensus": 0.9928,
+  "fully_supported_precision": 0.8066,
+  "strict_false_positive_rate": 0.0041,
+  "contextual_upgrade_opportunity": 0.18,
+  "unresolved_false_negative_opportunity": 0.3173,
+  "by_stratum": {
+    "active_at": {
+      "n": 9,
+      "sup": 9,
+      "fp": 0
+    },
+    "aligned": {
+      "n": 398,
+      "sup": 398,
+      "fp": 0
+    },
+    "boundary_high_conf": {
+      "n": 22,
+      "sup": 22,
+      "fp": 0
+    },
+    "captured": {
+      "n": 13,
+      "sup": 12,
+      "fp": 1
+    },
+    "collaborated_with": {
+      "n": 4,
+      "sup": 4,
+      "fp": 0
+    },
+    "contacted": {
+      "n": 1,
+      "sup": 1,
+      "fp": 0
+    },
+    "created": {
+      "n": 13,
+      "sup": 13,
+      "fp": 0
+    },
+    "died_at": {
+      "n": 23,
+      "sup": 23,
+      "fp": 0
+    },
+    "dispatched": {
+      "n": 10,
+      "sup": 10,
+      "fp": 0
+    },
+    "fought_at": {
+      "n": 11,
+      "sup": 11,
+      "fp": 0
+    },
+    "guided": {
+      "n": 9,
+      "sup": 8,
+      "fp": 1
+    },
+    "mismatch_with_evidence": {
+      "n": 19,
+      "sup": 18,
+      "fp": 0
+    },
+    "opposed": {
+      "n": 11,
+      "sup": 10,
+      "fp": 1
+    },
+    "parser_salvaged": {
+      "n": 3,
+      "sup": 3,
+      "fp": 0
+    },
+    "recovery_A": {
+      "n": 48,
+      "sup": 48,
+      "fp": 0
+    },
+    "recovery_B": {
+      "n": 250,
+      "sup": 250,
+      "fp": 0
+    },
+    "recovery_C": {
+      "n": 91,
+      "sup": 88,
+      "fp": 1
+    },
+    "responsible_for": {
+      "n": 15,
+      "sup": 15,
+      "fp": 0
+    },
+    "supported": {
+      "n": 11,
+      "sup": 11,
+      "fp": 0
+    },
+    "worked_at": {
+      "n": 11,
+      "sup": 11,
+      "fp": 0
+    }
+  },
+  "salvage_audit": [
+    {
+      "fact_id": "IFACT-28fefa0b47a2961a348aff25",
+      "production": "PARTIALLY_SUPPORTED",
+      "a": "FULLY_SUPPORTED",
+      "b": "PARTIALLY_SUPPORTED",
+      "strong": false
+    }
+  ],
+  "salvage_strong_consensus_mismatch": 0,
+  "protocol_triggers": {
+    "PASS": "strict_support_precision >= 0.90 且 salvage mismatch <= 2",
+    "INVESTIGATE_LOCAL": "[0.80, 0.90) 或单层系统偏差",
+    "ESCALATE": "< 0.80 或 salvage 系统性错误"
+  },
+  "decision": "PASS",
+  "strict_support_precision_strong_consensus_detail": {
+    "definition": "production STRICT 样本中，双裁判形成强共识（五档一致）的判定里，判为 FULLY_SUPPORTED/PARTIALLY_SUPPORTED 的比例",
+    "point": 0.9928,
+    "ci95_wilson": [
+      0.9852,
+      0.9965
+    ],
+    "A_supported": 965,
+    "B_contradicted_by_consensus": 4,
+    "N_strong_consensus_strict": 972,
+    "fully_only_precision": {
+      "point": 0.8066,
+      "ci95_wilson": [
+        0.7806,
+        0.8302
+      ],
+      "A_fully": 784,
+      "N": 972
+    },
+    "false_positive_rate": {
+      "point": 0.0041,
+      "ci95_wilson": [
+        0.0016,
+        0.0105
+      ],
+      "B": 4,
+      "N": 972
+    },
+    "phrasing_rule": "禁止写「99.28%（n=4,427）」；规范表述：在 4,427 条分层独立审计样本中，对 STRICT 样本形成强共识的判定显示其证据支持精度为 99.28%（965/972）。",
+    "patched_at": "2026-09-17T12:15:38.847822+08:00"
+  }
+}

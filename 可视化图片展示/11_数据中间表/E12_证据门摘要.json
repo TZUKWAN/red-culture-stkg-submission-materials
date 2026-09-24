@@ -1,0 +1,2710 @@
+{
+  "task": "P0-9 Evidence Semantic Gate stratified validation (指令 §13)",
+  "method_version": "evidence-semantic-gate-v1",
+  "generated_at": "2026-09-10T09:58:30+08:00",
+  "deterministic": true,
+  "manual_review": false,
+  "model": {
+    "provider": "lmstudio_provider.chat_json (local LM Studio only)",
+    "model_id": "openai/gpt-oss-20b",
+    "base_url": "http://127.0.0.1:1234/v1",
+    "temperature": 0.0,
+    "max_tokens": 500,
+    "workers": 4
+  },
+  "sampling": {
+    "seed": 20260909,
+    "scheme": "per-stratum simple random sample over sorted fact_ids",
+    "sample_ids_file": "SAMPLE_IDS.json"
+  },
+  "labels": [
+    "FULLY_SUPPORTED",
+    "PARTIALLY_SUPPORTED",
+    "UNSUPPORTED",
+    "CONTRADICTED",
+    "INSUFFICIENT"
+  ],
+  "rules": {
+    "empty_evidence": "forced INSUFFICIENT (no model call)",
+    "dev_restratification": {
+      "FULLY_SUPPORTED": "strict",
+      "PARTIALLY_SUPPORTED": "predicate 表决定 strict/contextual（默认 contextual）",
+      "UNSUPPORTED | CONTRADICTED": "unresolved",
+      "INSUFFICIENT": "contextual",
+      "UNPARSEABLE | CALL_FAILED": "excluded from rates (待复核)"
+    },
+    "partial_predicate_rule": "n_partial>=25 且 mean_conf>=0.7 且 share(conf>=0.75)>=0.5 → strict，否则 contextual"
+  },
+  "inputs": {
+    "strict_alignment_csv": "STRICT_ALIGNMENT.csv",
+    "strict_alignment_sha256": "e7426bd38c9b8253e8cb5cd8e2ce8f9f4bffdde6bee270b7e8beef141bb0e9f0",
+    "evidence_recovery_csv": "EVIDENCE_RECOVERY.csv",
+    "evidence_recovery_sha256": "f4c155559301873acf030e4a66f68477c251bba42f1f65bd95a2c5f654c012e7"
+  },
+  "execution": {
+    "elapsed_seconds": 0.0,
+    "n_executed": 0,
+    "n_forced_empty": 0,
+    "n_call_failed": 0,
+    "latency_avg_s": null,
+    "workers": 4,
+    "resumed": true
+  },
+  "elapsed_seconds_total": 0.7,
+  "strata": {
+    "mismatch_with_evidence": {
+      "layer_size": 6136,
+      "sample_size": 1500,
+      "n_judged": 1500,
+      "n_valid": 1500,
+      "n_unparseable_or_failed": 0,
+      "decisions": {
+        "FULLY_SUPPORTED": 14,
+        "PARTIALLY_SUPPORTED": 21,
+        "UNSUPPORTED": 1153,
+        "CONTRADICTED": 11,
+        "INSUFFICIENT": 301
+      },
+      "decision_shares": {
+        "FULLY_SUPPORTED": 0.0093,
+        "PARTIALLY_SUPPORTED": 0.014,
+        "UNSUPPORTED": 0.7687,
+        "CONTRADICTED": 0.0073,
+        "INSUFFICIENT": 0.2007
+      },
+      "support_rate": 0.0233,
+      "support_ci95": [
+        0.0168,
+        0.0323
+      ],
+      "fully_rate": 0.0093,
+      "fully_ci95": [
+        0.0056,
+        0.0156
+      ],
+      "n_forced_empty": 0
+    },
+    "recovery_B": {
+      "layer_size": 16705,
+      "sample_size": 1000,
+      "n_judged": 999,
+      "n_valid": 974,
+      "n_unparseable_or_failed": 25,
+      "decisions": {
+        "FULLY_SUPPORTED": 418,
+        "PARTIALLY_SUPPORTED": 268,
+        "UNSUPPORTED": 210,
+        "CONTRADICTED": 45,
+        "INSUFFICIENT": 33
+      },
+      "decision_shares": {
+        "FULLY_SUPPORTED": 0.4292,
+        "PARTIALLY_SUPPORTED": 0.2752,
+        "UNSUPPORTED": 0.2156,
+        "CONTRADICTED": 0.0462,
+        "INSUFFICIENT": 0.0339
+      },
+      "support_rate": 0.7043,
+      "support_ci95": [
+        0.6749,
+        0.7321
+      ],
+      "fully_rate": 0.4292,
+      "fully_ci95": [
+        0.3984,
+        0.4605
+      ],
+      "n_forced_empty": 0
+    },
+    "recovery_C": {
+      "layer_size": 40345,
+      "sample_size": 800,
+      "n_judged": 800,
+      "n_valid": 800,
+      "n_unparseable_or_failed": 0,
+      "decisions": {
+        "FULLY_SUPPORTED": 50,
+        "PARTIALLY_SUPPORTED": 68,
+        "UNSUPPORTED": 592,
+        "CONTRADICTED": 9,
+        "INSUFFICIENT": 81
+      },
+      "decision_shares": {
+        "FULLY_SUPPORTED": 0.0625,
+        "PARTIALLY_SUPPORTED": 0.085,
+        "UNSUPPORTED": 0.74,
+        "CONTRADICTED": 0.0112,
+        "INSUFFICIENT": 0.1013
+      },
+      "support_rate": 0.1475,
+      "support_ci95": [
+        0.1246,
+        0.1738
+      ],
+      "fully_rate": 0.0625,
+      "fully_ci95": [
+        0.0477,
+        0.0815
+      ],
+      "n_forced_empty": 0
+    },
+    "recovery_A": {
+      "layer_size": 2841,
+      "sample_size": 200,
+      "n_judged": 200,
+      "n_valid": 200,
+      "n_unparseable_or_failed": 0,
+      "decisions": {
+        "FULLY_SUPPORTED": 45,
+        "PARTIALLY_SUPPORTED": 26,
+        "UNSUPPORTED": 100,
+        "CONTRADICTED": 0,
+        "INSUFFICIENT": 29
+      },
+      "decision_shares": {
+        "FULLY_SUPPORTED": 0.225,
+        "PARTIALLY_SUPPORTED": 0.13,
+        "UNSUPPORTED": 0.5,
+        "CONTRADICTED": 0.0,
+        "INSUFFICIENT": 0.145
+      },
+      "support_rate": 0.355,
+      "support_ci95": [
+        0.292,
+        0.4235
+      ],
+      "fully_rate": 0.225,
+      "fully_ci95": [
+        0.1726,
+        0.2877
+      ],
+      "n_forced_empty": 0
+    },
+    "aligned": {
+      "layer_size": 44025,
+      "sample_size": 1500,
+      "n_judged": 1500,
+      "n_valid": 1497,
+      "n_unparseable_or_failed": 3,
+      "decisions": {
+        "FULLY_SUPPORTED": 631,
+        "PARTIALLY_SUPPORTED": 209,
+        "UNSUPPORTED": 545,
+        "CONTRADICTED": 35,
+        "INSUFFICIENT": 77
+      },
+      "decision_shares": {
+        "FULLY_SUPPORTED": 0.4215,
+        "PARTIALLY_SUPPORTED": 0.1396,
+        "UNSUPPORTED": 0.3641,
+        "CONTRADICTED": 0.0234,
+        "INSUFFICIENT": 0.0514
+      },
+      "support_rate": 0.5611,
+      "support_ci95": [
+        0.5359,
+        0.5861
+      ],
+      "fully_rate": 0.4215,
+      "fully_ci95": [
+        0.3967,
+        0.4467
+      ],
+      "n_forced_empty": 0
+    }
+  },
+  "partial_predicate_table": {
+    "led": {
+      "n_partial": 148,
+      "mean_confidence": 0.6923,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "participated_in": {
+      "n_partial": 111,
+      "mean_confidence": 0.7033,
+      "share_conf_ge_075": 1.0,
+      "map_to": "strict"
+    },
+    "member_of": {
+      "n_partial": 57,
+      "mean_confidence": 0.716,
+      "share_conf_ge_075": 1.0,
+      "map_to": "strict"
+    },
+    "organized": {
+      "n_partial": 49,
+      "mean_confidence": 0.7086,
+      "share_conf_ge_075": 1.0,
+      "map_to": "strict"
+    },
+    "held_position_in": {
+      "n_partial": 37,
+      "mean_confidence": 0.7508,
+      "share_conf_ge_075": 1.0,
+      "map_to": "strict"
+    },
+    "occurred_at": {
+      "n_partial": 32,
+      "mean_confidence": 0.6634,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "active_at": {
+      "n_partial": 30,
+      "mean_confidence": 0.6617,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "influenced": {
+      "n_partial": 17,
+      "mean_confidence": 0.6794,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "has_value_facet": {
+      "n_partial": 13,
+      "mean_confidence": 0.6654,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "stationed_at": {
+      "n_partial": 11,
+      "mean_confidence": 0.6682,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "commanded": {
+      "n_partial": 9,
+      "mean_confidence": 0.6944,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "carried_out": {
+      "n_partial": 7,
+      "mean_confidence": 0.6571,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "collaborated_with": {
+      "n_partial": 6,
+      "mean_confidence": 0.6833,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "captured": {
+      "n_partial": 5,
+      "mean_confidence": 0.706,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "guided": {
+      "n_partial": 5,
+      "mean_confidence": 0.69,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "worked_at": {
+      "n_partial": 5,
+      "mean_confidence": 0.62,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "dispatched": {
+      "n_partial": 4,
+      "mean_confidence": 0.7125,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "supported": {
+      "n_partial": 4,
+      "mean_confidence": 0.6875,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "created": {
+      "n_partial": 4,
+      "mean_confidence": 0.7125,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "governed": {
+      "n_partial": 3,
+      "mean_confidence": 0.6333,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "colleague_of": {
+      "n_partial": 3,
+      "mean_confidence": 0.7,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "fought_at": {
+      "n_partial": 3,
+      "mean_confidence": 0.6833,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "contacted": {
+      "n_partial": 2,
+      "mean_confidence": 0.675,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "arrested_at": {
+      "n_partial": 2,
+      "mean_confidence": 0.7,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "traveled_to": {
+      "n_partial": 2,
+      "mean_confidence": 0.65,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "opposed": {
+      "n_partial": 2,
+      "mean_confidence": 0.75,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "authored": {
+      "n_partial": 2,
+      "mean_confidence": 0.8,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "comrade_of": {
+      "n_partial": 2,
+      "mean_confidence": 0.65,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "part_of": {
+      "n_partial": 2,
+      "mean_confidence": 0.7,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "responsible_for": {
+      "n_partial": 2,
+      "mean_confidence": 0.75,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "met_with": {
+      "n_partial": 2,
+      "mean_confidence": 0.65,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "protected": {
+      "n_partial": 1,
+      "mean_confidence": 0.65,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "died_at": {
+      "n_partial": 1,
+      "mean_confidence": 0.6,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "family_of": {
+      "n_partial": 1,
+      "mean_confidence": 0.9,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "imprisoned_at": {
+      "n_partial": 1,
+      "mean_confidence": 0.7,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "used_artifact": {
+      "n_partial": 1,
+      "mean_confidence": 0.7,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "implemented": {
+      "n_partial": 1,
+      "mean_confidence": 0.65,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "introduced": {
+      "n_partial": 1,
+      "mean_confidence": 0.6,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "liberated": {
+      "n_partial": 1,
+      "mean_confidence": 0.8,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "active_during": {
+      "n_partial": 1,
+      "mean_confidence": 0.65,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "appointed": {
+      "n_partial": 1,
+      "mean_confidence": 0.6,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    },
+    "visited": {
+      "n_partial": 1,
+      "mean_confidence": 0.65,
+      "share_conf_ge_075": 1.0,
+      "map_to": "contextual"
+    }
+  },
+  "strict_partial_preds": [
+    "held_position_in",
+    "member_of",
+    "organized",
+    "participated_in"
+  ],
+  "pred_by_stratum": {
+    "mismatch_with_evidence": {
+      "participated_in": {
+        "n": 312,
+        "support_rate": 0.0256,
+        "ci95": [
+          0.013,
+          0.0498
+        ],
+        "fully": 4,
+        "partial": 4
+      },
+      "member_of": {
+        "n": 49,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0727
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "organized": {
+        "n": 82,
+        "support_rate": 0.0732,
+        "ci95": [
+          0.034,
+          0.1506
+        ],
+        "fully": 1,
+        "partial": 5
+      },
+      "mentioned_in": {
+        "n": 77,
+        "support_rate": 0.013,
+        "ci95": [
+          0.0023,
+          0.07
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "introduced": {
+        "n": 4,
+        "support_rate": 0.25,
+        "ci95": [
+          0.0456,
+          0.6994
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "led": {
+        "n": 307,
+        "support_rate": 0.0065,
+        "ci95": [
+          0.0018,
+          0.0234
+        ],
+        "fully": 0,
+        "partial": 2
+      },
+      "active_at": {
+        "n": 153,
+        "support_rate": 0.0131,
+        "ci95": [
+          0.0036,
+          0.0464
+        ],
+        "fully": 1,
+        "partial": 1
+      },
+      "responsible_for": {
+        "n": 9,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.2991
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "occurred_at": {
+        "n": 84,
+        "support_rate": 0.0595,
+        "ci95": [
+          0.0257,
+          0.1319
+        ],
+        "fully": 1,
+        "partial": 4
+      },
+      "held_position_in": {
+        "n": 43,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.082
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "trained": {
+        "n": 11,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.2588
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "guided": {
+        "n": 31,
+        "support_rate": 0.0323,
+        "ci95": [
+          0.0057,
+          0.1619
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "dispatched": {
+        "n": 8,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.3244
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "supported": {
+        "n": 27,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.1246
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "contacted": {
+        "n": 22,
+        "support_rate": 0.0455,
+        "ci95": [
+          0.0081,
+          0.218
+        ],
+        "fully": 0,
+        "partial": 1
+      },
+      "carried_out": {
+        "n": 14,
+        "support_rate": 0.1429,
+        "ci95": [
+          0.0401,
+          0.3994
+        ],
+        "fully": 1,
+        "partial": 1
+      },
+      "commanded": {
+        "n": 35,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0989
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "stationed_at": {
+        "n": 21,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.1546
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "used_artifact": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "opposed": {
+        "n": 15,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.2039
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "located_in": {
+        "n": 11,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.2588
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "studied_at": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "collaborated_with": {
+        "n": 11,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.2588
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "influenced": {
+        "n": 40,
+        "support_rate": 0.025,
+        "ci95": [
+          0.0044,
+          0.1288
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "fought_at": {
+        "n": 20,
+        "support_rate": 0.05,
+        "ci95": [
+          0.0089,
+          0.2361
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "worked_at": {
+        "n": 18,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.1759
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "preserved_at": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "rescued": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "traveled_to": {
+        "n": 10,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.2775
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "killed": {
+        "n": 3,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.5615
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "implemented": {
+        "n": 3,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.5615
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "protected": {
+        "n": 6,
+        "support_rate": 0.1667,
+        "ci95": [
+          0.0301,
+          0.5635
+        ],
+        "fully": 0,
+        "partial": 1
+      },
+      "born_at": {
+        "n": 4,
+        "support_rate": 0.25,
+        "ci95": [
+          0.0456,
+          0.6994
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "visited": {
+        "n": 3,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.5615
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "arrested_at": {
+        "n": 9,
+        "support_rate": 0.1111,
+        "ci95": [
+          0.0199,
+          0.435
+        ],
+        "fully": 0,
+        "partial": 1
+      },
+      "colleague_of": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "died_at": {
+        "n": 5,
+        "support_rate": 0.2,
+        "ci95": [
+          0.0362,
+          0.6245
+        ],
+        "fully": 0,
+        "partial": 1
+      },
+      "used_in_event": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "formulated": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "reported_to": {
+        "n": 4,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.4899
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "governed": {
+        "n": 9,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.2991
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "appointed": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "created": {
+        "n": 7,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.3543
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "comrade_of": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "occurred_during": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "embodied_by_person": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "captured": {
+        "n": 6,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.3903
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "recruited": {
+        "n": 3,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.5615
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "met_with": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "liberated": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "imprisoned_at": {
+        "n": 3,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.5615
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "active_during": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "family_of": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      }
+    },
+    "recovery_B": {
+      "member_of": {
+        "n": 124,
+        "support_rate": 0.6532,
+        "ci95": [
+          0.566,
+          0.7313
+        ],
+        "fully": 43,
+        "partial": 38
+      },
+      "family_of": {
+        "n": 1,
+        "support_rate": 1.0,
+        "ci95": [
+          0.2065,
+          1.0
+        ],
+        "fully": 0,
+        "partial": 1
+      },
+      "led": {
+        "n": 267,
+        "support_rate": 0.7116,
+        "ci95": [
+          0.6546,
+          0.7626
+        ],
+        "fully": 106,
+        "partial": 84
+      },
+      "organized": {
+        "n": 82,
+        "support_rate": 0.6341,
+        "ci95": [
+          0.5261,
+          0.7302
+        ],
+        "fully": 32,
+        "partial": 20
+      },
+      "stationed_at": {
+        "n": 10,
+        "support_rate": 0.9,
+        "ci95": [
+          0.5958,
+          0.9821
+        ],
+        "fully": 4,
+        "partial": 5
+      },
+      "participated_in": {
+        "n": 122,
+        "support_rate": 0.7049,
+        "ci95": [
+          0.6187,
+          0.7786
+        ],
+        "fully": 46,
+        "partial": 40
+      },
+      "active_at": {
+        "n": 47,
+        "support_rate": 0.9149,
+        "ci95": [
+          0.8007,
+          0.9664
+        ],
+        "fully": 38,
+        "partial": 5
+      },
+      "worked_at": {
+        "n": 9,
+        "support_rate": 1.0,
+        "ci95": [
+          0.7009,
+          1.0
+        ],
+        "fully": 9,
+        "partial": 0
+      },
+      "occurred_at": {
+        "n": 43,
+        "support_rate": 0.6512,
+        "ci95": [
+          0.5017,
+          0.7758
+        ],
+        "fully": 17,
+        "partial": 11
+      },
+      "governed": {
+        "n": 6,
+        "support_rate": 0.3333,
+        "ci95": [
+          0.0968,
+          0.7
+        ],
+        "fully": 1,
+        "partial": 1
+      },
+      "imprisoned_at": {
+        "n": 4,
+        "support_rate": 0.75,
+        "ci95": [
+          0.3006,
+          0.9544
+        ],
+        "fully": 2,
+        "partial": 1
+      },
+      "held_position_in": {
+        "n": 72,
+        "support_rate": 0.9028,
+        "ci95": [
+          0.8126,
+          0.9521
+        ],
+        "fully": 38,
+        "partial": 27
+      },
+      "traveled_to": {
+        "n": 2,
+        "support_rate": 1.0,
+        "ci95": [
+          0.3424,
+          1.0
+        ],
+        "fully": 1,
+        "partial": 1
+      },
+      "influenced": {
+        "n": 65,
+        "support_rate": 0.5385,
+        "ci95": [
+          0.4185,
+          0.6541
+        ],
+        "fully": 21,
+        "partial": 14
+      },
+      "dispatched": {
+        "n": 17,
+        "support_rate": 0.8235,
+        "ci95": [
+          0.5897,
+          0.9381
+        ],
+        "fully": 10,
+        "partial": 4
+      },
+      "contacted": {
+        "n": 2,
+        "support_rate": 0.5,
+        "ci95": [
+          0.0945,
+          0.9055
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "died_at": {
+        "n": 2,
+        "support_rate": 0.5,
+        "ci95": [
+          0.0945,
+          0.9055
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "captured": {
+        "n": 9,
+        "support_rate": 0.5556,
+        "ci95": [
+          0.2667,
+          0.8112
+        ],
+        "fully": 4,
+        "partial": 1
+      },
+      "supported": {
+        "n": 24,
+        "support_rate": 0.75,
+        "ci95": [
+          0.551,
+          0.88
+        ],
+        "fully": 15,
+        "partial": 3
+      },
+      "opposed": {
+        "n": 10,
+        "support_rate": 0.7,
+        "ci95": [
+          0.3968,
+          0.8922
+        ],
+        "fully": 5,
+        "partial": 2
+      },
+      "created": {
+        "n": 7,
+        "support_rate": 0.8571,
+        "ci95": [
+          0.4869,
+          0.9743
+        ],
+        "fully": 5,
+        "partial": 1
+      },
+      "guided": {
+        "n": 11,
+        "support_rate": 0.5455,
+        "ci95": [
+          0.2801,
+          0.7873
+        ],
+        "fully": 6,
+        "partial": 0
+      },
+      "responsible_for": {
+        "n": 2,
+        "support_rate": 0.5,
+        "ci95": [
+          0.0945,
+          0.9055
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "commanded": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "used_artifact": {
+        "n": 4,
+        "support_rate": 1.0,
+        "ci95": [
+          0.5101,
+          1.0
+        ],
+        "fully": 3,
+        "partial": 1
+      },
+      "colleague_of": {
+        "n": 2,
+        "support_rate": 0.5,
+        "ci95": [
+          0.0945,
+          0.9055
+        ],
+        "fully": 0,
+        "partial": 1
+      },
+      "recruited": {
+        "n": 4,
+        "support_rate": 0.25,
+        "ci95": [
+          0.0456,
+          0.6994
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "liberated": {
+        "n": 4,
+        "support_rate": 0.5,
+        "ci95": [
+          0.15,
+          0.85
+        ],
+        "fully": 2,
+        "partial": 0
+      },
+      "reported_to": {
+        "n": 2,
+        "support_rate": 0.5,
+        "ci95": [
+          0.0945,
+          0.9055
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "protected": {
+        "n": 2,
+        "support_rate": 0.5,
+        "ci95": [
+          0.0945,
+          0.9055
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "authored": {
+        "n": 3,
+        "support_rate": 1.0,
+        "ci95": [
+          0.4385,
+          1.0
+        ],
+        "fully": 1,
+        "partial": 2
+      },
+      "fought_at": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "spouse_of": {
+        "n": 1,
+        "support_rate": 1.0,
+        "ci95": [
+          0.2065,
+          1.0
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "collaborated_with": {
+        "n": 3,
+        "support_rate": 1.0,
+        "ci95": [
+          0.4385,
+          1.0
+        ],
+        "fully": 0,
+        "partial": 3
+      },
+      "carried_out": {
+        "n": 1,
+        "support_rate": 1.0,
+        "ci95": [
+          0.2065,
+          1.0
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "escorted": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "met_with": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "arrested_at": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "located_in": {
+        "n": 1,
+        "support_rate": 1.0,
+        "ci95": [
+          0.2065,
+          1.0
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "comrade_of": {
+        "n": 1,
+        "support_rate": 1.0,
+        "ci95": [
+          0.2065,
+          1.0
+        ],
+        "fully": 0,
+        "partial": 1
+      },
+      "part_of": {
+        "n": 1,
+        "support_rate": 1.0,
+        "ci95": [
+          0.2065,
+          1.0
+        ],
+        "fully": 0,
+        "partial": 1
+      }
+    },
+    "recovery_C": {
+      "colleague_of": {
+        "n": 2,
+        "support_rate": 0.5,
+        "ci95": [
+          0.0945,
+          0.9055
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "led": {
+        "n": 181,
+        "support_rate": 0.1713,
+        "ci95": [
+          0.1234,
+          0.2328
+        ],
+        "fully": 13,
+        "partial": 18
+      },
+      "organized": {
+        "n": 52,
+        "support_rate": 0.2115,
+        "ci95": [
+          0.1224,
+          0.3403
+        ],
+        "fully": 3,
+        "partial": 8
+      },
+      "occurred_at": {
+        "n": 78,
+        "support_rate": 0.1538,
+        "ci95": [
+          0.0903,
+          0.2499
+        ],
+        "fully": 8,
+        "partial": 4
+      },
+      "participated_in": {
+        "n": 206,
+        "support_rate": 0.165,
+        "ci95": [
+          0.1206,
+          0.2218
+        ],
+        "fully": 14,
+        "partial": 20
+      },
+      "supported": {
+        "n": 14,
+        "support_rate": 0.1429,
+        "ci95": [
+          0.0401,
+          0.3994
+        ],
+        "fully": 2,
+        "partial": 0
+      },
+      "influenced": {
+        "n": 47,
+        "support_rate": 0.0426,
+        "ci95": [
+          0.0117,
+          0.1425
+        ],
+        "fully": 1,
+        "partial": 1
+      },
+      "active_at": {
+        "n": 52,
+        "support_rate": 0.1154,
+        "ci95": [
+          0.054,
+          0.2297
+        ],
+        "fully": 3,
+        "partial": 3
+      },
+      "governed": {
+        "n": 4,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.4899
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "carried_out": {
+        "n": 18,
+        "support_rate": 0.2222,
+        "ci95": [
+          0.09,
+          0.4521
+        ],
+        "fully": 1,
+        "partial": 3
+      },
+      "member_of": {
+        "n": 25,
+        "support_rate": 0.12,
+        "ci95": [
+          0.0417,
+          0.2996
+        ],
+        "fully": 0,
+        "partial": 3
+      },
+      "located_in": {
+        "n": 4,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.4899
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "liberated": {
+        "n": 3,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.5615
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "traveled_to": {
+        "n": 3,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.5615
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "dispatched": {
+        "n": 5,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.4345
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "commanded": {
+        "n": 26,
+        "support_rate": 0.0769,
+        "ci95": [
+          0.0214,
+          0.2414
+        ],
+        "fully": 0,
+        "partial": 2
+      },
+      "held_position_in": {
+        "n": 19,
+        "support_rate": 0.2105,
+        "ci95": [
+          0.0851,
+          0.4333
+        ],
+        "fully": 2,
+        "partial": 2
+      },
+      "criticized": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "created": {
+        "n": 1,
+        "support_rate": 1.0,
+        "ci95": [
+          0.2065,
+          1.0
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "guided": {
+        "n": 7,
+        "support_rate": 0.4286,
+        "ci95": [
+          0.1582,
+          0.7495
+        ],
+        "fully": 1,
+        "partial": 2
+      },
+      "stationed_at": {
+        "n": 5,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.4345
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "part_of": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "responsible_for": {
+        "n": 3,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.5615
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "opposed": {
+        "n": 5,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.4345
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "implemented": {
+        "n": 4,
+        "support_rate": 0.25,
+        "ci95": [
+          0.0456,
+          0.6994
+        ],
+        "fully": 0,
+        "partial": 1
+      },
+      "fought_at": {
+        "n": 6,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.3903
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "died_at": {
+        "n": 3,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.5615
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "appointed": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "escorted": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "recruited": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "formulated": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "arrested_at": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "killed": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "embodied_by_person": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "captured": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "met_with": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "embodied_in_event": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "contacted": {
+        "n": 3,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.5615
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "worked_at": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "family_of": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "used_artifact": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "imprisoned_at": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "introduced": {
+        "n": 2,
+        "support_rate": 0.5,
+        "ci95": [
+          0.0945,
+          0.9055
+        ],
+        "fully": 0,
+        "partial": 1
+      }
+    },
+    "recovery_A": {
+      "participated_in": {
+        "n": 29,
+        "support_rate": 0.2759,
+        "ci95": [
+          0.147,
+          0.4572
+        ],
+        "fully": 6,
+        "partial": 2
+      },
+      "organized": {
+        "n": 8,
+        "support_rate": 0.75,
+        "ci95": [
+          0.4093,
+          0.9285
+        ],
+        "fully": 3,
+        "partial": 3
+      },
+      "influenced": {
+        "n": 12,
+        "support_rate": 0.25,
+        "ci95": [
+          0.0889,
+          0.5323
+        ],
+        "fully": 2,
+        "partial": 1
+      },
+      "has_value_facet": {
+        "n": 93,
+        "support_rate": 0.3548,
+        "ci95": [
+          0.2651,
+          0.4561
+        ],
+        "fully": 20,
+        "partial": 13
+      },
+      "led": {
+        "n": 24,
+        "support_rate": 0.3333,
+        "ci95": [
+          0.1797,
+          0.5329
+        ],
+        "fully": 6,
+        "partial": 2
+      },
+      "created": {
+        "n": 14,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.2153
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "depicts": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "held_position_in": {
+        "n": 5,
+        "support_rate": 1.0,
+        "ci95": [
+          0.5655,
+          1.0
+        ],
+        "fully": 4,
+        "partial": 1
+      },
+      "fought_at": {
+        "n": 1,
+        "support_rate": 1.0,
+        "ci95": [
+          0.2065,
+          1.0
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "member_of": {
+        "n": 4,
+        "support_rate": 0.75,
+        "ci95": [
+          0.3006,
+          0.9544
+        ],
+        "fully": 1,
+        "partial": 2
+      },
+      "occurred_at": {
+        "n": 3,
+        "support_rate": 0.3333,
+        "ci95": [
+          0.0615,
+          0.7923
+        ],
+        "fully": 0,
+        "partial": 1
+      },
+      "captured": {
+        "n": 1,
+        "support_rate": 1.0,
+        "ci95": [
+          0.2065,
+          1.0
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "carried_out": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "stationed_at": {
+        "n": 3,
+        "support_rate": 0.6667,
+        "ci95": [
+          0.2077,
+          0.9385
+        ],
+        "fully": 1,
+        "partial": 1
+      }
+    },
+    "aligned": {
+      "carried_out": {
+        "n": 13,
+        "support_rate": 0.7692,
+        "ci95": [
+          0.4974,
+          0.9182
+        ],
+        "fully": 7,
+        "partial": 3
+      },
+      "fought_at": {
+        "n": 25,
+        "support_rate": 0.36,
+        "ci95": [
+          0.2025,
+          0.5548
+        ],
+        "fully": 6,
+        "partial": 3
+      },
+      "held_position_in": {
+        "n": 59,
+        "support_rate": 0.7797,
+        "ci95": [
+          0.6587,
+          0.8665
+        ],
+        "fully": 39,
+        "partial": 7
+      },
+      "occurred_at": {
+        "n": 117,
+        "support_rate": 0.3846,
+        "ci95": [
+          0.3015,
+          0.4751
+        ],
+        "fully": 33,
+        "partial": 12
+      },
+      "organized": {
+        "n": 60,
+        "support_rate": 0.7,
+        "ci95": [
+          0.5749,
+          0.801
+        ],
+        "fully": 29,
+        "partial": 13
+      },
+      "created": {
+        "n": 12,
+        "support_rate": 0.8333,
+        "ci95": [
+          0.552,
+          0.953
+        ],
+        "fully": 7,
+        "partial": 3
+      },
+      "commanded": {
+        "n": 27,
+        "support_rate": 0.5185,
+        "ci95": [
+          0.3399,
+          0.6926
+        ],
+        "fully": 7,
+        "partial": 7
+      },
+      "stationed_at": {
+        "n": 32,
+        "support_rate": 0.625,
+        "ci95": [
+          0.4525,
+          0.7707
+        ],
+        "fully": 15,
+        "partial": 5
+      },
+      "led": {
+        "n": 220,
+        "support_rate": 0.5682,
+        "ci95": [
+          0.5021,
+          0.6319
+        ],
+        "fully": 83,
+        "partial": 42
+      },
+      "supported": {
+        "n": 14,
+        "support_rate": 0.3571,
+        "ci95": [
+          0.1634,
+          0.6124
+        ],
+        "fully": 4,
+        "partial": 1
+      },
+      "opposed": {
+        "n": 12,
+        "support_rate": 0.4167,
+        "ci95": [
+          0.1933,
+          0.6805
+        ],
+        "fully": 5,
+        "partial": 0
+      },
+      "governed": {
+        "n": 14,
+        "support_rate": 0.4286,
+        "ci95": [
+          0.2138,
+          0.6741
+        ],
+        "fully": 4,
+        "partial": 2
+      },
+      "active_at": {
+        "n": 243,
+        "support_rate": 0.6379,
+        "ci95": [
+          0.5757,
+          0.6957
+        ],
+        "fully": 134,
+        "partial": 21
+      },
+      "reported_to": {
+        "n": 8,
+        "support_rate": 0.125,
+        "ci95": [
+          0.0224,
+          0.4709
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "participated_in": {
+        "n": 244,
+        "support_rate": 0.5246,
+        "ci95": [
+          0.462,
+          0.5864
+        ],
+        "fully": 83,
+        "partial": 45
+      },
+      "dispatched": {
+        "n": 15,
+        "support_rate": 0.4667,
+        "ci95": [
+          0.2481,
+          0.6988
+        ],
+        "fully": 7,
+        "partial": 0
+      },
+      "contacted": {
+        "n": 20,
+        "support_rate": 0.55,
+        "ci95": [
+          0.3421,
+          0.7418
+        ],
+        "fully": 10,
+        "partial": 1
+      },
+      "collaborated_with": {
+        "n": 22,
+        "support_rate": 0.9091,
+        "ci95": [
+          0.7219,
+          0.9747
+        ],
+        "fully": 17,
+        "partial": 3
+      },
+      "died_at": {
+        "n": 13,
+        "support_rate": 0.6923,
+        "ci95": [
+          0.4237,
+          0.8732
+        ],
+        "fully": 9,
+        "partial": 0
+      },
+      "member_of": {
+        "n": 62,
+        "support_rate": 0.5968,
+        "ci95": [
+          0.4725,
+          0.7098
+        ],
+        "fully": 23,
+        "partial": 14
+      },
+      "influenced": {
+        "n": 21,
+        "support_rate": 0.2857,
+        "ci95": [
+          0.1381,
+          0.4996
+        ],
+        "fully": 5,
+        "partial": 1
+      },
+      "responsible_for": {
+        "n": 13,
+        "support_rate": 0.6923,
+        "ci95": [
+          0.4237,
+          0.8732
+        ],
+        "fully": 7,
+        "partial": 2
+      },
+      "part_of": {
+        "n": 4,
+        "support_rate": 0.75,
+        "ci95": [
+          0.3006,
+          0.9544
+        ],
+        "fully": 2,
+        "partial": 1
+      },
+      "trained": {
+        "n": 6,
+        "support_rate": 0.5,
+        "ci95": [
+          0.1876,
+          0.8124
+        ],
+        "fully": 3,
+        "partial": 0
+      },
+      "worked_at": {
+        "n": 29,
+        "support_rate": 0.6897,
+        "ci95": [
+          0.5077,
+          0.8272
+        ],
+        "fully": 15,
+        "partial": 5
+      },
+      "comrade_of": {
+        "n": 5,
+        "support_rate": 0.6,
+        "ci95": [
+          0.2307,
+          0.8824
+        ],
+        "fully": 2,
+        "partial": 1
+      },
+      "spouse_of": {
+        "n": 3,
+        "support_rate": 0.6667,
+        "ci95": [
+          0.2077,
+          0.9385
+        ],
+        "fully": 2,
+        "partial": 0
+      },
+      "captured": {
+        "n": 16,
+        "support_rate": 0.8125,
+        "ci95": [
+          0.5699,
+          0.9341
+        ],
+        "fully": 9,
+        "partial": 4
+      },
+      "traveled_to": {
+        "n": 12,
+        "support_rate": 0.5,
+        "ci95": [
+          0.2538,
+          0.7462
+        ],
+        "fully": 5,
+        "partial": 1
+      },
+      "mentioned_in": {
+        "n": 26,
+        "support_rate": 0.0769,
+        "ci95": [
+          0.0214,
+          0.2414
+        ],
+        "fully": 2,
+        "partial": 0
+      },
+      "recruited": {
+        "n": 7,
+        "support_rate": 0.4286,
+        "ci95": [
+          0.1582,
+          0.7495
+        ],
+        "fully": 3,
+        "partial": 0
+      },
+      "colleague_of": {
+        "n": 7,
+        "support_rate": 0.8571,
+        "ci95": [
+          0.4869,
+          0.9743
+        ],
+        "fully": 4,
+        "partial": 2
+      },
+      "located_in": {
+        "n": 8,
+        "support_rate": 0.125,
+        "ci95": [
+          0.0224,
+          0.4709
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "guided": {
+        "n": 24,
+        "support_rate": 0.5417,
+        "ci95": [
+          0.3507,
+          0.7211
+        ],
+        "fully": 10,
+        "partial": 3
+      },
+      "imprisoned_at": {
+        "n": 4,
+        "support_rate": 0.5,
+        "ci95": [
+          0.15,
+          0.85
+        ],
+        "fully": 2,
+        "partial": 0
+      },
+      "rescued": {
+        "n": 3,
+        "support_rate": 0.3333,
+        "ci95": [
+          0.0615,
+          0.7923
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "liberated": {
+        "n": 8,
+        "support_rate": 0.875,
+        "ci95": [
+          0.5291,
+          0.9776
+        ],
+        "fully": 6,
+        "partial": 1
+      },
+      "protected": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "arrested_at": {
+        "n": 8,
+        "support_rate": 0.375,
+        "ci95": [
+          0.1368,
+          0.6943
+        ],
+        "fully": 2,
+        "partial": 1
+      },
+      "criticized": {
+        "n": 3,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.5615
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "active_during": {
+        "n": 1,
+        "support_rate": 1.0,
+        "ci95": [
+          0.2065,
+          1.0
+        ],
+        "fully": 0,
+        "partial": 1
+      },
+      "formulated": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "embodied_by_organization": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "met_with": {
+        "n": 7,
+        "support_rate": 0.7143,
+        "ci95": [
+          0.3589,
+          0.9178
+        ],
+        "fully": 3,
+        "partial": 2
+      },
+      "introduced": {
+        "n": 11,
+        "support_rate": 0.6364,
+        "ci95": [
+          0.3538,
+          0.8483
+        ],
+        "fully": 7,
+        "partial": 0
+      },
+      "born_at": {
+        "n": 7,
+        "support_rate": 1.0,
+        "ci95": [
+          0.6457,
+          1.0
+        ],
+        "fully": 7,
+        "partial": 0
+      },
+      "appointed": {
+        "n": 5,
+        "support_rate": 0.4,
+        "ci95": [
+          0.1176,
+          0.7693
+        ],
+        "fully": 1,
+        "partial": 1
+      },
+      "originated_at": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "implemented": {
+        "n": 3,
+        "support_rate": 0.3333,
+        "ci95": [
+          0.0615,
+          0.7923
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "authored": {
+        "n": 2,
+        "support_rate": 0.5,
+        "ci95": [
+          0.0945,
+          0.9055
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "transmitted_by": {
+        "n": 1,
+        "support_rate": 1.0,
+        "ci95": [
+          0.2065,
+          1.0
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "family_of": {
+        "n": 2,
+        "support_rate": 0.5,
+        "ci95": [
+          0.0945,
+          0.9055
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "visited": {
+        "n": 6,
+        "support_rate": 0.8333,
+        "ci95": [
+          0.4365,
+          0.9699
+        ],
+        "fully": 4,
+        "partial": 1
+      },
+      "escorted": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "killed": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "advocated": {
+        "n": 2,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.6576
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "edited": {
+        "n": 1,
+        "support_rate": 1.0,
+        "ci95": [
+          0.2065,
+          1.0
+        ],
+        "fully": 1,
+        "partial": 0
+      },
+      "studied_at": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      },
+      "used_artifact": {
+        "n": 1,
+        "support_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.7935
+        ],
+        "fully": 0,
+        "partial": 0
+      }
+    }
+  },
+  "extrapolation": {
+    "note": "分层抽样统计估计（每层 simple random sample；finite population correction），非逐条验证；逐条全量语义验证留待后续。",
+    "universe": "STRICT_ALIGNMENT 全部 112,158 条中的 5 个层（合计 110,052 条）；recovery_D（真无证据）2,106 条不参与外推（无可验证证据，按恢复审计降级）",
+    "per_layer": {
+      "mismatch_with_evidence": {
+        "layer_size": 6136,
+        "n_valid": 1500,
+        "strict_rate_sample": 0.0153,
+        "estimated_strict": 94.1,
+        "se_strict": 16.9
+      },
+      "recovery_B": {
+        "layer_size": 16705,
+        "n_valid": 974,
+        "strict_rate_sample": 0.5575,
+        "estimated_strict": 9313.0,
+        "se_strict": 258.0
+      },
+      "recovery_C": {
+        "layer_size": 40345,
+        "n_valid": 800,
+        "strict_rate_sample": 0.1037,
+        "estimated_strict": 4185.8,
+        "se_strict": 430.6
+      },
+      "recovery_A": {
+        "layer_size": 2841,
+        "n_valid": 200,
+        "strict_rate_sample": 0.265,
+        "estimated_strict": 752.9,
+        "se_strict": 85.5
+      },
+      "aligned": {
+        "layer_size": 44025,
+        "n_valid": 1497,
+        "strict_rate_sample": 0.4743,
+        "estimated_strict": 20880.3,
+        "se_strict": 558.4
+      }
+    },
+    "new_strict_total_estimate": 35226.0,
+    "new_strict_ci95": [
+      33744.0,
+      36708.0
+    ],
+    "decision_totals_estimate": {
+      "FULLY_SUPPORTED": {
+        "estimate": 28944.0,
+        "ci95": [
+          27566.0,
+          30323.0
+        ]
+      },
+      "PARTIALLY_SUPPORTED": {
+        "estimate": 14627.0,
+        "ci95": [
+          13445.0,
+          15809.0
+        ]
+      },
+      "UNSUPPORTED": {
+        "estimate": 55622.0,
+        "ci95": [
+          53945.0,
+          57298.0
+        ]
+      },
+      "CONTRADICTED": {
+        "estimate": 2300.0,
+        "ci95": [
+          1809.0,
+          2791.0
+        ]
+      },
+      "INSUFFICIENT": {
+        "estimate": 8559.0,
+        "ci95": [
+          7561.0,
+          9556.0
+        ]
+      }
+    },
+    "dev_layer_totals_estimate": {
+      "strict": 35226.0,
+      "contextual": 16904.0,
+      "unresolved": 57922.0
+    }
+  },
+  "dev_counts_by_stratum": {
+    "mismatch_with_evidence": {
+      "unresolved": 1164,
+      "contextual": 313,
+      "strict": 23
+    },
+    "recovery_B": {
+      "strict": 543,
+      "contextual": 176,
+      "unresolved": 255
+    },
+    "recovery_C": {
+      "unresolved": 601,
+      "strict": 83,
+      "contextual": 116
+    },
+    "recovery_A": {
+      "strict": 53,
+      "unresolved": 100,
+      "contextual": 47
+    },
+    "aligned": {
+      "unresolved": 580,
+      "strict": 710,
+      "contextual": 207
+    }
+  },
+  "layer_sizes": {
+    "mismatch_with_evidence": 6136,
+    "recovery_B": 16705,
+    "recovery_C": 40345,
+    "recovery_A": 2841,
+    "aligned": 44025
+  }
+}

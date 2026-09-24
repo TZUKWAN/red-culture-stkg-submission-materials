@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="644.514224pt" height="395.208987pt" viewBox="0 0 644.514224 395.208987" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:43:36.504842</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 395.208987 
+L 644.514224 395.208987 
+L 644.514224 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 92.0448 342.142417 
+L 307.454208 342.142417 
+L 307.454208 166.769303 
+L 92.0448 166.769303 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #f4f6f7"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 92.0448 160.338263 
+L 307.454208 160.338263 
+L 307.454208 27.021457 
+L 92.0448 27.021457 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #e9eef0"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 318.167808 342.142417 
+L 617.0112 342.142417 
+L 617.0112 252.66037 
+L 318.167808 252.66037 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #dfe6ea"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 318.167808 246.22933 
+L 471.216651 246.22933 
+L 471.216651 81.95988 
+L 318.167808 81.95988 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #d4dee3"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 481.930251 246.22933 
+L 617.0112 246.22933 
+L 617.0112 81.95988 
+L 481.930251 81.95988 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #c8d5dc"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 318.167808 75.52884 
+L 371.95208 75.52884 
+L 371.95208 27.021457 
+L 318.167808 27.021457 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #bcccd4"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 382.66568 75.52884 
+L 434.338963 75.52884 
+L 434.338963 27.021457 
+L 382.66568 27.021457 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #afc3cc"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 445.052563 75.52884 
+L 484.633776 75.52884 
+L 484.633776 27.021457 
+L 445.052563 27.021457 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #a2bac4"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 495.347376 75.52884 
+L 553.804516 75.52884 
+L 553.804516 48.687544 
+L 495.347376 48.687544 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #95b1bc"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 495.347376 42.256504 
+L 553.804516 42.256504 
+L 553.804516 27.021457 
+L 495.347376 27.021457 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #87a8b5"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 564.518116 75.52884 
+L 591.469785 75.52884 
+L 591.469785 51.497914 
+L 564.518116 51.497914 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #7a9eac"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 602.183385 75.52884 
+L 617.0112 75.52884 
+L 617.0112 51.497914 
+L 602.183385 51.497914 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #6d93a3"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 564.518116 45.066874 
+L 578.829578 45.066874 
+L 578.829578 27.021457 
+L 564.518116 27.021457 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #61889c"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 589.543178 45.066874 
+L 617.0112 45.066874 
+L 617.0112 35.514493 
+L 589.543178 35.514493 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #567d95"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 589.543178 29.083453 
+L 612.503647 29.083453 
+L 612.503647 27.021457 
+L 589.543178 27.021457 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #4c728b"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 617.860447 29.083453 
+L 622.368 29.083453 
+L 622.368 27.021457 
+L 617.860447 27.021457 
+z
+" clip-path="url(#pa3859fd4d6)" style="fill: #45677c"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(191.149504 252.027167)">人物</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(188.085754 261.03271)">36,511</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(191.149504 91.301557)">事件</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(187.924504 100.307101)">28,065</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(458.989504 294.964637)">地点</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(455.764504 303.970181)">26,369</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(386.09223 161.657849)">组织</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(382.86723 170.663393)">24,827</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(540.870725 161.733099)">概念</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(537.645725 170.738643)">22,103</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(336.459944 48.846455)">文物</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(335.384944 57.851999)">3,147</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(399.902321 48.93044)">机构</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(398.827321 57.935983)">3,044</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(456.24317 48.863252)">文献</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(455.16817 57.868796)">2,454</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(507.375946 59.729889)">行政区划</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(514.900946 68.735433)">2,044</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(515.975946 32.294271)">精神</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(514.900946 41.299815)">1,331</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(569.39395 61.135074)">作品</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(568.31895 70.140618)">1,019</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(592.397293 61.168668)">价值面向</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(603.147293 70.174212)">691</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(563.073847 33.615472)">职位</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(565.223847 42.621016)">544</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(594.677189 37.878787)">时期</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(596.827189 46.884331)">542</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(583.823413 25.640558)">文化遗址</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(594.573413 34.646102)">254</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(602.914224 25.707746)">社会群体</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(615.814224 34.71329)">34</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="354.528" y="17.805937" transform="rotate(-0 354.528 17.805937)">规范实体类型规模树图（152,979 实体，16 类）</text>
+   </g>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="386.282737" transform="rotate(-0 7.2 386.282737)">数据源：research_entities（最终库）</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa3859fd4d6">
+   <rect x="86.688" y="23.805937" width="535.68" height="321.552"/>
+  </clipPath>
+ </defs>
+</svg>

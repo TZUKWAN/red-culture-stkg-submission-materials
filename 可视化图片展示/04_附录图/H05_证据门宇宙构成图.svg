@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="593.405pt" height="294.219763pt" viewBox="0 0 593.405 294.219763" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:57:52.140974</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 294.219763 
+L 593.405 294.219763 
+L 593.405 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 98.825 255.658312 
+L 578.705 255.658312 
+L 578.705 22.810312 
+L 98.825 22.810312 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 98.825 255.658312 
+L 98.825 22.810312 
+" clip-path="url(#p5926fbe3af)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="mfa05ccd568" d="M 0 0 
+L 0 3.5 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mfa05ccd568" x="98.825" y="255.658312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="98.825" y="269.602062" transform="rotate(-0 98.825 269.602062)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 194.801 255.658312 
+L 194.801 22.810312 
+" clip-path="url(#p5926fbe3af)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mfa05ccd568" x="194.801" y="255.658312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="194.801" y="269.602062" transform="rotate(-0 194.801 269.602062)">20</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 290.777 255.658312 
+L 290.777 22.810312 
+" clip-path="url(#p5926fbe3af)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mfa05ccd568" x="290.777" y="255.658312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="290.777" y="269.602062" transform="rotate(-0 290.777 269.602062)">40</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 386.753 255.658312 
+L 386.753 22.810312 
+" clip-path="url(#p5926fbe3af)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mfa05ccd568" x="386.753" y="255.658312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="386.753" y="269.602062" transform="rotate(-0 386.753 269.602062)">60</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 482.729 255.658312 
+L 482.729 22.810312 
+" clip-path="url(#p5926fbe3af)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#mfa05ccd568" x="482.729" y="255.658312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="482.729" y="269.602062" transform="rotate(-0 482.729 269.602062)">80</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 578.705 255.658312 
+L 578.705 22.810312 
+" clip-path="url(#p5926fbe3af)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#mfa05ccd568" x="578.705" y="255.658312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="578.705" y="269.602062" transform="rotate(-0 578.705 269.602062)">100</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="338.765" y="283.528781" transform="rotate(-0 338.765 283.528781)">宇宙内占比（%）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_13">
+      <defs>
+       <path id="m8a178c3761" d="M 0 0 
+L -3.5 0 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m8a178c3761" x="98.825" y="68.674312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.825" y="72.539156" transform="rotate(-0 91.825 72.539156)">证据门宇宙 112,158</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m8a178c3761" x="98.825" y="209.794312" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="91.825" y="213.659156" transform="rotate(-0 91.825 213.659156)">门外宇宙 311,992</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 98.825 255.658312 
+L 578.705 255.658312 
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 98.825 103.954312 
+L 231.748483 103.954312 
+L 231.748483 33.394312 
+L 98.825 33.394312 
+z
+" clip-path="url(#p5926fbe3af)" style="fill: #3e5c6e"/>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(150.391741 66.122062)">STRICT</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(135.286741 74.812812)">31,067（27.7%）</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 231.748483 103.954312 
+L 365.591866 103.954312 
+L 365.591866 33.394312 
+L 231.748483 33.394312 
+z
+" clip-path="url(#p5926fbe3af)" style="fill: #93a692"/>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(270.442674 66.122062)">CONTEXTUAL</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(268.670174 74.812812)">31,282（27.9%）</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 365.591866 103.954312 
+L 578.705 103.954312 
+L 578.705 33.394312 
+L 365.591866 33.394312 
+z
+" clip-path="url(#p5926fbe3af)" style="fill: #c8ae8e"/>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(444.729683 66.122062)">UNRESOLVED</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(442.148433 74.812812)">49,809（44.4%）</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 98.825 245.074312 
+L 511.112476 245.074312 
+L 511.112476 174.514312 
+L 98.825 174.514312 
+z
+" clip-path="url(#p5926fbe3af)" style="fill: #8b93a8"/>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(284.968738 207.378312)">前置上下文</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(272.968738 216.069062)">268,047（85.9%）</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 511.112476 245.074312 
+L 578.705 245.074312 
+L 578.705 174.514312 
+L 511.112476 174.514312 
+z
+" clip-path="url(#p5926fbe3af)" style="fill: #c8ae8e"/>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(528.908738 207.425187)">前置未决</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(514.908738 216.115937)">43,945（14.1%）</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="338.765" y="16.810312" transform="rotate(-0 338.765 16.810312)">证据门内/门外两个宇宙的内部构成</text>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="27.617" y="285.293513" transform="rotate(-0 27.617 285.293513)">数据源：FINAL_NUMBERS.json / FULL_UNIVERSE_ADMISSION_SUMMARY.json</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5926fbe3af">
+   <rect x="98.825" y="22.810312" width="479.88" height="232.848"/>
+  </clipPath>
+ </defs>
+</svg>

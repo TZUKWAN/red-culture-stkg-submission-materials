@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-09-16T23:44:10.477620+08:00",
+  "final_tiering_sha256": "a9b1a60f64531f788b1eae5451f923937c1bf5df1d36acf4d4acb52fd13aff97",
+  "source_db": "submission_work\\final_submission_v3_1\\data\\repaired_release\\red_culture_stkg_final_v3_1.sqlite",
+  "frozen_rule_source": "code\\scripts\\284_materialize_stkg_v2_research_base.py#L671-674",
+  "rows_total": 424150,
+  "pre_gate_tier_counts": {
+    "unresolved": 43945,
+    "strict_semantic": 112158,
+    "contextual": 268047
+  },
+  "final_tier_counts": {
+    "unresolved": 43945,
+    "UNRESOLVED": 49809,
+    "contextual": 268047,
+    "CONTEXTUAL": 31282,
+    "STRICT": 31067
+  },
+  "baseline_expectation": {
+    "contextual": 268047,
+    "unresolved": 43945,
+    "strict_semantic": 112158
+  },
+  "pre_gate_matches_baseline": true,
+  "outside_pregate_contextual_total": 268047,
+  "outside_pregate_contextual_explained": 268047,
+  "outside_pregate_unresolved_total": 43945,
+  "outside_pregate_unresolved_explained": 43945,
+  "unexplained_total": 0,
+  "outside_pregate_tier_vs_source_mismatches": 0,
+  "blocking_reason_counts": {
+    "hard_blocker:scope_conflict_model_review": 27492,
+    "hard_blocker:endpoint_entity_type_unresolved": 16393,
+    "gate:UNSUPPORTED->UNRESOLVED": 47576,
+    "strict_candidate_conjunct_failed:predicate_raw_not_normalized": 264635,
+    "gate:PARTIALLY_SUPPORTED->CONTEXTUAL": 27704,
+    "strict_candidate_conjunct_failed:relation_domain_range_violation": 3412,
+    "gate:INSUFFICIENT->CONTEXTUAL": 3578,
+    "gate:PARTIALLY_SUPPORTED->STRICT": 7810,
+    "gate:FULLY_SUPPORTED->STRICT": 23257,
+    "gate:NO_EVIDENCE->UNRESOLVED": 2106,
+    "gate:CONTRADICTED->UNRESOLVED": 127,
+    "hard_blocker:manual_review_legacy": 60
+  },
+  "decision_path_counts": {
+    "v2_semantic_normalization[model_review]->excluded_from_strict_layer[hard_blocker:scope_conflict_model_review]->unresolved(outside_gate)": 27492,
+    "v2_semantic_normalization[model_review]->excluded_from_strict_layer[hard_blocker:endpoint_entity_type_unresolved]->unresolved(outside_gate)": 16393,
+    "v2_semantic_normalization[auto_accepted]->strict_candidate_check[pass]->evidence_gate_final[UNRESOLVED]": 49809,
+    "v2_semantic_normalization[auto_accepted]->strict_candidate_check[fail]->contextual(outside_gate)": 268047,
+    "v2_semantic_normalization[auto_accepted]->strict_candidate_check[pass]->evidence_gate_final[CONTEXTUAL]": 31282,
+    "v2_semantic_normalization[auto_accepted]->strict_candidate_check[pass]->evidence_gate_final[STRICT]": 31067,
+    "v2_semantic_normalization[manual_review]->excluded_from_strict_layer[hard_blocker:manual_review_legacy]->unresolved(outside_gate)": 60
+  }
+}

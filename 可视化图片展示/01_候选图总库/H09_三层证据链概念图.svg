@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="706.464pt" height="406.000688pt" viewBox="0 0 706.464 406.000688" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:57:54.966152</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 406.000688 
+L 706.464 406.000688 
+L 706.464 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 192.042 141.294438 
+L 603.846 141.294438 
+Q 612.774 141.294438 612.774 132.424038 
+L 612.774 80.864838 
+Q 612.774 71.994438 603.846 71.994438 
+L 192.042 71.994438 
+Q 183.114 71.994438 183.114 80.864838 
+L 183.114 132.424038 
+Q 183.114 141.294438 192.042 141.294438 
+z
+" clip-path="url(#p6492247477)" style="fill: #3e5c6e; opacity: 0.14; stroke: #3e5c6e; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 192.042 227.226438 
+L 603.846 227.226438 
+Q 612.774 227.226438 612.774 218.356037 
+L 612.774 166.796838 
+Q 612.774 157.926437 603.846 157.926437 
+L 192.042 157.926437 
+Q 183.114 157.926437 183.114 166.796838 
+L 183.114 218.356037 
+Q 183.114 227.226438 192.042 227.226438 
+z
+" clip-path="url(#p6492247477)" style="fill: #6e8ca0; opacity: 0.14; stroke: #6e8ca0; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 192.042 313.158438 
+L 603.846 313.158438 
+Q 612.774 313.158438 612.774 304.288038 
+L 612.774 252.728837 
+Q 612.774 243.858438 603.846 243.858438 
+L 192.042 243.858438 
+Q 183.114 243.858438 183.114 252.728837 
+L 183.114 304.288038 
+Q 183.114 313.158438 192.042 313.158438 
+z
+" clip-path="url(#p6492247477)" style="fill: #8fa586; opacity: 0.14; stroke: #8fa586; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 397.944 140.522934 
+Q 397.944 149.608314 397.944 156.904839 
+" clip-path="url(#p6492247477)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 400.944 150.904839 
+L 397.944 156.904839 
+L 394.944 150.904839 
+z
+" clip-path="url(#p6492247477)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 397.944 226.454934 
+Q 397.944 235.540314 397.944 242.836839 
+" clip-path="url(#p6492247477)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 400.944 236.836839 
+L 397.944 242.836839 
+L 394.944 236.836839 
+z
+" clip-path="url(#p6492247477)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="208.224" y="93.061638" transform="rotate(-0 208.224 93.061638)">A · 来源追溯（谱系）</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="208.224" y="119.672838" transform="rotate(-0 208.224 119.672838)">provenance evidence_ids ≥ 1</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; fill: #3e5c6e" transform="translate(576.47025 103.425925)">112,158</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; fill: #3e5c6e" transform="translate(576.1815 114.015503)">44.72%</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="208.224" y="178.993638" transform="rotate(-0 208.224 178.993638)">B · 证据定位（可取回）</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="208.224" y="205.604838" transform="rotate(-0 208.224 205.604838)">direct 指针 + 词法恢复 A/B/C</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6e8ca0" transform="translate(576.47025 189.357925)">110,052</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; fill: #6e8ca0" transform="translate(576.1815 199.947503)">98.12%</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="208.224" y="264.925637" transform="rotate(-0 208.224 264.925637)">C · 语义支持（真支持）</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="208.224" y="291.536838" transform="rotate(-0 208.224 291.536838)">FULLY / 安全规则 / PARTIAL-strict</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; fill: #8fa586" transform="translate(578.8065 275.289925)">31,067</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; fill: #8fa586" transform="translate(576.1815 285.879503)">28.23%</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(410.22 150.445687)">词法恢复找回 59,891</text>
+    <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(410.22 158.822937)">（A≠B）</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(410.22 235.651938)">取回 ≠ 支持</text>
+    <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(410.22 245.125687)">recovery_C 仅约14.8%（B≠C）</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="397.944" y="16.098437" transform="rotate(-0 397.944 16.098437)">三层证据链：来源追溯 → 证据定位 → 语义支持（三概念正交）</text>
+   </g>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="397.074438" transform="rotate(-0 7.2 397.074438)">数据源：FINAL_EVIDENCE_REPORT.md §1（A 44.72% / B 98.12% / C 28.23%，均为全库确定数）</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6492247477">
+   <rect x="96.624" y="22.098437" width="602.64" height="332.64"/>
+  </clipPath>
+ </defs>
+</svg>

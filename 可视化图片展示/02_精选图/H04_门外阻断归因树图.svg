@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="659.666796pt" height="370.263322pt" viewBox="0 0 659.666796 370.263322" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:57:51.553850</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 370.263322 
+L 659.666796 370.263322 
+L 659.666796 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 93.8124 320.240912 
+L 546.711222 320.240912 
+L 546.711222 26.852432 
+L 93.8124 26.852432 
+z
+" clip-path="url(#p4728f616fe)" style="fill: #8e7550"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 557.648022 320.240912 
+L 629.7156 320.240912 
+L 629.7156 152.432689 
+L 557.648022 152.432689 
+z
+" clip-path="url(#p4728f616fe)" style="fill: #bba37b"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 557.648022 146.445169 
+L 629.7156 146.445169 
+L 629.7156 48.80132 
+L 557.648022 48.80132 
+z
+" clip-path="url(#p4728f616fe)" style="fill: #cdb995"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 557.648022 42.8138 
+L 628.281193 42.8138 
+L 628.281193 26.852432 
+L 557.648022 26.852432 
+z
+" clip-path="url(#p4728f616fe)" style="fill: #dfd0b8"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 633.749593 42.8138 
+L 635.184 42.8138 
+L 635.184 26.852432 
+L 633.749593 26.852432 
+z
+" clip-path="url(#p4728f616fe)" style="fill: #ede4d4"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(284.261811 166.345547)">谓词未完成规范化</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(305.636811 175.769953)">264,635</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(305.641733 185.194359)">(84.8%)</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(544.315405 229.650363)">作用域冲突 model_review</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(581.306811 239.091644)">27,492</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(581.311733 248.51605)">(8.8%)</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(557.681811 90.439697)">端点实体类型未决</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(581.306811 99.864104)">16,393</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(581.311733 109.28851)">(5.3%)</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(561.464607 27.649569)">关系域约束违反</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(582.839607 37.073975)">3,412</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(580.594529 46.498381)">(1.1%)</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(616.466796 27.614413)">人工遗留</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(629.966796 37.038819)">60</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #ffffff" transform="translate(622.096718 46.463225)">(0.0%)</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="361.764" y="17.858672" transform="rotate(-0 361.764 17.858672)">门外宇宙 311,992 条的阻断归因树图</text>
+   </g>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="361.337072" transform="rotate(-0 7.2 361.337072)">数据源：FULL_UNIVERSE_ADMISSION_SUMMARY.json（284 条 CASE 规则重放，0 mismatch）</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4728f616fe">
+   <rect x="88.344" y="23.858672" width="546.84" height="299.376"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="972.817091pt" height="621.08465pt" viewBox="0 0 972.817091 621.08465" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:29:03.531206</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 621.08465 
+L 972.817091 621.08465 
+L 972.817091 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 111.528 288.936 
+L 431.109818 288.936 
+L 431.109818 72.216 
+L 111.528 72.216 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m751ac40848" d="M 0 0 
+L 0 3.5 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m751ac40848" x="145.001985" y="288.936" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="145.001985" y="301.76875" transform="rotate(-0 145.001985 301.76875)">actor</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m751ac40848" x="208.160447" y="288.936" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(198.363947 301.76875)">influe</text>
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(196.267228 310.564862)">nce_co</text>
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(199.762416 319.376725)">ntext</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m751ac40848" x="271.318909" y="288.936" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="271.318909" y="301.76875" transform="rotate(-0 271.318909 301.76875)">place</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m751ac40848" x="334.477371" y="288.936" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(323.281746 301.753)">event_</text>
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(325.146152 310.564862)">struct</text>
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(329.114496 319.360975)">ure</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m751ac40848" x="397.635833" y="288.936" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(387.839333 301.76875)">cultur</text>
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(385.041083 310.564862)">e_sema</text>
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(389.703083 319.376725)">ntics</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6">
+      <path d="M 111.528 288.936 
+L 431.109818 288.936 
+" clip-path="url(#pb8d86bc007)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_7">
+      <defs>
+       <path id="me6385129c3" d="M 0 0 
+L -3.5 0 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="288.936" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="292.407875" transform="rotate(-0 104.528 292.407875)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <path d="M 111.528 243.423321 
+L 431.109818 243.423321 
+" clip-path="url(#pb8d86bc007)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="243.423321" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="246.895196" transform="rotate(-0 104.528 246.895196)">200</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_10">
+      <path d="M 111.528 197.910642 
+L 431.109818 197.910642 
+" clip-path="url(#pb8d86bc007)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="197.910642" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="201.382517" transform="rotate(-0 104.528 201.382517)">400</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_12">
+      <path d="M 111.528 152.397963 
+L 431.109818 152.397963 
+" clip-path="url(#pb8d86bc007)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="152.397963" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="155.869838" transform="rotate(-0 104.528 155.869838)">600</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_14">
+      <path d="M 111.528 106.885283 
+L 431.109818 106.885283 
+" clip-path="url(#pb8d86bc007)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="106.885283" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="110.357158" transform="rotate(-0 104.528 110.357158)">800</text>
+     </g>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="83.175031" y="180.576" transform="rotate(-90 83.175031 180.576)">角色连接数（四事件合计）</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 111.528 288.936 
+L 111.528 72.216 
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 111.528 288.936 
+L 431.109818 288.936 
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 126.054446 288.936 
+L 163.949524 288.936 
+L 163.949524 82.536 
+L 126.054446 82.536 
+z
+" clip-path="url(#pb8d86bc007)" style="fill: #6e8ca0"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 189.212908 288.936 
+L 227.107986 288.936 
+L 227.107986 253.663674 
+L 189.212908 253.663674 
+z
+" clip-path="url(#pb8d86bc007)" style="fill: #8fa586"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 252.37137 288.936 
+L 290.266448 288.936 
+L 290.266448 260.718139 
+L 252.37137 260.718139 
+z
+" clip-path="url(#pb8d86bc007)" style="fill: #c2a08b"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 315.529833 288.936 
+L 353.42491 288.936 
+L 353.42491 288.25331 
+L 315.529833 288.25331 
+z
+" clip-path="url(#pb8d86bc007)" style="fill: #a08ba0"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 378.688295 288.936 
+L 416.583372 288.936 
+L 416.583372 288.480873 
+L 378.688295 288.480873 
+z
+" clip-path="url(#pb8d86bc007)" style="fill: #7fa3a0"/>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="85.961455" y="59.2128" transform="rotate(-0 85.961455 59.2128)">(a)</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="271.318909" y="66.216" transform="rotate(-0 271.318909 66.216)">代表性事件的角色结构</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_10">
+    <path d="M 517.396909 262.9296 
+L 792.237273 262.9296 
+Q 808.216364 262.9296 808.216364 252.0936 
+L 808.216364 104.724 
+Q 808.216364 93.888 792.237273 93.888 
+L 517.396909 93.888 
+Q 501.417818 93.888 501.417818 104.724 
+L 501.417818 252.0936 
+Q 501.417818 262.9296 517.396909 262.9296 
+z
+" clip-path="url(#p9d0969e1a2)" style="fill: #f2f4f3; stroke: #3e5c6e; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="654.817091" y="119.8944" transform="rotate(-0 654.817091 119.8944)">典型完全支持案例（STRICT）</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9.6px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="654.817091" y="158.904" transform="rotate(-0 654.817091 158.904)">杨尚琬 —隶属— 潼南县人民解放委员会</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="654.817091" y="206.5824" transform="rotate(-0 654.817091 206.5824)">证据：「解委会下设各股负责人是：秘书股李问农、晁泗浜（军代表），治安股杨尚琬、江伯伊，财税股唐举，文教股夏绍全，粮食股毛术，宣传队付怡如、朱明。…」</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #3e5c6e" x="654.817091" y="241.2576" transform="rotate(-0 654.817091 241.2576)">判定：证据语义完全支持，保持严格层发布</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="469.459636" y="59.2128" transform="rotate(-0 469.459636 59.2128)">(b)</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_11">
+    <path d="M 111.528 549 
+L 431.109818 549 
+L 431.109818 332.28 
+L 111.528 332.28 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_6">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m751ac40848" x="118.408948" y="549" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="118.408948" y="562.94375" transform="rotate(-0 118.408948 562.94375)">1910</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#m751ac40848" x="156.636438" y="549" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="156.636438" y="562.94375" transform="rotate(-0 156.636438 562.94375)">1915</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m751ac40848" x="194.863929" y="549" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="194.863929" y="562.94375" transform="rotate(-0 194.863929 562.94375)">1920</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m751ac40848" x="233.091419" y="549" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="233.091419" y="562.94375" transform="rotate(-0 233.091419 562.94375)">1925</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m751ac40848" x="271.318909" y="549" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="271.318909" y="562.94375" transform="rotate(-0 271.318909 562.94375)">1930</text>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#m751ac40848" x="309.546399" y="549" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="309.546399" y="562.94375" transform="rotate(-0 309.546399 562.94375)">1935</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m751ac40848" x="347.77389" y="549" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_25">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="347.77389" y="562.94375" transform="rotate(-0 347.77389 562.94375)">1940</text>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_23">
+      <g>
+       <use xlink:href="#m751ac40848" x="386.00138" y="549" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_26">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="386.00138" y="562.94375" transform="rotate(-0 386.00138 562.94375)">1945</text>
+     </g>
+    </g>
+    <g id="xtick_14">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m751ac40848" x="424.22887" y="549" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_27">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="424.22887" y="562.94375" transform="rotate(-0 424.22887 562.94375)">1950</text>
+     </g>
+    </g>
+    <g id="text_28">
+     <text style="font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="271.318909" y="576.913437" transform="rotate(-0 271.318909 576.913437)">年份</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_6">
+     <g id="line2d_25">
+      <path d="M 111.528 539.149091 
+L 431.109818 539.149091 
+" clip-path="url(#p68adbb0f70)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="539.149091" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_29">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="542.620966" transform="rotate(-0 104.528 542.620966)">0</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_27">
+      <path d="M 111.528 514.521818 
+L 431.109818 514.521818 
+" clip-path="url(#p68adbb0f70)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="514.521818" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_30">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="517.993693" transform="rotate(-0 104.528 517.993693)">50</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_29">
+      <path d="M 111.528 489.894545 
+L 431.109818 489.894545 
+" clip-path="url(#p68adbb0f70)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="489.894545" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_31">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="493.36642" transform="rotate(-0 104.528 493.36642)">100</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_31">
+      <path d="M 111.528 465.267273 
+L 431.109818 465.267273 
+" clip-path="url(#p68adbb0f70)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_32">
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="465.267273" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_32">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="468.739148" transform="rotate(-0 104.528 468.739148)">150</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_33">
+      <path d="M 111.528 440.64 
+L 431.109818 440.64 
+" clip-path="url(#p68adbb0f70)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_34">
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="440.64" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_33">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="444.111875" transform="rotate(-0 104.528 444.111875)">200</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_35">
+      <path d="M 111.528 416.012727 
+L 431.109818 416.012727 
+" clip-path="url(#p68adbb0f70)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_36">
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="416.012727" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_34">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="419.484602" transform="rotate(-0 104.528 419.484602)">250</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_37">
+      <path d="M 111.528 391.385455 
+L 431.109818 391.385455 
+" clip-path="url(#p68adbb0f70)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_38">
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="391.385455" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_35">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="394.85733" transform="rotate(-0 104.528 394.85733)">300</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_39">
+      <path d="M 111.528 366.758182 
+L 431.109818 366.758182 
+" clip-path="url(#p68adbb0f70)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_40">
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="366.758182" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_36">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="370.230057" transform="rotate(-0 104.528 370.230057)">350</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_41">
+      <path d="M 111.528 342.130909 
+L 431.109818 342.130909 
+" clip-path="url(#p68adbb0f70)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_42">
+      <g>
+       <use xlink:href="#me6385129c3" x="111.528" y="342.130909" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_37">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="104.528" y="345.602784" transform="rotate(-0 104.528 345.602784)">400</text>
+     </g>
+    </g>
+    <g id="text_38">
+     <text style="font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="83.175031" y="440.64" transform="rotate(-90 83.175031 440.64)">涉及断言数</text>
+    </g>
+   </g>
+   <g id="FillBetweenPolyCollection_1">
+    <defs>
+     <path id="m9ae237ab47" d="M 126.054446 -81.935559 
+L 126.054446 -88.831195 
+L 202.509427 -92.771559 
+L 210.154925 -94.249195 
+L 217.800423 -91.293923 
+L 225.445921 -110.503195 
+L 233.091419 -87.353559 
+L 240.736917 -88.33865 
+L 248.382415 -278.953741 
+L 256.027913 -98.682105 
+L 263.673411 -87.353559 
+L 271.318909 -97.204468 
+L 278.964407 -86.368468 
+L 294.255403 -87.846105 
+L 301.900901 -88.33865 
+L 309.546399 -99.17465 
+L 324.837395 -111.488286 
+L 332.482893 -86.368468 
+L 386.00138 -105.577741 
+L 416.583372 -103.115014 
+L 416.583372 -81.935559 
+L 416.583372 -81.935559 
+L 386.00138 -81.935559 
+L 332.482893 -81.935559 
+L 324.837395 -81.935559 
+L 309.546399 -81.935559 
+L 301.900901 -81.935559 
+L 294.255403 -81.935559 
+L 278.964407 -81.935559 
+L 271.318909 -81.935559 
+L 263.673411 -81.935559 
+L 256.027913 -81.935559 
+L 248.382415 -81.935559 
+L 240.736917 -81.935559 
+L 233.091419 -81.935559 
+L 225.445921 -81.935559 
+L 217.800423 -81.935559 
+L 210.154925 -81.935559 
+L 202.509427 -81.935559 
+L 126.054446 -81.935559 
+z
+" style="stroke: #6e8ca0; stroke-opacity: 0.32"/>
+    </defs>
+    <g clip-path="url(#p68adbb0f70)">
+     <use xlink:href="#m9ae237ab47" x="0" y="621.08465" style="fill: #6e8ca0; fill-opacity: 0.32; stroke: #6e8ca0; stroke-opacity: 0.32"/>
+    </g>
+   </g>
+   <g id="line2d_43">
+    <path d="M 126.054446 532.253455 
+L 202.509427 528.313091 
+L 210.154925 526.835455 
+L 217.800423 529.790727 
+L 225.445921 510.581455 
+L 233.091419 533.731091 
+L 240.736917 532.746 
+L 248.382415 342.130909 
+L 256.027913 522.402545 
+L 263.673411 533.731091 
+L 271.318909 523.880182 
+L 278.964407 534.716182 
+L 294.255403 533.238545 
+L 301.900901 532.746 
+L 309.546399 521.91 
+L 324.837395 509.596364 
+L 332.482893 534.716182 
+L 386.00138 515.506909 
+L 416.583372 517.969636 
+" clip-path="url(#p68adbb0f70)" style="fill: none; stroke: #3e5c6e; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 111.528 549 
+L 111.528 332.28 
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 111.528 549 
+L 431.109818 549 
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_39">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="85.961455" y="319.2768" transform="rotate(-0 85.961455 319.2768)">(c)</text>
+   </g>
+   <g id="text_40">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="271.318909" y="326.28" transform="rotate(-0 271.318909 326.28)">「毛泽东」活动年份档案</text>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g id="patch_14">
+    <path d="M 495.026182 549 
+L 814.608 549 
+L 814.608 332.28 
+L 495.026182 332.28 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_5">
+    <g id="xtick_15">
+     <g id="line2d_44">
+      <g>
+       <use xlink:href="#m751ac40848" x="564.026802" y="549" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_41">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="564.026802" y="561.83275" transform="rotate(-0 564.026802 561.83275)">influenced</text>
+     </g>
+    </g>
+    <g id="xtick_16">
+     <g id="line2d_45">
+      <g>
+       <use xlink:href="#m751ac40848" x="745.60738" y="549" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_42">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="745.60738" y="561.824875" transform="rotate(-0 745.60738 561.824875)">part_of</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_6">
+    <g id="ytick_15">
+     <g id="line2d_46">
+      <path d="M 495.026182 549 
+L 814.608 549 
+" clip-path="url(#p7e5739a70c)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_47">
+      <g>
+       <use xlink:href="#me6385129c3" x="495.026182" y="549" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_43">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="488.026182" y="552.471875" transform="rotate(-0 488.026182 552.471875)">0</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_48">
+      <path d="M 495.026182 522.402062 
+L 814.608 522.402062 
+" clip-path="url(#p7e5739a70c)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_49">
+      <g>
+       <use xlink:href="#me6385129c3" x="495.026182" y="522.402062" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_44">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="488.026182" y="525.873937" transform="rotate(-0 488.026182 525.873937)">50</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_50">
+      <path d="M 495.026182 495.804124 
+L 814.608 495.804124 
+" clip-path="url(#p7e5739a70c)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_51">
+      <g>
+       <use xlink:href="#me6385129c3" x="495.026182" y="495.804124" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_45">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="488.026182" y="499.275999" transform="rotate(-0 488.026182 499.275999)">100</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_52">
+      <path d="M 495.026182 469.206186 
+L 814.608 469.206186 
+" clip-path="url(#p7e5739a70c)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_53">
+      <g>
+       <use xlink:href="#me6385129c3" x="495.026182" y="469.206186" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_46">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="488.026182" y="472.678061" transform="rotate(-0 488.026182 472.678061)">150</text>
+     </g>
+    </g>
+    <g id="ytick_19">
+     <g id="line2d_54">
+      <path d="M 495.026182 442.608247 
+L 814.608 442.608247 
+" clip-path="url(#p7e5739a70c)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_55">
+      <g>
+       <use xlink:href="#me6385129c3" x="495.026182" y="442.608247" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_47">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="488.026182" y="446.080122" transform="rotate(-0 488.026182 446.080122)">200</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_56">
+      <path d="M 495.026182 416.010309 
+L 814.608 416.010309 
+" clip-path="url(#p7e5739a70c)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_57">
+      <g>
+       <use xlink:href="#me6385129c3" x="495.026182" y="416.010309" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_48">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="488.026182" y="419.482184" transform="rotate(-0 488.026182 419.482184)">250</text>
+     </g>
+    </g>
+    <g id="ytick_21">
+     <g id="line2d_58">
+      <path d="M 495.026182 389.412371 
+L 814.608 389.412371 
+" clip-path="url(#p7e5739a70c)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_59">
+      <g>
+       <use xlink:href="#me6385129c3" x="495.026182" y="389.412371" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_49">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="488.026182" y="392.884246" transform="rotate(-0 488.026182 392.884246)">300</text>
+     </g>
+    </g>
+    <g id="ytick_22">
+     <g id="line2d_60">
+      <path d="M 495.026182 362.814433 
+L 814.608 362.814433 
+" clip-path="url(#p7e5739a70c)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_61">
+      <g>
+       <use xlink:href="#me6385129c3" x="495.026182" y="362.814433" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_50">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="488.026182" y="366.286308" transform="rotate(-0 488.026182 366.286308)">350</text>
+     </g>
+    </g>
+    <g id="ytick_23">
+     <g id="line2d_62">
+      <path d="M 495.026182 336.216495 
+L 814.608 336.216495 
+" clip-path="url(#p7e5739a70c)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_63">
+      <g>
+       <use xlink:href="#me6385129c3" x="495.026182" y="336.216495" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_51">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="488.026182" y="339.68837" transform="rotate(-0 488.026182 339.68837)">400</text>
+     </g>
+    </g>
+    <g id="text_52">
+     <text style="font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="466.673213" y="440.64" transform="rotate(-90 466.673213 440.64)">关系条数</text>
+    </g>
+   </g>
+   <g id="patch_15">
+    <path d="M 495.026182 549 
+L 495.026182 332.28 
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 495.026182 549 
+L 814.608 549 
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 509.552628 549 
+L 618.500975 549 
+L 618.500975 342.6 
+L 509.552628 342.6 
+z
+" clip-path="url(#p7e5739a70c)" style="fill: #6e8ca0"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 691.133207 549 
+L 800.081554 549 
+L 800.081554 489.952577 
+L 691.133207 489.952577 
+z
+" clip-path="url(#p7e5739a70c)" style="fill: #8fa586"/>
+   </g>
+   <g id="text_53">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="469.459636" y="319.2768" transform="rotate(-0 469.459636 319.2768)">(d)</text>
+   </g>
+   <g id="text_54">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="654.817091" y="326.28" transform="rotate(-0 654.817091 326.28)">事件间关系类型分布（499条）</text>
+   </g>
+  </g>
+  <g id="text_55">
+   <text style="font-weight: 700; font-size: 15px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="451.728" y="17.819531" transform="rotate(-0 451.728 17.819531)">典型案例与知识组织</text>
+  </g>
+  <g id="text_56">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="612.1584" transform="rotate(-0 7.2 612.1584)">数据源：research_event_roles / gate_verdict_details / research_assertions / research_event_relations</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb8d86bc007">
+   <rect x="111.528" y="72.216" width="319.581818" height="216.72"/>
+  </clipPath>
+  <clipPath id="p9d0969e1a2">
+   <rect x="495.026182" y="72.216" width="319.581818" height="216.72"/>
+  </clipPath>
+  <clipPath id="p68adbb0f70">
+   <rect x="111.528" y="332.28" width="319.581818" height="216.72"/>
+  </clipPath>
+  <clipPath id="p7e5739a70c">
+   <rect x="495.026182" y="332.28" width="319.581818" height="216.72"/>
+  </clipPath>
+ </defs>
+</svg>

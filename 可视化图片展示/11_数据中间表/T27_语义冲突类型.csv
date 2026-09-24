@@ -1,0 +1,11 @@
+﻿冲突类型,数量
+unresolved_endpoint_entity_type,43885
+lexical_source_type_conflict,12796
+same_name_multiple_source_types,10192
+unresolved_canonical_place_target,6496
+identity_ambiguity,794
+controlled_event_time_year_conflict,287
+specialized_type_requires_context,104
+invalid_canonical_place_target,72
+raw_event_time_requires_review,9
+spatial_model_contraindication,1

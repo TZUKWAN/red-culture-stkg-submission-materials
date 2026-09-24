@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 820px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body><div style="font-family:SimSun,serif;background:#ffffff;padding:10px 18px 4px 18px;"><h2 style="margin:2px 0 6px 0;color:#2B2B2B;font-weight:bold;">EventFrame 案例视图 —「南昌起义」事件中心子图（严格层角色 60 条）</h2><div style="color:#6B6B6B;font-size:13px;">数据源：长江流域党史时空知识图谱最终库（sha256 020d4905…），交互式力导向布局，拖拽/滚轮可缩放</div></div>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#3E5C6E", "font": {"color": "#2B2B2B"}, "id": "EV", "label": "\u5357\u660c\u8d77\u4e49", "shape": "dot", "size": 46, "title": "\u4e2d\u5fc3\u4e8b\u4ef6\uff1a\u5357\u660c\u8d77\u4e49"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u8bb8\u7ee7\u614e", "label": "\u8bb8\u7ee7\u614e", "shape": "dot", "size": 14.8164799306237, "title": "\u8bb8\u7ee7\u614e\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u6731\u745e", "label": "\u6731\u745e", "shape": "dot", "size": 14.8164799306237, "title": "\u6731\u745e\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u9ec4\u9053", "label": "\u9ec4\u9053", "shape": "dot", "size": 14.8164799306237, "title": "\u9ec4\u9053\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u5434\u4e9a\u9c81", "label": "\u5434\u4e9a\u9c81", "shape": "dot", "size": 14.8164799306237, "title": "\u5434\u4e9a\u9c81\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#7FA3A0", "font": {"color": "#2B2B2B"}, "id": "\u4e95\u5188\u5c71\u5730\u533a", "label": "\u4e95\u5188\u5c71\u5730\u533a", "shape": "dot", "size": 14.8164799306237, "title": "\u4e95\u5188\u5c71\u5730\u533a\uff08Place\uff5c\u89d2\u8272\uff1aplace\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u7ae0\u4f2f\u94a7", "label": "\u7ae0\u4f2f\u94a7", "shape": "dot", "size": 14.8164799306237, "title": "\u7ae0\u4f2f\u94a7\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u90ed\u4eae", "label": "\u90ed\u4eae", "shape": "dot", "size": 14.8164799306237, "title": "\u90ed\u4eae\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u5f20\u66d9\u65f6", "label": "\u5f20\u66d9\u65f6", "shape": "dot", "size": 14.8164799306237, "title": "\u5f20\u66d9\u65f6\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#7FA3A0", "font": {"color": "#2B2B2B"}, "id": "\u6e05\u6c5f", "label": "\u6e05\u6c5f", "shape": "dot", "size": 14.8164799306237, "title": "\u6e05\u6c5f\uff08Place\uff5c\u89d2\u8272\uff1ainfluence_context\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u9ad8\u8bed\u7f55", "label": "\u9ad8\u8bed\u7f55", "shape": "dot", "size": 14.8164799306237, "title": "\u9ad8\u8bed\u7f55\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#C2A08B", "font": {"color": "#2B2B2B"}, "id": "\u4e5d\u6c5f\u4f1a\u8bae", "label": "\u4e5d\u6c5f\u4f1a\u8bae", "shape": "dot", "size": 14.8164799306237, "title": "\u4e5d\u6c5f\u4f1a\u8bae\uff08Event\uff5c\u89d2\u8272\uff1aevent_structure\uff09"}, {"color": "#8FA586", "font": {"color": "#2B2B2B"}, "id": "\u96ea\u5170\u86fe\u526f\u652f\u90e8\u957f", "label": "\u96ea\u5170\u86fe\u526f\u652f\u90e8\u957f", "shape": "dot", "size": 14.8164799306237, "title": "\u96ea\u5170\u86fe\u526f\u652f\u90e8\u957f\uff08Organization\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u9ad8\u5e0c\u4fe8", "label": "\u9ad8\u5e0c\u4fe8", "shape": "dot", "size": 14.8164799306237, "title": "\u9ad8\u5e0c\u4fe8\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u8d3a\u3001\u660c", "label": "\u8d3a\u3001\u660c", "shape": "dot", "size": 14.8164799306237, "title": "\u8d3a\u3001\u660c\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u8d3a\u8bda", "label": "\u8d3a\u8bda", "shape": "dot", "size": 14.8164799306237, "title": "\u8d3a\u8bda\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u5b5f\u6e58\u9274", "label": "\u5b5f\u6e58\u9274", "shape": "dot", "size": 14.8164799306237, "title": "\u5b5f\u6e58\u9274\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u5362\u751f\u751f", "label": "\u5362\u751f\u751f", "shape": "dot", "size": 14.8164799306237, "title": "\u5362\u751f\u751f\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u59da\u6709\u5149", "label": "\u59da\u6709\u5149", "shape": "dot", "size": 14.8164799306237, "title": "\u59da\u6709\u5149\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#8FA586", "font": {"color": "#2B2B2B"}, "id": "\u524d\u654c\u59d4\u5458\u4f1a", "label": "\u524d\u654c\u59d4\u5458\u4f1a", "shape": "dot", "size": 14.8164799306237, "title": "\u524d\u654c\u59d4\u5458\u4f1a\uff08Organization\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u8463\u5fc5\u6b66", "label": "\u8463\u5fc5\u6b66", "shape": "dot", "size": 14.8164799306237, "title": "\u8463\u5fc5\u6b66\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u4f55\u633a\u9896", "label": "\u4f55\u633a\u9896", "shape": "dot", "size": 14.8164799306237, "title": "\u4f55\u633a\u9896\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u8521\u5347\u7199", "label": "\u8521\u5347\u7199", "shape": "dot", "size": 14.8164799306237, "title": "\u8521\u5347\u7199\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#7FA3A0", "font": {"color": "#2B2B2B"}, "id": "\u6e58\u5357\u5730\u533a", "label": "\u6e58\u5357\u5730\u533a", "shape": "dot", "size": 14.8164799306237, "title": "\u6e58\u5357\u5730\u533a\uff08Place\uff5c\u89d2\u8272\uff1ainfluence_context\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u8881\u7389\u51b0", "label": "\u8881\u7389\u51b0", "shape": "dot", "size": 14.8164799306237, "title": "\u8881\u7389\u51b0\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u674e\u5149\u5ead", "label": "\u674e\u5149\u5ead", "shape": "dot", "size": 14.8164799306237, "title": "\u674e\u5149\u5ead\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#C2A08B", "font": {"color": "#2B2B2B"}, "id": "\u6b66\u6c49\u5de5\u4eba\u603b\u540c\u76df\u7f62\u5de5", "label": "\u6b66\u6c49\u5de5\u4eba\u603b\u540c\u76df\u7f62\u5de5", "shape": "dot", "size": 14.8164799306237, "title": "\u6b66\u6c49\u5de5\u4eba\u603b\u540c\u76df\u7f62\u5de5\uff08Event\uff5c\u89d2\u8272\uff1ainfluence_context\uff09"}, {"color": "#8FA586", "font": {"color": "#2B2B2B"}, "id": "\u5171\u4ea7\u56fd\u9645", "label": "\u5171\u4ea7\u56fd\u9645", "shape": "dot", "size": 14.8164799306237, "title": "\u5171\u4ea7\u56fd\u9645\uff08Organization\uff5c\u89d2\u8272\uff1ainfluence_context\uff09"}, {"color": "#C2A08B", "font": {"color": "#2B2B2B"}, "id": "\u516b\u4e00\u66b4\u52a8", "label": "\u516b\u4e00\u66b4\u52a8", "shape": "dot", "size": 14.8164799306237, "title": "\u516b\u4e00\u66b4\u52a8\uff08Event\uff5c\u89d2\u8272\uff1aevent_structure\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u5218\u4e5d\u5cf0", "label": "\u5218\u4e5d\u5cf0", "shape": "dot", "size": 14.8164799306237, "title": "\u5218\u4e5d\u5cf0\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u5b54\u539f", "label": "\u5b54\u539f", "shape": "dot", "size": 14.8164799306237, "title": "\u5b54\u539f\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u5468\u6069\u6765", "label": "\u5468\u6069\u6765", "shape": "dot", "size": 14.8164799306237, "title": "\u5468\u6069\u6765\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u6731\u5fb7", "label": "\u6731\u5fb7", "shape": "dot", "size": 14.8164799306237, "title": "\u6731\u5fb7\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u718a\u96c4", "label": "\u718a\u96c4", "shape": "dot", "size": 14.8164799306237, "title": "\u718a\u96c4\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u90b9\u52b2\u677e", "label": "\u90b9\u52b2\u677e", "shape": "dot", "size": 14.8164799306237, "title": "\u90b9\u52b2\u677e\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u5218\u5c11\u5947", "label": "\u5218\u5c11\u5947", "shape": "dot", "size": 14.8164799306237, "title": "\u5218\u5c11\u5947\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#7FA3A0", "font": {"color": "#2B2B2B"}, "id": "\u7518\u68e0\u6e56", "label": "\u7518\u68e0\u6e56", "shape": "dot", "size": 14.8164799306237, "title": "\u7518\u68e0\u6e56\uff08Place\uff5c\u89d2\u8272\uff1aplace\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u66fe\u5baa\u660e", "label": "\u66fe\u5baa\u660e", "shape": "dot", "size": 14.8164799306237, "title": "\u66fe\u5baa\u660e\uff08Person\uff5c\u89d2\u8272\uff1ainfluence_context\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u53f6\u633a", "label": "\u53f6\u633a", "shape": "dot", "size": 14.8164799306237, "title": "\u53f6\u633a\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u5ba3\u4fa0\u7236", "label": "\u5ba3\u4fa0\u7236", "shape": "dot", "size": 14.8164799306237, "title": "\u5ba3\u4fa0\u7236\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u9648\u4e91\u5eb5", "label": "\u9648\u4e91\u5eb5", "shape": "dot", "size": 14.8164799306237, "title": "\u9648\u4e91\u5eb5\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u65b9\u7ef4\u590f", "label": "\u65b9\u7ef4\u590f", "shape": "dot", "size": 14.8164799306237, "title": "\u65b9\u7ef4\u590f\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u674e\u7acb\u4e09", "label": "\u674e\u7acb\u4e09", "shape": "dot", "size": 14.8164799306237, "title": "\u674e\u7acb\u4e09\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u5189\u807f\u4fee", "label": "\u5189\u807f\u4fee", "shape": "dot", "size": 14.8164799306237, "title": "\u5189\u807f\u4fee\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u5468\u4ee5\u6817", "label": "\u5468\u4ee5\u6817", "shape": "dot", "size": 14.8164799306237, "title": "\u5468\u4ee5\u6817\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u5f6d\u6e43", "label": "\u5f6d\u6e43", "shape": "dot", "size": 14.8164799306237, "title": "\u5f6d\u6e43\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u8d75\u535a\u751f", "label": "\u8d75\u535a\u751f", "shape": "dot", "size": 14.8164799306237, "title": "\u8d75\u535a\u751f\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u6768\u77f3\u9b42", "label": "\u6768\u77f3\u9b42", "shape": "dot", "size": 14.8164799306237, "title": "\u6768\u77f3\u9b42\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u9093\u5c0f\u5e73", "label": "\u9093\u5c0f\u5e73", "shape": "dot", "size": 14.8164799306237, "title": "\u9093\u5c0f\u5e73\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u9676\u3001\u94f8", "label": "\u9676\u3001\u94f8", "shape": "dot", "size": 14.8164799306237, "title": "\u9676\u3001\u94f8\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u8d3a\u9f99", "label": "\u8d3a\u9f99", "shape": "dot", "size": 14.8164799306237, "title": "\u8d3a\u9f99\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u6c5f\u897f\u5b66\u751f\u603b\u4f1a\u4e3b\u5e2d", "label": "\u6c5f\u897f\u5b66\u751f\u603b\u4f1a\u4e3b\u5e2d", "shape": "dot", "size": 14.8164799306237, "title": "\u6c5f\u897f\u5b66\u751f\u603b\u4f1a\u4e3b\u5e2d\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u90b1\u56fd\u5fe0", "label": "\u90b1\u56fd\u5fe0", "shape": "dot", "size": 14.8164799306237, "title": "\u90b1\u56fd\u5fe0\uff08Person\uff5c\u89d2\u8272\uff1ainfluence_context\uff09"}, {"color": "#8FA586", "font": {"color": "#2B2B2B"}, "id": "\u516b\u8def\u519b\u4e00\u4e00\u4e94\u5e08\u4e09\u56db\u4e09\u65c5\u516d\u516b\u4e94\u56e2", "label": "\u516b\u8def\u519b\u4e00\u4e00\u4e94\u5e08\u4e09\u56db\u4e09\u65c5\u516d", "shape": "dot", "size": 14.8164799306237, "title": "\u516b\u8def\u519b\u4e00\u4e00\u4e94\u5e08\u4e09\u56db\u4e09\u65c5\u516d\u516b\u4e94\u56e2\uff08Organization\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u8096\u5149\u5b87", "label": "\u8096\u5149\u5b87", "shape": "dot", "size": 14.8164799306237, "title": "\u8096\u5149\u5b87\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u77bf\u79cb\u767d", "label": "\u77bf\u79cb\u767d", "shape": "dot", "size": 14.8164799306237, "title": "\u77bf\u79cb\u767d\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u7279\u7acb", "label": "\u7279\u7acb", "shape": "dot", "size": 14.8164799306237, "title": "\u7279\u7acb\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u4fde\u5176\u708e", "label": "\u4fde\u5176\u708e", "shape": "dot", "size": 14.8164799306237, "title": "\u4fde\u5176\u708e\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}, {"color": "#7FA3A0", "font": {"color": "#2B2B2B"}, "id": "\u629a\u6cb3", "label": "\u629a\u6cb3", "shape": "dot", "size": 14.8164799306237, "title": "\u629a\u6cb3\uff08Place\uff5c\u89d2\u8272\uff1aplace\uff09"}, {"color": "#7D8B99", "font": {"color": "#2B2B2B"}, "id": "\u6c5f\u897f", "label": "\u6c5f\u897f", "shape": "dot", "size": 14.8164799306237, "title": "\u6c5f\u897f\uff08AdministrativeRegion\uff5c\u89d2\u8272\uff1aplace\uff09"}, {"color": "#6E8CA0", "font": {"color": "#2B2B2B"}, "id": "\u8bb8\u5fb7\u534e", "label": "\u8bb8\u5fb7\u534e", "shape": "dot", "size": 14.8164799306237, "title": "\u8bb8\u5fb7\u534e\uff08Person\uff5c\u89d2\u8272\uff1aactor\uff09"}]);
+                  edges = new vis.DataSet([{"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u8bb8\u7ee7\u614e", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u6731\u745e", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u9ec4\u9053", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u5434\u4e9a\u9c81", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "occurred_at", "to": "\u4e95\u5188\u5c71\u5730\u533a", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u7ae0\u4f2f\u94a7", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u90ed\u4eae", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u5f20\u66d9\u65f6", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "influenced", "to": "\u6e05\u6c5f", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u9ad8\u8bed\u7f55", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "part_of", "to": "\u4e5d\u6c5f\u4f1a\u8bae", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u96ea\u5170\u86fe\u526f\u652f\u90e8\u957f", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u9ad8\u5e0c\u4fe8", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u8d3a\u3001\u660c", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u8d3a\u8bda", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u5b5f\u6e58\u9274", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u5362\u751f\u751f", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u59da\u6709\u5149", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "led", "to": "\u524d\u654c\u59d4\u5458\u4f1a", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u8463\u5fc5\u6b66", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u4f55\u633a\u9896", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u8521\u5347\u7199", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "influenced", "to": "\u6e58\u5357\u5730\u533a", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u8881\u7389\u51b0", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u674e\u5149\u5ead", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "influenced", "to": "\u6b66\u6c49\u5de5\u4eba\u603b\u540c\u76df\u7f62\u5de5", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "influenced", "to": "\u5171\u4ea7\u56fd\u9645", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "part_of", "to": "\u516b\u4e00\u66b4\u52a8", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u5218\u4e5d\u5cf0", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u5b54\u539f", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "organized", "to": "\u5468\u6069\u6765", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "led", "to": "\u6731\u5fb7", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u718a\u96c4", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u90b9\u52b2\u677e", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u5218\u5c11\u5947", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "occurred_at", "to": "\u7518\u68e0\u6e56", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "influenced", "to": "\u66fe\u5baa\u660e", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u53f6\u633a", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u5ba3\u4fa0\u7236", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u9648\u4e91\u5eb5", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u65b9\u7ef4\u590f", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u674e\u7acb\u4e09", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u5189\u807f\u4fee", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u5468\u4ee5\u6817", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "led", "to": "\u5f6d\u6e43", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u8d75\u535a\u751f", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u6768\u77f3\u9b42", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u9093\u5c0f\u5e73", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u9676\u3001\u94f8", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "led", "to": "\u8d3a\u9f99", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "supported", "to": "\u6c5f\u897f\u5b66\u751f\u603b\u4f1a\u4e3b\u5e2d", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "influenced", "to": "\u90b1\u56fd\u5fe0", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u516b\u8def\u519b\u4e00\u4e00\u4e94\u5e08\u4e09\u56db\u4e09\u65c5\u516d\u516b\u4e94\u56e2", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u8096\u5149\u5b87", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u77bf\u79cb\u767d", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u7279\u7acb", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u4fde\u5176\u708e", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "occurred_at", "to": "\u629a\u6cb3", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "occurred_at", "to": "\u6c5f\u897f", "width": 0.8}, {"color": "#B9C2C9", "from": "EV", "title": "participated_in", "to": "\u8bb8\u5fb7\u534e", "width": 0.8}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"interaction": {"hover": true, "tooltipDelay": 80, "navigationButtons": false, "keyboard": false}, "physics": {"stabilization": {"iterations": 420, "fit": true}}, "nodes": {"font": {"size": 13, "face": "SimSun"}, "borderWidth": 1.2, "shape": "dot"}, "edges": {"font": {"size": 10, "face": "SimSun"}, "smooth": {"type": "continuous"}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    <script>setTimeout(function(){try{network.fit();}catch(e){}},6500);setTimeout(function(){try{network.fit();}catch(e){}},10000);setTimeout(function(){try{network.fit();}catch(e){}},14000);</script></body>
+</html>

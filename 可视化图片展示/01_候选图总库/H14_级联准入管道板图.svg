@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="693.648pt" height="416.10065pt" viewBox="0 0 693.648 416.10065" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:57:57.399972</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 416.10065 
+L 693.648 416.10065 
+L 693.648 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 130.68 343.1664 
+L 650.736 343.1664 
+Q 667.476 343.1664 667.476 326.5344 
+L 667.476 42.6816 
+Q 667.476 26.0496 650.736 26.0496 
+L 130.68 26.0496 
+Q 113.94 26.0496 113.94 42.6816 
+L 113.94 326.5344 
+Q 113.94 343.1664 130.68 343.1664 
+z
+" clip-path="url(#p0abb780261)" style="fill: #fafaf8; stroke: #b9b4ac; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 153 114.7536 
+L 628.416 114.7536 
+Q 638.46 114.7536 638.46 104.7744 
+L 638.46 67.6296 
+Q 638.46 57.6504 628.416 57.6504 
+L 153 57.6504 
+Q 142.956 57.6504 142.956 67.6296 
+L 142.956 104.7744 
+Q 142.956 114.7536 153 114.7536 
+z
+" clip-path="url(#p0abb780261)" style="fill: #7d8b99; opacity: 0.12; stroke: #7d8b99; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 390.708 114.53988 
+Q 390.708 122.239518 390.708 128.485712 
+" clip-path="url(#p0abb780261)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 393.708 122.485712 
+L 390.708 128.485712 
+L 387.708 122.485712 
+z
+" clip-path="url(#p0abb780261)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 153 186.8256 
+L 628.416 186.8256 
+Q 638.46 186.8256 638.46 176.8464 
+L 638.46 139.7016 
+Q 638.46 129.7224 628.416 129.7224 
+L 153 129.7224 
+Q 142.956 129.7224 142.956 139.7016 
+L 142.956 176.8464 
+Q 142.956 186.8256 153 186.8256 
+z
+" clip-path="url(#p0abb780261)" style="fill: #8b93a8; opacity: 0.12; stroke: #8b93a8; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 390.708 186.61188 
+Q 390.708 194.311518 390.708 200.557712 
+" clip-path="url(#p0abb780261)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 393.708 194.557712 
+L 390.708 200.557712 
+L 387.708 194.557712 
+z
+" clip-path="url(#p0abb780261)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 153 258.8976 
+L 628.416 258.8976 
+Q 638.46 258.8976 638.46 248.9184 
+L 638.46 211.7736 
+Q 638.46 201.7944 628.416 201.7944 
+L 153 201.7944 
+Q 142.956 201.7944 142.956 211.7736 
+L 142.956 248.9184 
+Q 142.956 258.8976 153 258.8976 
+z
+" clip-path="url(#p0abb780261)" style="fill: #6e8ca0; opacity: 0.12; stroke: #6e8ca0; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 390.708 258.68388 
+Q 390.708 266.383518 390.708 272.629712 
+" clip-path="url(#p0abb780261)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 393.708 266.629712 
+L 390.708 272.629712 
+L 387.708 266.629712 
+z
+" clip-path="url(#p0abb780261)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 153 322.6536 
+L 628.416 322.6536 
+Q 638.46 322.6536 638.46 312.6744 
+L 638.46 275.5296 
+Q 638.46 265.5504 628.416 265.5504 
+L 153 265.5504 
+Q 142.956 265.5504 142.956 275.5296 
+L 142.956 312.6744 
+Q 142.956 322.6536 153 322.6536 
+z
+" clip-path="url(#p0abb780261)" style="fill: #3e5c6e; opacity: 0.12; stroke: #3e5c6e; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #7d8b99" x="159.138" y="78.1632" transform="rotate(-0 159.138 78.1632)">① 前置结构分层</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="159.138" y="98.1216" transform="rotate(-0 159.138 98.1216)">全库 424,150 → 严格候选 112,158 / 上下文 268,047 / 未决 43,945</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #8b93a8" x="159.138" y="150.2352" transform="rotate(-0 159.138 150.2352)">② 证据定位</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="159.138" y="170.1936" transform="rotate(-0 159.138 170.1936)">112,158 → 可定位 110,052（98.12%）· 无证据 2,106 → 未决</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6e8ca0" x="159.138" y="222.3072" transform="rotate(-0 159.138 222.3072)">③ 语义支持判定</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="159.138" y="242.2656" transform="rotate(-0 159.138 242.2656)">qwen3.5-4b 五档：FULLY 22,099 · PARTIAL 34,922 · UNSUP 44,976 · INSUF 3,057 · CONTRA 27</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #3e5c6e" x="159.138" y="286.0632" transform="rotate(-0 159.138 286.0632)">④ 分层发布</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="159.138" y="306.0216" transform="rotate(-0 159.138 306.0216)">STRICT 31,067 · CONTEXTUAL 299,329 · UNRESOLVED 93,754</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="390.708" y="21.06" transform="rotate(-0 390.708 21.06)">级联准入管道板（同一逻辑的第三种编码）</text>
+   </g>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="407.1744" transform="rotate(-0 7.2 407.1744)">数据源：AUTHORITATIVE_RESULTS.md 定版数字（判定档案 127,633 条）</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0abb780261">
+   <rect x="94.968" y="7.2" width="591.48" height="354.816"/>
+  </clipPath>
+ </defs>
+</svg>

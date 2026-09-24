@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="693.648pt" height="284.85905pt" viewBox="0 0 693.648 284.85905" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:16:02.794519</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 284.85905 
+L 693.648 284.85905 
+L 693.648 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 246.512953 118.08 
+Q 253.439859 118.08 258.913321 118.08 
+" clip-path="url(#p39246c727c)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 252.913321 115.08 
+L 258.913321 118.08 
+L 252.913321 121.08 
+z
+" clip-path="url(#p39246c727c)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 379.312321 118.08 
+Q 386.799275 118.08 392.832785 118.08 
+" clip-path="url(#p39246c727c)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 386.832785 115.08 
+L 392.832785 118.08 
+L 386.832785 121.08 
+z
+" clip-path="url(#p39246c727c)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 502.072321 118.08 
+Q 509.559275 118.08 515.592785 118.08 
+" clip-path="url(#p39246c727c)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 509.592785 115.08 
+L 515.592785 118.08 
+L 509.592785 121.08 
+z
+" clip-path="url(#p39246c727c)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 111.15 191.8152 
+L 237.816 191.8152 
+Q 244.512 191.8152 244.512 185.1624 
+L 244.512 50.9976 
+Q 244.512 44.3448 237.816 44.3448 
+L 111.15 44.3448 
+Q 104.454 44.3448 104.454 50.9976 
+L 104.454 185.1624 
+Q 104.454 191.8152 111.15 191.8152 
+z
+" clip-path="url(#p39246c727c)" style="fill: #f4f1ea; stroke: #ad9e8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 267.39 191.8152 
+L 371.736 191.8152 
+Q 378.432 191.8152 378.432 185.1624 
+L 378.432 50.9976 
+Q 378.432 44.3448 371.736 44.3448 
+L 267.39 44.3448 
+Q 260.694 44.3448 260.694 50.9976 
+L 260.694 185.1624 
+Q 260.694 191.8152 267.39 191.8152 
+z
+" clip-path="url(#p39246c727c)" style="fill: #f2f4f3; stroke: #7fa3a0; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 401.31 191.8152 
+L 494.496 191.8152 
+Q 501.192 191.8152 501.192 185.1624 
+L 501.192 50.9976 
+Q 501.192 44.3448 494.496 44.3448 
+L 401.31 44.3448 
+Q 394.614 44.3448 394.614 50.9976 
+L 394.614 185.1624 
+Q 394.614 191.8152 401.31 191.8152 
+z
+" clip-path="url(#p39246c727c)" style="fill: #f0f2f4; stroke: #3e5c6e; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 524.07 191.8152 
+L 617.256 191.8152 
+Q 623.952 191.8152 623.952 185.1624 
+L 623.952 50.9976 
+Q 623.952 44.3448 617.256 44.3448 
+L 524.07 44.3448 
+Q 517.374 44.3448 517.374 50.9976 
+L 517.374 185.1624 
+Q 517.374 191.8152 524.07 191.8152 
+z
+" clip-path="url(#p39246c727c)" style="fill: #f3f1ec; stroke: #3e5c6e; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.483" y="65.412" transform="rotate(-0 174.483 65.412)">原文证据（可定位）</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(126.083 107.22685)">解委会下设各股负责人是</text>
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(126.083 118.19275)">：秘书股李问农、晁泗浜</text>
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(126.083 129.15865)">（军代表），治安股杨尚</text>
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(126.083 140.174394)">琬、江伯伊，财税股唐举</text>
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(134.883 151.09045)">，文教股夏绍全，…</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="319.563" y="65.412" transform="rotate(-0 319.563 65.412)">知识断言</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(306.363 118.183297)">杨尚琬</text>
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(301.963 129.049509)">—隶属—</text>
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(275.563 140.065253)">潼南县人民解放委员会</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="447.903" y="65.412" transform="rotate(-0 447.903 65.412)">语义支持判定</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(430.303 123.666247)">完全支持</text>
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(417.103 134.582303)">（证据门五档）</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="570.663" y="65.412" transform="rotate(-0 570.663 65.412)">最终知识状态</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(557.463 123.770162)">严格层</text>
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(555.506375 134.512763)">STRICT</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="399.078" y="26.604" transform="rotate(-0 399.078 26.604)">杨尚琬 —隶属— 潼南县人民解放委员会</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(183.478 207.445925)">判定理由：证据明确指出杨尚琬担任解委会下设的治安股负责人，且前文已定义潼南纵队改编为解委会直属分队</text>
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(355.078 216.7632)">，故其隶属关系成立。</text>
+   </g>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="275.9328" transform="rotate(-0 7.2 275.9328)">数据源：gate_verdict_details × research_assertions × evidence_gate_tier（最终库）</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p39246c727c">
+   <rect x="94.968" y="7.2" width="591.48" height="238.392"/>
+  </clipPath>
+ </defs>
+</svg>

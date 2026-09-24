@@ -1,0 +1,223 @@
+{
+  "generated_at": "2026-09-17T04:44:59.132735+08:00",
+  "n_both_judged": 4957,
+  "judge_raw_agreement": {
+    "point": 0.8126,
+    "ci95": [
+      0.8015,
+      0.8232
+    ],
+    "numerator": 4028,
+    "denominator": 4957
+  },
+  "strong_consensus_evidence_support": {
+    "point": 0.8126,
+    "ci95": [
+      0.8015,
+      0.8232
+    ],
+    "numerator": 4028,
+    "denominator": 4957
+  },
+  "cohens_kappa_evidence_support": 0.5136,
+  "recommended_state_agreement": {
+    "point": 0.8899,
+    "ci95": [
+      0.8808,
+      0.8983
+    ],
+    "numerator": 4411,
+    "denominator": 4957
+  },
+  "identity_decidable_agreement": {
+    "point": 0.1818,
+    "ci95": [
+      0.1713,
+      0.1927
+    ],
+    "numerator": 901,
+    "denominator": 4957
+  },
+  "relation_supported_agreement": {
+    "point": 0.7109,
+    "ci95": [
+      0.6981,
+      0.7234
+    ],
+    "numerator": 3524,
+    "denominator": 4957
+  },
+  "scope_decidable_agreement": {
+    "point": 0.2582,
+    "ci95": [
+      0.2462,
+      0.2706
+    ],
+    "numerator": 1280,
+    "denominator": 4957
+  },
+  "strict_eligible_agreement": {
+    "point": 0.9352,
+    "ci95": [
+      0.928,
+      0.9418
+    ],
+    "numerator": 4636,
+    "denominator": 4957
+  },
+  "strict_opportunity_judgeA": {
+    "point": 0.0583,
+    "ci95": [
+      0.0521,
+      0.0652
+    ],
+    "numerator": 289,
+    "denominator": 4957
+  },
+  "strict_opportunity_judgeB": {
+    "point": 0.0115,
+    "ci95": [
+      0.0089,
+      0.0149
+    ],
+    "numerator": 57,
+    "denominator": 4957
+  },
+  "strict_opportunity_strong_consensus": {
+    "point": 0.0063,
+    "ci95": [
+      0.0044,
+      0.0089
+    ],
+    "numerator": 31,
+    "denominator": 4957
+  },
+  "strict_opportunity_weighted_population": 0.0066,
+  "contextual_strict_opportunity_rate": {
+    "point": 0.0068,
+    "ci95": [
+      0.0043,
+      0.0109
+    ],
+    "numerator": 17,
+    "denominator": 2483
+  },
+  "unresolved_strict_opportunity_rate": {
+    "point": 0.0057,
+    "ci95": [
+      0.0034,
+      0.0095
+    ],
+    "numerator": 14,
+    "denominator": 2474
+  },
+  "outside_gate_exact_tier_agreement": {
+    "point": 0.4303,
+    "ci95": [
+      0.4166,
+      0.4441
+    ],
+    "numerator": 2133,
+    "denominator": 4957
+  },
+  "per_blocker_strict_opportunity": {
+    "hard_blocker:endpoint_entity_type_unresolved": {
+      "point": 0.0045,
+      "ci95": [
+        0.0017,
+        0.0114
+      ],
+      "numerator": 4,
+      "denominator": 898
+    },
+    "hard_blocker:manual_review_legacy": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.5615
+      ],
+      "numerator": 0,
+      "denominator": 3
+    },
+    "hard_blocker:scope_conflict_model_review": {
+      "point": 0.0064,
+      "ci95": [
+        0.0035,
+        0.0117
+      ],
+      "numerator": 10,
+      "denominator": 1573
+    },
+    "strict_candidate_conjunct_failed:predicate_raw_not_normalized": {
+      "point": 0.0067,
+      "ci95": [
+        0.0041,
+        0.0108
+      ],
+      "numerator": 16,
+      "denominator": 2404
+    },
+    "strict_candidate_conjunct_failed:relation_domain_range_violation": {
+      "point": 0.0127,
+      "ci95": [
+        0.0022,
+        0.0683
+      ],
+      "numerator": 1,
+      "denominator": 79
+    }
+  },
+  "stratum_weights_sample": {
+    "CONTEXTUAL|strict_candidate_conjunct_failed:predicate_raw_not_normalized": {
+      "pop": 264635,
+      "sampled": 2404
+    },
+    "CONTEXTUAL|strict_candidate_conjunct_failed:relation_domain_range_violation": {
+      "pop": 3412,
+      "sampled": 79
+    },
+    "UNRESOLVED|hard_blocker:endpoint_entity_type_unresolved": {
+      "pop": 16393,
+      "sampled": 898
+    },
+    "UNRESOLVED|hard_blocker:manual_review_legacy": {
+      "pop": 60,
+      "sampled": 3
+    },
+    "UNRESOLVED|hard_blocker:scope_conflict_model_review": {
+      "pop": 27492,
+      "sampled": 1573
+    }
+  },
+  "weighted_strict_opportunity_design_ci": {
+    "method": "stratified bootstrap (per-layer with replacement, population-weighted mixture)",
+    "bootstrap_seed": 20260916,
+    "bootstrap_iterations": 10000,
+    "layers": {
+      "CONTEXTUAL": {
+        "population": 268047,
+        "sample_n": 2483,
+        "yes": 17,
+        "rate": 0.006847
+      },
+      "UNRESOLVED": {
+        "population": 43945,
+        "sample_n": 2474,
+        "yes": 14,
+        "rate": 0.005659
+      }
+    },
+    "weighted_point": 0.006679,
+    "weighted_ci95": [
+      0.004029,
+      0.009675
+    ],
+    "population_count_interval": [
+      1257,
+      3019
+    ],
+    "population_total": 311992,
+    "note": "未加权样本口径 0.63% [0.0044,0.0089] 仅描述样本；加权总体推断以本设计型 CI 为准。",
+    "updated_at": "2026-09-17T12:13:06.749515+08:00"
+  }
+}

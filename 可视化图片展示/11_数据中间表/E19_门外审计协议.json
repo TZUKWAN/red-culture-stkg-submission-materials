@@ -1,0 +1,75 @@
+{
+  "frozen_at": "2026-09-16T23:35:12.026939+08:00",
+  "seed": 20260916,
+  "population": {
+    "outside_gate_total": 311992,
+    "contextual": 268047,
+    "unresolved": 43945
+  },
+  "sample_sizes": {
+    "CONTEXTUAL": 2500,
+    "UNRESOLVED": 2500
+  },
+  "actual_n": 5000,
+  "stratification": "primary_blocking_reason(min50 if pop>=500) → predicate → source_book; 余量按比例",
+  "allocation": {
+    "CONTEXTUAL|min50:strict_candidate_conjunct_failed:predicate_raw_not_normalized": 50,
+    "CONTEXTUAL|min50:strict_candidate_conjunct_failed:relation_domain_range_violation": 50,
+    "CONTEXTUAL|proportional": 2400,
+    "UNRESOLVED|min50:hard_blocker:scope_conflict_model_review": 50,
+    "UNRESOLVED|min50:hard_blocker:endpoint_entity_type_unresolved": 50,
+    "UNRESOLVED|proportional": 2400
+  },
+  "judges": [
+    "gpt-oss-20b",
+    "qwen/qwen3-8b"
+  ],
+  "blindness": "裁判仅见断言/实体/类型/证据原文/时间/空间；禁止见 tier/blocking reason/decision path/生产判定/置信度",
+  "judge_output_schema": {
+    "evidence_support": [
+      "FULLY_SUPPORTED",
+      "PARTIALLY_SUPPORTED",
+      "INSUFFICIENT",
+      "UNSUPPORTED",
+      "CONTRADICTED",
+      "NO_EVIDENCE"
+    ],
+    "identity_decidable": [
+      "YES",
+      "NO",
+      "UNCERTAIN"
+    ],
+    "relation_semantically_supported": [
+      "YES",
+      "NO",
+      "UNCERTAIN"
+    ],
+    "scope_decidable": [
+      "YES",
+      "NO",
+      "UNCERTAIN"
+    ],
+    "strict_eligible": [
+      "YES",
+      "NO",
+      "UNCERTAIN"
+    ],
+    "recommended_state": [
+      "STRICT",
+      "CONTEXTUAL",
+      "UNRESOLVED"
+    ],
+    "reason": "<一句话中文>"
+  },
+  "metrics": [
+    "judge_raw_agreement",
+    "cohens_kappa",
+    "strong_consensus_rate",
+    "contextual_strict_opportunity_rate",
+    "unresolved_strict_opportunity_rate",
+    "outside_gate_exact_tier_agreement",
+    "per_blocker_strict_opportunity_rate"
+  ],
+  "estimation": "每个比例给 point estimate + Wilson 95% CI + raw numerator/denominator；总体推断用 stratum 权重 w=N_stratum/n_stratum 加权",
+  "freezing_note": "本文件在 Any Judge 运行前生成；判后不得修改。"
+}

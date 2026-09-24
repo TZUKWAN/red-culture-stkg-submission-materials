@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="612.089944pt" height="266.339541pt" viewBox="0 0 612.089944 266.339541" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:19:55.464278</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 266.339541 
+L 612.089944 266.339541 
+L 612.089944 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 83.376 189.077578 
+L 596.736 189.077578 
+L 596.736 22.757578 
+L 83.376 22.757578 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m967ac33852" d="M 0 0 
+L 0 3.5 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m967ac33852" x="83.376" y="189.077578" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="83.376" y="203.021328" transform="rotate(-0 83.376 203.021328)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m967ac33852" x="186.048" y="189.077578" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="186.048" y="203.021328" transform="rotate(-0 186.048 203.021328)">20</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m967ac33852" x="288.72" y="189.077578" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="288.72" y="203.021328" transform="rotate(-0 288.72 203.021328)">40</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m967ac33852" x="391.392" y="189.077578" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="391.392" y="203.021328" transform="rotate(-0 391.392 203.021328)">60</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m967ac33852" x="494.064" y="189.077578" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="494.064" y="203.021328" transform="rotate(-0 494.064 203.021328)">80</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m967ac33852" x="596.736" y="189.077578" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="596.736" y="203.021328" transform="rotate(-0 596.736 203.021328)">100</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="340.056" y="216.948047" transform="rotate(-0 340.056 216.948047)">占全库断言比例（%）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 83.376 189.077578 
+L 596.736 189.077578 
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 83.376 159.971578 
+L 440.53973 159.971578 
+L 440.53973 118.391578 
+L 83.376 118.391578 
+z
+" clip-path="url(#pb43f699383)" style="fill: #4f7690"/>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="261.957865" y="141.583922" transform="rotate(-0 261.957865 141.583922)">69.6%</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 440.53973 159.971578 
+L 543.54699 159.971578 
+L 543.54699 118.391578 
+L 440.53973 118.391578 
+z
+" clip-path="url(#pb43f699383)" style="fill: #86a7b4"/>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="492.04336" y="141.583922" transform="rotate(-0 492.04336 141.583922)">20.1%</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 543.54699 159.971578 
+L 596.66338 159.971578 
+L 596.66338 118.391578 
+L 543.54699 118.391578 
+z
+" clip-path="url(#pb43f699383)" style="fill: #c2d0d8"/>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="570.105185" y="141.583922" transform="rotate(-0 570.105185 141.583922)">10.3%</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 596.66338 159.971578 
+L 596.736 159.971578 
+L 596.736 118.391578 
+L 596.66338 118.391578 
+z
+" clip-path="url(#pb43f699383)" style="fill: #8b5a5a"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 568.759282 57.490222 
+Q 582.044246 84.134374 595.329209 110.778525 
+" style="fill: none; stroke: #8b5a5a; stroke-width: 0.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #8b5a5a" x="524.8656" y="51.863578" transform="rotate(-0 524.8656 51.863578)">D层仅60条（0.01%）</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="83.376" y="16.757578" transform="rotate(-0 83.376 16.757578)">A13 断言风险层构成</text>
+   </g>
+   <g id="legend_1">
+    <g id="patch_9">
+     <path d="M 178.234594 240.724697 
+L 196.234594 240.724697 
+L 196.234594 234.424697 
+L 178.234594 234.424697 
+z
+" style="fill: #4f7690"/>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start" x="203.434594" y="240.724697" transform="rotate(-0 203.434594 240.724697)">A（最低风险）：295,097（69.6%）</text>
+    </g>
+    <g id="patch_10">
+     <path d="M 178.234594 253.614384 
+L 196.234594 253.614384 
+L 196.234594 247.314384 
+L 178.234594 247.314384 
+z
+" style="fill: #86a7b4"/>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start" x="203.434594" y="253.614384" transform="rotate(-0 203.434594 253.614384)">B：85,107（20.1%）</text>
+    </g>
+    <g id="patch_11">
+     <path d="M 361.431 240.724697 
+L 379.431 240.724697 
+L 379.431 234.424697 
+L 361.431 234.424697 
+z
+" style="fill: #c2d0d8"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start" x="386.631" y="240.724697" transform="rotate(-0 386.631 240.724697)">C：43,886（10.3%）</text>
+    </g>
+    <g id="patch_12">
+     <path d="M 361.431 253.556728 
+L 379.431 253.556728 
+L 379.431 247.256728 
+L 361.431 247.256728 
+z
+" style="fill: #8b5a5a"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start" x="386.631" y="253.556728" transform="rotate(-0 386.631 253.556728)">D（最高风险）：60（0.0%）</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="210.245578" transform="rotate(-0 7.2 210.245578)">数据源：T37_风险层分布.csv</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb43f699383">
+   <rect x="83.376" y="22.757578" width="513.36" height="166.32"/>
+  </clipPath>
+ </defs>
+</svg>

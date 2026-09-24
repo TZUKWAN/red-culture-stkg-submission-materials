@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="565.488pt" height="269.115894pt" viewBox="0 0 565.488 269.115894" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:57:45.689273</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 269.115894 
+L 565.488 269.115894 
+L 565.488 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 211.044709 121.186979 
+Q 231.857101 103.093625 251.572602 85.953859 
+" clip-path="url(#pd0bc0f6fd0)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 245.076232 87.626337 
+L 251.572602 85.953859 
+L 249.012762 92.154441 
+z
+" clip-path="url(#pd0bc0f6fd0)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 211.235432 140.182894 
+Q 231.856199 152.987726 251.242216 165.025817 
+" clip-path="url(#pd0bc0f6fd0)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 247.727611 159.312013 
+L 251.242216 165.025817 
+L 244.56241 164.409219 
+z
+" clip-path="url(#pd0bc0f6fd0)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 98.496 164.631244 
+L 203.4 164.631244 
+Q 210.096 164.631244 210.096 157.978444 
+L 210.096 98.103244 
+Q 210.096 91.450444 203.4 91.450444 
+L 98.496 91.450444 
+Q 91.8 91.450444 91.8 98.103244 
+L 91.8 157.978444 
+Q 91.8 164.631244 98.496 164.631244 
+z
+" clip-path="url(#pd0bc0f6fd0)" style="fill: #edf1f4; stroke: #6e8ca0; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 260.316 114.735244 
+L 381.96 114.735244 
+Q 388.656 114.735244 388.656 108.082444 
+L 388.656 59.295244 
+Q 388.656 52.642444 381.96 52.642444 
+L 260.316 52.642444 
+Q 253.62 52.642444 253.62 59.295244 
+L 253.62 108.082444 
+Q 253.62 114.735244 260.316 114.735244 
+z
+" clip-path="url(#pd0bc0f6fd0)" style="fill: #f0f2f4; stroke: #8b93a8; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 260.316 197.895244 
+L 381.96 197.895244 
+Q 388.656 197.895244 388.656 191.242444 
+L 388.656 142.455244 
+Q 388.656 135.802444 381.96 135.802444 
+L 260.316 135.802444 
+Q 253.62 135.802444 253.62 142.455244 
+L 253.62 191.242444 
+Q 253.62 197.895244 260.316 197.895244 
+z
+" clip-path="url(#pd0bc0f6fd0)" style="fill: #f3f0ea; stroke: #c2a08b; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(137.198 123.791625)">201 个</text>
+    <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(111.648781 137.251)">book-grouped 分量</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="321.138" y="86.198219" transform="rotate(-0 321.138 86.198219)">learn 125 条（60.1%）</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="321.138" y="169.358219" transform="rotate(-0 321.138 169.358219)">held-out 83 条（39.9%）</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="413.208" y="89.232844" transform="rotate(-0 413.208 89.232844)">同一本书的任务绝不跨侧</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="413.208" y="122.496844" transform="rotate(-0 413.208 122.496844)">（并查集分量原子分配）</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(413.208 158.052731)">排序键 sha256(seed:closure3:cid)</text>
+    <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(413.208 166.848844)">seed = 20260908</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="318.348" y="16.704844" transform="rotate(-0 318.348 16.704844)">学习/留出切分结构：防泄漏设计</text>
+   </g>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="260.189644" transform="rotate(-0 7.2 260.189644)">数据源：FINAL_SCOPE_REPORT.md §3（learn 122 / heldout 79 分量）</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd0bc0f6fd0">
+   <rect x="78.408" y="22.704844" width="479.88" height="210.672"/>
+  </clipPath>
+ </defs>
+</svg>

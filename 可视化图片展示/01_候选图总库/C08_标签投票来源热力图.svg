@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="530.362364pt" height="358.285137pt" viewBox="0 0 530.362364 358.285137" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:49:33.281547</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 358.285137 
+L 530.362364 358.285137 
+L 530.362364 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 78.408 312.667687 
+L 462.312 312.667687 
+L 462.312 24.379687 
+L 78.408 24.379687 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p9fa194b19f)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAABkAAAASyCAYAAADuySecAAApFUlEQVR4nO3bL6veZRzH8d2enzgEkzgMmzBmEZcsgs0iPgKLZcKKMDjlGIwGsVhmMFiMNn0EA4vRIDbBJAYP/rsnW9kZt0/i5nzhfb1eT+D6cNU3392jx/vDFQAAgEtwdv/UPwMAAJfimct5BgAAAAAA4PIIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAEDONj0AAABYx37/3/QEAABgES5AAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgJzdh5/dOUyPAAAA1vD56f3pCQAAwCJcgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJCzXVw8nd4AAAAAAABwVC5AAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyNn9vf/jMD0CAABYw3PPXp2eAAAALMIFCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJCznf/z+/QGAABgETeu3ZqeAAAALMIFCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADnbt99/N70BAABYxOl7Z9MTAACARbgAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIGc7OTmZ3gAAAAAAAHBULkAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAnO31m69NbwAAAAAAADgqFyAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkbF998/X0BgAAYBFvv/Hu9AQAAGARLkAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAnN1Pv/xwmB4BAACs4dXrt6cnAAAAi3ABAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQM7u0eP9YXoEAACwho+//Gh6AgAAsAgXIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOTszr64d5geAQAArOGTu59OTwAAABbhAgQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAICc3a+//XyYHgEAAKzh5RdfmZ4AAAAswgUIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOduDHx9MbwAAABbx/jsfTE8AAAAW4QIEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyNmePL2Y3gAAAAAAAHBULkAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADI2d66/eb0BgAAAAAAgKNyAQIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAECOAAIAAAAAAOQIIAAAAAAAQI4AAgAAAAAA5AggAAAAAABAjgACAAAAAADkCCAAAAAAAEDOdv2lm9MbAAAAAAAAjsoFCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJAjgAAAAAAAADkCCAAAAAAAkCOAAAAAAAAAOQIIAAAAAACQI4AAAAAAAAA5AggAAAAAAJCz/fXwfHoDAACwiOevvjA9AQAAWIQLEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHK2P/89n94AAAAs4sa1W9MTAACARbgAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHIEEAAAAAAAIEcAAQAAAAAAcgQQAAAAAAAgRwABAAAAAAByBBAAAAAAACBHAAEAAAAAAHK27WSb3gAAAAAAAHBULkAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAADIEUAAAAAAAIAcAQQAAAAAAMgRQAAAAAAAgBwBBAAAAAAAyBFAAAAAAACAHAEEAAAAAAC4UvM/7atD91zVw54AAAAASUVORK5CYII=" id="image1776e46bde" transform="scale(1 -1) translate(0 -288.48)" x="78.408" y="-24.187687" width="384" height="288.48"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="md6cd67c1d3" d="M 0 0 
+L 0 3.5 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#md6cd67c1d3" x="174.384" y="312.667687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(148.069601 336.04576) rotate(-28)">assertio</text>
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(170.048826 333.84702) rotate(-28)">n</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#md6cd67c1d3" x="366.336" y="312.667687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(349.439373 333.125646) rotate(-28)">entity</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_3">
+      <defs>
+       <path id="m8ae1684e12" d="M 0 0 
+L -3.5 0 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="30.931687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(20.754 30.111719)">controlled_biogr</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(49.464187 38.084356)">aphical</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="44.035687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(20.754 43.215719)">controlled_biogr</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(21.182687 51.188356)">aphical_location</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="57.139687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(14.425812 52.3334)">controlled_comme</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(17.387437 60.306037)">moration_or_rece</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(55.78525 68.278675)">ption</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="70.243687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(22.032937 69.423719)">controlled_creat</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(33.415125 77.396356)">ion_location</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="83.347687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(22.032937 78.5414)">controlled_creat</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(21.173187 86.514037)">ion_or_publicati</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(63.808 94.486675)">on</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="96.451687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(20.337187 95.631719)">controlled_event</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(43.1265 103.604356)">_location</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="109.555687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(20.337187 108.742844)">controlled_event</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(34.278437 116.715481)">_occurrence</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="122.659687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(15.268937 117.8534)">controlled_memor</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(20.756375 125.826037)">y_context_locati</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(63.808 133.798675)">on</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="135.763687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(23.29525 134.943719)">controlled_relat</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(33.415125 142.916356)">ion_location</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="148.867687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(23.29525 148.047719)">controlled_relat</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(34.677437 156.020356)">ion_validity</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="161.971687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(17.379125 161.158844)">controlled_schem</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(48.191187 169.131481)">a_votes</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="175.075687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(20.333625 174.255719)">controlled_sourc</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(34.264187 182.228356)">e_document</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="188.179687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="71.408" y="190.818312" transform="rotate(-0 71.408 190.818312)">predicate_route</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="201.283687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(19.910875 196.4774)">raw_explicit_bio</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(22.452125 204.450037)">graphical_locati</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(63.808 212.422675)">on</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="214.387687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(19.910875 213.567719)">raw_explicit_bio</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(25.825812 221.540356)">graphical_time</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="227.491687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(19.074875 226.671719)">raw_explicit_eve</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(37.215125 234.644356)">nt_location</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="240.595687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(19.074875 239.775719)">raw_explicit_eve</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(48.188812 247.748356)">nt_time</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="253.699687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(14.425812 252.879719)">raw_explicit_mem</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(32.995937 260.852356)">ory_location</text>
+     </g>
+    </g>
+    <g id="ytick_19">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="266.803687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(13.579125 258.011081)">raw_or_unscoped_</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(17.812562 265.983719)">place_excluded_f</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(18.225812 273.956356)">rom_event_locati</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(63.808 281.928994)">on</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="279.907687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(13.579125 275.1014)">raw_or_unscoped_</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(17.806625 283.074037)">time_excluded_fr</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(24.130062 291.046675)">om_event_time</text>
+     </g>
+    </g>
+    <g id="ytick_21">
+     <g id="line2d_23">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="293.011687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(18.645 292.191719)">source_type_prio</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(68.877437 300.164356)">r</text>
+     </g>
+    </g>
+    <g id="ytick_22">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m8ae1684e12" x="78.408" y="306.115687" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(20.752812 305.295719)">strong_lexical_h</text>
+      <text style="font-size: 7.6px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(63.38525 313.268356)">int</text>
+     </g>
+    </g>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="32.613328" transform="rotate(-0 174.384 32.613328)">67</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="45.717328" transform="rotate(-0 174.384 45.717328)">87</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="58.821328" transform="rotate(-0 174.384 58.821328)">17</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="71.925328" transform="rotate(-0 174.384 71.925328)">2</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="85.029328" transform="rotate(-0 174.384 85.029328)">42</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="98.133328" transform="rotate(-0 174.384 98.133328)">1908</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="111.237328" transform="rotate(-0 174.384 111.237328)">1395</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="124.341328" transform="rotate(-0 174.384 124.341328)">11</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="137.445328" transform="rotate(-0 174.384 137.445328)">2.1万</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="150.549328" transform="rotate(-0 174.384 150.549328)">2.1万</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="366.336" y="163.653328" transform="rotate(-0 366.336 163.653328)">3.3万</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="176.757328" transform="rotate(-0 174.384 176.757328)">36</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="174.384" y="189.861328" transform="rotate(-0 174.384 189.861328)">42.4万</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="202.965328" transform="rotate(-0 174.384 202.965328)">255</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="216.069328" transform="rotate(-0 174.384 216.069328)">4626</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="229.173328" transform="rotate(-0 174.384 229.173328)">5685</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="242.277328" transform="rotate(-0 174.384 242.277328)">17</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="255.381328" transform="rotate(-0 174.384 255.381328)">1</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="268.485328" transform="rotate(-0 174.384 268.485328)">7.1万</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="174.384" y="281.589328" transform="rotate(-0 174.384 281.589328)">5.1万</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="366.336" y="294.693328" transform="rotate(-0 366.336 294.693328)">15.4万</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 7px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="366.336" y="307.797328" transform="rotate(-0 366.336 307.797328)">5.2万</text>
+   </g>
+   <g id="text_47">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="270.36" y="18.379687" transform="rotate(-0 270.36 18.379687)">标签投票来源构成（841,097 票，色=log10 票数）</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_3">
+    <path d="M 486.306 283.838887 
+L 497.83752 283.838887 
+L 497.83752 53.208487 
+L 486.306 53.208487 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <image xlink:href="data:image/png;base64,
+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" id="imagecf9756297d" transform="scale(1 -1) translate(0 -230.64)" x="486.24" y="-53.04" width="11.52" height="230.64"/>
+   <g id="matplotlib.axis_3"/>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_23">
+     <g id="line2d_25">
+      <defs>
+       <path id="med8182f1bb" d="M 0 0 
+L 3.5 0 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#med8182f1bb" x="497.83752" y="283.838887" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_48">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="504.83752" y="287.310762" transform="rotate(-0 504.83752 287.310762)">0</text>
+     </g>
+    </g>
+    <g id="ytick_24">
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#med8182f1bb" x="497.83752" y="242.856291" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_49">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="504.83752" y="246.328166" transform="rotate(-0 504.83752 246.328166)">1</text>
+     </g>
+    </g>
+    <g id="ytick_25">
+     <g id="line2d_27">
+      <g>
+       <use xlink:href="#med8182f1bb" x="497.83752" y="201.873695" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_50">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="504.83752" y="205.34557" transform="rotate(-0 504.83752 205.34557)">2</text>
+     </g>
+    </g>
+    <g id="ytick_26">
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#med8182f1bb" x="497.83752" y="160.891099" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_51">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="504.83752" y="164.362974" transform="rotate(-0 504.83752 164.362974)">3</text>
+     </g>
+    </g>
+    <g id="ytick_27">
+     <g id="line2d_29">
+      <g>
+       <use xlink:href="#med8182f1bb" x="497.83752" y="119.908503" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_52">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="504.83752" y="123.380378" transform="rotate(-0 504.83752 123.380378)">4</text>
+     </g>
+    </g>
+    <g id="ytick_28">
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#med8182f1bb" x="497.83752" y="78.925907" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_53">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="504.83752" y="82.397782" transform="rotate(-0 504.83752 82.397782)">5</text>
+     </g>
+    </g>
+    <g id="text_54">
+     <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="521.220333" y="168.523687" transform="rotate(-90 521.220333 168.523687)">log10(票数)</text>
+    </g>
+   </g>
+   <g id="LineCollection_1"/>
+   <g id="patch_4">
+    <path d="M 486.306 283.838887 
+L 492.07176 283.838887 
+L 497.83752 283.838887 
+L 497.83752 53.208487 
+L 492.07176 53.208487 
+L 486.306 53.208487 
+L 486.306 283.838887 
+z
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+  <g id="text_55">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="349.358887" transform="rotate(-0 7.2 349.358887)">数据源：v2_label_votes</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9fa194b19f">
+   <rect x="78.408" y="24.379687" width="383.904" height="288.288"/>
+  </clipPath>
+ </defs>
+</svg>

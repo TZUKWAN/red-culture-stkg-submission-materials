@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="680.832pt" height="345.785938pt" viewBox="0 0 680.832 345.785938" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:57:48.935437</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 345.785938 
+L 680.832 345.785938 
+L 680.832 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 262.708798 99.223688 
+Q 276.05541 99.223688 287.948578 99.223688 
+" clip-path="url(#p865c739ced)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 281.948578 96.223688 
+L 287.948578 99.223688 
+L 281.948578 102.223688 
+z
+" clip-path="url(#p865c739ced)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 460.801182 99.223688 
+Q 472.750906 99.223688 483.247186 99.223688 
+" clip-path="url(#p865c739ced)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 477.247186 96.223688 
+L 483.247186 99.223688 
+L 477.247186 102.223688 
+z
+" clip-path="url(#p865c739ced)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 362.522223 114.494305 
+Q 329.067147 147.733541 296.643132 179.94837 
+" clip-path="url(#p865c739ced)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 303.013925 177.847656 
+L 296.643132 179.94837 
+L 298.785036 173.591307 
+z
+" clip-path="url(#p865c739ced)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 404.421777 114.494305 
+Q 437.876853 147.733541 470.300868 179.94837 
+" clip-path="url(#p865c739ced)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 468.158964 173.591307 
+L 470.300868 179.94837 
+L 463.930075 177.847656 
+z
+" clip-path="url(#p865c739ced)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 116.19 144.130088 
+L 254.574 144.130088 
+Q 261.27 144.130088 261.27 137.477288 
+L 261.27 60.970088 
+Q 261.27 54.317288 254.574 54.317288 
+L 116.19 54.317288 
+Q 109.494 54.317288 109.494 60.970088 
+L 109.494 137.477288 
+Q 109.494 144.130088 116.19 144.130088 
+z
+" clip-path="url(#p865c739ced)" style="fill: #edf1f4; stroke: #6e8ca0; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 297.54 144.130088 
+L 452.664 144.130088 
+Q 459.36 144.130088 459.36 137.477288 
+L 459.36 60.970088 
+Q 459.36 54.317288 452.664 54.317288 
+L 297.54 54.317288 
+Q 290.844 54.317288 290.844 60.970088 
+L 290.844 137.477288 
+Q 290.844 144.130088 297.54 144.130088 
+z
+" clip-path="url(#p865c739ced)" style="fill: #f0f2f4; stroke: #7fa3a0; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 492.84 144.130088 
+L 647.964 144.130088 
+Q 654.66 144.130088 654.66 137.477288 
+L 654.66 60.970088 
+Q 654.66 54.317288 647.964 54.317288 
+L 492.84 54.317288 
+Q 486.144 54.317288 486.144 60.970088 
+L 486.144 137.477288 
+Q 486.144 144.130088 492.84 144.130088 
+z
+" clip-path="url(#p865c739ced)" style="fill: #f3f0ea; stroke: #c2a08b; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 174.78 255.010088 
+L 357.804 255.010088 
+Q 364.5 255.010088 364.5 248.357288 
+L 364.5 188.482088 
+Q 364.5 181.829288 357.804 181.829288 
+L 174.78 181.829288 
+Q 168.084 181.829288 168.084 188.482088 
+L 168.084 248.357288 
+Q 168.084 255.010088 174.78 255.010088 
+z
+" clip-path="url(#p865c739ced)" style="fill: #eff3ee; stroke: #8fa586; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 409.14 255.010088 
+L 592.164 255.010088 
+Q 598.86 255.010088 598.86 248.357288 
+L 598.86 188.482088 
+Q 598.86 181.829288 592.164 181.829288 
+L 409.14 181.829288 
+Q 402.444 181.829288 402.444 188.482088 
+L 402.444 248.357288 
+Q 402.444 255.010088 409.14 255.010088 
+z
+" clip-path="url(#p865c739ced)" style="fill: #f3f1f1; stroke: #a68080; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(163.303875 95.6765)">取值 value</text>
+    <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(138.16325 107.672438)">例：1935-01-15 / 遵义</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(348.980906 90.808547)">语义角色 role</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(332.989031 101.482828)">event_time / life_time /</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(324.487547 112.173984)">work_time / source_time …</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(538.343953 90.140945)">归属对象 owner</text>
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(531.082391 101.692945)">遵义会议（事件）/</text>
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(538.207391 113.037133)">某人物 / 某文献</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="383.472" y="38.239688" transform="rotate(-0 383.472 38.239688)">时空统一表示：ST = (取值, 语义角色, 归属对象)</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.4px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(209.892 215.107363)">强角色：归属对象必须存在</text>
+    <text style="font-size: 9.4px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(211.884359 226.486356)">且类型 ∈ Ωr（类型合法）</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9.4px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(421.796281 215.107363)">归属对象待确认 → 保留原文/候选角色</text>
+    <text style="font-size: 9.4px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(447.777 226.486356)">→ 进入上下文层等待复核</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="383.472" y="282.175688" transform="rotate(-0 383.472 282.175688)">结构准入后重校验：208 项作用域调整在实体规范投影后自动重执行</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="383.472" y="18.379688" transform="rotate(-0 383.472 18.379688)">“取值—语义角色—归属对象”时空表示机制（论文 §3.3）</text>
+   </g>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="336.859688" transform="rotate(-0 7.2 336.859688)">数据源：论文 §3.3 与 research_scope_adjustments</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p865c739ced">
+   <rect x="93.312" y="24.379688" width="580.32" height="277.2"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="655.2pt" height="291.10865pt" viewBox="0 0 655.2 291.10865" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:57:41.463117</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 291.10865 
+L 655.2 291.10865 
+L 655.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 213.963085 116.486235 
+Q 233.684927 90.360097 252.53109 65.393997 
+" clip-path="url(#p0533a9c566)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 246.52179 68.375325 
+L 252.53109 65.393997 
+L 251.310572 71.990234 
+z
+" clip-path="url(#p0533a9c566)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 214.760034 126.396 
+Q 233.685362 126.396 251.157247 126.396 
+" clip-path="url(#p0533a9c566)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 245.157247 123.396 
+L 251.157247 126.396 
+L 245.157247 129.396 
+z
+" clip-path="url(#p0533a9c566)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 213.963085 136.305765 
+Q 233.684927 162.431903 252.53109 187.398003 
+" clip-path="url(#p0533a9c566)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 251.310572 180.801766 
+L 252.53109 187.398003 
+L 246.52179 184.416675 
+z
+" clip-path="url(#p0533a9c566)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 390.532588 57.096 
+Q 410.850678 57.096 429.715325 57.096 
+" clip-path="url(#p0533a9c566)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 423.715325 54.096 
+L 429.715325 57.096 
+L 423.715325 60.096 
+z
+" clip-path="url(#p0533a9c566)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 390.532588 126.396 
+Q 410.850678 126.396 429.715325 126.396 
+" clip-path="url(#p0533a9c566)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 423.715325 123.396 
+L 429.715325 126.396 
+L 423.715325 129.396 
+z
+" clip-path="url(#p0533a9c566)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 115.668 160.2144 
+L 203.832 160.2144 
+Q 210.528 160.2144 210.528 153.5616 
+L 210.528 99.2304 
+Q 210.528 92.5776 203.832 92.5776 
+L 115.668 92.5776 
+Q 108.972 92.5776 108.972 99.2304 
+L 108.972 153.5616 
+Q 108.972 160.2144 115.668 160.2144 
+z
+" clip-path="url(#p0533a9c566)" style="fill: #edf1f4; stroke: #6e8ca0; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 260.748 88.1424 
+L 382.392 88.1424 
+Q 389.088 88.1424 389.088 81.4896 
+L 389.088 32.7024 
+Q 389.088 26.0496 382.392 26.0496 
+L 260.748 26.0496 
+Q 254.052 26.0496 254.052 32.7024 
+L 254.052 81.4896 
+Q 254.052 88.1424 260.748 88.1424 
+z
+" clip-path="url(#p0533a9c566)" style="fill: #eff3ee; stroke: #8fa586; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 260.748 157.4424 
+L 382.392 157.4424 
+Q 389.088 157.4424 389.088 150.7896 
+L 389.088 102.0024 
+Q 389.088 95.3496 382.392 95.3496 
+L 260.748 95.3496 
+Q 254.052 95.3496 254.052 102.0024 
+L 254.052 150.7896 
+Q 254.052 157.4424 260.748 157.4424 
+z
+" clip-path="url(#p0533a9c566)" style="fill: #f3f0ea; stroke: #c2a08b; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 260.748 226.7424 
+L 382.392 226.7424 
+Q 389.088 226.7424 389.088 220.0896 
+L 389.088 171.3024 
+Q 389.088 164.6496 382.392 164.6496 
+L 260.748 164.6496 
+Q 254.052 164.6496 254.052 171.3024 
+L 254.052 220.0896 
+Q 254.052 226.7424 260.748 226.7424 
+z
+" clip-path="url(#p0533a9c566)" style="fill: #f3f1f1; stroke: #a68080; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 439.308 88.1424 
+L 611.172 88.1424 
+Q 617.868 88.1424 617.868 81.4896 
+L 617.868 32.7024 
+Q 617.868 26.0496 611.172 26.0496 
+L 439.308 26.0496 
+Q 432.612 26.0496 432.612 32.7024 
+L 432.612 81.4896 
+Q 432.612 88.1424 439.308 88.1424 
+z
+" clip-path="url(#p0533a9c566)" style="fill: #ffffff; stroke: #e7e4de; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 439.308 157.4424 
+L 611.172 157.4424 
+Q 617.868 157.4424 617.868 150.7896 
+L 617.868 102.0024 
+Q 617.868 95.3496 611.172 95.3496 
+L 439.308 95.3496 
+Q 432.612 95.3496 432.612 102.0024 
+L 432.612 150.7896 
+Q 432.612 157.4424 439.308 157.4424 
+z
+" clip-path="url(#p0533a9c566)" style="fill: #ffffff; stroke: #c2a08b; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(133.406719 122.8595)">TEST 样本</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(148.057344 135.410156)">n=62</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(267.770313 54.210078)">AUTO_ACCEPT 自动接受</text>
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(310.8825 65.779891)">41 条</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(277.635469 122.948242)">ESCALATE 升级裁决</text>
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(272.8825 134.500242)">19 条（全部调用成功）</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(281.178672 192.285352)">ABSTAIN 显式弃权</text>
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(313.2575 203.837352)">2 条</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(484.865 53.685352)">接受段一致率 0.531</text>
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(477.607891 65.237352)">（15 条有参考：8/15）</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(464.545391 123.109148)">升级段一致率 0.800（12/15）</text>
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(482.49 134.376445)">错→对 9 ： 对→错 1</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="369" y="21.06" transform="rotate(-0 369 21.06)">冻结 TEST 单次评价：升级段一致率显著高于接受段，路由机制方向复现</text>
+   </g>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="282.1824" transform="rotate(-0 7.2 282.1824)">数据源：FINAL_TEST_REPORT.md §3（升级模型 gpt-oss-20b，温度0；留痕 ESCALATION_CALLS_TEST.jsonl）</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0533a9c566">
+   <rect x="90" y="7.2" width="558" height="243.936"/>
+  </clipPath>
+ </defs>
+</svg>

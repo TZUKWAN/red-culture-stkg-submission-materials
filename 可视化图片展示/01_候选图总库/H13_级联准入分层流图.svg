@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="737.228pt" height="381.766897pt" viewBox="0 0 737.228 381.766897" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:57:56.891068</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 381.766897 
+L 737.228 381.766897 
+L 737.228 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 137.376 91.608647 
+L 323.562228 91.608647 
+Q 334.722228 91.608647 334.722228 80.520647 
+L 334.722228 34.505447 
+Q 334.722228 23.417447 323.562228 23.417447 
+L 137.376 23.417447 
+Q 126.216 23.417447 126.216 34.505447 
+L 126.216 80.520647 
+Q 126.216 91.608647 137.376 91.608647 
+z
+" clip-path="url(#pfa7bb29bd8)" style="fill: #3e5c6e; opacity: 0.85"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 137.376 191.400647 
+L 543.6 191.400647 
+Q 554.76 191.400647 554.76 180.312647 
+L 554.76 134.297447 
+Q 554.76 123.209447 543.6 123.209447 
+L 137.376 123.209447 
+Q 126.216 123.209447 126.216 134.297447 
+L 126.216 180.312647 
+Q 126.216 191.400647 137.376 191.400647 
+z
+" clip-path="url(#pfa7bb29bd8)" style="fill: #93a692; opacity: 0.85"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 137.376 291.192647 
+L 374.980274 291.192647 
+Q 386.140274 291.192647 386.140274 280.104647 
+L 386.140274 234.089447 
+Q 386.140274 223.001447 374.980274 223.001447 
+L 137.376 223.001447 
+Q 126.216 223.001447 126.216 234.089447 
+L 126.216 280.104647 
+Q 126.216 291.192647 137.376 291.192647 
+z
+" clip-path="url(#pfa7bb29bd8)" style="fill: #c8ae8e; opacity: 0.85"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #ffffff" x="142.398" y="49.474247" transform="rotate(-0 142.398 49.474247)">严格路径</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #ffffff" x="142.398" y="72.759047" transform="rotate(-0 142.398 72.759047)">31,067 条</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="360.390228" y="61.090109" transform="rotate(-0 360.390228 61.090109)">严格候选→证据定位→五档判定→STRICT</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #ffffff" x="142.398" y="149.266247" transform="rotate(-0 142.398 149.266247)">上下文路径</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #ffffff" x="142.398" y="172.551047" transform="rotate(-0 142.398 172.551047)">299,329 条</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="580.428" y="161.168109" transform="rotate(-0 580.428 161.168109)">前置上下文 268,047 ∪ 核验降级 31,282</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #ffffff" x="142.398" y="249.058247" transform="rotate(-0 142.398 249.058247)">未决路径</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #ffffff" x="142.398" y="272.343047" transform="rotate(-0 142.398 272.343047)">93,754 条</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="411.808274" y="260.960109" transform="rotate(-0 411.808274 260.960109)">前置未决 43,945 ∪ 核验未决 49,809</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="390.708" y="16.863047" transform="rotate(-0 390.708 16.863047)">级联准入分层流图（条带厚度 ∝ 断言量，同一逻辑的第二种编码）</text>
+   </g>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="372.840647" transform="rotate(-0 7.2 372.840647)">数据源：AUTHORITATIVE_RESULTS.md 定版数字</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pfa7bb29bd8">
+   <rect x="94.968" y="22.863047" width="591.48" height="310.464"/>
+  </clipPath>
+ </defs>
+</svg>

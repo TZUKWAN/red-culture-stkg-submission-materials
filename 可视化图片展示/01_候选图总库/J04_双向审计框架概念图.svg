@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="693.648pt" height="333.181269pt" viewBox="0 0 693.648 333.181269" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T02:06:54.242294</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 333.181269 
+L 693.648 333.181269 
+L 693.648 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 122.868 233.837419 
+L 346.068 233.837419 
+Q 356.112 233.837419 356.112 223.858219 
+L 356.112 68.626219 
+Q 356.112 58.647019 346.068 58.647019 
+L 122.868 58.647019 
+Q 112.824 58.647019 112.824 68.626219 
+L 112.824 223.858219 
+Q 112.824 233.837419 122.868 233.837419 
+z
+" clip-path="url(#paa2c4c7612)" style="fill: #edf1f4; stroke: #6e8ca0; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 435.348 233.837419 
+L 658.548 233.837419 
+Q 668.592 233.837419 668.592 223.858219 
+L 668.592 68.626219 
+Q 668.592 58.647019 658.548 58.647019 
+L 435.348 58.647019 
+Q 425.304 58.647019 425.304 68.626219 
+L 425.304 223.858219 
+Q 425.304 233.837419 435.348 233.837419 
+z
+" clip-path="url(#paa2c4c7612)" style="fill: #f6f1ea; stroke: #c2a08b; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 363.803652 146.242219 
+Q 390.707859 146.242219 417.612067 146.242219 
+" clip-path="url(#paa2c4c7612)" style="fill: none; stroke: #6b6b6b; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 369.803652 149.242219 
+L 363.803652 146.242219 
+L 369.803652 143.242219 
+z
+" clip-path="url(#paa2c4c7612)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 411.612067 143.242219 
+L 417.612067 146.242219 
+L 411.612067 149.242219 
+z
+" clip-path="url(#paa2c4c7612)" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6e8ca0" x="234.468" y="85.258219" transform="rotate(-0 234.468 85.258219)">precision-side 门内精度</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(186.26175 117.144516)">宇宙：证据门 112,158 内</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(182.718 129.610219)">样本：4,427 条分层双裁判</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Times New Roman', 'SimSun'; fill: #3e5c6e" transform="translate(170.578937 166.923406)">99.28% 支持精度（965/972）</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Times New Roman', 'SimSun'; fill: #3e5c6e" transform="translate(194.468 179.506219)">强共识误报 0.41%</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #c2a08b" x="546.948" y="85.258219" transform="rotate(-0 546.948 85.258219)">omission-side 门外遗漏</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(508.86675 117.249984)">宇宙：门外 311,992</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #2b2b2b" transform="translate(479.448 129.610219)">样本：5,000 分层（双有效 4,957）</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Times New Roman', 'SimSun'; fill: #c2a08b" transform="translate(485.91675 165.531219)">STRICT 机会率 0.63% 样本</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Times New Roman', 'SimSun'; fill: #c2a08b" transform="translate(487.368313 179.506219)">加权总体 0.66% [0.40, 0.97]</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(381.708 116.721234)">双向</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; fill: #6b6b6b" transform="translate(381.708 126.838219)">审计</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="390.708" y="262.666219" transform="rotate(-0 390.708 262.666219)">结论：保守准入未造成大规模高质量知识漏失</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="390.708" y="18.274219" transform="rotate(-0 390.708 18.274219)">门内/门外双向质量评价框架（precision-side × omission-side）</text>
+   </g>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="324.255019" transform="rotate(-0 7.2 324.255019)">数据源：AUTHORITATIVE_RESULTS.md 独立审计节（两审计独立设计、协议预注册）</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="paa2c4c7612">
+   <rect x="94.968" y="24.274219" width="591.48" height="266.112"/>
+  </clipPath>
+ </defs>
+</svg>

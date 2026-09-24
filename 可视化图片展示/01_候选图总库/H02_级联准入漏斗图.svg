@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="565.488pt" height="369.162228pt" viewBox="0 0 565.488 369.162228" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:57:50.206366</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 369.162228 
+L 565.488 369.162228 
+L 565.488 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 97.6032 96.557243 
+L 539.0928 96.557243 
+L 539.0928 46.429169 
+L 97.6032 46.429169 
+z
+" clip-path="url(#pefd4ec5aaa)" style="fill: #7d8b99; opacity: 0.92"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 259.976444 166.179569 
+L 376.719556 166.179569 
+L 376.719556 116.051494 
+L 259.976444 116.051494 
+z
+" clip-path="url(#pefd4ec5aaa)" style="fill: #6e8ca0; opacity: 0.92"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 261.072492 235.801894 
+L 375.623508 235.801894 
+L 375.623508 185.67382 
+L 261.072492 185.67382 
+z
+" clip-path="url(#pefd4ec5aaa)" style="fill: #8b93a8; opacity: 0.92"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 302.179478 305.42422 
+L 334.516522 305.42422 
+L 334.516522 255.296146 
+L 302.179478 255.296146 
+z
+" clip-path="url(#pefd4ec5aaa)" style="fill: #3e5c6e; opacity: 0.92"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="318.348" y="74.218706" transform="rotate(-0 318.348 74.218706)">全库断言  424,150（100.0%）</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="318.348" y="143.859782" transform="rotate(-0 318.348 143.859782)">严格候选（证据门宇宙）  112,158（26.4%）</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="318.348" y="213.444607" transform="rotate(-0 318.348 213.444607)">证据可定位  110,052（25.9%）</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="318.348" y="283.104433" transform="rotate(-0 318.348 283.104433)">最终严格层  31,067（7.3%）</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="318.348" y="16.757578" transform="rotate(-0 318.348 16.757578)">级联准入漏斗（居中对称编码）</text>
+   </g>
+  </g>
+  <g id="text_6">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="360.235978" transform="rotate(-0 7.2 360.235978)">数据源：T09_级联准入漏斗（AUTHORITATIVE_RESULTS 定版）</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pefd4ec5aaa">
+   <rect x="78.408" y="22.757578" width="479.88" height="299.376"/>
+  </clipPath>
+ </defs>
+</svg>

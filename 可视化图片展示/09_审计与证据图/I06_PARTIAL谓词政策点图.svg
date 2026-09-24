@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="530.452935pt" height="344.269297pt" viewBox="0 0 530.452935 344.269297" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T02:06:47.923818</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 344.269297 
+L 530.452935 344.269297 
+L 530.452935 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 74.846688 300.063047 
+L 521.246688 300.063047 
+L 521.246688 22.863047 
+L 74.846688 22.863047 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 155.976254 300.063047 
+L 155.976254 22.863047 
+" clip-path="url(#p196ec424c0)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="md9484c6139" d="M 0 0 
+L 0 3.5 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#md9484c6139" x="155.976254" y="300.063047" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="155.976254" y="314.006797" transform="rotate(-0 155.976254 314.006797)">50</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 253.318106 300.063047 
+L 253.318106 22.863047 
+" clip-path="url(#p196ec424c0)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#md9484c6139" x="253.318106" y="300.063047" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="253.318106" y="314.006797" transform="rotate(-0 253.318106 314.006797)">60</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 350.659959 300.063047 
+L 350.659959 22.863047 
+" clip-path="url(#p196ec424c0)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#md9484c6139" x="350.659959" y="300.063047" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="350.659959" y="314.006797" transform="rotate(-0 350.659959 314.006797)">70</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 448.001811 300.063047 
+L 448.001811 22.863047 
+" clip-path="url(#p196ec424c0)" style="fill: none; stroke: #e7e4de; stroke-opacity: 0.9; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#md9484c6139" x="448.001811" y="300.063047" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #6b6b6b" x="448.001811" y="314.006797" transform="rotate(-0 448.001811 314.006797)">80</text>
+     </g>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 11px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="298.046687" y="327.847578" transform="rotate(-0 298.046687 327.847578)">谓词 FULL 判定占比（%）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_9">
+      <defs>
+       <path id="m1d6109ead1" d="M 0 0 
+L -3.5 0 
+" style="stroke: #6b6b6b; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="35.463047" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="38.379422" transform="rotate(-0 67.846688 38.379422)">led</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="48.726205" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="51.64258" transform="rotate(-0 67.846688 51.64258)">participated_in</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="61.989363" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="64.905738" transform="rotate(-0 67.846688 64.905738)">active_at</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="75.252521" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="78.168896" transform="rotate(-0 67.846688 78.168896)">member_of</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="88.515678" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="91.432053" transform="rotate(-0 67.846688 91.432053)">held_position_in</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="101.778836" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="104.695211" transform="rotate(-0 67.846688 104.695211)">organized</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="115.041994" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="117.958369" transform="rotate(-0 67.846688 117.958369)">occurred_at</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="128.305152" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="131.221527" transform="rotate(-0 67.846688 131.221527)">influenced</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="141.56831" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="144.484685" transform="rotate(-0 67.846688 144.484685)">has_value_facet</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="154.831468" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="157.747843" transform="rotate(-0 67.846688 157.747843)">stationed_at</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="168.094626" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="171.011001" transform="rotate(-0 67.846688 171.011001)">worked_at</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="181.357784" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="184.274159" transform="rotate(-0 67.846688 184.274159)">supported</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="194.620942" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="197.537317" transform="rotate(-0 67.846688 197.537317)">guided</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="207.8841" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="210.800475" transform="rotate(-0 67.846688 210.800475)">collaborated_with</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_23">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="221.147257" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="224.063632" transform="rotate(-0 67.846688 224.063632)">dispatched</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="234.410415" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="237.32679" transform="rotate(-0 67.846688 237.32679)">captured</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="247.673573" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="250.589948" transform="rotate(-0 67.846688 250.589948)">carried_out</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="260.936731" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="263.853106" transform="rotate(-0 67.846688 263.853106)">created</text>
+     </g>
+    </g>
+    <g id="ytick_19">
+     <g id="line2d_27">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="274.199889" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="277.116264" transform="rotate(-0 67.846688 277.116264)">commanded</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#m1d6109ead1" x="74.846688" y="287.463047" style="fill: #6b6b6b; stroke: #6b6b6b; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_25">
+      <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #6b6b6b" x="67.846688" y="290.379422" transform="rotate(-0 67.846688 290.379422)">contacted</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_29">
+    <path d="M 350.659959 300.063047 
+L 350.659959 22.863047 
+" clip-path="url(#p196ec424c0)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #b9b4ac"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 74.846688 300.063047 
+L 521.246688 300.063047 
+" style="fill: none; stroke: #b9b4ac; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="C0_0_04bb436699" d="M 0 4.1833 
+C 1.109424 4.1833 2.173559 3.742521 2.95804 2.95804 
+C 3.742521 2.173559 4.1833 1.109424 4.1833 -0 
+C 4.1833 -1.109424 3.742521 -2.173559 2.95804 -2.95804 
+C 2.173559 -3.742521 1.109424 -4.1833 0 -4.1833 
+C -1.109424 -4.1833 -2.173559 -3.742521 -2.95804 -2.95804 
+C -3.742521 -2.173559 -4.1833 -1.109424 -4.1833 0 
+C -4.1833 1.109424 -3.742521 2.173559 -2.95804 2.95804 
+C -2.173559 3.742521 -1.109424 4.1833 0 4.1833 
+z
+"/>
+    </defs>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="238.035436" y="35.463047" style="fill: #ad9e8c; stroke: #ad9e8c"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="233.363027" y="48.726205" style="fill: #ad9e8c; stroke: #ad9e8c"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="500.955778" y="61.989363" style="fill: #3e5c6e; stroke: #3e5c6e"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="195.205021" y="75.252521" style="fill: #ad9e8c; stroke: #ad9e8c"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="342.580585" y="88.515678" style="fill: #ad9e8c; stroke: #ad9e8c"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="235.017838" y="101.778836" style="fill: #ad9e8c; stroke: #ad9e8c"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="300.431563" y="115.041994" style="fill: #ad9e8c; stroke: #ad9e8c"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="290.600036" y="128.305152" style="fill: #ad9e8c; stroke: #ad9e8c"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="259.255959" y="141.56831" style="fill: #ad9e8c; stroke: #ad9e8c"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="297.316624" y="154.831468" style="fill: #ad9e8c; stroke: #ad9e8c"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="474.868162" y="168.094626" style="fill: #3e5c6e; stroke: #3e5c6e"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="486.938552" y="181.357784" style="fill: #3e5c6e; stroke: #3e5c6e"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="431.064329" y="194.620942" style="fill: #3e5c6e; stroke: #3e5c6e"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="388.720623" y="207.8841" style="fill: #3e5c6e; stroke: #3e5c6e"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="457.249287" y="221.147257" style="fill: #3e5c6e; stroke: #3e5c6e"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="386.48176" y="234.410415" style="fill: #3e5c6e; stroke: #3e5c6e"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="241.831768" y="247.673573" style="fill: #ad9e8c; stroke: #ad9e8c"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="413.640137" y="260.936731" style="fill: #3e5c6e; stroke: #3e5c6e"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="95.137597" y="274.199889" style="fill: #ad9e8c; stroke: #ad9e8c"/>
+    </g>
+    <g clip-path="url(#p196ec424c0)">
+     <use xlink:href="#C0_0_04bb436699" x="492.973747" y="287.463047" style="fill: #3e5c6e; stroke: #3e5c6e"/>
+    </g>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="246.035436" y="38.463047" transform="rotate(-0 246.035436 38.463047)">58%</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="241.363027" y="51.726205" transform="rotate(-0 241.363027 51.726205)">58%</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="508.955778" y="64.989363" transform="rotate(-0 508.955778 64.989363)">85%</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="203.205021" y="78.252521" transform="rotate(-0 203.205021 78.252521)">54%</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="350.580585" y="91.515678" transform="rotate(-0 350.580585 91.515678)">69%</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="243.017838" y="104.778836" transform="rotate(-0 243.017838 104.778836)">58%</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="308.431563" y="118.041994" transform="rotate(-0 308.431563 118.041994)">65%</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="298.600036" y="131.305152" transform="rotate(-0 298.600036 131.305152)">64%</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="267.255959" y="144.56831" transform="rotate(-0 267.255959 144.56831)">61%</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="305.316624" y="157.831468" transform="rotate(-0 305.316624 157.831468)">65%</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="482.868162" y="171.094626" transform="rotate(-0 482.868162 171.094626)">83%</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="494.938552" y="184.357784" transform="rotate(-0 494.938552 184.357784)">84%</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="439.064329" y="197.620942" transform="rotate(-0 439.064329 197.620942)">78%</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="396.720623" y="210.8841" transform="rotate(-0 396.720623 210.8841)">74%</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="465.249287" y="224.147257" transform="rotate(-0 465.249287 224.147257)">81%</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="394.48176" y="237.410415" transform="rotate(-0 394.48176 237.410415)">74%</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="249.831768" y="250.673573" transform="rotate(-0 249.831768 250.673573)">59%</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="421.640137" y="263.936731" transform="rotate(-0 421.640137 263.936731)">76%</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="103.137597" y="277.199889" transform="rotate(-0 103.137597 277.199889)">44%</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 7.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="500.973747" y="290.463047" transform="rotate(-0 500.973747 290.463047)">85%</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="355.659959" y="287.463047" transform="rotate(-0 355.659959 287.463047)">FULL 占比 70% 准入线</text>
+   </g>
+   <g id="text_47">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="298.046687" y="16.863047" transform="rotate(-0 298.046687 16.863047)">PARTIAL 判定可入严格层的谓词政策表（深色=入 STRICT 谓词）</text>
+   </g>
+  </g>
+  <g id="text_48">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="8.606688" y="335.343047" transform="rotate(-0 8.606688 335.343047)">数据源：FINAL_TIERING_POLICY.json predicate_policy_table</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p196ec424c0">
+   <rect x="74.846688" y="22.863047" width="446.4" height="277.2"/>
+  </clipPath>
+ </defs>
+</svg>

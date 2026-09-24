@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="475.776pt" height="265.411084pt" viewBox="0 0 475.776 265.411084" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-18T01:19:48.613556</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 265.411084 
+L 475.776 265.411084 
+L 475.776 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 191.689428 152.090771 
+C 206.428232 152.090771 220.565358 146.234982 230.987266 135.813073 
+C 241.409175 125.391165 247.264964 111.254039 247.264964 96.515234 
+C 247.264964 81.77643 241.409175 67.639304 230.987266 57.217396 
+C 220.565358 46.795487 206.428232 40.939698 191.689428 40.939698 
+C 176.950623 40.939698 162.813497 46.795487 152.391589 57.217396 
+C 141.96968 67.639304 136.113891 81.77643 136.113891 96.515234 
+C 136.113891 111.254039 141.96968 125.391165 152.391589 135.813073 
+C 162.813497 146.234982 176.950623 152.090771 191.689428 152.090771 
+z
+" clip-path="url(#p120a7b7f7d)" style="fill: #4f7690; opacity: 0.88; stroke: #ffffff; stroke-width: 2.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 304.515776 147.590987 
+C 318.061224 147.590987 331.053709 142.209323 340.631787 132.631245 
+C 350.209865 123.053167 355.591528 110.060682 355.591528 96.515234 
+C 355.591528 82.969787 350.209865 69.977302 340.631787 60.399224 
+C 331.053709 50.821146 318.061224 45.439482 304.515776 45.439482 
+C 290.970328 45.439482 277.977843 50.821146 268.399765 60.399224 
+C 258.821687 69.977302 253.440024 82.969787 253.440024 96.515234 
+C 253.440024 110.060682 258.821687 123.053167 268.399765 132.631245 
+C 277.977843 142.209323 290.970328 147.590987 304.515776 147.590987 
+z
+" clip-path="url(#p120a7b7f7d)" style="fill: #86a7b4; opacity: 0.88; stroke: #ffffff; stroke-width: 2.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 408.310117 143.058763 
+C 420.653605 143.058763 432.493197 138.154643 441.221361 129.426479 
+C 449.949526 120.698315 454.853645 108.858723 454.853645 96.515234 
+C 454.853645 84.171746 449.949526 72.332154 441.221361 63.60399 
+C 432.493197 54.875825 420.653605 49.971706 408.310117 49.971706 
+C 395.966628 49.971706 384.127036 54.875825 375.398872 63.60399 
+C 366.670707 72.332154 361.766588 84.171746 361.766588 96.515234 
+C 361.766588 108.858723 366.670707 120.698315 375.398872 129.426479 
+C 384.127036 138.154643 395.966628 143.058763 408.310117 143.058763 
+z
+" clip-path="url(#p120a7b7f7d)" style="fill: #c2d0d8; opacity: 0.88; stroke: #ffffff; stroke-width: 2.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="191.689428" y="91.026293" transform="rotate(-0 191.689428 91.026293)">上游</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #ffffff" x="191.689428" y="106.807" transform="rotate(-0 191.689428 106.807)">52,665</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="304.515776" y="91.026293" transform="rotate(-0 304.515776 91.026293)">中游</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="304.515776" y="106.807" transform="rotate(-0 304.515776 106.807)">44,482</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="408.310117" y="91.026293" transform="rotate(-0 408.310117 91.026293)">下游</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #2b2b2b" x="408.310117" y="106.807" transform="rotate(-0 408.310117 106.807)">36,938</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #2b2b2b" x="66.816" y="16.757578" transform="rotate(-0 66.816 16.757578)">A08 流域分段知识产出</text>
+   </g>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #6b6b6b" x="7.2" y="256.484834" transform="rotate(-0 7.2 256.484834)">数据源：T38_流域分段统计.csv（圆面积∝断言数）</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p120a7b7f7d">
+   <rect x="66.816" y="22.757578" width="401.76" height="147.515313"/>
+  </clipPath>
+ </defs>
+</svg>

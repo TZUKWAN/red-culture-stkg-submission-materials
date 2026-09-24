@@ -1,0 +1,14 @@
+﻿区域ID,省份,流域段,顺序
+REGION-PROVINCE:青海省,青海省,上游,0
+REGION-PROVINCE:西藏自治区,西藏自治区,上游,1
+REGION-PROVINCE:四川省,四川省,上游,2
+REGION-PROVINCE:云南省,云南省,上游,3
+REGION-PROVINCE:贵州省,贵州省,上游,4
+REGION-PROVINCE:重庆市,重庆市,上游,5
+REGION-PROVINCE:湖北省,湖北省,中游,6
+REGION-PROVINCE:湖南省,湖南省,中游,7
+REGION-PROVINCE:江西省,江西省,中游,8
+REGION-PROVINCE:安徽省,安徽省,下游,9
+REGION-PROVINCE:江苏省,江苏省,下游,10
+REGION-PROVINCE:上海市,上海市,下游,11
+REGION-PROVINCE:浙江省,浙江省,下游,12

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>VIZ-2 人物时空轨迹（交互版）</title>
+<style>
+  :root { --ink:#24303c; --muted:#5a6572; --line:#d8dee4; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:24px 28px; font-family:"Microsoft YaHei","SimHei","Noto Sans CJK SC",sans-serif;
+         color:var(--ink); background:#fbfcfd; }
+  h1 { font-size:20px; margin:0 0 4px; }
+  .sub { color:var(--muted); font-size:12px; margin-bottom:14px; line-height:1.7; }
+  .tabs { margin:10px 0 14px; }
+  .tabs button { font:inherit; font-size:13px; padding:6px 16px; margin-right:8px; cursor:pointer;
+                  border:1px solid var(--line); background:#fff; border-radius:16px; color:var(--ink); }
+  .tabs button.active { background:#1b6ca8; border-color:#1b6ca8; color:#fff; }
+  .panels { display:flex; gap:26px; flex-wrap:wrap; align-items:flex-start; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .card h2 { font-size:14px; margin:0 0 8px; }
+  .legend { font-size:11.5px; color:var(--muted); margin:6px 0 8px; display:flex; gap:14px; flex-wrap:wrap; }
+  .sw { display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:4px; vertical-align:-1px; }
+  svg text { font-family:inherit; }
+  #tip { position:fixed; display:none; pointer-events:none; background:#24303c; color:#fff;
+          font-size:12px; line-height:1.55; padding:7px 10px; border-radius:6px; max-width:320px; z-index:9; }
+  .foot { margin-top:16px; color:var(--muted); font-size:11.5px; }
+</style>
+</head>
+<body>
+<h1>VIZ-2 人物时空轨迹：参与断言最多的 3 位人物</h1>
+<div class="sub">
+  数据源：red_culture_stkg_final_v3_1.sqlite（V3_1 副本库，含 U1-U8）（只读）。左：时间线（x = 时间区间，y = 活动地/组织条目；蓝 = 组织/职务关系断言，红 = 事件参与断言，条目按断言数取前 13+13）。
+  右：断言邻居网络（research_assertions 中以该人物为主语或宾语的 Top16 邻居，边宽 ∝ 断言数）。悬停查看明细。
+</div>
+<div class="tabs" id="tabs"></div>
+<div class="panels">
+  <div class="card"><h2 id="tl-title"></h2><div class="legend" id="tl-legend"></div><div id="timeline"></div></div>
+  <div class="card"><h2 id="net-title"></h2><div class="legend" id="net-legend"></div><div id="network"></div></div>
+</div>
+<div class="foot">SQL 与行数见 figures/stkg_viz2_person_trajectories_CAPTION.md ｜ 确定性管线：坐标与条目排序均在生成期固定，无随机布局。生成时间：2026-09-11 05:05:15 +0800</div>
+<div id="tip"></div>
+<script>
+const DATA = [{"name":"毛泽东","n_facts":1017,"n_events":494,"org_total":266,"ev_total":55,"span":["1911-01-01","1949-09-30"],"items":[{"kind":"组织/职务关系","role":"led","label":"中共安源地方执行委员会","start":"1911-01-01","end":"1923-12-31","n":1},{"kind":"组织/职务关系","role":"led","label":"安源工人","start":"1911-01-01","end":"1923-12-31","n":1},{"kind":"组织/职务关系","role":"led","label":"安源市委","start":"1911-01-01","end":"1923-12-31","n":1},{"kind":"组织/职务关系","role":"led","label":"安源路矿工人","start":"1911-01-01","end":"1923-12-31","n":1},{"kind":"组织/职务关系","role":"organized","label":"安源路矿工人俱乐部","start":"1911-01-01","end":"1923-12-31","n":2},{"kind":"组织/职务关系","role":"led","label":"安源路矿工人俱乐部","start":"1911-01-01","end":"1923-12-31","n":1},{"kind":"事件参与","role":"participated_in","label":"五四运动","start":"1919-01-01","end":"1919-12-31","n":4,"place":"长江"},{"kind":"组织/职务关系","role":"led","label":"五四运动","start":"1919-01-01","end":"1919-12-31","n":1},{"kind":"事件参与","role":"participated_in","label":"驱张运动","start":"1919-12-01","end":"1919-12-31","n":4,"place":"湖南"},{"kind":"事件参与","role":"participated_in","label":"武汉会战","start":"1924-01-01","end":"1949-09-30","n":5,"place":"长江流域"},{"kind":"事件参与","role":"participated_in","label":"三湾改编","start":"1927-01-01","end":"1927-12-31","n":6,"place":"井冈山"},{"kind":"组织/职务关系","role":"led","label":"秋收暴动","start":"1927-01-01","end":"1937-07-06","n":2},{"kind":"事件参与","role":"participated_in","label":"井冈山斗争","start":"1927-08-01","end":"1937-07-06","n":6,"place":"湘赣边区"},{"kind":"组织/职务关系","role":"led","label":"兴国调查","start":"1927-08-01","end":"1937-07-06","n":2},{"kind":"组织/职务关系","role":"led","label":"秋收起义","start":"1927-08-01","end":"1937-07-06","n":3},{"kind":"组织/职务关系","role":"led","label":"第一次反‘围剿’","start":"1927-08-01","end":"1937-07-06","n":2},{"kind":"组织/职务关系","role":"led","label":"红一方面军","start":"1927-08-01","end":"1937-07-06","n":2},{"kind":"事件参与","role":"participated_in","label":"秋收暴动","start":"1927-09-01","end":"1927-09-30","n":5,"place":"湖南"},{"kind":"事件参与","role":"participated_in","label":"秋收起义","start":"1927-09-10","end":"1927-09-10","n":7,"place":"江西"},{"kind":"事件参与","role":"participated_in","label":"湘南暴动","start":"1928-01-01","end":"1928-12-31","n":5,"place":"湖南区域"},{"kind":"事件参与","role":"participated_in","label":"黄洋界保卫战","start":"1928-01-01","end":"1928-12-31","n":5,"place":"井冈山"},{"kind":"事件参与","role":"participated_in","label":"四渡赤水","start":"1935-01-01","end":"1935-01-31","n":6,"place":"赤水"},{"kind":"事件参与","role":"participated_in","label":"遵义会议","start":"1935-01-01","end":"1935-12-31","n":6,"place":"贵州"},{"kind":"事件参与","role":"participated_in","label":"皖南事变","start":"1941-01-01","end":"1941-12-31","n":6,"place":"安徽区域"},{"kind":"事件参与","role":"participated_in","label":"重庆谈判","start":"1945-08-01","end":"1945-08-31","n":5,"place":"重庆"},{"kind":"组织/职务关系","role":"led","label":"渡江战役","start":"1949-04-01","end":"1949-04-30","n":2}],"net_nodes":[{"name":"毛泽东","type":"SELF","n":1017,"x":0.0,"y":0.0},{"name":"遵义会议","type":"Event","n":39,"x":1.0,"y":0.0},{"name":"井冈山","type":"Place","n":28,"x":0.92388,"y":0.382683},{"name":"皖南事变","type":"Event","n":21,"x":0.707107,"y":0.707107},{"name":"汉口","type":"AdministrativeRegion","n":20,"x":0.382683,"y":0.92388},{"name":"张闻天","type":"Person","n":19,"x":0.0,"y":1.0},{"name":"朱德","type":"Person","n":19,"x":-0.382683,"y":0.92388},{"name":"井冈山革命根据地","type":"Place","n":18,"x":-0.707107,"y":0.707107},{"name":"王稼祥","type":"Person","n":18,"x":-0.92388,"y":0.382683},{"name":"重庆谈判","type":"Event","n":18,"x":-1.0,"y":0.0},{"name":"秋收起义","type":"Event","n":17,"x":-0.92388,"y":-0.382683},{"name":"重庆","type":"AdministrativeRegion","n":17,"x":-0.707107,"y":-0.707107},{"name":"红一方面军","type":"Organization","n":16,"x":-0.382683,"y":-0.92388},{"name":"长沙","type":"AdministrativeRegion","n":16,"x":-0.0,"y":-1.0},{"name":"黎平会议","type":"Event","n":16,"x":0.382683,"y":-0.92388},{"name":"武汉会战","type":"Event","n":15,"x":0.707107,"y":-0.707107},{"name":"上海","type":"AdministrativeRegion","n":14,"x":0.92388,"y":-0.382683}],"net_edges":[{"target":1,"n":39,"w":3.0},{"target":2,"n":28,"w":2.323},{"target":3,"n":21,"w":1.892},{"target":4,"n":20,"w":1.831},{"target":5,"n":19,"w":1.769},{"target":6,"n":19,"w":1.769},{"target":7,"n":18,"w":1.708},{"target":8,"n":18,"w":1.708},{"target":9,"n":18,"w":1.708},{"target":10,"n":17,"w":1.646},{"target":11,"n":17,"w":1.646},{"target":12,"n":16,"w":1.585},{"target":13,"n":16,"w":1.585},{"target":14,"n":16,"w":1.585},{"target":15,"n":15,"w":1.523},{"target":16,"n":14,"w":1.462}]},{"name":"贺龙","n_facts":458,"n_events":224,"org_total":129,"ev_total":11,"span":["1924-01-01","1950-12-31"],"items":[{"kind":"组织/职务关系","role":"led","label":"北伐军","start":"1924-01-01","end":"1927-07-31","n":1},{"kind":"组织/职务关系","role":"led","label":"讨贼联军","start":"1924-01-01","end":"1927-07-31","n":1},{"kind":"事件参与","role":"participated_in","label":"北伐","start":"1926-07-01","end":"1926-07-31","n":3,"place":"湘鄂赣边区"},{"kind":"组织/职务关系","role":"led","label":"南昌起义","start":"1927-01-01","end":"1937-07-06","n":3},{"kind":"组织/职务关系","role":"led","label":"荆江两岸年关起义","start":"1927-01-01","end":"1928-12-31","n":1},{"kind":"事件参与","role":"participated_in","label":"八一南昌起义","start":"1927-08-01","end":"1927-08-31","n":2,"place":"江西"},{"kind":"事件参与","role":"participated_in","label":"武装斗争","start":"1927-08-01","end":"1949-12-31","n":1,"place":"长江流域"},{"kind":"事件参与","role":"participated_in","label":"起义","start":"1927-08-01","end":"1927-08-01","n":2,"place":"元谋县"},{"kind":"组织/职务关系","role":"led","label":"东渡乌江","start":"1927-08-01","end":"1937-07-06","n":1},{"kind":"组织/职务关系","role":"held_position_in","label":"中华苏维埃人民共和国川滇黔省革命委员会","start":"1927-08-01","end":"1937-07-06","n":1},{"kind":"组织/职务关系","role":"led","label":"中华苏维埃人民共和国川滇黔省革命委员会","start":"1927-08-01","end":"1937-07-06","n":1},{"kind":"组织/职务关系","role":"led","label":"中国工农红军第三军","start":"1927-08-01","end":"1937-07-06","n":1},{"kind":"组织/职务关系","role":"led","label":"中国工农红军第二军团","start":"1927-08-01","end":"1937-07-06","n":1},{"kind":"组织/职务关系","role":"led","label":"中国工农红军第二方面军","start":"1927-08-01","end":"1937-07-06","n":1},{"kind":"组织/职务关系","role":"led","label":"中堡地区战斗","start":"1927-08-01","end":"1937-07-06","n":1},{"kind":"组织/职务关系","role":"led","label":"中央红军入黔","start":"1927-08-01","end":"1937-07-06","n":1},{"kind":"组织/职务关系","role":"led","label":"乌蒙山回旋战","start":"1927-08-01","end":"1937-07-06","n":1},{"kind":"事件参与","role":"participated_in","label":"房县战役","start":"1931-01-01","end":"1931-12-31","n":2,"place":"湖北"},{"kind":"事件参与","role":"participated_in","label":"四渡赤水","start":"1935-01-01","end":"1935-01-31","n":4,"place":"赤水"},{"kind":"事件参与","role":"participated_in","label":"红军长征","start":"1935-01-01","end":"1935-12-31","n":5,"place":"贵州"},{"kind":"事件参与","role":"participated_in","label":"八七会议","start":"1949-01-01","end":"1949-12-31","n":2,"place":"汉口"},{"kind":"事件参与","role":"participated_in","label":"反‘围剿’斗争","start":"1949-01-01","end":"1949-12-31","n":2,"place":"长江流域"},{"kind":"事件参与","role":"participated_in","label":"成都解放","start":"1949-01-01","end":"1949-12-31","n":5,"place":"四川(川东)"},{"kind":"事件参与","role":"participated_in","label":"剿匪斗争","start":"1950-01-01","end":"1950-12-31","n":2,"place":"长江流域"}],"net_nodes":[{"name":"贺龙","type":"SELF","n":458,"x":0.0,"y":0.0},{"name":"周逸群","type":"Person","n":21,"x":1.0,"y":0.0},{"name":"南昌起义","type":"Event","n":19,"x":0.92388,"y":0.382683},{"name":"房县","type":"Place","n":19,"x":0.707107,"y":0.707107},{"name":"南腰界","type":"Place","n":16,"x":0.382683,"y":0.92388},{"name":"红二军团","type":"Organization","n":13,"x":0.0,"y":1.0},{"name":"关向应","type":"Person","n":12,"x":-0.382683,"y":0.92388},{"name":"卢冬生","type":"Person","n":11,"x":-0.707107,"y":0.707107},{"name":"洪湖苏区","type":"Place","n":11,"x":-0.92388,"y":0.382683},{"name":"红三军","type":"Organization","n":11,"x":-1.0,"y":0.0},{"name":"洪湖","type":"Place","n":10,"x":-0.92388,"y":-0.382683},{"name":"乌江","type":"Place","n":9,"x":-0.707107,"y":-0.707107},{"name":"周恩来","type":"Person","n":9,"x":-0.382683,"y":-0.92388},{"name":"枫香溪","type":"Place","n":9,"x":-0.0,"y":-1.0},{"name":"沅陵县","type":"Place","n":9,"x":0.382683,"y":-0.92388},{"name":"洪湖根据地","type":"Place","n":9,"x":0.707107,"y":-0.707107},{"name":"红六军团","type":"Organization","n":9,"x":0.92388,"y":-0.382683}],"net_edges":[{"target":1,"n":21,"w":3.0},{"target":2,"n":19,"w":2.771},{"target":3,"n":19,"w":2.771},{"target":4,"n":16,"w":2.429},{"target":5,"n":13,"w":2.086},{"target":6,"n":12,"w":1.971},{"target":7,"n":11,"w":1.857},{"target":8,"n":11,"w":1.857},{"target":9,"n":11,"w":1.857},{"target":10,"n":10,"w":1.743},{"target":11,"n":9,"w":1.629},{"target":12,"n":9,"w":1.629},{"target":13,"n":9,"w":1.629},{"target":14,"n":9,"w":1.629},{"target":15,"n":9,"w":1.629},{"target":16,"n":9,"w":1.629}]},{"name":"朱德","n_facts":381,"n_events":167,"org_total":109,"ev_total":18,"span":["1924-01-01","1949-09-30"],"items":[{"kind":"事件参与","role":"participated_in","label":"武汉会战","start":"1924-01-01","end":"1949-09-30","n":2,"place":"长江流域"},{"kind":"事件参与","role":"participated_in","label":"泸顺起义","start":"1926-01-01","end":"1926-12-31","n":6,"place":"长江"},{"kind":"组织/职务关系","role":"organized","label":"万县惨案","start":"1926-01-01","end":"1926-12-31","n":1},{"kind":"组织/职务关系","role":"organized","label":"万县惨案反英斗争","start":"1926-01-01","end":"1926-12-31","n":1},{"kind":"组织/职务关系","role":"member_of","label":"中共重庆地方委员会","start":"1926-01-01","end":"1926-12-31","n":1},{"kind":"组织/职务关系","role":"led","label":"泸顺起义","start":"1926-01-01","end":"1926-12-31","n":1},{"kind":"组织/职务关系","role":"led","label":"南昌起义","start":"1927-01-01","end":"1937-07-06","n":2},{"kind":"组织/职务关系","role":"led","label":"智取宜章","start":"1927-01-01","end":"1927-12-31","n":1},{"kind":"组织/职务关系","role":"led","label":"永兴起义","start":"1927-01-01","end":"1927-12-31","n":1},{"kind":"事件参与","role":"participated_in","label":"马日事变","start":"1927-05-21","end":"1927-05-21","n":2,"place":"湖南"},{"kind":"组织/职务关系","role":"led","label":"南昌军官教育团","start":"1927-07-01","end":"1927-07-31","n":1},{"kind":"事件参与","role":"participated_in","label":"起义","start":"1927-08-01","end":"1927-08-01","n":2,"place":"元谋县"},{"kind":"事件参与","role":"participated_in","label":"黄陂战役","start":"1927-08-01","end":"1937-07-06","n":3,"place":"江西"},{"kind":"组织/职务关系","role":"led","label":"三军团","start":"1927-08-01","end":"1937-07-06","n":1},{"kind":"组织/职务关系","role":"led","label":"第四次反‘围剿’","start":"1927-08-01","end":"1937-07-06","n":2},{"kind":"组织/职务关系","role":"led","label":"三河坝战役","start":"1927-10-01","end":"1949-09-30","n":2},{"kind":"事件参与","role":"participated_in","label":"宜章年关起义","start":"1928-01-01","end":"1928-12-31","n":2,"place":"长江流域"},{"kind":"事件参与","role":"participated_in","label":"湘南暴动","start":"1928-01-01","end":"1928-12-31","n":4,"place":"湖南区域"},{"kind":"事件参与","role":"participated_in","label":"黄洋界保卫战","start":"1928-01-01","end":"1928-12-31","n":2,"place":"井冈山"},{"kind":"事件参与","role":"participated_in","label":"湘江战役","start":"1934-11-01","end":"1934-11-30","n":3,"place":"长江流域"},{"kind":"事件参与","role":"participated_in","label":"四渡赤水","start":"1935-01-01","end":"1935-01-31","n":5,"place":"赤水"},{"kind":"事件参与","role":"participated_in","label":"红军长征","start":"1935-01-01","end":"1935-12-31","n":5,"place":"贵州"},{"kind":"事件参与","role":"participated_in","label":"遵义会议","start":"1935-01-01","end":"1935-12-31","n":2,"place":"贵州"},{"kind":"事件参与","role":"participated_in","label":"两河口会议","start":"1935-06-26","end":"1935-06-26","n":2,"place":"四川(川东)"},{"kind":"组织/职务关系","role":"led","label":"八路军","start":"1937-07-07","end":"1945-08-15","n":2},{"kind":"组织/职务关系","role":"led","label":"渡江战役","start":"1949-04-01","end":"1949-04-30","n":2}],"net_nodes":[{"name":"朱德","type":"SELF","n":381,"x":0.0,"y":0.0},{"name":"毛泽东","type":"Person","n":19,"x":1.0,"y":0.0},{"name":"宜章县","type":"Place","n":12,"x":0.92388,"y":0.382683},{"name":"红一方面军","type":"Organization","n":12,"x":0.707107,"y":0.707107},{"name":"南昌起义","type":"Event","n":11,"x":0.382683,"y":0.92388},{"name":"渡江战役","type":"Event","n":10,"x":0.0,"y":1.0},{"name":"湘南起义","type":"Event","n":10,"x":-0.382683,"y":0.92388},{"name":"土城战斗","type":"Event","n":9,"x":-0.707107,"y":0.707107},{"name":"第四次反‘围剿’","type":"Event","n":9,"x":-0.92388,"y":0.382683},{"name":"万县(玩陵)","type":"Place","n":8,"x":-1.0,"y":0.0},{"name":"周恩来","type":"Person","n":8,"x":-0.92388,"y":-0.382683},{"name":"四渡赤水","type":"Event","n":8,"x":-0.707107,"y":-0.707107},{"name":"宜章城","type":"Place","n":8,"x":-0.382683,"y":-0.92388},{"name":"红四方面军","type":"Organization","n":8,"x":-0.0,"y":-1.0},{"name":"乌江","type":"Place","n":7,"x":0.382683,"y":-0.92388},{"name":"井冈山会师","type":"Event","n":7,"x":0.707107,"y":-0.707107},{"name":"孙炳文","type":"Person","n":7,"x":0.92388,"y":-0.382683}],"net_edges":[{"target":1,"n":19,"w":3.0},{"target":2,"n":12,"w":2.116},{"target":3,"n":12,"w":2.116},{"target":4,"n":11,"w":1.989},{"target":5,"n":10,"w":1.863},{"target":6,"n":10,"w":1.863},{"target":7,"n":9,"w":1.737},{"target":8,"n":9,"w":1.737},{"target":9,"n":8,"w":1.611},{"target":10,"n":8,"w":1.611},{"target":11,"n":8,"w":1.611},{"target":12,"n":8,"w":1.611},{"target":13,"n":8,"w":1.611},{"target":14,"n":7,"w":1.484},{"target":15,"n":7,"w":1.484},{"target":16,"n":7,"w":1.484}]}];
+const TYPE_COLORS = {"Person": "#c0392b", "Organization": "#1b6ca8", "Institution": "#2e86ab", "Event": "#7d3c98", "Place": "#1e8449", "AdministrativeRegion": "#27ae60", "Concept": "#b7950b", "Artifact": "#a04000", "Document": "#616a6b", "Spirit": "#884ea0"};
+const SELF_COLOR = "#c0392b";
+const KIND_COLORS = {"组织/职务关系": "#1b6ca8", "事件参与": "#c0392b"};
+const tip = document.getElementById('tip');
+let cur = 0;
+function showTip(ev, html) { tip.innerHTML = html; tip.style.display = 'block';
+  tip.style.left = (ev.clientX + 14) + 'px'; tip.style.top = (ev.clientY + 12) + 'px'; }
+function hideTip() { tip.style.display = 'none'; }
+function esc(s) { const d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
+
+function drawTimeline(p) {
+  const W = 640, padL = 168, padR = 26, rowH = 26, padT = 8;
+  const y0 = parseInt(p.span[0].slice(0,4)) - 1, y1 = parseInt(p.span[1].slice(0,4)) + 1;
+  const H = padT + p.items.length * rowH + 30;
+  const x = yr => padL + (yr - y0) / (y1 - y0) * (W - padL - padR);
+  let s = '<svg width="' + W + '" height="' + H + '">';
+  for (let yr = Math.ceil(y0 / 4) * 4; yr <= y1; yr += 4) {
+    s += '<line x1="' + x(yr) + '" y1="' + padT + '" x2="' + x(yr) + '" y2="' + (H - 24) + '" stroke="#e7ecef"/>';
+    s += '<text x="' + x(yr) + '" y="' + (H - 8) + '" font-size="10.5" fill="#5a6572" text-anchor="middle">' + yr + '</text>';
+  }
+  p.items.forEach((it, i) => {
+    const ys = parseInt(it.start.slice(0,4)), ye = Math.max(parseInt((it.end||it.start).slice(0,4)) + 1, ys + 1);
+    const yy = padT + i * rowH + rowH / 2;
+    s += '<text x="' + (padL - 8) + '" y="' + (yy + 3.5) + '" font-size="11" fill="#24303c" text-anchor="end">'
+      + esc(it.label.length > 14 ? it.label.slice(0,13) + '…' : it.label) + '</text>';
+    s += '<rect data-i="' + i + '" x="' + x(ys) + '" y="' + (yy - 8) + '" width="' + Math.max(x(ye) - x(ys), 4)
+      + '" height="16" rx="3" fill="' + KIND_COLORS[it.kind] + '" opacity="0.88" style="cursor:pointer"/>';
+  });
+  s += '</svg>';
+  document.getElementById('timeline').innerHTML = s;
+  document.querySelectorAll('#timeline rect').forEach(r => {
+    const it = p.items[+r.dataset.i];
+    r.addEventListener('mousemove', ev => showTip(ev,
+      '<b>' + esc(it.label) + '</b><br>' + esc(it.kind) + ' · ' + esc(it.role)
+      + '<br>' + esc(it.start) + ' ~ ' + esc(it.end||it.start)
+      + (it.place ? '<br>Top1 事件地点：' + esc(it.place) : '')
+      + '<br>支持断言：' + it.n + ' 条'));
+    r.addEventListener('mouseleave', hideTip);
+  });
+  document.getElementById('tl-title').textContent = p.name + ' — 时间线（共选 ' + p.items.length + ' 条目）';
+  document.getElementById('tl-legend').innerHTML = Object.entries(KIND_COLORS)
+    .map(([k, c]) => '<span><span class="sw" style="background:' + c + '"></span>' + k + '</span>').join('');
+}
+
+function drawNetwork(p) {
+  const W = 470, H = 430, cx = W / 2, cy = H / 2, R = 158;
+  const pos = nd => [cx + nd.x * R, cy + nd.y * R];
+  let s = '<svg width="' + W + '" height="' + H + '">';
+  p.net_edges.forEach(e => {
+    const a = pos(p.net_nodes[0]), b = pos(p.net_nodes[e.target]);
+    s += '<line class="ed" data-t="' + e.target + '" x1="' + a[0] + '" y1="' + a[1] + '" x2="' + b[0] + '" y2="' + b[1]
+      + '" stroke="#b9c4ce" stroke-width="' + e.w + '"/>';
+  });
+  p.net_nodes.forEach((nd, i) => {
+    const [px, py] = pos(nd);
+    const c = nd.type === 'SELF' ? SELF_COLOR : (TYPE_COLORS[nd.type] || '#7f8c8d');
+    const rr = nd.type === 'SELF' ? 15 : 6 + 11 * nd.n / Math.max(...p.net_nodes.slice(1).map(z => z.n));
+    s += '<circle class="nd" data-i="' + i + '" cx="' + px + '" cy="' + py + '" r="' + rr.toFixed(1)
+      + '" fill="' + c + '" stroke="#fff" stroke-width="1.2" style="cursor:pointer"/>';
+    const lx = cx + nd.x * (R + 24), ly = cy + nd.y * (R + 24);
+    if (nd.type !== 'SELF') s += '<text x="' + lx + '" y="' + (ly + 3.5) + '" font-size="10.5" fill="#24303c" text-anchor="middle">'
+      + esc(nd.name.length > 9 ? nd.name.slice(0, 8) + '…' : nd.name) + '</text>';
+  });
+  s += '<text x="' + cx + '" y="' + (cy + 4) + '" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold" pointer-events="none">'
+    + esc(p.name.length > 5 ? p.name.slice(0, 4) + '…' : p.name) + '</text></svg>';
+  document.getElementById('network').innerHTML = s;
+  document.querySelectorAll('#network .nd').forEach(cEl => {
+    const nd = p.net_nodes[+cEl.dataset.i];
+    cEl.addEventListener('mousemove', ev => {
+      document.querySelectorAll('#network .ed').forEach(l =>
+        l.setAttribute('stroke', l.dataset.t == cEl.dataset.i ? '#c0392b' : '#b9c4ce'));
+      showTip(ev, '<b>' + esc(nd.name) + '</b><br>类型：' + esc(nd.type) + '<br>与 ' + esc(p.name)
+        + ' 的直接断言：' + nd.n + ' 条'));
+    });
+    cEl.addEventListener('mouseleave', () => { hideTip();
+      document.querySelectorAll('#network .ed').forEach(l => l.setAttribute('stroke', '#b9c4ce')); });
+  });
+  document.getElementById('net-title').textContent = p.name + ' — 断言邻居网络（Top' + (p.net_nodes.length - 1) + '）';
+  const used = [...new Set(p.net_nodes.slice(1).map(n => n.type))];
+  document.getElementById('net-legend').innerHTML = used
+    .map(t => '<span><span class="sw" style="background:' + (TYPE_COLORS[t] || '#7f8c8d') + '"></span>' + t + '</span>').join('');
+}
+
+function render(i) {
+  cur = i;
+  document.getElementById('tabs').innerHTML = DATA.map((p, j) =>
+    '<button class="' + (j === i ? 'active' : '') + '" onclick="render(' + j + ')">'
+    + esc(p.name) + '（参与断言 ' + p.n_facts.toLocaleString() + '）</button>').join('');
+  drawTimeline(DATA[i]);
+  drawNetwork(DATA[i]);
+}
+render(0);
+</script>
+</body>
+</html>
