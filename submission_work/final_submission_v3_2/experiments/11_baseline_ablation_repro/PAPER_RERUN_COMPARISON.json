@@ -1,0 +1,159 @@
+{
+  "generated_at": "2026-09-24T20:26:53.997788+08:00",
+  "result": "ALL PASS",
+  "tolerance": 5e-05,
+  "llm_calls": 0,
+  "checks": [
+    {
+      "name": "表1 规则方法（M1_rule_only）",
+      "ok": true,
+      "detail": "n_correct/n_covered=132/151（论文 132/151）"
+    },
+    {
+      "name": "表1 本地分类器（M2_classifier_only）",
+      "ok": true,
+      "detail": "n_correct/n_covered=95/152（论文 95/152）"
+    },
+    {
+      "name": "表1 缓存模型回放（表1第3行）（M3_cached_llm_replay）",
+      "ok": true,
+      "detail": "n_correct/n_covered=133/151（论文 133/151）"
+    },
+    {
+      "name": "表1 规则—Qwen 一致性选择（M4_rule_plus_cached_llm）",
+      "ok": true,
+      "detail": "n_correct/n_covered=115/116（论文 115/116）"
+    },
+    {
+      "name": "表1 冻结完整框架确定性回放（M6_full_v2_replay）",
+      "ok": true,
+      "detail": "n_correct/n_covered=131/152（论文 131/152）"
+    },
+    {
+      "name": "表2 完整选择性分类器（n=203）",
+      "ok": true,
+      "detail": "accepted/correct/errors=72.0/68.0/4.0"
+    },
+    {
+      "name": "表2 去类别门禁（n=203）",
+      "ok": true,
+      "detail": "accepted/correct/errors=73.0/69.0/4.0"
+    },
+    {
+      "name": "表2 去独立信号一致（n=203）",
+      "ok": true,
+      "detail": "accepted/correct/errors=132.0/121.0/11.0"
+    },
+    {
+      "name": "表2 取消显式弃权（n=203）",
+      "ok": true,
+      "detail": "accepted/correct/errors=203.0/179.0/24.0"
+    },
+    {
+      "name": "表3 完整框架·strict_assertions == 112,158",
+      "ok": true,
+      "detail": "重跑值 112,158"
+    },
+    {
+      "name": "表3 完整框架·contextual_assertions == 268,047",
+      "ok": true,
+      "detail": "重跑值 268,047"
+    },
+    {
+      "name": "表3 完整框架·unresolved_assertions == 43,945",
+      "ok": true,
+      "detail": "重跑值 43,945"
+    },
+    {
+      "name": "表3 完整框架·strict_contract_violations == 0",
+      "ok": true,
+      "detail": "重跑值 0"
+    },
+    {
+      "name": "表3 完整框架·invalid_time_owner_types == 0",
+      "ok": true,
+      "detail": "重跑值 0"
+    },
+    {
+      "name": "表3 完整框架·invalid_space_owner_types == 0",
+      "ok": true,
+      "detail": "重跑值 0"
+    },
+    {
+      "name": "表3 完整框架·admitted_without_provenance == 0",
+      "ok": true,
+      "detail": "重跑值 0"
+    },
+    {
+      "name": "表3 完整框架·total == 424,150",
+      "ok": true,
+      "detail": "重跑值 424,150"
+    },
+    {
+      "name": "表3 去风险路由·changed_vs_full == 43,945",
+      "ok": true,
+      "detail": "重跑值 43,945"
+    },
+    {
+      "name": "表3 去身份投影·changed_vs_full == 24,005",
+      "ok": true,
+      "detail": "重跑值 24,005"
+    },
+    {
+      "name": "表3 去关系契约·strict_contract_violations == 3,412",
+      "ok": true,
+      "detail": "重跑值 3,412"
+    },
+    {
+      "name": "表3 去关系契约·changed_vs_full == 3,412",
+      "ok": true,
+      "detail": "重跑值 3,412"
+    },
+    {
+      "name": "表3 去角色归属闭包·invalid_time_owner_types == 44",
+      "ok": true,
+      "detail": "重跑值 44"
+    },
+    {
+      "name": "表3 去角色归属闭包·invalid_space_owner_types == 112",
+      "ok": true,
+      "detail": "重跑值 112"
+    },
+    {
+      "name": "表3 去角色归属闭包·changed_vs_full == 208",
+      "ok": true,
+      "detail": "重跑值 208"
+    },
+    {
+      "name": "表1 重跑 == v2 冻结 BASELINE_METRICS（逐字段）",
+      "ok": true,
+      "detail": "63 行；差异字段 0"
+    },
+    {
+      "name": "表2/表3 重跑 == v2 冻结 ABLATION_RUNS（逐字段，容 1e-12 浮点末位）",
+      "ok": true,
+      "detail": "174 行；超容差差异 0"
+    },
+    {
+      "name": "消融运行时受保护输入哈希未变",
+      "ok": true,
+      "detail": "{\"source_hashes_before\": {\"semantic_v2\": \"fbfb6529335e1c838270c63eee53c92a568c2b075354f7ad5f9d5815b88bb377\", \"final_v2\": \"a199d736b9ec436b3d5f244e874718604b6c84955a505f31f90a3e28c51a9ee7\", \"classifier"
+    }
+  ],
+  "float_ulp_differences_vs_frozen_v2": [
+    {
+      "row": "Role-owner Closure | role_owner_ai_reference | Full role-owner closure | selective_accuracy_ci95",
+      "field": "value",
+      "rerun": "[0.4376043769222227, 0.5623956230777774]",
+      "frozen_v2": "[0.4376043769222226, 0.5623956230777774]",
+      "rel_dev": 2.537047349557204e-16
+    },
+    {
+      "row": "Role-owner Closure | role_owner_ai_reference | w/o Role-owner Closure | selective_accuracy_ci95",
+      "field": "value",
+      "rerun": "[0.4376043769222227, 0.5623956230777774]",
+      "frozen_v2": "[0.4376043769222226, 0.5623956230777774]",
+      "rel_dev": 2.537047349557204e-16
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+{
+  "release": "red-culture-stkg-final-2026-09 / v3_2 级联准入叠加层",
+  "generated_at": "2026-09-24T20:34:12.356811+08:00",
+  "llm_calls": 0,
+  "frozen_layer_read_only": true,
+  "databases": {
+    "release_final_db": {
+      "path": "submission_work/final_submission_v3_1/release_final/data/red_culture_stkg_final.sqlite",
+      "sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a",
+      "bytes": 3363414016,
+      "verified_by": "verify_release_v3_2.py A 段实测 + dist/SHA256SUMS.txt 第2条"
+    },
+    "source_repaired_db": {
+      "path": "submission_work/final_submission_v3_1/data/repaired_release/red_culture_stkg_final_v3_1.sqlite",
+      "sha256": "12cbf5fae3bedebc99211718ea28f2bbbc20855c17b8ff6c53a56ce1ebbce023",
+      "verified_by": "本轮实测 sha256，与 release_final/manifests/FINAL_DB_MANIFEST.json.source_db_sha256 一致",
+      "note": "与发布库是两个不同文件，哈希不同属预期"
+    }
+  },
+  "carried_from_frozen_manifest": {
+    "source_file": "submission_work/final_submission_v3_1/release_final/manifests/FINAL_NUMBERS.json",
+    "metrics": [
+      {
+        "metric": "total_entities",
+        "value": 152979,
+        "unit": "count",
+        "universe": "final_db",
+        "definition": "规范化实体总数"
+      },
+      {
+        "metric": "total_assertions",
+        "value": 424150,
+        "unit": "count",
+        "universe": "final_db",
+        "definition": "全库断言总数（完整 424k 宇宙）"
+      },
+      {
+        "metric": "gate_universe_old_strict",
+        "value": 112158,
+        "unit": "count",
+        "universe": "old_strict_universe",
+        "definition": "旧 strict 重分层宇宙（本轮证据语义门的定义域，112,158，不是全库）"
+      },
+      {
+        "metric": "assertions_outside_gate_universe",
+        "value": 311992,
+        "unit": "count",
+        "universe": "final_db",
+        "definition": "全库中断言不在证据门宇宙的部分（保留历史口径）"
+      },
+      {
+        "metric": "gate_strict",
+        "value": 31067,
+        "unit": "count",
+        "universe": "old_strict_universe",
+        "definition": "证据门最终 STRICT（MEASURED，gate 宇宙 112,158 内）"
+      },
+      {
+        "metric": "gate_contextual",
+        "value": 31282,
+        "unit": "count",
+        "universe": "old_strict_universe",
+        "definition": "证据门最终 CONTEXTUAL（MEASURED，gate 宇宙 112,158 内）"
+      },
+      {
+        "metric": "gate_unresolved",
+        "value": 49809,
+        "unit": "count",
+        "universe": "old_strict_universe",
+        "definition": "证据门最终 UNRESOLVED（MEASURED，gate 宇宙 112,158 内）"
+      },
+      {
+        "metric": "full_db_strict_semantic",
+        "value": 31067,
+        "unit": "count",
+        "universe": "final_db",
+        "definition": "全库 research_tier=strict_semantic（论文全库口径）"
+      },
+      {
+        "metric": "full_db_contextual",
+        "value": 299329,
+        "unit": "count",
+        "universe": "final_db",
+        "definition": "全库 research_tier=contextual（论文全库口径）"
+      },
+      {
+        "metric": "full_db_unresolved",
+        "value": 93754,
+        "unit": "count",
+        "universe": "final_db",
+        "definition": "全库 research_tier=unresolved（论文全库口径）"
+      },
+      {
+        "metric": "final_db_sha256",
+        "value": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a",
+        "unit": "hash",
+        "universe": "audit",
+        "definition": "最终数据库 SHA256"
+      },
+      {
+        "metric": "strict_support_precision_independent",
+        "value": 0.9928,
+        "unit": "rate",
+        "universe": "quality_audit",
+        "definition": "STRICT 强共识支撑精度（双独立裁判盲评，预注册协议）"
+      },
+      {
+        "metric": "audit_judge_raw_agreement",
+        "value": 0.3598,
+        "unit": "rate",
+        "universe": "quality_audit",
+        "definition": "双裁判五档完全一致率"
+      },
+      {
+        "metric": "audit_cohens_kappa",
+        "value": 0.1838,
+        "unit": "kappa",
+        "universe": "quality_audit",
+        "definition": "双裁判 Cohen's kappa（风格两极的诚实呈现）"
+      },
+      {
+        "metric": "audit_decision",
+        "value": "PASS",
+        "unit": "decision",
+        "universe": "quality_audit",
+        "definition": "预注册触发器决策"
+      }
+    ]
+  },
+  "numbers": [
+    {
+      "id": "cascade.pre_gate.coverage",
+      "label_zh": "强共识覆盖率（前置严格候选）",
+      "value": 0.3209,
+      "unit": "ratio",
+      "numerator": null,
+      "denominator": null,
+      "ci95": [
+        0.3059,
+        0.336
+      ],
+      "ci_method": "stratified bootstrap B=10000 seed=20260916（分层有放回重抽样）",
+      "estimator": "final-tier post-stratified ratio estimator（按最终层构成后分层校正；不宣称完整设计加权估计）",
+      "universe": "gate_universe=112158 / 审计样本 4427",
+      "source_file": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json",
+      "source_field": "pre_gate_strict_candidate.coverage_ratio_estimator",
+      "note": "分母为审计样本，度量裁判一致性覆盖，不得当作知识质量"
+    },
+    {
+      "id": "cascade.pre_gate.support_precision",
+      "label_zh": "强共识条件支持精度（前置严格候选）",
+      "value": 0.6918,
+      "unit": "ratio",
+      "numerator": null,
+      "denominator": null,
+      "ci95": [
+        0.6651,
+        0.7196
+      ],
+      "ci_method": "stratified bootstrap B=10000 seed=20260916（分层有放回重抽样）",
+      "estimator": "final-tier post-stratified ratio estimator（按最终层构成后分层校正；不宣称完整设计加权估计）",
+      "universe": "gate_universe=112158 / 强共识样本",
+      "source_file": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json",
+      "source_field": "pre_gate_strict_candidate.support_precision_among_consensus",
+      "note": "论文核心对比项：与 99.28% 配对引用"
+    },
+    {
+      "id": "cascade.pre_gate.negative_rate",
+      "label_zh": "强共识条件不支持/冲突率（前置严格候选）",
+      "value": 0.2917,
+      "unit": "ratio",
+      "numerator": null,
+      "denominator": null,
+      "ci95": [
+        0.2639,
+        0.3181
+      ],
+      "ci_method": "stratified bootstrap B=10000 seed=20260916（分层有放回重抽样）",
+      "estimator": "final-tier post-stratified ratio estimator（按最终层构成后分层校正；不宣称完整设计加权估计）",
+      "universe": "gate_universe=112158 / 强共识样本",
+      "source_file": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json",
+      "source_field": "pre_gate_strict_candidate.negative_rate_among_consensus",
+      "note": ""
+    },
+    {
+      "id": "cascade.pre_gate.insufficient_rate",
+      "label_zh": "强共识条件不足率（单列，前置严格候选）",
+      "value": 0.0164,
+      "unit": "ratio",
+      "numerator": null,
+      "denominator": null,
+      "ci95": null,
+      "ci_method": "无 CI（单列描述量）",
+      "estimator": "final-tier post-stratified ratio estimator（按最终层构成后分层校正；不宣称完整设计加权估计）",
+      "universe": "gate_universe=112158 / 强共识样本",
+      "source_file": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json",
+      "source_field": "pre_gate_strict_candidate.insufficient_rate_among_consensus",
+      "note": "INSUFFICIENT 不并入负向率"
+    },
+    {
+      "id": "cascade.final_strict.support_precision",
+      "label_zh": "强共识条件支持精度（最终 STRICT 层）",
+      "value": 0.9928,
+      "unit": "ratio",
+      "numerator": 965,
+      "denominator": 972,
+      "ci95": [
+        0.9852,
+        0.9965
+      ],
+      "ci_method": "Wilson（冻结审计口径）",
+      "estimator": "冻结门内独立双裁判审计，本轮零重算",
+      "universe": "final STRICT 层强共识样本 972 / 审计样本 2268",
+      "source_file": "submission_work/final_submission_v3_1/release_final/experiments/quality_audit/AUDIT_RESULTS.json",
+      "source_field": "strict_support_precision_strong_consensus_detail",
+      "note": "禁止写作「99.28%（n=4,427）」；规范：在 4,427 条分层独立审计样本中，对 STRICT 样本形成强共识的判定显示支持精度 99.28%（965/972）"
+    },
+    {
+      "id": "cascade.final_strict.negative_rate",
+      "label_zh": "强共识条件不支持/冲突率（最终 STRICT 层）",
+      "value": 0.0041,
+      "unit": "ratio",
+      "numerator": 4,
+      "denominator": 972,
+      "ci95": [
+        0.0016,
+        0.0105
+      ],
+      "ci_method": "Wilson（冻结审计口径）",
+      "estimator": "冻结门内独立双裁判审计，本轮零重算",
+      "universe": "final STRICT 层强共识样本 972",
+      "source_file": "submission_work/final_submission_v3_1/release_final/experiments/quality_audit/AUDIT_RESULTS.json",
+      "source_field": "strict_support_precision_strong_consensus_detail.false_positive_rate",
+      "note": ""
+    },
+    {
+      "id": "cascade.final_strict.coverage",
+      "label_zh": "强共识覆盖率（最终 STRICT 层）",
+      "value": 0.4286,
+      "unit": "ratio",
+      "numerator": 972,
+      "denominator": 2268,
+      "ci95": null,
+      "ci_method": "无 CI（描述量）",
+      "estimator": "直接计数",
+      "universe": "STRICT 审计样本 2268",
+      "source_file": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json",
+      "source_field": "final_strict.coverage",
+      "note": "仅说明裁判一致性覆盖，不与知识错误率混同"
+    },
+    {
+      "id": "cascade.outcome.kept_support_precision",
+      "label_zh": "被保留候选强共识条件支持精度",
+      "value": 0.9928,
+      "unit": "ratio",
+      "numerator": 965,
+      "denominator": 972,
+      "ci95": null,
+      "ci_method": "见差值项 Newcombe CI",
+      "estimator": "同一次门内审计内按准入结局分层",
+      "universe": "STRICT 层强共识 972",
+      "source_file": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json",
+      "source_field": "admission_outcome_comparison.kept_final_strict",
+      "note": ""
+    },
+    {
+      "id": "cascade.outcome.downgraded_support_precision",
+      "label_zh": "被降级候选强共识条件支持精度",
+      "value": 0.57,
+      "unit": "ratio",
+      "numerator": 354,
+      "denominator": 621,
+      "ci95": null,
+      "ci_method": "见差值项 Newcombe CI",
+      "estimator": "CTX 350 + UNRES 271 = 621 强共识",
+      "universe": "降级候选强共识 621（审计样本 2159）",
+      "source_file": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json",
+      "source_field": "admission_outcome_comparison.downgraded_by_gate",
+      "note": "分母 621（=350+271），不是 639；639 会得 55.40% 与 57.00% 矛盾"
+    },
+    {
+      "id": "cascade.outcome.downgraded_negative_rate",
+      "label_zh": "被降级候选强共识条件负向率",
+      "value": 0.401,
+      "unit": "ratio",
+      "numerator": 249,
+      "denominator": 621,
+      "ci95": null,
+      "ci_method": "见差值项 Newcombe CI",
+      "estimator": "同上",
+      "universe": "降级候选强共识 621",
+      "source_file": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json",
+      "source_field": "admission_outcome_comparison.downgraded_by_gate.negative_rate_among_consensus",
+      "note": ""
+    },
+    {
+      "id": "cascade.outcome.delta_support_precision",
+      "label_zh": "保留−降级 支持精度差",
+      "value": 0.4228,
+      "unit": "pp_diff",
+      "numerator": null,
+      "denominator": null,
+      "ci95": [
+        0.3836,
+        0.4622
+      ],
+      "ci_method": "Newcombe 混合区间",
+      "estimator": "两独立比例之差",
+      "universe": "kept 972 vs downgraded 621",
+      "source_file": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json",
+      "source_field": "admission_outcome_comparison.difference_support_precision_kept_minus_downgraded",
+      "note": "McNemar 不适用：准入结局为观测分层，非同一对象两次测量"
+    },
+    {
+      "id": "cascade.stage_gain.support_precision_pp",
+      "label_zh": "阶段增益（最终 STRICT − 前置候选）支持精度",
+      "value": 30.1,
+      "unit": "pp",
+      "numerator": null,
+      "denominator": null,
+      "ci95": null,
+      "ci_method": "两点估计之差，未给联合 CI",
+      "estimator": "跨阶段配对引用：一列为后分层校正、一列为冻结审计，CI 不可直接相减",
+      "universe": "112158 → 31067",
+      "source_file": "本清单推导（差值）",
+      "source_field": "cascade.final_strict − cascade.pre_gate",
+      "note": "论文写 +30.10pp；引用时必须同时给出两行各自 CI"
+    },
+    {
+      "id": "cascade.stage_gain.negative_rate_pp",
+      "label_zh": "阶段增益 负向率降幅",
+      "value": 28.76,
+      "unit": "pp",
+      "numerator": null,
+      "denominator": null,
+      "ci95": null,
+      "ci_method": "同上",
+      "estimator": "同上",
+      "universe": "112158 → 31067",
+      "source_file": "本清单推导（差值）",
+      "source_field": "cascade.pre_gate.negative_rate − cascade.final_strict.negative_rate",
+      "note": "论文写 −28.76pp"
+    },
+    {
+      "id": "cascade.outside_gate.strict_opportunity",
+      "label_zh": "门外加权 STRICT 机会（前置遗漏）",
+      "value": 0.006679,
+      "unit": "ratio",
+      "numerator": null,
+      "denominator": 311992,
+      "ci95": [
+        0.004029,
+        0.009675
+      ],
+      "ci_method": "设计型 95%CI（分层权重已知，术语准确）",
+      "estimator": "引用冻结门外审计，零重算（stratified bootstrap B=10000 seed=20260916）",
+      "universe": "outside_gate_universe=311992 / 5,000 条分层样本（CTX 2483 + UNRES 2474 有效）",
+      "source_file": "submission_work/final_submission_v3_1/experiments/10_full_universe_admission_closure/OUTSIDE_GATE_AUDIT_RESULTS.json",
+      "source_field": "weighted_strict_opportunity_design_ci",
+      "note": "全库条数区间 [1257, 3019]；论文呈现为 0.66%（对 0.6679% 向下截断，偏保守），四舍五入两位应为 0.67%"
+    }
+  ],
+  "per_stratum_recomputed": {
+    "STRICT": {
+      "n_h": 2268,
+      "c_h": 972,
+      "s_h": 965,
+      "neg_h": 4,
+      "ins_h": 3
+    },
+    "CONTEXTUAL": {
+      "n_h": 1094,
+      "c_h": 350,
+      "s_h": 268,
+      "neg_h": 66,
+      "ins_h": 16
+    },
+    "UNRESOLVED": {
+      "n_h": 1065,
+      "c_h": 271,
+      "s_h": 86,
+      "neg_h": 183,
+      "ins_h": 2
+    }
+  },
+  "layer_populations_from_final_tiering": {
+    "UNRESOLVED": 49809,
+    "CONTEXTUAL": 31282,
+    "STRICT": 31067
+  },
+  "withdrawn_numbers": [
+    {
+      "value": "22.20%",
+      "status": "WITHDRAWN（不得进入论文）",
+      "reason": "unconditional strong-consensus support share：分母含裁判分歧，混合评价不确定性与知识质量",
+      "kept_only_in": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json → diagnostic_unconditional_shares"
+    },
+    {
+      "value": "29.79%",
+      "status": "WITHDRAWN（不得进入论文）",
+      "reason": "unconditional strong-consensus support share：分母含裁判分歧，混合评价不确定性与知识质量",
+      "kept_only_in": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json → diagnostic_unconditional_shares"
+    },
+    {
+      "value": "42.55%",
+      "status": "WITHDRAWN（不得进入论文）",
+      "reason": "unconditional strong-consensus support share：分母含裁判分歧，混合评价不确定性与知识质量",
+      "kept_only_in": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json → diagnostic_unconditional_shares"
+    },
+    {
+      "value": "16.40%",
+      "status": "WITHDRAWN（不得进入论文）",
+      "reason": "unconditional strong-consensus support share：分母含裁判分歧，混合评价不确定性与知识质量",
+      "kept_only_in": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json → diagnostic_unconditional_shares"
+    },
+    {
+      "value": "+26.15pp",
+      "status": "WITHDRAWN（不得进入论文）",
+      "reason": "unconditional strong-consensus support share：分母含裁判分歧，混合评价不确定性与知识质量",
+      "kept_only_in": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json → diagnostic_unconditional_shares"
+    }
+  ],
+  "wording_rules": [
+    "69.18% 一律称「按最终层构成后分层校正」，不得称「设计加权/design-weighted」。",
+    "99.28% 必须带 965/972，禁止写作「99.28%（n=4,427）」。",
+    "32.09% / 42.86% 属强共识覆盖率，不得表述为知识质量或错误率。",
+    "INSUFFICIENT（不足证据）单列，不得并入负向率。",
+    "门外 0.66% 的「设计型 95%CI」称谓保留（该审计分层权重已知）。",
+    "跨阶段差值（+30.10pp / −28.76pp）引用时须同时给出两行各自 CI；不得由 CI 相减构造新 CI。"
+  ],
+  "coverage_gap_closed": {
+    "issue": "v3_1 发布包 dist/SHA256SUMS.txt 共 18 条，未覆盖 release_final/experiments/quality_audit/ 下的 SAMPLE_KEY.json、两份 JUDGE verdicts、AUDIT_RESULTS.json（即论文权威来源 #4 的原始判定），而 AUDIT_RESULTS.json 在 2026-09-17 12:15 被追加过 detail 字段（patched_at）。",
+    "action": "本叠加层以 manifests/CASCADE_INPUT_HASHES.json 对这 5 个文件补哈希锁定；v3_1 未被改动。",
+    "inputs": {
+      "release_db": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a",
+      "final_tiering": "a9b1a60f64531f788b1eae5451f923937c1bf5df1d36acf4d4acb52fd13aff97",
+      "sample_key": "61c89ee1174ed63c30fdefbda6ca99295e0158d3c8f1aa17f27695c6120af556",
+      "judge_a": "3870616705794570b243d5647ecfffda9d5e71513da65c86df2e35de1a4f3db5",
+      "judge_b": "d3b86a80331681dc122d4ef51de076f9d61267a286cee660db3b0d0ea33975d2",
+      "audit_results": "dccb22f1477c07d07f8e6e586557e30520f2f3cc35c06f4a3d3b2fb6890781f3",
+      "outside_gate": "ffd341ca32b69065e04b204b0b459e528e03c169f9d71fced932087b089814fd"
+    },
+    "already_covered_by_official_manifest": {
+      "release_db": true,
+      "FINAL_TIERING.csv": true
+    }
+  },
+  "artifacts": {
+    "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/analyze_cascaded_stages.py": {
+      "bytes": 19130,
+      "sha256": "df89ebf2c30b3269ed6190b96b9eed53b9852606345cd07fe91494a264f5be5b"
+    },
+    "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json": {
+      "bytes": 5072,
+      "sha256": "606533eec043d02738991010d65caefa7412088cf0df2f5d70b92b99046d38d8"
+    },
+    "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.csv": {
+      "bytes": 646,
+      "sha256": "aca9461ff3f732cfd1adf0c368d79d9df7c9d8222ae46ea7c0d1ff513d7942c1"
+    },
+    "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_REPORT.md": {
+      "bytes": 4453,
+      "sha256": "1b75f21552e03b122d1fecdae5063c61fe7ba412d351692f1722ded392463712"
+    },
+    "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CONSENSUS_RECONCILIATION.md": {
+      "bytes": 1844,
+      "sha256": "bab45835a8c14fa639ae7f56e41a399450609f398211e30303d6b332d7a9d45b"
+    },
+    "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/pre_gate_stratified_bootstrap_replicates.json": {
+      "bytes": 606413,
+      "sha256": "f41a9acf17359baa2d9107cf8d70fa1381b6562d9c27b3da03a7e26fe875f513"
+    },
+    "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/fig_cascaded_stage.py": {
+      "bytes": 2181,
+      "sha256": "fd88ed5099935c4b3f51a4d81a794a84b400abb7b373d6bd360292e720065958"
+    },
+    "submission_work/final_submission_v3_2/audit/CASCADED_ADMISSION_EVIDENCE_MAP.md": {
+      "bytes": 3686,
+      "sha256": "2d91d10c81ebdc4e8597f0598b1487b685a3c056f3ae4db22ea23b9dfe131db5"
+    },
+    "submission_work/final_submission_v3_2/figures/fig_cascaded_admission_stage_effect.png": {
+      "bytes": 136987,
+      "sha256": "620a1e4fe46a9360f0b8fa3af4ce7ae3d4a4efa1bef8a78799053dac42404477"
+    },
+    "submission_work/final_submission_v3_2/figures/fig_cascaded_admission_stage_effect.pdf": {
+      "bytes": 65244,
+      "sha256": "ded562e21b2125058b486afab62f9bc81e245530d8c3d5235a4271eea1babd2e"
+    },
+    "submission_work/final_submission_v3_2/manuscript/论文正文.md": {
+      "bytes": 57904,
+      "sha256": "209d47fb49e075a430646d69adbc81435fe1f5040b8b8ba7f849ab7865c7b486"
+    },
+    "submission_work/final_submission_v3_1/release_final/dist/SHA256SUMS.txt": {
+      "bytes": 1968,
+      "sha256": "388bead1b899a4d2ea105884e8c0cd43a34df4dab0d0f6593a8844240e6f20ba"
+    },
+    "submission_work/final_submission_v3_2/CHANGELOG.md": {
+      "bytes": 13250,
+      "sha256": "9630ca399595b458f71492b8f42090fd1235287f8781f06b5634679fef6aecc8"
+    },
+    "README.md": {
+      "bytes": 4570,
+      "sha256": "d83a58963438bb4618dbe72516ce4083a200750b485be9f9e4bed9da40f45835"
+    },
+    "metadata/CURRENT_RELEASE.json": {
+      "bytes": 4900,
+      "sha256": "705c909ddc3f253c192ef885b107d691b96283353755df78faaaa2f11e275ec1"
+    }
+  },
+  "verification": {
+    "script": "verify_release_v3_2.py",
+    "run_at": "2026-09-24T19:59:32.016464+08:00",
+    "checks": 46,
+    "result": "ALL PASS",
+    "report": "verification/VERIFY_REPORT.json",
+    "bootstrap_replicates_bit_exact": true
+  }
+}

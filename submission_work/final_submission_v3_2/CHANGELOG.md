@@ -94,3 +94,77 @@ supported_consensus_n / consensus_n（FULLY+PARTIAL）；负向率与不足率�
   二者在级联过程中分别控制结构语义条件与证据支持条件。」
 - 门外 0.66% 的「设计型 95%CI」称谓保留（该审计分层权重已知，术语准确）。
 - 数字本身零变动。
+
+## 七、2026-09-24 级联结果并入发布层（新增 `release_final_v3_2/` 叠加层）
+
+因 `final_submission_v3_1/` 为已锁定发布包（`RELEASE_LOCK.json` locked=true），
+级联结果不写回 v3_1，改为新建 **v3_2 发布叠加层**：
+`submission_work/final_submission_v3_2/release_final_v3_2/`
+（README_FIRST、AUTHORITATIVE_RESULTS_v3_2、FINAL_NUMBERS_V3_2.json、CASCADE_INPUT_HASHES.json、
+verify_release_v3_2.py、build_overlay_manifest.py、verification/VERIFY_REPORT.json、SHA256SUMS.txt）。
+
+- **独立复算全部通过**：`verify_release_v3_2.py` 46 项检查 ALL PASS（约 23 秒，0 次模型调用）。
+  从 4,427 条双裁判判定重算的逐层 c/s/neg/ins、后分层比率点估计、
+  以及分层 bootstrap（seed=20260916，B=10,000）的**重抽样序列与冻结 replicates 逐位一致**，
+  三项 CI 完全相同。v3_1 层无任何字节改动。
+- **校正 `354/639` → `354/621`**：`audit/CASCADED_ADMISSION_EVIDENCE_MAP.md` 的分母笔误
+  （621 = CTX 350 + UNRES 271；639 会得 55.40%，与同句 57.00% 矛盾）。
+  RESULTS.json 与论文正文原用 621，**正文数字零变动**。
+- **补全 §5 估计量标注**：正文（2之二）段 69.18% 首次出现处补「后分层校正的」，
+  使正文 5 处 69.18% 全部就近标注，并把该规则固化为 D 段硬检查。
+- **登记门外精确值**：冻结审计 `weighted_point = 0.6679%`、CI [0.004029, 0.009675]、
+  总体 311,992。正文 0.66% 系向下截断（偏保守）；叠加层清单取精确值。
+- **补校验缺口**：v3_1 `dist/SHA256SUMS.txt`（18 条）未覆盖 `quality_audit/` 的 SAMPLE_KEY、
+  两份裁判判定与 AUDIT_RESULTS.json（后者含 `patched_at 2026-09-17`，晚于 09-14 锁定）；
+  叠加层以 `CASCADE_INPUT_HASHES.json` 对这 5 个文件补哈希锁并逐次比对漂移。
+- **哈希事实实测更正**：发布库 `020d490533a9a4e4…`（与 SHA256SUMS 第 2 条、FINAL_NUMBERS、
+  RELEASE_LOCK 一致）；源库 `12cbf5fae3bedebc…`（与 FINAL_DB_MANIFEST 一致）。
+  两库为不同文件；此前口头汇报中的「4a7b383f（两份一致）」在全库检索中不存在，予以更正。
+- **权威来源编号更正**：v3_1 `AUTHORITATIVE_RESULTS.md` 列的是**六个**来源（此前汇报误称「七个」）；
+  叠加层增补续接为 #7、#8。
+- **入口接线**：仓库 `README.md` 权威入口新增第 6 条（指向 `release_final_v3_2/`）；
+  `metadata/CURRENT_RELEASE.json` 新增 `cascade_overlay_v3_2` 段（清单/锁/校验命令/7 项头部数字）。
+  这三份文件已纳入叠加层产物哈希跟踪。
+- **已知副作用**：周期性确认时运行的 `replay_all.py`（六项 ALL PASS，9.4s）会就地重写
+  v3_1 `release_final/audit/` 下它自己的 4 个回放产物，仅 `generated_at` 变化、结果字段逐位相同
+  （`identical: true`、`field_diff_total: 0`、112,158 行、checkpoint `9fda91ca…` 不变）；
+  这 4 个文件不在官方 SHA256SUMS 内但在 repro zip 内，故解包版与磁盘版仅时间戳字段不同。
+  本层锁定的 5 个权威输入未受影响（回放后复跑校验 A 段仍 PASS）。
+- **待定项（未擅改）**：方法名「级联式准入」在正文仅 1 处（§2 定义处），题名/关键词/§3/§4.5/表5/摘要/结论
+  共 10 处仍作「级联准入」；统一将牵动 README 标题、`CURRENT_RELEASE.json` 与已打包 EXE/zip 元数据，
+  属出版决策，已登记于 `AUTHORITATIVE_RESULTS_v3_2.md` 禁止表述第 9 条待作者定夺。
+
+
+
+## 八、2026-09-24 baseline 与消融实验重跑（新增 `experiments/11_baseline_ablation_repro/`）
+
+按指令"重跑 baseline 和消融实验"完成，报告见该目录 `BASELINE_ABLATION_RERUN_REPORT.md`。
+全程 **0 次模型调用、0 次网络请求**。
+
+- **重跑对象**：论文表 1（n=152 五方法分级证据）、表 2（n=203 选择性组件消融）、
+  表 3（全库 424,150 条结构准入消融）。产出代码只存在于 v2 世代，故把
+  `run_baseline_experiments.py` / `run_component_ablations.py` 复制到本实验目录，
+  **仅改输入根路径两处**（副本行号见报告第一节），计算逻辑零改动；
+  输出全部落在新目录，v2 目录与 `D:/REDCULTUREDATA` 外部输入经 `find -newermt` 复查零写入。
+- **前置校验**：`FROZEN_EVALUATION_MANIFEST.json`（2026-07-30）登记的六个受保护输入
+  （两个 v2 库、分类器库、分类器 joblib、AI_GOLD、controlled samples）今日实测 sha256 全部一致；
+  消融脚本自身的 before/after 哈希校验亦为 unchanged。
+- **结果**：`compare_rerun_vs_paper.py` 27 项 ALL PASS。表 1 重跑与 v2 冻结
+  `BASELINE_METRICS.csv` 逐字段 0 差异（63 行）；表 2/表 3 与 `ABLATION_RUNS.csv`
+  174 行超容差差异 0，仅 2 处 Wilson CI 末位浮点（相对偏差 2.54e-16）已在
+  `PAPER_RERUN_COMPARISON.json → float_ulp_differences_vs_frozen_v2` 单列披露。
+  论文对应值（132/151、95/152、115/116、131/152；72/68/4、132/121/11、203/179/24；
+  43,945、24,005、3,412、44、112、208、27,475）全部复现，**论文正文数字零改动**。
+- **新发现（正文缺陷，未擅自修）**：`manuscript/论文正文.md` 的 `[表格 1/2/3/4]` 块都只有
+  表头 + 2 行 + `| … |`，而正文称"表1汇报五种方法"，实际应为 5/4/7/5 行；
+  全库无脚本消费这些标记、亦无 v3_2 世代 Word 交付物。另有 `[表格 5]` 标记缺失（表体完整）。
+  已用 `fill_manuscript_tables.py` 从重跑 CSV 现取现算生成补全行（默认预览模式，
+  需 `--write` 才写入正文；表 3"主要作用"列为新写描述，需作者定稿）。
+- **溯源结论**：表 1/2/3 数字不在 v3_1 六个权威来源、也不在 `FINAL_NUMBERS.json` 31 项 metrics 内，
+  属 v2 层证据；v3_1 的 `experiments/03_true_ablation|04_relation_semantic|06_identity_revalidation`
+  为空占位目录（全库 0 次引用），其自身消融为另一套口径（S0–S10、IMCR strong、test n=62/276），
+  与表 2 的变体名与样本量均不对应。
+- **未重跑部分**：`run_budget_curves.py`、`run_routing_model_agnostic.py`、`run_predictor_upgrade.py`、
+  `run_cross_source_robustness.py`、`run_frozen_test_eval.py` 需 LM Studio 在线
+  （当前 1234/1235 无监听）；其中 `run_frozen_test_eval.py` 自述为"方法冻结后唯一一次 TEST 正式评价"，
+  二次运行违反其协议，未执行。

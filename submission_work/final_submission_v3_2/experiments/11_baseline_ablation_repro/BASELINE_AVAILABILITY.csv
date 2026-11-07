@@ -1,0 +1,8 @@
+method_id,method_name,availability,evidence_class,comparison_tier,overlap_status,primary_comparison_eligible,reason
+M1_rule_only,Rule-only,available,actual_run,shared-channel diagnostic,shared_gold_rule_channel,False,Production deterministic rules rerun on frozen test inputs; the AI gold shares a rule channel.
+M2_classifier_only,Classifier-only,available,actual_run,held-out supervised proxy benchmark,gold_supervised_disjoint_test,True,"Task-specific classical TF-IDF logistic classifiers fitted on train/dev AI-gold rows and evaluated on disjoint test rows; this is a supervised proxy benchmark, not label-independent factual accuracy."
+M3_live_llm_only,LLM-only (live),not_available,not_available,not available,none,False,No live LLM inference was authorized or executed in this run.
+M3_cached_llm_replay,LLM-only (cached replay),available,cached_model_output,shared-channel diagnostic,shared_gold_llm_channel,False,Historical llm_predictions.csv is replayed; the same predictions contributed directly to AI gold admission.
+M4_rule_plus_cached_llm,Rule + cached LLM agreement,available,cached_model_output,shared-channel diagnostic,shared_gold_rule_and_llm_channels,False,Agreement-only replay uses the two channels that formed several AI-gold task labels; it is not independent accuracy evidence.
+M5_no_global_closure,Rule + Classifier + LLM without global closure,not_available,not_available,not available,none,False,No frozen per-sample outputs or runnable pre-closure harness exist for this configuration.
+M6_full_v2_replay,Full V2 framework (frozen replay),available,deterministic_replay,frozen full-method replay,shared_system_signal,False,Frozen V2 sample labels and stored confidence are replayed; this is not a fresh end-to-end run.

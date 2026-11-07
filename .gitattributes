@@ -2,3 +2,10 @@
 data/graph_export/*.csv filter=lfs diff=lfs merge=lfs -text
 data/source_data/master_data.csv filter=lfs diff=lfs merge=lfs -text
 submission_work/final_submission_v3/experiments/12_provenance_validation/PROVENANCE_GATE_STRESS_TEST.csv filter=lfs diff=lfs merge=lfs -text
+
+# Revision files are byte-preserved copies; do not rewrite their line endings.
+manuscript/revisions/** -text
+submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/** -text
+submission_work/final_submission_v3_2/release_final_v3_2/** -text
+submission_work/final_submission_v3_2/CHANGELOG.md -text
+scripts/*.py text eol=lf

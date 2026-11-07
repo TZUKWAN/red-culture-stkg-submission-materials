@@ -1,0 +1,11 @@
+﻿issue_id,source_location,severity,fact,evidence,root_cause,action,verification,status,blocking
+I001,指定主稿路径,S0,论文_全文深度修订稿(2).docx不存在,Test-Path false；C:/Users/lauze与D:/递归检索无结果；version_baseline.md,用户指定输入未落地到可读文件,不冒充其它稿；以round3建立临时审阅基线并列为外部阻断,重新检索并记录；最终稿需在目标文件出现后重跑,外部阻断,是
+I002,版本/数据基线,S1,CURRENT_RELEASE v2数据库与投稿包v3_1 release_final数据库哈希不同,version_baseline.md/json；CURRENT_RELEASE.json；RELEASE_LOCK.json,历史数据链分叉,统计主线锁定v3_1 release_final；V2仅用于解释结构前置字段，不混合计数,统计主线v3_1并写入facts_lock_v3_1；未混合V2计数,已关闭,否
+I003,引言/第二章,S1,研究问题仍以流程介绍开头，规范断言与完整命题问题承接不足,round3 paragraphs 18-37；总控模块20-21,前轮以段落补丁为主,重写引言四步问题链和2.1-2.3定位,round4正文p18-37重写并渲染核验,已关闭,否
+I004,4.1/4.3,S1,全库生产、局部类型/作用域、证据审计配置需统一叙述,FULL_ADMISSION_CLOSURE_REPORT、SUMMARY.json、MODEL_MANIFEST,配置说明分散在不同轮次,重排4.1并在4.3说明真实局部配置,4.1/4.3实际配置段落重排且已核对,已关闭,否
+I005,统计,S1,后分层总体、共识覆盖、条件支持和区间需从v3_1权威结果复算,FINAL_NUMBERS、AUDIT_RESULTS、OUTSIDE_GATE_AUDIT_RESULTS,旧稿可能混合全库/门内总体,复算并只采用v3_1最终口径,统计守恒/分母/权重写入实验与复算说明,已关闭,否
+I006,上饶案例/表6,S1,阶段状态已核清但表头“原核验结果”不区分证据门结果,T45、FINAL_TIERING_REBUILT、V2 DB、round3 table6,生产结构状态与证据门状态概念混用,表6改为证据门五档结果；正文保留阶段语义,表6改为证据门五档结果；上饶阶段关系已写入,已关闭,否
+I007,智取宜章案例,S1,候选年份1927是否源自候选字段需核实,STRICT_ALIGNMENT IFACT-1a4e...；EVIDENCE_RECOVERY；T45,案例段可能混用审计说明与候选字段,明确1927来自STRICT_ALIGNMENT time_raw，1928来自证据引文；不写成外部史实裁决,候选字段和证据引文抽取JSON已生成,已关闭,否
+I008,图9,S1,旧历史图件与正文曾不一致,T34严格层边表；round3 figure source,旧图/旧正文不同源,保留T34同源12条边并打包PNG/PDF/SVG,图9同源边回归及独立图件包已生成,已关闭,否
+I009,引用,S2,引用已覆盖但部分段落仍有多组范围引用，需论断级用途核对,round3正文与47条书目,前轮为消除未引用而补挂编号,重写相关研究引用映射，必要时删除不用条目,正文47条均有用途；正式出版信息仍待核对,外部确认,否
+I010,中英文/公式/声明,S2,英文局限、公式编号已修复；作者声明仍需真实确认,round3 render；XML；作者信息缺失,作者授权材料不在工作区,保留最小作者确认清单，不虚填,作者/数据声明与目标主稿缺失,外部阻断,是

@@ -1,0 +1,10 @@
+﻿claim_id,claim,source,value_or_definition,scope_or_condition,status,evidence
+Q1,正文中心问题,论文正文p18-20,实体/关系/时空规范化后的完整断言是否仍获史料支持,正文重写；结构和证据准入链,已写入,round4 paragraph rewrite
+Q2,全库数据规模,FINAL_NUMBERS.json,"152,979实体；424,150断言；13省983册",release_final v3_1 DB 020d...,已核对,facts_lock_v3_1.json
+Q3,门内后分层,FINAL_NUMBERS.json / FULL_ADMISSION_CLOSURE_REPORT,"A0=112,158；门内31,067/31,282/49,809","门内权重，不使用全库299,329/93,754",已写入,round4 page 10
+Q4,前置条件支持,AUDIT_RESULTS/FINAL_NUMBERS,69.18% CI 66.51-71.96；负向29.17% CI 26.39-31.81,强共识条件，后分层,已核对,图4/表2
+Q5,最终严格支持,AUDIT_RESULTS/RELEASE_LOCK,965/972=99.28%；负向4/972=0.41%,强共识条件，不是全库准确率,已核对,图5/表2
+Q6,门外机会,OUTSIDE_GATE_AUDIT_RESULTS,31/4957样本强共识；加权0.006679 CI 0.004029-0.009675,"门外311,992设计型估计",已核对,facts_lock_v3_1.json
+Q7,上饶状态,candidate_facts + V2 + FINAL_TIERING_REBUILT + T45,结构前置strict_semantic；证据门PARTIAL→CONTEXTUAL,阶段转换，不是版本冲突,已写入,round4 page 16
+Q8,智取宜章时间,STRICT_ALIGNMENT/EVIDENCE_RECOVERY/T45,候选字段1927；证据1928-01-12；矛盾→未决,候选限定与证据时间分开,已写入,zhiqu_yizhang_* JSON
+Q9,图9边集合,T34_严格层边表31067.csv,12条同源边；组织/领导/参与；主体→事件,最终图件和正文同源,已修复,figure package manifest

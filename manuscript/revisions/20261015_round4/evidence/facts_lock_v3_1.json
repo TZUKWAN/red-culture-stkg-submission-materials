@@ -1,0 +1,542 @@
+{
+  "release": "final_submission_v3_1/release_final",
+  "release_lock": {
+    "locked": true,
+    "locked_at": "2026-09-14T06:48:02.853318+08:00",
+    "tag": "stkg-final-reproducible-2026",
+    "git_head": "0f1453858a7067157a6e855bbb7f8fc843be338d",
+    "final_db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a",
+    "package_sha256": "see SHA256SUMS.txt (self-reference excluded by design)",
+    "final_numbers": {
+      "total_assertions": 424150,
+      "gate_universe": 112158,
+      "gate_strict": 31067,
+      "gate_contextual": 31282,
+      "gate_unresolved": 49809,
+      "pending_hold": 0,
+      "full_db_strict": 31067,
+      "full_db_contextual": 299329,
+      "full_db_unresolved": 93754
+    },
+    "independent_audit": {
+      "decision": "PASS",
+      "n": 4427,
+      "strict_support_precision_strong_consensus": 0.9928,
+      "false_positive_rate": 0.0041,
+      "cohens_kappa": 0.1838,
+      "judges": [
+        "gpt-oss-20b",
+        "qwen/qwen3-8b"
+      ],
+      "production_model": "qwen3.5-4b"
+    },
+    "replay_all_pass": true
+  },
+  "selected_metrics": {
+    "total_entities": {
+      "metric": "total_entities",
+      "value": 152979,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "规范化实体总数",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_entities",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    "total_assertions": {
+      "metric": "total_assertions",
+      "value": 424150,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "全库断言总数（完整 424k 宇宙）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_assertions",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    "gate_universe_old_strict": {
+      "metric": "gate_universe_old_strict",
+      "value": 112158,
+      "unit": "count",
+      "universe": "old_strict_universe",
+      "definition": "旧 strict 重分层宇宙（本轮证据语义门的定义域，112,158，不是全库）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM evidence_gate_tier",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    "gate_strict": {
+      "metric": "gate_strict",
+      "value": 31067,
+      "unit": "count",
+      "universe": "old_strict_universe",
+      "definition": "证据门最终 STRICT（MEASURED，gate 宇宙 112,158 内）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM evidence_gate_tier WHERE final_tier='STRICT'",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    "gate_contextual": {
+      "metric": "gate_contextual",
+      "value": 31282,
+      "unit": "count",
+      "universe": "old_strict_universe",
+      "definition": "证据门最终 CONTEXTUAL（MEASURED，gate 宇宙 112,158 内）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM evidence_gate_tier WHERE final_tier='CONTEXTUAL'",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    "gate_unresolved": {
+      "metric": "gate_unresolved",
+      "value": 49809,
+      "unit": "count",
+      "universe": "old_strict_universe",
+      "definition": "证据门最终 UNRESOLVED（MEASURED，gate 宇宙 112,158 内）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM evidence_gate_tier WHERE final_tier='UNRESOLVED'",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    "full_db_strict_semantic": {
+      "metric": "full_db_strict_semantic",
+      "value": 31067,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "全库 research_tier=strict_semantic（论文全库口径）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_assertions WHERE research_tier='strict_semantic'",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    "full_db_contextual": {
+      "metric": "full_db_contextual",
+      "value": 299329,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "全库 research_tier=contextual（论文全库口径）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_assertions WHERE research_tier='contextual'",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    "full_db_unresolved": {
+      "metric": "full_db_unresolved",
+      "value": 93754,
+      "unit": "count",
+      "universe": "final_db",
+      "definition": "全库 research_tier=unresolved（论文全库口径）",
+      "source": "FINAL DB",
+      "sql_or_script": "SELECT COUNT(*) FROM research_assertions WHERE research_tier='unresolved'",
+      "status": "MEASURED",
+      "db_sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    }
+  },
+  "final_tiering_summary": {
+    "universe": {
+      "n_strict_assertions": 112158,
+      "buckets": {
+        "aligned": 44025,
+        "no_evidence": 61997,
+        "mismatch_with_evidence": 6136
+      },
+      "recovery_classes": {
+        "B": 16705,
+        "C": 40345,
+        "D": 2106,
+        "A": 2841
+      }
+    },
+    "final_counts_full_csv": {
+      "UNRESOLVED": 49809,
+      "CONTEXTUAL": 31282,
+      "STRICT": 31067
+    },
+    "three_concepts": {
+      "A_lineage_completeness": {
+        "definition": "strict 断言中有原生溯源指针（provenance evidence_ids≥1，bucket ∈ aligned/mismatch_with_evidence）的占比",
+        "n": 50161,
+        "rate": 0.4472
+      },
+      "B_evidence_localization_rate": {
+        "definition": "证据文本可定位（direct 指针或恢复类 A/B/C；仅 recovery_D 不可定位）的占比",
+        "n": 110052,
+        "rate": 0.9812
+      },
+      "C_semantic_support_rate_measured": {
+        "definition": "已测（rule/llm）且可定位断言中，证据在语义上支持（STRICT = FULLY / 安全规则 / PARTIAL-strict-predicate）的占比",
+        "n_measured_localizable": 110052,
+        "n_supported": 31067,
+        "rate": 0.2823
+      }
+    },
+    "production_model": "qwen3.5-4b",
+    "predicate_policy_table": {
+      "led": {
+        "n_full": 208,
+        "n_partial": 148,
+        "n_full_partial": 356,
+        "full_share": 0.5843,
+        "partial_map_to": "contextual"
+      },
+      "participated_in": {
+        "n_full": 153,
+        "n_partial": 111,
+        "n_full_partial": 264,
+        "full_share": 0.5795,
+        "partial_map_to": "contextual"
+      },
+      "active_at": {
+        "n_full": 176,
+        "n_partial": 30,
+        "n_full_partial": 206,
+        "full_share": 0.8544,
+        "partial_map_to": "strict"
+      },
+      "member_of": {
+        "n_full": 67,
+        "n_partial": 57,
+        "n_full_partial": 124,
+        "full_share": 0.5403,
+        "partial_map_to": "contextual"
+      },
+      "held_position_in": {
+        "n_full": 83,
+        "n_partial": 37,
+        "n_full_partial": 120,
+        "full_share": 0.6917,
+        "partial_map_to": "contextual"
+      },
+      "organized": {
+        "n_full": 68,
+        "n_partial": 49,
+        "n_full_partial": 117,
+        "full_share": 0.5812,
+        "partial_map_to": "contextual"
+      },
+      "occurred_at": {
+        "n_full": 59,
+        "n_partial": 32,
+        "n_full_partial": 91,
+        "full_share": 0.6484,
+        "partial_map_to": "contextual"
+      },
+      "influenced": {
+        "n_full": 30,
+        "n_partial": 17,
+        "n_full_partial": 47,
+        "full_share": 0.6383,
+        "partial_map_to": "contextual"
+      },
+      "has_value_facet": {
+        "n_full": 20,
+        "n_partial": 13,
+        "n_full_partial": 33,
+        "full_share": 0.6061,
+        "partial_map_to": "contextual"
+      },
+      "stationed_at": {
+        "n_full": 20,
+        "n_partial": 11,
+        "n_full_partial": 31,
+        "full_share": 0.6452,
+        "partial_map_to": "contextual"
+      },
+      "worked_at": {
+        "n_full": 24,
+        "n_partial": 5,
+        "n_full_partial": 29,
+        "full_share": 0.8276,
+        "partial_map_to": "strict"
+      },
+      "supported": {
+        "n_full": 21,
+        "n_partial": 4,
+        "n_full_partial": 25,
+        "full_share": 0.84,
+        "partial_map_to": "strict"
+      },
+      "guided": {
+        "n_full": 18,
+        "n_partial": 5,
+        "n_full_partial": 23,
+        "full_share": 0.7826,
+        "partial_map_to": "strict"
+      },
+      "collaborated_with": {
+        "n_full": 17,
+        "n_partial": 6,
+        "n_full_partial": 23,
+        "full_share": 0.7391,
+        "partial_map_to": "strict"
+      },
+      "dispatched": {
+        "n_full": 17,
+        "n_partial": 4,
+        "n_full_partial": 21,
+        "full_share": 0.8095,
+        "partial_map_to": "strict"
+      },
+      "captured": {
+        "n_full": 14,
+        "n_partial": 5,
+        "n_full_partial": 19,
+        "full_share": 0.7368,
+        "partial_map_to": "strict"
+      },
+      "carried_out": {
+        "n_full": 10,
+        "n_partial": 7,
+        "n_full_partial": 17,
+        "full_share": 0.5882,
+        "partial_map_to": "contextual"
+      },
+      "created": {
+        "n_full": 13,
+        "n_partial": 4,
+        "n_full_partial": 17,
+        "full_share": 0.7647,
+        "partial_map_to": "strict"
+      },
+      "commanded": {
+        "n_full": 7,
+        "n_partial": 9,
+        "n_full_partial": 16,
+        "full_share": 0.4375,
+        "partial_map_to": "contextual"
+      },
+      "contacted": {
+        "n_full": 11,
+        "n_partial": 2,
+        "n_full_partial": 13,
+        "full_share": 0.8462,
+        "partial_map_to": "strict"
+      },
+      "opposed": {
+        "n_full": 10,
+        "n_partial": 2,
+        "n_full_partial": 12,
+        "full_share": 0.8333,
+        "partial_map_to": "strict"
+      },
+      "died_at": {
+        "n_full": 10,
+        "n_partial": 1,
+        "n_full_partial": 11,
+        "full_share": 0.9091,
+        "partial_map_to": "strict"
+      },
+      "fought_at": {
+        "n_full": 8,
+        "n_partial": 3,
+        "n_full_partial": 11,
+        "full_share": 0.7273,
+        "partial_map_to": "strict"
+      },
+      "responsible_for": {
+        "n_full": 8,
+        "n_partial": 2,
+        "n_full_partial": 10,
+        "full_share": 0.8,
+        "partial_map_to": "strict"
+      },
+      "introduced": {
+        "n_full": 8,
+        "n_partial": 1,
+        "n_full_partial": 9,
+        "full_share": 0.8889,
+        "partial_map_to": "contextual"
+      },
+      "liberated": {
+        "n_full": 8,
+        "n_partial": 1,
+        "n_full_partial": 9,
+        "full_share": 0.8889,
+        "partial_map_to": "contextual"
+      },
+      "born_at": {
+        "n_full": 8,
+        "n_partial": 0,
+        "n_full_partial": 8,
+        "full_share": 1.0,
+        "partial_map_to": "contextual"
+      },
+      "traveled_to": {
+        "n_full": 6,
+        "n_partial": 2,
+        "n_full_partial": 8,
+        "full_share": 0.75,
+        "partial_map_to": "contextual"
+      },
+      "colleague_of": {
+        "n_full": 5,
+        "n_partial": 3,
+        "n_full_partial": 8,
+        "full_share": 0.625,
+        "partial_map_to": "contextual"
+      },
+      "governed": {
+        "n_full": 5,
+        "n_partial": 3,
+        "n_full_partial": 8,
+        "full_share": 0.625,
+        "partial_map_to": "contextual"
+      },
+      "imprisoned_at": {
+        "n_full": 4,
+        "n_partial": 1,
+        "n_full_partial": 5,
+        "full_share": 0.8,
+        "partial_map_to": "contextual"
+      },
+      "met_with": {
+        "n_full": 3,
+        "n_partial": 2,
+        "n_full_partial": 5,
+        "full_share": 0.6,
+        "partial_map_to": "contextual"
+      },
+      "visited": {
+        "n_full": 4,
+        "n_partial": 1,
+        "n_full_partial": 5,
+        "full_share": 0.8,
+        "partial_map_to": "contextual"
+      },
+      "arrested_at": {
+        "n_full": 2,
+        "n_partial": 2,
+        "n_full_partial": 4,
+        "full_share": 0.5,
+        "partial_map_to": "contextual"
+      },
+      "used_artifact": {
+        "n_full": 3,
+        "n_partial": 1,
+        "n_full_partial": 4,
+        "full_share": 0.75,
+        "partial_map_to": "contextual"
+      },
+      "authored": {
+        "n_full": 2,
+        "n_partial": 2,
+        "n_full_partial": 4,
+        "full_share": 0.5,
+        "partial_map_to": "contextual"
+      },
+      "recruited": {
+        "n_full": 4,
+        "n_partial": 0,
+        "n_full_partial": 4,
+        "full_share": 1.0,
+        "partial_map_to": "contextual"
+      },
+      "comrade_of": {
+        "n_full": 2,
+        "n_partial": 2,
+        "n_full_partial": 4,
+        "full_share": 0.5,
+        "partial_map_to": "contextual"
+      },
+      "part_of": {
+        "n_full": 2,
+        "n_partial": 2,
+        "n_full_partial": 4,
+        "full_share": 0.5,
+        "partial_map_to": "contextual"
+      },
+      "mentioned_in": {
+        "n_full": 3,
+        "n_partial": 0,
+        "n_full_partial": 3,
+        "full_share": 1.0,
+        "partial_map_to": "contextual"
+      },
+      "spouse_of": {
+        "n_full": 3,
+        "n_partial": 0,
+        "n_full_partial": 3,
+        "full_share": 1.0,
+        "partial_map_to": "contextual"
+      },
+      "trained": {
+        "n_full": 3,
+        "n_partial": 0,
+        "n_full_partial": 3,
+        "full_share": 1.0,
+        "partial_map_to": "contextual"
+      },
+      "protected": {
+        "n_full": 1,
+        "n_partial": 1,
+        "n_full_partial": 2,
+        "full_share": 0.5,
+        "partial_map_to": "contextual"
+      },
+      "family_of": {
+        "n_full": 1,
+        "n_partial": 1,
+        "n_full_partial": 2,
+        "full_share": 0.5,
+        "partial_map_to": "contextual"
+      },
+      "reported_to": {
+        "n_full": 2,
+        "n_partial": 0,
+        "n_full_partial": 2,
+        "full_share": 1.0,
+        "partial_map_to": "contextual"
+      },
+      "located_in": {
+        "n_full": 2,
+        "n_partial": 0,
+        "n_full_partial": 2,
+        "full_share": 1.0,
+        "partial_map_to": "contextual"
+      },
+      "implemented": {
+        "n_full": 1,
+        "n_partial": 1,
+        "n_full_partial": 2,
+        "full_share": 0.5,
+        "partial_map_to": "contextual"
+      },
+      "appointed": {
+        "n_full": 1,
+        "n_partial": 1,
+        "n_full_partial": 2,
+        "full_share": 0.5,
+        "partial_map_to": "contextual"
+      },
+      "rescued": {
+        "n_full": 1,
+        "n_partial": 0,
+        "n_full_partial": 1,
+        "full_share": 1.0,
+        "partial_map_to": "contextual"
+      },
+      "active_during": {
+        "n_full": 0,
+        "n_partial": 1,
+        "n_full_partial": 1,
+        "full_share": 0.0,
+        "partial_map_to": "contextual"
+      },
+      "transmitted_by": {
+        "n_full": 1,
+        "n_partial": 0,
+        "n_full_partial": 1,
+        "full_share": 1.0,
+        "partial_map_to": "contextual"
+      },
+      "edited": {
+        "n_full": 1,
+        "n_partial": 0,
+        "n_full_partial": 1,
+        "full_share": 1.0,
+        "partial_map_to": "contextual"
+      }
+    }
+  }
+}

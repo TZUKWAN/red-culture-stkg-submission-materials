@@ -1,0 +1,41 @@
+{
+  "locked_at": "2026-09-24T19:45:03.721873+08:00",
+  "note": "v3_1 发布包为冻结只读层；本锁用于日后确认叠加层引用的输入未被改动。",
+  "inputs": {
+    "release_db": {
+      "path": "submission_work/final_submission_v3_1/release_final/data/red_culture_stkg_final.sqlite",
+      "bytes": 3363414016,
+      "sha256": "020d490533a9a4e4d1eaafe0dc5c9c5f63959f798f8d8b254a9494cb3146875a"
+    },
+    "final_tiering": {
+      "path": "submission_work/final_submission_v3_1/experiments/07_provenance_semantic_gate/FINAL_TIERING.csv",
+      "bytes": 9074768,
+      "sha256": "a9b1a60f64531f788b1eae5451f923937c1bf5df1d36acf4d4acb52fd13aff97"
+    },
+    "sample_key": {
+      "path": "submission_work/final_submission_v3_1/release_final/experiments/quality_audit/SAMPLE_KEY.json",
+      "bytes": 886519,
+      "sha256": "61c89ee1174ed63c30fdefbda6ca99295e0158d3c8f1aa17f27695c6120af556"
+    },
+    "judge_a": {
+      "path": "submission_work/final_submission_v3_1/release_final/experiments/quality_audit/JUDGE_gpt_oss_20b_VERDICTS.jsonl",
+      "bytes": 1928080,
+      "sha256": "3870616705794570b243d5647ecfffda9d5e71513da65c86df2e35de1a4f3db5"
+    },
+    "judge_b": {
+      "path": "submission_work/final_submission_v3_1/release_final/experiments/quality_audit/JUDGE_qwen_qwen3_8b_VERDICTS.jsonl",
+      "bytes": 2300750,
+      "sha256": "d3b86a80331681dc122d4ef51de076f9d61267a286cee660db3b0d0ea33975d2"
+    },
+    "audit_results": {
+      "path": "submission_work/final_submission_v3_1/release_final/experiments/quality_audit/AUDIT_RESULTS.json",
+      "bytes": 3560,
+      "sha256": "dccb22f1477c07d07f8e6e586557e30520f2f3cc35c06f4a3d3b2fb6890781f3"
+    },
+    "outside_gate": {
+      "path": "submission_work/final_submission_v3_1/experiments/10_full_universe_admission_closure/OUTSIDE_GATE_AUDIT_RESULTS.json",
+      "bytes": 4909,
+      "sha256": "ffd341ca32b69065e04b204b0b459e528e03c169f9d71fced932087b089814fd"
+    }
+  }
+}

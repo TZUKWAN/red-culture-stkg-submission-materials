@@ -1,0 +1,38 @@
+[
+  {
+    "fact_id": "IFACT-02509ed8b47e87c4f76b66e9",
+    "recovery_class": "B",
+    "match_mode": "lexical_both",
+    "match_strength": "same_row",
+    "recovered_evidence_ids": "EVD-ef0aa926edf1d46714361a7c;EVD-893d5587d69f9b9417c2eb1c;EVD-8046cb919c29b0495f4576e0;EVD-2f2feb127906e1c609a176a4;EVD-0afd08aedcd8969f1c62dbcf",
+    "recovered_source_titles": "湘南起义文献集_14468654 ; 湘南起义在宜章_11441707 ; 中国共产党编年史1928年卷 ; 血染河湟",
+    "evidence_text_preview": "智取宜章城的当晚，朱德、陈毅等领导人员与在宜章县参政会、高静山、杨子达、毛科文和连夜赶来的各地党组织负责人在女子职业学校召开联席会议，部署在各区、乡举行暴动，扩大起义成果。",
+    "n_recovered": "5",
+    "has_native_lineage": "1",
+    "subject_name": "陈毅",
+    "subject_type": "Person",
+    "object_name": "智取宜章城",
+    "object_type": "Event",
+    "predicate": "participated_in",
+    "time_raw": "1928年1月12日",
+    "place_raw": ""
+  },
+  {
+    "fact_id": "IFACT-1a4e95899baa431cc7db435b",
+    "recovery_class": "B",
+    "match_mode": "lexical_both",
+    "match_strength": "same_row",
+    "recovered_evidence_ids": "EVD-e02d891294b245745f5b8966;EVD-752f5bf6b731669f74112fb9;EVD-23b0eee70df39cd9321441e2;EVD-25b296ded9bcd325d3616461;EVD-ef0aa926edf1d46714361a7c",
+    "recovered_source_titles": "湘南起义在宜章_11441707 ; 中共党史人物传  第51卷 ; 湘南起义文献集_14468654",
+    "evidence_text_preview": "轰轰烈烈的宜章年关起义，从朱德、陈毅率领一部分南昌起义军于一九二八年元月十二日智取宜章那天起，至一九二八年四月三日，宜章党政军撤出宜章、向井冈山转移为止，历时近三个月，圣公坛革命军后方营部则坚持敌后斗争到一九二八年七月，历时六个月。",
+    "n_recovered": "5",
+    "has_native_lineage": "1",
+    "subject_name": "朱德",
+    "subject_type": "Person",
+    "object_name": "智取宜章",
+    "object_type": "Event",
+    "predicate": "participated_in",
+    "time_raw": "1927年",
+    "place_raw": "南昌"
+  }
+]

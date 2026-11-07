@@ -1,0 +1,48 @@
+﻿number,bibliographic_entry,body_use,verification_note
+1,"岳文玉, 曹树金, 赵怡珑. 基于知识图谱的中共党史知识索引设计与实现[J]. 图书馆论坛, 2025, 45(3): 110-119.",used,正文数字引用
+2,"SCHIMMENTI A, PASQUAL V, VITALI F, et al. Knowledge graphs generation from cultural heritage texts: combining LLMs and ontological engineering for scholarly debates[J]. Journal of Documentation, 2026, 82(7): 206-250.",used,正文数字引用
+3,"PAN S, LUO L, WANG Y, et al. Unifying large language models and knowledge graphs: a roadmap[J]. IEEE Transactions on Knowledge and Data Engineering, 2024, 36(7): 3580-3599.",used,正文数字引用
+4,"HENDRICKX K, PERINI L, VAN DER PLAS D, et al. Machine learning with a reject option: a survey[J]. Machine Learning, 2024, 113(5): 3073-3110.",used,正文数字引用
+5,"XUE B, ZOU L. Knowledge graph quality management: a comprehensive survey[J]. IEEE Transactions on Knowledge and Data Engineering, 2023, 35(5): 4969-4988.",used,正文数字引用
+6,"HERSCHEL M, DIESTELKÄMPER R, BEN LAHMAR H. A survey on provenance: what for? What form? What from?[J]. The VLDB Journal, 2017, 26(6): 881-906.",used,正文数字引用
+7,文化和旅游部. 《长江国家文化公园建设保护规划》出台[EB/OL]. (2025-01-10)[2026-08-06]. https://www.mct.gov.cn/wlbphone/wlbydd/xxfb/jiaodianxinwen/202501/t20250110_957787.html.,unused,正文数字引用
+8,"丁怡, 李刚, 魏弋. 红色数字人文：概念内涵、发展现状与建设措施[J]. 图书馆杂志, 2023, 42(7): 94-101.",used,正文数字引用
+9,"陈涛, 刘炜, 单蓉蓉, 等. 知识图谱在数字人文中的应用研究[J]. 中国图书馆学报, 2019, 45(6): 34-49.",used,正文数字引用
+10,"岳文玉,曹树金.基于知识图谱的中国共产党历史知识双层语义索引研究[J/OL].图书馆杂志,1-11[2026-08-06].https://link.cnki.net/urlid/31.1108.G2.20260403.1758.009.",used,正文数字引用
+11,"刘竟, 王萌, 刘桂锋, 等. 数字人文视角下红色文化资源知识图谱构建研究[J]. 图书馆杂志, 2023, 42(7): 102-109, 125.",used,正文数字引用
+12,"张云中, 郭冬, 王亚鸽, 等. 基于知识图谱的红色历史人物知识问答服务框架研究[J]. 图书情报工作, 2021, 65(16): 108-117.",used,正文数字引用
+13,"李肖俊, 赵燕清, 卢恒. 基于本体的山东红色革命人物知识图谱构建方法研究[J]. 新世纪图书馆, 2026(6): 22-31.",used,正文数字引用
+14,"周林兴, 崔云萍. 区域性红色档案资源的协同开发利用探析：以长三角区域为分析对象[J]. 档案学通讯, 2021(5): 4-13.",unused,正文数字引用
+15,"李蔷, 邸焕双. 长江经济带红色档案资源协同开发水平评估及对策研究[J]. 情报科学, 2025, 43(12): 125-131.",unused,正文数字引用
+16,"隋安, 童永生, 高宁. 大语言模型驱动的《活计档》知识图谱构建[J]. 信息资源管理学报, 2026, 16(1): 116-130.",used,正文数字引用
+17,"张卫东, 陈希鹏, 翁慧诠. 基于大模型与LoRA的东北抗联红色人物知识图谱构建方法研究[J]. 情报理论与实践, 2025, 48(8): 187-195.",used,正文数字引用
+18,"崔鸿飞, 王梓洁. 大模型辅助的多源文献知识图谱高质量构建、注释与应用研究[J]. 图书情报工作, 2026, 70(7): 101-117.",used,正文数字引用
+19,"屈王静. 档案语料的语义标注与知识图谱构建：理论、方法与应用研究[J]. 山西档案, 2024(11): 29-31.",used,正文数字引用
+20,"韩镁. 人工智能赋能红色出版知识图谱的构建与应用思考[J]. 中国出版, 2025(11): 39-44.",used,正文数字引用
+21,"汪晨亮, 赵佳乐, 葛星彤, 等. 面向历史文献的大模型图谱增强时空叙事方法研究[J]. 计算机工程.",used,正文数字引用
+22,"李相成, 汪永伟, 李强, 等. ERC-KG：结合大语言模型的领域知识图谱构建方法[J]. 计算机工程与科学.",used,正文数字引用
+23,"ZHAO X, DENG Y, YANG M, et al. A comprehensive survey on relation extraction: recent advances and new frontiers[J]. ACM Computing Surveys, 2024, 56(11): 293:1-293:39.",used,正文数字引用
+24,"ZHOU Z H. A brief introduction to weakly supervised learning[J]. National Science Review, 2018, 5(1): 44-53.",used,正文数字引用
+25,"ABDAR M, POURPANAH F, HUSSAIN S, et al. A review of uncertainty quantification in deep learning: techniques, applications and challenges[J]. Information Fusion, 2021, 76: 243-297.",used,正文数字引用
+26,"GAWLIKOWSKI J, TASSI C R N, ALI M, et al. A survey of uncertainty in deep neural networks[J]. Artificial Intelligence Review, 2023, 56(Suppl 1): 1513-1589.",used,正文数字引用
+27,"CHRISTOPHIDES V, EFTHYMIOU V, PALPANAS T, et al. An overview of end-to-end entity resolution for big data[J]. ACM Computing Surveys, 2021, 53(6): 127:1-127:42.",used,正文数字引用
+28,"ELMAGARMID A K, IPEIROTIS P G, VERYKIOS V S. Duplicate record detection: a survey[J]. IEEE Transactions on Knowledge and Data Engineering, 2007, 19(1): 1-16.",used,正文数字引用
+29,"HOGAN A, BLOMQVIST E, COCHEZ M, et al. Knowledge graphs[J]. ACM Computing Surveys, 2021, 54(4): 71:1-71:37.",used,正文数字引用
+30,"ABU-SALIH B. Domain-specific knowledge graphs: a survey[J]. Journal of Network and Computer Applications, 2021, 185: 103076.",used,正文数字引用
+31,"陆泉, 陈静宇, 陈帅朴, 等. 场景化知识图谱及构建方法[J]. 情报科学, 2024, 42(3): 1-9, 32.",used,正文数字引用
+32,"韩炳, 曲腾腾, 刘颢, 等. 网格时空知识图谱构建及时空知识判定应用[J]. 指挥与控制学报, 2025, 11(3): 253-264.",used,正文数字引用
+33,"马汉达, 费凡. 时空融合的时序知识图谱多跳推理模型[J]. 计算机应用研究, 2026, 43(4): 1013-1020.",used,正文数字引用
+34,"ZHANG Y, KONG X, SHEN Z, et al. A survey on temporal knowledge graph embedding: models and applications[J]. Knowledge-Based Systems, 2024, 304: 112454.",used,正文数字引用
+35,"MOREAU L, CLIFFORD B, FREIRE J, et al. The Open Provenance Model core specification (v1.1)[J]. Future Generation Computer Systems, 2011, 27(6): 743-756.",used,正文数字引用
+36,"BARONCINI S, SARTINI B, VAN ERP M, et al. Is dc enough? A landscape on iconography and iconology statements of knowledge graphs in the semantic web[J]. Journal of Documentation, 2023, 79(7): 115-136.",used,正文数字引用
+37,"LI J, SUN A, HAN J, et al. A Survey on Deep Learning for Named Entity Recognition[J]. IEEE Transactions on Knowledge and Data Engineering, 2022, 34(1): 50-70. DOI: 10.1109/TKDE.2020.2981314.",used,正文数字引用
+38,"SMIRNOVA A, CUDRÉ-MAUROUX P. Relation Extraction Using Distant Supervision: A Survey[J]. ACM Computing Surveys, 2018, 51(5): 106:1-106:35. DOI: 10.1145/3241741.",used,正文数字引用
+39,"NASAR Z, JAFFRY S W, MALIK M K. Named Entity Recognition and Relation Extraction: State-of-the-Art[J]. ACM Computing Surveys, 2021, 54(1): 20:1-20:39. DOI: 10.1145/3445965.",used,正文数字引用
+40,"WANG Y, TONG H, ZHU Z, et al. Nested Named Entity Recognition: A Survey[J]. ACM Transactions on Knowledge Discovery from Data, 2022, 16(6): 108:1-108:29. DOI: 10.1145/3522593.",used,正文数字引用
+41,"HE W, JIANG Z, XIAO T, et al. A Survey on Uncertainty Quantification Methods for Deep Learning[J]. ACM Computing Surveys, 2026, 58(7): 179:1-179:35. DOI: 10.1145/3786319.",used,正文数字引用
+42,"CHRISTEN P. A Survey of Indexing Techniques for Scalable Record Linkage and Deduplication[J]. IEEE Transactions on Knowledge and Data Engineering, 2012, 24(9): 1537-1555. DOI: 10.1109/TKDE.2011.127.",used,正文数字引用
+43,"李佳,李静,刘海砚,陆川伟,陈晓慧,刘俊楠,石文. 地理知识图谱增强与多时空条件约束的轨迹预测[J].测绘学报,2024,53(10):2021-2033.",used,正文数字引用
+44,"赵成原,刘名威,彭鑫,陈碧欢,赵文耘. 深度学习模型知识图谱构建方法[J].计算机应用与软件,2025,42(11):17-24+51.",used,正文数字引用
+45,"JI S, PAN S, CAMBRIA E, et al. A Survey on Knowledge Graphs: Representation, Acquisition, and Applications[J]. IEEE Transactions on Neural Networks and Learning Systems, 2022, 33(2): 494-514. DOI: 10.1109/TNNLS.2021.3070843.",used,正文数字引用
+46,"WANG S, QIU P, ZHU Y, et al. Review, framework, and future perspectives of Geographic Knowledge Graph (GeoKG) quality assessment[J]. Geo-spatial Information Science, 2025, 28(4): 1701-1721. DOI: 10.1080/10095020.2024.2403785.",used,正文数字引用
+47,"付翔, 黄金宇, 秦一凡, 等. 面向强规范领域的知识图谱增强检索与原文校验可信生成方法[J/OL]. 数据分析与知识发现, 2026-09-17. https://link.cnki.net/urlid/10.1478.G2.20260917.1335.008.",used,正文数字引用

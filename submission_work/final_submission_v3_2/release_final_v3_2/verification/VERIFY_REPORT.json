@@ -1,0 +1,312 @@
+{
+  "generated_at": "2026-10-14T02:05:37.462954+08:00",
+  "llm_calls": 0,
+  "read_only_on_v3_1": true,
+  "result": "ALL PASS",
+  "checks": [
+    {
+      "name": "hash:release_db == 020d4905…",
+      "ok": true,
+      "detail": "020d490533a9a4e4"
+    },
+    {
+      "name": "A 冻结输入与已锁哈希一致（v3_1 未被改动）",
+      "ok": true,
+      "detail": "drift=[] untracked=[]"
+    },
+    {
+      "name": "B 判定文件 parse_ok 过滤后为 4,427×2",
+      "ok": true,
+      "detail": "A=4427/unparsable0 B=4427/unparsable0"
+    },
+    {
+      "name": "B 审计样本 4,427 / 强共识 1,593",
+      "ok": true,
+      "detail": "audited=4427 consensus=1593 未预期档位={}"
+    },
+    {
+      "name": "B 逐层 c/s/neg/ins 与发布值一致",
+      "ok": true,
+      "detail": "{\"STRICT\": {\"n_h\": 2268, \"c_h\": 972, \"s_h\": 965, \"neg_h\": 4, \"ins_h\": 3}, \"CONTEXTUAL\": {\"n_h\": 1094, \"c_h\": 350, \"s_h\": 268, \"neg_h\": 66, \"ins_h\": 16}, \"UNRESOLVED\": {\"n_h\": 1065, \"c_h\": 271, \"s_h\": 86, \"neg_h\": 183, \"ins_h\": 2}}"
+    },
+    {
+      "name": "B 层内三分互斥且合计=consensus_n（STRICT）",
+      "ok": true,
+      "detail": "965+4+3=972"
+    },
+    {
+      "name": "B 层内三分互斥且合计=consensus_n（CONTEXTUAL）",
+      "ok": true,
+      "detail": "268+66+16=350"
+    },
+    {
+      "name": "B 层内三分互斥且合计=consensus_n（UNRESOLVED）",
+      "ok": true,
+      "detail": "86+183+2=271"
+    },
+    {
+      "name": "B 三层样本合计=4,427",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "B FINAL_TIERING.csv 层规模 == 31,067/31,282/49,809",
+      "ok": true,
+      "detail": "{\"UNRESOLVED\": 49809, \"CONTEXTUAL\": 31282, \"STRICT\": 31067}"
+    },
+    {
+      "name": "B kept 965/972",
+      "ok": true,
+      "detail": "965/972"
+    },
+    {
+      "name": "B downgraded 354/621 与 249/621（非 639）",
+      "ok": true,
+      "detail": "supported=354/621=0.5700; negative=249/621=0.4010; insufficient=18; 分母 639 将得 0.5540"
+    },
+    {
+      "name": "B 诊断无条件占比分子 1,319/965/354",
+      "ok": true,
+      "detail": "total_supported=1319, downgraded_audited=2159"
+    },
+    {
+      "name": "C 后分层比率点估计 coverage == 0.3209",
+      "ok": true,
+      "detail": "0.3209"
+    },
+    {
+      "name": "C 后分层比率点估计 support == 0.6918",
+      "ok": true,
+      "detail": "0.6918"
+    },
+    {
+      "name": "C 后分层比率点估计 negative == 0.2917",
+      "ok": true,
+      "detail": "0.2917"
+    },
+    {
+      "name": "C 后分层比率点估计 insufficient == 0.0164",
+      "ok": true,
+      "detail": "0.0164"
+    },
+    {
+      "name": "C 分层 bootstrap 95%CI coverage == [0.3059, 0.336]",
+      "ok": true,
+      "detail": "[0.3059, 0.336]"
+    },
+    {
+      "name": "C 分层 bootstrap 95%CI support == [0.6651, 0.7196]",
+      "ok": true,
+      "detail": "[0.6651, 0.7196]"
+    },
+    {
+      "name": "C 分层 bootstrap 95%CI negative == [0.2639, 0.3181]",
+      "ok": true,
+      "detail": "[0.2639, 0.3181]"
+    },
+    {
+      "name": "C seed/iterations 与落盘 replicates 一致",
+      "ok": true,
+      "detail": "seed=20260916 B=10000"
+    },
+    {
+      "name": "C support 重抽样序列与冻结 replicates 一致",
+      "ok": true,
+      "detail": "exact=True meanΔ=0.000e+00"
+    },
+    {
+      "name": "C negative 重抽样序列与冻结 replicates 一致",
+      "ok": true,
+      "detail": "exact=True meanΔ=0.000e+00"
+    },
+    {
+      "name": "C coverage 重抽样序列与冻结 replicates 一致",
+      "ok": true,
+      "detail": "exact=True meanΔ=0.000e+00"
+    },
+    {
+      "name": "D 冻结审计 AUDIT_RESULTS 965/972=0.9928 与 4/972=0.0041 仍可取",
+      "ok": true,
+      "detail": "965/972=0.9928"
+    },
+    {
+      "name": "D 冻结审计 STRICT 层量 == 本次重算（972/965/4/3）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D 门外 0.66% 设计型 CI 与条数区间原样可读（零重算）",
+      "ok": true,
+      "detail": "{\"method\": \"stratified bootstrap (per-layer with replacement, population-weighted mixture)\", \"bootstrap_seed\": 20260916, \"bootstrap_iterations\": 10000, \"layers\""
+    },
+    {
+      "name": "D RESULTS.json 点估计/CI == 本次重算",
+      "ok": true,
+      "detail": "support=0.6918[0.6651, 0.7196]"
+    },
+    {
+      "name": "D RESULTS.json 逐层量 == 本次重算",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D 论文 §4.5/表5/摘要/结论 关键值全部在场且口径为后分层",
+      "ok": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "D 已撤口径未泄漏回正文",
+      "ok": true,
+      "detail": "leak=[]"
+    },
+    {
+      "name": "D 69.18% 从未被肯定式称作『设计加权/design-weighted』",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "D 表注保留『不宣称完整设计加权估计』限定声明",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D 每个 69.18% 提及都就近标注后分层估计量",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "D 证据地图已校正为 354/621（不再出现 639）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "E 清单数字项齐全（14 项）",
+      "ok": true,
+      "detail": "14"
+    },
+    {
+      "name": "E 清单 cascade.pre_gate.coverage == 本次重算",
+      "ok": true,
+      "detail": "0.3209/[0.3059, 0.336] vs 0.3209/[0.3059, 0.336]"
+    },
+    {
+      "name": "E 清单 cascade.pre_gate.support_precision == 本次重算",
+      "ok": true,
+      "detail": "0.6918/[0.6651, 0.7196] vs 0.6918/[0.6651, 0.7196]"
+    },
+    {
+      "name": "E 清单 cascade.pre_gate.negative_rate == 本次重算",
+      "ok": true,
+      "detail": "0.2917/[0.2639, 0.3181] vs 0.2917/[0.2639, 0.3181]"
+    },
+    {
+      "name": "E 清单 cascade.pre_gate.insufficient_rate == 本次重算",
+      "ok": true,
+      "detail": "0.0164/None vs 0.0164/None"
+    },
+    {
+      "name": "E 清单降级候选分子分母 == 354/621",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "E 清单门外值取冻结审计精确数 0.006679",
+      "ok": true,
+      "detail": "0.006679"
+    },
+    {
+      "name": "E 清单冻结层数字与 AUDIT_RESULTS 一致",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "E 清单撤回口径 == RESULTS.json legacy 列表",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "E 清单声明本层零模型调用且 v3_1 只读",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "E 被引用产物哈希与磁盘一致（改动后需重跑 build_overlay_manifest.py）",
+      "ok": true,
+      "detail": "[]"
+    }
+  ],
+  "recomputed": {
+    "n_audited": 4427,
+    "consensus_n_sample": 1593,
+    "per_stratum": {
+      "STRICT": {
+        "n_h": 2268,
+        "c_h": 972,
+        "s_h": 965,
+        "neg_h": 4,
+        "ins_h": 3
+      },
+      "CONTEXTUAL": {
+        "n_h": 1094,
+        "c_h": 350,
+        "s_h": 268,
+        "neg_h": 66,
+        "ins_h": 16
+      },
+      "UNRESOLVED": {
+        "n_h": 1065,
+        "c_h": 271,
+        "s_h": 86,
+        "neg_h": 183,
+        "ins_h": 2
+      }
+    },
+    "ratio_points": {
+      "coverage": 0.3209,
+      "support": 0.6918,
+      "negative": 0.2917,
+      "insufficient": 0.0164
+    },
+    "bootstrap_ci95": {
+      "support": [
+        0.6651,
+        0.7196
+      ],
+      "negative": [
+        0.2639,
+        0.3181
+      ],
+      "coverage": [
+        0.3059,
+        0.336
+      ]
+    },
+    "kept_final_strict": {
+      "support": [
+        965,
+        972
+      ],
+      "point": 0.9928
+    },
+    "downgraded_by_gate": {
+      "support": [
+        354,
+        621
+      ],
+      "point": 0.57,
+      "negative": [
+        249,
+        621
+      ],
+      "negative_point": 0.401,
+      "insufficient": 18,
+      "audited_n": 2159
+    },
+    "final_tiering_layer_counts": {
+      "UNRESOLVED": 49809,
+      "CONTEXTUAL": 31282,
+      "STRICT": 31067
+    }
+  },
+  "elapsed_s": 19.0
+}

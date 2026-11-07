@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-15",
+  "synced_on": "2026-11-07",
+  "status": "review_draft_with_recorded_open_items",
+  "directory": "manuscript/revisions/20261015_round4",
+  "docx": "manuscript/revisions/20261015_round4/论文_审阅稿_round4_基于已知最新稿.docx",
+  "pdf": "manuscript/revisions/20261015_round4/论文_审阅稿_round4_基于已知最新稿.pdf",
+  "figures": "manuscript/revisions/20261015_round4/图件_PNG_PDF_SVG_round4.zip",
+  "acceptance_report": "manuscript/revisions/20261015_round4/定稿验收报告.md",
+  "author_confirmation": "manuscript/revisions/20261015_round4/作者确认单.md",
+  "file_manifest": "metadata/SYNC_SNAPSHOT_20261107.json",
+  "notice": "本次同步保留原审阅状态；历史报告包含尚未完成的作者确认、题录和图件源文件问题。"
+}

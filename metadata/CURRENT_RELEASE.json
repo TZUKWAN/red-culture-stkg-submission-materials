@@ -6,8 +6,13 @@
   "paper": {
     "title_zh": "面向知识规范化与级联准入的历史文献时空知识图谱构建方法——以长江流域中共党史文献为例",
     "target_journal": "数据分析与知识发现",
-    "manuscript_dir": "submission_work/final_submission_v3_2/manuscript",
-    "authoritative_results": "submission_work/final_submission_v3_1/AUTHORITATIVE_RESULTS.md"
+    "manuscript_dir": "manuscript/revisions/20261015_round4",
+    "authoritative_results": [
+      "submission_work/final_submission_v3_1/AUTHORITATIVE_RESULTS.md",
+      "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect/CASCADED_ADMISSION_STAGE_RESULTS.json"
+    ],
+    "manuscript_status": "review_draft_with_recorded_open_items",
+    "reproducibility_baseline_manuscript_dir": "submission_work/final_submission_v3_2/manuscript"
   },
   "canonical_final_database": {
     "path": "submission_work/final_submission_v3_1/release_final/data/red_culture_stkg_final.sqlite",
@@ -61,5 +66,63 @@
     "releases/red_culture_stkg_v2/databases/red_culture_stkg_semantic_v2.sqlite",
     "releases/red_culture_stkg_v2/databases/stkg_v2_creative_media_enrichment.sqlite",
     "derived/stkg_v2_entity_classifier.sqlite"
-  ]
+  ],
+  "cascade_overlay_v3_2": {
+    "path": "submission_work/final_submission_v3_2/release_final_v3_2",
+    "purpose": "级联准入阶段增益的机读清单与一键校验；v3_1 冻结层保持只读不改写",
+    "numbers_manifest": "submission_work/final_submission_v3_2/release_final_v3_2/manifests/FINAL_NUMBERS_V3_2.json",
+    "input_hash_lock": "submission_work/final_submission_v3_2/release_final_v3_2/manifests/CASCADE_INPUT_HASHES.json",
+    "verify_entry": null,
+    "llm_calls": 0,
+    "experiment": "submission_work/final_submission_v3_2/experiments/cascaded_admission_stage_effect",
+    "headline_numbers": {
+      "pre_gate_support_precision": [
+        0.6918,
+        [
+          0.6651,
+          0.7196
+        ]
+      ],
+      "final_strict_support_precision": [
+        0.9928,
+        [
+          0.9852,
+          0.9965
+        ]
+      ],
+      "pre_gate_negative_rate": [
+        0.2917,
+        [
+          0.2639,
+          0.3181
+        ]
+      ],
+      "final_strict_negative_rate": [
+        0.0041,
+        [
+          0.0016,
+          0.0105
+        ]
+      ],
+      "strong_consensus_coverage": [
+        0.3209,
+        0.4286
+      ],
+      "downgraded_support_precision": [
+        0.57,
+        "354/621"
+      ],
+      "outside_gate_strict_opportunity": [
+        0.006679,
+        [
+          0.004029,
+          0.009675
+        ]
+      ]
+    },
+    "historical_check_count": 46,
+    "status": "historical_records_with_missing_original_source_files",
+    "status_file": "submission_work/final_submission_v3_2/release_final_v3_2/SOURCE_GAPS.json",
+    "verification_note": "原verify_release_v3_2.py及配套源文件未找到；保留历史记录，不将历史ALL PASS作为本次同步验证结果。"
+  }
 }

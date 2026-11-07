@@ -1,0 +1,17 @@
+{
+  "observed_on": "2026-11-07",
+  "status": "original_overlay_sources_not_found",
+  "missing_paths": [
+    "AUTHORITATIVE_RESULTS_v3_2.md",
+    "build_overlay_manifest.py",
+    "README_FIRST.md",
+    "verify_release_v3_2.py"
+  ],
+  "preserved_records": [
+    "SHA256SUMS.txt",
+    "manifests/CASCADE_INPUT_HASHES.json",
+    "manifests/FINAL_NUMBERS_V3_2.json",
+    "verification/VERIFY_REPORT.json"
+  ],
+  "scope": "The preserved checksum list and ALL PASS report are historical records. The original verification source is unavailable and that verification was not rerun during this sync."
+}

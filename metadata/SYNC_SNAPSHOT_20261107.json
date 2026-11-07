@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "synced_on": "2026-11-07",
+  "latest_revision": "20261015_round4",
+  "latest_revision_status": "review_draft_with_recorded_open_items",
+  "source_revision_created_on": "2026-10-15",
+  "study_data_baseline_unchanged": "submission_work/final_submission_v3_1/release_final",
+  "files": [
+    {
+      "path": "manuscript/revisions/20261015_round4/主张与数据溯源表.csv",
+      "sha256": "c633467591f75342ebcdb03a471a8de31ea71feff6a541b1851ced4d2e2bd9d3",
+      "bytes": 1600,
+      "role": "manuscript_review_delivery"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/作者确认单.md",
+      "sha256": "875b1c441d12c7b56841dac815feab58d013e8d834cc492354940452f922ce04",
+      "bytes": 670,
+      "role": "manuscript_review_delivery"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/参考文献核对表.csv",
+      "sha256": "084fe012ba591f451ad18a9217b346cb2e75958740dbada0889fb2ba476bd531",
+      "bytes": 8825,
+      "role": "manuscript_review_delivery"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/图件_PNG_PDF_SVG_round4.zip",
+      "sha256": "5a371dd84cd76f02994493de975fa5932314593b70b38dd5aa86c42af1a1d793",
+      "bytes": 2992029,
+      "role": "manuscript_review_delivery"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/定稿验收报告.md",
+      "sha256": "4d307afb30c11cf44469491a47c40cac55e115160d9a63c75cb8617776132340",
+      "bytes": 3581,
+      "role": "manuscript_review_delivery"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/实验与复算说明.md",
+      "sha256": "a4dde609de74b511f0e8bf26376151332cf1e1d01bcce14728fa4e98a8668385",
+      "bytes": 1159,
+      "role": "manuscript_review_delivery"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/论文_审阅稿_round4_基于已知最新稿.docx",
+      "sha256": "242a7a2d9e62c852ac1c34f34b03abfe7b1a326c5e170ca598342ce5a154af91",
+      "bytes": 1444632,
+      "role": "manuscript_review_delivery"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/论文_审阅稿_round4_基于已知最新稿.pdf",
+      "sha256": "021983f883df3d8a7692a8f2b783ff6732c366c261dbf6d52733bc63e6845ae9",
+      "bytes": 1651830,
+      "role": "manuscript_review_delivery"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/问题闭环表.csv",
+      "sha256": "65be76cc6b0de6a38ccf8401a74110ffe0697cd4baf3c4ce4de2e1979f755145",
+      "bytes": 3176,
+      "role": "manuscript_review_delivery"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/analysis/round4_rewrite_log.txt",
+      "sha256": "00e327f4cacd9eb148ae3d99d5a8934d436b33ce6f6ed9d01ecba76562fdfdda",
+      "bytes": 101,
+      "role": "manuscript_analysis"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/evidence/facts_lock_v3_1.json",
+      "sha256": "b86381f6d8bbc23ef8d296223c1839c6be5f7368a9f234b40f8910af40c4d62a",
+      "bytes": 16106,
+      "role": "manuscript_evidence"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/evidence/zhiqu_yizhang_evidence_recovery_rows.json",
+      "sha256": "0d53bfdbe10328f645a4e2f62a4b83cba6f0127cfdc7ad2282ffc8c4140b185c",
+      "bytes": 2195,
+      "role": "manuscript_evidence"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/evidence/zhiqu_yizhang_strict_alignment_rows.json",
+      "sha256": "c6649c332638d68e91b480472024f00640c8d39f83fa31a536e14d1c2992c378",
+      "bytes": 3753,
+      "role": "manuscript_evidence"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/working/build_round4_figures.py",
+      "sha256": "efb71e898eae058dbe26f638a836cb600ac27cb31c39abdf8ae78bb39fc1c39b",
+      "bytes": 5723,
+      "role": "manuscript_working"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/working/reconstruct_round4.py",
+      "sha256": "396678d5a657684dfa8fff61698d87fb532ff573949f918fd02b15e15173e9ea",
+      "bytes": 12592,
+      "role": "manuscript_working"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round4/qa/round4_verification.json",
+      "sha256": "4e82d9e2bf18a3e780b56fd82bc07a110bca43784d555167a448390fcf6d8abe",
+      "bytes": 2096,
+      "role": "manuscript_qa"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round3/revise_round3_docx.py",
+      "sha256": "cf3c23f114f94651769a3db98cf825afca28a5de819bac855804e0daf72c8e32",
+      "bytes": 21009,
+      "role": "revision_dependency"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round3/working/build_round3_figures.py",
+      "sha256": "293f8ae1127261187ebd819c27bc43835cb81404ece3c9eaff7b068d04308250",
+      "bytes": 5431,
+      "role": "revision_dependency"
+    },
+    {
+      "path": "manuscript/revisions/20261015_round3/deliverables/论文_全文深度修订稿.docx",
+      "sha256": "cc794649fe6c0a8e9acb25493e62879306034289a682e2644f3dc2632af1fff3",
+      "bytes": 1445294,
+      "role": "revision_dependency"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/ablation_experiment_audit.json",
+      "sha256": "bc2ddbbc2f9a8fc09368575edd3cff5612493df49f1c6ffb09a2afcd73d97769",
+      "bytes": 3862,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/ablation_experiment_summary.json",
+      "sha256": "e5364bca24d2f47cf48feffb564625bb3cf10563f00d3b447b515c548309e55a",
+      "bytes": 16938,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/ABLATION_FIGURE_DATA.csv",
+      "sha256": "518099abc1ee1a8aaef3ef5007b1e84d9b687df467b445e0135ec99173120f2d",
+      "bytes": 4698,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/ABLATION_PREDICTIONS.csv",
+      "sha256": "2d558ece6d700bd44c36e25b22c4bf6bf4ebcf3e549798d85dfb5c1e67718989",
+      "bytes": 526427,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/ABLATION_RUNS.csv",
+      "sha256": "aa7749e749630280fd348a7c89cb81735386201186d14b809862edcda5daf737",
+      "bytes": 44470,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/ACTUAL_RUN_BASELINE_METRICS.csv",
+      "sha256": "fbddba259da9964f6670d16c476c2a38baa0a4ff7f5aefb136f98d3e9be67b82",
+      "bytes": 4622,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/BASELINE_ABLATION_RERUN_REPORT.md",
+      "sha256": "9f80f363a25e11c2eada30ea3eb7675206b92a296f8d79aebe7bcb49d6b6de32",
+      "bytes": 7078,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/BASELINE_AVAILABILITY.csv",
+      "sha256": "84776137306f5d429722226ecfd123d80d6467974e292d9f10e371f512a370dd",
+      "bytes": 1755,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/baseline_experiment_audit.json",
+      "sha256": "52ef7c1f68c3d83b27b153641bfb8e57efc73cc2475bcf59fc08bda9a13bb6a1",
+      "bytes": 6661,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/BASELINE_EXPERIMENT_REPORT.md",
+      "sha256": "ddbfbd92d2264da9febac5c9b08f6fb51f7648996e4ae33d8178db837e43acee",
+      "bytes": 3023,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/baseline_experiment_summary.json",
+      "sha256": "7214ed79b0620b4b71f2f9e643493f0fff609fe2dbd51539dc2d9fc161ff8b80",
+      "bytes": 77107,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/BASELINE_METRICS.csv",
+      "sha256": "379109010352a75948432524acffb5c12235a1cacb6046bf9a024eaf1a025214",
+      "bytes": 14608,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/BASELINE_RUNS.csv",
+      "sha256": "d730f8686040faccf14f595baeb36e2806e18f36a9cb38a1f6020f9d7301192f",
+      "bytes": 410341,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/BASELINE_SPLIT_MANIFEST.csv",
+      "sha256": "ffed072501114d702e1b59baa735d5a32f74abf4efc45fe6460187f18d82ee7d",
+      "bytes": 77952,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/compare_rerun_vs_paper.py",
+      "sha256": "738ce59e6c784bb32f5dea7932005a010323562c8c033a3e678084123976c56f",
+      "bytes": 12325,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/fill_manuscript_tables.py",
+      "sha256": "77fc5fab16601f0e1ae537e4b61d8a3489120c194ca130548ed6f5524749909c",
+      "bytes": 9035,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/FROZEN_EVALUATION_MANIFEST.json",
+      "sha256": "bbf95edbf8c0a230087e5fbfdb085c4a619eb932c4296c6454fe874ecfdb1b99",
+      "bytes": 1476,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/MANUSCRIPT_TABLE_PREVIEW.md",
+      "sha256": "f9a7e815a66aebe39d20caaa431c378ed9969db279e6608f2a22ac6df58ab7b3",
+      "bytes": 2130,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/PAPER_RERUN_COMPARISON.json",
+      "sha256": "9f4f2ac1c5b4903d0b51447a9a4a51545927fc98c3b138032ae72dadacf8627b",
+      "bytes": 4996,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/REPLAY_AND_CACHED_BASELINE_METRICS.csv",
+      "sha256": "bc4f9a9d983b3666aabab4f76fa7b693edd241ecf44244d2ae85bb41d5321404",
+      "bytes": 7316,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/run_baseline_experiments_v2copy.py",
+      "sha256": "d33c7f01b673fdfe48f7c0c7d9c030769d6258f818228585d3194a3e847a6fee",
+      "bytes": 56358,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/run_component_ablations_v2copy.py",
+      "sha256": "908b425a19fe7adcc35f1a0835002ee6a336cd213e8a37b00a516f95be2cbb5b",
+      "bytes": 47088,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/experiments/11_baseline_ablation_repro/STRUCTURAL_CHANGED_EXAMPLES.csv",
+      "sha256": "a257c40511815ddb1712b579298277bb618cc6ba04a63b646cb3b61ed2e71e68",
+      "bytes": 354081,
+      "role": "frozen_experiment_supplement"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/release_final_v3_2/manifests/CASCADE_INPUT_HASHES.json",
+      "sha256": "4dcfa54cd5cc72391589e58e7cd570cf53860a6781ddc993c65d00907678542a",
+      "bytes": 1993,
+      "role": "historical_overlay_record"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/release_final_v3_2/manifests/FINAL_NUMBERS_V3_2.json",
+      "sha256": "12f68663e320640e7dbb56135dab6a81217fa8ddab0c1f7fc6ac8cdeff995581",
+      "bytes": 23268,
+      "role": "historical_overlay_record"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/release_final_v3_2/SHA256SUMS.txt",
+      "sha256": "231c5e7e0b47e3b7bb620cdb29ec5023464ef655738bcac0606e58b3741dc660",
+      "bytes": 666,
+      "role": "historical_overlay_record"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/release_final_v3_2/verification/VERIFY_REPORT.json",
+      "sha256": "e05ed4d779df140798f79e1c328fd7d6041d41491838ddb2ae672901e00ffa41",
+      "bytes": 8463,
+      "role": "historical_overlay_record"
+    },
+    {
+      "path": "submission_work/final_submission_v3_2/CHANGELOG.md",
+      "sha256": "9630ca399595b458f71492b8f42090fd1235287f8781f06b5634679fef6aecc8",
+      "bytes": 13250,
+      "role": "changelog"
+    }
+  ]
+}

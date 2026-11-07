@@ -1,0 +1,23 @@
+component,evaluation_family,metric,with_component,without_component,delta_without_minus_with,evidence_class,overlap_status,interpretation
+Class-specific Gate,entity_type_ai_reference,coverage,0.354679802956,0.35960591133,0.00492610837438,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Class-specific Gate,entity_type_ai_reference,selective_accuracy,0.944444444444,0.945205479452,0.00076103500761,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Class-specific Gate,entity_type_ai_reference,selective_risk,0.0555555555556,0.0547945205479,-0.00076103500761,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Class-specific Gate,entity_type_ai_reference,unsafe_exposure,0.0197044334975,0.0197044334975,0,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Class-specific Gate,entity_type_ai_reference,safe_coverage,0.334975369458,0.339901477833,0.00492610837438,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Independent Signal Agreement,entity_type_ai_reference,coverage,0.354679802956,0.650246305419,0.295566502463,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Independent Signal Agreement,entity_type_ai_reference,selective_accuracy,0.944444444444,0.916666666667,-0.0277777777778,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Independent Signal Agreement,entity_type_ai_reference,selective_risk,0.0555555555556,0.0833333333333,0.0277777777778,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Independent Signal Agreement,entity_type_ai_reference,unsafe_exposure,0.0197044334975,0.0541871921182,0.0344827586207,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Independent Signal Agreement,entity_type_ai_reference,safe_coverage,0.334975369458,0.5960591133,0.261083743842,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Abstention,entity_type_ai_reference,coverage,0.354679802956,1,0.645320197044,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Abstention,entity_type_ai_reference,selective_accuracy,0.944444444444,0.881773399015,-0.0626710454297,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Abstention,entity_type_ai_reference,selective_risk,0.0555555555556,0.118226600985,0.0626710454297,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Abstention,entity_type_ai_reference,unsafe_exposure,0.0197044334975,0.118226600985,0.0985221674877,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Abstention,entity_type_ai_reference,safe_coverage,0.334975369458,0.881773399015,0.546798029557,actual_run,shared_proxy_reference,coverage-risk tradeoff on shared proxy reference; no single metric proves superiority
+Risk Routing,full_assertion_structural_replay,changed_vs_full,0,43945,43945,deterministic_replay,not_applicable,assertion states changed against full replay
+Identity Projection,full_assertion_structural_replay,changed_vs_full,0,24005,24005,deterministic_replay,not_applicable,assertion states changed against full replay
+Relation Contract,full_assertion_structural_replay,strict_contract_violations,0,3412,3412,deterministic_replay,not_applicable,strict domain/range violations
+Role-owner Closure,full_assertion_structural_replay,invalid_time_owner_types,0,44,44,deterministic_replay,not_applicable,time-owner structural errors
+Role-owner Closure,full_assertion_structural_replay,invalid_space_owner_types,0,112,112,deterministic_replay,not_applicable,space-owner structural errors
+Provenance Gate,full_assertion_structural_replay,changed_vs_full,0,0,0,deterministic_replay,not_applicable,saturated post-gate canary: every release assertion already has lineage; zero delta does not show the component is unnecessary
+Global Closure,full_assertion_structural_replay,strict_contract_violations,0,3412,3412,deterministic_replay,not_applicable,strict domain/range violations
